@@ -7,7 +7,8 @@
 #include "Player List/Player List.h"
 
 std::vector<uintptr_t> m_AllActors{};
-
+std::vector<uintptr_t> m_RootComponents{};
+std::vector<uintptr_t> m_PlayerStates{};
 void EntityList::ReadAllActorAddresses(DMA_Connection* Conn)
 {
 	auto& Actors = Marvel::m_Actors;
@@ -35,12 +36,15 @@ void EntityList::ReadAllActorAddresses(DMA_Connection* Conn)
 		return;
 	}
 
-	std::vector<uintptr_t> rootComponents(m_AllActors.size());
+	m_RootComponents.resize(m_AllActors.size());
+	m_PlayerStates.resize(m_AllActors.size());
 
 	for (size_t i = 0; i < m_AllActors.size(); i++)
 	{
 		uintptr_t RootComponentPtr = m_AllActors[i] + offsetof(SDK::AActor, RootComponent);
-		VMMDLL_Scatter_PrepareEx(vmsh, RootComponentPtr, sizeof(uintptr_t), reinterpret_cast<BYTE*>(&rootComponents[i]), nullptr);
+		uintptr_t PlayerStatePtr = m_AllActors[i] + offsetof(SDK::APawn, PlayerState);
+		VMMDLL_Scatter_PrepareEx(vmsh, RootComponentPtr, sizeof(uintptr_t), reinterpret_cast<BYTE*>(&m_RootComponents[i]), nullptr);
+		VMMDLL_Scatter_PrepareEx(vmsh, PlayerStatePtr, sizeof(uintptr_t), reinterpret_cast<BYTE*>(&m_PlayerStates[i]), nullptr);
 	}
 
 	VMMDLL_Scatter_Execute(vmsh);
@@ -52,11 +56,10 @@ void EntityList::ReadAllActorAddresses(DMA_Connection* Conn)
 	for (size_t i = 0; i < m_AllActors.size(); i++)
 	{
 		auto& ActorAddr = m_AllActors[i];
-		auto& RootComponent = rootComponents[i];
+		auto& RootComponent = m_RootComponents[i];
+		auto& PlayerState = m_PlayerStates[i];
 
-		if (!RootComponent)
-			continue;
-
-		PlayerList::m_PlayerAddresses.push_back(ActorAddr);
+		if (RootComponent && PlayerState)
+			PlayerList::m_PlayerAddresses.push_back(ActorAddr);
 	}
 }

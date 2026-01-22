@@ -34,7 +34,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphAnnotationComponent">();
+		STATIC_CLASS_IMPL("ZoneGraphAnnotationComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphAnnotationComponent")
 	}
 	static class UZoneGraphAnnotationComponent* GetDefaultObj()
 	{
@@ -42,36 +46,34 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UZoneGraphAnnotationComponent) == 0x000010, "Wrong alignment on UZoneGraphAnnotationComponent");
-static_assert(sizeof(UZoneGraphAnnotationComponent) == 0x000830, "Wrong size on UZoneGraphAnnotationComponent");
-static_assert(offsetof(UZoneGraphAnnotationComponent, bEnableDebugDrawing) == 0x000820, "Member 'UZoneGraphAnnotationComponent::bEnableDebugDrawing' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneGraphAnnotationComponent;
 
 // Class ZoneGraphAnnotations.ZoneGraphAnnotationSubsystem
-// 0x0070 (0x00B8 - 0x0048)
+// 0x0070 (0x00C0 - 0x0050)
 class UZoneGraphAnnotationSubsystem final : public UTickableWorldSubsystem
 {
 public:
-	TArray<struct FRegisteredZoneGraphAnnotation> RegisteredComponents;                              // 0x0048(0x0010)(ZeroConstructor, Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	struct FInstancedStructContainer              Events[0x2];                                       // 0x0058(0x0010)(Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_78[0x8];                                       // 0x0078(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UZoneGraphAnnotationComponent*>  TagToAnnotationLookup;                             // 0x0080(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_90[0x28];                                      // 0x0090(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<struct FRegisteredZoneGraphAnnotation> RegisteredComponents;                              // 0x0050(0x0010)(ZeroConstructor, Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	struct FInstancedStructContainer              Events[0x2];                                       // 0x0060(0x0010)(Transient, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_80[0x8];                                       // 0x0080(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UZoneGraphAnnotationComponent*>  TagToAnnotationLookup;                             // 0x0088(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	uint8                                         Pad_98[0x28];                                      // 0x0098(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphAnnotationSubsystem">();
+		STATIC_CLASS_IMPL("ZoneGraphAnnotationSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphAnnotationSubsystem")
 	}
 	static class UZoneGraphAnnotationSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphAnnotationSubsystem>();
 	}
 };
-static_assert(alignof(UZoneGraphAnnotationSubsystem) == 0x000008, "Wrong alignment on UZoneGraphAnnotationSubsystem");
-static_assert(sizeof(UZoneGraphAnnotationSubsystem) == 0x0000B8, "Wrong size on UZoneGraphAnnotationSubsystem");
-static_assert(offsetof(UZoneGraphAnnotationSubsystem, RegisteredComponents) == 0x000048, "Member 'UZoneGraphAnnotationSubsystem::RegisteredComponents' has a wrong offset!");
-static_assert(offsetof(UZoneGraphAnnotationSubsystem, Events) == 0x000058, "Member 'UZoneGraphAnnotationSubsystem::Events' has a wrong offset!");
-static_assert(offsetof(UZoneGraphAnnotationSubsystem, TagToAnnotationLookup) == 0x000080, "Member 'UZoneGraphAnnotationSubsystem::TagToAnnotationLookup' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneGraphAnnotationSubsystem;
 
 // Class ZoneGraphAnnotations.ZoneGraphAnnotationTest
 // 0x0008 (0x0038 - 0x0030)
@@ -83,16 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphAnnotationTest">();
+		STATIC_CLASS_IMPL("ZoneGraphAnnotationTest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphAnnotationTest")
 	}
 	static class UZoneGraphAnnotationTest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphAnnotationTest>();
 	}
 };
-static_assert(alignof(UZoneGraphAnnotationTest) == 0x000008, "Wrong alignment on UZoneGraphAnnotationTest");
-static_assert(sizeof(UZoneGraphAnnotationTest) == 0x000038, "Wrong size on UZoneGraphAnnotationTest");
-static_assert(offsetof(UZoneGraphAnnotationTest, OwnerComponent) == 0x000030, "Member 'UZoneGraphAnnotationTest::OwnerComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneGraphAnnotationTest;
 
 // Class ZoneGraphAnnotations.ZoneGraphAnnotationTestingComponent
 // 0x0010 (0x0820 - 0x0810)
@@ -105,16 +109,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphAnnotationTestingComponent">();
+		STATIC_CLASS_IMPL("ZoneGraphAnnotationTestingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphAnnotationTestingComponent")
 	}
 	static class UZoneGraphAnnotationTestingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphAnnotationTestingComponent>();
 	}
 };
-static_assert(alignof(UZoneGraphAnnotationTestingComponent) == 0x000010, "Wrong alignment on UZoneGraphAnnotationTestingComponent");
-static_assert(sizeof(UZoneGraphAnnotationTestingComponent) == 0x000820, "Wrong size on UZoneGraphAnnotationTestingComponent");
-static_assert(offsetof(UZoneGraphAnnotationTestingComponent, Tests) == 0x000808, "Member 'UZoneGraphAnnotationTestingComponent::Tests' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneGraphAnnotationTestingComponent;
 
 // Class ZoneGraphAnnotations.ZoneGraphAnnotationTestingActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -129,16 +135,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphAnnotationTestingActor">();
+		STATIC_CLASS_IMPL("ZoneGraphAnnotationTestingActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphAnnotationTestingActor")
 	}
 	static class AZoneGraphAnnotationTestingActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AZoneGraphAnnotationTestingActor>();
 	}
 };
-static_assert(alignof(AZoneGraphAnnotationTestingActor) == 0x000010, "Wrong alignment on AZoneGraphAnnotationTestingActor");
-static_assert(sizeof(AZoneGraphAnnotationTestingActor) == 0x0006E0, "Wrong size on AZoneGraphAnnotationTestingActor");
-static_assert(offsetof(AZoneGraphAnnotationTestingActor, TestingComp) == 0x0006D8, "Member 'AZoneGraphAnnotationTestingActor::TestingComp' has a wrong offset!");
+DUMPER7_ASSERTS_AZoneGraphAnnotationTestingActor;
 
 // Class ZoneGraphAnnotations.ZoneGraphDisturbanceAnnotation
 // 0x0060 (0x0890 - 0x0830)
@@ -157,21 +165,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphDisturbanceAnnotation">();
+		STATIC_CLASS_IMPL("ZoneGraphDisturbanceAnnotation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphDisturbanceAnnotation")
 	}
 	static class UZoneGraphDisturbanceAnnotation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphDisturbanceAnnotation>();
 	}
 };
-static_assert(alignof(UZoneGraphDisturbanceAnnotation) == 0x000010, "Wrong alignment on UZoneGraphDisturbanceAnnotation");
-static_assert(sizeof(UZoneGraphDisturbanceAnnotation) == 0x000890, "Wrong size on UZoneGraphDisturbanceAnnotation");
-static_assert(offsetof(UZoneGraphDisturbanceAnnotation, DangerAnnotationTag) == 0x000828, "Member 'UZoneGraphDisturbanceAnnotation::DangerAnnotationTag' has a wrong offset!");
-static_assert(offsetof(UZoneGraphDisturbanceAnnotation, ObstacleAnnotationTag) == 0x000829, "Member 'UZoneGraphDisturbanceAnnotation::ObstacleAnnotationTag' has a wrong offset!");
-static_assert(offsetof(UZoneGraphDisturbanceAnnotation, AffectedLaneTags) == 0x00082C, "Member 'UZoneGraphDisturbanceAnnotation::AffectedLaneTags' has a wrong offset!");
-static_assert(offsetof(UZoneGraphDisturbanceAnnotation, EscapeLaneTags) == 0x000838, "Member 'UZoneGraphDisturbanceAnnotation::EscapeLaneTags' has a wrong offset!");
-static_assert(offsetof(UZoneGraphDisturbanceAnnotation, IdealSpanLength) == 0x000844, "Member 'UZoneGraphDisturbanceAnnotation::IdealSpanLength' has a wrong offset!");
-static_assert(offsetof(UZoneGraphDisturbanceAnnotation, ZoneGraphSubsystem) == 0x000888, "Member 'UZoneGraphDisturbanceAnnotation::ZoneGraphSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneGraphDisturbanceAnnotation;
 
 // Class ZoneGraphAnnotations.ZoneGraphDisturbanceAnnotationTest
 // 0x0020 (0x0058 - 0x0038)
@@ -185,18 +190,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphDisturbanceAnnotationTest">();
+		STATIC_CLASS_IMPL("ZoneGraphDisturbanceAnnotationTest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphDisturbanceAnnotationTest")
 	}
 	static class UZoneGraphDisturbanceAnnotationTest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphDisturbanceAnnotationTest>();
 	}
 };
-static_assert(alignof(UZoneGraphDisturbanceAnnotationTest) == 0x000008, "Wrong alignment on UZoneGraphDisturbanceAnnotationTest");
-static_assert(sizeof(UZoneGraphDisturbanceAnnotationTest) == 0x000058, "Wrong size on UZoneGraphDisturbanceAnnotationTest");
-static_assert(offsetof(UZoneGraphDisturbanceAnnotationTest, Offset) == 0x000038, "Member 'UZoneGraphDisturbanceAnnotationTest::Offset' has a wrong offset!");
-static_assert(offsetof(UZoneGraphDisturbanceAnnotationTest, Duration) == 0x000050, "Member 'UZoneGraphDisturbanceAnnotationTest::Duration' has a wrong offset!");
-static_assert(offsetof(UZoneGraphDisturbanceAnnotationTest, DangerRadius) == 0x000054, "Member 'UZoneGraphDisturbanceAnnotationTest::DangerRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneGraphDisturbanceAnnotationTest;
 
 // Class ZoneGraphAnnotations.ZoneGraphDisturbanceAnnotationBPLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -208,15 +213,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphDisturbanceAnnotationBPLibrary">();
+		STATIC_CLASS_IMPL("ZoneGraphDisturbanceAnnotationBPLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphDisturbanceAnnotationBPLibrary")
 	}
 	static class UZoneGraphDisturbanceAnnotationBPLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphDisturbanceAnnotationBPLibrary>();
 	}
 };
-static_assert(alignof(UZoneGraphDisturbanceAnnotationBPLibrary) == 0x000008, "Wrong alignment on UZoneGraphDisturbanceAnnotationBPLibrary");
-static_assert(sizeof(UZoneGraphDisturbanceAnnotationBPLibrary) == 0x000030, "Wrong size on UZoneGraphDisturbanceAnnotationBPLibrary");
+DUMPER7_ASSERTS_UZoneGraphDisturbanceAnnotationBPLibrary;
 
 }
 

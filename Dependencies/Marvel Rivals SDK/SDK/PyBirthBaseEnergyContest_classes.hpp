@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBirthBaseEnergyContest">();
+		STATIC_CLASS_IMPL("PyBirthBaseEnergyContest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBirthBaseEnergyContest")
 	}
 	static class APyBirthBaseEnergyContest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBirthBaseEnergyContest>();
 	}
 };
-static_assert(alignof(APyBirthBaseEnergyContest) == 0x000010, "Wrong alignment on APyBirthBaseEnergyContest");
-static_assert(sizeof(APyBirthBaseEnergyContest) == 0x0009E0, "Wrong size on APyBirthBaseEnergyContest");
-static_assert(offsetof(APyBirthBaseEnergyContest, Doors) == 0x0009B0, "Member 'APyBirthBaseEnergyContest::Doors' has a wrong offset!");
-static_assert(offsetof(APyBirthBaseEnergyContest, PlayerStart) == 0x0009C0, "Member 'APyBirthBaseEnergyContest::PlayerStart' has a wrong offset!");
-static_assert(offsetof(APyBirthBaseEnergyContest, SwitchablePlayerStarts) == 0x0009C8, "Member 'APyBirthBaseEnergyContest::SwitchablePlayerStarts' has a wrong offset!");
+DUMPER7_ASSERTS_APyBirthBaseEnergyContest;
 
 }
 

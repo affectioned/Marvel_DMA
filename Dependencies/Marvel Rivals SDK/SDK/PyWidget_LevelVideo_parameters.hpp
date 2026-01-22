@@ -21,9 +21,7 @@ struct PyWidget_LevelVideoExit_OnExitVideoOpened final
 public:
 	class FString                                 Url;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LevelVideoExit_OnExitVideoOpened) == 0x000008, "Wrong alignment on PyWidget_LevelVideoExit_OnExitVideoOpened");
-static_assert(sizeof(PyWidget_LevelVideoExit_OnExitVideoOpened) == 0x000010, "Wrong size on PyWidget_LevelVideoExit_OnExitVideoOpened");
-static_assert(offsetof(PyWidget_LevelVideoExit_OnExitVideoOpened, Url) == 0x000000, "Member 'PyWidget_LevelVideoExit_OnExitVideoOpened::Url' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LevelVideoExit_OnExitVideoOpened;
 
 // PythonFunction PyWidget_LevelVideo.PyWidget_LevelVideoExit.OnMediaOpenFailed
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_LevelVideoExit_OnMediaOpenFailed final
 public:
 	class FString                                 Url;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LevelVideoExit_OnMediaOpenFailed) == 0x000008, "Wrong alignment on PyWidget_LevelVideoExit_OnMediaOpenFailed");
-static_assert(sizeof(PyWidget_LevelVideoExit_OnMediaOpenFailed) == 0x000010, "Wrong size on PyWidget_LevelVideoExit_OnMediaOpenFailed");
-static_assert(offsetof(PyWidget_LevelVideoExit_OnMediaOpenFailed, Url) == 0x000000, "Member 'PyWidget_LevelVideoExit_OnMediaOpenFailed::Url' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LevelVideoExit_OnMediaOpenFailed;
 
 }
 

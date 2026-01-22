@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AccessibilitySettingPreview_Fullscreen">();
+		STATIC_CLASS_IMPL("PyWidget_AccessibilitySettingPreview_Fullscreen")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AccessibilitySettingPreview_Fullscreen")
 	}
 	static class UPyWidget_AccessibilitySettingPreview_Fullscreen* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AccessibilitySettingPreview_Fullscreen>();
 	}
 };
-static_assert(alignof(UPyWidget_AccessibilitySettingPreview_Fullscreen) == 0x000008, "Wrong alignment on UPyWidget_AccessibilitySettingPreview_Fullscreen");
-static_assert(sizeof(UPyWidget_AccessibilitySettingPreview_Fullscreen) == 0x0003B8, "Wrong size on UPyWidget_AccessibilitySettingPreview_Fullscreen");
+DUMPER7_ASSERTS_UPyWidget_AccessibilitySettingPreview_Fullscreen;
 
 // PythonClass PyWidget_SettingAccessibility.PyWidget_CustomColorPreview_Team
 // 0x0000 (0x03B8 - 0x03B8)
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomColorPreview_Team">();
+		STATIC_CLASS_IMPL("PyWidget_CustomColorPreview_Team")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomColorPreview_Team")
 	}
 	static class UPyWidget_CustomColorPreview_Team* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomColorPreview_Team>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomColorPreview_Team) == 0x000008, "Wrong alignment on UPyWidget_CustomColorPreview_Team");
-static_assert(sizeof(UPyWidget_CustomColorPreview_Team) == 0x0003B8, "Wrong size on UPyWidget_CustomColorPreview_Team");
+DUMPER7_ASSERTS_UPyWidget_CustomColorPreview_Team;
 
 // PythonClass PyWidget_SettingAccessibility.PyWidget_CustomColorPreview_HpBar
 // 0x0000 (0x03B8 - 0x03B8)
@@ -67,15 +73,18 @@ class UPyWidget_CustomColorPreview_HpBar final : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomColorPreview_HpBar">();
+		STATIC_CLASS_IMPL("PyWidget_CustomColorPreview_HpBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomColorPreview_HpBar")
 	}
 	static class UPyWidget_CustomColorPreview_HpBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomColorPreview_HpBar>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomColorPreview_HpBar) == 0x000008, "Wrong alignment on UPyWidget_CustomColorPreview_HpBar");
-static_assert(sizeof(UPyWidget_CustomColorPreview_HpBar) == 0x0003B8, "Wrong size on UPyWidget_CustomColorPreview_HpBar");
+DUMPER7_ASSERTS_UPyWidget_CustomColorPreview_HpBar;
 
 }
 

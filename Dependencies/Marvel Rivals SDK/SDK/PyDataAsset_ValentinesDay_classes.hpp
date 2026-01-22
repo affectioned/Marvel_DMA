@@ -30,19 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataAsset_ValentinesDay">();
+		STATIC_CLASS_IMPL("PyDataAsset_ValentinesDay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataAsset_ValentinesDay")
 	}
 	static class UPyDataAsset_ValentinesDay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataAsset_ValentinesDay>();
 	}
 };
-static_assert(alignof(UPyDataAsset_ValentinesDay) == 0x000008, "Wrong alignment on UPyDataAsset_ValentinesDay");
-static_assert(sizeof(UPyDataAsset_ValentinesDay) == 0x000068, "Wrong size on UPyDataAsset_ValentinesDay");
-static_assert(offsetof(UPyDataAsset_ValentinesDay, WomanHeadIcon) == 0x000038, "Member 'UPyDataAsset_ValentinesDay::WomanHeadIcon' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ValentinesDay, ManHeadIcon) == 0x000048, "Member 'UPyDataAsset_ValentinesDay::ManHeadIcon' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ValentinesDay, ActivityStartTime) == 0x000058, "Member 'UPyDataAsset_ValentinesDay::ActivityStartTime' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ValentinesDay, ActivityEndTime) == 0x000060, "Member 'UPyDataAsset_ValentinesDay::ActivityEndTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDataAsset_ValentinesDay;
 
 }
 

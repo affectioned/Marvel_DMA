@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "Hero_1018_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyDoctorStrangeCharacter.PyDoctorStrangeCharacter
-// 0x0000 (0x2220 - 0x2220)
+// 0x0000 (0x2330 - 0x2330)
 class APyDoctorStrangeCharacter : public ADoctorStrangeCharacter
 {
 public:
@@ -29,23 +29,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDoctorStrangeCharacter">();
+		STATIC_CLASS_IMPL("PyDoctorStrangeCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDoctorStrangeCharacter")
 	}
 	static class APyDoctorStrangeCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyDoctorStrangeCharacter>();
 	}
 };
-static_assert(alignof(APyDoctorStrangeCharacter) == 0x000010, "Wrong alignment on APyDoctorStrangeCharacter");
-static_assert(sizeof(APyDoctorStrangeCharacter) == 0x002220, "Wrong size on APyDoctorStrangeCharacter");
+DUMPER7_ASSERTS_APyDoctorStrangeCharacter;
 
 // PythonClass PyDoctorStrangeCharacter.PyDoctorStrangeChildActor
-// 0x0090 (0x0ED0 - 0x0E40)
+// 0x0090 (0x0EE0 - 0x0E50)
 class APyDoctorStrangeChildActor final : public ADoctorStrangeChildActor
 {
 public:
-	struct FGameplayTagContainer                  ShowExtraHandsTag;                                 // 0x0E40(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FMaterialQuery                         ShowMaterialSectionQuery;                          // 0x0EA8(0x0024)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  ShowExtraHandsTag;                                 // 0x0E50(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMaterialQuery                         ShowMaterialSectionQuery;                          // 0x0EB8(0x0024)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceivePoolBeginPlay();
@@ -54,17 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDoctorStrangeChildActor">();
+		STATIC_CLASS_IMPL("PyDoctorStrangeChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDoctorStrangeChildActor")
 	}
 	static class APyDoctorStrangeChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyDoctorStrangeChildActor>();
 	}
 };
-static_assert(alignof(APyDoctorStrangeChildActor) == 0x000010, "Wrong alignment on APyDoctorStrangeChildActor");
-static_assert(sizeof(APyDoctorStrangeChildActor) == 0x000ED0, "Wrong size on APyDoctorStrangeChildActor");
-static_assert(offsetof(APyDoctorStrangeChildActor, ShowExtraHandsTag) == 0x000E40, "Member 'APyDoctorStrangeChildActor::ShowExtraHandsTag' has a wrong offset!");
-static_assert(offsetof(APyDoctorStrangeChildActor, ShowMaterialSectionQuery) == 0x000EA8, "Member 'APyDoctorStrangeChildActor::ShowMaterialSectionQuery' has a wrong offset!");
+DUMPER7_ASSERTS_APyDoctorStrangeChildActor;
 
 }
 

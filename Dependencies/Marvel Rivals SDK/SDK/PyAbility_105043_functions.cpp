@@ -98,30 +98,5 @@ void UPyAbility_105043::MissileEventNotify()
 	Func->FunctionFlags = Flgs;
 }
 
-
-// PythonFunction PyAbility_105043.PyAbility_105043.K2_OnClientActivateAbilityRejected
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsCurrentActivation                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyAbility_105043::K2_OnClientActivateAbilityRejected(bool bIsCurrentActivation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_105043", "K2_OnClientActivateAbilityRejected");
-
-	Params::PyAbility_105043_K2_OnClientActivateAbilityRejected Parms{};
-
-	Parms.bIsCurrentActivation = bIsCurrentActivation;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
 }
 

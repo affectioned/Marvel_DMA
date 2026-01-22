@@ -23,15 +23,18 @@ class UHighLightData_1034_BP_C final : public UHighLightData_1034
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HighLightData_1034_BP_C">();
+		BP_STATIC_CLASS_IMPL("HighLightData_1034_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HighLightData_1034_BP_C")
 	}
 	static class UHighLightData_1034_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHighLightData_1034_BP_C>();
 	}
 };
-static_assert(alignof(UHighLightData_1034_BP_C) == 0x000008, "Wrong alignment on UHighLightData_1034_BP_C");
-static_assert(sizeof(UHighLightData_1034_BP_C) == 0x0000B0, "Wrong size on UHighLightData_1034_BP_C");
+DUMPER7_ASSERTS_UHighLightData_1034_BP_C;
 
 }
 

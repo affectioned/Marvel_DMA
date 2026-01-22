@@ -348,8 +348,9 @@ void APyMarvelPlayerState::ServerChangeEquipSkinID(int32 skin_id)
 // (Net, NetReliable, Native, Public, NetServer, HasOutParams, BlueprintCallable)
 // Parameters:
 // const TArray<int32>&                    hero_id_list                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// int32                                   BondGroupID                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APyMarvelPlayerState::ServerChangeBondSuggestionHeroIDList(const TArray<int32>& hero_id_list)
+void APyMarvelPlayerState::ServerChangeBondSuggestionHeroIDList(const TArray<int32>& hero_id_list, int32 BondGroupID)
 {
 	static class UFunction* Func = nullptr;
 
@@ -359,6 +360,7 @@ void APyMarvelPlayerState::ServerChangeBondSuggestionHeroIDList(const TArray<int
 	Params::PyMarvelPlayerState_ServerChangeBondSuggestionHeroIDList Parms{};
 
 	Parms.hero_id_list = std::move(hero_id_list);
+	Parms.BondGroupID = BondGroupID;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -373,8 +375,9 @@ void APyMarvelPlayerState::ServerChangeBondSuggestionHeroIDList(const TArray<int
 // (Net, Native, NetMulticast, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // const TArray<int32>&                    hero_id_list                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// int32                                   BondGroupID                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APyMarvelPlayerState::NetMulticast_BondSuggestionHeroIDList(const TArray<int32>& hero_id_list)
+void APyMarvelPlayerState::NetMulticast_BondSuggestionHeroIDList(const TArray<int32>& hero_id_list, int32 BondGroupID)
 {
 	static class UFunction* Func = nullptr;
 
@@ -384,6 +387,7 @@ void APyMarvelPlayerState::NetMulticast_BondSuggestionHeroIDList(const TArray<in
 	Params::PyMarvelPlayerState_NetMulticast_BondSuggestionHeroIDList Parms{};
 
 	Parms.hero_id_list = std::move(hero_id_list);
+	Parms.BondGroupID = BondGroupID;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -861,8 +865,9 @@ void APyMarvelPlayerState::OnRep_SelectBanpickHeroID()
 // (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
 // Parameters:
 // int32                                   hero_id                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   group_id                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APyMarvelPlayerState::ServerChangeBanPickHeroID(int32 hero_id)
+void APyMarvelPlayerState::ServerChangeBanPickHeroID(int32 hero_id, int32 group_id)
 {
 	static class UFunction* Func = nullptr;
 
@@ -872,6 +877,7 @@ void APyMarvelPlayerState::ServerChangeBanPickHeroID(int32 hero_id)
 	Params::PyMarvelPlayerState_ServerChangeBanPickHeroID Parms{};
 
 	Parms.hero_id = hero_id;
+	Parms.group_id = group_id;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -948,9 +954,9 @@ void APyMarvelPlayerState::OnRep_SuggestBanPickHeroID()
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerChangeSuggestionRole
 // (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
 // Parameters:
-// EHeroRole                               HeroRole                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EHeroRole                               HeroRole_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APyMarvelPlayerState::ServerChangeSuggestionRole(EHeroRole HeroRole)
+void APyMarvelPlayerState::ServerChangeSuggestionRole(EHeroRole HeroRole_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -959,7 +965,7 @@ void APyMarvelPlayerState::ServerChangeSuggestionRole(EHeroRole HeroRole)
 
 	Params::PyMarvelPlayerState_ServerChangeSuggestionRole Parms{};
 
-	Parms.HeroRole = HeroRole;
+	Parms.HeroRole_0 = HeroRole_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1630,6 +1636,56 @@ void APyMarvelPlayerState::Client_PlayerEmitEmojiFrequent()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.MultiCastChangeBattleSide
+// (Net, NetReliable, Native, NetMulticast, Public, BlueprintCallable)
+// Parameters:
+// EBattleSide                             battle_side                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APyMarvelPlayerState::MultiCastChangeBattleSide(EBattleSide battle_side)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyMarvelPlayerState", "MultiCastChangeBattleSide");
+
+	Params::PyMarvelPlayerState_MultiCastChangeBattleSide Parms{};
+
+	Parms.battle_side = battle_side;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.GetRecordUID
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+int32 APyMarvelPlayerState::GetRecordUID() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyMarvelPlayerState", "GetRecordUID");
+
+	Params::PyMarvelPlayerState_GetRecordUID Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 }

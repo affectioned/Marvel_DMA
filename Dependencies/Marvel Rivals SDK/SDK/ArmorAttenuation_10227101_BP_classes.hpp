@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ArmorAttenuation_10227101_BP.ArmorAttenuation_10227101_BP_C
-// 0x0000 (0x1540 - 0x1540)
+// 0x0000 (0x15C0 - 0x15C0)
 class UArmorAttenuation_10227101_BP_C final : public UArmorAttenuation_102271
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ArmorAttenuation_10227101_BP_C">();
+		BP_STATIC_CLASS_IMPL("ArmorAttenuation_10227101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ArmorAttenuation_10227101_BP_C")
 	}
 	static class UArmorAttenuation_10227101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UArmorAttenuation_10227101_BP_C>();
 	}
 };
-static_assert(alignof(UArmorAttenuation_10227101_BP_C) == 0x000008, "Wrong alignment on UArmorAttenuation_10227101_BP_C");
-static_assert(sizeof(UArmorAttenuation_10227101_BP_C) == 0x001540, "Wrong size on UArmorAttenuation_10227101_BP_C");
+DUMPER7_ASSERTS_UArmorAttenuation_10227101_BP_C;
 
 }
 

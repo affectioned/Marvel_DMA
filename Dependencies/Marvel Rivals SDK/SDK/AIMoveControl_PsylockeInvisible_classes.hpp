@@ -23,15 +23,18 @@ class UAIMoveControl_PsylockeInvisible_C final : public UPyAIMoveControl_MoveByF
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_PsylockeInvisible_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_PsylockeInvisible_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_PsylockeInvisible_C")
 	}
 	static class UAIMoveControl_PsylockeInvisible_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_PsylockeInvisible_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_PsylockeInvisible_C) == 0x000008, "Wrong alignment on UAIMoveControl_PsylockeInvisible_C");
-static_assert(sizeof(UAIMoveControl_PsylockeInvisible_C) == 0x0000C8, "Wrong size on UAIMoveControl_PsylockeInvisible_C");
+DUMPER7_ASSERTS_UAIMoveControl_PsylockeInvisible_C;
 
 }
 

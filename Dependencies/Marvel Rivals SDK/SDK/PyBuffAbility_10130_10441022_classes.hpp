@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441022.PyBuffAbility_10130_10444194
-// 0x0010 (0x1A40 - 0x1A30)
+// 0x0010 (0x1A58 - 0x1A48)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyBuffAbility_10130_10444194 : public UPyBuffAbility_10130_10441191
 {
 public:
-	int32                                         AddEnergyOnKill;                                   // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SelfDamageBuffID;                                  // 0x1A34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SelfDamageValue;                                   // 0x1A38(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AddEnergyOnKill;                                   // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SelfDamageBuffID;                                  // 0x1A4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SelfDamageValue;                                   // 0x1A50(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -37,7 +37,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10444194">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10444194")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10444194")
 	}
 	static class UPyBuffAbility_10130_10444194* GetDefaultObj()
 	{
@@ -45,11 +49,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyBuffAbility_10130_10444194) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10444194");
-static_assert(sizeof(UPyBuffAbility_10130_10444194) == 0x001A40, "Wrong size on UPyBuffAbility_10130_10444194");
-static_assert(offsetof(UPyBuffAbility_10130_10444194, AddEnergyOnKill) == 0x001A30, "Member 'UPyBuffAbility_10130_10444194::AddEnergyOnKill' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10444194, SelfDamageBuffID) == 0x001A34, "Member 'UPyBuffAbility_10130_10444194::SelfDamageBuffID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10444194, SelfDamageValue) == 0x001A38, "Member 'UPyBuffAbility_10130_10444194::SelfDamageValue' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10444194;
 
 }
 

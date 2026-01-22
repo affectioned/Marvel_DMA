@@ -10,28 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // PythonFunction PyLevelBlockWall.PyLevelBlockWall.ExecuteHandleHittedDisplayCueLocal
-// 0x18A0 (0x18A0 - 0x0000)
+// 0x1C10 (0x1C10 - 0x0000)
 struct PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal final
 {
 public:
 	class AActor*                                 InSource;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelHittedDisplayData               InHittedDisplayData;                               // 0x0010(0x16A0)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FHitResult                             InHit;                                             // 0x16B0(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelHittedDisplayData               InHittedDisplayData;                               // 0x0010(0x19F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             InHit;                                             // 0x1A00(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal) == 0x000010, "Wrong alignment on PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal");
-static_assert(sizeof(PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal) == 0x0018A0, "Wrong size on PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal");
-static_assert(offsetof(PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal, InSource) == 0x000000, "Member 'PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal::InSource' has a wrong offset!");
-static_assert(offsetof(PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal, InHittedDisplayData) == 0x000010, "Member 'PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal::InHittedDisplayData' has a wrong offset!");
-static_assert(offsetof(PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal, InHit) == 0x0016B0, "Member 'PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal::InHit' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelBlockWall_ExecuteHandleHittedDisplayCueLocal;
 
 }
 

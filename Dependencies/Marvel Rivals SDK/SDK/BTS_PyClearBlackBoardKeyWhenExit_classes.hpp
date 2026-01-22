@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyClearBlackBoardKeyWhenExit">();
+		STATIC_CLASS_IMPL("BTS_PyClearBlackBoardKeyWhenExit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyClearBlackBoardKeyWhenExit")
 	}
 	static class UBTS_PyClearBlackBoardKeyWhenExit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyClearBlackBoardKeyWhenExit>();
 	}
 };
-static_assert(alignof(UBTS_PyClearBlackBoardKeyWhenExit) == 0x000008, "Wrong alignment on UBTS_PyClearBlackBoardKeyWhenExit");
-static_assert(sizeof(UBTS_PyClearBlackBoardKeyWhenExit) == 0x0000D8, "Wrong size on UBTS_PyClearBlackBoardKeyWhenExit");
-static_assert(offsetof(UBTS_PyClearBlackBoardKeyWhenExit, KeyToClear) == 0x0000A8, "Member 'UBTS_PyClearBlackBoardKeyWhenExit::KeyToClear' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyClearBlackBoardKeyWhenExit;
 
 }
 

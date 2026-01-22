@@ -23,15 +23,18 @@ class UAIAbilityExitStage_IronFistFullShield_C final : public UAIAbilityActivati
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStage_IronFistFullShield_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStage_IronFistFullShield_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStage_IronFistFullShield_C")
 	}
 	static class UAIAbilityExitStage_IronFistFullShield_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStage_IronFistFullShield_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStage_IronFistFullShield_C) == 0x000008, "Wrong alignment on UAIAbilityExitStage_IronFistFullShield_C");
-static_assert(sizeof(UAIAbilityExitStage_IronFistFullShield_C) == 0x000050, "Wrong size on UAIAbilityExitStage_IronFistFullShield_C");
+DUMPER7_ASSERTS_UAIAbilityExitStage_IronFistFullShield_C;
 
 }
 

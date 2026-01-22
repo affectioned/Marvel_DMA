@@ -17,55 +17,42 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_RadioBtn_Text.WBP_Common_RadioBtn_Text_C
-// 0x0080 (0x09A0 - 0x0920)
+// 0x0080 (0x09F0 - 0x0970)
 class UWBP_Common_RadioBtn_Text_C final : public UPyWidget_Common_RadioCheckBox
 {
 public:
-	class UMarvelImage*                           Img_Btn_Disable;                                   // 0x0920(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_Disable_Selected;                          // 0x0928(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_Hover;                                     // 0x0930(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_Hover_Selected;                            // 0x0938(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_HoverFrame;                                // 0x0940(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_Normal;                                    // 0x0948(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_Normal_Selected;                           // 0x0950(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_Press;                                     // 0x0958(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_Press_Selected;                            // 0x0960(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_PressBg;                                   // 0x0968(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_Weak;                                      // 0x0970(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Check_Icon2;                                   // 0x0978(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Btn_Disable;                               // 0x0980(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Btn_Hover;                                 // 0x0988(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Btn_Normal;                                // 0x0990(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Btn_Press;                                 // 0x0998(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Disable;                                   // 0x0970(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Disable_Selected;                          // 0x0978(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Hover;                                     // 0x0980(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Hover_Selected;                            // 0x0988(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_HoverFrame;                                // 0x0990(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Normal;                                    // 0x0998(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Normal_Selected;                           // 0x09A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Press;                                     // 0x09A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Press_Selected;                            // 0x09B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_PressBg;                                   // 0x09B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Weak;                                      // 0x09C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Check_Icon2;                                   // 0x09C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Btn_Disable;                               // 0x09D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Btn_Hover;                                 // 0x09D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Btn_Normal;                                // 0x09E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Btn_Press;                                 // 0x09E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_RadioBtn_Text_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_RadioBtn_Text_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_RadioBtn_Text_C")
 	}
 	static class UWBP_Common_RadioBtn_Text_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_RadioBtn_Text_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_RadioBtn_Text_C) == 0x000010, "Wrong alignment on UWBP_Common_RadioBtn_Text_C");
-static_assert(sizeof(UWBP_Common_RadioBtn_Text_C) == 0x0009A0, "Wrong size on UWBP_Common_RadioBtn_Text_C");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Btn_Disable) == 0x000920, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Btn_Disable' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Btn_Disable_Selected) == 0x000928, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Btn_Disable_Selected' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Btn_Hover) == 0x000930, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Btn_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Btn_Hover_Selected) == 0x000938, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Btn_Hover_Selected' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Btn_HoverFrame) == 0x000940, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Btn_HoverFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Btn_Normal) == 0x000948, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Btn_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Btn_Normal_Selected) == 0x000950, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Btn_Normal_Selected' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Btn_Press) == 0x000958, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Btn_Press' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Btn_Press_Selected) == 0x000960, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Btn_Press_Selected' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Btn_PressBg) == 0x000968, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Btn_PressBg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Btn_Weak) == 0x000970, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Btn_Weak' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Img_Check_Icon2) == 0x000978, "Member 'UWBP_Common_RadioBtn_Text_C::Img_Check_Icon2' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Overlay_Btn_Disable) == 0x000980, "Member 'UWBP_Common_RadioBtn_Text_C::Overlay_Btn_Disable' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Overlay_Btn_Hover) == 0x000988, "Member 'UWBP_Common_RadioBtn_Text_C::Overlay_Btn_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Overlay_Btn_Normal) == 0x000990, "Member 'UWBP_Common_RadioBtn_Text_C::Overlay_Btn_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RadioBtn_Text_C, Overlay_Btn_Press) == 0x000998, "Member 'UWBP_Common_RadioBtn_Text_C::Overlay_Btn_Press' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_RadioBtn_Text_C;
 
 }
 

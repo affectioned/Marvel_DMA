@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_10420111.PyEffectAbility_120_10420111
-// 0x0100 (0x1470 - 0x1370)
+// 0x0150 (0x14D8 - 0x1388)
 class UPyEffectAbility_120_10420111 final : public UMarvelEffectGameplayAbility
 {
 public:
-	struct FScopeBuffSpecInfo                     AppendBuff;                                        // 0x1370(0x0100)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FScopeBuffSpecInfo                     AppendBuff;                                        // 0x1388(0x0150)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -30,24 +30,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10420111">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10420111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10420111")
 	}
 	static class UPyEffectAbility_120_10420111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_120_10420111>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_120_10420111) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10420111");
-static_assert(sizeof(UPyEffectAbility_120_10420111) == 0x001470, "Wrong size on UPyEffectAbility_120_10420111");
-static_assert(offsetof(UPyEffectAbility_120_10420111, AppendBuff) == 0x001370, "Member 'UPyEffectAbility_120_10420111::AppendBuff' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10420111;
 
 // PythonClass PyBuffAbility_120_10420111.PyEffectAbility_120_10420112
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyEffectAbility_120_10420112 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         BundledInterval;                                   // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BundledBuffID;                                     // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BundledInterval;                                   // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BundledBuffID;                                     // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -57,17 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10420112">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10420112")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10420112")
 	}
 	static class UPyEffectAbility_120_10420112* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_120_10420112>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_120_10420112) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10420112");
-static_assert(sizeof(UPyEffectAbility_120_10420112) == 0x001378, "Wrong size on UPyEffectAbility_120_10420112");
-static_assert(offsetof(UPyEffectAbility_120_10420112, BundledInterval) == 0x001370, "Member 'UPyEffectAbility_120_10420112::BundledInterval' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10420112, BundledBuffID) == 0x001374, "Member 'UPyEffectAbility_120_10420112::BundledBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10420112;
 
 }
 

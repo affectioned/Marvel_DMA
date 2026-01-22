@@ -11,16 +11,16 @@
 #include "Basic.hpp"
 
 #include "PyWidget_ModuleMainPanel_classes.hpp"
-#include "PyWidget_CommonItem_V2_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 #include "Marvel_structs.hpp"
+#include "PyWidget_CommonItem_V2_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_S2_2SeasonStory_Details.PyWidget_S2_2SeasonStory_Details
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_S2_2SeasonStory_Details final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -32,18 +32,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S2_2SeasonStory_Details">();
+		STATIC_CLASS_IMPL("PyWidget_S2_2SeasonStory_Details")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S2_2SeasonStory_Details")
 	}
 	static class UPyWidget_S2_2SeasonStory_Details* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S2_2SeasonStory_Details>();
 	}
 };
-static_assert(alignof(UPyWidget_S2_2SeasonStory_Details) == 0x000008, "Wrong alignment on UPyWidget_S2_2SeasonStory_Details");
-static_assert(sizeof(UPyWidget_S2_2SeasonStory_Details) == 0x0005F8, "Wrong size on UPyWidget_S2_2SeasonStory_Details");
+DUMPER7_ASSERTS_UPyWidget_S2_2SeasonStory_Details;
 
 // PythonClass PyWidget_S2_2SeasonStory_Details.PyWidget_S2_2SeasonStory_Details_Cipertext
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_S2_2SeasonStory_Details_Cipertext final : public UPyMarvelUserWidget
 {
 public:
@@ -54,27 +57,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S2_2SeasonStory_Details_Cipertext">();
+		STATIC_CLASS_IMPL("PyWidget_S2_2SeasonStory_Details_Cipertext")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S2_2SeasonStory_Details_Cipertext")
 	}
 	static class UPyWidget_S2_2SeasonStory_Details_Cipertext* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S2_2SeasonStory_Details_Cipertext>();
 	}
 };
-static_assert(alignof(UPyWidget_S2_2SeasonStory_Details_Cipertext) == 0x000008, "Wrong alignment on UPyWidget_S2_2SeasonStory_Details_Cipertext");
-static_assert(sizeof(UPyWidget_S2_2SeasonStory_Details_Cipertext) == 0x0005C0, "Wrong size on UPyWidget_S2_2SeasonStory_Details_Cipertext");
+DUMPER7_ASSERTS_UPyWidget_S2_2SeasonStory_Details_Cipertext;
 
 // PythonClass PyWidget_S2_2SeasonStory_Details.PyWidget_S2_2SeasonStory_Details_Puzzleb
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyWidget_S2_2SeasonStory_Details_Puzzleb final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ID;                                                // 0x05BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamePad_GoTo1;                                     // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 event_id, int32 id)> OnPuzzlebActiveFinish;                  // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 event_id, int32 id)> OnPuzzlebFilpFinish;                    // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 event_id, int32 id)> OnPuzzlebLineFinish;                    // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ID;                                                // 0x05C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamePad_GoTo1;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 event_id, int32 id)> OnPuzzlebActiveFinish;                  // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 event_id, int32 id)> OnPuzzlebFilpFinish;                    // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 event_id, int32 id)> OnPuzzlebLineFinish;                    // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -83,23 +89,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S2_2SeasonStory_Details_Puzzleb">();
+		STATIC_CLASS_IMPL("PyWidget_S2_2SeasonStory_Details_Puzzleb")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S2_2SeasonStory_Details_Puzzleb")
 	}
 	static class UPyWidget_S2_2SeasonStory_Details_Puzzleb* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S2_2SeasonStory_Details_Puzzleb>();
 	}
 };
-static_assert(alignof(UPyWidget_S2_2SeasonStory_Details_Puzzleb) == 0x000008, "Wrong alignment on UPyWidget_S2_2SeasonStory_Details_Puzzleb");
-static_assert(sizeof(UPyWidget_S2_2SeasonStory_Details_Puzzleb) == 0x0005F8, "Wrong size on UPyWidget_S2_2SeasonStory_Details_Puzzleb");
-static_assert(offsetof(UPyWidget_S2_2SeasonStory_Details_Puzzleb, ID) == 0x0005BC, "Member 'UPyWidget_S2_2SeasonStory_Details_Puzzleb::ID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S2_2SeasonStory_Details_Puzzleb, GamePad_GoTo1) == 0x0005C0, "Member 'UPyWidget_S2_2SeasonStory_Details_Puzzleb::GamePad_GoTo1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S2_2SeasonStory_Details_Puzzleb, OnPuzzlebActiveFinish) == 0x0005C8, "Member 'UPyWidget_S2_2SeasonStory_Details_Puzzleb::OnPuzzlebActiveFinish' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S2_2SeasonStory_Details_Puzzleb, OnPuzzlebFilpFinish) == 0x0005D8, "Member 'UPyWidget_S2_2SeasonStory_Details_Puzzleb::OnPuzzlebFilpFinish' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S2_2SeasonStory_Details_Puzzleb, OnPuzzlebLineFinish) == 0x0005E8, "Member 'UPyWidget_S2_2SeasonStory_Details_Puzzleb::OnPuzzlebLineFinish' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S2_2SeasonStory_Details_Puzzleb;
 
 // PythonClass PyWidget_S2_2SeasonStory_Details.PyWidget_S2_2SeasonStory_MainItem
-// 0x0000 (0x09A0 - 0x09A0)
+// 0x0000 (0x0A40 - 0x0A40)
 class UPyWidget_S2_2SeasonStory_MainItem final : public UPyWidget_CommonItem
 {
 public:
@@ -115,15 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S2_2SeasonStory_MainItem">();
+		STATIC_CLASS_IMPL("PyWidget_S2_2SeasonStory_MainItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S2_2SeasonStory_MainItem")
 	}
 	static class UPyWidget_S2_2SeasonStory_MainItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S2_2SeasonStory_MainItem>();
 	}
 };
-static_assert(alignof(UPyWidget_S2_2SeasonStory_MainItem) == 0x000010, "Wrong alignment on UPyWidget_S2_2SeasonStory_MainItem");
-static_assert(sizeof(UPyWidget_S2_2SeasonStory_MainItem) == 0x0009A0, "Wrong size on UPyWidget_S2_2SeasonStory_MainItem");
+DUMPER7_ASSERTS_UPyWidget_S2_2SeasonStory_MainItem;
 
 }
 

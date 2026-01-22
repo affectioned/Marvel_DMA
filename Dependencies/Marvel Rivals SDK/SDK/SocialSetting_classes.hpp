@@ -10,12 +10,175 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
 #include "PyDefaultUISettingEntryHandler_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
 {
+
+// PythonClass SocialSetting.UISettingSocialDiscordActionHandler
+// 0x0000 (0x0030 - 0x0030)
+class UUISettingSocialDiscordActionHandler final : public UUISettingEntrySettingHandler
+{
+public:
+	TMap<class FString, int32> BP_OnBtnClicked(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UISettingSocialDiscordActionHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingSocialDiscordActionHandler")
+	}
+	static class UUISettingSocialDiscordActionHandler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUISettingSocialDiscordActionHandler>();
+	}
+};
+DUMPER7_ASSERTS_UUISettingSocialDiscordActionHandler;
+
+// PythonClass SocialSetting.UISettingAnchorModeHandler
+// 0x0000 (0x0030 - 0x0030)
+class UUISettingAnchorModeHandler final : public UPyDefaultSettingEntryHandler
+{
+public:
+	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UISettingAnchorModeHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingAnchorModeHandler")
+	}
+	static class UUISettingAnchorModeHandler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUISettingAnchorModeHandler>();
+	}
+};
+DUMPER7_ASSERTS_UUISettingAnchorModeHandler;
+
+// PythonClass SocialSetting.UISettingEntrySocialHandler
+// 0x0000 (0x0030 - 0x0030)
+class UUISettingEntrySocialHandler final : public UPyDefaultSettingEntryHandler
+{
+public:
+	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
+	TMap<class FString, int32> BP_OnBtnClicked(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
+	float BP_GetCurrentValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& o);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UISettingEntrySocialHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntrySocialHandler")
+	}
+	static class UUISettingEntrySocialHandler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUISettingEntrySocialHandler>();
+	}
+};
+DUMPER7_ASSERTS_UUISettingEntrySocialHandler;
+
+// PythonClass SocialSetting.UISettingCrossPlatformHandler
+// 0x0000 (0x0030 - 0x0030)
+class UUISettingCrossPlatformHandler final : public UPyDefaultSettingEntryHandler
+{
+public:
+	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UISettingCrossPlatformHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingCrossPlatformHandler")
+	}
+	static class UUISettingCrossPlatformHandler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUISettingCrossPlatformHandler>();
+	}
+};
+DUMPER7_ASSERTS_UUISettingCrossPlatformHandler;
+
+// PythonClass SocialSetting.UISettingSocialM2201Handler
+// 0x0000 (0x0030 - 0x0030)
+class UUISettingSocialM2201Handler final : public UPyDefaultSettingEntryHandler
+{
+public:
+	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UISettingSocialM2201Handler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingSocialM2201Handler")
+	}
+	static class UUISettingSocialM2201Handler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUISettingSocialM2201Handler>();
+	}
+};
+DUMPER7_ASSERTS_UUISettingSocialM2201Handler;
+
+// PythonClass SocialSetting.UISettingFriendRecommendHandler
+// 0x0000 (0x0030 - 0x0030)
+class UUISettingFriendRecommendHandler final : public UPyDefaultSettingEntryHandler
+{
+public:
+	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UISettingFriendRecommendHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingFriendRecommendHandler")
+	}
+	static class UUISettingFriendRecommendHandler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUISettingFriendRecommendHandler>();
+	}
+};
+DUMPER7_ASSERTS_UUISettingFriendRecommendHandler;
+
+// PythonClass SocialSetting.UISettingStreamerAnonymousOneselfHandler
+// 0x0000 (0x0030 - 0x0030)
+class UUISettingStreamerAnonymousOneselfHandler final : public UPyDefaultSettingEntryHandler
+{
+public:
+	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UISettingStreamerAnonymousOneselfHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingStreamerAnonymousOneselfHandler")
+	}
+	static class UUISettingStreamerAnonymousOneselfHandler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUISettingStreamerAnonymousOneselfHandler>();
+	}
+};
+DUMPER7_ASSERTS_UUISettingStreamerAnonymousOneselfHandler;
 
 // PythonClass SocialSetting.UISettingAlternateNameHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -31,157 +194,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingAlternateNameHandler">();
+		STATIC_CLASS_IMPL("UISettingAlternateNameHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingAlternateNameHandler")
 	}
 	static class UUISettingAlternateNameHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingAlternateNameHandler>();
 	}
 };
-static_assert(alignof(UUISettingAlternateNameHandler) == 0x000008, "Wrong alignment on UUISettingAlternateNameHandler");
-static_assert(sizeof(UUISettingAlternateNameHandler) == 0x000030, "Wrong size on UUISettingAlternateNameHandler");
-
-// PythonClass SocialSetting.UISettingEntrySocialHandler
-// 0x0000 (0x0030 - 0x0030)
-class UUISettingEntrySocialHandler final : public UPyDefaultSettingEntryHandler
-{
-public:
-	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
-	TMap<class FString, int32> BP_OnBtnClicked(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
-	float BP_GetCurrentValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& o);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UISettingEntrySocialHandler">();
-	}
-	static class UUISettingEntrySocialHandler* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUISettingEntrySocialHandler>();
-	}
-};
-static_assert(alignof(UUISettingEntrySocialHandler) == 0x000008, "Wrong alignment on UUISettingEntrySocialHandler");
-static_assert(sizeof(UUISettingEntrySocialHandler) == 0x000030, "Wrong size on UUISettingEntrySocialHandler");
-
-// PythonClass SocialSetting.UISettingCrossPlatformHandler
-// 0x0000 (0x0030 - 0x0030)
-class UUISettingCrossPlatformHandler final : public UPyDefaultSettingEntryHandler
-{
-public:
-	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UISettingCrossPlatformHandler">();
-	}
-	static class UUISettingCrossPlatformHandler* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUISettingCrossPlatformHandler>();
-	}
-};
-static_assert(alignof(UUISettingCrossPlatformHandler) == 0x000008, "Wrong alignment on UUISettingCrossPlatformHandler");
-static_assert(sizeof(UUISettingCrossPlatformHandler) == 0x000030, "Wrong size on UUISettingCrossPlatformHandler");
-
-// PythonClass SocialSetting.UISettingSocialDiscordActionHandler
-// 0x0000 (0x0030 - 0x0030)
-class UUISettingSocialDiscordActionHandler final : public UUISettingEntrySettingHandler
-{
-public:
-	TMap<class FString, int32> BP_OnBtnClicked(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UISettingSocialDiscordActionHandler">();
-	}
-	static class UUISettingSocialDiscordActionHandler* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUISettingSocialDiscordActionHandler>();
-	}
-};
-static_assert(alignof(UUISettingSocialDiscordActionHandler) == 0x000008, "Wrong alignment on UUISettingSocialDiscordActionHandler");
-static_assert(sizeof(UUISettingSocialDiscordActionHandler) == 0x000030, "Wrong size on UUISettingSocialDiscordActionHandler");
-
-// PythonClass SocialSetting.UISettingAnchorModeHandler
-// 0x0000 (0x0030 - 0x0030)
-class UUISettingAnchorModeHandler final : public UPyDefaultSettingEntryHandler
-{
-public:
-	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UISettingAnchorModeHandler">();
-	}
-	static class UUISettingAnchorModeHandler* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUISettingAnchorModeHandler>();
-	}
-};
-static_assert(alignof(UUISettingAnchorModeHandler) == 0x000008, "Wrong alignment on UUISettingAnchorModeHandler");
-static_assert(sizeof(UUISettingAnchorModeHandler) == 0x000030, "Wrong size on UUISettingAnchorModeHandler");
-
-// PythonClass SocialSetting.UISettingSocialM2201Handler
-// 0x0000 (0x0030 - 0x0030)
-class UUISettingSocialM2201Handler final : public UPyDefaultSettingEntryHandler
-{
-public:
-	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UISettingSocialM2201Handler">();
-	}
-	static class UUISettingSocialM2201Handler* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUISettingSocialM2201Handler>();
-	}
-};
-static_assert(alignof(UUISettingSocialM2201Handler) == 0x000008, "Wrong alignment on UUISettingSocialM2201Handler");
-static_assert(sizeof(UUISettingSocialM2201Handler) == 0x000030, "Wrong size on UUISettingSocialM2201Handler");
-
-// PythonClass SocialSetting.UISettingFriendRecommendHandler
-// 0x0000 (0x0030 - 0x0030)
-class UUISettingFriendRecommendHandler final : public UPyDefaultSettingEntryHandler
-{
-public:
-	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UISettingFriendRecommendHandler">();
-	}
-	static class UUISettingFriendRecommendHandler* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUISettingFriendRecommendHandler>();
-	}
-};
-static_assert(alignof(UUISettingFriendRecommendHandler) == 0x000008, "Wrong alignment on UUISettingFriendRecommendHandler");
-static_assert(sizeof(UUISettingFriendRecommendHandler) == 0x000030, "Wrong size on UUISettingFriendRecommendHandler");
-
-// PythonClass SocialSetting.UISettingStreamerAnonymousOneselfHandler
-// 0x0000 (0x0030 - 0x0030)
-class UUISettingStreamerAnonymousOneselfHandler final : public UPyDefaultSettingEntryHandler
-{
-public:
-	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UISettingStreamerAnonymousOneselfHandler">();
-	}
-	static class UUISettingStreamerAnonymousOneselfHandler* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUISettingStreamerAnonymousOneselfHandler>();
-	}
-};
-static_assert(alignof(UUISettingStreamerAnonymousOneselfHandler) == 0x000008, "Wrong alignment on UUISettingStreamerAnonymousOneselfHandler");
-static_assert(sizeof(UUISettingStreamerAnonymousOneselfHandler) == 0x000030, "Wrong size on UUISettingStreamerAnonymousOneselfHandler");
+DUMPER7_ASSERTS_UUISettingAlternateNameHandler;
 
 }
 

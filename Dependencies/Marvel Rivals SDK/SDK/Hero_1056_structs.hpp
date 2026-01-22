@@ -77,11 +77,7 @@ public:
 	bool                                          bNeedCollideKnockDown;                             // 0x0014(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FGameplayAbilityTargetData_GrabTargetData) == 0x000008, "Wrong alignment on FGameplayAbilityTargetData_GrabTargetData");
-static_assert(sizeof(FGameplayAbilityTargetData_GrabTargetData) == 0x000018, "Wrong size on FGameplayAbilityTargetData_GrabTargetData");
-static_assert(offsetof(FGameplayAbilityTargetData_GrabTargetData, Target) == 0x000008, "Member 'FGameplayAbilityTargetData_GrabTargetData::Target' has a wrong offset!");
-static_assert(offsetof(FGameplayAbilityTargetData_GrabTargetData, PinSlotIndex) == 0x000010, "Member 'FGameplayAbilityTargetData_GrabTargetData::PinSlotIndex' has a wrong offset!");
-static_assert(offsetof(FGameplayAbilityTargetData_GrabTargetData, bNeedCollideKnockDown) == 0x000014, "Member 'FGameplayAbilityTargetData_GrabTargetData::bNeedCollideKnockDown' has a wrong offset!");
+DUMPER7_ASSERTS_FGameplayAbilityTargetData_GrabTargetData;
 
 // ScriptStruct Hero_1056.TargetInfo_105661
 // 0x0010 (0x0010 - 0x0000)
@@ -92,10 +88,7 @@ public:
 	EEndReason_105661                             LinkEndReason;                                     // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTargetInfo_105661) == 0x000008, "Wrong alignment on FTargetInfo_105661");
-static_assert(sizeof(FTargetInfo_105661) == 0x000010, "Wrong size on FTargetInfo_105661");
-static_assert(offsetof(FTargetInfo_105661, Target) == 0x000000, "Member 'FTargetInfo_105661::Target' has a wrong offset!");
-static_assert(offsetof(FTargetInfo_105661, LinkEndReason) == 0x000008, "Member 'FTargetInfo_105661::LinkEndReason' has a wrong offset!");
+DUMPER7_ASSERTS_FTargetInfo_105661;
 
 // ScriptStruct Hero_1056.MeshMaterialUpdate_InnerParam
 // 0x0018 (0x0018 - 0x0000)
@@ -109,13 +102,7 @@ public:
 	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LerpStart;                                         // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMeshMaterialUpdate_InnerParam) == 0x000008, "Wrong alignment on FMeshMaterialUpdate_InnerParam");
-static_assert(sizeof(FMeshMaterialUpdate_InnerParam) == 0x000018, "Wrong size on FMeshMaterialUpdate_InnerParam");
-static_assert(offsetof(FMeshMaterialUpdate_InnerParam, TargetMesh) == 0x000000, "Member 'FMeshMaterialUpdate_InnerParam::TargetMesh' has a wrong offset!");
-static_assert(offsetof(FMeshMaterialUpdate_InnerParam, Time) == 0x000008, "Member 'FMeshMaterialUpdate_InnerParam::Time' has a wrong offset!");
-static_assert(offsetof(FMeshMaterialUpdate_InnerParam, bDisable) == 0x000010, "Member 'FMeshMaterialUpdate_InnerParam::bDisable' has a wrong offset!");
-static_assert(offsetof(FMeshMaterialUpdate_InnerParam, bFadeInLerping) == 0x000011, "Member 'FMeshMaterialUpdate_InnerParam::bFadeInLerping' has a wrong offset!");
-static_assert(offsetof(FMeshMaterialUpdate_InnerParam, LerpStart) == 0x000014, "Member 'FMeshMaterialUpdate_InnerParam::LerpStart' has a wrong offset!");
+DUMPER7_ASSERTS_FMeshMaterialUpdate_InnerParam;
 
 // ScriptStruct Hero_1056.AngelaGlidingAnimConfig
 // 0x0020 (0x0020 - 0x0000)
@@ -129,13 +116,7 @@ public:
 	class UCurveFloat*                            DirAnimCurveX;                                     // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UCurveFloat*                            DirAnimCurveY;                                     // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAngelaGlidingAnimConfig) == 0x000008, "Wrong alignment on FAngelaGlidingAnimConfig");
-static_assert(sizeof(FAngelaGlidingAnimConfig) == 0x000020, "Wrong size on FAngelaGlidingAnimConfig");
-static_assert(offsetof(FAngelaGlidingAnimConfig, ADControlAnimFactor) == 0x000000, "Member 'FAngelaGlidingAnimConfig::ADControlAnimFactor' has a wrong offset!");
-static_assert(offsetof(FAngelaGlidingAnimConfig, SpaceCtrlControlAnimFactor) == 0x000004, "Member 'FAngelaGlidingAnimConfig::SpaceCtrlControlAnimFactor' has a wrong offset!");
-static_assert(offsetof(FAngelaGlidingAnimConfig, PitchInterpSpeed) == 0x000008, "Member 'FAngelaGlidingAnimConfig::PitchInterpSpeed' has a wrong offset!");
-static_assert(offsetof(FAngelaGlidingAnimConfig, DirAnimCurveX) == 0x000010, "Member 'FAngelaGlidingAnimConfig::DirAnimCurveX' has a wrong offset!");
-static_assert(offsetof(FAngelaGlidingAnimConfig, DirAnimCurveY) == 0x000018, "Member 'FAngelaGlidingAnimConfig::DirAnimCurveY' has a wrong offset!");
+DUMPER7_ASSERTS_FAngelaGlidingAnimConfig;
 
 // ScriptStruct Hero_1056.AngelaMeshInterpInfo
 // 0x0028 (0x0028 - 0x0000)
@@ -148,11 +129,7 @@ public:
 	float                                         InterpSpeed;                                       // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAngelaMeshInterpInfo) == 0x000008, "Wrong alignment on FAngelaMeshInterpInfo");
-static_assert(sizeof(FAngelaMeshInterpInfo) == 0x000028, "Wrong size on FAngelaMeshInterpInfo");
-static_assert(offsetof(FAngelaMeshInterpInfo, bIsMeshOffsetChanged) == 0x000000, "Member 'FAngelaMeshInterpInfo::bIsMeshOffsetChanged' has a wrong offset!");
-static_assert(offsetof(FAngelaMeshInterpInfo, MeshAdditionalOffset) == 0x000008, "Member 'FAngelaMeshInterpInfo::MeshAdditionalOffset' has a wrong offset!");
-static_assert(offsetof(FAngelaMeshInterpInfo, InterpSpeed) == 0x000020, "Member 'FAngelaMeshInterpInfo::InterpSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_FAngelaMeshInterpInfo;
 
 // ScriptStruct Hero_1056.MeshMaterialUpdateInfo
 // 0x0080 (0x0080 - 0x0000)
@@ -166,12 +143,7 @@ public:
 	float                                         ReplaceTime;                                       // 0x0078(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMeshMaterialUpdateInfo) == 0x000008, "Wrong alignment on FMeshMaterialUpdateInfo");
-static_assert(sizeof(FMeshMaterialUpdateInfo) == 0x000080, "Wrong size on FMeshMaterialUpdateInfo");
-static_assert(offsetof(FMeshMaterialUpdateInfo, DefaultValue) == 0x000000, "Member 'FMeshMaterialUpdateInfo::DefaultValue' has a wrong offset!");
-static_assert(offsetof(FMeshMaterialUpdateInfo, Curve) == 0x000008, "Member 'FMeshMaterialUpdateInfo::Curve' has a wrong offset!");
-static_assert(offsetof(FMeshMaterialUpdateInfo, PauseStatus) == 0x000010, "Member 'FMeshMaterialUpdateInfo::PauseStatus' has a wrong offset!");
-static_assert(offsetof(FMeshMaterialUpdateInfo, ReplaceTime) == 0x000078, "Member 'FMeshMaterialUpdateInfo::ReplaceTime' has a wrong offset!");
+DUMPER7_ASSERTS_FMeshMaterialUpdateInfo;
 
 // ScriptStruct Hero_1056.AngelaSpringArmConfig
 // 0x0070 (0x0070 - 0x0000)
@@ -192,20 +164,7 @@ public:
 	float                                         SpringBackDelay;                                   // 0x005C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              InputCameraThreshold;                              // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAngelaSpringArmConfig) == 0x000008, "Wrong alignment on FAngelaSpringArmConfig");
-static_assert(sizeof(FAngelaSpringArmConfig) == 0x000070, "Wrong size on FAngelaSpringArmConfig");
-static_assert(offsetof(FAngelaSpringArmConfig, RotFactor) == 0x000000, "Member 'FAngelaSpringArmConfig::RotFactor' has a wrong offset!");
-static_assert(offsetof(FAngelaSpringArmConfig, RotFactor_Anim) == 0x000010, "Member 'FAngelaSpringArmConfig::RotFactor_Anim' has a wrong offset!");
-static_assert(offsetof(FAngelaSpringArmConfig, SocketOffsetTargetY) == 0x000020, "Member 'FAngelaSpringArmConfig::SocketOffsetTargetY' has a wrong offset!");
-static_assert(offsetof(FAngelaSpringArmConfig, MouseRecoverSpeed) == 0x000028, "Member 'FAngelaSpringArmConfig::MouseRecoverSpeed' has a wrong offset!");
-static_assert(offsetof(FAngelaSpringArmConfig, MouseOffsetFactor) == 0x000038, "Member 'FAngelaSpringArmConfig::MouseOffsetFactor' has a wrong offset!");
-static_assert(offsetof(FAngelaSpringArmConfig, InputToOffsetScale) == 0x000048, "Member 'FAngelaSpringArmConfig::InputToOffsetScale' has a wrong offset!");
-static_assert(offsetof(FAngelaSpringArmConfig, AOffset) == 0x00004C, "Member 'FAngelaSpringArmConfig::AOffset' has a wrong offset!");
-static_assert(offsetof(FAngelaSpringArmConfig, DOffset) == 0x000050, "Member 'FAngelaSpringArmConfig::DOffset' has a wrong offset!");
-static_assert(offsetof(FAngelaSpringArmConfig, MouseInterpSpeed) == 0x000054, "Member 'FAngelaSpringArmConfig::MouseInterpSpeed' has a wrong offset!");
-static_assert(offsetof(FAngelaSpringArmConfig, ShiftFlySocketOffsetInterpSpeed) == 0x000058, "Member 'FAngelaSpringArmConfig::ShiftFlySocketOffsetInterpSpeed' has a wrong offset!");
-static_assert(offsetof(FAngelaSpringArmConfig, SpringBackDelay) == 0x00005C, "Member 'FAngelaSpringArmConfig::SpringBackDelay' has a wrong offset!");
-static_assert(offsetof(FAngelaSpringArmConfig, InputCameraThreshold) == 0x000060, "Member 'FAngelaSpringArmConfig::InputCameraThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_FAngelaSpringArmConfig;
 
 // ScriptStruct Hero_1056.WPMaterialMod_1056
 // 0x0050 (0x0050 - 0x0000)
@@ -214,9 +173,7 @@ struct FWPMaterialMod_1056 final
 public:
 	TMap<class FName, struct FRuntimeFloatCurve>  ParamCurveMap;                                     // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWPMaterialMod_1056) == 0x000008, "Wrong alignment on FWPMaterialMod_1056");
-static_assert(sizeof(FWPMaterialMod_1056) == 0x000050, "Wrong size on FWPMaterialMod_1056");
-static_assert(offsetof(FWPMaterialMod_1056, ParamCurveMap) == 0x000000, "Member 'FWPMaterialMod_1056::ParamCurveMap' has a wrong offset!");
+DUMPER7_ASSERTS_FWPMaterialMod_1056;
 
 }
 

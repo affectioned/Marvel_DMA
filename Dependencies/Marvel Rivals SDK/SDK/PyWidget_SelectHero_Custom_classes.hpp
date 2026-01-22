@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectHero_Custom.PyWidget_SelectHero_Custom
-// 0x0020 (0x1500 - 0x14E0)
+// 0x0020 (0x1550 - 0x1530)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_SelectHero_Custom : public UPyWidget_DropDownList
 {
 public:
-	TSubclassOf<class UUserWidget>                CustomSkinListViewCls;                             // 0x14D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUserWidget*                            CustomSkinListView;                                // 0x14E0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Privilege_National_Icon;                   // 0x14E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Privilege_Oversea_Icon;                    // 0x14F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                CustomSkinListViewCls;                             // 0x1528(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            CustomSkinListView;                                // 0x1530(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Privilege_National_Icon;                   // 0x1538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Privilege_Oversea_Icon;                    // 0x1540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,7 +36,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectHero_Custom">();
+		STATIC_CLASS_IMPL("PyWidget_SelectHero_Custom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectHero_Custom")
 	}
 	static class UPyWidget_SelectHero_Custom* GetDefaultObj()
 	{
@@ -44,12 +48,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_SelectHero_Custom) == 0x000010, "Wrong alignment on UPyWidget_SelectHero_Custom");
-static_assert(sizeof(UPyWidget_SelectHero_Custom) == 0x001500, "Wrong size on UPyWidget_SelectHero_Custom");
-static_assert(offsetof(UPyWidget_SelectHero_Custom, CustomSkinListViewCls) == 0x0014D8, "Member 'UPyWidget_SelectHero_Custom::CustomSkinListViewCls' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Custom, CustomSkinListView) == 0x0014E0, "Member 'UPyWidget_SelectHero_Custom::CustomSkinListView' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Custom, Texture_Privilege_National_Icon) == 0x0014E8, "Member 'UPyWidget_SelectHero_Custom::Texture_Privilege_National_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Custom, Texture_Privilege_Oversea_Icon) == 0x0014F0, "Member 'UPyWidget_SelectHero_Custom::Texture_Privilege_Oversea_Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectHero_Custom;
 
 }
 

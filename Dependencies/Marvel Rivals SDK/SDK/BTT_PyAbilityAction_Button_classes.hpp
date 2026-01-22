@@ -23,15 +23,18 @@ class UBTT_PyAbilityAction_Button : public UBTT_PyAbilityActionButtonBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyAbilityAction_Button">();
+		STATIC_CLASS_IMPL("BTT_PyAbilityAction_Button")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyAbilityAction_Button")
 	}
 	static class UBTT_PyAbilityAction_Button* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyAbilityAction_Button>();
 	}
 };
-static_assert(alignof(UBTT_PyAbilityAction_Button) == 0x000008, "Wrong alignment on UBTT_PyAbilityAction_Button");
-static_assert(sizeof(UBTT_PyAbilityAction_Button) == 0x0000F8, "Wrong size on UBTT_PyAbilityAction_Button");
+DUMPER7_ASSERTS_UBTT_PyAbilityAction_Button;
 
 }
 

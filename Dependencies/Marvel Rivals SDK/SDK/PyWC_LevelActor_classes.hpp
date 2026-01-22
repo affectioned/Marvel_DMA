@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWC_LevelActor">();
+		STATIC_CLASS_IMPL("PyWC_LevelActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWC_LevelActor")
 	}
 	static class UPyWC_LevelActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWC_LevelActor>();
 	}
 };
-static_assert(alignof(UPyWC_LevelActor) == 0x000010, "Wrong alignment on UPyWC_LevelActor");
-static_assert(sizeof(UPyWC_LevelActor) == 0x000AE0, "Wrong size on UPyWC_LevelActor");
+DUMPER7_ASSERTS_UPyWC_LevelActor;
 
 }
 

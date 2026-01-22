@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Clan_Advertisement.PyWidget_Clan_Advertisement
-// 0x0270 (0x0830 - 0x05C0)
+// 0x0278 (0x0840 - 0x05C8)
 class UPyWidget_Clan_Advertisement final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            JoinClanImg;                                       // 0x05C0(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ParticipateCompetitionImg;                         // 0x0690(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            CertifyClanImg;                                    // 0x0760(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0xE];                                      // 0x05C2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            JoinClanImg;                                       // 0x05D0(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ParticipateCompetitionImg;                         // 0x06A0(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            CertifyClanImg;                                    // 0x0770(0x00D0)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_Advertisement">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_Advertisement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_Advertisement")
 	}
 	static class UPyWidget_Clan_Advertisement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_Advertisement>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_Advertisement) == 0x000010, "Wrong alignment on UPyWidget_Clan_Advertisement");
-static_assert(sizeof(UPyWidget_Clan_Advertisement) == 0x000830, "Wrong size on UPyWidget_Clan_Advertisement");
-static_assert(offsetof(UPyWidget_Clan_Advertisement, JoinClanImg) == 0x0005C0, "Member 'UPyWidget_Clan_Advertisement::JoinClanImg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_Advertisement, ParticipateCompetitionImg) == 0x000690, "Member 'UPyWidget_Clan_Advertisement::ParticipateCompetitionImg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_Advertisement, CertifyClanImg) == 0x000760, "Member 'UPyWidget_Clan_Advertisement::CertifyClanImg' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Clan_Advertisement;
 
 }
 

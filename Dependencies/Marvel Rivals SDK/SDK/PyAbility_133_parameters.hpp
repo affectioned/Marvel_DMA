@@ -19,26 +19,22 @@ namespace SDK::Params
 {
 
 // PythonFunction PyAbility_133.PyProjectile_133_Base.K2_OnProcessHit
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyProjectile_133_Base_K2_OnProcessHit final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             Hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_133_Base_K2_OnProcessHit) == 0x000008, "Wrong alignment on PyProjectile_133_Base_K2_OnProcessHit");
-static_assert(sizeof(PyProjectile_133_Base_K2_OnProcessHit) == 0x0001F0, "Wrong size on PyProjectile_133_Base_K2_OnProcessHit");
-static_assert(offsetof(PyProjectile_133_Base_K2_OnProcessHit, Hit) == 0x000000, "Member 'PyProjectile_133_Base_K2_OnProcessHit::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_133_Base_K2_OnProcessHit;
 
 // PythonFunction PyAbility_133.PyProjectile_133_Base.K2_OnFlyOverMaxDistance
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyProjectile_133_Base_K2_OnFlyOverMaxDistance final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             Hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_133_Base_K2_OnFlyOverMaxDistance) == 0x000008, "Wrong alignment on PyProjectile_133_Base_K2_OnFlyOverMaxDistance");
-static_assert(sizeof(PyProjectile_133_Base_K2_OnFlyOverMaxDistance) == 0x0001F0, "Wrong size on PyProjectile_133_Base_K2_OnFlyOverMaxDistance");
-static_assert(offsetof(PyProjectile_133_Base_K2_OnFlyOverMaxDistance, Hit) == 0x000000, "Member 'PyProjectile_133_Base_K2_OnFlyOverMaxDistance::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_133_Base_K2_OnFlyOverMaxDistance;
 
 // PythonFunction PyAbility_133.PyAbility_133.CanActivate
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +43,7 @@ struct PyAbility_133_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_133_CanActivate) == 0x000001, "Wrong alignment on PyAbility_133_CanActivate");
-static_assert(sizeof(PyAbility_133_CanActivate) == 0x000001, "Wrong size on PyAbility_133_CanActivate");
-static_assert(offsetof(PyAbility_133_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_133_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_CanActivate;
 
 // PythonFunction PyAbility_133.PyAbility_133.TryMakeTriggerContext
 // 0x0298 (0x0298 - 0x0000)
@@ -59,10 +53,7 @@ public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0290(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_133_TryMakeTriggerContext) == 0x000008, "Wrong alignment on PyAbility_133_TryMakeTriggerContext");
-static_assert(sizeof(PyAbility_133_TryMakeTriggerContext) == 0x000298, "Wrong size on PyAbility_133_TryMakeTriggerContext");
-static_assert(offsetof(PyAbility_133_TryMakeTriggerContext, EventData) == 0x000000, "Member 'PyAbility_133_TryMakeTriggerContext::EventData' has a wrong offset!");
-static_assert(offsetof(PyAbility_133_TryMakeTriggerContext, ReturnValue) == 0x000290, "Member 'PyAbility_133_TryMakeTriggerContext::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_TryMakeTriggerContext;
 
 // PythonFunction PyAbility_133.PyAbility_133.K2_ActivateAbilityFromEvent
 // 0x0290 (0x0290 - 0x0000)
@@ -71,9 +62,7 @@ struct PyAbility_133_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_133_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_133_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_133_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_133_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_133_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_133_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_133.PyAbility_133.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -82,9 +71,7 @@ struct PyAbility_133_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_133_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_133_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_133_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_133_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_133_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_133_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_K2_OnEndAbility;
 
 // PythonFunction PyAbility_133.PyAbility_133.OnTaskTick
 // 0x0004 (0x0004 - 0x0000)
@@ -93,9 +80,7 @@ struct PyAbility_133_OnTaskTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_133_OnTaskTick) == 0x000004, "Wrong alignment on PyAbility_133_OnTaskTick");
-static_assert(sizeof(PyAbility_133_OnTaskTick) == 0x000004, "Wrong size on PyAbility_133_OnTaskTick");
-static_assert(offsetof(PyAbility_133_OnTaskTick, DeltaTime) == 0x000000, "Member 'PyAbility_133_OnTaskTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_OnTaskTick;
 
 // PythonFunction PyAbility_133.PyAbility_133.OnJumpPress
 // 0x0004 (0x0004 - 0x0000)
@@ -104,9 +89,7 @@ struct PyAbility_133_OnJumpPress final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_133_OnJumpPress) == 0x000004, "Wrong alignment on PyAbility_133_OnJumpPress");
-static_assert(sizeof(PyAbility_133_OnJumpPress) == 0x000004, "Wrong size on PyAbility_133_OnJumpPress");
-static_assert(offsetof(PyAbility_133_OnJumpPress, TimeWaited) == 0x000000, "Member 'PyAbility_133_OnJumpPress::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_OnJumpPress;
 
 // PythonFunction PyAbility_133.PyAbility_133.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -115,9 +98,7 @@ struct PyAbility_133_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_133_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_133_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_133_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_133_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_133_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_133_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_133.PyAbility_133.OnSwingingEnd
 // 0x0001 (0x0001 - 0x0000)
@@ -126,24 +107,18 @@ struct PyAbility_133_OnSwingingEnd final
 public:
 	ESwingEndReason                               InEndReason;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_133_OnSwingingEnd) == 0x000001, "Wrong alignment on PyAbility_133_OnSwingingEnd");
-static_assert(sizeof(PyAbility_133_OnSwingingEnd) == 0x000001, "Wrong size on PyAbility_133_OnSwingingEnd");
-static_assert(offsetof(PyAbility_133_OnSwingingEnd, InEndReason) == 0x000000, "Member 'PyAbility_133_OnSwingingEnd::InEndReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_OnSwingingEnd;
 
 // PythonFunction PyAbility_133.PyAbility_133.K2_OnServerReceiveClientMissileData
-// 0x01F8 (0x01F8 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct PyAbility_133_K2_OnServerReceiveClientMissileData final
 {
 public:
-	struct FHitResult                             InHitResult;                                       // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                          bNeedSpecialMove;                                  // 0x01F0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsHitGround;                                      // 0x01F1(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             InHitResult;                                       // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                          bNeedSpecialMove;                                  // 0x0208(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsHitGround;                                      // 0x0209(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_133_K2_OnServerReceiveClientMissileData) == 0x000008, "Wrong alignment on PyAbility_133_K2_OnServerReceiveClientMissileData");
-static_assert(sizeof(PyAbility_133_K2_OnServerReceiveClientMissileData) == 0x0001F8, "Wrong size on PyAbility_133_K2_OnServerReceiveClientMissileData");
-static_assert(offsetof(PyAbility_133_K2_OnServerReceiveClientMissileData, InHitResult) == 0x000000, "Member 'PyAbility_133_K2_OnServerReceiveClientMissileData::InHitResult' has a wrong offset!");
-static_assert(offsetof(PyAbility_133_K2_OnServerReceiveClientMissileData, bNeedSpecialMove) == 0x0001F0, "Member 'PyAbility_133_K2_OnServerReceiveClientMissileData::bNeedSpecialMove' has a wrong offset!");
-static_assert(offsetof(PyAbility_133_K2_OnServerReceiveClientMissileData, bIsHitGround) == 0x0001F1, "Member 'PyAbility_133_K2_OnServerReceiveClientMissileData::bIsHitGround' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_K2_OnServerReceiveClientMissileData;
 
 // PythonFunction PyAbility_133.PyAbility_133.K2_OnNetSyncOnEdgeOffCliff
 // 0x0168 (0x0168 - 0x0000)
@@ -152,9 +127,7 @@ struct PyAbility_133_K2_OnNetSyncOnEdgeOffCliff final
 public:
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_133_K2_OnNetSyncOnEdgeOffCliff) == 0x000008, "Wrong alignment on PyAbility_133_K2_OnNetSyncOnEdgeOffCliff");
-static_assert(sizeof(PyAbility_133_K2_OnNetSyncOnEdgeOffCliff) == 0x000168, "Wrong size on PyAbility_133_K2_OnNetSyncOnEdgeOffCliff");
-static_assert(offsetof(PyAbility_133_K2_OnNetSyncOnEdgeOffCliff, Data) == 0x000000, "Member 'PyAbility_133_K2_OnNetSyncOnEdgeOffCliff::Data' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_K2_OnNetSyncOnEdgeOffCliff;
 
 // PythonFunction PyAbility_133.PyAbility_133.OnSpecialMoveFinish
 // 0x0001 (0x0001 - 0x0000)
@@ -163,9 +136,7 @@ struct PyAbility_133_OnSpecialMoveFinish final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_133_OnSpecialMoveFinish) == 0x000001, "Wrong alignment on PyAbility_133_OnSpecialMoveFinish");
-static_assert(sizeof(PyAbility_133_OnSpecialMoveFinish) == 0x000001, "Wrong size on PyAbility_133_OnSpecialMoveFinish");
-static_assert(offsetof(PyAbility_133_OnSpecialMoveFinish, Reason) == 0x000000, "Member 'PyAbility_133_OnSpecialMoveFinish::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_OnSpecialMoveFinish;
 
 // PythonFunction PyAbility_133.PyAbility_133.OnSpecialMoveFinishSecond
 // 0x0001 (0x0001 - 0x0000)
@@ -174,9 +145,7 @@ struct PyAbility_133_OnSpecialMoveFinishSecond final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_133_OnSpecialMoveFinishSecond) == 0x000001, "Wrong alignment on PyAbility_133_OnSpecialMoveFinishSecond");
-static_assert(sizeof(PyAbility_133_OnSpecialMoveFinishSecond) == 0x000001, "Wrong size on PyAbility_133_OnSpecialMoveFinishSecond");
-static_assert(offsetof(PyAbility_133_OnSpecialMoveFinishSecond, Reason) == 0x000000, "Member 'PyAbility_133_OnSpecialMoveFinishSecond::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_OnSpecialMoveFinishSecond;
 
 // PythonFunction PyAbility_133.PyAbility_133.NetMulticast_SetSwingParams
 // 0x0001 (0x0001 - 0x0000)
@@ -185,20 +154,16 @@ struct PyAbility_133_NetMulticast_SetSwingParams final
 public:
 	bool                                          IsLeftHandShoot;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_133_NetMulticast_SetSwingParams) == 0x000001, "Wrong alignment on PyAbility_133_NetMulticast_SetSwingParams");
-static_assert(sizeof(PyAbility_133_NetMulticast_SetSwingParams) == 0x000001, "Wrong size on PyAbility_133_NetMulticast_SetSwingParams");
-static_assert(offsetof(PyAbility_133_NetMulticast_SetSwingParams, IsLeftHandShoot) == 0x000000, "Member 'PyAbility_133_NetMulticast_SetSwingParams::IsLeftHandShoot' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_NetMulticast_SetSwingParams;
 
 // PythonFunction PyAbility_133.PyAbility_133.K2_ReadySimpleSwing
-// 0x0210 (0x0210 - 0x0000)
+// 0x0228 (0x0228 - 0x0000)
 struct PyAbility_133_K2_ReadySimpleSwing final
 {
 public:
-	struct FSwingInfo                             InSwingInfo;                                       // 0x0000(0x0210)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FSwingInfo                             InSwingInfo;                                       // 0x0000(0x0228)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_133_K2_ReadySimpleSwing) == 0x000008, "Wrong alignment on PyAbility_133_K2_ReadySimpleSwing");
-static_assert(sizeof(PyAbility_133_K2_ReadySimpleSwing) == 0x000210, "Wrong size on PyAbility_133_K2_ReadySimpleSwing");
-static_assert(offsetof(PyAbility_133_K2_ReadySimpleSwing, InSwingInfo) == 0x000000, "Member 'PyAbility_133_K2_ReadySimpleSwing::InSwingInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_133_K2_ReadySimpleSwing;
 
 }
 

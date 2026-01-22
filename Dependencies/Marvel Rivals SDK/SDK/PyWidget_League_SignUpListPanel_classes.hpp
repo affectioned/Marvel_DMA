@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_SignUpListPanel.PyWidget_League_SignUpListPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_League_SignUpListPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -32,15 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_SignUpListPanel">();
+		STATIC_CLASS_IMPL("PyWidget_League_SignUpListPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_SignUpListPanel")
 	}
 	static class UPyWidget_League_SignUpListPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_SignUpListPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_League_SignUpListPanel) == 0x000008, "Wrong alignment on UPyWidget_League_SignUpListPanel");
-static_assert(sizeof(UPyWidget_League_SignUpListPanel) == 0x0005F8, "Wrong size on UPyWidget_League_SignUpListPanel");
+DUMPER7_ASSERTS_UPyWidget_League_SignUpListPanel;
 
 // PythonClass PyWidget_League_SignUpListPanel.League_SignUpList_ItemData
 // 0x0000 (0x0030 - 0x0030)
@@ -49,18 +52,21 @@ class ULeague_SignUpList_ItemData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"League_SignUpList_ItemData">();
+		STATIC_CLASS_IMPL("League_SignUpList_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"League_SignUpList_ItemData")
 	}
 	static class ULeague_SignUpList_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeague_SignUpList_ItemData>();
 	}
 };
-static_assert(alignof(ULeague_SignUpList_ItemData) == 0x000008, "Wrong alignment on ULeague_SignUpList_ItemData");
-static_assert(sizeof(ULeague_SignUpList_ItemData) == 0x000030, "Wrong size on ULeague_SignUpList_ItemData");
+DUMPER7_ASSERTS_ULeague_SignUpList_ItemData;
 
 // PythonClass PyWidget_League_SignUpListPanel.PyWidget_League_SignUpList_Item
-// 0x0000 (0x0570 - 0x0570)
+// 0x0000 (0x0578 - 0x0578)
 class UPyWidget_League_SignUpList_Item final : public UWidget_ListEntry
 {
 public:
@@ -72,15 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_SignUpList_Item">();
+		STATIC_CLASS_IMPL("PyWidget_League_SignUpList_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_SignUpList_Item")
 	}
 	static class UPyWidget_League_SignUpList_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_SignUpList_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_League_SignUpList_Item) == 0x000008, "Wrong alignment on UPyWidget_League_SignUpList_Item");
-static_assert(sizeof(UPyWidget_League_SignUpList_Item) == 0x000570, "Wrong size on UPyWidget_League_SignUpList_Item");
+DUMPER7_ASSERTS_UPyWidget_League_SignUpList_Item;
 
 }
 

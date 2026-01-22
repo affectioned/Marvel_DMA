@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_VideoRecord">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_VideoRecord")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_VideoRecord")
 	}
 	static class UPyWidget_Replay_VideoRecord* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_VideoRecord>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_VideoRecord) == 0x000008, "Wrong alignment on UPyWidget_Replay_VideoRecord");
-static_assert(sizeof(UPyWidget_Replay_VideoRecord) == 0x0003C0, "Wrong size on UPyWidget_Replay_VideoRecord");
-static_assert(offsetof(UPyWidget_Replay_VideoRecord, MinDiskSpaceLimit) == 0x0003B8, "Member 'UPyWidget_Replay_VideoRecord::MinDiskSpaceLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_VideoRecord;
 
 }
 

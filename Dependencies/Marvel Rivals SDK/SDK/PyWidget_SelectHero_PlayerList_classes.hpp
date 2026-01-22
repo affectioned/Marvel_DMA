@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectHero_PlayerList.PyWidget_SelectHero_PlayerList
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_SelectHero_PlayerList : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectHero_PlayerList">();
+		STATIC_CLASS_IMPL("PyWidget_SelectHero_PlayerList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectHero_PlayerList")
 	}
 	static class UPyWidget_SelectHero_PlayerList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectHero_PlayerList>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectHero_PlayerList) == 0x000008, "Wrong alignment on UPyWidget_SelectHero_PlayerList");
-static_assert(sizeof(UPyWidget_SelectHero_PlayerList) == 0x0005C0, "Wrong size on UPyWidget_SelectHero_PlayerList");
+DUMPER7_ASSERTS_UPyWidget_SelectHero_PlayerList;
 
 }
 

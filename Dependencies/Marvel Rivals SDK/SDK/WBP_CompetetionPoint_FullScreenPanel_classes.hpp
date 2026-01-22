@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CompetetionPoint_FullScreenPanel.WBP_CompetetionPoint_FullScreenPanel_C
-// 0x0010 (0x0728 - 0x0718)
+// 0x0010 (0x0730 - 0x0720)
 class UWBP_CompetetionPoint_FullScreenPanel_C final : public UPyWidget_CompetitionPoint_FullScreenPanel
 {
 public:
-	class UWBP_Common_FullScreenButton_C*         WBP_Common_FullScreenButton;                       // 0x0718(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mall_Details_PendantTips_C*        WBP_Mall_Details_PendantTips;                      // 0x0720(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_FullScreenButton_C*         WBP_Common_FullScreenButton;                       // 0x0720(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mall_Details_PendantTips_C*        WBP_Mall_Details_PendantTips;                      // 0x0728(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CompetetionPoint_FullScreenPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CompetetionPoint_FullScreenPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CompetetionPoint_FullScreenPanel_C")
 	}
 	static class UWBP_CompetetionPoint_FullScreenPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CompetetionPoint_FullScreenPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_CompetetionPoint_FullScreenPanel_C) == 0x000008, "Wrong alignment on UWBP_CompetetionPoint_FullScreenPanel_C");
-static_assert(sizeof(UWBP_CompetetionPoint_FullScreenPanel_C) == 0x000728, "Wrong size on UWBP_CompetetionPoint_FullScreenPanel_C");
-static_assert(offsetof(UWBP_CompetetionPoint_FullScreenPanel_C, WBP_Common_FullScreenButton) == 0x000718, "Member 'UWBP_CompetetionPoint_FullScreenPanel_C::WBP_Common_FullScreenButton' has a wrong offset!");
-static_assert(offsetof(UWBP_CompetetionPoint_FullScreenPanel_C, WBP_Mall_Details_PendantTips) == 0x000720, "Member 'UWBP_CompetetionPoint_FullScreenPanel_C::WBP_Mall_Details_PendantTips' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CompetetionPoint_FullScreenPanel_C;
 
 }
 

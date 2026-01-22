@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyCue_Ability_Loop_10185101.PyCue_Ability_Loop_10185101
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_Ability_Loop_10185101 final : public AMarvelCueNotify_Ability
 {
 public:
-	class UAnimMontage*                           LimbsMontage;                                      // 0x11B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimSequence*                          LimbsIdleAnim;                                     // 0x11B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimMontage*                           LimbsMontage;                                      // 0x11C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequence*                          LimbsIdleAnim;                                     // 0x11C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10185101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10185101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10185101")
 	}
 	static class APyCue_Ability_Loop_10185101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10185101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10185101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10185101");
-static_assert(sizeof(APyCue_Ability_Loop_10185101) == 0x0011C0, "Wrong size on APyCue_Ability_Loop_10185101");
-static_assert(offsetof(APyCue_Ability_Loop_10185101, LimbsMontage) == 0x0011B0, "Member 'APyCue_Ability_Loop_10185101::LimbsMontage' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10185101, LimbsIdleAnim) == 0x0011B8, "Member 'APyCue_Ability_Loop_10185101::LimbsIdleAnim' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10185101;
 
 }
 

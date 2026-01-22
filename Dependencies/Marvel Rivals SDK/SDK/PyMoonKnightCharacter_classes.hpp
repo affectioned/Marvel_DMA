@@ -10,32 +10,35 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1030_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Hero_1030_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyMoonKnightCharacter.PyMoonKnightChildActor
-// 0x0000 (0x0F30 - 0x0F30)
+// 0x0000 (0x0F40 - 0x0F40)
 class APyMoonKnightChildActor final : public AMoonKnightChildActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMoonKnightChildActor">();
+		STATIC_CLASS_IMPL("PyMoonKnightChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMoonKnightChildActor")
 	}
 	static class APyMoonKnightChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMoonKnightChildActor>();
 	}
 };
-static_assert(alignof(APyMoonKnightChildActor) == 0x000010, "Wrong alignment on APyMoonKnightChildActor");
-static_assert(sizeof(APyMoonKnightChildActor) == 0x000F30, "Wrong size on APyMoonKnightChildActor");
+DUMPER7_ASSERTS_APyMoonKnightChildActor;
 
 // PythonClass PyMoonKnightCharacter.PyMoonKnightCharacter
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x22C0 - 0x22C0)
 class APyMoonKnightCharacter : public AMoonKnightCharacter
 {
 public:
@@ -47,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMoonKnightCharacter">();
+		STATIC_CLASS_IMPL("PyMoonKnightCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMoonKnightCharacter")
 	}
 	static class APyMoonKnightCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMoonKnightCharacter>();
 	}
 };
-static_assert(alignof(APyMoonKnightCharacter) == 0x000010, "Wrong alignment on APyMoonKnightCharacter");
-static_assert(sizeof(APyMoonKnightCharacter) == 0x0021B0, "Wrong size on APyMoonKnightCharacter");
+DUMPER7_ASSERTS_APyMoonKnightCharacter;
 
 }
 

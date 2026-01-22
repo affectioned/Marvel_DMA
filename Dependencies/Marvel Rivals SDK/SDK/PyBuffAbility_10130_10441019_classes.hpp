@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441019.PyBuffAbility_10130_10440097
-// 0x0020 (0x1A50 - 0x1A30)
+// 0x0020 (0x1A68 - 0x1A48)
 class UPyBuffAbility_10130_10440097 : public UBuffAbility_CommonCardEffect
 {
 public:
-	TArray<int32>                                 ShiftDamage1;                                      // 0x1A30(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<int32>                                 ShiftDamage2;                                      // 0x1A40(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ShiftDamage1;                                      // 0x1A48(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ShiftDamage2;                                      // 0x1A58(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10440097">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10440097")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10440097")
 	}
 	static class UPyBuffAbility_10130_10440097* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10440097>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10440097) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10440097");
-static_assert(sizeof(UPyBuffAbility_10130_10440097) == 0x001A50, "Wrong size on UPyBuffAbility_10130_10440097");
-static_assert(offsetof(UPyBuffAbility_10130_10440097, ShiftDamage1) == 0x001A30, "Member 'UPyBuffAbility_10130_10440097::ShiftDamage1' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10440097, ShiftDamage2) == 0x001A40, "Member 'UPyBuffAbility_10130_10440097::ShiftDamage2' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10440097;
 
 }
 

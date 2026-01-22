@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "Activity_10130_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Activity_10130_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10479014.PyBuffAbility_10130_10479014
-// 0x0070 (0x1AA0 - 0x1A30)
+// 0x0070 (0x1AB8 - 0x1A48)
 class UPyBuffAbility_10130_10479014 : public UBuffAbility_CommonCardEffect
 {
 public:
-	int32                                         InactiveBuffId;                                    // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InactiveDelayTime;                                 // 0x1A34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  ListenGameplayTags;                                // 0x1A38(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         InactiveBuffId;                                    // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InactiveDelayTime;                                 // 0x1A4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  ListenGameplayTags;                                // 0x1A50(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10479014">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10479014")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10479014")
 	}
 	static class UPyBuffAbility_10130_10479014* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10479014>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10479014) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10479014");
-static_assert(sizeof(UPyBuffAbility_10130_10479014) == 0x001AA0, "Wrong size on UPyBuffAbility_10130_10479014");
-static_assert(offsetof(UPyBuffAbility_10130_10479014, InactiveBuffId) == 0x001A30, "Member 'UPyBuffAbility_10130_10479014::InactiveBuffId' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10479014, InactiveDelayTime) == 0x001A34, "Member 'UPyBuffAbility_10130_10479014::InactiveDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10479014, ListenGameplayTags) == 0x001A38, "Member 'UPyBuffAbility_10130_10479014::ListenGameplayTags' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10479014;
 
 }
 

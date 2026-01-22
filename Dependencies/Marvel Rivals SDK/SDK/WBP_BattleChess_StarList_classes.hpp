@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BattleChess_StarList.WBP_BattleChess_StarList_C
-// 0x0008 (0x05D0 - 0x05C8)
+// 0x0008 (0x05D8 - 0x05D0)
 class UWBP_BattleChess_StarList_C final : public UPyWidget_BattleChessStarList
 {
 public:
-	class UWrapBox*                               WrapBox_Star;                                      // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWrapBox*                               WrapBox_Star;                                      // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BattleChess_StarList_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BattleChess_StarList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BattleChess_StarList_C")
 	}
 	static class UWBP_BattleChess_StarList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BattleChess_StarList_C>();
 	}
 };
-static_assert(alignof(UWBP_BattleChess_StarList_C) == 0x000008, "Wrong alignment on UWBP_BattleChess_StarList_C");
-static_assert(sizeof(UWBP_BattleChess_StarList_C) == 0x0005D0, "Wrong size on UWBP_BattleChess_StarList_C");
-static_assert(offsetof(UWBP_BattleChess_StarList_C, WrapBox_Star) == 0x0005C8, "Member 'UWBP_BattleChess_StarList_C::WrapBox_Star' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BattleChess_StarList_C;
 
 }
 

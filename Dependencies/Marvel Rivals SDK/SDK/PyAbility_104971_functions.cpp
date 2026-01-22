@@ -45,25 +45,6 @@ TArray<struct FHitResult> UPyEffectiveComponent_10497101_Base::K2_OnPreApplyCont
 }
 
 
-// PythonFunction PyAbility_104971.PyAbility_AirGrab_104971.OnActiveAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyAbility_AirGrab_104971::OnActiveAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_AirGrab_104971", "OnActiveAbility");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_104971.PyAbility_104971.BeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 

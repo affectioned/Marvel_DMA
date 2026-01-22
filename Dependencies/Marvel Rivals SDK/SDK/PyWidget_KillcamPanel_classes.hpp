@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "Engine_structs.hpp"
 #include "PyWidget_Common_Button_classes.hpp"
@@ -22,30 +22,33 @@ namespace SDK
 {
 
 // PythonClass PyWidget_KillcamPanel.PyWidget_Killcam_KillerItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Killcam_KillerItem final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Killcam_KillerItem">();
+		STATIC_CLASS_IMPL("PyWidget_Killcam_KillerItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Killcam_KillerItem")
 	}
 	static class UPyWidget_Killcam_KillerItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Killcam_KillerItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Killcam_KillerItem) == 0x000008, "Wrong alignment on UPyWidget_Killcam_KillerItem");
-static_assert(sizeof(UPyWidget_Killcam_KillerItem) == 0x0005C0, "Wrong size on UPyWidget_Killcam_KillerItem");
+DUMPER7_ASSERTS_UPyWidget_Killcam_KillerItem;
 
 // PythonClass PyWidget_KillcamPanel.PyWidget_KillCamGuideButton
-// 0x0030 (0x08F0 - 0x08C0)
+// 0x0030 (0x0950 - 0x0920)
 class UPyWidget_KillCamGuideButton final : public UPyWidget_BaseCommonButton
 {
 public:
-	class FText                                   GuideKeyText;                                      // 0x08B8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   GuideTipText;                                      // 0x08D0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UTextBlock*                             Key_Text;                                          // 0x08E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   GuideKeyText;                                      // 0x0918(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   GuideTipText;                                      // 0x0930(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTextBlock*                             Key_Text;                                          // 0x0948(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -53,73 +56,77 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_KillCamGuideButton">();
+		STATIC_CLASS_IMPL("PyWidget_KillCamGuideButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_KillCamGuideButton")
 	}
 	static class UPyWidget_KillCamGuideButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_KillCamGuideButton>();
 	}
 };
-static_assert(alignof(UPyWidget_KillCamGuideButton) == 0x000010, "Wrong alignment on UPyWidget_KillCamGuideButton");
-static_assert(sizeof(UPyWidget_KillCamGuideButton) == 0x0008F0, "Wrong size on UPyWidget_KillCamGuideButton");
-static_assert(offsetof(UPyWidget_KillCamGuideButton, GuideKeyText) == 0x0008B8, "Member 'UPyWidget_KillCamGuideButton::GuideKeyText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_KillCamGuideButton, GuideTipText) == 0x0008D0, "Member 'UPyWidget_KillCamGuideButton::GuideTipText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_KillCamGuideButton, Key_Text) == 0x0008E8, "Member 'UPyWidget_KillCamGuideButton::Key_Text' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_KillCamGuideButton;
 
 // PythonClass PyWidget_KillcamPanel.PyWidget_Killcam_TableItem
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Killcam_TableItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            KillerColor;                                       // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CommonColor;                                       // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            KillerColor;                                       // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CommonColor;                                       // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Killcam_TableItem">();
+		STATIC_CLASS_IMPL("PyWidget_Killcam_TableItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Killcam_TableItem")
 	}
 	static class UPyWidget_Killcam_TableItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Killcam_TableItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Killcam_TableItem) == 0x000008, "Wrong alignment on UPyWidget_Killcam_TableItem");
-static_assert(sizeof(UPyWidget_Killcam_TableItem) == 0x0005E8, "Wrong size on UPyWidget_Killcam_TableItem");
-static_assert(offsetof(UPyWidget_Killcam_TableItem, KillerColor) == 0x0005BC, "Member 'UPyWidget_Killcam_TableItem::KillerColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Killcam_TableItem, CommonColor) == 0x0005D0, "Member 'UPyWidget_Killcam_TableItem::CommonColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Killcam_TableItem;
 
 // PythonClass PyWidget_KillcamPanel.PyWidget_Killcam_Table
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Killcam_Table final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Killcam_Table">();
+		STATIC_CLASS_IMPL("PyWidget_Killcam_Table")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Killcam_Table")
 	}
 	static class UPyWidget_Killcam_Table* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Killcam_Table>();
 	}
 };
-static_assert(alignof(UPyWidget_Killcam_Table) == 0x000008, "Wrong alignment on UPyWidget_Killcam_Table");
-static_assert(sizeof(UPyWidget_Killcam_Table) == 0x0005C0, "Wrong size on UPyWidget_Killcam_Table");
+DUMPER7_ASSERTS_UPyWidget_Killcam_Table;
 
 // PythonClass PyWidget_KillcamPanel.PyWidget_KillcamPanel
-// 0x0058 (0x05C0 - 0x0568)
+// 0x0058 (0x05C8 - 0x0570)
 class UPyWidget_KillcamPanel : public UWidget_Killcam
 {
 public:
-	float                                         AutoCloseTime;                                     // 0x0568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ToggleChatDelayTime;                               // 0x056C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   ExitReplayText;                                    // 0x0570(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   TeamWatchText;                                     // 0x0588(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         SkipDelayTime;                                     // 0x05A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5A4[0x4];                                      // 0x05A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGameplayTag>                   HidePanelTags;                                     // 0x05A8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UInputAction*                           OpenChatAction;                                    // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AutoCloseTime;                                     // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ToggleChatDelayTime;                               // 0x0574(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   ExitReplayText;                                    // 0x0578(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   TeamWatchText;                                     // 0x0590(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         SkipDelayTime;                                     // 0x05A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5AC[0x4];                                      // 0x05AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGameplayTag>                   HidePanelTags;                                     // 0x05B0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UInputAction*                           OpenChatAction;                                    // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -136,22 +143,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_KillcamPanel">();
+		STATIC_CLASS_IMPL("PyWidget_KillcamPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_KillcamPanel")
 	}
 	static class UPyWidget_KillcamPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_KillcamPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_KillcamPanel) == 0x000008, "Wrong alignment on UPyWidget_KillcamPanel");
-static_assert(sizeof(UPyWidget_KillcamPanel) == 0x0005C0, "Wrong size on UPyWidget_KillcamPanel");
-static_assert(offsetof(UPyWidget_KillcamPanel, AutoCloseTime) == 0x000568, "Member 'UPyWidget_KillcamPanel::AutoCloseTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_KillcamPanel, ToggleChatDelayTime) == 0x00056C, "Member 'UPyWidget_KillcamPanel::ToggleChatDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_KillcamPanel, ExitReplayText) == 0x000570, "Member 'UPyWidget_KillcamPanel::ExitReplayText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_KillcamPanel, TeamWatchText) == 0x000588, "Member 'UPyWidget_KillcamPanel::TeamWatchText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_KillcamPanel, SkipDelayTime) == 0x0005A0, "Member 'UPyWidget_KillcamPanel::SkipDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_KillcamPanel, HidePanelTags) == 0x0005A8, "Member 'UPyWidget_KillcamPanel::HidePanelTags' has a wrong offset!");
-static_assert(offsetof(UPyWidget_KillcamPanel, OpenChatAction) == 0x0005B8, "Member 'UPyWidget_KillcamPanel::OpenChatAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_KillcamPanel;
 
 }
 

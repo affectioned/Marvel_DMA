@@ -20,30 +20,31 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102996.PyConfig_102996
-// 0x0BD8 (0x0D18 - 0x0140)
+// 0x0EF8 (0x1038 - 0x0140)
 class UPyConfig_102996 final : public UConfig_102996
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0140(0x0BC8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           SonOfDarknessTag;                                  // 0x0D08(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0140(0x0EE8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           SonOfDarknessTag;                                  // 0x1028(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102996">();
+		STATIC_CLASS_IMPL("PyConfig_102996")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102996")
 	}
 	static class UPyConfig_102996* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102996>();
 	}
 };
-static_assert(alignof(UPyConfig_102996) == 0x000008, "Wrong alignment on UPyConfig_102996");
-static_assert(sizeof(UPyConfig_102996) == 0x000D18, "Wrong size on UPyConfig_102996");
-static_assert(offsetof(UPyConfig_102996, DashInfo) == 0x000140, "Member 'UPyConfig_102996::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102996, SonOfDarknessTag) == 0x000D08, "Member 'UPyConfig_102996::SonOfDarknessTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102996;
 
 // PythonClass PyAbility_102996.PyForceMoveToAbility_10299601
-// 0x0000 (0x1370 - 0x1370)
+// 0x0000 (0x1388 - 0x1388)
 class UPyForceMoveToAbility_10299601 : public UMarvelEffectGameplayAbility
 {
 public:
@@ -53,18 +54,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyForceMoveToAbility_10299601">();
+		STATIC_CLASS_IMPL("PyForceMoveToAbility_10299601")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyForceMoveToAbility_10299601")
 	}
 	static class UPyForceMoveToAbility_10299601* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyForceMoveToAbility_10299601>();
 	}
 };
-static_assert(alignof(UPyForceMoveToAbility_10299601) == 0x000008, "Wrong alignment on UPyForceMoveToAbility_10299601");
-static_assert(sizeof(UPyForceMoveToAbility_10299601) == 0x001370, "Wrong size on UPyForceMoveToAbility_10299601");
+DUMPER7_ASSERTS_UPyForceMoveToAbility_10299601;
 
 // PythonClass PyAbility_102996.PyAbility_102996
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_102996 : public UAbility_108
 {
 public:
@@ -74,18 +78,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102996">();
+		STATIC_CLASS_IMPL("PyAbility_102996")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102996")
 	}
 	static class UPyAbility_102996* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102996>();
 	}
 };
-static_assert(alignof(UPyAbility_102996) == 0x000008, "Wrong alignment on UPyAbility_102996");
-static_assert(sizeof(UPyAbility_102996) == 0x0029F8, "Wrong size on UPyAbility_102996");
+DUMPER7_ASSERTS_UPyAbility_102996;
 
 // PythonClass PyAbility_102996.PyProjectile_10299601
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10299601 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
@@ -95,18 +102,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10299601">();
+		STATIC_CLASS_IMPL("PyProjectile_10299601")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10299601")
 	}
 	static class APyProjectile_10299601* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10299601>();
 	}
 };
-static_assert(alignof(APyProjectile_10299601) == 0x000010, "Wrong alignment on APyProjectile_10299601");
-static_assert(sizeof(APyProjectile_10299601) == 0x003B90, "Wrong size on APyProjectile_10299601");
+DUMPER7_ASSERTS_APyProjectile_10299601;
 
 // PythonClass PyAbility_102996.PyEffectiveComponent_10299601
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10299601 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -115,15 +125,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10299601">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10299601")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10299601")
 	}
 	static class UPyEffectiveComponent_10299601* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10299601>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10299601) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10299601");
-static_assert(sizeof(UPyEffectiveComponent_10299601) == 0x001C70, "Wrong size on UPyEffectiveComponent_10299601");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10299601;
 
 }
 

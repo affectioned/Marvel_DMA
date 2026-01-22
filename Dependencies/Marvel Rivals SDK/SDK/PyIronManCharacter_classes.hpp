@@ -17,38 +17,44 @@ namespace SDK
 {
 
 // PythonClass PyIronManCharacter.PyIronManChildActor
-// 0x0000 (0x0E60 - 0x0E60)
+// 0x0000 (0x0E70 - 0x0E70)
 class APyIronManChildActor final : public AIronManChildActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyIronManChildActor">();
+		STATIC_CLASS_IMPL("PyIronManChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyIronManChildActor")
 	}
 	static class APyIronManChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyIronManChildActor>();
 	}
 };
-static_assert(alignof(APyIronManChildActor) == 0x000010, "Wrong alignment on APyIronManChildActor");
-static_assert(sizeof(APyIronManChildActor) == 0x000E60, "Wrong size on APyIronManChildActor");
+DUMPER7_ASSERTS_APyIronManChildActor;
 
 // PythonClass PyIronManCharacter.PyIronManCharacter
-// 0x0000 (0x21E0 - 0x21E0)
+// 0x0000 (0x22F0 - 0x22F0)
 class APyIronManCharacter : public AIronManCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyIronManCharacter">();
+		STATIC_CLASS_IMPL("PyIronManCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyIronManCharacter")
 	}
 	static class APyIronManCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyIronManCharacter>();
 	}
 };
-static_assert(alignof(APyIronManCharacter) == 0x000010, "Wrong alignment on APyIronManCharacter");
-static_assert(sizeof(APyIronManCharacter) == 0x0021E0, "Wrong size on APyIronManCharacter");
+DUMPER7_ASSERTS_APyIronManCharacter;
 
 }
 

@@ -17,36 +17,34 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104242.PyConfig_104242
-// 0x0010 (0x5B70 - 0x5B60)
+// 0x0010 (0x68B0 - 0x68A0)
 class UPyConfig_104242 final : public UPyConfig_104241
 {
 public:
-	int32                                         ArmorPackID;                                       // 0x5B5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnPackInterval;                                 // 0x5B60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnPackDeltaDegrees;                             // 0x5B64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnPackPitch;                                    // 0x5B68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnPackSpeed;                                    // 0x5B6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ArmorPackID;                                       // 0x689C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnPackInterval;                                 // 0x68A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnPackDeltaDegrees;                             // 0x68A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnPackPitch;                                    // 0x68A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnPackSpeed;                                    // 0x68AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104242">();
+		STATIC_CLASS_IMPL("PyConfig_104242")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104242")
 	}
 	static class UPyConfig_104242* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104242>();
 	}
 };
-static_assert(alignof(UPyConfig_104242) == 0x000010, "Wrong alignment on UPyConfig_104242");
-static_assert(sizeof(UPyConfig_104242) == 0x005B70, "Wrong size on UPyConfig_104242");
-static_assert(offsetof(UPyConfig_104242, ArmorPackID) == 0x005B5C, "Member 'UPyConfig_104242::ArmorPackID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104242, SpawnPackInterval) == 0x005B60, "Member 'UPyConfig_104242::SpawnPackInterval' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104242, SpawnPackDeltaDegrees) == 0x005B64, "Member 'UPyConfig_104242::SpawnPackDeltaDegrees' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104242, SpawnPackPitch) == 0x005B68, "Member 'UPyConfig_104242::SpawnPackPitch' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104242, SpawnPackSpeed) == 0x005B6C, "Member 'UPyConfig_104242::SpawnPackSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104242;
 
 // PythonClass PyAbility_104242.PySummonedComp_10424201
-// 0x0000 (0x0DD8 - 0x0DD8)
+// 0x0000 (0x0E30 - 0x0E30)
 class UPySummonedComp_10424201 final : public UPySummonedComp_10424101
 {
 public:
@@ -57,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10424201">();
+		STATIC_CLASS_IMPL("PySummonedComp_10424201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10424201")
 	}
 	static class UPySummonedComp_10424201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10424201>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10424201) == 0x000008, "Wrong alignment on UPySummonedComp_10424201");
-static_assert(sizeof(UPySummonedComp_10424201) == 0x000DD8, "Wrong size on UPySummonedComp_10424201");
+DUMPER7_ASSERTS_UPySummonedComp_10424201;
 
 }
 

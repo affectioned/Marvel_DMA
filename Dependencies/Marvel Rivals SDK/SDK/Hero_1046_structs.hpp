@@ -44,10 +44,7 @@ public:
 	float                                         Score;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTargetScorePair) == 0x000008, "Wrong alignment on FTargetScorePair");
-static_assert(sizeof(FTargetScorePair) == 0x000010, "Wrong size on FTargetScorePair");
-static_assert(offsetof(FTargetScorePair, Target) == 0x000000, "Member 'FTargetScorePair::Target' has a wrong offset!");
-static_assert(offsetof(FTargetScorePair, Score) == 0x000008, "Member 'FTargetScorePair::Score' has a wrong offset!");
+DUMPER7_ASSERTS_FTargetScorePair;
 
 // ScriptStruct Hero_1046.LinkEffectPair
 // 0x0020 (0x0020 - 0x0000)
@@ -58,9 +55,7 @@ public:
 	class UNiagaraComponent*                      Effect;                                            // 0x0010(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FLinkEffectPair) == 0x000008, "Wrong alignment on FLinkEffectPair");
-static_assert(sizeof(FLinkEffectPair) == 0x000020, "Wrong size on FLinkEffectPair");
-static_assert(offsetof(FLinkEffectPair, Effect) == 0x000010, "Member 'FLinkEffectPair::Effect' has a wrong offset!");
+DUMPER7_ASSERTS_FLinkEffectPair;
 
 // ScriptStruct Hero_1046.TreatPriorityAttribute
 // 0x0058 (0x0058 - 0x0000)
@@ -70,9 +65,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8[0x50];                                       // 0x0008(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTreatPriorityAttribute) == 0x000008, "Wrong alignment on FTreatPriorityAttribute");
-static_assert(sizeof(FTreatPriorityAttribute) == 0x000058, "Wrong size on FTreatPriorityAttribute");
-static_assert(offsetof(FTreatPriorityAttribute, Target) == 0x000000, "Member 'FTreatPriorityAttribute::Target' has a wrong offset!");
+DUMPER7_ASSERTS_FTreatPriorityAttribute;
 
 // ScriptStruct Hero_1046.TreatTarget_104641
 // 0x0010 (0x0010 - 0x0000)
@@ -83,10 +76,7 @@ public:
 	int32                                         TreatCount;                                        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTreatTarget_104641) == 0x000008, "Wrong alignment on FTreatTarget_104641");
-static_assert(sizeof(FTreatTarget_104641) == 0x000010, "Wrong size on FTreatTarget_104641");
-static_assert(offsetof(FTreatTarget_104641, TreatTarget) == 0x000000, "Member 'FTreatTarget_104641::TreatTarget' has a wrong offset!");
-static_assert(offsetof(FTreatTarget_104641, TreatCount) == 0x000008, "Member 'FTreatTarget_104641::TreatCount' has a wrong offset!");
+DUMPER7_ASSERTS_FTreatTarget_104641;
 
 // ScriptStruct Hero_1046.LinkedBuffInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -98,11 +88,7 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         BuffRemainingTime;                                 // 0x000C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLinkedBuffInfo) == 0x000008, "Wrong alignment on FLinkedBuffInfo");
-static_assert(sizeof(FLinkedBuffInfo) == 0x000010, "Wrong size on FLinkedBuffInfo");
-static_assert(offsetof(FLinkedBuffInfo, Target) == 0x000000, "Member 'FLinkedBuffInfo::Target' has a wrong offset!");
-static_assert(offsetof(FLinkedBuffInfo, LinkedBuffState) == 0x000008, "Member 'FLinkedBuffInfo::LinkedBuffState' has a wrong offset!");
-static_assert(offsetof(FLinkedBuffInfo, BuffRemainingTime) == 0x00000C, "Member 'FLinkedBuffInfo::BuffRemainingTime' has a wrong offset!");
+DUMPER7_ASSERTS_FLinkedBuffInfo;
 
 }
 

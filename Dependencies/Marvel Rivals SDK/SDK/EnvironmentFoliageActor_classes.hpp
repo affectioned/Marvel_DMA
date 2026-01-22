@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass EnvironmentFoliageActor.EnvironmentFoliageActor_C
-// 0x0000 (0x06F0 - 0x06F0)
+// 0x0000 (0x0700 - 0x0700)
 class AEnvironmentFoliageActor_C : public AEnvironmentStaticActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EnvironmentFoliageActor_C">();
+		BP_STATIC_CLASS_IMPL("EnvironmentFoliageActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvironmentFoliageActor_C")
 	}
 	static class AEnvironmentFoliageActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEnvironmentFoliageActor_C>();
 	}
 };
-static_assert(alignof(AEnvironmentFoliageActor_C) == 0x000010, "Wrong alignment on AEnvironmentFoliageActor_C");
-static_assert(sizeof(AEnvironmentFoliageActor_C) == 0x0006F0, "Wrong size on AEnvironmentFoliageActor_C");
+DUMPER7_ASSERTS_AEnvironmentFoliageActor_C;
 
 }
 

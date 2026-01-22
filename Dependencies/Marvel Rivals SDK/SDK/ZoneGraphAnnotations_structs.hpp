@@ -33,9 +33,7 @@ public:
 	class UZoneGraphAnnotationComponent*          AnnotationComponent;                               // 0x0000(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRegisteredZoneGraphAnnotation) == 0x000008, "Wrong alignment on FRegisteredZoneGraphAnnotation");
-static_assert(sizeof(FRegisteredZoneGraphAnnotation) == 0x000010, "Wrong size on FRegisteredZoneGraphAnnotation");
-static_assert(offsetof(FRegisteredZoneGraphAnnotation, AnnotationComponent) == 0x000000, "Member 'FRegisteredZoneGraphAnnotation::AnnotationComponent' has a wrong offset!");
+DUMPER7_ASSERTS_FRegisteredZoneGraphAnnotation;
 
 // ScriptStruct ZoneGraphAnnotations.ZoneGraphAnnotationEventBase
 // 0x0000 (0x0000 - 0x0000)
@@ -44,8 +42,7 @@ struct alignas(0x01) FZoneGraphAnnotationEventBase
 {
 };
 #pragma pack(pop)
-static_assert(alignof(FZoneGraphAnnotationEventBase) == 0x000001, "Wrong alignment on FZoneGraphAnnotationEventBase");
-static_assert(sizeof(FZoneGraphAnnotationEventBase) == 0x000001, "Wrong size on FZoneGraphAnnotationEventBase");
+DUMPER7_ASSERTS_FZoneGraphAnnotationEventBase;
 
 // ScriptStruct ZoneGraphAnnotations.ZoneGraphDisturbanceArea
 // 0x0028 (0x0028 - 0x0000)
@@ -58,12 +55,7 @@ public:
 	uint32                                        InstigatorID;                                      // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneGraphDisturbanceArea) == 0x000008, "Wrong alignment on FZoneGraphDisturbanceArea");
-static_assert(sizeof(FZoneGraphDisturbanceArea) == 0x000028, "Wrong size on FZoneGraphDisturbanceArea");
-static_assert(offsetof(FZoneGraphDisturbanceArea, Position) == 0x000000, "Member 'FZoneGraphDisturbanceArea::Position' has a wrong offset!");
-static_assert(offsetof(FZoneGraphDisturbanceArea, Radius) == 0x000018, "Member 'FZoneGraphDisturbanceArea::Radius' has a wrong offset!");
-static_assert(offsetof(FZoneGraphDisturbanceArea, Duration) == 0x00001C, "Member 'FZoneGraphDisturbanceArea::Duration' has a wrong offset!");
-static_assert(offsetof(FZoneGraphDisturbanceArea, InstigatorID) == 0x000020, "Member 'FZoneGraphDisturbanceArea::InstigatorID' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphDisturbanceArea;
 
 // ScriptStruct ZoneGraphAnnotations.ZoneGraphObstacleDisturbanceArea
 // 0x0030 (0x0030 - 0x0000)
@@ -77,12 +69,7 @@ public:
 	EZoneGraphObstacleDisturbanceAreaAction       Action;                                            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneGraphObstacleDisturbanceArea) == 0x000008, "Wrong alignment on FZoneGraphObstacleDisturbanceArea");
-static_assert(sizeof(FZoneGraphObstacleDisturbanceArea) == 0x000030, "Wrong size on FZoneGraphObstacleDisturbanceArea");
-static_assert(offsetof(FZoneGraphObstacleDisturbanceArea, Position) == 0x000000, "Member 'FZoneGraphObstacleDisturbanceArea::Position' has a wrong offset!");
-static_assert(offsetof(FZoneGraphObstacleDisturbanceArea, Radius) == 0x000018, "Member 'FZoneGraphObstacleDisturbanceArea::Radius' has a wrong offset!");
-static_assert(offsetof(FZoneGraphObstacleDisturbanceArea, ObstacleRadius) == 0x00001C, "Member 'FZoneGraphObstacleDisturbanceArea::ObstacleRadius' has a wrong offset!");
-static_assert(offsetof(FZoneGraphObstacleDisturbanceArea, Action) == 0x000028, "Member 'FZoneGraphObstacleDisturbanceArea::Action' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphObstacleDisturbanceArea;
 
 }
 

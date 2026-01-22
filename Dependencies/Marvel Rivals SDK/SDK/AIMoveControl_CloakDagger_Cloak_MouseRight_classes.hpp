@@ -23,15 +23,18 @@ class UAIMoveControl_CloakDagger_Cloak_MouseRight_C final : public UPyAIMoveCont
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_CloakDagger_Cloak_MouseRight_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_CloakDagger_Cloak_MouseRight_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_CloakDagger_Cloak_MouseRight_C")
 	}
 	static class UAIMoveControl_CloakDagger_Cloak_MouseRight_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_CloakDagger_Cloak_MouseRight_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_CloakDagger_Cloak_MouseRight_C) == 0x000008, "Wrong alignment on UAIMoveControl_CloakDagger_Cloak_MouseRight_C");
-static_assert(sizeof(UAIMoveControl_CloakDagger_Cloak_MouseRight_C) == 0x0000C8, "Wrong size on UAIMoveControl_CloakDagger_Cloak_MouseRight_C");
+DUMPER7_ASSERTS_UAIMoveControl_CloakDagger_Cloak_MouseRight_C;
 
 }
 

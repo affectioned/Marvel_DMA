@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ReplayEditorProcessBar.PyWidget_ReplayEditorProcessBar
-// 0x0000 (0x0458 - 0x0458)
+// 0x0000 (0x0438 - 0x0438)
 class UPyWidget_ReplayEditorProcessBar final : public UMarvelSimpleUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReplayEditorProcessBar">();
+		STATIC_CLASS_IMPL("PyWidget_ReplayEditorProcessBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReplayEditorProcessBar")
 	}
 	static class UPyWidget_ReplayEditorProcessBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReplayEditorProcessBar>();
 	}
 };
-static_assert(alignof(UPyWidget_ReplayEditorProcessBar) == 0x000008, "Wrong alignment on UPyWidget_ReplayEditorProcessBar");
-static_assert(sizeof(UPyWidget_ReplayEditorProcessBar) == 0x000458, "Wrong size on UPyWidget_ReplayEditorProcessBar");
+DUMPER7_ASSERTS_UPyWidget_ReplayEditorProcessBar;
 
 }
 

@@ -228,6 +228,33 @@ void ACue_Ability_Loop_10281101::UpdateSwitchAudio()
 }
 
 
+// Function Hero_1028.Ability_102841.BindSelectTaskFilter
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UMarvelAbilityTask_SelectTarget*  TargetTask                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bIsBind                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_102841::BindSelectTaskFilter(class UMarvelAbilityTask_SelectTarget* TargetTask, bool bIsBind)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_102841", "BindSelectTaskFilter");
+
+	Params::Ability_102841_BindSelectTaskFilter Parms{};
+
+	Parms.TargetTask = TargetTask;
+	Parms.bIsBind = bIsBind;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1028.CueProjectileLoop_10284101.OnMyProjectileHit
 // (Final, Native, Public, HasOutParams)
 // Parameters:
@@ -396,6 +423,25 @@ struct FTransform ASummoned_10287101::GetSpringArmDesiredWorldTrans()
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1028.Summoned_10287101.OnRep_SelectedTarget
+// (Native, Event, Protected, BlueprintEvent)
+
+void ASummoned_10287101::OnRep_SelectedTarget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summoned_10287101", "OnRep_SelectedTarget");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 

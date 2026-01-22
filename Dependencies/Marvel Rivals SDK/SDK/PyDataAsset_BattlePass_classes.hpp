@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // PythonClass PyDataAsset_BattlePass.PyDataAsset_BattlePass
-// 0x0300 (0x0338 - 0x0038)
+// 0x0318 (0x0350 - 0x0038)
 class UPyDataAsset_BattlePass final : public UPrimaryDataAsset
 {
 public:
@@ -37,104 +37,62 @@ public:
 	struct FSlateColor                            PageBtnLockColor;                                  // 0x018C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FSlateColor                            PageBtnSelectColor;                                // 0x01A0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FSlateColor                            PageBtnHoverColor;                                 // 0x01B4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         MinCrystalEnableScroll;                            // 0x01C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WheelScrollMultiplier;                             // 0x01CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DesiredSizePerCrystal;                             // 0x01D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DragDirection;                                     // 0x01D4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DefaultOffset;                                     // 0x01D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RotationAngle;                                     // 0x01DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ScrollCurve;                                       // 0x01E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ScrollDuration;                                    // 0x01E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                LinkPointLightningDirection;                       // 0x01F0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              LinkPointLightningTrapezoidSize;                   // 0x0208(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              LinkPointLightningRectSize;                        // 0x0218(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LinkPointLightningRectConstraction;                // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22C[0x4];                                      // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class AActor>                     LinkPointCrystalActorClass;                        // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LinkPointCurCrystalPosIndex;                       // 0x0238(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LinkPointVotexNum;                                 // 0x023C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FVector>                        LinkPointCrystalInitPositions;                     // 0x0240(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          LinkPointbCrystalForceRectPath;                    // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            LinkPointCrystalScaleCurve;                        // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LinkPointCrystalFoundationScaleCurve;              // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LinkPointCrystalWidgetScaleCurve;                  // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LinkPointCrystalHeightOffsetCurve;                 // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LinkPointCrystalAlpahCurve;                        // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LinkPointVotexScaleCurve;                          // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LinkPointVotexHeightOffsetCurve;                   // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LinkPointVotexAlpahCurve;                          // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LinkPointHistoryCrystalScaleCurve;                 // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LinkPointHistoryWidgetScaleCurve;                  // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LinkPointHistoryCrystalHeightOffsetCurve;          // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LinkPointHistoryCrystalAlpahCurve;                 // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UMarvelUserWidget>          LinkPointCrystalBubbleWidget;                      // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UMarvelUserWidget>          LinkPointGuideTipsWidget;                          // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SettlementRuleCNURL;                               // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SettlementRuleURL;                                 // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FString, float>                    CountdownColorMap;                                 // 0x02E8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PageBreatheNormalColor;                            // 0x01C8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         MinCrystalEnableScroll;                            // 0x01DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WheelScrollMultiplier;                             // 0x01E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DesiredSizePerCrystal;                             // 0x01E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DragDirection;                                     // 0x01E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DefaultOffset;                                     // 0x01EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RotationAngle;                                     // 0x01F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            ScrollCurve;                                       // 0x01F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ScrollDuration;                                    // 0x0200(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                LinkPointLightningDirection;                       // 0x0208(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              LinkPointLightningTrapezoidSize;                   // 0x0220(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              LinkPointLightningRectSize;                        // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LinkPointLightningRectConstraction;                // 0x0240(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_244[0x4];                                      // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class AActor>                     LinkPointCrystalActorClass;                        // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LinkPointCurCrystalPosIndex;                       // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LinkPointVotexNum;                                 // 0x0254(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FVector>                        LinkPointCrystalInitPositions;                     // 0x0258(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          LinkPointbCrystalForceRectPath;                    // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_269[0x7];                                      // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            LinkPointCrystalScaleCurve;                        // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LinkPointCrystalFoundationScaleCurve;              // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LinkPointCrystalWidgetScaleCurve;                  // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LinkPointCrystalHeightOffsetCurve;                 // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LinkPointCrystalAlpahCurve;                        // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LinkPointVotexScaleCurve;                          // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LinkPointVotexHeightOffsetCurve;                   // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LinkPointVotexAlpahCurve;                          // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LinkPointHistoryCrystalScaleCurve;                 // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LinkPointHistoryWidgetScaleCurve;                  // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LinkPointHistoryCrystalHeightOffsetCurve;          // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LinkPointHistoryCrystalAlpahCurve;                 // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UMarvelUserWidget>          LinkPointCrystalBubbleWidget;                      // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UMarvelUserWidget>          LinkPointGuideTipsWidget;                          // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SettlementRuleCNURL;                               // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SettlementRuleURL;                                 // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, float>                    CountdownColorMap;                                 // 0x0300(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataAsset_BattlePass">();
+		STATIC_CLASS_IMPL("PyDataAsset_BattlePass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataAsset_BattlePass")
 	}
 	static class UPyDataAsset_BattlePass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataAsset_BattlePass>();
 	}
 };
-static_assert(alignof(UPyDataAsset_BattlePass) == 0x000008, "Wrong alignment on UPyDataAsset_BattlePass");
-static_assert(sizeof(UPyDataAsset_BattlePass) == 0x000338, "Wrong size on UPyDataAsset_BattlePass");
-static_assert(offsetof(UPyDataAsset_BattlePass, EnoughCoinBtnTextColor) == 0x000038, "Member 'UPyDataAsset_BattlePass::EnoughCoinBtnTextColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, NoEnoughCoinBtnTextColor) == 0x00004C, "Member 'UPyDataAsset_BattlePass::NoEnoughCoinBtnTextColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, PropViewBtnPromptNormalColor) == 0x000060, "Member 'UPyDataAsset_BattlePass::PropViewBtnPromptNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, PropViewBtnPromptExclusiveUnableColor) == 0x000074, "Member 'UPyDataAsset_BattlePass::PropViewBtnPromptExclusiveUnableColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, ItemQualityIconMap) == 0x000088, "Member 'UPyDataAsset_BattlePass::ItemQualityIconMap' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, PrevPageBtnImage) == 0x0000D8, "Member 'UPyDataAsset_BattlePass::PrevPageBtnImage' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, HomePageBtnImage) == 0x000100, "Member 'UPyDataAsset_BattlePass::HomePageBtnImage' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, PageUnlockImage) == 0x000128, "Member 'UPyDataAsset_BattlePass::PageUnlockImage' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, PageLockImage) == 0x000150, "Member 'UPyDataAsset_BattlePass::PageLockImage' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, PageBtnNormalColor) == 0x000178, "Member 'UPyDataAsset_BattlePass::PageBtnNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, PageBtnLockColor) == 0x00018C, "Member 'UPyDataAsset_BattlePass::PageBtnLockColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, PageBtnSelectColor) == 0x0001A0, "Member 'UPyDataAsset_BattlePass::PageBtnSelectColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, PageBtnHoverColor) == 0x0001B4, "Member 'UPyDataAsset_BattlePass::PageBtnHoverColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, MinCrystalEnableScroll) == 0x0001C8, "Member 'UPyDataAsset_BattlePass::MinCrystalEnableScroll' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, WheelScrollMultiplier) == 0x0001CC, "Member 'UPyDataAsset_BattlePass::WheelScrollMultiplier' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, DesiredSizePerCrystal) == 0x0001D0, "Member 'UPyDataAsset_BattlePass::DesiredSizePerCrystal' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, DragDirection) == 0x0001D4, "Member 'UPyDataAsset_BattlePass::DragDirection' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, DefaultOffset) == 0x0001D8, "Member 'UPyDataAsset_BattlePass::DefaultOffset' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, RotationAngle) == 0x0001DC, "Member 'UPyDataAsset_BattlePass::RotationAngle' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, ScrollCurve) == 0x0001E0, "Member 'UPyDataAsset_BattlePass::ScrollCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, ScrollDuration) == 0x0001E8, "Member 'UPyDataAsset_BattlePass::ScrollDuration' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointLightningDirection) == 0x0001F0, "Member 'UPyDataAsset_BattlePass::LinkPointLightningDirection' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointLightningTrapezoidSize) == 0x000208, "Member 'UPyDataAsset_BattlePass::LinkPointLightningTrapezoidSize' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointLightningRectSize) == 0x000218, "Member 'UPyDataAsset_BattlePass::LinkPointLightningRectSize' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointLightningRectConstraction) == 0x000228, "Member 'UPyDataAsset_BattlePass::LinkPointLightningRectConstraction' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointCrystalActorClass) == 0x000230, "Member 'UPyDataAsset_BattlePass::LinkPointCrystalActorClass' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointCurCrystalPosIndex) == 0x000238, "Member 'UPyDataAsset_BattlePass::LinkPointCurCrystalPosIndex' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointVotexNum) == 0x00023C, "Member 'UPyDataAsset_BattlePass::LinkPointVotexNum' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointCrystalInitPositions) == 0x000240, "Member 'UPyDataAsset_BattlePass::LinkPointCrystalInitPositions' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointbCrystalForceRectPath) == 0x000250, "Member 'UPyDataAsset_BattlePass::LinkPointbCrystalForceRectPath' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointCrystalScaleCurve) == 0x000258, "Member 'UPyDataAsset_BattlePass::LinkPointCrystalScaleCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointCrystalFoundationScaleCurve) == 0x000260, "Member 'UPyDataAsset_BattlePass::LinkPointCrystalFoundationScaleCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointCrystalWidgetScaleCurve) == 0x000268, "Member 'UPyDataAsset_BattlePass::LinkPointCrystalWidgetScaleCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointCrystalHeightOffsetCurve) == 0x000270, "Member 'UPyDataAsset_BattlePass::LinkPointCrystalHeightOffsetCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointCrystalAlpahCurve) == 0x000278, "Member 'UPyDataAsset_BattlePass::LinkPointCrystalAlpahCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointVotexScaleCurve) == 0x000280, "Member 'UPyDataAsset_BattlePass::LinkPointVotexScaleCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointVotexHeightOffsetCurve) == 0x000288, "Member 'UPyDataAsset_BattlePass::LinkPointVotexHeightOffsetCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointVotexAlpahCurve) == 0x000290, "Member 'UPyDataAsset_BattlePass::LinkPointVotexAlpahCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointHistoryCrystalScaleCurve) == 0x000298, "Member 'UPyDataAsset_BattlePass::LinkPointHistoryCrystalScaleCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointHistoryWidgetScaleCurve) == 0x0002A0, "Member 'UPyDataAsset_BattlePass::LinkPointHistoryWidgetScaleCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointHistoryCrystalHeightOffsetCurve) == 0x0002A8, "Member 'UPyDataAsset_BattlePass::LinkPointHistoryCrystalHeightOffsetCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointHistoryCrystalAlpahCurve) == 0x0002B0, "Member 'UPyDataAsset_BattlePass::LinkPointHistoryCrystalAlpahCurve' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointCrystalBubbleWidget) == 0x0002B8, "Member 'UPyDataAsset_BattlePass::LinkPointCrystalBubbleWidget' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, LinkPointGuideTipsWidget) == 0x0002C0, "Member 'UPyDataAsset_BattlePass::LinkPointGuideTipsWidget' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, SettlementRuleCNURL) == 0x0002C8, "Member 'UPyDataAsset_BattlePass::SettlementRuleCNURL' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, SettlementRuleURL) == 0x0002D8, "Member 'UPyDataAsset_BattlePass::SettlementRuleURL' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass, CountdownColorMap) == 0x0002E8, "Member 'UPyDataAsset_BattlePass::CountdownColorMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDataAsset_BattlePass;
 
 }
 

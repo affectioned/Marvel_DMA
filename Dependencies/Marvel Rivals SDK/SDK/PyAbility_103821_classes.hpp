@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103821.PyAbility_103821
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_103821 : public UAbility_108
 {
 public:
@@ -28,23 +28,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103821">();
+		STATIC_CLASS_IMPL("PyAbility_103821")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103821")
 	}
 	static class UPyAbility_103821* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103821>();
 	}
 };
-static_assert(alignof(UPyAbility_103821) == 0x000008, "Wrong alignment on UPyAbility_103821");
-static_assert(sizeof(UPyAbility_103821) == 0x0029F8, "Wrong size on UPyAbility_103821");
+DUMPER7_ASSERTS_UPyAbility_103821;
 
 // PythonClass PyAbility_103821.PyUIController_103821
-// 0x0018 (0x0F28 - 0x0F10)
+// 0x0018 (0x1208 - 0x11F0)
 class UPyUIController_103821 final : public UUIC_Ability
 {
 public:
-	struct FGameplayTag                           UltraAbilityTag;                                   // 0x0F10(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ShiftAbilityTag;                                   // 0x0F1C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           UltraAbilityTag;                                   // 0x11F0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ShiftAbilityTag;                                   // 0x11FC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -54,17 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_103821">();
+		STATIC_CLASS_IMPL("PyUIController_103821")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_103821")
 	}
 	static class UPyUIController_103821* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_103821>();
 	}
 };
-static_assert(alignof(UPyUIController_103821) == 0x000008, "Wrong alignment on UPyUIController_103821");
-static_assert(sizeof(UPyUIController_103821) == 0x000F28, "Wrong size on UPyUIController_103821");
-static_assert(offsetof(UPyUIController_103821, UltraAbilityTag) == 0x000F10, "Member 'UPyUIController_103821::UltraAbilityTag' has a wrong offset!");
-static_assert(offsetof(UPyUIController_103821, ShiftAbilityTag) == 0x000F1C, "Member 'UPyUIController_103821::ShiftAbilityTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_103821;
 
 }
 

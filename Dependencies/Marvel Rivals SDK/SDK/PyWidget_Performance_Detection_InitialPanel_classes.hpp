@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Performance_Detection_InitialPanel.PyWidget_Performance_Detection_InitialPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Performance_Detection_InitialPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_Detection_InitialPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_Detection_InitialPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_Detection_InitialPanel")
 	}
 	static class UPyWidget_Performance_Detection_InitialPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_Detection_InitialPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_Detection_InitialPanel) == 0x000008, "Wrong alignment on UPyWidget_Performance_Detection_InitialPanel");
-static_assert(sizeof(UPyWidget_Performance_Detection_InitialPanel) == 0x0005F8, "Wrong size on UPyWidget_Performance_Detection_InitialPanel");
+DUMPER7_ASSERTS_UPyWidget_Performance_Detection_InitialPanel;
 
 }
 

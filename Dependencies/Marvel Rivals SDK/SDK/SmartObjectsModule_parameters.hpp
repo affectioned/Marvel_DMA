@@ -28,10 +28,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_AddMultipleSmartObjects) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_AddMultipleSmartObjects");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_AddMultipleSmartObjects) == 0x000018, "Wrong size on SmartObjectBlueprintFunctionLibrary_AddMultipleSmartObjects");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_AddMultipleSmartObjects, SmartObjectActors) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_AddMultipleSmartObjects::SmartObjectActors' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_AddMultipleSmartObjects, ReturnValue) == 0x000010, "Member 'SmartObjectBlueprintFunctionLibrary_AddMultipleSmartObjects::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_AddMultipleSmartObjects;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.AddOrRemoveMultipleSmartObjects
 // 0x0018 (0x0018 - 0x0000)
@@ -43,11 +40,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_AddOrRemoveMultipleSmartObjects) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_AddOrRemoveMultipleSmartObjects");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_AddOrRemoveMultipleSmartObjects) == 0x000018, "Wrong size on SmartObjectBlueprintFunctionLibrary_AddOrRemoveMultipleSmartObjects");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_AddOrRemoveMultipleSmartObjects, SmartObjectActors) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_AddOrRemoveMultipleSmartObjects::SmartObjectActors' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_AddOrRemoveMultipleSmartObjects, bAdd) == 0x000010, "Member 'SmartObjectBlueprintFunctionLibrary_AddOrRemoveMultipleSmartObjects::bAdd' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_AddOrRemoveMultipleSmartObjects, ReturnValue) == 0x000011, "Member 'SmartObjectBlueprintFunctionLibrary_AddOrRemoveMultipleSmartObjects::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_AddOrRemoveMultipleSmartObjects;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.AddOrRemoveSmartObject
 // 0x0010 (0x0010 - 0x0000)
@@ -59,11 +52,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_AddOrRemoveSmartObject) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_AddOrRemoveSmartObject");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_AddOrRemoveSmartObject) == 0x000010, "Wrong size on SmartObjectBlueprintFunctionLibrary_AddOrRemoveSmartObject");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_AddOrRemoveSmartObject, SmartObject) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_AddOrRemoveSmartObject::SmartObject' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_AddOrRemoveSmartObject, bEnabled) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_AddOrRemoveSmartObject::bEnabled' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_AddOrRemoveSmartObject, ReturnValue) == 0x000009, "Member 'SmartObjectBlueprintFunctionLibrary_AddOrRemoveSmartObject::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_AddOrRemoveSmartObject;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.AddSmartObject
 // 0x0010 (0x0010 - 0x0000)
@@ -74,10 +63,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_AddSmartObject) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_AddSmartObject");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_AddSmartObject) == 0x000010, "Wrong size on SmartObjectBlueprintFunctionLibrary_AddSmartObject");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_AddSmartObject, SmartObjectActor) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_AddSmartObject::SmartObjectActor' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_AddSmartObject, ReturnValue) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_AddSmartObject::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_AddSmartObject;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.GetBlackboardValueAsSOClaimHandle
 // 0x0058 (0x0058 - 0x0000)
@@ -88,11 +74,7 @@ public:
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FSmartObjectClaimHandle                ReturnValue;                                       // 0x0038(0x0020)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_GetBlackboardValueAsSOClaimHandle) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_GetBlackboardValueAsSOClaimHandle");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_GetBlackboardValueAsSOClaimHandle) == 0x000058, "Wrong size on SmartObjectBlueprintFunctionLibrary_GetBlackboardValueAsSOClaimHandle");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_GetBlackboardValueAsSOClaimHandle, NodeOwner) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_GetBlackboardValueAsSOClaimHandle::NodeOwner' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_GetBlackboardValueAsSOClaimHandle, Key) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_GetBlackboardValueAsSOClaimHandle::Key' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_GetBlackboardValueAsSOClaimHandle, ReturnValue) == 0x000038, "Member 'SmartObjectBlueprintFunctionLibrary_GetBlackboardValueAsSOClaimHandle::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_GetBlackboardValueAsSOClaimHandle;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.GetValueAsSOClaimHandle
 // 0x0038 (0x0038 - 0x0000)
@@ -104,11 +86,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSmartObjectClaimHandle                ReturnValue;                                       // 0x0018(0x0020)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_GetValueAsSOClaimHandle) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_GetValueAsSOClaimHandle");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_GetValueAsSOClaimHandle) == 0x000038, "Wrong size on SmartObjectBlueprintFunctionLibrary_GetValueAsSOClaimHandle");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_GetValueAsSOClaimHandle, BlackboardComponent) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_GetValueAsSOClaimHandle::BlackboardComponent' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_GetValueAsSOClaimHandle, KeyName) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_GetValueAsSOClaimHandle::KeyName' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_GetValueAsSOClaimHandle, ReturnValue) == 0x000018, "Member 'SmartObjectBlueprintFunctionLibrary_GetValueAsSOClaimHandle::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_GetValueAsSOClaimHandle;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.IsValidSmartObjectClaimHandle
 // 0x0028 (0x0028 - 0x0000)
@@ -119,10 +97,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_IsValidSmartObjectClaimHandle) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_IsValidSmartObjectClaimHandle");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_IsValidSmartObjectClaimHandle) == 0x000028, "Wrong size on SmartObjectBlueprintFunctionLibrary_IsValidSmartObjectClaimHandle");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_IsValidSmartObjectClaimHandle, Handle) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_IsValidSmartObjectClaimHandle::Handle' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_IsValidSmartObjectClaimHandle, ReturnValue) == 0x000020, "Member 'SmartObjectBlueprintFunctionLibrary_IsValidSmartObjectClaimHandle::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_IsValidSmartObjectClaimHandle;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.MarkSmartObjectSlotAsClaimed
 // 0x0040 (0x0040 - 0x0000)
@@ -134,12 +109,7 @@ public:
 	const class AActor*                           UserActor;                                         // 0x0018(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSmartObjectClaimHandle                ReturnValue;                                       // 0x0020(0x0020)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed) == 0x000040, "Wrong size on SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed, WorldContextObject) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed, SlotHandle) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed::SlotHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed, UserActor) == 0x000018, "Member 'SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed::UserActor' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed, ReturnValue) == 0x000020, "Member 'SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsClaimed;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.MarkSmartObjectSlotAsFree
 // 0x0030 (0x0030 - 0x0000)
@@ -151,11 +121,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsFree) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsFree");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsFree) == 0x000030, "Wrong size on SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsFree");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsFree, WorldContextObject) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsFree::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsFree, ClaimHandle) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsFree::ClaimHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsFree, ReturnValue) == 0x000028, "Member 'SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsFree::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsFree;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.MarkSmartObjectSlotAsOccupied
 // 0x0038 (0x0038 - 0x0000)
@@ -167,12 +133,7 @@ public:
 	TSubclassOf<class USmartObjectBehaviorDefinition> DefinitionClass;                               // 0x0028(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class USmartObjectBehaviorDefinition*   ReturnValue;                                       // 0x0030(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied) == 0x000038, "Wrong size on SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied, WorldContextObject) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied, ClaimHandle) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied::ClaimHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied, DefinitionClass) == 0x000028, "Member 'SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied::DefinitionClass' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied, ReturnValue) == 0x000030, "Member 'SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_MarkSmartObjectSlotAsOccupied;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.RemoveMultipleSmartObjects
 // 0x0018 (0x0018 - 0x0000)
@@ -183,10 +144,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_RemoveMultipleSmartObjects) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_RemoveMultipleSmartObjects");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_RemoveMultipleSmartObjects) == 0x000018, "Wrong size on SmartObjectBlueprintFunctionLibrary_RemoveMultipleSmartObjects");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_RemoveMultipleSmartObjects, SmartObjectActors) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_RemoveMultipleSmartObjects::SmartObjectActors' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_RemoveMultipleSmartObjects, ReturnValue) == 0x000010, "Member 'SmartObjectBlueprintFunctionLibrary_RemoveMultipleSmartObjects::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_RemoveMultipleSmartObjects;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.RemoveSmartObject
 // 0x0010 (0x0010 - 0x0000)
@@ -197,10 +155,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_RemoveSmartObject) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_RemoveSmartObject");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_RemoveSmartObject) == 0x000010, "Wrong size on SmartObjectBlueprintFunctionLibrary_RemoveSmartObject");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_RemoveSmartObject, SmartObjectActor) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_RemoveSmartObject::SmartObjectActor' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_RemoveSmartObject, ReturnValue) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_RemoveSmartObject::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_RemoveSmartObject;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.SetBlackboardValueAsSOClaimHandle
 // 0x0058 (0x0058 - 0x0000)
@@ -211,11 +166,7 @@ public:
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FSmartObjectClaimHandle                Value;                                             // 0x0038(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_SetBlackboardValueAsSOClaimHandle) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_SetBlackboardValueAsSOClaimHandle");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_SetBlackboardValueAsSOClaimHandle) == 0x000058, "Wrong size on SmartObjectBlueprintFunctionLibrary_SetBlackboardValueAsSOClaimHandle");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetBlackboardValueAsSOClaimHandle, NodeOwner) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_SetBlackboardValueAsSOClaimHandle::NodeOwner' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetBlackboardValueAsSOClaimHandle, Key) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_SetBlackboardValueAsSOClaimHandle::Key' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetBlackboardValueAsSOClaimHandle, Value) == 0x000038, "Member 'SmartObjectBlueprintFunctionLibrary_SetBlackboardValueAsSOClaimHandle::Value' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_SetBlackboardValueAsSOClaimHandle;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.SetMultipleSmartObjectsEnabled
 // 0x0018 (0x0018 - 0x0000)
@@ -227,11 +178,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_SetMultipleSmartObjectsEnabled) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_SetMultipleSmartObjectsEnabled");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_SetMultipleSmartObjectsEnabled) == 0x000018, "Wrong size on SmartObjectBlueprintFunctionLibrary_SetMultipleSmartObjectsEnabled");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetMultipleSmartObjectsEnabled, SmartObjectActors) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_SetMultipleSmartObjectsEnabled::SmartObjectActors' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetMultipleSmartObjectsEnabled, bEnabled) == 0x000010, "Member 'SmartObjectBlueprintFunctionLibrary_SetMultipleSmartObjectsEnabled::bEnabled' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetMultipleSmartObjectsEnabled, ReturnValue) == 0x000011, "Member 'SmartObjectBlueprintFunctionLibrary_SetMultipleSmartObjectsEnabled::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_SetMultipleSmartObjectsEnabled;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.SetSmartObjectEnabled
 // 0x0010 (0x0010 - 0x0000)
@@ -243,11 +190,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_SetSmartObjectEnabled) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_SetSmartObjectEnabled");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_SetSmartObjectEnabled) == 0x000010, "Wrong size on SmartObjectBlueprintFunctionLibrary_SetSmartObjectEnabled");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetSmartObjectEnabled, SmartObjectActor) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_SetSmartObjectEnabled::SmartObjectActor' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetSmartObjectEnabled, bEnabled) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_SetSmartObjectEnabled::bEnabled' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetSmartObjectEnabled, ReturnValue) == 0x000009, "Member 'SmartObjectBlueprintFunctionLibrary_SetSmartObjectEnabled::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_SetSmartObjectEnabled;
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.SetValueAsSOClaimHandle
 // 0x0038 (0x0038 - 0x0000)
@@ -259,11 +202,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSmartObjectClaimHandle                Value;                                             // 0x0018(0x0020)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_SetValueAsSOClaimHandle) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_SetValueAsSOClaimHandle");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_SetValueAsSOClaimHandle) == 0x000038, "Wrong size on SmartObjectBlueprintFunctionLibrary_SetValueAsSOClaimHandle");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetValueAsSOClaimHandle, BlackboardComponent) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_SetValueAsSOClaimHandle::BlackboardComponent' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetValueAsSOClaimHandle, KeyName) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_SetValueAsSOClaimHandle::KeyName' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_SetValueAsSOClaimHandle, Value) == 0x000018, "Member 'SmartObjectBlueprintFunctionLibrary_SetValueAsSOClaimHandle::Value' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectBlueprintFunctionLibrary_SetValueAsSOClaimHandle;
 
 // Function SmartObjectsModule.SmartObjectComponent.ReceiveOnEvent
 // 0x0040 (0x0040 - 0x0000)
@@ -273,10 +212,7 @@ public:
 	struct FSmartObjectEventData                  EventData;                                         // 0x0000(0x0038)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	const class AActor*                           Interactor;                                        // 0x0038(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectComponent_ReceiveOnEvent) == 0x000008, "Wrong alignment on SmartObjectComponent_ReceiveOnEvent");
-static_assert(sizeof(SmartObjectComponent_ReceiveOnEvent) == 0x000040, "Wrong size on SmartObjectComponent_ReceiveOnEvent");
-static_assert(offsetof(SmartObjectComponent_ReceiveOnEvent, EventData) == 0x000000, "Member 'SmartObjectComponent_ReceiveOnEvent::EventData' has a wrong offset!");
-static_assert(offsetof(SmartObjectComponent_ReceiveOnEvent, Interactor) == 0x000038, "Member 'SmartObjectComponent_ReceiveOnEvent::Interactor' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectComponent_ReceiveOnEvent;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.AddTagToInstance
 // 0x0018 (0x0018 - 0x0000)
@@ -287,10 +223,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_AddTagToInstance) == 0x000008, "Wrong alignment on SmartObjectSubsystem_AddTagToInstance");
-static_assert(sizeof(SmartObjectSubsystem_AddTagToInstance) == 0x000018, "Wrong size on SmartObjectSubsystem_AddTagToInstance");
-static_assert(offsetof(SmartObjectSubsystem_AddTagToInstance, Handle) == 0x000000, "Member 'SmartObjectSubsystem_AddTagToInstance::Handle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_AddTagToInstance, Tag) == 0x000008, "Member 'SmartObjectSubsystem_AddTagToInstance::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_AddTagToInstance;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.AddTagToSlot
 // 0x0020 (0x0020 - 0x0000)
@@ -301,10 +234,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0010(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_AddTagToSlot) == 0x000008, "Wrong alignment on SmartObjectSubsystem_AddTagToSlot");
-static_assert(sizeof(SmartObjectSubsystem_AddTagToSlot) == 0x000020, "Wrong size on SmartObjectSubsystem_AddTagToSlot");
-static_assert(offsetof(SmartObjectSubsystem_AddTagToSlot, SlotHandle) == 0x000000, "Member 'SmartObjectSubsystem_AddTagToSlot::SlotHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_AddTagToSlot, Tag) == 0x000010, "Member 'SmartObjectSubsystem_AddTagToSlot::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_AddTagToSlot;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.Claim
 // 0x0040 (0x0040 - 0x0000)
@@ -315,11 +245,7 @@ public:
 	const class AActor*                           UserActor;                                         // 0x0018(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSmartObjectClaimHandle                ReturnValue;                                       // 0x0020(0x0020)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectSubsystem_Claim) == 0x000008, "Wrong alignment on SmartObjectSubsystem_Claim");
-static_assert(sizeof(SmartObjectSubsystem_Claim) == 0x000040, "Wrong size on SmartObjectSubsystem_Claim");
-static_assert(offsetof(SmartObjectSubsystem_Claim, RequestResult) == 0x000000, "Member 'SmartObjectSubsystem_Claim::RequestResult' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_Claim, UserActor) == 0x000018, "Member 'SmartObjectSubsystem_Claim::UserActor' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_Claim, ReturnValue) == 0x000020, "Member 'SmartObjectSubsystem_Claim::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_Claim;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.GetBehaviorDefinition
 // 0x0030 (0x0030 - 0x0000)
@@ -330,11 +256,7 @@ public:
 	TSubclassOf<class USmartObjectBehaviorDefinition> DefinitionClass;                               // 0x0020(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class USmartObjectBehaviorDefinition*   ReturnValue;                                       // 0x0028(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectSubsystem_GetBehaviorDefinition) == 0x000008, "Wrong alignment on SmartObjectSubsystem_GetBehaviorDefinition");
-static_assert(sizeof(SmartObjectSubsystem_GetBehaviorDefinition) == 0x000030, "Wrong size on SmartObjectSubsystem_GetBehaviorDefinition");
-static_assert(offsetof(SmartObjectSubsystem_GetBehaviorDefinition, ClaimHandle) == 0x000000, "Member 'SmartObjectSubsystem_GetBehaviorDefinition::ClaimHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetBehaviorDefinition, DefinitionClass) == 0x000020, "Member 'SmartObjectSubsystem_GetBehaviorDefinition::DefinitionClass' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetBehaviorDefinition, ReturnValue) == 0x000028, "Member 'SmartObjectSubsystem_GetBehaviorDefinition::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_GetBehaviorDefinition;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.GetBehaviorDefinitionByRequestResult
 // 0x0028 (0x0028 - 0x0000)
@@ -345,11 +267,7 @@ public:
 	TSubclassOf<class USmartObjectBehaviorDefinition> DefinitionClass;                               // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class USmartObjectBehaviorDefinition*   ReturnValue;                                       // 0x0020(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectSubsystem_GetBehaviorDefinitionByRequestResult) == 0x000008, "Wrong alignment on SmartObjectSubsystem_GetBehaviorDefinitionByRequestResult");
-static_assert(sizeof(SmartObjectSubsystem_GetBehaviorDefinitionByRequestResult) == 0x000028, "Wrong size on SmartObjectSubsystem_GetBehaviorDefinitionByRequestResult");
-static_assert(offsetof(SmartObjectSubsystem_GetBehaviorDefinitionByRequestResult, RequestResult) == 0x000000, "Member 'SmartObjectSubsystem_GetBehaviorDefinitionByRequestResult::RequestResult' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetBehaviorDefinitionByRequestResult, DefinitionClass) == 0x000018, "Member 'SmartObjectSubsystem_GetBehaviorDefinitionByRequestResult::DefinitionClass' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetBehaviorDefinitionByRequestResult, ReturnValue) == 0x000020, "Member 'SmartObjectSubsystem_GetBehaviorDefinitionByRequestResult::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_GetBehaviorDefinitionByRequestResult;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.Release
 // 0x0028 (0x0028 - 0x0000)
@@ -360,10 +278,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_Release) == 0x000008, "Wrong alignment on SmartObjectSubsystem_Release");
-static_assert(sizeof(SmartObjectSubsystem_Release) == 0x000028, "Wrong size on SmartObjectSubsystem_Release");
-static_assert(offsetof(SmartObjectSubsystem_Release, ClaimHandle) == 0x000000, "Member 'SmartObjectSubsystem_Release::ClaimHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_Release, ReturnValue) == 0x000020, "Member 'SmartObjectSubsystem_Release::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_Release;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.RemoveTagFromInstance
 // 0x0018 (0x0018 - 0x0000)
@@ -374,10 +289,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_RemoveTagFromInstance) == 0x000008, "Wrong alignment on SmartObjectSubsystem_RemoveTagFromInstance");
-static_assert(sizeof(SmartObjectSubsystem_RemoveTagFromInstance) == 0x000018, "Wrong size on SmartObjectSubsystem_RemoveTagFromInstance");
-static_assert(offsetof(SmartObjectSubsystem_RemoveTagFromInstance, Handle) == 0x000000, "Member 'SmartObjectSubsystem_RemoveTagFromInstance::Handle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_RemoveTagFromInstance, Tag) == 0x000008, "Member 'SmartObjectSubsystem_RemoveTagFromInstance::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_RemoveTagFromInstance;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.RemoveTagFromSlot
 // 0x0020 (0x0020 - 0x0000)
@@ -389,11 +301,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_RemoveTagFromSlot) == 0x000008, "Wrong alignment on SmartObjectSubsystem_RemoveTagFromSlot");
-static_assert(sizeof(SmartObjectSubsystem_RemoveTagFromSlot) == 0x000020, "Wrong size on SmartObjectSubsystem_RemoveTagFromSlot");
-static_assert(offsetof(SmartObjectSubsystem_RemoveTagFromSlot, SlotHandle) == 0x000000, "Member 'SmartObjectSubsystem_RemoveTagFromSlot::SlotHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_RemoveTagFromSlot, Tag) == 0x000010, "Member 'SmartObjectSubsystem_RemoveTagFromSlot::Tag' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_RemoveTagFromSlot, ReturnValue) == 0x00001C, "Member 'SmartObjectSubsystem_RemoveTagFromSlot::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_RemoveTagFromSlot;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.SetEnabled
 // 0x0010 (0x0010 - 0x0000)
@@ -405,11 +313,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_SetEnabled) == 0x000008, "Wrong alignment on SmartObjectSubsystem_SetEnabled");
-static_assert(sizeof(SmartObjectSubsystem_SetEnabled) == 0x000010, "Wrong size on SmartObjectSubsystem_SetEnabled");
-static_assert(offsetof(SmartObjectSubsystem_SetEnabled, Handle) == 0x000000, "Member 'SmartObjectSubsystem_SetEnabled::Handle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_SetEnabled, bEnabled) == 0x000008, "Member 'SmartObjectSubsystem_SetEnabled::bEnabled' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_SetEnabled, ReturnValue) == 0x000009, "Member 'SmartObjectSubsystem_SetEnabled::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_SetEnabled;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.SetSlotEnabled
 // 0x0018 (0x0018 - 0x0000)
@@ -421,11 +325,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_SetSlotEnabled) == 0x000008, "Wrong alignment on SmartObjectSubsystem_SetSlotEnabled");
-static_assert(sizeof(SmartObjectSubsystem_SetSlotEnabled) == 0x000018, "Wrong size on SmartObjectSubsystem_SetSlotEnabled");
-static_assert(offsetof(SmartObjectSubsystem_SetSlotEnabled, SlotHandle) == 0x000000, "Member 'SmartObjectSubsystem_SetSlotEnabled::SlotHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_SetSlotEnabled, bEnabled) == 0x000010, "Member 'SmartObjectSubsystem_SetSlotEnabled::bEnabled' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_SetSlotEnabled, ReturnValue) == 0x000011, "Member 'SmartObjectSubsystem_SetSlotEnabled::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_SetSlotEnabled;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.Use
 // 0x0030 (0x0030 - 0x0000)
@@ -436,11 +336,7 @@ public:
 	TSubclassOf<class USmartObjectBehaviorDefinition> DefinitionClass;                               // 0x0020(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class USmartObjectBehaviorDefinition*   ReturnValue;                                       // 0x0028(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectSubsystem_Use) == 0x000008, "Wrong alignment on SmartObjectSubsystem_Use");
-static_assert(sizeof(SmartObjectSubsystem_Use) == 0x000030, "Wrong size on SmartObjectSubsystem_Use");
-static_assert(offsetof(SmartObjectSubsystem_Use, ClaimHandle) == 0x000000, "Member 'SmartObjectSubsystem_Use::ClaimHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_Use, DefinitionClass) == 0x000020, "Member 'SmartObjectSubsystem_Use::DefinitionClass' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_Use, ReturnValue) == 0x000028, "Member 'SmartObjectSubsystem_Use::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_Use;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.FindSmartObject
 // 0x01A0 (0x01A0 - 0x0000)
@@ -451,11 +347,7 @@ public:
 	const class AActor*                           UserActor;                                         // 0x0180(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSmartObjectRequestResult              ReturnValue;                                       // 0x0188(0x0018)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectSubsystem_FindSmartObject) == 0x000010, "Wrong alignment on SmartObjectSubsystem_FindSmartObject");
-static_assert(sizeof(SmartObjectSubsystem_FindSmartObject) == 0x0001A0, "Wrong size on SmartObjectSubsystem_FindSmartObject");
-static_assert(offsetof(SmartObjectSubsystem_FindSmartObject, Request) == 0x000000, "Member 'SmartObjectSubsystem_FindSmartObject::Request' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_FindSmartObject, UserActor) == 0x000180, "Member 'SmartObjectSubsystem_FindSmartObject::UserActor' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_FindSmartObject, ReturnValue) == 0x000188, "Member 'SmartObjectSubsystem_FindSmartObject::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_FindSmartObject;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.FindSmartObjects
 // 0x01A0 (0x01A0 - 0x0000)
@@ -468,12 +360,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0198(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_FindSmartObjects) == 0x000010, "Wrong alignment on SmartObjectSubsystem_FindSmartObjects");
-static_assert(sizeof(SmartObjectSubsystem_FindSmartObjects) == 0x0001A0, "Wrong size on SmartObjectSubsystem_FindSmartObjects");
-static_assert(offsetof(SmartObjectSubsystem_FindSmartObjects, Request) == 0x000000, "Member 'SmartObjectSubsystem_FindSmartObjects::Request' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_FindSmartObjects, OutResults) == 0x000180, "Member 'SmartObjectSubsystem_FindSmartObjects::OutResults' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_FindSmartObjects, UserActor) == 0x000190, "Member 'SmartObjectSubsystem_FindSmartObjects::UserActor' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_FindSmartObjects, ReturnValue) == 0x000198, "Member 'SmartObjectSubsystem_FindSmartObjects::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_FindSmartObjects;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.FindSmartObjects_BP
 // 0x01A0 (0x01A0 - 0x0000)
@@ -486,12 +373,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0198(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_FindSmartObjects_BP) == 0x000010, "Wrong alignment on SmartObjectSubsystem_FindSmartObjects_BP");
-static_assert(sizeof(SmartObjectSubsystem_FindSmartObjects_BP) == 0x0001A0, "Wrong size on SmartObjectSubsystem_FindSmartObjects_BP");
-static_assert(offsetof(SmartObjectSubsystem_FindSmartObjects_BP, Request) == 0x000000, "Member 'SmartObjectSubsystem_FindSmartObjects_BP::Request' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_FindSmartObjects_BP, OutResults) == 0x000180, "Member 'SmartObjectSubsystem_FindSmartObjects_BP::OutResults' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_FindSmartObjects_BP, UserActor) == 0x000190, "Member 'SmartObjectSubsystem_FindSmartObjects_BP::UserActor' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_FindSmartObjects_BP, ReturnValue) == 0x000198, "Member 'SmartObjectSubsystem_FindSmartObjects_BP::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_FindSmartObjects_BP;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.GetInstanceTags
 // 0x0070 (0x0070 - 0x0000)
@@ -501,10 +383,7 @@ public:
 	struct FSmartObjectHandle                     Handle;                                            // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGameplayTagContainer                  ReturnValue;                                       // 0x0008(0x0068)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectSubsystem_GetInstanceTags) == 0x000008, "Wrong alignment on SmartObjectSubsystem_GetInstanceTags");
-static_assert(sizeof(SmartObjectSubsystem_GetInstanceTags) == 0x000070, "Wrong size on SmartObjectSubsystem_GetInstanceTags");
-static_assert(offsetof(SmartObjectSubsystem_GetInstanceTags, Handle) == 0x000000, "Member 'SmartObjectSubsystem_GetInstanceTags::Handle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetInstanceTags, ReturnValue) == 0x000008, "Member 'SmartObjectSubsystem_GetInstanceTags::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_GetInstanceTags;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.GetSlotLocation
 // 0x0040 (0x0040 - 0x0000)
@@ -516,11 +395,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_GetSlotLocation) == 0x000008, "Wrong alignment on SmartObjectSubsystem_GetSlotLocation");
-static_assert(sizeof(SmartObjectSubsystem_GetSlotLocation) == 0x000040, "Wrong size on SmartObjectSubsystem_GetSlotLocation");
-static_assert(offsetof(SmartObjectSubsystem_GetSlotLocation, ClaimHandle) == 0x000000, "Member 'SmartObjectSubsystem_GetSlotLocation::ClaimHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetSlotLocation, OutSlotLocation) == 0x000020, "Member 'SmartObjectSubsystem_GetSlotLocation::OutSlotLocation' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetSlotLocation, ReturnValue) == 0x000038, "Member 'SmartObjectSubsystem_GetSlotLocation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_GetSlotLocation;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.GetSlotTags
 // 0x0078 (0x0078 - 0x0000)
@@ -530,10 +405,7 @@ public:
 	struct FSmartObjectSlotHandle                 SlotHandle;                                        // 0x0000(0x0010)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGameplayTagContainer                  ReturnValue;                                       // 0x0010(0x0068)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectSubsystem_GetSlotTags) == 0x000008, "Wrong alignment on SmartObjectSubsystem_GetSlotTags");
-static_assert(sizeof(SmartObjectSubsystem_GetSlotTags) == 0x000078, "Wrong size on SmartObjectSubsystem_GetSlotTags");
-static_assert(offsetof(SmartObjectSubsystem_GetSlotTags, SlotHandle) == 0x000000, "Member 'SmartObjectSubsystem_GetSlotTags::SlotHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetSlotTags, ReturnValue) == 0x000010, "Member 'SmartObjectSubsystem_GetSlotTags::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_GetSlotTags;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.GetSlotTransform
 // 0x0090 (0x0090 - 0x0000)
@@ -545,11 +417,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0080(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_81[0xF];                                       // 0x0081(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_GetSlotTransform) == 0x000010, "Wrong alignment on SmartObjectSubsystem_GetSlotTransform");
-static_assert(sizeof(SmartObjectSubsystem_GetSlotTransform) == 0x000090, "Wrong size on SmartObjectSubsystem_GetSlotTransform");
-static_assert(offsetof(SmartObjectSubsystem_GetSlotTransform, ClaimHandle) == 0x000000, "Member 'SmartObjectSubsystem_GetSlotTransform::ClaimHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetSlotTransform, OutSlotTransform) == 0x000020, "Member 'SmartObjectSubsystem_GetSlotTransform::OutSlotTransform' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetSlotTransform, ReturnValue) == 0x000080, "Member 'SmartObjectSubsystem_GetSlotTransform::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_GetSlotTransform;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.GetSlotTransformFromRequestResult
 // 0x0090 (0x0090 - 0x0000)
@@ -562,11 +430,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0080(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_81[0xF];                                       // 0x0081(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectSubsystem_GetSlotTransformFromRequestResult) == 0x000010, "Wrong alignment on SmartObjectSubsystem_GetSlotTransformFromRequestResult");
-static_assert(sizeof(SmartObjectSubsystem_GetSlotTransformFromRequestResult) == 0x000090, "Wrong size on SmartObjectSubsystem_GetSlotTransformFromRequestResult");
-static_assert(offsetof(SmartObjectSubsystem_GetSlotTransformFromRequestResult, RequestResult) == 0x000000, "Member 'SmartObjectSubsystem_GetSlotTransformFromRequestResult::RequestResult' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetSlotTransformFromRequestResult, OutSlotTransform) == 0x000020, "Member 'SmartObjectSubsystem_GetSlotTransformFromRequestResult::OutSlotTransform' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetSlotTransformFromRequestResult, ReturnValue) == 0x000080, "Member 'SmartObjectSubsystem_GetSlotTransformFromRequestResult::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_GetSlotTransformFromRequestResult;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.GetSmartObjectComponent
 // 0x0028 (0x0028 - 0x0000)
@@ -576,10 +440,7 @@ public:
 	struct FSmartObjectClaimHandle                ClaimHandle;                                       // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	class USmartObjectComponent*                  ReturnValue;                                       // 0x0020(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectSubsystem_GetSmartObjectComponent) == 0x000008, "Wrong alignment on SmartObjectSubsystem_GetSmartObjectComponent");
-static_assert(sizeof(SmartObjectSubsystem_GetSmartObjectComponent) == 0x000028, "Wrong size on SmartObjectSubsystem_GetSmartObjectComponent");
-static_assert(offsetof(SmartObjectSubsystem_GetSmartObjectComponent, ClaimHandle) == 0x000000, "Member 'SmartObjectSubsystem_GetSmartObjectComponent::ClaimHandle' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetSmartObjectComponent, ReturnValue) == 0x000020, "Member 'SmartObjectSubsystem_GetSmartObjectComponent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_GetSmartObjectComponent;
 
 // Function SmartObjectsModule.SmartObjectSubsystem.GetSmartObjectComponentByRequestResult
 // 0x0020 (0x0020 - 0x0000)
@@ -589,10 +450,7 @@ public:
 	struct FSmartObjectRequestResult              Result;                                            // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	class USmartObjectComponent*                  ReturnValue;                                       // 0x0018(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SmartObjectSubsystem_GetSmartObjectComponentByRequestResult) == 0x000008, "Wrong alignment on SmartObjectSubsystem_GetSmartObjectComponentByRequestResult");
-static_assert(sizeof(SmartObjectSubsystem_GetSmartObjectComponentByRequestResult) == 0x000020, "Wrong size on SmartObjectSubsystem_GetSmartObjectComponentByRequestResult");
-static_assert(offsetof(SmartObjectSubsystem_GetSmartObjectComponentByRequestResult, Result) == 0x000000, "Member 'SmartObjectSubsystem_GetSmartObjectComponentByRequestResult::Result' has a wrong offset!");
-static_assert(offsetof(SmartObjectSubsystem_GetSmartObjectComponentByRequestResult, ReturnValue) == 0x000018, "Member 'SmartObjectSubsystem_GetSmartObjectComponentByRequestResult::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SmartObjectSubsystem_GetSmartObjectComponentByRequestResult;
 
 }
 

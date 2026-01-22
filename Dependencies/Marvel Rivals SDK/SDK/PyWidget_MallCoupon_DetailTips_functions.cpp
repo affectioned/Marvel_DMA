@@ -54,5 +54,30 @@ void UPyWidget_MallCoupon_DetailTips::Destruct()
 	Func->FunctionFlags = Flgs;
 }
 
+
+// PythonFunction PyWidget_MallCoupon_DetailTips.PyWidget_MallCoupon_DetailTips.OnCascadingVisibleChanged
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bNewVisible                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_MallCoupon_DetailTips::OnCascadingVisibleChanged(bool bNewVisible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_MallCoupon_DetailTips", "OnCascadingVisibleChanged");
+
+	Params::PyWidget_MallCoupon_DetailTips_OnCascadingVisibleChanged Parms{};
+
+	Parms.bNewVisible = bNewVisible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
 }
 

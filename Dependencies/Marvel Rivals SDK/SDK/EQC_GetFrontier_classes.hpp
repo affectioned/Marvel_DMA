@@ -23,15 +23,18 @@ class UEQC_GetFrontier_C final : public UEnvQueryContext_BlackboardActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQC_GetFrontier_C">();
+		BP_STATIC_CLASS_IMPL("EQC_GetFrontier_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQC_GetFrontier_C")
 	}
 	static class UEQC_GetFrontier_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQC_GetFrontier_C>();
 	}
 };
-static_assert(alignof(UEQC_GetFrontier_C) == 0x000008, "Wrong alignment on UEQC_GetFrontier_C");
-static_assert(sizeof(UEQC_GetFrontier_C) == 0x000040, "Wrong size on UEQC_GetFrontier_C");
+DUMPER7_ASSERTS_UEQC_GetFrontier_C;
 
 }
 

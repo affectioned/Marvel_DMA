@@ -23,15 +23,18 @@ class UUISettingReticleColorSettingHandlerBP_C final : public UUISettingReticleC
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UISettingReticleColorSettingHandlerBP_C">();
+		BP_STATIC_CLASS_IMPL("UISettingReticleColorSettingHandlerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingReticleColorSettingHandlerBP_C")
 	}
 	static class UUISettingReticleColorSettingHandlerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingReticleColorSettingHandlerBP_C>();
 	}
 };
-static_assert(alignof(UUISettingReticleColorSettingHandlerBP_C) == 0x000008, "Wrong alignment on UUISettingReticleColorSettingHandlerBP_C");
-static_assert(sizeof(UUISettingReticleColorSettingHandlerBP_C) == 0x000038, "Wrong size on UUISettingReticleColorSettingHandlerBP_C");
+DUMPER7_ASSERTS_UUISettingReticleColorSettingHandlerBP_C;
 
 }
 

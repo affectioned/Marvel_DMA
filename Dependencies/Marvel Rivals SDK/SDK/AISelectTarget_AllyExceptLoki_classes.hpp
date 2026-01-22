@@ -23,15 +23,18 @@ class UAISelectTarget_AllyExceptLoki_C final : public UAISelectTarget_BuffedChar
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_AllyExceptLoki_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_AllyExceptLoki_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_AllyExceptLoki_C")
 	}
 	static class UAISelectTarget_AllyExceptLoki_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_AllyExceptLoki_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_AllyExceptLoki_C) == 0x000008, "Wrong alignment on UAISelectTarget_AllyExceptLoki_C");
-static_assert(sizeof(UAISelectTarget_AllyExceptLoki_C) == 0x000118, "Wrong size on UAISelectTarget_AllyExceptLoki_C");
+DUMPER7_ASSERTS_UAISelectTarget_AllyExceptLoki_C;
 
 }
 

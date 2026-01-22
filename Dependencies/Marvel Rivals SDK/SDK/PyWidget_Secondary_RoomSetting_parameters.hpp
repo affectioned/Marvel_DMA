@@ -23,9 +23,7 @@ struct PyWidgetSecondaryRoomSetting_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidgetSecondaryRoomSetting_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidgetSecondaryRoomSetting_MarvelSetVisible");
-static_assert(sizeof(PyWidgetSecondaryRoomSetting_MarvelSetVisible) == 0x000001, "Wrong size on PyWidgetSecondaryRoomSetting_MarvelSetVisible");
-static_assert(offsetof(PyWidgetSecondaryRoomSetting_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidgetSecondaryRoomSetting_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidgetSecondaryRoomSetting_MarvelSetVisible;
 
 // PythonFunction PyWidget_Secondary_RoomSetting.PyWidgetSecondaryRoomSetting.btn_navigation_rule_custom
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidgetSecondaryRoomSetting_btn_navigation_rule_custom) == 0x000008, "Wrong alignment on PyWidgetSecondaryRoomSetting_btn_navigation_rule_custom");
-static_assert(sizeof(PyWidgetSecondaryRoomSetting_btn_navigation_rule_custom) == 0x000010, "Wrong size on PyWidgetSecondaryRoomSetting_btn_navigation_rule_custom");
-static_assert(offsetof(PyWidgetSecondaryRoomSetting_btn_navigation_rule_custom, NavType) == 0x000000, "Member 'PyWidgetSecondaryRoomSetting_btn_navigation_rule_custom::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidgetSecondaryRoomSetting_btn_navigation_rule_custom, ReturnValue) == 0x000008, "Member 'PyWidgetSecondaryRoomSetting_btn_navigation_rule_custom::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidgetSecondaryRoomSetting_btn_navigation_rule_custom;
 
 }
 

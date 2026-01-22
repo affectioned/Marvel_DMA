@@ -21,9 +21,7 @@ struct PyAbility_105601_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105601_CanActivate) == 0x000001, "Wrong alignment on PyAbility_105601_CanActivate");
-static_assert(sizeof(PyAbility_105601_CanActivate) == 0x000001, "Wrong size on PyAbility_105601_CanActivate");
-static_assert(offsetof(PyAbility_105601_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_105601_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105601_CanActivate;
 
 // PythonFunction PyAbility_105601.PyAbility_105601.OnMarvelSculptChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_105601_OnMarvelSculptChanged final
 public:
 	int32                                         sculpt_id;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105601_OnMarvelSculptChanged) == 0x000004, "Wrong alignment on PyAbility_105601_OnMarvelSculptChanged");
-static_assert(sizeof(PyAbility_105601_OnMarvelSculptChanged) == 0x000004, "Wrong size on PyAbility_105601_OnMarvelSculptChanged");
-static_assert(offsetof(PyAbility_105601_OnMarvelSculptChanged, sculpt_id) == 0x000000, "Member 'PyAbility_105601_OnMarvelSculptChanged::sculpt_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105601_OnMarvelSculptChanged;
 
 // PythonFunction PyAbility_105601.PyAbility_105601.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_105601_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105601_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105601_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105601_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105601_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105601_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105601_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105601_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105601.PyAbility_105601.OnTaskTick
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +48,7 @@ struct PyAbility_105601_OnTaskTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105601_OnTaskTick) == 0x000004, "Wrong alignment on PyAbility_105601_OnTaskTick");
-static_assert(sizeof(PyAbility_105601_OnTaskTick) == 0x000004, "Wrong size on PyAbility_105601_OnTaskTick");
-static_assert(offsetof(PyAbility_105601_OnTaskTick, DeltaTime) == 0x000000, "Member 'PyAbility_105601_OnTaskTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105601_OnTaskTick;
 
 // PythonFunction PyAbility_105601.PyAbility_105601.CheckCanGlideForAI
 // 0x0004 (0x0004 - 0x0000)
@@ -65,9 +57,7 @@ struct PyAbility_105601_CheckCanGlideForAI final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105601_CheckCanGlideForAI) == 0x000004, "Wrong alignment on PyAbility_105601_CheckCanGlideForAI");
-static_assert(sizeof(PyAbility_105601_CheckCanGlideForAI) == 0x000004, "Wrong size on PyAbility_105601_CheckCanGlideForAI");
-static_assert(offsetof(PyAbility_105601_CheckCanGlideForAI, DeltaTime) == 0x000000, "Member 'PyAbility_105601_CheckCanGlideForAI::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105601_CheckCanGlideForAI;
 
 // PythonFunction PyAbility_105601.PyAbility_105601.OnOtherAbilityActivateForAI
 // 0x0008 (0x0008 - 0x0000)
@@ -76,9 +66,7 @@ struct PyAbility_105601_OnOtherAbilityActivateForAI final
 public:
 	class UGameplayAbility*                       ActivatedAbility;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105601_OnOtherAbilityActivateForAI) == 0x000008, "Wrong alignment on PyAbility_105601_OnOtherAbilityActivateForAI");
-static_assert(sizeof(PyAbility_105601_OnOtherAbilityActivateForAI) == 0x000008, "Wrong size on PyAbility_105601_OnOtherAbilityActivateForAI");
-static_assert(offsetof(PyAbility_105601_OnOtherAbilityActivateForAI, ActivatedAbility) == 0x000000, "Member 'PyAbility_105601_OnOtherAbilityActivateForAI::ActivatedAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105601_OnOtherAbilityActivateForAI;
 
 }
 

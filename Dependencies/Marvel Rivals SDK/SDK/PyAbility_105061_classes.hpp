@@ -27,20 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105061">();
+		STATIC_CLASS_IMPL("PyConfig_105061")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105061")
 	}
 	static class UPyConfig_105061* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105061>();
 	}
 };
-static_assert(alignof(UPyConfig_105061) == 0x000008, "Wrong alignment on UPyConfig_105061");
-static_assert(sizeof(UPyConfig_105061) == 0x0000A0, "Wrong size on UPyConfig_105061");
-static_assert(offsetof(UPyConfig_105061, PushOutScopeID) == 0x000098, "Member 'UPyConfig_105061::PushOutScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105061, PushInScopeID) == 0x00009C, "Member 'UPyConfig_105061::PushInScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105061;
 
 // PythonClass PyAbility_105061.PyAbility_105061
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_105061 : public UMarvelGameplayAbility
 {
 public:
@@ -57,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105061">();
+		STATIC_CLASS_IMPL("PyAbility_105061")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105061")
 	}
 	static class UPyAbility_105061* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105061>();
 	}
 };
-static_assert(alignof(UPyAbility_105061) == 0x000008, "Wrong alignment on UPyAbility_105061");
-static_assert(sizeof(UPyAbility_105061) == 0x0029F0, "Wrong size on UPyAbility_105061");
+DUMPER7_ASSERTS_UPyAbility_105061;
 
 // PythonClass PyAbility_105061.PyCue_Scope_End_105061
 // 0x0000 (0x0478 - 0x0478)
@@ -77,15 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_End_105061">();
+		STATIC_CLASS_IMPL("PyCue_Scope_End_105061")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_End_105061")
 	}
 	static class UPyCue_Scope_End_105061* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_End_105061>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_End_105061) == 0x000008, "Wrong alignment on UPyCue_Scope_End_105061");
-static_assert(sizeof(UPyCue_Scope_End_105061) == 0x000478, "Wrong size on UPyCue_Scope_End_105061");
+DUMPER7_ASSERTS_UPyCue_Scope_End_105061;
 
 }
 

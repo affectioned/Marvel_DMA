@@ -23,15 +23,18 @@ class UPrepareRuleComponent_C final : public UPyPrepareRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PrepareRuleComponent_C">();
+		BP_STATIC_CLASS_IMPL("PrepareRuleComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PrepareRuleComponent_C")
 	}
 	static class UPrepareRuleComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPrepareRuleComponent_C>();
 	}
 };
-static_assert(alignof(UPrepareRuleComponent_C) == 0x000008, "Wrong alignment on UPrepareRuleComponent_C");
-static_assert(sizeof(UPrepareRuleComponent_C) == 0x000108, "Wrong size on UPrepareRuleComponent_C");
+DUMPER7_ASSERTS_UPrepareRuleComponent_C;
 
 }
 

@@ -61,33 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_Loading">();
+		STATIC_CLASS_IMPL("PyUIC_Loading")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_Loading")
 	}
 	static class UPyUIC_Loading* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_Loading>();
 	}
 };
-static_assert(alignof(UPyUIC_Loading) == 0x000010, "Wrong alignment on UPyUIC_Loading");
-static_assert(sizeof(UPyUIC_Loading) == 0x0000F0, "Wrong size on UPyUIC_Loading");
-static_assert(offsetof(UPyUIC_Loading, PredictLoadingDuration) == 0x000090, "Member 'UPyUIC_Loading::PredictLoadingDuration' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, UpdateProgressInterval) == 0x000094, "Member 'UPyUIC_Loading::UpdateProgressInterval' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, ReportProgressInterval) == 0x000098, "Member 'UPyUIC_Loading::ReportProgressInterval' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, ReportProgressThreshold) == 0x00009C, "Member 'UPyUIC_Loading::ReportProgressThreshold' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, SpeedFactor) == 0x0000A0, "Member 'UPyUIC_Loading::SpeedFactor' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, AttackColor) == 0x0000A4, "Member 'UPyUIC_Loading::AttackColor' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, DefenseColor) == 0x0000B8, "Member 'UPyUIC_Loading::DefenseColor' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, BgTextAlpha) == 0x0000CC, "Member 'UPyUIC_Loading::BgTextAlpha' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, DelayHideLoadingTime) == 0x0000D0, "Member 'UPyUIC_Loading::DelayHideLoadingTime' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, Test_Enabled) == 0x0000D4, "Member 'UPyUIC_Loading::Test_Enabled' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, Test_RandomModeId) == 0x0000D5, "Member 'UPyUIC_Loading::Test_RandomModeId' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, Test_ModeId) == 0x0000D8, "Member 'UPyUIC_Loading::Test_ModeId' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, Test_GamePlayModeId) == 0x0000DC, "Member 'UPyUIC_Loading::Test_GamePlayModeId' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, Test_RoomCamp) == 0x0000E0, "Member 'UPyUIC_Loading::Test_RoomCamp' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, Test_LoadingPanelType) == 0x0000E4, "Member 'UPyUIC_Loading::Test_LoadingPanelType' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, Test_ClearVideoHistory) == 0x0000E5, "Member 'UPyUIC_Loading::Test_ClearVideoHistory' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, Test_ShowLoadingDebugInfo) == 0x0000E6, "Member 'UPyUIC_Loading::Test_ShowLoadingDebugInfo' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Loading, Test_LoadingDuration) == 0x0000E8, "Member 'UPyUIC_Loading::Test_LoadingDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIC_Loading;
 
 }
 

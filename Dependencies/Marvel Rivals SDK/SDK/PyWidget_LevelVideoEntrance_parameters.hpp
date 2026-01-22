@@ -21,9 +21,7 @@ struct PyWidget_LevelVideoEntrance_OnEntranceVideoOpened final
 public:
 	class FString                                 opened_url;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LevelVideoEntrance_OnEntranceVideoOpened) == 0x000008, "Wrong alignment on PyWidget_LevelVideoEntrance_OnEntranceVideoOpened");
-static_assert(sizeof(PyWidget_LevelVideoEntrance_OnEntranceVideoOpened) == 0x000010, "Wrong size on PyWidget_LevelVideoEntrance_OnEntranceVideoOpened");
-static_assert(offsetof(PyWidget_LevelVideoEntrance_OnEntranceVideoOpened, opened_url) == 0x000000, "Member 'PyWidget_LevelVideoEntrance_OnEntranceVideoOpened::opened_url' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LevelVideoEntrance_OnEntranceVideoOpened;
 
 // PythonFunction PyWidget_LevelVideoEntrance.PyWidget_LevelVideoEntrance.OnEntranceVideoEnd
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_LevelVideoEntrance_OnEntranceVideoEnd final
 public:
 	class FString                                 VideoName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LevelVideoEntrance_OnEntranceVideoEnd) == 0x000008, "Wrong alignment on PyWidget_LevelVideoEntrance_OnEntranceVideoEnd");
-static_assert(sizeof(PyWidget_LevelVideoEntrance_OnEntranceVideoEnd) == 0x000010, "Wrong size on PyWidget_LevelVideoEntrance_OnEntranceVideoEnd");
-static_assert(offsetof(PyWidget_LevelVideoEntrance_OnEntranceVideoEnd, VideoName) == 0x000000, "Member 'PyWidget_LevelVideoEntrance_OnEntranceVideoEnd::VideoName' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LevelVideoEntrance_OnEntranceVideoEnd;
 
 }
 

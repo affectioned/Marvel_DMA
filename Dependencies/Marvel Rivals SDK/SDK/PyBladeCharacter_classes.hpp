@@ -18,24 +18,28 @@ namespace SDK
 {
 
 // PythonClass PyBladeCharacter.PyBladeCharacter
-// 0x0000 (0x21D0 - 0x21D0)
+// 0x0000 (0x22E0 - 0x22E0)
 class APyBladeCharacter : public ABladeCharacter
 {
 public:
 	void OnCurrentSculptUpdate();
+	void ServerNotifySwordStatusError();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBladeCharacter">();
+		STATIC_CLASS_IMPL("PyBladeCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBladeCharacter")
 	}
 	static class APyBladeCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBladeCharacter>();
 	}
 };
-static_assert(alignof(APyBladeCharacter) == 0x000010, "Wrong alignment on APyBladeCharacter");
-static_assert(sizeof(APyBladeCharacter) == 0x0021D0, "Wrong size on APyBladeCharacter");
+DUMPER7_ASSERTS_APyBladeCharacter;
 
 // PythonClass PyBladeCharacter.PyUIController_BladeAbilities
 // 0x0000 (0x0040 - 0x0040)
@@ -44,15 +48,18 @@ class UPyUIController_BladeAbilities final : public UPyUIController_CharacterAbi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_BladeAbilities">();
+		STATIC_CLASS_IMPL("PyUIController_BladeAbilities")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_BladeAbilities")
 	}
 	static class UPyUIController_BladeAbilities* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_BladeAbilities>();
 	}
 };
-static_assert(alignof(UPyUIController_BladeAbilities) == 0x000008, "Wrong alignment on UPyUIController_BladeAbilities");
-static_assert(sizeof(UPyUIController_BladeAbilities) == 0x000040, "Wrong size on UPyUIController_BladeAbilities");
+DUMPER7_ASSERTS_UPyUIController_BladeAbilities;
 
 }
 

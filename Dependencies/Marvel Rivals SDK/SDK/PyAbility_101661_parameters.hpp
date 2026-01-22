@@ -24,9 +24,7 @@ struct PyAbility_101661_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_101661_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_101661_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_101661_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_101661_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_101661_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_101661_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101661_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_101661.PyAbility_101661.OnDisguiseStateChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -38,12 +36,7 @@ public:
 	class APawn*                                  InOldPawn;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsAlive;                                          // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101661_OnDisguiseStateChanged) == 0x000008, "Wrong alignment on PyAbility_101661_OnDisguiseStateChanged");
-static_assert(sizeof(PyAbility_101661_OnDisguiseStateChanged) == 0x000020, "Wrong size on PyAbility_101661_OnDisguiseStateChanged");
-static_assert(offsetof(PyAbility_101661_OnDisguiseStateChanged, InPlayerState) == 0x000000, "Member 'PyAbility_101661_OnDisguiseStateChanged::InPlayerState' has a wrong offset!");
-static_assert(offsetof(PyAbility_101661_OnDisguiseStateChanged, InNewPawn) == 0x000008, "Member 'PyAbility_101661_OnDisguiseStateChanged::InNewPawn' has a wrong offset!");
-static_assert(offsetof(PyAbility_101661_OnDisguiseStateChanged, InOldPawn) == 0x000010, "Member 'PyAbility_101661_OnDisguiseStateChanged::InOldPawn' has a wrong offset!");
-static_assert(offsetof(PyAbility_101661_OnDisguiseStateChanged, bIsAlive) == 0x000018, "Member 'PyAbility_101661_OnDisguiseStateChanged::bIsAlive' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101661_OnDisguiseStateChanged;
 
 // PythonFunction PyAbility_101661.PyAbility_101661.TryBreakInstigatorLoop
 // 0x0008 (0x0008 - 0x0000)
@@ -52,9 +45,7 @@ struct PyAbility_101661_TryBreakInstigatorLoop final
 public:
 	class AMarvelPlayerState*                     InPlayerState;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101661_TryBreakInstigatorLoop) == 0x000008, "Wrong alignment on PyAbility_101661_TryBreakInstigatorLoop");
-static_assert(sizeof(PyAbility_101661_TryBreakInstigatorLoop) == 0x000008, "Wrong size on PyAbility_101661_TryBreakInstigatorLoop");
-static_assert(offsetof(PyAbility_101661_TryBreakInstigatorLoop, InPlayerState) == 0x000000, "Member 'PyAbility_101661_TryBreakInstigatorLoop::InPlayerState' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101661_TryBreakInstigatorLoop;
 
 // PythonFunction PyAbility_101661.PyAbility_101661.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +54,7 @@ struct PyAbility_101661_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101661_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_101661_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_101661_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_101661_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_101661_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_101661_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101661_K2_OnEndAbility;
 
 // PythonFunction PyAbility_101661.PyUIController_101661.OnOwnerTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -75,10 +64,7 @@ public:
 	struct FGameplayTag                           InTag;                                             // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          InExist;                                           // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_101661_OnOwnerTagUpdate) == 0x000004, "Wrong alignment on PyUIController_101661_OnOwnerTagUpdate");
-static_assert(sizeof(PyUIController_101661_OnOwnerTagUpdate) == 0x000010, "Wrong size on PyUIController_101661_OnOwnerTagUpdate");
-static_assert(offsetof(PyUIController_101661_OnOwnerTagUpdate, InTag) == 0x000000, "Member 'PyUIController_101661_OnOwnerTagUpdate::InTag' has a wrong offset!");
-static_assert(offsetof(PyUIController_101661_OnOwnerTagUpdate, InExist) == 0x00000C, "Member 'PyUIController_101661_OnOwnerTagUpdate::InExist' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_101661_OnOwnerTagUpdate;
 
 }
 

@@ -24,10 +24,7 @@ public:
 	struct FGameplayTag                           event_name;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	float                                         event_args;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyDoorV2_S_payload_reach) == 0x000004, "Wrong alignment on PyDoorV2_S_payload_reach");
-static_assert(sizeof(PyDoorV2_S_payload_reach) == 0x000010, "Wrong size on PyDoorV2_S_payload_reach");
-static_assert(offsetof(PyDoorV2_S_payload_reach, event_name) == 0x000000, "Member 'PyDoorV2_S_payload_reach::event_name' has a wrong offset!");
-static_assert(offsetof(PyDoorV2_S_payload_reach, event_args) == 0x00000C, "Member 'PyDoorV2_S_payload_reach::event_args' has a wrong offset!");
+DUMPER7_ASSERTS_PyDoorV2_S_payload_reach;
 
 }
 

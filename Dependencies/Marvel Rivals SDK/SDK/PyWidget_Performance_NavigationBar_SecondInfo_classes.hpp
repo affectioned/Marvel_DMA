@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Performance_NavigationBar_SecondInfo.PyWidget_Performance_NavigationBar_SecondInfo
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Performance_NavigationBar_SecondInfo final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           LeftAction;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           RightAction;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           LeftAction;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RightAction;                                       // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,25 +32,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_NavigationBar_SecondInfo">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_NavigationBar_SecondInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_NavigationBar_SecondInfo")
 	}
 	static class UPyWidget_Performance_NavigationBar_SecondInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_NavigationBar_SecondInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_NavigationBar_SecondInfo) == 0x000008, "Wrong alignment on UPyWidget_Performance_NavigationBar_SecondInfo");
-static_assert(sizeof(UPyWidget_Performance_NavigationBar_SecondInfo) == 0x0005D0, "Wrong size on UPyWidget_Performance_NavigationBar_SecondInfo");
-static_assert(offsetof(UPyWidget_Performance_NavigationBar_SecondInfo, LeftAction) == 0x0005C0, "Member 'UPyWidget_Performance_NavigationBar_SecondInfo::LeftAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_NavigationBar_SecondInfo, RightAction) == 0x0005C8, "Member 'UPyWidget_Performance_NavigationBar_SecondInfo::RightAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_NavigationBar_SecondInfo;
 
 // PythonClass PyWidget_Performance_NavigationBar_SecondInfo.PyWidget_Performance_NavigationBar_SecondInfo_Button
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Performance_NavigationBar_SecondInfo_Button final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Btn_Text;                                          // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Btn_Text;                                          // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -60,16 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_NavigationBar_SecondInfo_Button">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_NavigationBar_SecondInfo_Button")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_NavigationBar_SecondInfo_Button")
 	}
 	static class UPyWidget_Performance_NavigationBar_SecondInfo_Button* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_NavigationBar_SecondInfo_Button>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_NavigationBar_SecondInfo_Button) == 0x000008, "Wrong alignment on UPyWidget_Performance_NavigationBar_SecondInfo_Button");
-static_assert(sizeof(UPyWidget_Performance_NavigationBar_SecondInfo_Button) == 0x0005D8, "Wrong size on UPyWidget_Performance_NavigationBar_SecondInfo_Button");
-static_assert(offsetof(UPyWidget_Performance_NavigationBar_SecondInfo_Button, Btn_Text) == 0x0005C0, "Member 'UPyWidget_Performance_NavigationBar_SecondInfo_Button::Btn_Text' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_NavigationBar_SecondInfo_Button;
 
 }
 

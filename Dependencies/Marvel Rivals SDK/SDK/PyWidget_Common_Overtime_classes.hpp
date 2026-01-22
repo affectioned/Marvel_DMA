@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Overtime.PyWidget_Common_Overtime_V2
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x05D8 - 0x05D8)
 class UPyWidget_Common_Overtime_V2 final : public UPyWidget_Overtime
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Overtime_V2">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Overtime_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Overtime_V2")
 	}
 	static class UPyWidget_Common_Overtime_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Overtime_V2>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Overtime_V2) == 0x000008, "Wrong alignment on UPyWidget_Common_Overtime_V2");
-static_assert(sizeof(UPyWidget_Common_Overtime_V2) == 0x0005D0, "Wrong size on UPyWidget_Common_Overtime_V2");
+DUMPER7_ASSERTS_UPyWidget_Common_Overtime_V2;
 
 }
 

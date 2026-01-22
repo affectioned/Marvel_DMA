@@ -17,15 +17,13 @@
 #include "Hero_1023_structs.hpp"
 #include "Hero_1023_classes.hpp"
 #include "GameplayTags_structs.hpp"
-#include "PyWidget_SummonedInfo_classes.hpp"
-#include "UMG_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_102341.PyConfig_102341
-// 0x2D58 (0x2E00 - 0x00A8)
+// 0x33F8 (0x34A0 - 0x00A8)
 class UPyConfig_102341 : public UConfig_102341
 {
 public:
@@ -37,73 +35,51 @@ public:
 	float                                         ProjectileGravityScale;                            // 0x00D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ManualDestroyMaxCooldown;                          // 0x00D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D8[0x8];                                       // 0x00D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             ThrowTraceContext;                                 // 0x00E0(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         SpawnSummonedID;                                   // 0x1740(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RespawnPeriod_Respawning;                          // 0x1744(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Respawning_CameraLength;                           // 0x1748(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Respawning_CameraRestoreSpeed;                     // 0x174C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Respawning_CameraOffset;                           // 0x1750(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Respawning_CameraOffsetRestoreSpeed;               // 0x1768(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_176C[0x4];                                     // 0x176C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             RespawnValidSpaceTraceParam;                       // 0x1770(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         ResurrectPriority;                                 // 0x2DD0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2DD4[0x4];                                     // 0x2DD4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<ESummonedType_102341>                  SpawnItemSequence;                                 // 0x2DD8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         SpawnItemInterval;                                 // 0x2DE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnItemDeltaDegrees;                             // 0x2DEC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnItemPitch;                                    // 0x2DF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnItemSpeed;                                    // 0x2DF4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnUpTraceLength;                                // 0x2DF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DebugRespawnSelf;                                  // 0x2DFC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DebugRespawnEnemy;                                 // 0x2DFD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DebugSpawnFailed;                                  // 0x2DFE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             ThrowTraceContext;                                 // 0x00E0(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         SpawnSummonedID;                                   // 0x1A90(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RespawnPeriod_Respawning;                          // 0x1A94(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Respawning_CameraLength;                           // 0x1A98(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Respawning_CameraRestoreSpeed;                     // 0x1A9C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Respawning_CameraOffset;                           // 0x1AA0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Respawning_CameraOffsetRestoreSpeed;               // 0x1AB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1ABC[0x4];                                     // 0x1ABC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             RespawnValidSpaceTraceParam;                       // 0x1AC0(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         ResurrectPriority;                                 // 0x3470(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3474[0x4];                                     // 0x3474(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<ESummonedType_102341>                  SpawnItemSequence;                                 // 0x3478(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         SpawnItemInterval;                                 // 0x3488(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnItemDeltaDegrees;                             // 0x348C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnItemPitch;                                    // 0x3490(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnItemSpeed;                                    // 0x3494(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnUpTraceLength;                                // 0x3498(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DebugRespawnSelf;                                  // 0x349C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DebugRespawnEnemy;                                 // 0x349D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DebugSpawnFailed;                                  // 0x349E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102341">();
+		STATIC_CLASS_IMPL("PyConfig_102341")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102341")
 	}
 	static class UPyConfig_102341* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102341>();
 	}
 };
-static_assert(alignof(UPyConfig_102341) == 0x000010, "Wrong alignment on UPyConfig_102341");
-static_assert(sizeof(UPyConfig_102341) == 0x002E00, "Wrong size on UPyConfig_102341");
-static_assert(offsetof(UPyConfig_102341, SpawnOffset) == 0x0000A8, "Member 'UPyConfig_102341::SpawnOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, MaxLifetime_Flying) == 0x0000C0, "Member 'UPyConfig_102341::MaxLifetime_Flying' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, MaxLifetime_Unactive) == 0x0000C4, "Member 'UPyConfig_102341::MaxLifetime_Unactive' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, ActiveDelay) == 0x0000C8, "Member 'UPyConfig_102341::ActiveDelay' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, ProjectileSpeed) == 0x0000CC, "Member 'UPyConfig_102341::ProjectileSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, ProjectileGravityScale) == 0x0000D0, "Member 'UPyConfig_102341::ProjectileGravityScale' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, ManualDestroyMaxCooldown) == 0x0000D4, "Member 'UPyConfig_102341::ManualDestroyMaxCooldown' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, ThrowTraceContext) == 0x0000E0, "Member 'UPyConfig_102341::ThrowTraceContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, SpawnSummonedID) == 0x001740, "Member 'UPyConfig_102341::SpawnSummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, RespawnPeriod_Respawning) == 0x001744, "Member 'UPyConfig_102341::RespawnPeriod_Respawning' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, Respawning_CameraLength) == 0x001748, "Member 'UPyConfig_102341::Respawning_CameraLength' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, Respawning_CameraRestoreSpeed) == 0x00174C, "Member 'UPyConfig_102341::Respawning_CameraRestoreSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, Respawning_CameraOffset) == 0x001750, "Member 'UPyConfig_102341::Respawning_CameraOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, Respawning_CameraOffsetRestoreSpeed) == 0x001768, "Member 'UPyConfig_102341::Respawning_CameraOffsetRestoreSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, RespawnValidSpaceTraceParam) == 0x001770, "Member 'UPyConfig_102341::RespawnValidSpaceTraceParam' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, ResurrectPriority) == 0x002DD0, "Member 'UPyConfig_102341::ResurrectPriority' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, SpawnItemSequence) == 0x002DD8, "Member 'UPyConfig_102341::SpawnItemSequence' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, SpawnItemInterval) == 0x002DE8, "Member 'UPyConfig_102341::SpawnItemInterval' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, SpawnItemDeltaDegrees) == 0x002DEC, "Member 'UPyConfig_102341::SpawnItemDeltaDegrees' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, SpawnItemPitch) == 0x002DF0, "Member 'UPyConfig_102341::SpawnItemPitch' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, SpawnItemSpeed) == 0x002DF4, "Member 'UPyConfig_102341::SpawnItemSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, SpawnUpTraceLength) == 0x002DF8, "Member 'UPyConfig_102341::SpawnUpTraceLength' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, DebugRespawnSelf) == 0x002DFC, "Member 'UPyConfig_102341::DebugRespawnSelf' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, DebugRespawnEnemy) == 0x002DFD, "Member 'UPyConfig_102341::DebugRespawnEnemy' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102341, DebugSpawnFailed) == 0x002DFE, "Member 'UPyConfig_102341::DebugSpawnFailed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102341;
 
 // PythonClass PyAbility_102341.PyCue_Buff_10234107
-// 0x00E0 (0x17B0 - 0x16D0)
+// 0x00E0 (0x1860 - 0x1780)
 class APyCue_Buff_10234107 final : public ACue_Buff_10234107
 {
 public:
-	struct FWidgetStyle_BattleTransientTip        ResurrectTip;                                      // 0x16D0(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FWidgetStyle_BattleTransientTip        ResurrectFailedTip;                                // 0x1718(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FWidgetStyle_BattlePersistentTip       ResurrectingTip;                                   // 0x1760(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FWidgetStyle_BattleTransientTip        ResurrectTip;                                      // 0x1780(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FWidgetStyle_BattleTransientTip        ResurrectFailedTip;                                // 0x17C8(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FWidgetStyle_BattlePersistentTip       ResurrectingTip;                                   // 0x1810(0x0048)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -113,27 +89,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10234107">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10234107")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10234107")
 	}
 	static class APyCue_Buff_10234107* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10234107>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10234107) == 0x000010, "Wrong alignment on APyCue_Buff_10234107");
-static_assert(sizeof(APyCue_Buff_10234107) == 0x0017B0, "Wrong size on APyCue_Buff_10234107");
-static_assert(offsetof(APyCue_Buff_10234107, ResurrectTip) == 0x0016D0, "Member 'APyCue_Buff_10234107::ResurrectTip' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10234107, ResurrectFailedTip) == 0x001718, "Member 'APyCue_Buff_10234107::ResurrectFailedTip' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10234107, ResurrectingTip) == 0x001760, "Member 'APyCue_Buff_10234107::ResurrectingTip' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10234107;
 
 // PythonClass PyAbility_102341.PySummonedComp_102341_Item
-// 0x0008 (0x0DB8 - 0x0DB0)
+// 0x0008 (0x0E10 - 0x0E08)
 class UPySummonedComp_102341_Item : public UMarvelSummonedComponent
 {
 public:
-	bool                                          IsLanded;                                          // 0x0DB0(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsArmorPack;                                       // 0x0DB1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsRocketShoes;                                     // 0x0DB2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLanded;                                          // 0x0E08(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsArmorPack;                                       // 0x0E09(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsRocketShoes;                                     // 0x0E0A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -145,18 +121,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_102341_Item">();
+		STATIC_CLASS_IMPL("PySummonedComp_102341_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_102341_Item")
 	}
 	static class UPySummonedComp_102341_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_102341_Item>();
 	}
 };
-static_assert(alignof(UPySummonedComp_102341_Item) == 0x000008, "Wrong alignment on UPySummonedComp_102341_Item");
-static_assert(sizeof(UPySummonedComp_102341_Item) == 0x000DB8, "Wrong size on UPySummonedComp_102341_Item");
-static_assert(offsetof(UPySummonedComp_102341_Item, IsLanded) == 0x000DB0, "Member 'UPySummonedComp_102341_Item::IsLanded' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_102341_Item, IsArmorPack) == 0x000DB1, "Member 'UPySummonedComp_102341_Item::IsArmorPack' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_102341_Item, IsRocketShoes) == 0x000DB2, "Member 'UPySummonedComp_102341_Item::IsRocketShoes' has a wrong offset!");
+DUMPER7_ASSERTS_UPySummonedComp_102341_Item;
 
 // PythonClass PyAbility_102341.PySummoned_10234101_RespawnerManager
 // 0x0000 (0x0030 - 0x0030)
@@ -168,32 +144,39 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10234101_RespawnerManager">();
+		STATIC_CLASS_IMPL("PySummoned_10234101_RespawnerManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10234101_RespawnerManager")
 	}
 	static class UPySummoned_10234101_RespawnerManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummoned_10234101_RespawnerManager>();
 	}
 };
-static_assert(alignof(UPySummoned_10234101_RespawnerManager) == 0x000008, "Wrong alignment on UPySummoned_10234101_RespawnerManager");
-static_assert(sizeof(UPySummoned_10234101_RespawnerManager) == 0x000030, "Wrong size on UPySummoned_10234101_RespawnerManager");
+DUMPER7_ASSERTS_UPySummoned_10234101_RespawnerManager;
 
 // PythonClass PyAbility_102341.PySummoned_102341_Item
-// 0x0030 (0x0BB0 - 0x0B80)
+// 0x0030 (0x0BD0 - 0x0BA0)
 #pragma pack(push, 0x1)
 class alignas(0x10) APySummoned_102341_Item : public ASummoned_10234101_Item
 {
 public:
-	bool                                          IsArmorPack;                                       // 0x0B80(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsRocketShoes;                                     // 0x0B81(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B82[0x6];                                      // 0x0B82(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                InitialVelocity;                                   // 0x0B88(0x0018)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Launched;                                          // 0x0BA0(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsArmorPack;                                       // 0x0BA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsRocketShoes;                                     // 0x0BA1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BA2[0x6];                                      // 0x0BA2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                InitialVelocity;                                   // 0x0BA8(0x0018)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Launched;                                          // 0x0BC0(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_102341_Item">();
+		STATIC_CLASS_IMPL("PySummoned_102341_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_102341_Item")
 	}
 	static class APySummoned_102341_Item* GetDefaultObj()
 	{
@@ -201,23 +184,18 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APySummoned_102341_Item) == 0x000010, "Wrong alignment on APySummoned_102341_Item");
-static_assert(sizeof(APySummoned_102341_Item) == 0x000BB0, "Wrong size on APySummoned_102341_Item");
-static_assert(offsetof(APySummoned_102341_Item, IsArmorPack) == 0x000B80, "Member 'APySummoned_102341_Item::IsArmorPack' has a wrong offset!");
-static_assert(offsetof(APySummoned_102341_Item, IsRocketShoes) == 0x000B81, "Member 'APySummoned_102341_Item::IsRocketShoes' has a wrong offset!");
-static_assert(offsetof(APySummoned_102341_Item, InitialVelocity) == 0x000B88, "Member 'APySummoned_102341_Item::InitialVelocity' has a wrong offset!");
-static_assert(offsetof(APySummoned_102341_Item, Launched) == 0x000BA0, "Member 'APySummoned_102341_Item::Launched' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_102341_Item;
 
 // PythonClass PyAbility_102341.PySummonedComp_10234101
-// 0x0020 (0x0E08 - 0x0DE8)
+// 0x0020 (0x0E60 - 0x0E40)
 class UPySummonedComp_10234101 : public USummonedComp_10234101
 {
 public:
-	float                                         RespawningCharacterHeight;                         // 0x0DE8(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnItemActiveTime;                               // 0x0DEC(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayDestroyTime;                                  // 0x0DF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DF4[0x4];                                      // 0x0DF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnSpawnItemSuccess;                                // 0x0DF8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	float                                         RespawningCharacterHeight;                         // 0x0E40(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnItemActiveTime;                               // 0x0E44(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayDestroyTime;                                  // 0x0E48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E4C[0x4];                                      // 0x0E4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnSpawnItemSuccess;                                // 0x0E50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -245,29 +223,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10234101">();
+		STATIC_CLASS_IMPL("PySummonedComp_10234101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10234101")
 	}
 	static class UPySummonedComp_10234101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10234101>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10234101) == 0x000008, "Wrong alignment on UPySummonedComp_10234101");
-static_assert(sizeof(UPySummonedComp_10234101) == 0x000E08, "Wrong size on UPySummonedComp_10234101");
-static_assert(offsetof(UPySummonedComp_10234101, RespawningCharacterHeight) == 0x000DE8, "Member 'UPySummonedComp_10234101::RespawningCharacterHeight' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10234101, SpawnItemActiveTime) == 0x000DEC, "Member 'UPySummonedComp_10234101::SpawnItemActiveTime' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10234101, DelayDestroyTime) == 0x000DF0, "Member 'UPySummonedComp_10234101::DelayDestroyTime' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10234101, OnSpawnItemSuccess) == 0x000DF8, "Member 'UPySummonedComp_10234101::OnSpawnItemSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_UPySummonedComp_10234101;
 
 // PythonClass PyAbility_102341.PyCue_Summoner_Loop_10234101_2
-// 0x0030 (0x12C0 - 0x1290)
+// 0x0030 (0x1320 - 0x12F0)
 class APyCue_Summoner_Loop_10234101_2 final : public ACue_Summoner_Loop_10234101_2
 {
 public:
-	int32                                         DisappearAudioID;                                  // 0x1290(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DestroyedAudioID;                                  // 0x1294(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                UpMeshRelativeLocation;                            // 0x1298(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnTopDisappearStart;                               // 0x12B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         DisappearAudioID;                                  // 0x12F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DestroyedAudioID;                                  // 0x12F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                UpMeshRelativeLocation;                            // 0x12F8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTopDisappearStart;                               // 0x1310(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -280,27 +257,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10234101_2">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10234101_2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10234101_2")
 	}
 	static class APyCue_Summoner_Loop_10234101_2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10234101_2>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10234101_2) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10234101_2");
-static_assert(sizeof(APyCue_Summoner_Loop_10234101_2) == 0x0012C0, "Wrong size on APyCue_Summoner_Loop_10234101_2");
-static_assert(offsetof(APyCue_Summoner_Loop_10234101_2, DisappearAudioID) == 0x001290, "Member 'APyCue_Summoner_Loop_10234101_2::DisappearAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10234101_2, DestroyedAudioID) == 0x001294, "Member 'APyCue_Summoner_Loop_10234101_2::DestroyedAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10234101_2, UpMeshRelativeLocation) == 0x001298, "Member 'APyCue_Summoner_Loop_10234101_2::UpMeshRelativeLocation' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10234101_2, OnTopDisappearStart) == 0x0012B0, "Member 'APyCue_Summoner_Loop_10234101_2::OnTopDisappearStart' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10234101_2;
 
 // PythonClass PyAbility_102341.PyAbility_102341
-// 0x0070 (0x2A68 - 0x29F8)
+// 0x0070 (0x2AB8 - 0x2A48)
 class UPyAbility_102341 : public UAbility_108
 {
 public:
-	class UPySummonedComp_10234101*               CurrentSummonedComp;                               // 0x29F8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, Net, ZeroConstructor, EditConst, InstancedReference, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  AbilityMainTag;                                    // 0x2A00(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UPySummonedComp_10234101*               CurrentSummonedComp;                               // 0x2A48(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, Net, ZeroConstructor, EditConst, InstancedReference, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  AbilityMainTag;                                    // 0x2A50(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -316,64 +292,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102341">();
+		STATIC_CLASS_IMPL("PyAbility_102341")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102341")
 	}
 	static class UPyAbility_102341* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102341>();
 	}
 };
-static_assert(alignof(UPyAbility_102341) == 0x000008, "Wrong alignment on UPyAbility_102341");
-static_assert(sizeof(UPyAbility_102341) == 0x002A68, "Wrong size on UPyAbility_102341");
-static_assert(offsetof(UPyAbility_102341, CurrentSummonedComp) == 0x0029F8, "Member 'UPyAbility_102341::CurrentSummonedComp' has a wrong offset!");
-static_assert(offsetof(UPyAbility_102341, AbilityMainTag) == 0x002A00, "Member 'UPyAbility_102341::AbilityMainTag' has a wrong offset!");
-
-// PythonClass PyAbility_102341.PyWidget_SummonedInfoPanel_RebornBeacon
-// 0x0008 (0x05D0 - 0x05C8)
-class UPyWidget_SummonedInfoPanel_RebornBeacon final : public UPyWidget_SummonedInfoPanel
-{
-public:
-	class UTexture2D*                             Texture_SoundWave_Revive;                          // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void Construct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_SummonedInfoPanel_RebornBeacon">();
-	}
-	static class UPyWidget_SummonedInfoPanel_RebornBeacon* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_SummonedInfoPanel_RebornBeacon>();
-	}
-};
-static_assert(alignof(UPyWidget_SummonedInfoPanel_RebornBeacon) == 0x000008, "Wrong alignment on UPyWidget_SummonedInfoPanel_RebornBeacon");
-static_assert(sizeof(UPyWidget_SummonedInfoPanel_RebornBeacon) == 0x0005D0, "Wrong size on UPyWidget_SummonedInfoPanel_RebornBeacon");
-static_assert(offsetof(UPyWidget_SummonedInfoPanel_RebornBeacon, Texture_SoundWave_Revive) == 0x0005C8, "Member 'UPyWidget_SummonedInfoPanel_RebornBeacon::Texture_SoundWave_Revive' has a wrong offset!");
-
-// PythonClass PyAbility_102341.PyWidget_ReviveTip_102341
-// 0x0000 (0x03B8 - 0x03B8)
-class UPyWidget_ReviveTip_102341 final : public UUserWidget
-{
-public:
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_ReviveTip_102341">();
-	}
-	static class UPyWidget_ReviveTip_102341* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_ReviveTip_102341>();
-	}
-};
-static_assert(alignof(UPyWidget_ReviveTip_102341) == 0x000008, "Wrong alignment on UPyWidget_ReviveTip_102341");
-static_assert(sizeof(UPyWidget_ReviveTip_102341) == 0x0003B8, "Wrong size on UPyWidget_ReviveTip_102341");
+DUMPER7_ASSERTS_UPyAbility_102341;
 
 // PythonClass PyAbility_102341.Py_Scope_10234101
-// 0x0000 (0x1AA0 - 0x1AA0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APy_Scope_10234101 final : public AMarvelAbilityTargetActor_Scope
 {
 public:
@@ -383,18 +316,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Py_Scope_10234101">();
+		STATIC_CLASS_IMPL("Py_Scope_10234101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Py_Scope_10234101")
 	}
 	static class APy_Scope_10234101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APy_Scope_10234101>();
 	}
 };
-static_assert(alignof(APy_Scope_10234101) == 0x000010, "Wrong alignment on APy_Scope_10234101");
-static_assert(sizeof(APy_Scope_10234101) == 0x001AA0, "Wrong size on APy_Scope_10234101");
+DUMPER7_ASSERTS_APy_Scope_10234101;
 
 // PythonClass PyAbility_102341.PyResurrectionAbility_102341
-// 0x0000 (0x1410 - 0x1410)
+// 0x0000 (0x1428 - 0x1428)
 class UPyResurrectionAbility_102341 : public UResurrectionAbility_102341
 {
 public:
@@ -405,15 +341,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyResurrectionAbility_102341">();
+		STATIC_CLASS_IMPL("PyResurrectionAbility_102341")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyResurrectionAbility_102341")
 	}
 	static class UPyResurrectionAbility_102341* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyResurrectionAbility_102341>();
 	}
 };
-static_assert(alignof(UPyResurrectionAbility_102341) == 0x000008, "Wrong alignment on UPyResurrectionAbility_102341");
-static_assert(sizeof(UPyResurrectionAbility_102341) == 0x001410, "Wrong size on UPyResurrectionAbility_102341");
+DUMPER7_ASSERTS_UPyResurrectionAbility_102341;
 
 }
 

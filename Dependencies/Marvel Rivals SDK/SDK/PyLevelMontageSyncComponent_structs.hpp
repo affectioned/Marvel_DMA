@@ -31,15 +31,7 @@ public:
 	struct FAlphaBlendArgs                        BlendInArgs;                                       // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         AutoNextState;                                     // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPyLevelMontageInfo) == 0x000008, "Wrong alignment on FPyLevelMontageInfo");
-static_assert(sizeof(FPyLevelMontageInfo) == 0x000038, "Wrong size on FPyLevelMontageInfo");
-static_assert(offsetof(FPyLevelMontageInfo, Montage) == 0x000000, "Member 'FPyLevelMontageInfo::Montage' has a wrong offset!");
-static_assert(offsetof(FPyLevelMontageInfo, IsLooping) == 0x000008, "Member 'FPyLevelMontageInfo::IsLooping' has a wrong offset!");
-static_assert(offsetof(FPyLevelMontageInfo, PlayLengthSequence) == 0x000010, "Member 'FPyLevelMontageInfo::PlayLengthSequence' has a wrong offset!");
-static_assert(offsetof(FPyLevelMontageInfo, ServerPlayFakeAnim) == 0x000018, "Member 'FPyLevelMontageInfo::ServerPlayFakeAnim' has a wrong offset!");
-static_assert(offsetof(FPyLevelMontageInfo, SyncPositionWhileFakePlaying) == 0x000019, "Member 'FPyLevelMontageInfo::SyncPositionWhileFakePlaying' has a wrong offset!");
-static_assert(offsetof(FPyLevelMontageInfo, BlendInArgs) == 0x000020, "Member 'FPyLevelMontageInfo::BlendInArgs' has a wrong offset!");
-static_assert(offsetof(FPyLevelMontageInfo, AutoNextState) == 0x000030, "Member 'FPyLevelMontageInfo::AutoNextState' has a wrong offset!");
+DUMPER7_ASSERTS_FPyLevelMontageInfo;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_Mission_HellFire_Main_OnVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_HellFire_Main_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Mission_HellFire_Main_OnVisibleChanged");
-static_assert(sizeof(PyWidget_Mission_HellFire_Main_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_Mission_HellFire_Main_OnVisibleChanged");
-static_assert(offsetof(PyWidget_Mission_HellFire_Main_OnVisibleChanged, visible) == 0x000000, "Member 'PyWidget_Mission_HellFire_Main_OnVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_HellFire_Main_OnVisibleChanged;
 
 }
 

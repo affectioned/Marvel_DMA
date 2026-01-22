@@ -23,15 +23,18 @@ class UAIAbilityActivation_IronFistCheckBeHit_C final : public UPyAIAbilityActiv
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_IronFistCheckBeHit_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_IronFistCheckBeHit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_IronFistCheckBeHit_C")
 	}
 	static class UAIAbilityActivation_IronFistCheckBeHit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_IronFistCheckBeHit_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_IronFistCheckBeHit_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_IronFistCheckBeHit_C");
-static_assert(sizeof(UAIAbilityActivation_IronFistCheckBeHit_C) == 0x000038, "Wrong size on UAIAbilityActivation_IronFistCheckBeHit_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_IronFistCheckBeHit_C;
 
 }
 

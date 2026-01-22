@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 102351_HaltAbility_BP.102351_HaltAbility_BP_C
-// 0x0000 (0x35F0 - 0x35F0)
+// 0x0000 (0x3C70 - 0x3C70)
 class UOne02351_HaltAbility_BP_C final : public UMarvelMoveToAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"102351_HaltAbility_BP_C">();
+		BP_STATIC_CLASS_IMPL("102351_HaltAbility_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"102351_HaltAbility_BP_C")
 	}
 	static class UOne02351_HaltAbility_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOne02351_HaltAbility_BP_C>();
 	}
 };
-static_assert(alignof(UOne02351_HaltAbility_BP_C) == 0x000010, "Wrong alignment on UOne02351_HaltAbility_BP_C");
-static_assert(sizeof(UOne02351_HaltAbility_BP_C) == 0x0035F0, "Wrong size on UOne02351_HaltAbility_BP_C");
+DUMPER7_ASSERTS_UOne02351_HaltAbility_BP_C;
 
 }
 

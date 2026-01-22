@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mood_IconPreview.PyWidget_Mood_IconPreview
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Mood_IconPreview final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           SwitchTabAction;                                   // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           SwitchTabAction;                                   // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mood_IconPreview">();
+		STATIC_CLASS_IMPL("PyWidget_Mood_IconPreview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mood_IconPreview")
 	}
 	static class UPyWidget_Mood_IconPreview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mood_IconPreview>();
 	}
 };
-static_assert(alignof(UPyWidget_Mood_IconPreview) == 0x000008, "Wrong alignment on UPyWidget_Mood_IconPreview");
-static_assert(sizeof(UPyWidget_Mood_IconPreview) == 0x0005C8, "Wrong size on UPyWidget_Mood_IconPreview");
-static_assert(offsetof(UPyWidget_Mood_IconPreview, SwitchTabAction) == 0x0005C0, "Member 'UPyWidget_Mood_IconPreview::SwitchTabAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mood_IconPreview;
 
 }
 

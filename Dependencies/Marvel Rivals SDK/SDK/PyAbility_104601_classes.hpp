@@ -24,57 +24,63 @@ class UPyConfig_104601 final : public UPyConfig_134
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104601">();
+		STATIC_CLASS_IMPL("PyConfig_104601")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104601")
 	}
 	static class UPyConfig_104601* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104601>();
 	}
 };
-static_assert(alignof(UPyConfig_104601) == 0x000008, "Wrong alignment on UPyConfig_104601");
-static_assert(sizeof(UPyConfig_104601) == 0x0001A0, "Wrong size on UPyConfig_104601");
+DUMPER7_ASSERTS_UPyConfig_104601;
 
 // PythonClass PyAbility_104601.PyAbility_104601
-// 0x0000 (0x2CA8 - 0x2CA8)
+// 0x0000 (0x2CF8 - 0x2CF8)
 class UPyAbility_104601 : public UPyAbility_134
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104601">();
+		STATIC_CLASS_IMPL("PyAbility_104601")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104601")
 	}
 	static class UPyAbility_104601* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104601>();
 	}
 };
-static_assert(alignof(UPyAbility_104601) == 0x000008, "Wrong alignment on UPyAbility_104601");
-static_assert(sizeof(UPyAbility_104601) == 0x002CA8, "Wrong size on UPyAbility_104601");
+DUMPER7_ASSERTS_UPyAbility_104601;
 
 // PythonClass PyAbility_104601.PyCue_Death_104601
-// 0x0080 (0x1B30 - 0x1AB0)
+// 0x0080 (0x1B60 - 0x1AE0)
 class APyCue_Death_104601 final : public APyCue_Death_134
 {
 public:
-	TMap<class FString, class UCurveFloat*>       CurveSoulCocoonChangeCloak;                        // 0x1AB0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FMaterialQuery                         CloakSlotQuery;                                    // 0x1B00(0x0024)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CloakSlotIndex;                                    // 0x1B24(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, class UCurveFloat*>       CurveSoulCocoonChangeCloak;                        // 0x1AE0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FMaterialQuery                         CloakSlotQuery;                                    // 0x1B30(0x0024)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CloakSlotIndex;                                    // 0x1B54(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Death_104601">();
+		STATIC_CLASS_IMPL("PyCue_Death_104601")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Death_104601")
 	}
 	static class APyCue_Death_104601* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Death_104601>();
 	}
 };
-static_assert(alignof(APyCue_Death_104601) == 0x000010, "Wrong alignment on APyCue_Death_104601");
-static_assert(sizeof(APyCue_Death_104601) == 0x001B30, "Wrong size on APyCue_Death_104601");
-static_assert(offsetof(APyCue_Death_104601, CurveSoulCocoonChangeCloak) == 0x001AB0, "Member 'APyCue_Death_104601::CurveSoulCocoonChangeCloak' has a wrong offset!");
-static_assert(offsetof(APyCue_Death_104601, CloakSlotQuery) == 0x001B00, "Member 'APyCue_Death_104601::CloakSlotQuery' has a wrong offset!");
-static_assert(offsetof(APyCue_Death_104601, CloakSlotIndex) == 0x001B24, "Member 'APyCue_Death_104601::CloakSlotIndex' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Death_104601;
 
 }
 

@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelTimeNodes">();
+		STATIC_CLASS_IMPL("PyLevelTimeNodes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelTimeNodes")
 	}
 	static class UPyLevelTimeNodes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelTimeNodes>();
 	}
 };
-static_assert(alignof(UPyLevelTimeNodes) == 0x000008, "Wrong alignment on UPyLevelTimeNodes");
-static_assert(sizeof(UPyLevelTimeNodes) == 0x000030, "Wrong size on UPyLevelTimeNodes");
+DUMPER7_ASSERTS_UPyLevelTimeNodes;
 
 }
 

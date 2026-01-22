@@ -792,6 +792,56 @@ bool UAbility_103341::OnStopMovingForward()
 }
 
 
+// Function Hero_1033.Ability_103352.SetImpactNormal
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   InNormal                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_103352::SetImpactNormal(const struct FVector& InNormal)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_103352", "SetImpactNormal");
+
+	Params::Ability_103352_SetImpactNormal Parms{};
+
+	Parms.InNormal = std::move(InNormal);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1033.Ability_103352.ShouldCloseSimulatedSummoned
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAbility_103352::ShouldCloseSimulatedSummoned()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_103352", "ShouldCloseSimulatedSummoned");
+
+	Params::Ability_103352_ShouldCloseSimulatedSummoned Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function Hero_1033.Ability_103352.GetChargeStrength
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:

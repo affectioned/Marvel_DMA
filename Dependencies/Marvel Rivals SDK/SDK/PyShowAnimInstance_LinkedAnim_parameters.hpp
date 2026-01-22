@@ -23,9 +23,7 @@ struct PyShowAnimInstance_LinkedAnim_BlueprintPreUpdateAnimation final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowAnimInstance_LinkedAnim_BlueprintPreUpdateAnimation) == 0x000004, "Wrong alignment on PyShowAnimInstance_LinkedAnim_BlueprintPreUpdateAnimation");
-static_assert(sizeof(PyShowAnimInstance_LinkedAnim_BlueprintPreUpdateAnimation) == 0x000004, "Wrong size on PyShowAnimInstance_LinkedAnim_BlueprintPreUpdateAnimation");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_BlueprintPreUpdateAnimation, DeltaSeconds) == 0x000000, "Member 'PyShowAnimInstance_LinkedAnim_BlueprintPreUpdateAnimation::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowAnimInstance_LinkedAnim_BlueprintPreUpdateAnimation;
 
 // PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnPlayShowAnim
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyShowAnimInstance_LinkedAnim_OnPlayShowAnim final
 public:
 	bool                                          IsPlay;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowAnimInstance_LinkedAnim_OnPlayShowAnim) == 0x000001, "Wrong alignment on PyShowAnimInstance_LinkedAnim_OnPlayShowAnim");
-static_assert(sizeof(PyShowAnimInstance_LinkedAnim_OnPlayShowAnim) == 0x000001, "Wrong size on PyShowAnimInstance_LinkedAnim_OnPlayShowAnim");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_OnPlayShowAnim, IsPlay) == 0x000000, "Member 'PyShowAnimInstance_LinkedAnim_OnPlayShowAnim::IsPlay' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowAnimInstance_LinkedAnim_OnPlayShowAnim;
 
 // PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnPlayToggleAnim
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyShowAnimInstance_LinkedAnim_OnPlayToggleAnim final
 public:
 	bool                                          IsToggleHalf_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowAnimInstance_LinkedAnim_OnPlayToggleAnim) == 0x000001, "Wrong alignment on PyShowAnimInstance_LinkedAnim_OnPlayToggleAnim");
-static_assert(sizeof(PyShowAnimInstance_LinkedAnim_OnPlayToggleAnim) == 0x000001, "Wrong size on PyShowAnimInstance_LinkedAnim_OnPlayToggleAnim");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_OnPlayToggleAnim, IsToggleHalf_0) == 0x000000, "Member 'PyShowAnimInstance_LinkedAnim_OnPlayToggleAnim::IsToggleHalf_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowAnimInstance_LinkedAnim_OnPlayToggleAnim;
 
 // PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnIsHalfChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,7 @@ struct PyShowAnimInstance_LinkedAnim_OnIsHalfChanged final
 public:
 	bool                                          IsToggleHalf_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowAnimInstance_LinkedAnim_OnIsHalfChanged) == 0x000001, "Wrong alignment on PyShowAnimInstance_LinkedAnim_OnIsHalfChanged");
-static_assert(sizeof(PyShowAnimInstance_LinkedAnim_OnIsHalfChanged) == 0x000001, "Wrong size on PyShowAnimInstance_LinkedAnim_OnIsHalfChanged");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_OnIsHalfChanged, IsToggleHalf_0) == 0x000000, "Member 'PyShowAnimInstance_LinkedAnim_OnIsHalfChanged::IsToggleHalf_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowAnimInstance_LinkedAnim_OnIsHalfChanged;
 
 // PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnPlayEmoteAnim
 // 0x0010 (0x0010 - 0x0000)
@@ -67,9 +59,16 @@ struct PyShowAnimInstance_LinkedAnim_OnPlayEmoteAnim final
 public:
 	class FString                                 ItemID;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowAnimInstance_LinkedAnim_OnPlayEmoteAnim) == 0x000008, "Wrong alignment on PyShowAnimInstance_LinkedAnim_OnPlayEmoteAnim");
-static_assert(sizeof(PyShowAnimInstance_LinkedAnim_OnPlayEmoteAnim) == 0x000010, "Wrong size on PyShowAnimInstance_LinkedAnim_OnPlayEmoteAnim");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_OnPlayEmoteAnim, ItemID) == 0x000000, "Member 'PyShowAnimInstance_LinkedAnim_OnPlayEmoteAnim::ItemID' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowAnimInstance_LinkedAnim_OnPlayEmoteAnim;
+
+// PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnPlaySkinCustomizationAnim
+// 0x0010 (0x0010 - 0x0000)
+struct PyShowAnimInstance_LinkedAnim_OnPlaySkinCustomizationAnim final
+{
+public:
+	class FString                                 ItemID;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyShowAnimInstance_LinkedAnim_OnPlaySkinCustomizationAnim;
 
 // PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnPlayHeroGaller_CardPose
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +77,7 @@ struct PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_CardPose final
 public:
 	bool                                          IsPlayCardPose_0;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_CardPose) == 0x000001, "Wrong alignment on PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_CardPose");
-static_assert(sizeof(PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_CardPose) == 0x000001, "Wrong size on PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_CardPose");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_CardPose, IsPlayCardPose_0) == 0x000000, "Member 'PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_CardPose::IsPlayCardPose_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_CardPose;
 
 // PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnPlayHeroGaller_HoverStand
 // 0x0001 (0x0001 - 0x0000)
@@ -89,9 +86,7 @@ struct PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_HoverStand final
 public:
 	bool                                          IsPlayHoverStand_0;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_HoverStand) == 0x000001, "Wrong alignment on PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_HoverStand");
-static_assert(sizeof(PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_HoverStand) == 0x000001, "Wrong size on PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_HoverStand");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_HoverStand, IsPlayHoverStand_0) == 0x000000, "Member 'PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_HoverStand::IsPlayHoverStand_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowAnimInstance_LinkedAnim_OnPlayHeroGaller_HoverStand;
 
 // PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.IsLSHoverStandPlaying
 // 0x0001 (0x0001 - 0x0000)
@@ -100,9 +95,7 @@ struct PyShowAnimInstance_LinkedAnim_IsLSHoverStandPlaying final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowAnimInstance_LinkedAnim_IsLSHoverStandPlaying) == 0x000001, "Wrong alignment on PyShowAnimInstance_LinkedAnim_IsLSHoverStandPlaying");
-static_assert(sizeof(PyShowAnimInstance_LinkedAnim_IsLSHoverStandPlaying) == 0x000001, "Wrong size on PyShowAnimInstance_LinkedAnim_IsLSHoverStandPlaying");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_IsLSHoverStandPlaying, ReturnValue) == 0x000000, "Member 'PyShowAnimInstance_LinkedAnim_IsLSHoverStandPlaying::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowAnimInstance_LinkedAnim_IsLSHoverStandPlaying;
 
 // PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnShowActorCameraGaze
 // 0x0028 (0x0028 - 0x0000)
@@ -115,12 +108,7 @@ public:
 	float                                         OpenBlendTime;                                     // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CloseBlendTime;                                    // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze) == 0x000008, "Wrong alignment on PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze");
-static_assert(sizeof(PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze) == 0x000028, "Wrong size on PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze, TurnCameraGaze_0) == 0x000000, "Member 'PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze::TurnCameraGaze_0' has a wrong offset!");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze, CameraLocation_0) == 0x000008, "Member 'PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze::CameraLocation_0' has a wrong offset!");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze, OpenBlendTime) == 0x000020, "Member 'PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze::OpenBlendTime' has a wrong offset!");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze, CloseBlendTime) == 0x000024, "Member 'PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze::CloseBlendTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowAnimInstance_LinkedAnim_OnShowActorCameraGaze;
 
 // PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnPlayVoiceAnim
 // 0x0008 (0x0008 - 0x0000)
@@ -129,9 +117,7 @@ struct PyShowAnimInstance_LinkedAnim_OnPlayVoiceAnim final
 public:
 	class UAnimSequence*                          VoiceAnim_0;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowAnimInstance_LinkedAnim_OnPlayVoiceAnim) == 0x000008, "Wrong alignment on PyShowAnimInstance_LinkedAnim_OnPlayVoiceAnim");
-static_assert(sizeof(PyShowAnimInstance_LinkedAnim_OnPlayVoiceAnim) == 0x000008, "Wrong size on PyShowAnimInstance_LinkedAnim_OnPlayVoiceAnim");
-static_assert(offsetof(PyShowAnimInstance_LinkedAnim_OnPlayVoiceAnim, VoiceAnim_0) == 0x000000, "Member 'PyShowAnimInstance_LinkedAnim_OnPlayVoiceAnim::VoiceAnim_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowAnimInstance_LinkedAnim_OnPlayVoiceAnim;
 
 }
 

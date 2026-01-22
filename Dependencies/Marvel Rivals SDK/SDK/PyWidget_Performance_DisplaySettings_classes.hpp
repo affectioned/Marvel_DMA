@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SettingPageBase_classes.hpp"
-#include "PyWidget_SettingOptionEntry_classes.hpp"
-#include "SlateCore_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
+#include "PyWidget_SettingPageBase_classes.hpp"
+#include "SlateCore_structs.hpp"
+#include "PyWidget_SettingOptionEntry_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Performance_DisplaySettings.PyWidget_Performance_DisplaySettings
-// 0x0000 (0x0620 - 0x0620)
+// 0x0000 (0x0628 - 0x0628)
 class UPyWidget_Performance_DisplaySettings final : public UPyWidget_SettingPageBase
 {
 public:
@@ -31,68 +31,73 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_DisplaySettings">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_DisplaySettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_DisplaySettings")
 	}
 	static class UPyWidget_Performance_DisplaySettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_DisplaySettings>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_DisplaySettings) == 0x000008, "Wrong alignment on UPyWidget_Performance_DisplaySettings");
-static_assert(sizeof(UPyWidget_Performance_DisplaySettings) == 0x000620, "Wrong size on UPyWidget_Performance_DisplaySettings");
+DUMPER7_ASSERTS_UPyWidget_Performance_DisplaySettings;
 
 // PythonClass PyWidget_Performance_DisplaySettings.PyWidget_Performance_SettingsOptionEntry
-// 0x0050 (0x0778 - 0x0728)
+// 0x0050 (0x0780 - 0x0730)
 class UPyWidget_Performance_SettingsOptionEntry final : public UPyWidget_SettingOptionEntry
 {
 public:
-	struct FSlateColor                            Color_High;                                        // 0x0728(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Mid;                                         // 0x073C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Low;                                         // 0x0750(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Default;                                     // 0x0764(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_High;                                        // 0x0730(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Mid;                                         // 0x0744(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Low;                                         // 0x0758(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Default;                                     // 0x076C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_SettingsOptionEntry">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_SettingsOptionEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_SettingsOptionEntry")
 	}
 	static class UPyWidget_Performance_SettingsOptionEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_SettingsOptionEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_SettingsOptionEntry) == 0x000008, "Wrong alignment on UPyWidget_Performance_SettingsOptionEntry");
-static_assert(sizeof(UPyWidget_Performance_SettingsOptionEntry) == 0x000778, "Wrong size on UPyWidget_Performance_SettingsOptionEntry");
-static_assert(offsetof(UPyWidget_Performance_SettingsOptionEntry, Color_High) == 0x000728, "Member 'UPyWidget_Performance_SettingsOptionEntry::Color_High' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_SettingsOptionEntry, Color_Mid) == 0x00073C, "Member 'UPyWidget_Performance_SettingsOptionEntry::Color_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_SettingsOptionEntry, Color_Low) == 0x000750, "Member 'UPyWidget_Performance_SettingsOptionEntry::Color_Low' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_SettingsOptionEntry, Color_Default) == 0x000764, "Member 'UPyWidget_Performance_SettingsOptionEntry::Color_Default' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_SettingsOptionEntry;
 
 // PythonClass PyWidget_Performance_DisplaySettings.PyWidget_Performance_SettingsOptionTitleEntry
-// 0x0000 (0x0600 - 0x0600)
+// 0x0000 (0x0608 - 0x0608)
 class UPyWidget_Performance_SettingsOptionTitleEntry final : public UPyWidget_SettingOptionEntryTitle
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_SettingsOptionTitleEntry">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_SettingsOptionTitleEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_SettingsOptionTitleEntry")
 	}
 	static class UPyWidget_Performance_SettingsOptionTitleEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_SettingsOptionTitleEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_SettingsOptionTitleEntry) == 0x000008, "Wrong alignment on UPyWidget_Performance_SettingsOptionTitleEntry");
-static_assert(sizeof(UPyWidget_Performance_SettingsOptionTitleEntry) == 0x000600, "Wrong size on UPyWidget_Performance_SettingsOptionTitleEntry");
+DUMPER7_ASSERTS_UPyWidget_Performance_SettingsOptionTitleEntry;
 
 // PythonClass PyWidget_Performance_DisplaySettings.PyWidget_Performance_ExpectedImpact
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Performance_ExpectedImpact : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            Text_Title_Color;                                  // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Text_Value_Color;                                  // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            Text_Title_Color;                                  // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Text_Value_Color;                                  // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -102,17 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_ExpectedImpact">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_ExpectedImpact")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_ExpectedImpact")
 	}
 	static class UPyWidget_Performance_ExpectedImpact* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_ExpectedImpact>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_ExpectedImpact) == 0x000008, "Wrong alignment on UPyWidget_Performance_ExpectedImpact");
-static_assert(sizeof(UPyWidget_Performance_ExpectedImpact) == 0x0005E8, "Wrong size on UPyWidget_Performance_ExpectedImpact");
-static_assert(offsetof(UPyWidget_Performance_ExpectedImpact, Text_Title_Color) == 0x0005BC, "Member 'UPyWidget_Performance_ExpectedImpact::Text_Title_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_ExpectedImpact, Text_Value_Color) == 0x0005D0, "Member 'UPyWidget_Performance_ExpectedImpact::Text_Value_Color' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_ExpectedImpact;
 
 }
 

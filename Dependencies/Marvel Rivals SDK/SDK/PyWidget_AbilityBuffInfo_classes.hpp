@@ -36,26 +36,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReceivedBuffs">();
+		STATIC_CLASS_IMPL("PyWidget_ReceivedBuffs")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReceivedBuffs")
 	}
 	static class UPyWidget_ReceivedBuffs* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReceivedBuffs>();
 	}
 };
-static_assert(alignof(UPyWidget_ReceivedBuffs) == 0x000008, "Wrong alignment on UPyWidget_ReceivedBuffs");
-static_assert(sizeof(UPyWidget_ReceivedBuffs) == 0x0003C8, "Wrong size on UPyWidget_ReceivedBuffs");
-static_assert(offsetof(UPyWidget_ReceivedBuffs, BuffUnitClass) == 0x0003B8, "Member 'UPyWidget_ReceivedBuffs::BuffUnitClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReceivedBuffs, AutoTest) == 0x0003C0, "Member 'UPyWidget_ReceivedBuffs::AutoTest' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ReceivedBuffs;
 
 // PythonClass PyWidget_AbilityBuffInfo.PyBuffPanel_Control
-// 0x0018 (0x05B0 - 0x0598)
+// 0x0018 (0x05B8 - 0x05A0)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyBuffPanel_Control : public UAbilityInfoPanel_CueTag
 {
 public:
-	TArray<struct FBuffInfoStyle>                 BuffInfoStyleList;                                 // 0x0598(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          AutoTest;                                          // 0x05A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FBuffInfoStyle>                 BuffInfoStyleList;                                 // 0x05A0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          AutoTest;                                          // 0x05B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -66,7 +67,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffPanel_Control">();
+		STATIC_CLASS_IMPL("PyBuffPanel_Control")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffPanel_Control")
 	}
 	static class UPyBuffPanel_Control* GetDefaultObj()
 	{
@@ -74,34 +79,32 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyBuffPanel_Control) == 0x000008, "Wrong alignment on UPyBuffPanel_Control");
-static_assert(sizeof(UPyBuffPanel_Control) == 0x0005B0, "Wrong size on UPyBuffPanel_Control");
-static_assert(offsetof(UPyBuffPanel_Control, BuffInfoStyleList) == 0x000598, "Member 'UPyBuffPanel_Control::BuffInfoStyleList' has a wrong offset!");
-static_assert(offsetof(UPyBuffPanel_Control, AutoTest) == 0x0005A8, "Member 'UPyBuffPanel_Control::AutoTest' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffPanel_Control;
 
 // PythonClass PyWidget_AbilityBuffInfo.PyBuffPanel_View
-// 0x0008 (0x05B8 - 0x05B0)
+// 0x0008 (0x05C0 - 0x05B8)
 class UPyBuffPanel_View final : public UPyBuffPanel_Control
 {
 public:
-	uint8                                         Pad_5A9[0x3];                                      // 0x05A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FadeOutTime;                                       // 0x05AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                BuffPortaitClass;                                  // 0x05B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5B1[0x3];                                      // 0x05B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FadeOutTime;                                       // 0x05B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                BuffPortaitClass;                                  // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffPanel_View">();
+		STATIC_CLASS_IMPL("PyBuffPanel_View")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffPanel_View")
 	}
 	static class UPyBuffPanel_View* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffPanel_View>();
 	}
 };
-static_assert(alignof(UPyBuffPanel_View) == 0x000008, "Wrong alignment on UPyBuffPanel_View");
-static_assert(sizeof(UPyBuffPanel_View) == 0x0005B8, "Wrong size on UPyBuffPanel_View");
-static_assert(offsetof(UPyBuffPanel_View, FadeOutTime) == 0x0005AC, "Member 'UPyBuffPanel_View::FadeOutTime' has a wrong offset!");
-static_assert(offsetof(UPyBuffPanel_View, BuffPortaitClass) == 0x0005B0, "Member 'UPyBuffPanel_View::BuffPortaitClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffPanel_View;
 
 }
 

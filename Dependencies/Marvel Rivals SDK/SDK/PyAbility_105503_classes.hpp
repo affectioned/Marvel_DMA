@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
-#include "Marvel_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "PyAbility_105503_structs.hpp"
+#include "Marvel_structs.hpp"
+#include "Marvel_classes.hpp"
 #include "Hero_1055_classes.hpp"
 
 
@@ -21,38 +21,35 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105503.PyConfig_105503
-// 0x04A8 (0x0540 - 0x0098)
+// 0x05E8 (0x0680 - 0x0098)
 class UPyConfig_105503 final : public UMarvelAbilityConfig
 {
 public:
 	int32                                         BuffEffectID;                                      // 0x0098(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxEnergy;                                         // 0x009C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelTraceRule                       HitTraceRule;                                      // 0x00A0(0x0398)(Edit, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  HitTagRequirement;                                 // 0x0438(0x0068)(Edit, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            ReplyEnergySkills;                                 // 0x04A0(0x0050)(Edit, NativeAccessSpecifierPublic)
-	TMap<float, struct FGameplayTag>              Levels;                                            // 0x04F0(0x0050)(Edit, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       HitTraceRule;                                      // 0x00A0(0x04D8)(Edit, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  HitTagRequirement;                                 // 0x0578(0x0068)(Edit, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            ReplyEnergySkills;                                 // 0x05E0(0x0050)(Edit, NativeAccessSpecifierPublic)
+	TMap<float, struct FGameplayTag>              Levels;                                            // 0x0630(0x0050)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105503">();
+		STATIC_CLASS_IMPL("PyConfig_105503")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105503")
 	}
 	static class UPyConfig_105503* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105503>();
 	}
 };
-static_assert(alignof(UPyConfig_105503) == 0x000008, "Wrong alignment on UPyConfig_105503");
-static_assert(sizeof(UPyConfig_105503) == 0x000540, "Wrong size on UPyConfig_105503");
-static_assert(offsetof(UPyConfig_105503, BuffEffectID) == 0x000098, "Member 'UPyConfig_105503::BuffEffectID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105503, MaxEnergy) == 0x00009C, "Member 'UPyConfig_105503::MaxEnergy' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105503, HitTraceRule) == 0x0000A0, "Member 'UPyConfig_105503::HitTraceRule' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105503, HitTagRequirement) == 0x000438, "Member 'UPyConfig_105503::HitTagRequirement' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105503, ReplyEnergySkills) == 0x0004A0, "Member 'UPyConfig_105503::ReplyEnergySkills' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105503, Levels) == 0x0004F0, "Member 'UPyConfig_105503::Levels' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105503;
 
 // PythonClass PyAbility_105503.PyAbility_105503
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_105503 : public UMarvelGameplayAbility
 {
 public:
@@ -63,18 +60,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105503">();
+		STATIC_CLASS_IMPL("PyAbility_105503")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105503")
 	}
 	static class UPyAbility_105503* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105503>();
 	}
 };
-static_assert(alignof(UPyAbility_105503) == 0x000008, "Wrong alignment on UPyAbility_105503");
-static_assert(sizeof(UPyAbility_105503) == 0x0029F0, "Wrong size on UPyAbility_105503");
+DUMPER7_ASSERTS_UPyAbility_105503;
 
 // PythonClass PyAbility_105503.PyUIController_105503
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_105503 final : public UUIC_Ability
 {
 public:
@@ -84,28 +84,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_105503">();
+		STATIC_CLASS_IMPL("PyUIController_105503")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_105503")
 	}
 	static class UPyUIController_105503* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_105503>();
 	}
 };
-static_assert(alignof(UPyUIController_105503) == 0x000008, "Wrong alignment on UPyUIController_105503");
-static_assert(sizeof(UPyUIController_105503) == 0x000F10, "Wrong size on UPyUIController_105503");
+DUMPER7_ASSERTS_UPyUIController_105503;
 
 // PythonClass PyAbility_105503.PyCue_Buff_Loop_10550301
-// 0x0040 (0x16D0 - 0x1690)
+// 0x0040 (0x1780 - 0x1740)
 class APyCue_Buff_Loop_10550301 final : public ACue_Buff_Loop_10550301
 {
 public:
-	class UNiagaraComponent*                      HeadNiagaraComp;                                   // 0x1690(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNiagaraComponent*                      BodyNiagaraComp;                                   // 0x1698(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FMaterialStageEffectConfig>     StageEffectConfig;                                 // 0x16A0(0x0010)(Edit, NativeAccessSpecifierPublic)
-	float                                         TickFrequency;                                     // 0x16B0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16B4[0x4];                                     // 0x16B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          RestoreEnergyAudio;                                // 0x16B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          EnergyMaxAudio;                                    // 0x16C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraComponent*                      HeadNiagaraComp;                                   // 0x1740(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraComponent*                      BodyNiagaraComp;                                   // 0x1748(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FMaterialStageEffectConfig>     StageEffectConfig;                                 // 0x1750(0x0010)(Edit, NativeAccessSpecifierPublic)
+	float                                         TickFrequency;                                     // 0x1760(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1764[0x4];                                     // 0x1764(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          RestoreEnergyAudio;                                // 0x1768(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          EnergyMaxAudio;                                    // 0x1770(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -114,21 +117,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_10550301">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_10550301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_10550301")
 	}
 	static class APyCue_Buff_Loop_10550301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_10550301>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_10550301) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_10550301");
-static_assert(sizeof(APyCue_Buff_Loop_10550301) == 0x0016D0, "Wrong size on APyCue_Buff_Loop_10550301");
-static_assert(offsetof(APyCue_Buff_Loop_10550301, HeadNiagaraComp) == 0x001690, "Member 'APyCue_Buff_Loop_10550301::HeadNiagaraComp' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_10550301, BodyNiagaraComp) == 0x001698, "Member 'APyCue_Buff_Loop_10550301::BodyNiagaraComp' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_10550301, StageEffectConfig) == 0x0016A0, "Member 'APyCue_Buff_Loop_10550301::StageEffectConfig' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_10550301, TickFrequency) == 0x0016B0, "Member 'APyCue_Buff_Loop_10550301::TickFrequency' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_10550301, RestoreEnergyAudio) == 0x0016B8, "Member 'APyCue_Buff_Loop_10550301::RestoreEnergyAudio' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_10550301, EnergyMaxAudio) == 0x0016C0, "Member 'APyCue_Buff_Loop_10550301::EnergyMaxAudio' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_10550301;
 
 }
 

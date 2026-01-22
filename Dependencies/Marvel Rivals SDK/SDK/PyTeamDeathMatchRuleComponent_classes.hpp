@@ -42,22 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTeamDeathMatchRuleComponent">();
+		STATIC_CLASS_IMPL("PyTeamDeathMatchRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTeamDeathMatchRuleComponent")
 	}
 	static class UPyTeamDeathMatchRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTeamDeathMatchRuleComponent>();
 	}
 };
-static_assert(alignof(UPyTeamDeathMatchRuleComponent) == 0x000008, "Wrong alignment on UPyTeamDeathMatchRuleComponent");
-static_assert(sizeof(UPyTeamDeathMatchRuleComponent) == 0x000130, "Wrong size on UPyTeamDeathMatchRuleComponent");
-static_assert(offsetof(UPyTeamDeathMatchRuleComponent, IsFinalState) == 0x000108, "Member 'UPyTeamDeathMatchRuleComponent::IsFinalState' has a wrong offset!");
-static_assert(offsetof(UPyTeamDeathMatchRuleComponent, RedTeamScore) == 0x00010C, "Member 'UPyTeamDeathMatchRuleComponent::RedTeamScore' has a wrong offset!");
-static_assert(offsetof(UPyTeamDeathMatchRuleComponent, BlueTeamScore) == 0x000110, "Member 'UPyTeamDeathMatchRuleComponent::BlueTeamScore' has a wrong offset!");
-static_assert(offsetof(UPyTeamDeathMatchRuleComponent, InSuddenDeath) == 0x000114, "Member 'UPyTeamDeathMatchRuleComponent::InSuddenDeath' has a wrong offset!");
-static_assert(offsetof(UPyTeamDeathMatchRuleComponent, AudioScoreGap) == 0x000118, "Member 'UPyTeamDeathMatchRuleComponent::AudioScoreGap' has a wrong offset!");
-static_assert(offsetof(UPyTeamDeathMatchRuleComponent, MaxTeamScore) == 0x00011C, "Member 'UPyTeamDeathMatchRuleComponent::MaxTeamScore' has a wrong offset!");
-static_assert(offsetof(UPyTeamDeathMatchRuleComponent, KillBuffId) == 0x000120, "Member 'UPyTeamDeathMatchRuleComponent::KillBuffId' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTeamDeathMatchRuleComponent;
 
 }
 

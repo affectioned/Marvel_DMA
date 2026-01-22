@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103361.PyAbility_103361
-// 0x0008 (0x29F8 - 0x29F0)
+// 0x0008 (0x2A48 - 0x2A40)
 class UPyAbility_103361 : public UMarvelGameplayAbility
 {
 public:
-	bool                                          IsAmmoReady;                                       // 0x29F0(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          OpenDetectionState;                                // 0x29F1(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsAmmoReady;                                       // 0x2A40(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OpenDetectionState;                                // 0x2A41(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool CanActivate();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103361">();
+		STATIC_CLASS_IMPL("PyAbility_103361")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103361")
 	}
 	static class UPyAbility_103361* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103361>();
 	}
 };
-static_assert(alignof(UPyAbility_103361) == 0x000008, "Wrong alignment on UPyAbility_103361");
-static_assert(sizeof(UPyAbility_103361) == 0x0029F8, "Wrong size on UPyAbility_103361");
-static_assert(offsetof(UPyAbility_103361, IsAmmoReady) == 0x0029F0, "Member 'UPyAbility_103361::IsAmmoReady' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103361, OpenDetectionState) == 0x0029F1, "Member 'UPyAbility_103361::OpenDetectionState' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103361;
 
 }
 

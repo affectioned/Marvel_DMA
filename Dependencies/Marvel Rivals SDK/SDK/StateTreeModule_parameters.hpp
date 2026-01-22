@@ -25,10 +25,7 @@ public:
 	EStateTreeTransitionPriority                  Priority;                                          // 0x0002(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3[0x1];                                        // 0x0003(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(StateTreeNodeBlueprintBase_RequestTransition) == 0x000002, "Wrong alignment on StateTreeNodeBlueprintBase_RequestTransition");
-static_assert(sizeof(StateTreeNodeBlueprintBase_RequestTransition) == 0x000004, "Wrong size on StateTreeNodeBlueprintBase_RequestTransition");
-static_assert(offsetof(StateTreeNodeBlueprintBase_RequestTransition, TargetState) == 0x000000, "Member 'StateTreeNodeBlueprintBase_RequestTransition::TargetState' has a wrong offset!");
-static_assert(offsetof(StateTreeNodeBlueprintBase_RequestTransition, Priority) == 0x000002, "Member 'StateTreeNodeBlueprintBase_RequestTransition::Priority' has a wrong offset!");
+DUMPER7_ASSERTS_StateTreeNodeBlueprintBase_RequestTransition;
 
 // Function StateTreeModule.StateTreeNodeBlueprintBase.SendEvent
 // 0x0048 (0x0048 - 0x0000)
@@ -37,9 +34,7 @@ struct StateTreeNodeBlueprintBase_SendEvent final
 public:
 	struct FStateTreeEvent                        Event;                                             // 0x0000(0x0048)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StateTreeNodeBlueprintBase_SendEvent) == 0x000008, "Wrong alignment on StateTreeNodeBlueprintBase_SendEvent");
-static_assert(sizeof(StateTreeNodeBlueprintBase_SendEvent) == 0x000048, "Wrong size on StateTreeNodeBlueprintBase_SendEvent");
-static_assert(offsetof(StateTreeNodeBlueprintBase_SendEvent, Event) == 0x000000, "Member 'StateTreeNodeBlueprintBase_SendEvent::Event' has a wrong offset!");
+DUMPER7_ASSERTS_StateTreeNodeBlueprintBase_SendEvent;
 
 // Function StateTreeModule.StateTreeConditionBlueprintBase.ReceiveTestCondition
 // 0x0001 (0x0001 - 0x0000)
@@ -48,9 +43,7 @@ struct StateTreeConditionBlueprintBase_ReceiveTestCondition final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StateTreeConditionBlueprintBase_ReceiveTestCondition) == 0x000001, "Wrong alignment on StateTreeConditionBlueprintBase_ReceiveTestCondition");
-static_assert(sizeof(StateTreeConditionBlueprintBase_ReceiveTestCondition) == 0x000001, "Wrong size on StateTreeConditionBlueprintBase_ReceiveTestCondition");
-static_assert(offsetof(StateTreeConditionBlueprintBase_ReceiveTestCondition, ReturnValue) == 0x000000, "Member 'StateTreeConditionBlueprintBase_ReceiveTestCondition::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StateTreeConditionBlueprintBase_ReceiveTestCondition;
 
 // Function StateTreeModule.StateTreeEvaluatorBlueprintBase.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -59,9 +52,7 @@ struct StateTreeEvaluatorBlueprintBase_ReceiveTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StateTreeEvaluatorBlueprintBase_ReceiveTick) == 0x000004, "Wrong alignment on StateTreeEvaluatorBlueprintBase_ReceiveTick");
-static_assert(sizeof(StateTreeEvaluatorBlueprintBase_ReceiveTick) == 0x000004, "Wrong size on StateTreeEvaluatorBlueprintBase_ReceiveTick");
-static_assert(offsetof(StateTreeEvaluatorBlueprintBase_ReceiveTick, DeltaTime) == 0x000000, "Member 'StateTreeEvaluatorBlueprintBase_ReceiveTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_StateTreeEvaluatorBlueprintBase_ReceiveTick;
 
 // Function StateTreeModule.StateTreeTaskBlueprintBase.FinishTask
 // 0x0001 (0x0001 - 0x0000)
@@ -70,9 +61,7 @@ struct StateTreeTaskBlueprintBase_FinishTask final
 public:
 	bool                                          bSucceeded;                                        // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StateTreeTaskBlueprintBase_FinishTask) == 0x000001, "Wrong alignment on StateTreeTaskBlueprintBase_FinishTask");
-static_assert(sizeof(StateTreeTaskBlueprintBase_FinishTask) == 0x000001, "Wrong size on StateTreeTaskBlueprintBase_FinishTask");
-static_assert(offsetof(StateTreeTaskBlueprintBase_FinishTask, bSucceeded) == 0x000000, "Member 'StateTreeTaskBlueprintBase_FinishTask::bSucceeded' has a wrong offset!");
+DUMPER7_ASSERTS_StateTreeTaskBlueprintBase_FinishTask;
 
 // Function StateTreeModule.StateTreeTaskBlueprintBase.ReceiveEnterState
 // 0x0030 (0x0030 - 0x0000)
@@ -83,10 +72,7 @@ public:
 	EStateTreeRunStatus                           ReturnValue;                                       // 0x002E(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2F[0x1];                                       // 0x002F(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(StateTreeTaskBlueprintBase_ReceiveEnterState) == 0x000002, "Wrong alignment on StateTreeTaskBlueprintBase_ReceiveEnterState");
-static_assert(sizeof(StateTreeTaskBlueprintBase_ReceiveEnterState) == 0x000030, "Wrong size on StateTreeTaskBlueprintBase_ReceiveEnterState");
-static_assert(offsetof(StateTreeTaskBlueprintBase_ReceiveEnterState, Transition) == 0x000000, "Member 'StateTreeTaskBlueprintBase_ReceiveEnterState::Transition' has a wrong offset!");
-static_assert(offsetof(StateTreeTaskBlueprintBase_ReceiveEnterState, ReturnValue) == 0x00002E, "Member 'StateTreeTaskBlueprintBase_ReceiveEnterState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StateTreeTaskBlueprintBase_ReceiveEnterState;
 
 // Function StateTreeModule.StateTreeTaskBlueprintBase.ReceiveExitState
 // 0x002E (0x002E - 0x0000)
@@ -95,9 +81,7 @@ struct StateTreeTaskBlueprintBase_ReceiveExitState final
 public:
 	struct FStateTreeTransitionResult             Transition;                                        // 0x0000(0x002E)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StateTreeTaskBlueprintBase_ReceiveExitState) == 0x000002, "Wrong alignment on StateTreeTaskBlueprintBase_ReceiveExitState");
-static_assert(sizeof(StateTreeTaskBlueprintBase_ReceiveExitState) == 0x00002E, "Wrong size on StateTreeTaskBlueprintBase_ReceiveExitState");
-static_assert(offsetof(StateTreeTaskBlueprintBase_ReceiveExitState, Transition) == 0x000000, "Member 'StateTreeTaskBlueprintBase_ReceiveExitState::Transition' has a wrong offset!");
+DUMPER7_ASSERTS_StateTreeTaskBlueprintBase_ReceiveExitState;
 
 // Function StateTreeModule.StateTreeTaskBlueprintBase.ReceiveLatentEnterState
 // 0x002E (0x002E - 0x0000)
@@ -106,9 +90,7 @@ struct StateTreeTaskBlueprintBase_ReceiveLatentEnterState final
 public:
 	struct FStateTreeTransitionResult             Transition;                                        // 0x0000(0x002E)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StateTreeTaskBlueprintBase_ReceiveLatentEnterState) == 0x000002, "Wrong alignment on StateTreeTaskBlueprintBase_ReceiveLatentEnterState");
-static_assert(sizeof(StateTreeTaskBlueprintBase_ReceiveLatentEnterState) == 0x00002E, "Wrong size on StateTreeTaskBlueprintBase_ReceiveLatentEnterState");
-static_assert(offsetof(StateTreeTaskBlueprintBase_ReceiveLatentEnterState, Transition) == 0x000000, "Member 'StateTreeTaskBlueprintBase_ReceiveLatentEnterState::Transition' has a wrong offset!");
+DUMPER7_ASSERTS_StateTreeTaskBlueprintBase_ReceiveLatentEnterState;
 
 // Function StateTreeModule.StateTreeTaskBlueprintBase.ReceiveLatentTick
 // 0x0004 (0x0004 - 0x0000)
@@ -117,9 +99,7 @@ struct StateTreeTaskBlueprintBase_ReceiveLatentTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StateTreeTaskBlueprintBase_ReceiveLatentTick) == 0x000004, "Wrong alignment on StateTreeTaskBlueprintBase_ReceiveLatentTick");
-static_assert(sizeof(StateTreeTaskBlueprintBase_ReceiveLatentTick) == 0x000004, "Wrong size on StateTreeTaskBlueprintBase_ReceiveLatentTick");
-static_assert(offsetof(StateTreeTaskBlueprintBase_ReceiveLatentTick, DeltaTime) == 0x000000, "Member 'StateTreeTaskBlueprintBase_ReceiveLatentTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_StateTreeTaskBlueprintBase_ReceiveLatentTick;
 
 // Function StateTreeModule.StateTreeTaskBlueprintBase.ReceiveStateCompleted
 // 0x0014 (0x0014 - 0x0000)
@@ -130,10 +110,7 @@ public:
 	uint8                                         Pad_1[0x1];                                        // 0x0001(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStateTreeActiveStates                 CompletedActiveStates;                             // 0x0002(0x0012)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StateTreeTaskBlueprintBase_ReceiveStateCompleted) == 0x000002, "Wrong alignment on StateTreeTaskBlueprintBase_ReceiveStateCompleted");
-static_assert(sizeof(StateTreeTaskBlueprintBase_ReceiveStateCompleted) == 0x000014, "Wrong size on StateTreeTaskBlueprintBase_ReceiveStateCompleted");
-static_assert(offsetof(StateTreeTaskBlueprintBase_ReceiveStateCompleted, CompletionStatus) == 0x000000, "Member 'StateTreeTaskBlueprintBase_ReceiveStateCompleted::CompletionStatus' has a wrong offset!");
-static_assert(offsetof(StateTreeTaskBlueprintBase_ReceiveStateCompleted, CompletedActiveStates) == 0x000002, "Member 'StateTreeTaskBlueprintBase_ReceiveStateCompleted::CompletedActiveStates' has a wrong offset!");
+DUMPER7_ASSERTS_StateTreeTaskBlueprintBase_ReceiveStateCompleted;
 
 // Function StateTreeModule.StateTreeTaskBlueprintBase.ReceiveTick
 // 0x0008 (0x0008 - 0x0000)
@@ -144,10 +121,7 @@ public:
 	EStateTreeRunStatus                           ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(StateTreeTaskBlueprintBase_ReceiveTick) == 0x000004, "Wrong alignment on StateTreeTaskBlueprintBase_ReceiveTick");
-static_assert(sizeof(StateTreeTaskBlueprintBase_ReceiveTick) == 0x000008, "Wrong size on StateTreeTaskBlueprintBase_ReceiveTick");
-static_assert(offsetof(StateTreeTaskBlueprintBase_ReceiveTick, DeltaTime) == 0x000000, "Member 'StateTreeTaskBlueprintBase_ReceiveTick::DeltaTime' has a wrong offset!");
-static_assert(offsetof(StateTreeTaskBlueprintBase_ReceiveTick, ReturnValue) == 0x000004, "Member 'StateTreeTaskBlueprintBase_ReceiveTick::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StateTreeTaskBlueprintBase_ReceiveTick;
 
 }
 

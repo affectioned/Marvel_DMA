@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105452.PyAbility_105452
-// 0x0000 (0x2C40 - 0x2C40)
+// 0x0000 (0x2C90 - 0x2C90)
 class UPyAbility_105452 : public UAbility_109
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105452">();
+		STATIC_CLASS_IMPL("PyAbility_105452")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105452")
 	}
 	static class UPyAbility_105452* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105452>();
 	}
 };
-static_assert(alignof(UPyAbility_105452) == 0x000008, "Wrong alignment on UPyAbility_105452");
-static_assert(sizeof(UPyAbility_105452) == 0x002C40, "Wrong size on UPyAbility_105452");
+DUMPER7_ASSERTS_UPyAbility_105452;
 
 }
 

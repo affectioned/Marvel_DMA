@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LoadingPanelContainer.PyWidget_LoadingPanelContainer
-// 0x0080 (0x0460 - 0x03E0)
+// 0x0088 (0x0468 - 0x03E0)
 class UPyWidget_LoadingPanelContainer : public UWidget_LoadingPanelContainer
 {
 public:
@@ -35,7 +35,8 @@ public:
 	class ULazyWidget*                            Lazy_WBP_Loading_Lobby;                            // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULazyWidget*                            Lazy_WBP_Loading_HeroLogo;                         // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULazyWidget*                            Lazy_WBP_Loading_CustomLeague;                     // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool bInVisible)> OnVisibleChangedEvent;                           // 0x0450(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class ULazyWidget*                            Lazy_WBP_Loading_MultipleTeams;                    // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bInVisible)> OnVisibleChangedEvent;                           // 0x0458(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -46,30 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LoadingPanelContainer">();
+		STATIC_CLASS_IMPL("PyWidget_LoadingPanelContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LoadingPanelContainer")
 	}
 	static class UPyWidget_LoadingPanelContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LoadingPanelContainer>();
 	}
 };
-static_assert(alignof(UPyWidget_LoadingPanelContainer) == 0x000008, "Wrong alignment on UPyWidget_LoadingPanelContainer");
-static_assert(sizeof(UPyWidget_LoadingPanelContainer) == 0x000460, "Wrong size on UPyWidget_LoadingPanelContainer");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Anim_Loop) == 0x0003E0, "Member 'UPyWidget_LoadingPanelContainer::Anim_Loop' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Anim_FadeIn) == 0x0003E8, "Member 'UPyWidget_LoadingPanelContainer::Anim_FadeIn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Anim_FadeOut) == 0x0003F0, "Member 'UPyWidget_LoadingPanelContainer::Anim_FadeOut' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Btn_Cursor) == 0x0003F8, "Member 'UPyWidget_LoadingPanelContainer::Btn_Cursor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, ChatPanelSlot) == 0x000400, "Member 'UPyWidget_LoadingPanelContainer::ChatPanelSlot' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, WBP_Loading_Default) == 0x000408, "Member 'UPyWidget_LoadingPanelContainer::WBP_Loading_Default' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Lazy_WBP_Loading_Game) == 0x000410, "Member 'UPyWidget_LoadingPanelContainer::Lazy_WBP_Loading_Game' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Lazy_WBP_Loading_RankGame) == 0x000418, "Member 'UPyWidget_LoadingPanelContainer::Lazy_WBP_Loading_RankGame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Lazy_WBP_Replay_Loading) == 0x000420, "Member 'UPyWidget_LoadingPanelContainer::Lazy_WBP_Replay_Loading' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Lazy_WBP_Loading_CareerHighLight) == 0x000428, "Member 'UPyWidget_LoadingPanelContainer::Lazy_WBP_Loading_CareerHighLight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Lazy_WBP_Common_Loading) == 0x000430, "Member 'UPyWidget_LoadingPanelContainer::Lazy_WBP_Common_Loading' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Lazy_WBP_Loading_Lobby) == 0x000438, "Member 'UPyWidget_LoadingPanelContainer::Lazy_WBP_Loading_Lobby' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Lazy_WBP_Loading_HeroLogo) == 0x000440, "Member 'UPyWidget_LoadingPanelContainer::Lazy_WBP_Loading_HeroLogo' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, Lazy_WBP_Loading_CustomLeague) == 0x000448, "Member 'UPyWidget_LoadingPanelContainer::Lazy_WBP_Loading_CustomLeague' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LoadingPanelContainer, OnVisibleChangedEvent) == 0x000450, "Member 'UPyWidget_LoadingPanelContainer::OnVisibleChangedEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LoadingPanelContainer;
 
 }
 

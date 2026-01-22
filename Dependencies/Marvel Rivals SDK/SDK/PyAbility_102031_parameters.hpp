@@ -23,9 +23,7 @@ struct PyAbility_102031_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102031_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_102031_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_102031_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_102031_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_102031_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_102031_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102031_K2_OnEndAbility;
 
 // PythonFunction PyAbility_102031.PyAbility_102031.OnOwnerTakeDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -36,11 +34,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameter;                                 // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102031_OnOwnerTakeDamage) == 0x000008, "Wrong alignment on PyAbility_102031_OnOwnerTakeDamage");
-static_assert(sizeof(PyAbility_102031_OnOwnerTakeDamage) == 0x000028, "Wrong size on PyAbility_102031_OnOwnerTakeDamage");
-static_assert(offsetof(PyAbility_102031_OnOwnerTakeDamage, InSourceAvatar) == 0x000000, "Member 'PyAbility_102031_OnOwnerTakeDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyAbility_102031_OnOwnerTakeDamage, InTargetAvatar) == 0x000008, "Member 'PyAbility_102031_OnOwnerTakeDamage::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyAbility_102031_OnOwnerTakeDamage, ModifierParameter) == 0x000010, "Member 'PyAbility_102031_OnOwnerTakeDamage::ModifierParameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102031_OnOwnerTakeDamage;
 
 }
 

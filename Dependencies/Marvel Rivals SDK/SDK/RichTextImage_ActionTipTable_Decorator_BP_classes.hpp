@@ -23,15 +23,18 @@ class URichTextImage_ActionTipTable_Decorator_BP_C final : public URichTextBlock
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RichTextImage_ActionTipTable_Decorator_BP_C">();
+		BP_STATIC_CLASS_IMPL("RichTextImage_ActionTipTable_Decorator_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextImage_ActionTipTable_Decorator_BP_C")
 	}
 	static class URichTextImage_ActionTipTable_Decorator_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextImage_ActionTipTable_Decorator_BP_C>();
 	}
 };
-static_assert(alignof(URichTextImage_ActionTipTable_Decorator_BP_C) == 0x000008, "Wrong alignment on URichTextImage_ActionTipTable_Decorator_BP_C");
-static_assert(sizeof(URichTextImage_ActionTipTable_Decorator_BP_C) == 0x000050, "Wrong size on URichTextImage_ActionTipTable_Decorator_BP_C");
+DUMPER7_ASSERTS_URichTextImage_ActionTipTable_Decorator_BP_C;
 
 }
 

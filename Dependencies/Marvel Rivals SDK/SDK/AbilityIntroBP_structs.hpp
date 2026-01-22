@@ -34,17 +34,7 @@ public:
 	struct FSlateColor                            Img_Prestige_R_Color_33_CF7A69B04390E4718A3EABBBA2176978; // 0x008C(0x0014)(Edit, BlueprintVisible)
 	int32                                         NewlinePos_41_8021F4DD4330737C9BA866A5857BFAF8;    // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FAbilityIntroBP) == 0x000008, "Wrong alignment on FAbilityIntroBP");
-static_assert(sizeof(FAbilityIntroBP) == 0x0000A8, "Wrong size on FAbilityIntroBP");
-static_assert(offsetof(FAbilityIntroBP, bNewline_1_53DAF7C14405FD638CF760B84A2C8C87) == 0x000000, "Member 'FAbilityIntroBP::bNewline_1_53DAF7C14405FD638CF760B84A2C8C87' has a wrong offset!");
-static_assert(offsetof(FAbilityIntroBP, BG_1_Color_7_D12C8F4E451D774F3ABFDE9070F68C4D) == 0x000004, "Member 'FAbilityIntroBP::BG_1_Color_7_D12C8F4E451D774F3ABFDE9070F68C4D' has a wrong offset!");
-static_assert(offsetof(FAbilityIntroBP, BG1_Flow_Color_13_56D9AD34449D93DF1CE5B6B1EC9C50EA) == 0x000018, "Member 'FAbilityIntroBP::BG1_Flow_Color_13_56D9AD34449D93DF1CE5B6B1EC9C50EA' has a wrong offset!");
-static_assert(offsetof(FAbilityIntroBP, BG_2_Color_12_DCB06FD94A317E1309AEF482BDB1C2FA) == 0x00002C, "Member 'FAbilityIntroBP::BG_2_Color_12_DCB06FD94A317E1309AEF482BDB1C2FA' has a wrong offset!");
-static_assert(offsetof(FAbilityIntroBP, BG2_Flow_Color_14_5DF190EB4A90E90F12CA3D9DEEBED07A) == 0x000040, "Member 'FAbilityIntroBP::BG2_Flow_Color_14_5DF190EB4A90E90F12CA3D9DEEBED07A' has a wrong offset!");
-static_assert(offsetof(FAbilityIntroBP, ShapeNoSelectedBg_21_781FC6EF48A7BFC23BFAB0AA2CAF600F) == 0x000058, "Member 'FAbilityIntroBP::ShapeNoSelectedBg_21_781FC6EF48A7BFC23BFAB0AA2CAF600F' has a wrong offset!");
-static_assert(offsetof(FAbilityIntroBP, isReWriteColor_34_3FCC449F4C77D849FC10E392F546D7AE) == 0x000088, "Member 'FAbilityIntroBP::isReWriteColor_34_3FCC449F4C77D849FC10E392F546D7AE' has a wrong offset!");
-static_assert(offsetof(FAbilityIntroBP, Img_Prestige_R_Color_33_CF7A69B04390E4718A3EABBBA2176978) == 0x00008C, "Member 'FAbilityIntroBP::Img_Prestige_R_Color_33_CF7A69B04390E4718A3EABBBA2176978' has a wrong offset!");
-static_assert(offsetof(FAbilityIntroBP, NewlinePos_41_8021F4DD4330737C9BA866A5857BFAF8) == 0x0000A0, "Member 'FAbilityIntroBP::NewlinePos_41_8021F4DD4330737C9BA866A5857BFAF8' has a wrong offset!");
+DUMPER7_ASSERTS_FAbilityIntroBP;
 
 }
 

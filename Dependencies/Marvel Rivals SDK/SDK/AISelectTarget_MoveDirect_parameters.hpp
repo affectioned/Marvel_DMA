@@ -34,18 +34,7 @@ public:
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x01A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMarvelAITarget                        K2Node_MakeStruct_MarvelAITarget;                  // 0x01C0(0x0060)(NoDestructor)
 };
-static_assert(alignof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation) == 0x000008, "Wrong alignment on AISelectTarget_MoveDirect_C_SelectTargetOrLocation");
-static_assert(sizeof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation) == 0x000220, "Wrong size on AISelectTarget_MoveDirect_C_SelectTargetOrLocation");
-static_assert(offsetof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation, AIController) == 0x000000, "Member 'AISelectTarget_MoveDirect_C_SelectTargetOrLocation::AIController' has a wrong offset!");
-static_assert(offsetof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation, OutAITarget) == 0x000008, "Member 'AISelectTarget_MoveDirect_C_SelectTargetOrLocation::OutAITarget' has a wrong offset!");
-static_assert(offsetof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation, AbilityUsage) == 0x000068, "Member 'AISelectTarget_MoveDirect_C_SelectTargetOrLocation::AbilityUsage' has a wrong offset!");
-static_assert(offsetof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation, ReturnValue) == 0x000150, "Member 'AISelectTarget_MoveDirect_C_SelectTargetOrLocation::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation, CallFunc_K2_GetPawn_ReturnValue) == 0x000158, "Member 'AISelectTarget_MoveDirect_C_SelectTargetOrLocation::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation, CallFunc_GetCurrentMoveDirection_ReturnValue) == 0x000160, "Member 'AISelectTarget_MoveDirect_C_SelectTargetOrLocation::CallFunc_GetCurrentMoveDirection_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000178, "Member 'AISelectTarget_MoveDirect_C_SelectTargetOrLocation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000190, "Member 'AISelectTarget_MoveDirect_C_SelectTargetOrLocation::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation, CallFunc_Add_VectorVector_ReturnValue) == 0x0001A8, "Member 'AISelectTarget_MoveDirect_C_SelectTargetOrLocation::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AISelectTarget_MoveDirect_C_SelectTargetOrLocation, K2Node_MakeStruct_MarvelAITarget) == 0x0001C0, "Member 'AISelectTarget_MoveDirect_C_SelectTargetOrLocation::K2Node_MakeStruct_MarvelAITarget' has a wrong offset!");
+DUMPER7_ASSERTS_AISelectTarget_MoveDirect_C_SelectTargetOrLocation;
 
 }
 

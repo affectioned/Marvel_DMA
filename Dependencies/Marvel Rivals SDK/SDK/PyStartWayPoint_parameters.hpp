@@ -25,11 +25,7 @@ public:
 	class AActor*                                 FinalTarget;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FWayPointPath                          ReturnValue;                                       // 0x0010(0x0048)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyStartWayPoint_PyFetchWayPointPath) == 0x000008, "Wrong alignment on PyStartWayPoint_PyFetchWayPointPath");
-static_assert(sizeof(PyStartWayPoint_PyFetchWayPointPath) == 0x000058, "Wrong size on PyStartWayPoint_PyFetchWayPointPath");
-static_assert(offsetof(PyStartWayPoint_PyFetchWayPointPath, ActorMovingAlong) == 0x000000, "Member 'PyStartWayPoint_PyFetchWayPointPath::ActorMovingAlong' has a wrong offset!");
-static_assert(offsetof(PyStartWayPoint_PyFetchWayPointPath, FinalTarget) == 0x000008, "Member 'PyStartWayPoint_PyFetchWayPointPath::FinalTarget' has a wrong offset!");
-static_assert(offsetof(PyStartWayPoint_PyFetchWayPointPath, ReturnValue) == 0x000010, "Member 'PyStartWayPoint_PyFetchWayPointPath::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyStartWayPoint_PyFetchWayPointPath;
 
 // PythonFunction PyStartWayPoint.PyStartWayPoint.CheckValid
 // 0x0001 (0x0001 - 0x0000)
@@ -38,9 +34,7 @@ struct PyStartWayPoint_CheckValid final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyStartWayPoint_CheckValid) == 0x000001, "Wrong alignment on PyStartWayPoint_CheckValid");
-static_assert(sizeof(PyStartWayPoint_CheckValid) == 0x000001, "Wrong size on PyStartWayPoint_CheckValid");
-static_assert(offsetof(PyStartWayPoint_CheckValid, ReturnValue) == 0x000000, "Member 'PyStartWayPoint_CheckValid::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyStartWayPoint_CheckValid;
 
 }
 

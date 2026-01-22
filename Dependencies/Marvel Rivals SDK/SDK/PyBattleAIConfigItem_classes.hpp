@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleAIConfigItem">();
+		STATIC_CLASS_IMPL("PyBattleAIConfigItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleAIConfigItem")
 	}
 	static class UPyBattleAIConfigItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBattleAIConfigItem>();
 	}
 };
-static_assert(alignof(UPyBattleAIConfigItem) == 0x000008, "Wrong alignment on UPyBattleAIConfigItem");
-static_assert(sizeof(UPyBattleAIConfigItem) == 0x0000A8, "Wrong size on UPyBattleAIConfigItem");
-static_assert(offsetof(UPyBattleAIConfigItem, DefenderAIList) == 0x000038, "Member 'UPyBattleAIConfigItem::DefenderAIList' has a wrong offset!");
-static_assert(offsetof(UPyBattleAIConfigItem, AttackerAIList) == 0x000048, "Member 'UPyBattleAIConfigItem::AttackerAIList' has a wrong offset!");
-static_assert(offsetof(UPyBattleAIConfigItem, HeroBTMap) == 0x000058, "Member 'UPyBattleAIConfigItem::HeroBTMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBattleAIConfigItem;
 
 }
 

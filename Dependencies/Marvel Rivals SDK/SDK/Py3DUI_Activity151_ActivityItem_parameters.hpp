@@ -23,9 +23,7 @@ struct PyWidget_Activity151_3DButton_SetWidgetComponentOwner final
 public:
 	class UWidgetComponent*                       InWidgetComponent;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity151_3DButton_SetWidgetComponentOwner) == 0x000008, "Wrong alignment on PyWidget_Activity151_3DButton_SetWidgetComponentOwner");
-static_assert(sizeof(PyWidget_Activity151_3DButton_SetWidgetComponentOwner) == 0x000008, "Wrong size on PyWidget_Activity151_3DButton_SetWidgetComponentOwner");
-static_assert(offsetof(PyWidget_Activity151_3DButton_SetWidgetComponentOwner, InWidgetComponent) == 0x000000, "Member 'PyWidget_Activity151_3DButton_SetWidgetComponentOwner::InWidgetComponent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity151_3DButton_SetWidgetComponentOwner;
 
 // PythonFunction Py3DUI_Activity151_ActivityItem.Py3DUI_Activity151_ActivityItemBase.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct Py3DUI_Activity151_ActivityItemBase_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Py3DUI_Activity151_ActivityItemBase_ReceiveEndPlay) == 0x000001, "Wrong alignment on Py3DUI_Activity151_ActivityItemBase_ReceiveEndPlay");
-static_assert(sizeof(Py3DUI_Activity151_ActivityItemBase_ReceiveEndPlay) == 0x000001, "Wrong size on Py3DUI_Activity151_ActivityItemBase_ReceiveEndPlay");
-static_assert(offsetof(Py3DUI_Activity151_ActivityItemBase_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'Py3DUI_Activity151_ActivityItemBase_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_Py3DUI_Activity151_ActivityItemBase_ReceiveEndPlay;
 
 // PythonFunction Py3DUI_Activity151_ActivityItem.Py3DUI_Activity151_Activity150.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct Py3DUI_Activity151_Activity150_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Py3DUI_Activity151_Activity150_ReceiveEndPlay) == 0x000001, "Wrong alignment on Py3DUI_Activity151_Activity150_ReceiveEndPlay");
-static_assert(sizeof(Py3DUI_Activity151_Activity150_ReceiveEndPlay) == 0x000001, "Wrong size on Py3DUI_Activity151_Activity150_ReceiveEndPlay");
-static_assert(offsetof(Py3DUI_Activity151_Activity150_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'Py3DUI_Activity151_Activity150_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_Py3DUI_Activity151_Activity150_ReceiveEndPlay;
 
 // PythonFunction Py3DUI_Activity151_ActivityItem.Py3DUI_Activity151_Activity147.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,16 @@ struct Py3DUI_Activity151_Activity147_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Py3DUI_Activity151_Activity147_ReceiveEndPlay) == 0x000001, "Wrong alignment on Py3DUI_Activity151_Activity147_ReceiveEndPlay");
-static_assert(sizeof(Py3DUI_Activity151_Activity147_ReceiveEndPlay) == 0x000001, "Wrong size on Py3DUI_Activity151_Activity147_ReceiveEndPlay");
-static_assert(offsetof(Py3DUI_Activity151_Activity147_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'Py3DUI_Activity151_Activity147_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_Py3DUI_Activity151_Activity147_ReceiveEndPlay;
+
+// PythonFunction Py3DUI_Activity151_ActivityItem.Py3DUI_Activity151_M2201Item.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct Py3DUI_Activity151_M2201Item_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_Py3DUI_Activity151_M2201Item_ReceiveEndPlay;
 
 }
 

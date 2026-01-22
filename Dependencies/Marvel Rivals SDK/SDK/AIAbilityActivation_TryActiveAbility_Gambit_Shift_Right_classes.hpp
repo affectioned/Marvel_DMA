@@ -23,15 +23,18 @@ class UAIAbilityActivation_TryActiveAbility_Gambit_Shift_Right_C final : public 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_TryActiveAbility_Gambit_Shift_Right_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_TryActiveAbility_Gambit_Shift_Right_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_TryActiveAbility_Gambit_Shift_Right_C")
 	}
 	static class UAIAbilityActivation_TryActiveAbility_Gambit_Shift_Right_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_TryActiveAbility_Gambit_Shift_Right_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_TryActiveAbility_Gambit_Shift_Right_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_TryActiveAbility_Gambit_Shift_Right_C");
-static_assert(sizeof(UAIAbilityActivation_TryActiveAbility_Gambit_Shift_Right_C) == 0x000040, "Wrong size on UAIAbilityActivation_TryActiveAbility_Gambit_Shift_Right_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_TryActiveAbility_Gambit_Shift_Right_C;
 
 }
 

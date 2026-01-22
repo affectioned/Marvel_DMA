@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_CharacterAbilities">();
+		STATIC_CLASS_IMPL("PyUIController_CharacterAbilities")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_CharacterAbilities")
 	}
 	static class UPyUIController_CharacterAbilities* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_CharacterAbilities>();
 	}
 };
-static_assert(alignof(UPyUIController_CharacterAbilities) == 0x000008, "Wrong alignment on UPyUIController_CharacterAbilities");
-static_assert(sizeof(UPyUIController_CharacterAbilities) == 0x000040, "Wrong size on UPyUIController_CharacterAbilities");
+DUMPER7_ASSERTS_UPyUIController_CharacterAbilities;
 
 }
 

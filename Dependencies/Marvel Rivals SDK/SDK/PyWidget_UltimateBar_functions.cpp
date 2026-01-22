@@ -55,6 +55,31 @@ void UPyWidget_UltimateBar::Destruct()
 }
 
 
+// PythonFunction PyWidget_UltimateBar.PyWidget_UltimateBar.OnVisibleChanged
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bNewVisible                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_UltimateBar::OnVisibleChanged(bool bNewVisible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_UltimateBar", "OnVisibleChanged");
+
+	Params::PyWidget_UltimateBar_OnVisibleChanged Parms{};
+
+	Parms.bNewVisible = bNewVisible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_UltimateBar.PyWidget_UltimateBar.SetUltimateEnergyPercent
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

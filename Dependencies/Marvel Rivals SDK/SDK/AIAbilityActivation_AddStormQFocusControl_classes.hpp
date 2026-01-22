@@ -23,15 +23,18 @@ class UAIAbilityActivation_AddStormQFocusControl_C final : public UPyAIAbilityAc
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_AddStormQFocusControl_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_AddStormQFocusControl_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_AddStormQFocusControl_C")
 	}
 	static class UAIAbilityActivation_AddStormQFocusControl_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_AddStormQFocusControl_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_AddStormQFocusControl_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_AddStormQFocusControl_C");
-static_assert(sizeof(UAIAbilityActivation_AddStormQFocusControl_C) == 0x000048, "Wrong size on UAIAbilityActivation_AddStormQFocusControl_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_AddStormQFocusControl_C;
 
 }
 

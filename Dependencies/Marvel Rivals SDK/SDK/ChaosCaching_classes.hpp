@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosCacheCollection">();
+		STATIC_CLASS_IMPL("ChaosCacheCollection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosCacheCollection")
 	}
 	static class UChaosCacheCollection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosCacheCollection>();
 	}
 };
-static_assert(alignof(UChaosCacheCollection) == 0x000008, "Wrong alignment on UChaosCacheCollection");
-static_assert(sizeof(UChaosCacheCollection) == 0x000040, "Wrong size on UChaosCacheCollection");
-static_assert(offsetof(UChaosCacheCollection, Caches) == 0x000030, "Member 'UChaosCacheCollection::Caches' has a wrong offset!");
+DUMPER7_ASSERTS_UChaosCacheCollection;
 
 // Class ChaosCaching.ChaosCacheManager
 // 0x00B0 (0x0790 - 0x06E0)
@@ -74,21 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosCacheManager">();
+		STATIC_CLASS_IMPL("ChaosCacheManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosCacheManager")
 	}
 	static class AChaosCacheManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AChaosCacheManager>();
 	}
 };
-static_assert(alignof(AChaosCacheManager) == 0x000010, "Wrong alignment on AChaosCacheManager");
-static_assert(sizeof(AChaosCacheManager) == 0x000790, "Wrong size on AChaosCacheManager");
-static_assert(offsetof(AChaosCacheManager, CacheCollection) == 0x0006D8, "Member 'AChaosCacheManager::CacheCollection' has a wrong offset!");
-static_assert(offsetof(AChaosCacheManager, CacheMode) == 0x0006E0, "Member 'AChaosCacheManager::CacheMode' has a wrong offset!");
-static_assert(offsetof(AChaosCacheManager, StartMode) == 0x0006E1, "Member 'AChaosCacheManager::StartMode' has a wrong offset!");
-static_assert(offsetof(AChaosCacheManager, StartTime) == 0x0006E4, "Member 'AChaosCacheManager::StartTime' has a wrong offset!");
-static_assert(offsetof(AChaosCacheManager, bIsStatic) == 0x0006E8, "Member 'AChaosCacheManager::bIsStatic' has a wrong offset!");
-static_assert(offsetof(AChaosCacheManager, ObservedComponents) == 0x0006F0, "Member 'AChaosCacheManager::ObservedComponents' has a wrong offset!");
+DUMPER7_ASSERTS_AChaosCacheManager;
 
 // Class ChaosCaching.ChaosCachePlayer
 // 0x0000 (0x0790 - 0x0790)
@@ -97,15 +96,18 @@ class AChaosCachePlayer final : public AChaosCacheManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosCachePlayer">();
+		STATIC_CLASS_IMPL("ChaosCachePlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosCachePlayer")
 	}
 	static class AChaosCachePlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AChaosCachePlayer>();
 	}
 };
-static_assert(alignof(AChaosCachePlayer) == 0x000010, "Wrong alignment on AChaosCachePlayer");
-static_assert(sizeof(AChaosCachePlayer) == 0x000790, "Wrong size on AChaosCachePlayer");
+DUMPER7_ASSERTS_AChaosCachePlayer;
 
 // Class ChaosCaching.ChaosCache
 // 0x0340 (0x0370 - 0x0030)
@@ -136,31 +138,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosCache">();
+		STATIC_CLASS_IMPL("ChaosCache")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosCache")
 	}
 	static class UChaosCache* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosCache>();
 	}
 };
-static_assert(alignof(UChaosCache) == 0x000010, "Wrong alignment on UChaosCache");
-static_assert(sizeof(UChaosCache) == 0x000370, "Wrong size on UChaosCache");
-static_assert(offsetof(UChaosCache, RecordedDuration) == 0x000030, "Member 'UChaosCache::RecordedDuration' has a wrong offset!");
-static_assert(offsetof(UChaosCache, NumRecordedFrames) == 0x000034, "Member 'UChaosCache::NumRecordedFrames' has a wrong offset!");
-static_assert(offsetof(UChaosCache, TrackToParticle) == 0x000038, "Member 'UChaosCache::TrackToParticle' has a wrong offset!");
-static_assert(offsetof(UChaosCache, ParticleTracks) == 0x000048, "Member 'UChaosCache::ParticleTracks' has a wrong offset!");
-static_assert(offsetof(UChaosCache, ChannelCurveToParticle) == 0x000058, "Member 'UChaosCache::ChannelCurveToParticle' has a wrong offset!");
-static_assert(offsetof(UChaosCache, ChannelsTracks) == 0x000068, "Member 'UChaosCache::ChannelsTracks' has a wrong offset!");
-static_assert(offsetof(UChaosCache, CompressedChannelsTracks) == 0x0000B8, "Member 'UChaosCache::CompressedChannelsTracks' has a wrong offset!");
-static_assert(offsetof(UChaosCache, CurveData) == 0x000108, "Member 'UChaosCache::CurveData' has a wrong offset!");
-static_assert(offsetof(UChaosCache, NamedTransformTracks) == 0x000158, "Member 'UChaosCache::NamedTransformTracks' has a wrong offset!");
-static_assert(offsetof(UChaosCache, bCompressChannels) == 0x0001A8, "Member 'UChaosCache::bCompressChannels' has a wrong offset!");
-static_assert(offsetof(UChaosCache, ChannelsCompressionErrorThreshold) == 0x0001AC, "Member 'UChaosCache::ChannelsCompressionErrorThreshold' has a wrong offset!");
-static_assert(offsetof(UChaosCache, ChannelsCompressionSampleRate) == 0x0001B0, "Member 'UChaosCache::ChannelsCompressionSampleRate' has a wrong offset!");
-static_assert(offsetof(UChaosCache, EventTracks) == 0x0001B8, "Member 'UChaosCache::EventTracks' has a wrong offset!");
-static_assert(offsetof(UChaosCache, Spawnable) == 0x000210, "Member 'UChaosCache::Spawnable' has a wrong offset!");
-static_assert(offsetof(UChaosCache, AdapterGuid) == 0x0002E0, "Member 'UChaosCache::AdapterGuid' has a wrong offset!");
-static_assert(offsetof(UChaosCache, Version) == 0x0002F0, "Member 'UChaosCache::Version' has a wrong offset!");
+DUMPER7_ASSERTS_UChaosCache;
 
 // Class ChaosCaching.MovieSceneChaosCacheSection
 // 0x0028 (0x0128 - 0x0100)
@@ -172,16 +161,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneChaosCacheSection">();
+		STATIC_CLASS_IMPL("MovieSceneChaosCacheSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneChaosCacheSection")
 	}
 	static class UMovieSceneChaosCacheSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneChaosCacheSection>();
 	}
 };
-static_assert(alignof(UMovieSceneChaosCacheSection) == 0x000008, "Wrong alignment on UMovieSceneChaosCacheSection");
-static_assert(sizeof(UMovieSceneChaosCacheSection) == 0x000128, "Wrong size on UMovieSceneChaosCacheSection");
-static_assert(offsetof(UMovieSceneChaosCacheSection, Params_0) == 0x000100, "Member 'UMovieSceneChaosCacheSection::Params_0' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneChaosCacheSection;
 
 // Class ChaosCaching.MovieSceneChaosCacheTrack
 // 0x0018 (0x00B8 - 0x00A0)
@@ -194,16 +185,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneChaosCacheTrack">();
+		STATIC_CLASS_IMPL("MovieSceneChaosCacheTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneChaosCacheTrack")
 	}
 	static class UMovieSceneChaosCacheTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneChaosCacheTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneChaosCacheTrack) == 0x000008, "Wrong alignment on UMovieSceneChaosCacheTrack");
-static_assert(sizeof(UMovieSceneChaosCacheTrack) == 0x0000B8, "Wrong size on UMovieSceneChaosCacheTrack");
-static_assert(offsetof(UMovieSceneChaosCacheTrack, AnimationSections) == 0x0000A8, "Member 'UMovieSceneChaosCacheTrack::AnimationSections' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneChaosCacheTrack;
 
 }
 

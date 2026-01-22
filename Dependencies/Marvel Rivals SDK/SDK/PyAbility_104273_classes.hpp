@@ -12,8 +12,8 @@
 
 #include "Marvel_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Hero_1042_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Hero_1042_classes.hpp"
 
 
 namespace SDK
@@ -33,22 +33,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104273">();
+		STATIC_CLASS_IMPL("PyConfig_104273")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104273")
 	}
 	static class UPyConfig_104273* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104273>();
 	}
 };
-static_assert(alignof(UPyConfig_104273) == 0x000008, "Wrong alignment on UPyConfig_104273");
-static_assert(sizeof(UPyConfig_104273) == 0x0000F8, "Wrong size on UPyConfig_104273");
-static_assert(offsetof(UPyConfig_104273, SpiderId) == 0x0000C8, "Member 'UPyConfig_104273::SpiderId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104273, InitLocationOffset) == 0x0000D0, "Member 'UPyConfig_104273::InitLocationOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104273, SpecialTag) == 0x0000E8, "Member 'UPyConfig_104273::SpecialTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104273, SpawnSummonerInterval) == 0x0000F4, "Member 'UPyConfig_104273::SpawnSummonerInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104273;
 
 // PythonClass PyAbility_104273.PyAbility_104273
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_104273 : public UMarvelGameplayAbility
 {
 public:
@@ -65,18 +64,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104273">();
+		STATIC_CLASS_IMPL("PyAbility_104273")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104273")
 	}
 	static class UPyAbility_104273* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104273>();
 	}
 };
-static_assert(alignof(UPyAbility_104273) == 0x000008, "Wrong alignment on UPyAbility_104273");
-static_assert(sizeof(UPyAbility_104273) == 0x0029F0, "Wrong size on UPyAbility_104273");
+DUMPER7_ASSERTS_UPyAbility_104273;
 
 // PythonClass PyAbility_104273.PySummonedComp_10427102
-// 0x0000 (0x0DB0 - 0x0DB0)
+// 0x0000 (0x0E08 - 0x0E08)
 class UPySummonedComp_10427102 final : public USummonedComp_10424102
 {
 public:
@@ -86,15 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10427102">();
+		STATIC_CLASS_IMPL("PySummonedComp_10427102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10427102")
 	}
 	static class UPySummonedComp_10427102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10427102>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10427102) == 0x000008, "Wrong alignment on UPySummonedComp_10427102");
-static_assert(sizeof(UPySummonedComp_10427102) == 0x000DB0, "Wrong size on UPySummonedComp_10427102");
+DUMPER7_ASSERTS_UPySummonedComp_10427102;
 
 }
 

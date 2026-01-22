@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_103904.PyBuffAbility_10130_103904
-// 0x0008 (0x1A38 - 0x1A30)
+// 0x0008 (0x1A50 - 0x1A48)
 class UPyBuffAbility_10130_103904 : public UBuffAbility_CommonCardEffect
 {
 public:
-	int32                                         AdditionalProjectileCount;                         // 0x1A30(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OffsetDegree;                                      // 0x1A34(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AdditionalProjectileCount;                         // 0x1A48(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OffsetDegree;                                      // 0x1A4C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_103904">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_103904")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_103904")
 	}
 	static class UPyBuffAbility_10130_103904* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_103904>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_103904) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_103904");
-static_assert(sizeof(UPyBuffAbility_10130_103904) == 0x001A38, "Wrong size on UPyBuffAbility_10130_103904");
-static_assert(offsetof(UPyBuffAbility_10130_103904, AdditionalProjectileCount) == 0x001A30, "Member 'UPyBuffAbility_10130_103904::AdditionalProjectileCount' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_103904, OffsetDegree) == 0x001A34, "Member 'UPyBuffAbility_10130_103904::OffsetDegree' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_103904;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Recruit_PlayerIcon.PyWidget_Recruit_PlayerIcon
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Recruit_PlayerIcon final : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Recruit_PlayerIcon">();
+		STATIC_CLASS_IMPL("PyWidget_Recruit_PlayerIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Recruit_PlayerIcon")
 	}
 	static class UPyWidget_Recruit_PlayerIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Recruit_PlayerIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_Recruit_PlayerIcon) == 0x000008, "Wrong alignment on UPyWidget_Recruit_PlayerIcon");
-static_assert(sizeof(UPyWidget_Recruit_PlayerIcon) == 0x0005C0, "Wrong size on UPyWidget_Recruit_PlayerIcon");
+DUMPER7_ASSERTS_UPyWidget_Recruit_PlayerIcon;
 
 }
 

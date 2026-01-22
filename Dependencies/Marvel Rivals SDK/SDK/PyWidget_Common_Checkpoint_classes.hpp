@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Checkpoint.PyWidget_Common_Checkpoint_V2
-// 0x0058 (0x05C0 - 0x0568)
+// 0x0058 (0x05C8 - 0x0570)
 class UPyWidget_Common_Checkpoint_V2 final : public UMarvelUserWidget
 {
 public:
-	struct FLinearColor                           Red_PointColor;                                    // 0x0568(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Red_VxColor;                                       // 0x0578(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Blue_PointColor;                                   // 0x0588(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Blue_VxColor;                                      // 0x0598(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           UnachieveColor;                                    // 0x05A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShowClickVXDelay;                                  // 0x05B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Red_PointColor;                                    // 0x0570(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Red_VxColor;                                       // 0x0580(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Blue_PointColor;                                   // 0x0590(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Blue_VxColor;                                      // 0x05A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           UnachieveColor;                                    // 0x05B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShowClickVXDelay;                                  // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Checkpoint_V2">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Checkpoint_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Checkpoint_V2")
 	}
 	static class UPyWidget_Common_Checkpoint_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Checkpoint_V2>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Checkpoint_V2) == 0x000008, "Wrong alignment on UPyWidget_Common_Checkpoint_V2");
-static_assert(sizeof(UPyWidget_Common_Checkpoint_V2) == 0x0005C0, "Wrong size on UPyWidget_Common_Checkpoint_V2");
-static_assert(offsetof(UPyWidget_Common_Checkpoint_V2, Red_PointColor) == 0x000568, "Member 'UPyWidget_Common_Checkpoint_V2::Red_PointColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Checkpoint_V2, Red_VxColor) == 0x000578, "Member 'UPyWidget_Common_Checkpoint_V2::Red_VxColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Checkpoint_V2, Blue_PointColor) == 0x000588, "Member 'UPyWidget_Common_Checkpoint_V2::Blue_PointColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Checkpoint_V2, Blue_VxColor) == 0x000598, "Member 'UPyWidget_Common_Checkpoint_V2::Blue_VxColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Checkpoint_V2, UnachieveColor) == 0x0005A8, "Member 'UPyWidget_Common_Checkpoint_V2::UnachieveColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Checkpoint_V2, ShowClickVXDelay) == 0x0005B8, "Member 'UPyWidget_Common_Checkpoint_V2::ShowClickVXDelay' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Checkpoint_V2;
 
 }
 

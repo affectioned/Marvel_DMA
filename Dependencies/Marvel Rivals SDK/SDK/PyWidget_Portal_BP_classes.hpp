@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Portal_BP">();
+		STATIC_CLASS_IMPL("PyWidget_Portal_BP")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Portal_BP")
 	}
 	static class UPyWidget_Portal_BP* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Portal_BP>();
 	}
 };
-static_assert(alignof(UPyWidget_Portal_BP) == 0x000010, "Wrong alignment on UPyWidget_Portal_BP");
-static_assert(sizeof(UPyWidget_Portal_BP) == 0x000880, "Wrong size on UPyWidget_Portal_BP");
-static_assert(offsetof(UPyWidget_Portal_BP, Image) == 0x000870, "Member 'UPyWidget_Portal_BP::Image' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Portal_BP;
 
 }
 

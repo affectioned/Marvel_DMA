@@ -311,54 +311,5 @@ void UPyAbility_104981::K2_OnEndAbility(bool bWasCancelled)
 	Func->FunctionFlags = Flgs;
 }
 
-
-// PythonFunction PyAbility_104981.PyAbility_AirGrab_104981.OnActiveAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyAbility_AirGrab_104981::OnActiveAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_AirGrab_104981", "OnActiveAbility");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_104981.PyAbility_AirGrab_104981.K2_ShouldSkipInstigatorHit
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           SelfActor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FHitResult&                InHit                                                  (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UPyAbility_AirGrab_104981::K2_ShouldSkipInstigatorHit(class AActor* SelfActor, const struct FHitResult& InHit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_AirGrab_104981", "K2_ShouldSkipInstigatorHit");
-
-	Params::PyAbility_AirGrab_104981_K2_ShouldSkipInstigatorHit Parms{};
-
-	Parms.SelfActor = SelfActor;
-	Parms.InHit = std::move(InHit);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
 }
 

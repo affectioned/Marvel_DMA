@@ -21,9 +21,7 @@ struct PyWidget_DropDownList_ListView_Item_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_ListView_Item_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_DropDownList_ListView_Item_PreConstruct");
-static_assert(sizeof(PyWidget_DropDownList_ListView_Item_PreConstruct) == 0x000001, "Wrong size on PyWidget_DropDownList_ListView_Item_PreConstruct");
-static_assert(offsetof(PyWidget_DropDownList_ListView_Item_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_DropDownList_ListView_Item_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_ListView_Item_PreConstruct;
 
 // PythonFunction PyWidget_DropDownList_ListView_Item.PyWidget_DropDownList_ListView_Item.SetBtnIsPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_DropDownList_ListView_Item_SetBtnIsPressed final
 public:
 	bool                                          IsBtnPressed_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_ListView_Item_SetBtnIsPressed) == 0x000001, "Wrong alignment on PyWidget_DropDownList_ListView_Item_SetBtnIsPressed");
-static_assert(sizeof(PyWidget_DropDownList_ListView_Item_SetBtnIsPressed) == 0x000001, "Wrong size on PyWidget_DropDownList_ListView_Item_SetBtnIsPressed");
-static_assert(offsetof(PyWidget_DropDownList_ListView_Item_SetBtnIsPressed, IsBtnPressed_0) == 0x000000, "Member 'PyWidget_DropDownList_ListView_Item_SetBtnIsPressed::IsBtnPressed_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_ListView_Item_SetBtnIsPressed;
 
 // PythonFunction PyWidget_DropDownList_ListView_Item.PyWidget_DropDownList_ListView_Item.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_DropDownList_ListView_Item_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_ListView_Item_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_DropDownList_ListView_Item_SetIsHover");
-static_assert(sizeof(PyWidget_DropDownList_ListView_Item_SetIsHover) == 0x000001, "Wrong size on PyWidget_DropDownList_ListView_Item_SetIsHover");
-static_assert(offsetof(PyWidget_DropDownList_ListView_Item_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_DropDownList_ListView_Item_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_ListView_Item_SetIsHover;
 
 }
 

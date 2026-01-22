@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PyMarvelAIController_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PyMarvelAIController_classes.hpp"
 
 
 namespace SDK
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelAIControllerBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelAIControllerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIControllerBP_C")
 	}
 	static class AMarvelAIControllerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelAIControllerBP_C>();
 	}
 };
-static_assert(alignof(AMarvelAIControllerBP_C) == 0x000010, "Wrong alignment on AMarvelAIControllerBP_C");
-static_assert(sizeof(AMarvelAIControllerBP_C) == 0x000D70, "Wrong size on AMarvelAIControllerBP_C");
-static_assert(offsetof(AMarvelAIControllerBP_C, UberGraphFrame) == 0x000D50, "Member 'AMarvelAIControllerBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMarvelAIControllerBP_C, SVONNavigation) == 0x000D58, "Member 'AMarvelAIControllerBP_C::SVONNavigation' has a wrong offset!");
-static_assert(offsetof(AMarvelAIControllerBP_C, OnLostTarget) == 0x000D60, "Member 'AMarvelAIControllerBP_C::OnLostTarget' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelAIControllerBP_C;
 
 }
 

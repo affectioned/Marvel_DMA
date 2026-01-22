@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WayPointManagerBP_C">();
+		BP_STATIC_CLASS_IMPL("WayPointManagerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WayPointManagerBP_C")
 	}
 	static class AWayPointManagerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWayPointManagerBP_C>();
 	}
 };
-static_assert(alignof(AWayPointManagerBP_C) == 0x000010, "Wrong alignment on AWayPointManagerBP_C");
-static_assert(sizeof(AWayPointManagerBP_C) == 0x0007C0, "Wrong size on AWayPointManagerBP_C");
-static_assert(offsetof(AWayPointManagerBP_C, DefaultSceneRoot) == 0x0007B0, "Member 'AWayPointManagerBP_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AWayPointManagerBP_C;
 
 }
 

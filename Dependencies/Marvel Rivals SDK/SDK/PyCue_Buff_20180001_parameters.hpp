@@ -25,11 +25,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_20180001_WhileActive) == 0x000008, "Wrong alignment on PyCue_Buff_20180001_WhileActive");
-static_assert(sizeof(PyCue_Buff_20180001_WhileActive) == 0x0001E0, "Wrong size on PyCue_Buff_20180001_WhileActive");
-static_assert(offsetof(PyCue_Buff_20180001_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Buff_20180001_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_20180001_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Buff_20180001_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_20180001_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Buff_20180001_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_20180001_WhileActive;
 
 }
 

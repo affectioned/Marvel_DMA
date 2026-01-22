@@ -24,12 +24,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMonitorSelectionOptionsGenerator_BP_Gen;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryWindowModeOptionsGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -41,12 +36,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryWindowModeOptionsGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryWindowModeOptionsGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryWindowModeOptionsGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryWindowModeOptionsGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryWindowModeOptionsGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryWindowModeOptionsGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeOptionsGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryWindowModeOptionsGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeOptionsGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryWindowModeOptionsGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeOptionsGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryWindowModeOptionsGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryWindowModeOptionsGenerator_BP_Gen;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryMonitorSelection.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -59,13 +49,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMonitorSelection_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryMonitorSelection_BP_OnApply");
-static_assert(sizeof(UISettingEntryMonitorSelection_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryMonitorSelection_BP_OnApply");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryMonitorSelection_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryMonitorSelection_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryMonitorSelection_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryMonitorSelection_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryMonitorSelection_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMonitorSelection_BP_OnApply;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryMonitorSelection.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -78,13 +62,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMonitorSelection_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryMonitorSelection_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryMonitorSelection_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryMonitorSelection_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryMonitorSelection_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryMonitorSelection_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryMonitorSelection_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryMonitorSelection_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryMonitorSelection_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMonitorSelection_BP_GetCurrentValue;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryMonitorSelection.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -100,15 +78,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryMonitorSelection_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryMonitorSelection_BP_OnChanged");
-static_assert(sizeof(UISettingEntryMonitorSelection_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryMonitorSelection_BP_OnChanged");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryMonitorSelection_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryMonitorSelection_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryMonitorSelection_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryMonitorSelection_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryMonitorSelection_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryMonitorSelection_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMonitorSelection_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryMonitorSelection_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMonitorSelection_BP_OnChanged;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryWindowModeHandler.HardcodeSyncTargetMoniter
 // 0x0050 (0x0050 - 0x0000)
@@ -117,9 +87,7 @@ struct UISettingEntryWindowModeHandler_HardcodeSyncTargetMoniter final
 public:
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0000(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryWindowModeHandler_HardcodeSyncTargetMoniter) == 0x000008, "Wrong alignment on UISettingEntryWindowModeHandler_HardcodeSyncTargetMoniter");
-static_assert(sizeof(UISettingEntryWindowModeHandler_HardcodeSyncTargetMoniter) == 0x000050, "Wrong size on UISettingEntryWindowModeHandler_HardcodeSyncTargetMoniter");
-static_assert(offsetof(UISettingEntryWindowModeHandler_HardcodeSyncTargetMoniter, ReturnValue) == 0x000000, "Member 'UISettingEntryWindowModeHandler_HardcodeSyncTargetMoniter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryWindowModeHandler_HardcodeSyncTargetMoniter;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryWindowModeHandler.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -132,13 +100,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryWindowModeHandler_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryWindowModeHandler_BP_OnApply");
-static_assert(sizeof(UISettingEntryWindowModeHandler_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryWindowModeHandler_BP_OnApply");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryWindowModeHandler_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryWindowModeHandler_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryWindowModeHandler_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryWindowModeHandler_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryWindowModeHandler_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryWindowModeHandler_BP_OnApply;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryWindowModeHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -151,13 +113,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryWindowModeHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryWindowModeHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryWindowModeHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryWindowModeHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryWindowModeHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryWindowModeHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryWindowModeHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryWindowModeHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryWindowModeHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryWindowModeHandler_BP_GetCurrentValue;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryWindowModeHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -173,15 +129,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryWindowModeHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryWindowModeHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryWindowModeHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryWindowModeHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryWindowModeHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryWindowModeHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryWindowModeHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryWindowModeHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryWindowModeHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryWindowModeHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryWindowModeHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryWindowModeHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryWindowModeHandler_BP_OnChanged;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryResolutionAspectOptionsGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -193,12 +141,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryResolutionAspectOptionsGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryResolutionAspectOptionsGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryResolutionAspectOptionsGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryResolutionAspectOptionsGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryResolutionAspectOptionsGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryResolutionAspectOptionsGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectOptionsGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryResolutionAspectOptionsGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectOptionsGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryResolutionAspectOptionsGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectOptionsGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryResolutionAspectOptionsGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryResolutionAspectOptionsGenerator_BP_Gen;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryResolutionAspectHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -211,13 +154,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryResolutionAspectHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryResolutionAspectHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryResolutionAspectHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryResolutionAspectHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryResolutionAspectHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryResolutionAspectHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingEntryResolutionAspectHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_GetCurrentValue, options) == 0x000068, "Member 'UISettingEntryResolutionAspectHandler_BP_GetCurrentValue::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryResolutionAspectHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryResolutionAspectHandler_BP_GetCurrentValue;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryResolutionAspectHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -233,15 +170,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryResolutionAspectHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryResolutionAspectHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryResolutionAspectHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryResolutionAspectHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryResolutionAspectHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryResolutionAspectHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryResolutionAspectHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryResolutionAspectHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryResolutionAspectHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryResolutionAspectHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionAspectHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryResolutionAspectHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryResolutionAspectHandler_BP_OnChanged;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryResolutionHandler.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -254,13 +183,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryResolutionHandler_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryResolutionHandler_BP_OnApply");
-static_assert(sizeof(UISettingEntryResolutionHandler_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryResolutionHandler_BP_OnApply");
-static_assert(offsetof(UISettingEntryResolutionHandler_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryResolutionHandler_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionHandler_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryResolutionHandler_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionHandler_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryResolutionHandler_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionHandler_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryResolutionHandler_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionHandler_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryResolutionHandler_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryResolutionHandler_BP_OnApply;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryResolutionHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -273,13 +196,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryResolutionHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryResolutionHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryResolutionHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryResolutionHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryResolutionHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryResolutionHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryResolutionHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingEntryResolutionHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionHandler_BP_GetCurrentValue, options) == 0x000068, "Member 'UISettingEntryResolutionHandler_BP_GetCurrentValue::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryResolutionHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryResolutionHandler_BP_GetCurrentValue;
 
 // PythonFunction WindowModeAndResolutionLogic.UISettingEntryResolutionOptionsGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -291,12 +208,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryResolutionOptionsGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryResolutionOptionsGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryResolutionOptionsGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryResolutionOptionsGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryResolutionOptionsGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryResolutionOptionsGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionOptionsGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryResolutionOptionsGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionOptionsGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryResolutionOptionsGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryResolutionOptionsGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryResolutionOptionsGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryResolutionOptionsGenerator_BP_Gen;
 
 }
 

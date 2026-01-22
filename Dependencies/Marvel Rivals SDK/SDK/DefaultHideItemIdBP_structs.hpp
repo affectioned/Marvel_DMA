@@ -23,11 +23,7 @@ public:
 	int32                                         HeroID_6_74ED900F49B7AEE7C9E31FB30188B58B;         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 remark_9_FDBF61BD4AFA11C0C4D745ABB97113DE;         // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FDefaultHideItemIdBP) == 0x000008, "Wrong alignment on FDefaultHideItemIdBP");
-static_assert(sizeof(FDefaultHideItemIdBP) == 0x000018, "Wrong size on FDefaultHideItemIdBP");
-static_assert(offsetof(FDefaultHideItemIdBP, HideItemID_3_E263334E4B14174207CDF784718271C1) == 0x000000, "Member 'FDefaultHideItemIdBP::HideItemID_3_E263334E4B14174207CDF784718271C1' has a wrong offset!");
-static_assert(offsetof(FDefaultHideItemIdBP, HeroID_6_74ED900F49B7AEE7C9E31FB30188B58B) == 0x000004, "Member 'FDefaultHideItemIdBP::HeroID_6_74ED900F49B7AEE7C9E31FB30188B58B' has a wrong offset!");
-static_assert(offsetof(FDefaultHideItemIdBP, remark_9_FDBF61BD4AFA11C0C4D745ABB97113DE) == 0x000008, "Member 'FDefaultHideItemIdBP::remark_9_FDBF61BD4AFA11C0C4D745ABB97113DE' has a wrong offset!");
+DUMPER7_ASSERTS_FDefaultHideItemIdBP;
 
 }
 

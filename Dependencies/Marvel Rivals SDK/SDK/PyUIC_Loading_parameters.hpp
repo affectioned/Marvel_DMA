@@ -21,9 +21,7 @@ struct PyUIC_Loading_OnLoadingVisibleChanged final
 public:
 	bool                                          bVisible;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_Loading_OnLoadingVisibleChanged) == 0x000001, "Wrong alignment on PyUIC_Loading_OnLoadingVisibleChanged");
-static_assert(sizeof(PyUIC_Loading_OnLoadingVisibleChanged) == 0x000001, "Wrong size on PyUIC_Loading_OnLoadingVisibleChanged");
-static_assert(offsetof(PyUIC_Loading_OnLoadingVisibleChanged, bVisible) == 0x000000, "Member 'PyUIC_Loading_OnLoadingVisibleChanged::bVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_Loading_OnLoadingVisibleChanged;
 
 // PythonFunction PyUIC_Loading.PyUIC_Loading.OnPreLoadMapRecord
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct PyUIC_Loading_OnPreLoadMapRecord final
 public:
 	class FString                                 MapName;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_Loading_OnPreLoadMapRecord) == 0x000008, "Wrong alignment on PyUIC_Loading_OnPreLoadMapRecord");
-static_assert(sizeof(PyUIC_Loading_OnPreLoadMapRecord) == 0x000010, "Wrong size on PyUIC_Loading_OnPreLoadMapRecord");
-static_assert(offsetof(PyUIC_Loading_OnPreLoadMapRecord, MapName) == 0x000000, "Member 'PyUIC_Loading_OnPreLoadMapRecord::MapName' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_Loading_OnPreLoadMapRecord;
 
 // PythonFunction PyUIC_Loading.PyUIC_Loading.OnPostLoadMapRecord
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyUIC_Loading_OnPostLoadMapRecord final
 public:
 	class UWorld*                                 WorldObj;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_Loading_OnPostLoadMapRecord) == 0x000008, "Wrong alignment on PyUIC_Loading_OnPostLoadMapRecord");
-static_assert(sizeof(PyUIC_Loading_OnPostLoadMapRecord) == 0x000008, "Wrong size on PyUIC_Loading_OnPostLoadMapRecord");
-static_assert(offsetof(PyUIC_Loading_OnPostLoadMapRecord, WorldObj) == 0x000000, "Member 'PyUIC_Loading_OnPostLoadMapRecord::WorldObj' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_Loading_OnPostLoadMapRecord;
 
 // PythonFunction PyUIC_Loading.PyUIC_Loading.PyOnPreLoadMap
 // 0x0010 (0x0010 - 0x0000)
@@ -54,9 +48,7 @@ struct PyUIC_Loading_PyOnPreLoadMap final
 public:
 	class FString                                 MapName;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_Loading_PyOnPreLoadMap) == 0x000008, "Wrong alignment on PyUIC_Loading_PyOnPreLoadMap");
-static_assert(sizeof(PyUIC_Loading_PyOnPreLoadMap) == 0x000010, "Wrong size on PyUIC_Loading_PyOnPreLoadMap");
-static_assert(offsetof(PyUIC_Loading_PyOnPreLoadMap, MapName) == 0x000000, "Member 'PyUIC_Loading_PyOnPreLoadMap::MapName' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_Loading_PyOnPreLoadMap;
 
 // PythonFunction PyUIC_Loading.PyUIC_Loading.PyOnPostLoadMap
 // 0x0008 (0x0008 - 0x0000)
@@ -65,9 +57,7 @@ struct PyUIC_Loading_PyOnPostLoadMap final
 public:
 	class UWorld*                                 WorldObj;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_Loading_PyOnPostLoadMap) == 0x000008, "Wrong alignment on PyUIC_Loading_PyOnPostLoadMap");
-static_assert(sizeof(PyUIC_Loading_PyOnPostLoadMap) == 0x000008, "Wrong size on PyUIC_Loading_PyOnPostLoadMap");
-static_assert(offsetof(PyUIC_Loading_PyOnPostLoadMap, WorldObj) == 0x000000, "Member 'PyUIC_Loading_PyOnPostLoadMap::WorldObj' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_Loading_PyOnPostLoadMap;
 
 // PythonFunction PyUIC_Loading.PyUIC_Loading.OnSelectHeroWorldLoaded
 // 0x0010 (0x0010 - 0x0000)
@@ -76,9 +66,7 @@ struct PyUIC_Loading_OnSelectHeroWorldLoaded final
 public:
 	class FString                                 LoadedWorld;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_Loading_OnSelectHeroWorldLoaded) == 0x000008, "Wrong alignment on PyUIC_Loading_OnSelectHeroWorldLoaded");
-static_assert(sizeof(PyUIC_Loading_OnSelectHeroWorldLoaded) == 0x000010, "Wrong size on PyUIC_Loading_OnSelectHeroWorldLoaded");
-static_assert(offsetof(PyUIC_Loading_OnSelectHeroWorldLoaded, LoadedWorld) == 0x000000, "Member 'PyUIC_Loading_OnSelectHeroWorldLoaded::LoadedWorld' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_Loading_OnSelectHeroWorldLoaded;
 
 // PythonFunction PyUIC_Loading.PyUIC_Loading.LevelLoadingPercent
 // 0x0004 (0x0004 - 0x0000)
@@ -87,9 +75,7 @@ struct PyUIC_Loading_LevelLoadingPercent final
 public:
 	int32                                         percent;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_Loading_LevelLoadingPercent) == 0x000004, "Wrong alignment on PyUIC_Loading_LevelLoadingPercent");
-static_assert(sizeof(PyUIC_Loading_LevelLoadingPercent) == 0x000004, "Wrong size on PyUIC_Loading_LevelLoadingPercent");
-static_assert(offsetof(PyUIC_Loading_LevelLoadingPercent, percent) == 0x000000, "Member 'PyUIC_Loading_LevelLoadingPercent::percent' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_Loading_LevelLoadingPercent;
 
 }
 

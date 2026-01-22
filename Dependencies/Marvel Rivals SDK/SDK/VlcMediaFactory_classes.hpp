@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "VlcMediaFactory_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "VlcMediaFactory_structs.hpp"
 
 
 namespace SDK
@@ -34,21 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VlcMediaSettings">();
+		STATIC_CLASS_IMPL("VlcMediaSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VlcMediaSettings")
 	}
 	static class UVlcMediaSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVlcMediaSettings>();
 	}
 };
-static_assert(alignof(UVlcMediaSettings) == 0x000008, "Wrong alignment on UVlcMediaSettings");
-static_assert(sizeof(UVlcMediaSettings) == 0x000058, "Wrong size on UVlcMediaSettings");
-static_assert(offsetof(UVlcMediaSettings, DiscCaching) == 0x000030, "Member 'UVlcMediaSettings::DiscCaching' has a wrong offset!");
-static_assert(offsetof(UVlcMediaSettings, FileCaching) == 0x000038, "Member 'UVlcMediaSettings::FileCaching' has a wrong offset!");
-static_assert(offsetof(UVlcMediaSettings, LiveCaching) == 0x000040, "Member 'UVlcMediaSettings::LiveCaching' has a wrong offset!");
-static_assert(offsetof(UVlcMediaSettings, NetworkCaching) == 0x000048, "Member 'UVlcMediaSettings::NetworkCaching' has a wrong offset!");
-static_assert(offsetof(UVlcMediaSettings, LogLevel) == 0x000050, "Member 'UVlcMediaSettings::LogLevel' has a wrong offset!");
-static_assert(offsetof(UVlcMediaSettings, ShowLogContext) == 0x000051, "Member 'UVlcMediaSettings::ShowLogContext' has a wrong offset!");
+DUMPER7_ASSERTS_UVlcMediaSettings;
 
 }
 

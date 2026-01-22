@@ -35,17 +35,7 @@ public:
 	uint8                                         Pad_37[0x1];                                       // 0x0037(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAITask_SVONMoveTo*                     ReturnValue;                                       // 0x0038(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AITask_SVONMoveTo_SVONAIMoveTo) == 0x000008, "Wrong alignment on AITask_SVONMoveTo_SVONAIMoveTo");
-static_assert(sizeof(AITask_SVONMoveTo_SVONAIMoveTo) == 0x000040, "Wrong size on AITask_SVONMoveTo_SVONAIMoveTo");
-static_assert(offsetof(AITask_SVONMoveTo_SVONAIMoveTo, Controller) == 0x000000, "Member 'AITask_SVONMoveTo_SVONAIMoveTo::Controller' has a wrong offset!");
-static_assert(offsetof(AITask_SVONMoveTo_SVONAIMoveTo, GoalLocation) == 0x000008, "Member 'AITask_SVONMoveTo_SVONAIMoveTo::GoalLocation' has a wrong offset!");
-static_assert(offsetof(AITask_SVONMoveTo_SVONAIMoveTo, aUseAsyncPathfinding) == 0x000020, "Member 'AITask_SVONMoveTo_SVONAIMoveTo::aUseAsyncPathfinding' has a wrong offset!");
-static_assert(offsetof(AITask_SVONMoveTo_SVONAIMoveTo, GoalActor) == 0x000028, "Member 'AITask_SVONMoveTo_SVONAIMoveTo::GoalActor' has a wrong offset!");
-static_assert(offsetof(AITask_SVONMoveTo_SVONAIMoveTo, AcceptanceRadius) == 0x000030, "Member 'AITask_SVONMoveTo_SVONAIMoveTo::AcceptanceRadius' has a wrong offset!");
-static_assert(offsetof(AITask_SVONMoveTo_SVONAIMoveTo, StopOnOverlap) == 0x000034, "Member 'AITask_SVONMoveTo_SVONAIMoveTo::StopOnOverlap' has a wrong offset!");
-static_assert(offsetof(AITask_SVONMoveTo_SVONAIMoveTo, bLockAILogic) == 0x000035, "Member 'AITask_SVONMoveTo_SVONAIMoveTo::bLockAILogic' has a wrong offset!");
-static_assert(offsetof(AITask_SVONMoveTo_SVONAIMoveTo, bUseContinuosGoalTracking) == 0x000036, "Member 'AITask_SVONMoveTo_SVONAIMoveTo::bUseContinuosGoalTracking' has a wrong offset!");
-static_assert(offsetof(AITask_SVONMoveTo_SVONAIMoveTo, ReturnValue) == 0x000038, "Member 'AITask_SVONMoveTo_SVONAIMoveTo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AITask_SVONMoveTo_SVONAIMoveTo;
 
 // Function UESVON.SVONNavigationComponent.GetSVOPointsInBox
 // 0x0030 (0x0030 - 0x0000)
@@ -57,12 +47,7 @@ public:
 	int32                                         MaxFindCount;                                      // 0x001C(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        OutPoints;                                         // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SVONNavigationComponent_GetSVOPointsInBox) == 0x000008, "Wrong alignment on SVONNavigationComponent_GetSVOPointsInBox");
-static_assert(sizeof(SVONNavigationComponent_GetSVOPointsInBox) == 0x000030, "Wrong size on SVONNavigationComponent_GetSVOPointsInBox");
-static_assert(offsetof(SVONNavigationComponent_GetSVOPointsInBox, CenterPos) == 0x000000, "Member 'SVONNavigationComponent_GetSVOPointsInBox::CenterPos' has a wrong offset!");
-static_assert(offsetof(SVONNavigationComponent_GetSVOPointsInBox, Half) == 0x000018, "Member 'SVONNavigationComponent_GetSVOPointsInBox::Half' has a wrong offset!");
-static_assert(offsetof(SVONNavigationComponent_GetSVOPointsInBox, MaxFindCount) == 0x00001C, "Member 'SVONNavigationComponent_GetSVOPointsInBox::MaxFindCount' has a wrong offset!");
-static_assert(offsetof(SVONNavigationComponent_GetSVOPointsInBox, OutPoints) == 0x000020, "Member 'SVONNavigationComponent_GetSVOPointsInBox::OutPoints' has a wrong offset!");
+DUMPER7_ASSERTS_SVONNavigationComponent_GetSVOPointsInBox;
 
 // Function UESVON.SVONNavigationComponent.K2_FindPathImmediate
 // 0x0048 (0x0048 - 0x0000)
@@ -75,12 +60,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SVONNavigationComponent_K2_FindPathImmediate) == 0x000008, "Wrong alignment on SVONNavigationComponent_K2_FindPathImmediate");
-static_assert(sizeof(SVONNavigationComponent_K2_FindPathImmediate) == 0x000048, "Wrong size on SVONNavigationComponent_K2_FindPathImmediate");
-static_assert(offsetof(SVONNavigationComponent_K2_FindPathImmediate, StartPosition) == 0x000000, "Member 'SVONNavigationComponent_K2_FindPathImmediate::StartPosition' has a wrong offset!");
-static_assert(offsetof(SVONNavigationComponent_K2_FindPathImmediate, TargetPosition) == 0x000018, "Member 'SVONNavigationComponent_K2_FindPathImmediate::TargetPosition' has a wrong offset!");
-static_assert(offsetof(SVONNavigationComponent_K2_FindPathImmediate, OutPathPoints) == 0x000030, "Member 'SVONNavigationComponent_K2_FindPathImmediate::OutPathPoints' has a wrong offset!");
-static_assert(offsetof(SVONNavigationComponent_K2_FindPathImmediate, ReturnValue) == 0x000040, "Member 'SVONNavigationComponent_K2_FindPathImmediate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SVONNavigationComponent_K2_FindPathImmediate;
 
 // Function UESVON.SVONNavigationComponent.K2_SetFixedIterationTime
 // 0x0004 (0x0004 - 0x0000)
@@ -89,9 +69,7 @@ struct SVONNavigationComponent_K2_SetFixedIterationTime final
 public:
 	int32                                         FixedTimes;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SVONNavigationComponent_K2_SetFixedIterationTime) == 0x000004, "Wrong alignment on SVONNavigationComponent_K2_SetFixedIterationTime");
-static_assert(sizeof(SVONNavigationComponent_K2_SetFixedIterationTime) == 0x000004, "Wrong size on SVONNavigationComponent_K2_SetFixedIterationTime");
-static_assert(offsetof(SVONNavigationComponent_K2_SetFixedIterationTime, FixedTimes) == 0x000000, "Member 'SVONNavigationComponent_K2_SetFixedIterationTime::FixedTimes' has a wrong offset!");
+DUMPER7_ASSERTS_SVONNavigationComponent_K2_SetFixedIterationTime;
 
 // Function UESVON.SVONNavigationComponent.K2_UpdateVolume
 // 0x0010 (0x0010 - 0x0000)
@@ -102,10 +80,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SVONNavigationComponent_K2_UpdateVolume) == 0x000008, "Wrong alignment on SVONNavigationComponent_K2_UpdateVolume");
-static_assert(sizeof(SVONNavigationComponent_K2_UpdateVolume) == 0x000010, "Wrong size on SVONNavigationComponent_K2_UpdateVolume");
-static_assert(offsetof(SVONNavigationComponent_K2_UpdateVolume, OptVolume) == 0x000000, "Member 'SVONNavigationComponent_K2_UpdateVolume::OptVolume' has a wrong offset!");
-static_assert(offsetof(SVONNavigationComponent_K2_UpdateVolume, ReturnValue) == 0x000008, "Member 'SVONNavigationComponent_K2_UpdateVolume::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SVONNavigationComponent_K2_UpdateVolume;
 
 // Function UESVON.SVONNavigationComponent.TryCancelCurrentMoveTask
 // 0x0001 (0x0001 - 0x0000)
@@ -114,9 +89,7 @@ struct SVONNavigationComponent_TryCancelCurrentMoveTask final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SVONNavigationComponent_TryCancelCurrentMoveTask) == 0x000001, "Wrong alignment on SVONNavigationComponent_TryCancelCurrentMoveTask");
-static_assert(sizeof(SVONNavigationComponent_TryCancelCurrentMoveTask) == 0x000001, "Wrong size on SVONNavigationComponent_TryCancelCurrentMoveTask");
-static_assert(offsetof(SVONNavigationComponent_TryCancelCurrentMoveTask, ReturnValue) == 0x000000, "Member 'SVONNavigationComponent_TryCancelCurrentMoveTask::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SVONNavigationComponent_TryCancelCurrentMoveTask;
 
 // Function UESVON.SVONNavigationComponent.IsPositionSVOBlocked
 // 0x0020 (0x0020 - 0x0000)
@@ -127,10 +100,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SVONNavigationComponent_IsPositionSVOBlocked) == 0x000008, "Wrong alignment on SVONNavigationComponent_IsPositionSVOBlocked");
-static_assert(sizeof(SVONNavigationComponent_IsPositionSVOBlocked) == 0x000020, "Wrong size on SVONNavigationComponent_IsPositionSVOBlocked");
-static_assert(offsetof(SVONNavigationComponent_IsPositionSVOBlocked, Position) == 0x000000, "Member 'SVONNavigationComponent_IsPositionSVOBlocked::Position' has a wrong offset!");
-static_assert(offsetof(SVONNavigationComponent_IsPositionSVOBlocked, ReturnValue) == 0x000018, "Member 'SVONNavigationComponent_IsPositionSVOBlocked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SVONNavigationComponent_IsPositionSVOBlocked;
 
 // Function UESVON.SVONVolume.GetSizeFromPos
 // 0x0020 (0x0020 - 0x0000)
@@ -141,10 +111,7 @@ public:
 	float                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SVONVolume_GetSizeFromPos) == 0x000008, "Wrong alignment on SVONVolume_GetSizeFromPos");
-static_assert(sizeof(SVONVolume_GetSizeFromPos) == 0x000020, "Wrong size on SVONVolume_GetSizeFromPos");
-static_assert(offsetof(SVONVolume_GetSizeFromPos, NodePos) == 0x000000, "Member 'SVONVolume_GetSizeFromPos::NodePos' has a wrong offset!");
-static_assert(offsetof(SVONVolume_GetSizeFromPos, ReturnValue) == 0x000018, "Member 'SVONVolume_GetSizeFromPos::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SVONVolume_GetSizeFromPos;
 
 // Function UESVON.SVONVolume.IsLinkFromPostion
 // 0x0020 (0x0020 - 0x0000)
@@ -156,11 +123,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SVONVolume_IsLinkFromPostion) == 0x000008, "Wrong alignment on SVONVolume_IsLinkFromPostion");
-static_assert(sizeof(SVONVolume_IsLinkFromPostion) == 0x000020, "Wrong size on SVONVolume_IsLinkFromPostion");
-static_assert(offsetof(SVONVolume_IsLinkFromPostion, StartPos) == 0x000000, "Member 'SVONVolume_IsLinkFromPostion::StartPos' has a wrong offset!");
-static_assert(offsetof(SVONVolume_IsLinkFromPostion, CheckBlock) == 0x000018, "Member 'SVONVolume_IsLinkFromPostion::CheckBlock' has a wrong offset!");
-static_assert(offsetof(SVONVolume_IsLinkFromPostion, ReturnValue) == 0x000019, "Member 'SVONVolume_IsLinkFromPostion::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SVONVolume_IsLinkFromPostion;
 
 // Function UESVON.SVONVolume.IsReachableBetweenPos
 // 0x0080 (0x0080 - 0x0000)
@@ -173,12 +136,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0078(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SVONVolume_IsReachableBetweenPos) == 0x000008, "Wrong alignment on SVONVolume_IsReachableBetweenPos");
-static_assert(sizeof(SVONVolume_IsReachableBetweenPos) == 0x000080, "Wrong size on SVONVolume_IsReachableBetweenPos");
-static_assert(offsetof(SVONVolume_IsReachableBetweenPos, StartPos) == 0x000000, "Member 'SVONVolume_IsReachableBetweenPos::StartPos' has a wrong offset!");
-static_assert(offsetof(SVONVolume_IsReachableBetweenPos, TargetPos) == 0x000018, "Member 'SVONVolume_IsReachableBetweenPos::TargetPos' has a wrong offset!");
-static_assert(offsetof(SVONVolume_IsReachableBetweenPos, PathFinderSettings) == 0x000030, "Member 'SVONVolume_IsReachableBetweenPos::PathFinderSettings' has a wrong offset!");
-static_assert(offsetof(SVONVolume_IsReachableBetweenPos, ReturnValue) == 0x000078, "Member 'SVONVolume_IsReachableBetweenPos::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SVONVolume_IsReachableBetweenPos;
 
 // Function UESVON.SVONVolume.K2_ReDrawDebug
 // 0x0020 (0x0020 - 0x0000)
@@ -189,10 +147,7 @@ public:
 	float                                         DebugDistance;                                     // 0x0018(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SVONVolume_K2_ReDrawDebug) == 0x000008, "Wrong alignment on SVONVolume_K2_ReDrawDebug");
-static_assert(sizeof(SVONVolume_K2_ReDrawDebug) == 0x000020, "Wrong size on SVONVolume_K2_ReDrawDebug");
-static_assert(offsetof(SVONVolume_K2_ReDrawDebug, DebugPosition) == 0x000000, "Member 'SVONVolume_K2_ReDrawDebug::DebugPosition' has a wrong offset!");
-static_assert(offsetof(SVONVolume_K2_ReDrawDebug, DebugDistance) == 0x000018, "Member 'SVONVolume_K2_ReDrawDebug::DebugDistance' has a wrong offset!");
+DUMPER7_ASSERTS_SVONVolume_K2_ReDrawDebug;
 
 // Function UESVON.SVONVolume.DrawNodeForReachableTest
 // 0x0001 (0x0001 - 0x0000)
@@ -201,9 +156,7 @@ struct SVONVolume_DrawNodeForReachableTest final
 public:
 	bool                                          DrawReachable;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SVONVolume_DrawNodeForReachableTest) == 0x000001, "Wrong alignment on SVONVolume_DrawNodeForReachableTest");
-static_assert(sizeof(SVONVolume_DrawNodeForReachableTest) == 0x000001, "Wrong size on SVONVolume_DrawNodeForReachableTest");
-static_assert(offsetof(SVONVolume_DrawNodeForReachableTest, DrawReachable) == 0x000000, "Member 'SVONVolume_DrawNodeForReachableTest::DrawReachable' has a wrong offset!");
+DUMPER7_ASSERTS_SVONVolume_DrawNodeForReachableTest;
 
 // Function UESVON.SVONVolume.GetNeighboursPosList
 // 0x0028 (0x0028 - 0x0000)
@@ -213,10 +166,7 @@ public:
 	struct FVector                                StartPos;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        OutPosList;                                        // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SVONVolume_GetNeighboursPosList) == 0x000008, "Wrong alignment on SVONVolume_GetNeighboursPosList");
-static_assert(sizeof(SVONVolume_GetNeighboursPosList) == 0x000028, "Wrong size on SVONVolume_GetNeighboursPosList");
-static_assert(offsetof(SVONVolume_GetNeighboursPosList, StartPos) == 0x000000, "Member 'SVONVolume_GetNeighboursPosList::StartPos' has a wrong offset!");
-static_assert(offsetof(SVONVolume_GetNeighboursPosList, OutPosList) == 0x000018, "Member 'SVONVolume_GetNeighboursPosList::OutPosList' has a wrong offset!");
+DUMPER7_ASSERTS_SVONVolume_GetNeighboursPosList;
 
 // Function UESVON.SVONVolume.GetUnReachablePosList
 // 0x0010 (0x0010 - 0x0000)
@@ -225,9 +175,7 @@ struct SVONVolume_GetUnReachablePosList final
 public:
 	TArray<struct FVector>                        OutPosList;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SVONVolume_GetUnReachablePosList) == 0x000008, "Wrong alignment on SVONVolume_GetUnReachablePosList");
-static_assert(sizeof(SVONVolume_GetUnReachablePosList) == 0x000010, "Wrong size on SVONVolume_GetUnReachablePosList");
-static_assert(offsetof(SVONVolume_GetUnReachablePosList, OutPosList) == 0x000000, "Member 'SVONVolume_GetUnReachablePosList::OutPosList' has a wrong offset!");
+DUMPER7_ASSERTS_SVONVolume_GetUnReachablePosList;
 
 }
 

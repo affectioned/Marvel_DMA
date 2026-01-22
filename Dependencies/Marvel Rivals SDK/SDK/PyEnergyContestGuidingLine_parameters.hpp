@@ -23,9 +23,7 @@ struct PyEnergyContestGuidingLine_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestGuidingLine_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyEnergyContestGuidingLine_ReceiveEndPlay");
-static_assert(sizeof(PyEnergyContestGuidingLine_ReceiveEndPlay) == 0x000001, "Wrong size on PyEnergyContestGuidingLine_ReceiveEndPlay");
-static_assert(offsetof(PyEnergyContestGuidingLine_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyEnergyContestGuidingLine_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestGuidingLine_ReceiveEndPlay;
 
 // PythonFunction PyEnergyContestGuidingLine.PyEnergyContestGuidingLine.SetMaterial
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyEnergyContestGuidingLine_SetMaterial final
 public:
 	class UMaterialInstance*                      material;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestGuidingLine_SetMaterial) == 0x000008, "Wrong alignment on PyEnergyContestGuidingLine_SetMaterial");
-static_assert(sizeof(PyEnergyContestGuidingLine_SetMaterial) == 0x000008, "Wrong size on PyEnergyContestGuidingLine_SetMaterial");
-static_assert(offsetof(PyEnergyContestGuidingLine_SetMaterial, material) == 0x000000, "Member 'PyEnergyContestGuidingLine_SetMaterial::material' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestGuidingLine_SetMaterial;
 
 // PythonFunction PyEnergyContestGuidingLine.PyEnergyContestGuidingLine.SetGuidingLineReversed
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyEnergyContestGuidingLine_SetGuidingLineReversed final
 public:
 	bool                                          bReverse;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestGuidingLine_SetGuidingLineReversed) == 0x000001, "Wrong alignment on PyEnergyContestGuidingLine_SetGuidingLineReversed");
-static_assert(sizeof(PyEnergyContestGuidingLine_SetGuidingLineReversed) == 0x000001, "Wrong size on PyEnergyContestGuidingLine_SetGuidingLineReversed");
-static_assert(offsetof(PyEnergyContestGuidingLine_SetGuidingLineReversed, bReverse) == 0x000000, "Member 'PyEnergyContestGuidingLine_SetGuidingLineReversed::bReverse' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestGuidingLine_SetGuidingLineReversed;
 
 // PythonFunction PyEnergyContestGuidingLine.PyEnergyContestGuidingLine.SetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,7 @@ struct PyEnergyContestGuidingLine_SetVisible final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestGuidingLine_SetVisible) == 0x000001, "Wrong alignment on PyEnergyContestGuidingLine_SetVisible");
-static_assert(sizeof(PyEnergyContestGuidingLine_SetVisible) == 0x000001, "Wrong size on PyEnergyContestGuidingLine_SetVisible");
-static_assert(offsetof(PyEnergyContestGuidingLine_SetVisible, visible) == 0x000000, "Member 'PyEnergyContestGuidingLine_SetVisible::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestGuidingLine_SetVisible;
 
 }
 

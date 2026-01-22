@@ -21,9 +21,7 @@ struct PyBuffAbility_10130_103905_OnAbilityActivate final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_103905_OnAbilityActivate) == 0x000004, "Wrong alignment on PyBuffAbility_10130_103905_OnAbilityActivate");
-static_assert(sizeof(PyBuffAbility_10130_103905_OnAbilityActivate) == 0x000004, "Wrong size on PyBuffAbility_10130_103905_OnAbilityActivate");
-static_assert(offsetof(PyBuffAbility_10130_103905_OnAbilityActivate, AbilityID) == 0x000000, "Member 'PyBuffAbility_10130_103905_OnAbilityActivate::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_103905_OnAbilityActivate;
 
 }
 

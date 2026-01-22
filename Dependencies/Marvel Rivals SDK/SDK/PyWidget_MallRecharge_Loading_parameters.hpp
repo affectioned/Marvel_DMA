@@ -21,9 +21,7 @@ struct PyWidget_MallRecharge_Loading_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MallRecharge_Loading_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_MallRecharge_Loading_MarvelSetVisible");
-static_assert(sizeof(PyWidget_MallRecharge_Loading_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_MallRecharge_Loading_MarvelSetVisible");
-static_assert(offsetof(PyWidget_MallRecharge_Loading_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_MallRecharge_Loading_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MallRecharge_Loading_MarvelSetVisible;
 
 // PythonFunction PyWidget_MallRecharge_Loading.PyWidget_MallRecharge_Loading_Steam_Tips.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_MallRecharge_Loading_Steam_Tips_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MallRecharge_Loading_Steam_Tips_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_MallRecharge_Loading_Steam_Tips_MarvelSetVisible");
-static_assert(sizeof(PyWidget_MallRecharge_Loading_Steam_Tips_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_MallRecharge_Loading_Steam_Tips_MarvelSetVisible");
-static_assert(offsetof(PyWidget_MallRecharge_Loading_Steam_Tips_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_MallRecharge_Loading_Steam_Tips_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MallRecharge_Loading_Steam_Tips_MarvelSetVisible;
 
 }
 

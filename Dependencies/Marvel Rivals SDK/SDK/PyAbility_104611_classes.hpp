@@ -29,21 +29,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104611">();
+		STATIC_CLASS_IMPL("PyConfig_104611")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104611")
 	}
 	static class UPyConfig_104611* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104611>();
 	}
 };
-static_assert(alignof(UPyConfig_104611) == 0x000008, "Wrong alignment on UPyConfig_104611");
-static_assert(sizeof(UPyConfig_104611) == 0x000198, "Wrong size on UPyConfig_104611");
-static_assert(offsetof(UPyConfig_104611, EnergyTag) == 0x000120, "Member 'UPyConfig_104611::EnergyTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104611, CriticalHitEnergyRestore) == 0x00012C, "Member 'UPyConfig_104611::CriticalHitEnergyRestore' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104611, AddEnergyIgnoreTags) == 0x000130, "Member 'UPyConfig_104611::AddEnergyIgnoreTags' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104611;
 
 // PythonClass PyAbility_104611.PyAbility_104611
-// 0x0000 (0x2AD8 - 0x2AD8)
+// 0x0000 (0x2B28 - 0x2B28)
 class UPyAbility_104611 : public UAbility_106
 {
 public:
@@ -54,26 +54,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104611">();
+		STATIC_CLASS_IMPL("PyAbility_104611")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104611")
 	}
 	static class UPyAbility_104611* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104611>();
 	}
 };
-static_assert(alignof(UPyAbility_104611) == 0x000008, "Wrong alignment on UPyAbility_104611");
-static_assert(sizeof(UPyAbility_104611) == 0x002AD8, "Wrong size on UPyAbility_104611");
+DUMPER7_ASSERTS_UPyAbility_104611;
 
 // PythonClass PyAbility_104611.PyCue_Instant_HitImpact_10461101
-// 0x0028 (0x0628 - 0x0600)
+// 0x0028 (0x0648 - 0x0620)
 class UPyCue_Instant_HitImpact_10461101 final : public UMarvelCueNotify_InstantHitImpact
 {
 public:
-	class UFXSystemAsset*                         ReleaseFXAsset;                                    // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReleaseFXOffset;                                   // 0x0608(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 EffectSocketName;                                  // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableFXAttach;                                    // 0x0620(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         ReleaseFXAsset;                                    // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReleaseFXOffset;                                   // 0x0628(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_62C[0x4];                                      // 0x062C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 EffectSocketName;                                  // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableFXAttach;                                    // 0x0640(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -81,19 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Instant_HitImpact_10461101">();
+		STATIC_CLASS_IMPL("PyCue_Instant_HitImpact_10461101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Instant_HitImpact_10461101")
 	}
 	static class UPyCue_Instant_HitImpact_10461101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Instant_HitImpact_10461101>();
 	}
 };
-static_assert(alignof(UPyCue_Instant_HitImpact_10461101) == 0x000008, "Wrong alignment on UPyCue_Instant_HitImpact_10461101");
-static_assert(sizeof(UPyCue_Instant_HitImpact_10461101) == 0x000628, "Wrong size on UPyCue_Instant_HitImpact_10461101");
-static_assert(offsetof(UPyCue_Instant_HitImpact_10461101, ReleaseFXAsset) == 0x000600, "Member 'UPyCue_Instant_HitImpact_10461101::ReleaseFXAsset' has a wrong offset!");
-static_assert(offsetof(UPyCue_Instant_HitImpact_10461101, ReleaseFXOffset) == 0x000608, "Member 'UPyCue_Instant_HitImpact_10461101::ReleaseFXOffset' has a wrong offset!");
-static_assert(offsetof(UPyCue_Instant_HitImpact_10461101, EffectSocketName) == 0x000610, "Member 'UPyCue_Instant_HitImpact_10461101::EffectSocketName' has a wrong offset!");
-static_assert(offsetof(UPyCue_Instant_HitImpact_10461101, EnableFXAttach) == 0x000620, "Member 'UPyCue_Instant_HitImpact_10461101::EnableFXAttach' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Instant_HitImpact_10461101;
 
 }
 

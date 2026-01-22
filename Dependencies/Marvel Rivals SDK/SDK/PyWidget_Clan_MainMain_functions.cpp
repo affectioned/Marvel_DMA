@@ -55,6 +55,31 @@ void UPyWidget_Clan_MainMain::Construct()
 }
 
 
+// PythonFunction PyWidget_Clan_MainMain.PyWidget_Clan_MainMain.MarvelSetVisible
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Visible                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_Clan_MainMain::MarvelSetVisible(bool Visible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Clan_MainMain", "MarvelSetVisible");
+
+	Params::PyWidget_Clan_MainMain_MarvelSetVisible Parms{};
+
+	Parms.Visible = Visible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_Clan_MainMain.PyWidget_Clan_MainMain.OnCascadingVisibleChanged
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

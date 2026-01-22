@@ -32,18 +32,7 @@ public:
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_5; // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_6; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Decal_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_Decal_C_UserConstructionScript");
-static_assert(sizeof(BP_Decal_C_UserConstructionScript) == 0x000040, "Wrong size on BP_Decal_C_UserConstructionScript");
-static_assert(offsetof(BP_Decal_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000000, "Member 'BP_Decal_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Decal_C_UserConstructionScript, CallFunc_Conv_ColorToLinearColor_ReturnValue) == 0x000008, "Member 'BP_Decal_C_UserConstructionScript::CallFunc_Conv_ColorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Decal_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000018, "Member 'BP_Decal_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Decal_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000020, "Member 'BP_Decal_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_Decal_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x000024, "Member 'BP_Decal_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_Decal_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_2) == 0x000028, "Member 'BP_Decal_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_Decal_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_3) == 0x00002C, "Member 'BP_Decal_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(BP_Decal_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_4) == 0x000030, "Member 'BP_Decal_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(BP_Decal_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_5) == 0x000034, "Member 'BP_Decal_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(BP_Decal_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_6) == 0x000038, "Member 'BP_Decal_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_6' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Decal_C_UserConstructionScript;
 
 }
 

@@ -34,21 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_SelelctHero_Arakko">();
+		STATIC_CLASS_IMPL("PyLevelController_SelelctHero_Arakko")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_SelelctHero_Arakko")
 	}
 	static class APyLevelController_SelelctHero_Arakko* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_SelelctHero_Arakko>();
 	}
 };
-static_assert(alignof(APyLevelController_SelelctHero_Arakko) == 0x000010, "Wrong alignment on APyLevelController_SelelctHero_Arakko");
-static_assert(sizeof(APyLevelController_SelelctHero_Arakko) == 0x000840, "Wrong size on APyLevelController_SelelctHero_Arakko");
-static_assert(offsetof(APyLevelController_SelelctHero_Arakko, HideShowActorDelaySeconds) == 0x00080C, "Member 'APyLevelController_SelelctHero_Arakko::HideShowActorDelaySeconds' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelelctHero_Arakko, ShowActorControl) == 0x000810, "Member 'APyLevelController_SelelctHero_Arakko::ShowActorControl' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelelctHero_Arakko, IdleLoopAnim) == 0x000818, "Member 'APyLevelController_SelelctHero_Arakko::IdleLoopAnim' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelelctHero_Arakko, EndAnim) == 0x000820, "Member 'APyLevelController_SelelctHero_Arakko::EndAnim' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelelctHero_Arakko, EndAnim_BlendTime) == 0x000828, "Member 'APyLevelController_SelelctHero_Arakko::EndAnim_BlendTime' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelelctHero_Arakko, AnimActorTag) == 0x00082C, "Member 'APyLevelController_SelelctHero_Arakko::AnimActorTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_SelelctHero_Arakko;
 
 }
 

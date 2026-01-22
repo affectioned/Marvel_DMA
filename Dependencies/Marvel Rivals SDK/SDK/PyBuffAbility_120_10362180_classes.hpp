@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_10362180.PyBuffAbility_120_10362180
-// 0x00F8 (0x1468 - 0x1370)
+// 0x0148 (0x14D0 - 0x1388)
 class UPyBuffAbility_120_10362180 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         EnergyRegenValueIcrement;                          // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1374[0x4];                                     // 0x1374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelBuffSpecInfo                    WebBoundBuffSpecInfo;                              // 0x1378(0x00F0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         EnergyRegenValueIcrement;                          // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138C[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelBuffSpecInfo                    WebBoundBuffSpecInfo;                              // 0x1390(0x0140)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10362180">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10362180")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10362180")
 	}
 	static class UPyBuffAbility_120_10362180* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10362180>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10362180) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10362180");
-static_assert(sizeof(UPyBuffAbility_120_10362180) == 0x001468, "Wrong size on UPyBuffAbility_120_10362180");
-static_assert(offsetof(UPyBuffAbility_120_10362180, EnergyRegenValueIcrement) == 0x001370, "Member 'UPyBuffAbility_120_10362180::EnergyRegenValueIcrement' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10362180, WebBoundBuffSpecInfo) == 0x001378, "Member 'UPyBuffAbility_120_10362180::WebBoundBuffSpecInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10362180;
 
 }
 

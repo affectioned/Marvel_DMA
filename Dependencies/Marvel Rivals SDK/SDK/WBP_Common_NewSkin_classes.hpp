@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_NewSkin_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_NewSkin_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_NewSkin_C")
 	}
 	static class UWBP_Common_NewSkin_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_NewSkin_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_NewSkin_C) == 0x000008, "Wrong alignment on UWBP_Common_NewSkin_C");
-static_assert(sizeof(UWBP_Common_NewSkin_C) == 0x0003D0, "Wrong size on UWBP_Common_NewSkin_C");
-static_assert(offsetof(UWBP_Common_NewSkin_C, MarvelImage_60) == 0x0003B8, "Member 'UWBP_Common_NewSkin_C::MarvelImage_60' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NewSkin_C, MarvelImage_156) == 0x0003C0, "Member 'UWBP_Common_NewSkin_C::MarvelImage_156' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NewSkin_C, Overlay_NewSkin) == 0x0003C8, "Member 'UWBP_Common_NewSkin_C::Overlay_NewSkin' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_NewSkin_C;
 
 }
 

@@ -24,10 +24,7 @@ public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParamHandle;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10391033_OnAbilityDamage) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10391033_OnAbilityDamage");
-static_assert(sizeof(PyBuffAbility_10130_10391033_OnAbilityDamage) == 0x000020, "Wrong size on PyBuffAbility_10130_10391033_OnAbilityDamage");
-static_assert(offsetof(PyBuffAbility_10130_10391033_OnAbilityDamage, Ability) == 0x000000, "Member 'PyBuffAbility_10130_10391033_OnAbilityDamage::Ability' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10391033_OnAbilityDamage, ParamHandle) == 0x000008, "Member 'PyBuffAbility_10130_10391033_OnAbilityDamage::ParamHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10391033_OnAbilityDamage;
 
 // PythonFunction PyBuffAbility_10130_103921.PyProjectile_10399013.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -36,9 +33,7 @@ struct PyProjectile_10399013_ReceiveTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyProjectile_10399013_ReceiveTick) == 0x000004, "Wrong alignment on PyProjectile_10399013_ReceiveTick");
-static_assert(sizeof(PyProjectile_10399013_ReceiveTick) == 0x000004, "Wrong size on PyProjectile_10399013_ReceiveTick");
-static_assert(offsetof(PyProjectile_10399013_ReceiveTick, DeltaTime) == 0x000000, "Member 'PyProjectile_10399013_ReceiveTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10399013_ReceiveTick;
 
 }
 

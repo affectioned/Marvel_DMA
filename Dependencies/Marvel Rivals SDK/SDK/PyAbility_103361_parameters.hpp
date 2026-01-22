@@ -21,9 +21,7 @@ struct PyAbility_103361_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103361_CanActivate) == 0x000001, "Wrong alignment on PyAbility_103361_CanActivate");
-static_assert(sizeof(PyAbility_103361_CanActivate) == 0x000001, "Wrong size on PyAbility_103361_CanActivate");
-static_assert(offsetof(PyAbility_103361_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_103361_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103361_CanActivate;
 
 // PythonFunction PyAbility_103361.PyAbility_103361.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_103361_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103361_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_103361_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_103361_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_103361_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_103361_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_103361_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103361_K2_OnEndAbility;
 
 // PythonFunction PyAbility_103361.PyAbility_103361.OnUserCancelInputPressed
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_103361_OnUserCancelInputPressed final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103361_OnUserCancelInputPressed) == 0x000004, "Wrong alignment on PyAbility_103361_OnUserCancelInputPressed");
-static_assert(sizeof(PyAbility_103361_OnUserCancelInputPressed) == 0x000004, "Wrong size on PyAbility_103361_OnUserCancelInputPressed");
-static_assert(offsetof(PyAbility_103361_OnUserCancelInputPressed, TimeWaited) == 0x000000, "Member 'PyAbility_103361_OnUserCancelInputPressed::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103361_OnUserCancelInputPressed;
 
 }
 

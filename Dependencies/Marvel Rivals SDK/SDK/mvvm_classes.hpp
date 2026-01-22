@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelMVVMViewExtension">();
+		STATIC_CLASS_IMPL("MarvelMVVMViewExtension")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelMVVMViewExtension")
 	}
 	static class UMarvelMVVMViewExtension* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelMVVMViewExtension>();
 	}
 };
-static_assert(alignof(UMarvelMVVMViewExtension) == 0x000008, "Wrong alignment on UMarvelMVVMViewExtension");
-static_assert(sizeof(UMarvelMVVMViewExtension) == 0x000030, "Wrong size on UMarvelMVVMViewExtension");
+DUMPER7_ASSERTS_UMarvelMVVMViewExtension;
 
 // PythonClass mvvm.MarvelMVVMListEntryObject
 // 0x0000 (0x0030 - 0x0030)
@@ -45,15 +48,18 @@ class UMarvelMVVMListEntryObject : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelMVVMListEntryObject">();
+		STATIC_CLASS_IMPL("MarvelMVVMListEntryObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelMVVMListEntryObject")
 	}
 	static class UMarvelMVVMListEntryObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelMVVMListEntryObject>();
 	}
 };
-static_assert(alignof(UMarvelMVVMListEntryObject) == 0x000008, "Wrong alignment on UMarvelMVVMListEntryObject");
-static_assert(sizeof(UMarvelMVVMListEntryObject) == 0x000030, "Wrong size on UMarvelMVVMListEntryObject");
+DUMPER7_ASSERTS_UMarvelMVVMListEntryObject;
 
 }
 

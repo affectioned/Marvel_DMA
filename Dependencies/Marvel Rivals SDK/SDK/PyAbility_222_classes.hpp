@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_222.PyUIController_222
-// 0x0018 (0x0F48 - 0x0F30)
+// 0x0018 (0x1228 - 0x1210)
 class UPyUIController_222 final : public UUIController_222
 {
 public:
-	class FText                                   TipText;                                           // 0x0F30(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   TipText;                                           // 0x1210(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void K2_PlayAnimation(float CurPercent, float Speed);
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_222">();
+		STATIC_CLASS_IMPL("PyUIController_222")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_222")
 	}
 	static class UPyUIController_222* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_222>();
 	}
 };
-static_assert(alignof(UPyUIController_222) == 0x000008, "Wrong alignment on UPyUIController_222");
-static_assert(sizeof(UPyUIController_222) == 0x000F48, "Wrong size on UPyUIController_222");
-static_assert(offsetof(UPyUIController_222, TipText) == 0x000F30, "Member 'UPyUIController_222::TipText' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_222;
 
 }
 

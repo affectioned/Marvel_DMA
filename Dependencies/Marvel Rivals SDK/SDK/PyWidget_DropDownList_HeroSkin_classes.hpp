@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_DropDownList_HeroSkin.PyWidget_DropDownList_HeroSkin
-// 0x0010 (0x14F0 - 0x14E0)
+// 0x0010 (0x1540 - 0x1530)
 class UPyWidget_DropDownList_HeroSkin : public UPyWidget_DropDownList
 {
 public:
-	int32                                         PreHeroID;                                         // 0x14D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14DC[0x4];                                     // 0x14DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Texture_Privilege_National_Icon;                   // 0x14E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Privilege_Oversea_Icon;                    // 0x14E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PreHeroID;                                         // 0x1528(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_152C[0x4];                                     // 0x152C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Texture_Privilege_National_Icon;                   // 0x1530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Privilege_Oversea_Icon;                    // 0x1538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DropDownList_HeroSkin">();
+		STATIC_CLASS_IMPL("PyWidget_DropDownList_HeroSkin")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DropDownList_HeroSkin")
 	}
 	static class UPyWidget_DropDownList_HeroSkin* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DropDownList_HeroSkin>();
 	}
 };
-static_assert(alignof(UPyWidget_DropDownList_HeroSkin) == 0x000010, "Wrong alignment on UPyWidget_DropDownList_HeroSkin");
-static_assert(sizeof(UPyWidget_DropDownList_HeroSkin) == 0x0014F0, "Wrong size on UPyWidget_DropDownList_HeroSkin");
-static_assert(offsetof(UPyWidget_DropDownList_HeroSkin, PreHeroID) == 0x0014D8, "Member 'UPyWidget_DropDownList_HeroSkin::PreHeroID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_HeroSkin, Texture_Privilege_National_Icon) == 0x0014E0, "Member 'UPyWidget_DropDownList_HeroSkin::Texture_Privilege_National_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_HeroSkin, Texture_Privilege_Oversea_Icon) == 0x0014E8, "Member 'UPyWidget_DropDownList_HeroSkin::Texture_Privilege_Oversea_Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_DropDownList_HeroSkin;
 
 }
 

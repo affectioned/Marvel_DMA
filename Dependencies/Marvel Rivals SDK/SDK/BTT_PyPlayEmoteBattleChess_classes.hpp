@@ -33,20 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyPlayEmoteBattleChess">();
+		STATIC_CLASS_IMPL("BTT_PyPlayEmoteBattleChess")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyPlayEmoteBattleChess")
 	}
 	static class UBTT_PyPlayEmoteBattleChess* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyPlayEmoteBattleChess>();
 	}
 };
-static_assert(alignof(UBTT_PyPlayEmoteBattleChess) == 0x000008, "Wrong alignment on UBTT_PyPlayEmoteBattleChess");
-static_assert(sizeof(UBTT_PyPlayEmoteBattleChess) == 0x0000D0, "Wrong size on UBTT_PyPlayEmoteBattleChess");
-static_assert(offsetof(UBTT_PyPlayEmoteBattleChess, DefaultEmoteSkinID) == 0x0000C0, "Member 'UBTT_PyPlayEmoteBattleChess::DefaultEmoteSkinID' has a wrong offset!");
-static_assert(offsetof(UBTT_PyPlayEmoteBattleChess, DefaultEmoteActionID) == 0x0000C4, "Member 'UBTT_PyPlayEmoteBattleChess::DefaultEmoteActionID' has a wrong offset!");
-static_assert(offsetof(UBTT_PyPlayEmoteBattleChess, EmoteTypeID) == 0x0000C8, "Member 'UBTT_PyPlayEmoteBattleChess::EmoteTypeID' has a wrong offset!");
-static_assert(offsetof(UBTT_PyPlayEmoteBattleChess, IsSinglePlayEmote) == 0x0000CC, "Member 'UBTT_PyPlayEmoteBattleChess::IsSinglePlayEmote' has a wrong offset!");
-static_assert(offsetof(UBTT_PyPlayEmoteBattleChess, IsRandomPlayEmote) == 0x0000CD, "Member 'UBTT_PyPlayEmoteBattleChess::IsRandomPlayEmote' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyPlayEmoteBattleChess;
 
 }
 

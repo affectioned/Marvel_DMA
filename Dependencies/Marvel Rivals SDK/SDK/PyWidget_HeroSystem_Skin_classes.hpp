@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "UMG_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Skin.PyWidget_HeroSystem_Skin
-// 0x0048 (0x0640 - 0x05F8)
+// 0x0048 (0x0648 - 0x0600)
 class UPyWidget_HeroSystem_Skin final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          AkEvent_PersonalPanelClick;                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& SkinID)> OnSwitchSkin;                        // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ShapeID)> OnSwitchShape;                                     // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& ItemID)> OnSwitchItem;                        // 0x0620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsHover)>  OnHoverItemList;                                   // 0x0630(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_PersonalPanelClick;                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& SkinID)> OnSwitchSkin;                        // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ShapeID)> OnSwitchShape;                                     // 0x0618(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& ItemID)> OnSwitchItem;                        // 0x0628(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsHover)>  OnHoverItemList;                                   // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Skin">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Skin")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Skin")
 	}
 	static class UPyWidget_HeroSystem_Skin* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Skin>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Skin) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Skin");
-static_assert(sizeof(UPyWidget_HeroSystem_Skin) == 0x000640, "Wrong size on UPyWidget_HeroSystem_Skin");
-static_assert(offsetof(UPyWidget_HeroSystem_Skin, AkEvent_PersonalPanelClick) == 0x0005F8, "Member 'UPyWidget_HeroSystem_Skin::AkEvent_PersonalPanelClick' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skin, OnSwitchSkin) == 0x000600, "Member 'UPyWidget_HeroSystem_Skin::OnSwitchSkin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skin, OnSwitchShape) == 0x000610, "Member 'UPyWidget_HeroSystem_Skin::OnSwitchShape' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skin, OnSwitchItem) == 0x000620, "Member 'UPyWidget_HeroSystem_Skin::OnSwitchItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skin, OnHoverItemList) == 0x000630, "Member 'UPyWidget_HeroSystem_Skin::OnHoverItemList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Skin;
 
 // PythonClass PyWidget_HeroSystem_Skin.PyWidget_HeroSystem_SkinName
 // 0x0030 (0x03E8 - 0x03B8)
@@ -73,21 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_SkinName">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_SkinName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_SkinName")
 	}
 	static class UPyWidget_HeroSystem_SkinName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_SkinName>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_SkinName) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_SkinName");
-static_assert(sizeof(UPyWidget_HeroSystem_SkinName) == 0x0003E8, "Wrong size on UPyWidget_HeroSystem_SkinName");
-static_assert(offsetof(UPyWidget_HeroSystem_SkinName, SkinName) == 0x0003B8, "Member 'UPyWidget_HeroSystem_SkinName::SkinName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_SkinName, InitFontSize) == 0x0003D0, "Member 'UPyWidget_HeroSystem_SkinName::InitFontSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_SkinName, WrapAt) == 0x0003D4, "Member 'UPyWidget_HeroSystem_SkinName::WrapAt' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_SkinName, IsAdaptive) == 0x0003D8, "Member 'UPyWidget_HeroSystem_SkinName::IsAdaptive' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_SkinName, HeightLimit) == 0x0003DC, "Member 'UPyWidget_HeroSystem_SkinName::HeightLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_SkinName, FontSizeLimit) == 0x0003E0, "Member 'UPyWidget_HeroSystem_SkinName::FontSizeLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_SkinName;
 
 }
 

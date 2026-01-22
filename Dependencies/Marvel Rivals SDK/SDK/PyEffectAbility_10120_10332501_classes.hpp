@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyEffectAbility_10120_10332501.PyEffectAbility_10120_10332501
-// 0x0008 (0x1418 - 0x1410)
+// 0x0008 (0x1430 - 0x1428)
 class UPyEffectAbility_10120_10332501 final : public UMarvelTimelineAccelerateAbility
 {
 public:
-	int32                                         AmmoNum;                                           // 0x1410(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AmmoNum;                                           // 0x1428(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_10120_10332501">();
+		STATIC_CLASS_IMPL("PyEffectAbility_10120_10332501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_10120_10332501")
 	}
 	static class UPyEffectAbility_10120_10332501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_10120_10332501>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_10120_10332501) == 0x000008, "Wrong alignment on UPyEffectAbility_10120_10332501");
-static_assert(sizeof(UPyEffectAbility_10120_10332501) == 0x001418, "Wrong size on UPyEffectAbility_10120_10332501");
-static_assert(offsetof(UPyEffectAbility_10120_10332501, AmmoNum) == 0x001410, "Member 'UPyEffectAbility_10120_10332501::AmmoNum' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_10120_10332501;
 
 }
 

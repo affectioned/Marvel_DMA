@@ -17,41 +17,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectHero_HeroInfo.WBP_SelectHero_HeroInfo_C
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0048 (0x0610 - 0x05C8)
 class UWBP_SelectHero_HeroInfo_C final : public UPyWidget_SelectHero_HeroInfo
 {
 public:
-	class UWidgetAnimation*                       Anim_Reset;                                        // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelButton*                          Btn_F1;                                            // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           CanvasPanel;                                       // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_HeroDifficulty_C*                  HeroDifficulty;                                    // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line;                                          // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_NewbieGuide;                               // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_HeroName_C*                 WBP_Common_HeroName;                               // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_SelectHero_Custom_C*               WBP_SelectHero_Custom;                             // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_DropDownList_HeroSkin_C*           WBP_SkinDownList;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Reset;                                        // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_F1;                                            // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel;                                       // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HeroDifficulty_C*                  HeroDifficulty;                                    // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line;                                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_NewbieGuide;                               // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_HeroName_C*                 WBP_Common_HeroName;                               // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_SelectHero_Custom_C*               WBP_SelectHero_Custom;                             // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_DropDownList_HeroSkin_C*           WBP_SkinDownList;                                  // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SelectHero_HeroInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SelectHero_HeroInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SelectHero_HeroInfo_C")
 	}
 	static class UWBP_SelectHero_HeroInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SelectHero_HeroInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_SelectHero_HeroInfo_C) == 0x000008, "Wrong alignment on UWBP_SelectHero_HeroInfo_C");
-static_assert(sizeof(UWBP_SelectHero_HeroInfo_C) == 0x000608, "Wrong size on UWBP_SelectHero_HeroInfo_C");
-static_assert(offsetof(UWBP_SelectHero_HeroInfo_C, Anim_Reset) == 0x0005C0, "Member 'UWBP_SelectHero_HeroInfo_C::Anim_Reset' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroInfo_C, Btn_F1) == 0x0005C8, "Member 'UWBP_SelectHero_HeroInfo_C::Btn_F1' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroInfo_C, CanvasPanel) == 0x0005D0, "Member 'UWBP_SelectHero_HeroInfo_C::CanvasPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroInfo_C, HeroDifficulty) == 0x0005D8, "Member 'UWBP_SelectHero_HeroInfo_C::HeroDifficulty' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroInfo_C, Img_Line) == 0x0005E0, "Member 'UWBP_SelectHero_HeroInfo_C::Img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroInfo_C, Overlay_NewbieGuide) == 0x0005E8, "Member 'UWBP_SelectHero_HeroInfo_C::Overlay_NewbieGuide' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroInfo_C, WBP_Common_HeroName) == 0x0005F0, "Member 'UWBP_SelectHero_HeroInfo_C::WBP_Common_HeroName' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroInfo_C, WBP_SelectHero_Custom) == 0x0005F8, "Member 'UWBP_SelectHero_HeroInfo_C::WBP_SelectHero_Custom' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroInfo_C, WBP_SkinDownList) == 0x000600, "Member 'UWBP_SelectHero_HeroInfo_C::WBP_SkinDownList' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SelectHero_HeroInfo_C;
 
 }
 

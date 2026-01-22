@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_InstructionPanel.PyWidget_League_InstructionPanel
-// 0x0020 (0x0618 - 0x05F8)
+// 0x0020 (0x0620 - 0x0600)
 class UPyWidget_League_InstructionPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UPyWidget_League_Instructionsn_Schedule> WidgetClassInstructionsnSchedule;     // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_League_Instructionsn_Description> WidgetClassInstructionsnDescription; // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             IconMRC;                                           // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             IconClash;                                         // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_League_Instructionsn_Schedule> WidgetClassInstructionsnSchedule;     // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_League_Instructionsn_Description> WidgetClassInstructionsnDescription; // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             IconMRC;                                           // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             IconClash;                                         // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,22 +35,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_InstructionPanel">();
+		STATIC_CLASS_IMPL("PyWidget_League_InstructionPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_InstructionPanel")
 	}
 	static class UPyWidget_League_InstructionPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_InstructionPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_League_InstructionPanel) == 0x000008, "Wrong alignment on UPyWidget_League_InstructionPanel");
-static_assert(sizeof(UPyWidget_League_InstructionPanel) == 0x000618, "Wrong size on UPyWidget_League_InstructionPanel");
-static_assert(offsetof(UPyWidget_League_InstructionPanel, WidgetClassInstructionsnSchedule) == 0x0005F8, "Member 'UPyWidget_League_InstructionPanel::WidgetClassInstructionsnSchedule' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_InstructionPanel, WidgetClassInstructionsnDescription) == 0x000600, "Member 'UPyWidget_League_InstructionPanel::WidgetClassInstructionsnDescription' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_InstructionPanel, IconMRC) == 0x000608, "Member 'UPyWidget_League_InstructionPanel::IconMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_InstructionPanel, IconClash) == 0x000610, "Member 'UPyWidget_League_InstructionPanel::IconClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_InstructionPanel;
 
 // PythonClass PyWidget_League_InstructionPanel.PyWidget_League_Instructionsn_ScheduleTime
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_Instructionsn_ScheduleTime final : public UPyMarvelUserWidget
 {
 public:
@@ -61,18 +60,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_Instructionsn_ScheduleTime">();
+		STATIC_CLASS_IMPL("PyWidget_League_Instructionsn_ScheduleTime")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_Instructionsn_ScheduleTime")
 	}
 	static class UPyWidget_League_Instructionsn_ScheduleTime* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_Instructionsn_ScheduleTime>();
 	}
 };
-static_assert(alignof(UPyWidget_League_Instructionsn_ScheduleTime) == 0x000008, "Wrong alignment on UPyWidget_League_Instructionsn_ScheduleTime");
-static_assert(sizeof(UPyWidget_League_Instructionsn_ScheduleTime) == 0x0005C0, "Wrong size on UPyWidget_League_Instructionsn_ScheduleTime");
+DUMPER7_ASSERTS_UPyWidget_League_Instructionsn_ScheduleTime;
 
 // PythonClass PyWidget_League_InstructionPanel.PyWidget_League_Instructionsn_Description
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_Instructionsn_Description final : public UPyMarvelUserWidget
 {
 public:
@@ -83,23 +85,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_Instructionsn_Description">();
+		STATIC_CLASS_IMPL("PyWidget_League_Instructionsn_Description")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_Instructionsn_Description")
 	}
 	static class UPyWidget_League_Instructionsn_Description* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_Instructionsn_Description>();
 	}
 };
-static_assert(alignof(UPyWidget_League_Instructionsn_Description) == 0x000008, "Wrong alignment on UPyWidget_League_Instructionsn_Description");
-static_assert(sizeof(UPyWidget_League_Instructionsn_Description) == 0x0005C0, "Wrong size on UPyWidget_League_Instructionsn_Description");
+DUMPER7_ASSERTS_UPyWidget_League_Instructionsn_Description;
 
 // PythonClass PyWidget_League_InstructionPanel.PyWidget_League_Instructionsn_Schedule
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_League_Instructionsn_Schedule final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_League_Instructionsn_ScheduleTime> WidgetClassTime;                  // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_League_Instructionsn_ScheduleTime> WidgetClassTime;                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -110,16 +115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_Instructionsn_Schedule">();
+		STATIC_CLASS_IMPL("PyWidget_League_Instructionsn_Schedule")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_Instructionsn_Schedule")
 	}
 	static class UPyWidget_League_Instructionsn_Schedule* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_Instructionsn_Schedule>();
 	}
 };
-static_assert(alignof(UPyWidget_League_Instructionsn_Schedule) == 0x000008, "Wrong alignment on UPyWidget_League_Instructionsn_Schedule");
-static_assert(sizeof(UPyWidget_League_Instructionsn_Schedule) == 0x0005C8, "Wrong size on UPyWidget_League_Instructionsn_Schedule");
-static_assert(offsetof(UPyWidget_League_Instructionsn_Schedule, WidgetClassTime) == 0x0005C0, "Member 'UPyWidget_League_Instructionsn_Schedule::WidgetClassTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_Instructionsn_Schedule;
 
 }
 

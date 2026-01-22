@@ -19,23 +19,23 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_FPS_InfoIcon.WBP_FPS_InfoIcon_C
-// 0x0078 (0x05E0 - 0x0568)
+// 0x0078 (0x05E8 - 0x0570)
 class UWBP_FPS_InfoIcon_C final : public UMarvelUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0568(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Anim_NetStatus;                                    // 0x0570(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UCommonLazyImage*                       Img_Glow;                                          // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Icon;                                          // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTexture2D*                             Icon;                                              // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FLinearColor                           Icon_Yellow;                                       // 0x0590(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          IsRed;                                             // 0x05A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_5A1[0x3];                                      // 0x05A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Icon_Red;                                          // 0x05A4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_5B4[0x4];                                      // 0x05B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             IconGlow;                                          // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FLinearColor                           IconGlow_Yellow;                                   // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FLinearColor                           IconGlow_Red;                                      // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0570(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Anim_NetStatus;                                    // 0x0578(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UCommonLazyImage*                       Img_Glow;                                          // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Icon;                                          // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTexture2D*                             Icon;                                              // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FLinearColor                           Icon_Yellow;                                       // 0x0598(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          IsRed;                                             // 0x05A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_5A9[0x3];                                      // 0x05A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Icon_Red;                                          // 0x05AC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_5BC[0x4];                                      // 0x05BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             IconGlow;                                          // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FLinearColor                           IconGlow_Yellow;                                   // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FLinearColor                           IconGlow_Red;                                      // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -45,26 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FPS_InfoIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FPS_InfoIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FPS_InfoIcon_C")
 	}
 	static class UWBP_FPS_InfoIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FPS_InfoIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_FPS_InfoIcon_C) == 0x000008, "Wrong alignment on UWBP_FPS_InfoIcon_C");
-static_assert(sizeof(UWBP_FPS_InfoIcon_C) == 0x0005E0, "Wrong size on UWBP_FPS_InfoIcon_C");
-static_assert(offsetof(UWBP_FPS_InfoIcon_C, UberGraphFrame) == 0x000568, "Member 'UWBP_FPS_InfoIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_InfoIcon_C, Anim_NetStatus) == 0x000570, "Member 'UWBP_FPS_InfoIcon_C::Anim_NetStatus' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_InfoIcon_C, Img_Glow) == 0x000578, "Member 'UWBP_FPS_InfoIcon_C::Img_Glow' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_InfoIcon_C, Img_Icon) == 0x000580, "Member 'UWBP_FPS_InfoIcon_C::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_InfoIcon_C, Icon) == 0x000588, "Member 'UWBP_FPS_InfoIcon_C::Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_InfoIcon_C, Icon_Yellow) == 0x000590, "Member 'UWBP_FPS_InfoIcon_C::Icon_Yellow' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_InfoIcon_C, IsRed) == 0x0005A0, "Member 'UWBP_FPS_InfoIcon_C::IsRed' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_InfoIcon_C, Icon_Red) == 0x0005A4, "Member 'UWBP_FPS_InfoIcon_C::Icon_Red' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_InfoIcon_C, IconGlow) == 0x0005B8, "Member 'UWBP_FPS_InfoIcon_C::IconGlow' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_InfoIcon_C, IconGlow_Yellow) == 0x0005C0, "Member 'UWBP_FPS_InfoIcon_C::IconGlow_Yellow' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_InfoIcon_C, IconGlow_Red) == 0x0005D0, "Member 'UWBP_FPS_InfoIcon_C::IconGlow_Red' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FPS_InfoIcon_C;
 
 }
 

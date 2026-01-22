@@ -52,31 +52,7 @@ public:
 	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkAudioEvent*                          K2Node_Select_Default_2;                           // 0x0160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine) == 0x000008, "Wrong alignment on WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine");
-static_assert(sizeof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine) == 0x000168, "Wrong size on WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, EntryPoint) == 0x000000, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, Temp_byte_Variable) == 0x000004, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, Temp_object_Variable) == 0x000008, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, CallFunc_GetDisplayName_ReturnValue) == 0x000010, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, Temp_object_Variable_1) == 0x000020, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, CallFunc_GetEventName_Str) == 0x000028, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::CallFunc_GetEventName_Str' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, Temp_byte_Variable_1) == 0x000040, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, Temp_object_Variable_2) == 0x000048, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, Temp_object_Variable_3) == 0x000050, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, Temp_bool_Variable) == 0x000058, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, Temp_object_Variable_4) == 0x000060, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, K2Node_CustomEvent_AudioTable) == 0x000068, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::K2Node_CustomEvent_AudioTable' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, K2Node_CustomEvent_Side) == 0x000108, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::K2Node_CustomEvent_Side' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, K2Node_Select_Default) == 0x000110, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, CallFunc_IsValid_ReturnValue) == 0x000118, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, CallFunc_PlayAnimation_ReturnValue) == 0x000120, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, K2Node_Select_Default_1) == 0x000128, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, CallFunc_GetPlayerController_ReturnValue) == 0x000130, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, CallFunc_PlayAnimation_ReturnValue_1) == 0x000138, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, CallFunc_GetMarvelAudioAdmin_ReturnValue) == 0x000140, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::CallFunc_GetMarvelAudioAdmin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, CallFunc_GetSoloedAkEvents_ReturnValue) == 0x000148, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::CallFunc_GetSoloedAkEvents_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, CallFunc_Array_Contains_ReturnValue) == 0x000158, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine, K2Node_Select_Default_2) == 0x000160, "Member 'WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine::K2Node_Select_Default_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugAudioAbilityLine_C_ExecuteUbergraph_WBP_DebugAudioAbilityLine;
 
 // Function WBP_DebugAudioAbilityLine.WBP_DebugAudioAbilityLine_C.GetEventName
 // 0x02F8 (0x02F8 - 0x0000)
@@ -106,28 +82,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x02D0(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x02E0(0x0018)()
 };
-static_assert(alignof(WBP_DebugAudioAbilityLine_C_GetEventName) == 0x000008, "Wrong alignment on WBP_DebugAudioAbilityLine_C_GetEventName");
-static_assert(sizeof(WBP_DebugAudioAbilityLine_C_GetEventName) == 0x0002F8, "Wrong size on WBP_DebugAudioAbilityLine_C_GetEventName");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, Event) == 0x000000, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::Event' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, Str) == 0x0000A0, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::Str' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_Greater_IntInt_ReturnValue) == 0x0000B8, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_GetDisplayName_ReturnValue) == 0x0000C0, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_Split_LeftS) == 0x0000D0, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_Split_LeftS' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_Split_RightS) == 0x0000E0, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_Split_RightS' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_Split_ReturnValue) == 0x0000F0, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_Split_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_Conv_StringToText_ReturnValue) == 0x0000F8, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000110, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, K2Node_MakeStruct_FormatArgumentData) == 0x000128, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, K2Node_MakeStruct_FormatArgumentData_1) == 0x000178, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_Conv_StringToText_ReturnValue_2) == 0x0001C8, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, K2Node_MakeArray_Array) == 0x0001E0, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, K2Node_MakeStruct_FormatArgumentData_2) == 0x0001F0, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_Format_ReturnValue) == 0x000240, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_Conv_IntToString_ReturnValue) == 0x000258, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_Conv_StringToText_ReturnValue_3) == 0x000268, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_Conv_StringToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, K2Node_MakeStruct_FormatArgumentData_3) == 0x000280, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, K2Node_MakeArray_Array_1) == 0x0002D0, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_GetEventName, CallFunc_Format_ReturnValue_1) == 0x0002E0, "Member 'WBP_DebugAudioAbilityLine_C_GetEventName::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugAudioAbilityLine_C_GetEventName;
 
 // Function WBP_DebugAudioAbilityLine.WBP_DebugAudioAbilityLine_C.Init
 // 0x00A0 (0x00A0 - 0x0000)
@@ -136,9 +91,7 @@ struct WBP_DebugAudioAbilityLine_C_Init final
 public:
 	struct FMarvelAbilityAudioPack                AudioTable;                                        // 0x0000(0x00A0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_DebugAudioAbilityLine_C_Init) == 0x000008, "Wrong alignment on WBP_DebugAudioAbilityLine_C_Init");
-static_assert(sizeof(WBP_DebugAudioAbilityLine_C_Init) == 0x0000A0, "Wrong size on WBP_DebugAudioAbilityLine_C_Init");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_Init, AudioTable) == 0x000000, "Member 'WBP_DebugAudioAbilityLine_C_Init::AudioTable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugAudioAbilityLine_C_Init;
 
 // Function WBP_DebugAudioAbilityLine.WBP_DebugAudioAbilityLine_C.Play
 // 0x0001 (0x0001 - 0x0000)
@@ -147,9 +100,7 @@ struct WBP_DebugAudioAbilityLine_C_Play final
 public:
 	EClientPlayerViewSide                         Side;                                              // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DebugAudioAbilityLine_C_Play) == 0x000001, "Wrong alignment on WBP_DebugAudioAbilityLine_C_Play");
-static_assert(sizeof(WBP_DebugAudioAbilityLine_C_Play) == 0x000001, "Wrong size on WBP_DebugAudioAbilityLine_C_Play");
-static_assert(offsetof(WBP_DebugAudioAbilityLine_C_Play, Side) == 0x000000, "Member 'WBP_DebugAudioAbilityLine_C_Play::Side' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugAudioAbilityLine_C_Play;
 
 }
 

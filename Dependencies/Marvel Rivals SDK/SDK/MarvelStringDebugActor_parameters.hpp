@@ -44,24 +44,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor) == 0x000008, "Wrong alignment on MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor");
-static_assert(sizeof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor) == 0x0000B0, "Wrong size on MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, EntryPoint) == 0x000000, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, CallFunc_GetOwner_ReturnValue) == 0x000008, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, K2Node_DynamicCast_AsMarvel_Ability_System_Debugger_BP) == 0x000010, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::K2Node_DynamicCast_AsMarvel_Ability_System_Debugger_BP' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, K2Node_CustomEvent_String) == 0x000020, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::K2Node_CustomEvent_String' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, K2Node_CustomEvent_Color) == 0x000030, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::K2Node_CustomEvent_Color' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, CallFunc_GetWidget_ReturnValue) == 0x000040, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::CallFunc_GetWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, K2Node_MakeStruct_SlateColor) == 0x000048, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, K2Node_DynamicCast_AsWBP_Ability_System_Debugger) == 0x000060, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::K2Node_DynamicCast_AsWBP_Ability_System_Debugger' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, K2Node_DynamicCast_bSuccess_1) == 0x000068, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, CallFunc_Conv_StringToText_ReturnValue) == 0x000070, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, CallFunc_GetDesiredSize_ReturnValue) == 0x000088, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::CallFunc_GetDesiredSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, CallFunc_GetOwner_ReturnValue_1) == 0x000098, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, K2Node_DynamicCast_AsMarvel_Ability_System_Debugger_BP_1) == 0x0000A0, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::K2Node_DynamicCast_AsMarvel_Ability_System_Debugger_BP_1' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, K2Node_DynamicCast_bSuccess_2) == 0x0000A8, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor, K2Node_Event_EndPlayReason) == 0x0000A9, "Member 'MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor::K2Node_Event_EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelStringDebugActor_C_ExecuteUbergraph_MarvelStringDebugActor;
 
 // Function MarvelStringDebugActor.MarvelStringDebugActor_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -70,9 +53,7 @@ struct MarvelStringDebugActor_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelStringDebugActor_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on MarvelStringDebugActor_C_ReceiveEndPlay");
-static_assert(sizeof(MarvelStringDebugActor_C_ReceiveEndPlay) == 0x000001, "Wrong size on MarvelStringDebugActor_C_ReceiveEndPlay");
-static_assert(offsetof(MarvelStringDebugActor_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'MarvelStringDebugActor_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelStringDebugActor_C_ReceiveEndPlay;
 
 // Function MarvelStringDebugActor.MarvelStringDebugActor_C.SetDebugString
 // 0x0020 (0x0020 - 0x0000)
@@ -82,10 +63,7 @@ public:
 	class FString                                 String;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	struct FLinearColor                           Color;                                             // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelStringDebugActor_C_SetDebugString) == 0x000008, "Wrong alignment on MarvelStringDebugActor_C_SetDebugString");
-static_assert(sizeof(MarvelStringDebugActor_C_SetDebugString) == 0x000020, "Wrong size on MarvelStringDebugActor_C_SetDebugString");
-static_assert(offsetof(MarvelStringDebugActor_C_SetDebugString, String) == 0x000000, "Member 'MarvelStringDebugActor_C_SetDebugString::String' has a wrong offset!");
-static_assert(offsetof(MarvelStringDebugActor_C_SetDebugString, Color) == 0x000010, "Member 'MarvelStringDebugActor_C_SetDebugString::Color' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelStringDebugActor_C_SetDebugString;
 
 }
 

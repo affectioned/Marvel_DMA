@@ -14,25 +14,25 @@
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "PyCamp_classes.hpp"
-#include "DeclarativeUnreal_structs.hpp"
 #include "Engine_structs.hpp"
+#include "DeclarativeUnreal_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyControl.PyCue_Level_Base
-// 0x0040 (0x1260 - 0x1220)
+// 0x0040 (0x1270 - 0x1230)
 class APyCue_Level_Base : public AMarvelCueNotify_LoopNoRecycle
 {
 public:
-	class UMaterialInstance*                      MaterialColorWhite;                                // 0x1220(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialColorBlue;                                 // 0x1228(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialColorRed;                                  // 0x1230(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               DynamicColorWhite;                                 // 0x1238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               DynamicColorBlue;                                  // 0x1240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               DynamicColorRed;                                   // 0x1248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x1250(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialColorWhite;                                // 0x1230(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialColorBlue;                                 // 0x1238(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialColorRed;                                  // 0x1240(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               DynamicColorWhite;                                 // 0x1248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               DynamicColorBlue;                                  // 0x1250(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               DynamicColorRed;                                   // 0x1258(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x1260(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -43,25 +43,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Level_Base">();
+		STATIC_CLASS_IMPL("PyCue_Level_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Level_Base")
 	}
 	static class APyCue_Level_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Level_Base>();
 	}
 };
-static_assert(alignof(APyCue_Level_Base) == 0x000010, "Wrong alignment on APyCue_Level_Base");
-static_assert(sizeof(APyCue_Level_Base) == 0x001260, "Wrong size on APyCue_Level_Base");
-static_assert(offsetof(APyCue_Level_Base, MaterialColorWhite) == 0x001220, "Member 'APyCue_Level_Base::MaterialColorWhite' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_Base, MaterialColorBlue) == 0x001228, "Member 'APyCue_Level_Base::MaterialColorBlue' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_Base, MaterialColorRed) == 0x001230, "Member 'APyCue_Level_Base::MaterialColorRed' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_Base, DynamicColorWhite) == 0x001238, "Member 'APyCue_Level_Base::DynamicColorWhite' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_Base, DynamicColorBlue) == 0x001240, "Member 'APyCue_Level_Base::DynamicColorBlue' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_Base, DynamicColorRed) == 0x001248, "Member 'APyCue_Level_Base::DynamicColorRed' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_Base, ViewTargetWatcher) == 0x001250, "Member 'APyCue_Level_Base::ViewTargetWatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Level_Base;
 
 // PythonClass PyControl.PyCue_Level_100001
-// 0x0000 (0x1260 - 0x1260)
+// 0x0000 (0x1270 - 0x1270)
 class APyCue_Level_100001 : public APyCue_Level_Base
 {
 public:
@@ -71,32 +67,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Level_100001">();
+		STATIC_CLASS_IMPL("PyCue_Level_100001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Level_100001")
 	}
 	static class APyCue_Level_100001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Level_100001>();
 	}
 };
-static_assert(alignof(APyCue_Level_100001) == 0x000010, "Wrong alignment on APyCue_Level_100001");
-static_assert(sizeof(APyCue_Level_100001) == 0x001260, "Wrong size on APyCue_Level_100001");
+DUMPER7_ASSERTS_APyCue_Level_100001;
 
 // PythonClass PyControl.PyCue_Level_100002
-// 0x0000 (0x1260 - 0x1260)
+// 0x0000 (0x1270 - 0x1270)
 class PyControl::APyCue_Level_100002 final : public APyCue_Level_100001
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonClass PyControl.PyCue_Level_100002", true>();
+		STATIC_CLASS_IMPL_FULLNAME("PythonClass PyControl.PyCue_Level_100002")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Level_100002")
 	}
 	static class PyControl::APyCue_Level_100002* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<PyControl::APyCue_Level_100002>();
 	}
 };
-static_assert(alignof(PyControl::APyCue_Level_100002) == 0x000010, "Wrong alignment on PyControl::APyCue_Level_100002");
-static_assert(sizeof(PyControl::APyCue_Level_100002) == 0x001260, "Wrong size on PyControl::APyCue_Level_100002");
+DUMPER7_ASSERTS_PyControl__APyCue_Level_100002;
 
 // PythonClass PyControl.PyControl
 // 0x0140 (0x09B0 - 0x0870)
@@ -156,7 +158,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyControl">();
+		STATIC_CLASS_IMPL("PyControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyControl")
 	}
 	static class APyControl* GetDefaultObj()
 	{
@@ -164,31 +170,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyControl) == 0x000010, "Wrong alignment on APyControl");
-static_assert(sizeof(APyControl) == 0x0009B0, "Wrong size on APyControl");
-static_assert(offsetof(APyControl, OccupyProgress) == 0x000870, "Member 'APyControl::OccupyProgress' has a wrong offset!");
-static_assert(offsetof(APyControl, ProgressSpeed) == 0x000874, "Member 'APyControl::ProgressSpeed' has a wrong offset!");
-static_assert(offsetof(APyControl, OccupySide) == 0x000878, "Member 'APyControl::OccupySide' has a wrong offset!");
-static_assert(offsetof(APyControl, OwnerSide) == 0x000879, "Member 'APyControl::OwnerSide' has a wrong offset!");
-static_assert(offsetof(APyControl, BlueVictoryProgress) == 0x00087C, "Member 'APyControl::BlueVictoryProgress' has a wrong offset!");
-static_assert(offsetof(APyControl, RedVictoryProgress) == 0x000880, "Member 'APyControl::RedVictoryProgress' has a wrong offset!");
-static_assert(offsetof(APyControl, ControlLocationIndex) == 0x000884, "Member 'APyControl::ControlLocationIndex' has a wrong offset!");
-static_assert(offsetof(APyControl, NAME) == 0x000888, "Member 'APyControl::NAME' has a wrong offset!");
-static_assert(offsetof(APyControl, OccupyProgressMax) == 0x000898, "Member 'APyControl::OccupyProgressMax' has a wrong offset!");
-static_assert(offsetof(APyControl, OccupyProgressSpeed) == 0x0008A0, "Member 'APyControl::OccupyProgressSpeed' has a wrong offset!");
-static_assert(offsetof(APyControl, OccupyLosingSpeed) == 0x0008F0, "Member 'APyControl::OccupyLosingSpeed' has a wrong offset!");
-static_assert(offsetof(APyControl, TimeLosingOccupy) == 0x0008F4, "Member 'APyControl::TimeLosingOccupy' has a wrong offset!");
-static_assert(offsetof(APyControl, ControlLocations) == 0x0008F8, "Member 'APyControl::ControlLocations' has a wrong offset!");
-static_assert(offsetof(APyControl, DispatchOccupyProgressChanged) == 0x000908, "Member 'APyControl::DispatchOccupyProgressChanged' has a wrong offset!");
-static_assert(offsetof(APyControl, DispatchControlOwnerChanged) == 0x000918, "Member 'APyControl::DispatchControlOwnerChanged' has a wrong offset!");
-static_assert(offsetof(APyControl, VOccupySideDispatcher) == 0x000928, "Member 'APyControl::VOccupySideDispatcher' has a wrong offset!");
-static_assert(offsetof(APyControl, DispatchVictoryProgressChanged) == 0x000938, "Member 'APyControl::DispatchVictoryProgressChanged' has a wrong offset!");
-static_assert(offsetof(APyControl, DispatchChangeControlLocation) == 0x000948, "Member 'APyControl::DispatchChangeControlLocation' has a wrong offset!");
-static_assert(offsetof(APyControl, DispatcherProgressInfoChange) == 0x000958, "Member 'APyControl::DispatcherProgressInfoChange' has a wrong offset!");
-static_assert(offsetof(APyControl, OnBothSideIn) == 0x000968, "Member 'APyControl::OnBothSideIn' has a wrong offset!");
-static_assert(offsetof(APyControl, OnBothSideOut) == 0x000978, "Member 'APyControl::OnBothSideOut' has a wrong offset!");
-static_assert(offsetof(APyControl, OnlyRedIn) == 0x000988, "Member 'APyControl::OnlyRedIn' has a wrong offset!");
-static_assert(offsetof(APyControl, OnlyBlueIn) == 0x000998, "Member 'APyControl::OnlyBlueIn' has a wrong offset!");
+DUMPER7_ASSERTS_APyControl;
 
 // PythonClass PyControl.PyControlV2
 // 0x0000 (0x09B0 - 0x09B0)
@@ -197,24 +179,27 @@ class APyControlV2 final : public APyControl
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyControlV2">();
+		STATIC_CLASS_IMPL("PyControlV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyControlV2")
 	}
 	static class APyControlV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyControlV2>();
 	}
 };
-static_assert(alignof(APyControlV2) == 0x000010, "Wrong alignment on APyControlV2");
-static_assert(sizeof(APyControlV2) == 0x0009B0, "Wrong size on APyControlV2");
+DUMPER7_ASSERTS_APyControlV2;
 
 // PythonClass PyControl.PyCue_Level_ControlPointV2
-// 0x0020 (0x1280 - 0x1260)
+// 0x0020 (0x1290 - 0x1270)
 class APyCue_Level_ControlPointV2 : public APyCue_Level_Base
 {
 public:
-	class UCurveFloat*                            LightUpCurve;                                      // 0x1260(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LightDownCurve;                                    // 0x1268(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           LatticeUV;                                         // 0x1270(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LightUpCurve;                                      // 0x1270(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LightDownCurve;                                    // 0x1278(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           LatticeUV;                                         // 0x1280(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveTick(float DeltaSeconds);
@@ -224,18 +209,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Level_ControlPointV2">();
+		STATIC_CLASS_IMPL("PyCue_Level_ControlPointV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Level_ControlPointV2")
 	}
 	static class APyCue_Level_ControlPointV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Level_ControlPointV2>();
 	}
 };
-static_assert(alignof(APyCue_Level_ControlPointV2) == 0x000010, "Wrong alignment on APyCue_Level_ControlPointV2");
-static_assert(sizeof(APyCue_Level_ControlPointV2) == 0x001280, "Wrong size on APyCue_Level_ControlPointV2");
-static_assert(offsetof(APyCue_Level_ControlPointV2, LightUpCurve) == 0x001260, "Member 'APyCue_Level_ControlPointV2::LightUpCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_ControlPointV2, LightDownCurve) == 0x001268, "Member 'APyCue_Level_ControlPointV2::LightDownCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_ControlPointV2, LatticeUV) == 0x001270, "Member 'APyCue_Level_ControlPointV2::LatticeUV' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Level_ControlPointV2;
 
 }
 

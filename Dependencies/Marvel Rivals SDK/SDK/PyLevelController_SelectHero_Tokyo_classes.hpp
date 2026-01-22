@@ -23,12 +23,11 @@ class APyLevelController_SelectHero_Tokyo final : public APyLevelController_Sele
 {
 public:
 	uint8                                         Pad_80C[0x4];                                      // 0x080C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMediaPlayer*                           SceneMediaPlayer;                                  // 0x0810(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMediaSource*                           SceneMediaSource;                                  // 0x0818(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               SCeneCaptureCameraRotatorMult;                     // 0x0820(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class ACineCameraActor*                       StartCamera;                                       // 0x0838(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AStaticMeshActor*                       ScenePlane;                                        // 0x0840(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          EntranceAudioAsset;                                // 0x0848(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       SceneMediaPlayer;                                  // 0x0810(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               SCeneCaptureCameraRotatorMult;                     // 0x0818(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	class ACineCameraActor*                       StartCamera;                                       // 0x0830(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AStaticMeshActor*                       ScenePlane;                                        // 0x0838(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          EntranceAudioAsset;                                // 0x0840(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -37,21 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_SelectHero_Tokyo">();
+		STATIC_CLASS_IMPL("PyLevelController_SelectHero_Tokyo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_SelectHero_Tokyo")
 	}
 	static class APyLevelController_SelectHero_Tokyo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_SelectHero_Tokyo>();
 	}
 };
-static_assert(alignof(APyLevelController_SelectHero_Tokyo) == 0x000010, "Wrong alignment on APyLevelController_SelectHero_Tokyo");
-static_assert(sizeof(APyLevelController_SelectHero_Tokyo) == 0x000850, "Wrong size on APyLevelController_SelectHero_Tokyo");
-static_assert(offsetof(APyLevelController_SelectHero_Tokyo, SceneMediaPlayer) == 0x000810, "Member 'APyLevelController_SelectHero_Tokyo::SceneMediaPlayer' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero_Tokyo, SceneMediaSource) == 0x000818, "Member 'APyLevelController_SelectHero_Tokyo::SceneMediaSource' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero_Tokyo, SCeneCaptureCameraRotatorMult) == 0x000820, "Member 'APyLevelController_SelectHero_Tokyo::SCeneCaptureCameraRotatorMult' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero_Tokyo, StartCamera) == 0x000838, "Member 'APyLevelController_SelectHero_Tokyo::StartCamera' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero_Tokyo, ScenePlane) == 0x000840, "Member 'APyLevelController_SelectHero_Tokyo::ScenePlane' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero_Tokyo, EntranceAudioAsset) == 0x000848, "Member 'APyLevelController_SelectHero_Tokyo::EntranceAudioAsset' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_SelectHero_Tokyo;
 
 }
 

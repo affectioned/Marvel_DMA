@@ -21,9 +21,7 @@ struct PyWidget_MallDetail_ConfirmBtn_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MallDetail_ConfirmBtn_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_MallDetail_ConfirmBtn_OnAnimationFinished");
-static_assert(sizeof(PyWidget_MallDetail_ConfirmBtn_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_MallDetail_ConfirmBtn_OnAnimationFinished");
-static_assert(offsetof(PyWidget_MallDetail_ConfirmBtn_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_MallDetail_ConfirmBtn_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MallDetail_ConfirmBtn_OnAnimationFinished;
 
 // PythonFunction PyWidget_MallDetail.PyWidget_MallDetail_Item.GetAutoTestDebugName
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_MallDetail_Item_GetAutoTestDebugName final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MallDetail_Item_GetAutoTestDebugName) == 0x000008, "Wrong alignment on PyWidget_MallDetail_Item_GetAutoTestDebugName");
-static_assert(sizeof(PyWidget_MallDetail_Item_GetAutoTestDebugName) == 0x000010, "Wrong size on PyWidget_MallDetail_Item_GetAutoTestDebugName");
-static_assert(offsetof(PyWidget_MallDetail_Item_GetAutoTestDebugName, ReturnValue) == 0x000000, "Member 'PyWidget_MallDetail_Item_GetAutoTestDebugName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MallDetail_Item_GetAutoTestDebugName;
 
 // PythonFunction PyWidget_MallDetail.PyWidget_MallDetail.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_MallDetail_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MallDetail_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_MallDetail_MarvelSetVisible");
-static_assert(sizeof(PyWidget_MallDetail_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_MallDetail_MarvelSetVisible");
-static_assert(offsetof(PyWidget_MallDetail_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_MallDetail_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MallDetail_MarvelSetVisible;
 
 // PythonFunction PyWidget_MallDetail.PyWidget_MallDetail.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_MallDetail_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MallDetail_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_MallDetail_OnAnimationFinished");
-static_assert(sizeof(PyWidget_MallDetail_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_MallDetail_OnAnimationFinished");
-static_assert(offsetof(PyWidget_MallDetail_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_MallDetail_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MallDetail_OnAnimationFinished;
 
 // PythonFunction PyWidget_MallDetail.PyWidget_MallDetail.GetAutoTestDebugName
 // 0x0010 (0x0010 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_MallDetail_GetAutoTestDebugName final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MallDetail_GetAutoTestDebugName) == 0x000008, "Wrong alignment on PyWidget_MallDetail_GetAutoTestDebugName");
-static_assert(sizeof(PyWidget_MallDetail_GetAutoTestDebugName) == 0x000010, "Wrong size on PyWidget_MallDetail_GetAutoTestDebugName");
-static_assert(offsetof(PyWidget_MallDetail_GetAutoTestDebugName, ReturnValue) == 0x000000, "Member 'PyWidget_MallDetail_GetAutoTestDebugName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MallDetail_GetAutoTestDebugName;
 
 }
 

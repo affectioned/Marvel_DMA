@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mission_S1SeasonStory_Item.PyWidget_Mission_S1SeasonStory_Item
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Mission_S1SeasonStory_Item : public UPyMarvelUserWidget
 {
 public:
@@ -33,18 +33,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_S1SeasonStory_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_S1SeasonStory_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_S1SeasonStory_Item")
 	}
 	static class UPyWidget_Mission_S1SeasonStory_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_S1SeasonStory_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_S1SeasonStory_Item) == 0x000008, "Wrong alignment on UPyWidget_Mission_S1SeasonStory_Item");
-static_assert(sizeof(UPyWidget_Mission_S1SeasonStory_Item) == 0x0005C0, "Wrong size on UPyWidget_Mission_S1SeasonStory_Item");
+DUMPER7_ASSERTS_UPyWidget_Mission_S1SeasonStory_Item;
 
 // PythonClass PyWidget_Mission_S1SeasonStory_Item.PyWidget_Mission_S1SeasonStory_Item_V1
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Mission_S1SeasonStory_Item_V1 final : public UPyWidget_Mission_S1SeasonStory_Item
 {
 public:
@@ -55,18 +58,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_S1SeasonStory_Item_V1">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_S1SeasonStory_Item_V1")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_S1SeasonStory_Item_V1")
 	}
 	static class UPyWidget_Mission_S1SeasonStory_Item_V1* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_S1SeasonStory_Item_V1>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_S1SeasonStory_Item_V1) == 0x000008, "Wrong alignment on UPyWidget_Mission_S1SeasonStory_Item_V1");
-static_assert(sizeof(UPyWidget_Mission_S1SeasonStory_Item_V1) == 0x0005C0, "Wrong size on UPyWidget_Mission_S1SeasonStory_Item_V1");
+DUMPER7_ASSERTS_UPyWidget_Mission_S1SeasonStory_Item_V1;
 
 // PythonClass PyWidget_Mission_S1SeasonStory_Item.PyWidget_Mission_S1SeasonStory_Item_V2
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Mission_S1SeasonStory_Item_V2 final : public UPyWidget_Mission_S1SeasonStory_Item
 {
 public:
@@ -75,15 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_S1SeasonStory_Item_V2">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_S1SeasonStory_Item_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_S1SeasonStory_Item_V2")
 	}
 	static class UPyWidget_Mission_S1SeasonStory_Item_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_S1SeasonStory_Item_V2>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_S1SeasonStory_Item_V2) == 0x000008, "Wrong alignment on UPyWidget_Mission_S1SeasonStory_Item_V2");
-static_assert(sizeof(UPyWidget_Mission_S1SeasonStory_Item_V2) == 0x0005C0, "Wrong size on UPyWidget_Mission_S1SeasonStory_Item_V2");
+DUMPER7_ASSERTS_UPyWidget_Mission_S1SeasonStory_Item_V2;
 
 }
 

@@ -51,24 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_DebugAudioAbility_C">();
+		BP_STATIC_CLASS_IMPL("WBP_DebugAudioAbility_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DebugAudioAbility_C")
 	}
 	static class UWBP_DebugAudioAbility_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DebugAudioAbility_C>();
 	}
 };
-static_assert(alignof(UWBP_DebugAudioAbility_C) == 0x000008, "Wrong alignment on UWBP_DebugAudioAbility_C");
-static_assert(sizeof(UWBP_DebugAudioAbility_C) == 0x000490, "Wrong size on UWBP_DebugAudioAbility_C");
-static_assert(offsetof(UWBP_DebugAudioAbility_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_DebugAudioAbility_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbility_C, AbilityEvents) == 0x0003C0, "Member 'UWBP_DebugAudioAbility_C::AbilityEvents' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbility_C, ConfirmButton) == 0x0003C8, "Member 'UWBP_DebugAudioAbility_C::ConfirmButton' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbility_C, HeroIdInput) == 0x0003D0, "Member 'UWBP_DebugAudioAbility_C::HeroIdInput' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbility_C, UnitMargin) == 0x0003D8, "Member 'UWBP_DebugAudioAbility_C::UnitMargin' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbility_C, EventConfigs) == 0x0003E8, "Member 'UWBP_DebugAudioAbility_C::EventConfigs' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbility_C, HeroID) == 0x000438, "Member 'UWBP_DebugAudioAbility_C::HeroID' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbility_C, SkinID) == 0x00043C, "Member 'UWBP_DebugAudioAbility_C::SkinID' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbility_C, EventWidgets) == 0x000440, "Member 'UWBP_DebugAudioAbility_C::EventWidgets' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_DebugAudioAbility_C;
 
 }
 

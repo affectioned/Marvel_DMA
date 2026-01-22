@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_ThirdPartPanel.PyWidget_Activity120_ThirdPartPanel
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UPyWidget_Activity120_ThirdPartPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FSlateColor                            VoteNormalColor;                                   // 0x05F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            VoteLackColor;                                     // 0x060C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            VoteNormalColor;                                   // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            VoteLackColor;                                     // 0x0614(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,26 +36,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_ThirdPartPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_ThirdPartPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_ThirdPartPanel")
 	}
 	static class UPyWidget_Activity120_ThirdPartPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_ThirdPartPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_ThirdPartPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity120_ThirdPartPanel");
-static_assert(sizeof(UPyWidget_Activity120_ThirdPartPanel) == 0x000620, "Wrong size on UPyWidget_Activity120_ThirdPartPanel");
-static_assert(offsetof(UPyWidget_Activity120_ThirdPartPanel, VoteNormalColor) == 0x0005F8, "Member 'UPyWidget_Activity120_ThirdPartPanel::VoteNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_ThirdPartPanel, VoteLackColor) == 0x00060C, "Member 'UPyWidget_Activity120_ThirdPartPanel::VoteLackColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_ThirdPartPanel;
 
 // PythonClass PyWidget_Activity120_ThirdPartPanel.PyWidget_Activity120_ThirdPart_Tips
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Activity120_ThirdPart_Tips final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             EmptyRewardIcon;                                   // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnGenerate;                                // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             EmptyRewardIcon;                                   // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnGenerate;                                // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -66,30 +67,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_ThirdPart_Tips">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_ThirdPart_Tips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_ThirdPart_Tips")
 	}
 	static class UPyWidget_Activity120_ThirdPart_Tips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_ThirdPart_Tips>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_ThirdPart_Tips) == 0x000008, "Wrong alignment on UPyWidget_Activity120_ThirdPart_Tips");
-static_assert(sizeof(UPyWidget_Activity120_ThirdPart_Tips) == 0x0005D0, "Wrong size on UPyWidget_Activity120_ThirdPart_Tips");
-static_assert(offsetof(UPyWidget_Activity120_ThirdPart_Tips, EmptyRewardIcon) == 0x0005C0, "Member 'UPyWidget_Activity120_ThirdPart_Tips::EmptyRewardIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_ThirdPart_Tips, AkEvent_OnGenerate) == 0x0005C8, "Member 'UPyWidget_Activity120_ThirdPart_Tips::AkEvent_OnGenerate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_ThirdPart_Tips;
 
 // PythonClass PyWidget_Activity120_ThirdPartPanel.PyWidget_Activity120_ThirdPart_Card
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Activity120_ThirdPart_Card final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             NormalTexture;                                     // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             HoverTexture;                                      // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     RankIcons;                                         // 0x05D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	EHorizontalAlignment                          TipsHorizontalAlignment;                           // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5E1[0x3];                                      // 0x05E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         HeroId;                                            // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             NormalTexture;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             HoverTexture;                                      // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     RankIcons;                                         // 0x05D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	EHorizontalAlignment                          TipsHorizontalAlignment;                           // 0x05E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E9[0x3];                                      // 0x05E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         HeroId;                                            // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -100,20 +102,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_ThirdPart_Card">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_ThirdPart_Card")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_ThirdPart_Card")
 	}
 	static class UPyWidget_Activity120_ThirdPart_Card* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_ThirdPart_Card>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_ThirdPart_Card) == 0x000008, "Wrong alignment on UPyWidget_Activity120_ThirdPart_Card");
-static_assert(sizeof(UPyWidget_Activity120_ThirdPart_Card) == 0x0005E8, "Wrong size on UPyWidget_Activity120_ThirdPart_Card");
-static_assert(offsetof(UPyWidget_Activity120_ThirdPart_Card, NormalTexture) == 0x0005C0, "Member 'UPyWidget_Activity120_ThirdPart_Card::NormalTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_ThirdPart_Card, HoverTexture) == 0x0005C8, "Member 'UPyWidget_Activity120_ThirdPart_Card::HoverTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_ThirdPart_Card, RankIcons) == 0x0005D0, "Member 'UPyWidget_Activity120_ThirdPart_Card::RankIcons' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_ThirdPart_Card, TipsHorizontalAlignment) == 0x0005E0, "Member 'UPyWidget_Activity120_ThirdPart_Card::TipsHorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_ThirdPart_Card, HeroId) == 0x0005E4, "Member 'UPyWidget_Activity120_ThirdPart_Card::HeroId' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_ThirdPart_Card;
 
 }
 

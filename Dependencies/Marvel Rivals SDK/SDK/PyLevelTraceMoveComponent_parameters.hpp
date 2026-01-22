@@ -21,9 +21,7 @@ struct PyLevelTraceMoveComponent_PyTimelineUpdate final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelTraceMoveComponent_PyTimelineUpdate) == 0x000004, "Wrong alignment on PyLevelTraceMoveComponent_PyTimelineUpdate");
-static_assert(sizeof(PyLevelTraceMoveComponent_PyTimelineUpdate) == 0x000004, "Wrong size on PyLevelTraceMoveComponent_PyTimelineUpdate");
-static_assert(offsetof(PyLevelTraceMoveComponent_PyTimelineUpdate, DeltaTime) == 0x000000, "Member 'PyLevelTraceMoveComponent_PyTimelineUpdate::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelTraceMoveComponent_PyTimelineUpdate;
 
 // PythonFunction PyLevelTraceMoveComponent.PyLevelTraceMoveComponent.ClientSetMoveSpeed
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyLevelTraceMoveComponent_ClientSetMoveSpeed final
 public:
 	float                                         NewValue;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelTraceMoveComponent_ClientSetMoveSpeed) == 0x000004, "Wrong alignment on PyLevelTraceMoveComponent_ClientSetMoveSpeed");
-static_assert(sizeof(PyLevelTraceMoveComponent_ClientSetMoveSpeed) == 0x000004, "Wrong size on PyLevelTraceMoveComponent_ClientSetMoveSpeed");
-static_assert(offsetof(PyLevelTraceMoveComponent_ClientSetMoveSpeed, NewValue) == 0x000000, "Member 'PyLevelTraceMoveComponent_ClientSetMoveSpeed::NewValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelTraceMoveComponent_ClientSetMoveSpeed;
 
 }
 

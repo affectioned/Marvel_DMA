@@ -25,11 +25,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_Loop_10173102_WhileActive) == 0x000008, "Wrong alignment on PyCue_Buff_Loop_10173102_WhileActive");
-static_assert(sizeof(PyCue_Buff_Loop_10173102_WhileActive) == 0x0001E0, "Wrong size on PyCue_Buff_Loop_10173102_WhileActive");
-static_assert(offsetof(PyCue_Buff_Loop_10173102_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Buff_Loop_10173102_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_Loop_10173102_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Buff_Loop_10173102_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_Loop_10173102_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Buff_Loop_10173102_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_Loop_10173102_WhileActive;
 
 // PythonFunction PyAbility_101731.PyCue_Scope_Loop_10173105.WhileActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -39,10 +35,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_Loop_10173105_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Scope_Loop_10173105_WhileActiveFX");
-static_assert(sizeof(PyCue_Scope_Loop_10173105_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Scope_Loop_10173105_WhileActiveFX");
-static_assert(offsetof(PyCue_Scope_Loop_10173105_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Scope_Loop_10173105_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Loop_10173105_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Scope_Loop_10173105_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_Loop_10173105_WhileActiveFX;
 
 }
 

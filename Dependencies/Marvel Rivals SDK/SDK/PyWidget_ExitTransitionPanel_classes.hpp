@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ExitTransitionPanel.PyWidget_ExitTransitionPanel
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_ExitTransitionPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          ExitTransitionAudio;                               // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          ExitTransitionAudio;                               // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ExitTransitionPanel">();
+		STATIC_CLASS_IMPL("PyWidget_ExitTransitionPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ExitTransitionPanel")
 	}
 	static class UPyWidget_ExitTransitionPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ExitTransitionPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_ExitTransitionPanel) == 0x000008, "Wrong alignment on UPyWidget_ExitTransitionPanel");
-static_assert(sizeof(UPyWidget_ExitTransitionPanel) == 0x0005C8, "Wrong size on UPyWidget_ExitTransitionPanel");
-static_assert(offsetof(UPyWidget_ExitTransitionPanel, ExitTransitionAudio) == 0x0005C0, "Member 'UPyWidget_ExitTransitionPanel::ExitTransitionAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ExitTransitionPanel;
 
 }
 

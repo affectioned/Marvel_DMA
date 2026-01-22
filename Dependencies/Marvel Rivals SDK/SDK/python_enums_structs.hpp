@@ -15,7 +15,7 @@ namespace SDK
 {
 
 // PythonEnum python_enums.EShowActorStage
-// NumValues: 0x0011
+// NumValues: 0x0013
 enum class EShowActorStage : uint8
 {
 	Stand_Idle                               = 0,
@@ -34,7 +34,9 @@ enum class EShowActorStage : uint8
 	HG_CardPose                              = 13,
 	HG_HoverIdle                             = 14,
 	HG_HoverToggleStand                      = 15,
-	EShowActorStage_MAX                      = 16,
+	Skin_Customization                       = 16,
+	Skin_Customization_Idle                  = 17,
+	EShowActorStage_MAX                      = 18,
 };
 
 // PythonEnum python_enums.EShowActorDisplayType
@@ -341,7 +343,7 @@ enum class EBondPanelMode : uint8
 };
 
 // PythonEnum python_enums.ECustomCharacterDisplayMode
-// NumValues: 0x000A
+// NumValues: 0x000D
 enum class ECustomCharacterDisplayMode : uint8
 {
 	Default                                  = 0,
@@ -353,7 +355,10 @@ enum class ECustomCharacterDisplayMode : uint8
 	CareerGameHall                           = 6,
 	Preference                               = 7,
 	HalloweenCareer                          = 8,
-	ECustomCharacterDisplayMode_MAX          = 9,
+	CopyAbility                              = 9,
+	ImportStickArchive                       = 10,
+	ExportStickArchive                       = 11,
+	ECustomCharacterDisplayMode_MAX          = 12,
 };
 
 // PythonEnum python_enums.EHUDType
@@ -412,7 +417,7 @@ enum class ELeagueKnockout2Group : uint8
 };
 
 // PythonEnum python_enums.ELeagueRankingTitle
-// NumValues: 0x0007
+// NumValues: 0x0008
 enum class ELeagueRankingTitle : uint8
 {
 	Rank1                                    = 0,
@@ -421,16 +426,18 @@ enum class ELeagueRankingTitle : uint8
 	RankN                                    = 3,
 	Promote                                  = 4,
 	Eliminate                                = 5,
-	ELeagueRankingTitle_MAX                  = 6,
+	WinCount                                 = 6,
+	ELeagueRankingTitle_MAX                  = 7,
 };
 
 // PythonEnum python_enums.ELeagueRankingType
-// NumValues: 0x0003
+// NumValues: 0x0004
 enum class ELeagueRankingType : uint8
 {
 	Preliminary                              = 0,
 	Knockout                                 = 1,
-	ELeagueRankingType_MAX                   = 2,
+	MatchKnockout                            = 2,
+	ELeagueRankingType_MAX                   = 3,
 };
 
 // PythonEnum python_enums.EClanSubPanel
@@ -456,7 +463,7 @@ enum class EClanSecondaryConfirmType : uint8
 };
 
 // PythonEnum python_enums.EPlayerSelectionMenuType
-// NumValues: 0x0035
+// NumValues: 0x0037
 enum class EPlayerSelectionMenuType : uint8
 {
 	Unknown                                  = 0,
@@ -511,7 +518,9 @@ enum class EPlayerSelectionMenuType : uint8
 	InviteToTimesSquare                      = 50,
 	EnterTimesSquare                         = 51,
 	Greeting                                 = 52,
-	EPlayerSelectionMenuType_MAX             = 53,
+	CopyUID                                  = 53,
+	PauseApply                               = 55,
+	EPlayerSelectionMenuType_MAX             = 56,
 };
 
 // PythonEnum python_enums.EUserState
@@ -603,7 +612,7 @@ enum class EProxyCampType : uint8
 };
 
 // PythonEnum python_enums.ELoadingPanelType
-// NumValues: 0x000B
+// NumValues: 0x000C
 enum class ELoadingPanelType : uint8
 {
 	Default                                  = 0,
@@ -615,8 +624,9 @@ enum class ELoadingPanelType : uint8
 	Lobby                                    = 6,
 	HeroLogo                                 = 8,
 	CustomLeague                             = 9,
-	Max                                      = 10,
-	ELoadingPanelType_MAX                    = 11,
+	MultiTeam                                = 10,
+	Max                                      = 11,
+	ELoadingPanelType_MAX                    = 12,
 };
 
 // PythonEnum python_enums.ECrackLoadingType
@@ -971,6 +981,25 @@ enum class ESkillListUnitStyle : uint8
 	Default                                  = 1,
 	HeroSystem                               = 2,
 	ESkillListUnitStyle_MAX                  = 3,
+};
+
+// PythonEnum python_enums.EHeroAvatarType
+// NumValues: 0x0003
+enum class EHeroAvatarType : uint8
+{
+	Static                                   = 0,
+	Dynamic                                  = 1,
+	EHeroAvatarType_MAX                      = 2,
+};
+
+// PythonEnum python_enums.EDuelType
+// NumValues: 0x0004
+enum class EDuelType : uint8
+{
+	Classic                                  = 0,
+	Random                                   = 1,
+	Special                                  = 2,
+	EDuelType_MAX                            = 3,
 };
 
 }

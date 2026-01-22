@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassZoneGraphLocationInitializer">();
+		STATIC_CLASS_IMPL("MassZoneGraphLocationInitializer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassZoneGraphLocationInitializer")
 	}
 	static class UMassZoneGraphLocationInitializer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassZoneGraphLocationInitializer>();
 	}
 };
-static_assert(alignof(UMassZoneGraphLocationInitializer) == 0x000008, "Wrong alignment on UMassZoneGraphLocationInitializer");
-static_assert(sizeof(UMassZoneGraphLocationInitializer) == 0x000380, "Wrong size on UMassZoneGraphLocationInitializer");
+DUMPER7_ASSERTS_UMassZoneGraphLocationInitializer;
 
 // Class MassZoneGraphNavigation.MassZoneGraphPathFollowProcessor
 // 0x02B8 (0x0380 - 0x00C8)
@@ -50,16 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassZoneGraphPathFollowProcessor">();
+		STATIC_CLASS_IMPL("MassZoneGraphPathFollowProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassZoneGraphPathFollowProcessor")
 	}
 	static class UMassZoneGraphPathFollowProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassZoneGraphPathFollowProcessor>();
 	}
 };
-static_assert(alignof(UMassZoneGraphPathFollowProcessor) == 0x000010, "Wrong alignment on UMassZoneGraphPathFollowProcessor");
-static_assert(sizeof(UMassZoneGraphPathFollowProcessor) == 0x000380, "Wrong size on UMassZoneGraphPathFollowProcessor");
-static_assert(offsetof(UMassZoneGraphPathFollowProcessor, SignalSubsystem) == 0x000370, "Member 'UMassZoneGraphPathFollowProcessor::SignalSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_UMassZoneGraphPathFollowProcessor;
 
 // Class MassZoneGraphNavigation.MassZoneGraphLaneCacheBoundaryProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -71,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassZoneGraphLaneCacheBoundaryProcessor">();
+		STATIC_CLASS_IMPL("MassZoneGraphLaneCacheBoundaryProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassZoneGraphLaneCacheBoundaryProcessor")
 	}
 	static class UMassZoneGraphLaneCacheBoundaryProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassZoneGraphLaneCacheBoundaryProcessor>();
 	}
 };
-static_assert(alignof(UMassZoneGraphLaneCacheBoundaryProcessor) == 0x000008, "Wrong alignment on UMassZoneGraphLaneCacheBoundaryProcessor");
-static_assert(sizeof(UMassZoneGraphLaneCacheBoundaryProcessor) == 0x000370, "Wrong size on UMassZoneGraphLaneCacheBoundaryProcessor");
+DUMPER7_ASSERTS_UMassZoneGraphLaneCacheBoundaryProcessor;
 
 // Class MassZoneGraphNavigation.MassZoneGraphNavigationTrait
 // 0x0010 (0x0040 - 0x0030)
@@ -91,16 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassZoneGraphNavigationTrait">();
+		STATIC_CLASS_IMPL("MassZoneGraphNavigationTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassZoneGraphNavigationTrait")
 	}
 	static class UMassZoneGraphNavigationTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassZoneGraphNavigationTrait>();
 	}
 };
-static_assert(alignof(UMassZoneGraphNavigationTrait) == 0x000008, "Wrong alignment on UMassZoneGraphNavigationTrait");
-static_assert(sizeof(UMassZoneGraphNavigationTrait) == 0x000040, "Wrong size on UMassZoneGraphNavigationTrait");
-static_assert(offsetof(UMassZoneGraphNavigationTrait, NavigationParameters) == 0x000030, "Member 'UMassZoneGraphNavigationTrait::NavigationParameters' has a wrong offset!");
+DUMPER7_ASSERTS_UMassZoneGraphNavigationTrait;
 
 }
 

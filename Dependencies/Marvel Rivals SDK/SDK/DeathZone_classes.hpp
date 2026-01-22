@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DeathZone_C">();
+		BP_STATIC_CLASS_IMPL("DeathZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeathZone_C")
 	}
 	static class ADeathZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADeathZone_C>();
 	}
 };
-static_assert(alignof(ADeathZone_C) == 0x000010, "Wrong alignment on ADeathZone_C");
-static_assert(sizeof(ADeathZone_C) == 0x000700, "Wrong size on ADeathZone_C");
-static_assert(offsetof(ADeathZone_C, Cube) == 0x0006E0, "Member 'ADeathZone_C::Cube' has a wrong offset!");
-static_assert(offsetof(ADeathZone_C, LevelScopeCheckComponentBP) == 0x0006E8, "Member 'ADeathZone_C::LevelScopeCheckComponentBP' has a wrong offset!");
-static_assert(offsetof(ADeathZone_C, Color) == 0x0006F0, "Member 'ADeathZone_C::Color' has a wrong offset!");
+DUMPER7_ASSERTS_ADeathZone_C;
 
 }
 

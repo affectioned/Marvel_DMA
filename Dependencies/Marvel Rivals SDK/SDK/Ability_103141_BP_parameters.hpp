@@ -27,14 +27,7 @@ public:
 	class UMarvelAbilityTask_ModifyAmmo*          CallFunc_ApplyMakeUpToMaxAmmo_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP) == 0x000008, "Wrong alignment on Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP");
-static_assert(sizeof(Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP) == 0x000030, "Wrong size on Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP");
-static_assert(offsetof(Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP, EntryPoint) == 0x000000, "Member 'Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP, K2Node_Event_InExtraWidget) == 0x000008, "Member 'Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP::K2Node_Event_InExtraWidget' has a wrong offset!");
-static_assert(offsetof(Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP, K2Node_Event_InUserWidget) == 0x000010, "Member 'Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP::K2Node_Event_InUserWidget' has a wrong offset!");
-static_assert(offsetof(Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP, CallFunc_AE_GetCharacterActor_ReturnValue) == 0x000018, "Member 'Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP::CallFunc_AE_GetCharacterActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP, CallFunc_ApplyMakeUpToMaxAmmo_ReturnValue) == 0x000020, "Member 'Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP::CallFunc_ApplyMakeUpToMaxAmmo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103141_BP_C_ExecuteUbergraph_Ability_103141_BP;
 
 // Function Ability_103141_BP.Ability_103141_BP_C.SetAbilityExtraWidget_1
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +36,7 @@ struct Ability_103141_BP_C_SetAbilityExtraWidget_1 final
 public:
 	class UUserWidget*                            InExtraWidget;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103141_BP_C_SetAbilityExtraWidget_1) == 0x000008, "Wrong alignment on Ability_103141_BP_C_SetAbilityExtraWidget_1");
-static_assert(sizeof(Ability_103141_BP_C_SetAbilityExtraWidget_1) == 0x000008, "Wrong size on Ability_103141_BP_C_SetAbilityExtraWidget_1");
-static_assert(offsetof(Ability_103141_BP_C_SetAbilityExtraWidget_1, InExtraWidget) == 0x000000, "Member 'Ability_103141_BP_C_SetAbilityExtraWidget_1::InExtraWidget' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103141_BP_C_SetAbilityExtraWidget_1;
 
 // Function Ability_103141_BP.Ability_103141_BP_C.SetAbilityStatusWidget_1
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +45,7 @@ struct Ability_103141_BP_C_SetAbilityStatusWidget_1 final
 public:
 	class UUserWidget*                            InUserWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103141_BP_C_SetAbilityStatusWidget_1) == 0x000008, "Wrong alignment on Ability_103141_BP_C_SetAbilityStatusWidget_1");
-static_assert(sizeof(Ability_103141_BP_C_SetAbilityStatusWidget_1) == 0x000008, "Wrong size on Ability_103141_BP_C_SetAbilityStatusWidget_1");
-static_assert(offsetof(Ability_103141_BP_C_SetAbilityStatusWidget_1, InUserWidget) == 0x000000, "Member 'Ability_103141_BP_C_SetAbilityStatusWidget_1::InUserWidget' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103141_BP_C_SetAbilityStatusWidget_1;
 
 }
 

@@ -26,15 +26,18 @@ class UPyDataBaseEvent : public UDataBaseEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataBaseEvent">();
+		STATIC_CLASS_IMPL("PyDataBaseEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataBaseEvent")
 	}
 	static class UPyDataBaseEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataBaseEvent>();
 	}
 };
-static_assert(alignof(UPyDataBaseEvent) == 0x000008, "Wrong alignment on UPyDataBaseEvent");
-static_assert(sizeof(UPyDataBaseEvent) == 0x000030, "Wrong size on UPyDataBaseEvent");
+DUMPER7_ASSERTS_UPyDataBaseEvent;
 
 // PythonClass DataBaseEvents.HitRateEvent
 // 0x0068 (0x0098 - 0x0030)
@@ -66,31 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HitRateEvent">();
+		STATIC_CLASS_IMPL("HitRateEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HitRateEvent")
 	}
 	static class UHitRateEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHitRateEvent>();
 	}
 };
-static_assert(alignof(UHitRateEvent) == 0x000008, "Wrong alignment on UHitRateEvent");
-static_assert(sizeof(UHitRateEvent) == 0x000098, "Wrong size on UHitRateEvent");
-static_assert(offsetof(UHitRateEvent, AbilityIDs) == 0x000030, "Member 'UHitRateEvent::AbilityIDs' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, HitNumOnce) == 0x000040, "Member 'UHitRateEvent::HitNumOnce' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, HeroHit) == 0x000044, "Member 'UHitRateEvent::HeroHit' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, FamilyID) == 0x000048, "Member 'UHitRateEvent::FamilyID' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, HitRate) == 0x000049, "Member 'UHitRateEvent::HitRate' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, HitRateHero) == 0x00004A, "Member 'UHitRateEvent::HitRateHero' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, HitRateShield) == 0x00004B, "Member 'UHitRateEvent::HitRateShield' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, HitRateSummon) == 0x00004C, "Member 'UHitRateEvent::HitRateSummon' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, HitRateChaos) == 0x00004D, "Member 'UHitRateEvent::HitRateChaos' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, BuffIDs) == 0x000050, "Member 'UHitRateEvent::BuffIDs' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, ScopeIDs) == 0x000060, "Member 'UHitRateEvent::ScopeIDs' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, AmmoIDs) == 0x000070, "Member 'UHitRateEvent::AmmoIDs' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, ProjectileIDs) == 0x000080, "Member 'UHitRateEvent::ProjectileIDs' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, IncludeEnemy) == 0x000090, "Member 'UHitRateEvent::IncludeEnemy' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, IncludeAlly) == 0x000091, "Member 'UHitRateEvent::IncludeAlly' has a wrong offset!");
-static_assert(offsetof(UHitRateEvent, IncludeMe) == 0x000092, "Member 'UHitRateEvent::IncludeMe' has a wrong offset!");
+DUMPER7_ASSERTS_UHitRateEvent;
 
 // PythonClass DataBaseEvents.HitEvent
 // 0x0020 (0x0050 - 0x0030)
@@ -110,19 +100,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HitEvent">();
+		STATIC_CLASS_IMPL("HitEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HitEvent")
 	}
 	static class UHitEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHitEvent>();
 	}
 };
-static_assert(alignof(UHitEvent) == 0x000008, "Wrong alignment on UHitEvent");
-static_assert(sizeof(UHitEvent) == 0x000050, "Wrong size on UHitEvent");
-static_assert(offsetof(UHitEvent, AbilityIDs) == 0x000030, "Member 'UHitEvent::AbilityIDs' has a wrong offset!");
-static_assert(offsetof(UHitEvent, MainAttack) == 0x000040, "Member 'UHitEvent::MainAttack' has a wrong offset!");
-static_assert(offsetof(UHitEvent, HeroHit) == 0x000044, "Member 'UHitEvent::HeroHit' has a wrong offset!");
-static_assert(offsetof(UHitEvent, FamilyID) == 0x000048, "Member 'UHitEvent::FamilyID' has a wrong offset!");
+DUMPER7_ASSERTS_UHitEvent;
+
+// PythonClass DataBaseEvents.LevelPartInfoChange
+// 0x0018 (0x0048 - 0x0030)
+class ULevelPartInfoChange final : public UPyDataBaseEvent
+{
+public:
+	EDataBaseBool                                 bAttack;                                           // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDataBaseBool                                 bDefend;                                           // 0x0031(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 PartName;                                          // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LevelPartInfoChange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelPartInfoChange")
+	}
+	static class ULevelPartInfoChange* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULevelPartInfoChange>();
+	}
+};
+DUMPER7_ASSERTS_ULevelPartInfoChange;
 
 // PythonClass DataBaseEvents.DeathAssistEvent
 // 0x0000 (0x0030 - 0x0030)
@@ -131,42 +146,18 @@ class UDeathAssistEvent final : public UPyDataBaseEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DeathAssistEvent">();
+		STATIC_CLASS_IMPL("DeathAssistEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeathAssistEvent")
 	}
 	static class UDeathAssistEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDeathAssistEvent>();
 	}
 };
-static_assert(alignof(UDeathAssistEvent) == 0x000008, "Wrong alignment on UDeathAssistEvent");
-static_assert(sizeof(UDeathAssistEvent) == 0x000030, "Wrong size on UDeathAssistEvent");
-
-// PythonClass DataBaseEvents.FinishEvent
-// 0x0018 (0x0048 - 0x0030)
-class UFinishEvent final : public UPyDataBaseEvent
-{
-public:
-	bool                                          bWin;                                              // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 LevelIDs;                                          // 0x0038(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	TSet<class FString> GetEventMapIDsAll();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"FinishEvent">();
-	}
-	static class UFinishEvent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UFinishEvent>();
-	}
-};
-static_assert(alignof(UFinishEvent) == 0x000008, "Wrong alignment on UFinishEvent");
-static_assert(sizeof(UFinishEvent) == 0x000048, "Wrong size on UFinishEvent");
-static_assert(offsetof(UFinishEvent, bWin) == 0x000030, "Member 'UFinishEvent::bWin' has a wrong offset!");
-static_assert(offsetof(UFinishEvent, LevelIDs) == 0x000038, "Member 'UFinishEvent::LevelIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UDeathAssistEvent;
 
 // PythonClass DataBaseEvents.ActivateAbilityEvent
 // 0x0028 (0x0058 - 0x0030)
@@ -184,21 +175,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActivateAbilityEvent">();
+		STATIC_CLASS_IMPL("ActivateAbilityEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivateAbilityEvent")
 	}
 	static class UActivateAbilityEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivateAbilityEvent>();
 	}
 };
-static_assert(alignof(UActivateAbilityEvent) == 0x000008, "Wrong alignment on UActivateAbilityEvent");
-static_assert(sizeof(UActivateAbilityEvent) == 0x000058, "Wrong size on UActivateAbilityEvent");
-static_assert(offsetof(UActivateAbilityEvent, AbilityIDs) == 0x000030, "Member 'UActivateAbilityEvent::AbilityIDs' has a wrong offset!");
-static_assert(offsetof(UActivateAbilityEvent, MainAttack) == 0x000040, "Member 'UActivateAbilityEvent::MainAttack' has a wrong offset!");
-static_assert(offsetof(UActivateAbilityEvent, OnlyActivate) == 0x000041, "Member 'UActivateAbilityEvent::OnlyActivate' has a wrong offset!");
-static_assert(offsetof(UActivateAbilityEvent, UseActionLog) == 0x000042, "Member 'UActivateAbilityEvent::UseActionLog' has a wrong offset!");
-static_assert(offsetof(UActivateAbilityEvent, Tag) == 0x000044, "Member 'UActivateAbilityEvent::Tag' has a wrong offset!");
-static_assert(offsetof(UActivateAbilityEvent, GatherTime) == 0x000050, "Member 'UActivateAbilityEvent::GatherTime' has a wrong offset!");
+DUMPER7_ASSERTS_UActivateAbilityEvent;
 
 // PythonClass DataBaseEvents.WinterQKillEvent
 // 0x0008 (0x0038 - 0x0030)
@@ -210,16 +198,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WinterQKillEvent">();
+		STATIC_CLASS_IMPL("WinterQKillEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQKillEvent")
 	}
 	static class UWinterQKillEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQKillEvent>();
 	}
 };
-static_assert(alignof(UWinterQKillEvent) == 0x000008, "Wrong alignment on UWinterQKillEvent");
-static_assert(sizeof(UWinterQKillEvent) == 0x000038, "Wrong size on UWinterQKillEvent");
-static_assert(offsetof(UWinterQKillEvent, BeatNum) == 0x000030, "Member 'UWinterQKillEvent::BeatNum' has a wrong offset!");
+DUMPER7_ASSERTS_UWinterQKillEvent;
 
 // PythonClass DataBaseEvents.UnitHitEvent
 // 0x0020 (0x0050 - 0x0030)
@@ -239,19 +229,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnitHitEvent">();
+		STATIC_CLASS_IMPL("UnitHitEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnitHitEvent")
 	}
 	static class UUnitHitEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnitHitEvent>();
 	}
 };
-static_assert(alignof(UUnitHitEvent) == 0x000008, "Wrong alignment on UUnitHitEvent");
-static_assert(sizeof(UUnitHitEvent) == 0x000050, "Wrong size on UUnitHitEvent");
-static_assert(offsetof(UUnitHitEvent, UnitIDs) == 0x000030, "Member 'UUnitHitEvent::UnitIDs' has a wrong offset!");
-static_assert(offsetof(UUnitHitEvent, MainAttack) == 0x000040, "Member 'UUnitHitEvent::MainAttack' has a wrong offset!");
-static_assert(offsetof(UUnitHitEvent, HeroHit) == 0x000044, "Member 'UUnitHitEvent::HeroHit' has a wrong offset!");
-static_assert(offsetof(UUnitHitEvent, FamilyID) == 0x000048, "Member 'UUnitHitEvent::FamilyID' has a wrong offset!");
+DUMPER7_ASSERTS_UUnitHitEvent;
+
+// PythonClass DataBaseEvents.FinishEvent
+// 0x0018 (0x0048 - 0x0030)
+class UFinishEvent final : public UPyDataBaseEvent
+{
+public:
+	bool                                          bWin;                                              // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 LevelIDs;                                          // 0x0038(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	TSet<class FString> GetEventMapIDsAll();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("FinishEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FinishEvent")
+	}
+	static class UFinishEvent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UFinishEvent>();
+	}
+};
+DUMPER7_ASSERTS_UFinishEvent;
 
 // PythonClass DataBaseEvents.CriticalEvent
 // 0x0020 (0x0050 - 0x0030)
@@ -267,19 +284,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CriticalEvent">();
+		STATIC_CLASS_IMPL("CriticalEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CriticalEvent")
 	}
 	static class UCriticalEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCriticalEvent>();
 	}
 };
-static_assert(alignof(UCriticalEvent) == 0x000008, "Wrong alignment on UCriticalEvent");
-static_assert(sizeof(UCriticalEvent) == 0x000050, "Wrong size on UCriticalEvent");
-static_assert(offsetof(UCriticalEvent, HeroHit) == 0x000030, "Member 'UCriticalEvent::HeroHit' has a wrong offset!");
-static_assert(offsetof(UCriticalEvent, AbilityIDs) == 0x000038, "Member 'UCriticalEvent::AbilityIDs' has a wrong offset!");
-static_assert(offsetof(UCriticalEvent, EnemyHit) == 0x000048, "Member 'UCriticalEvent::EnemyHit' has a wrong offset!");
-static_assert(offsetof(UCriticalEvent, AllyHit) == 0x000049, "Member 'UCriticalEvent::AllyHit' has a wrong offset!");
+DUMPER7_ASSERTS_UCriticalEvent;
 
 // PythonClass DataBaseEvents.CriticalNumEvent
 // 0x0000 (0x0050 - 0x0050)
@@ -288,15 +304,18 @@ class UCriticalNumEvent final : public UCriticalEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CriticalNumEvent">();
+		STATIC_CLASS_IMPL("CriticalNumEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CriticalNumEvent")
 	}
 	static class UCriticalNumEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCriticalNumEvent>();
 	}
 };
-static_assert(alignof(UCriticalNumEvent) == 0x000008, "Wrong alignment on UCriticalNumEvent");
-static_assert(sizeof(UCriticalNumEvent) == 0x000050, "Wrong size on UCriticalNumEvent");
+DUMPER7_ASSERTS_UCriticalNumEvent;
 
 // PythonClass DataBaseEvents.SpecialBuffNumEvent
 // 0x0058 (0x0088 - 0x0030)
@@ -315,22 +334,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpecialBuffNumEvent">();
+		STATIC_CLASS_IMPL("SpecialBuffNumEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpecialBuffNumEvent")
 	}
 	static class USpecialBuffNumEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpecialBuffNumEvent>();
 	}
 };
-static_assert(alignof(USpecialBuffNumEvent) == 0x000008, "Wrong alignment on USpecialBuffNumEvent");
-static_assert(sizeof(USpecialBuffNumEvent) == 0x000088, "Wrong size on USpecialBuffNumEvent");
-static_assert(offsetof(USpecialBuffNumEvent, AbilityID) == 0x000030, "Member 'USpecialBuffNumEvent::AbilityID' has a wrong offset!");
-static_assert(offsetof(USpecialBuffNumEvent, IncludeSelf) == 0x000034, "Member 'USpecialBuffNumEvent::IncludeSelf' has a wrong offset!");
-static_assert(offsetof(USpecialBuffNumEvent, HitAbilityIDs) == 0x000038, "Member 'USpecialBuffNumEvent::HitAbilityIDs' has a wrong offset!");
-static_assert(offsetof(USpecialBuffNumEvent, BuffIDs) == 0x000048, "Member 'USpecialBuffNumEvent::BuffIDs' has a wrong offset!");
-static_assert(offsetof(USpecialBuffNumEvent, ScopeIDs) == 0x000058, "Member 'USpecialBuffNumEvent::ScopeIDs' has a wrong offset!");
-static_assert(offsetof(USpecialBuffNumEvent, AmmoIDs) == 0x000068, "Member 'USpecialBuffNumEvent::AmmoIDs' has a wrong offset!");
-static_assert(offsetof(USpecialBuffNumEvent, ProjectileIDs) == 0x000078, "Member 'USpecialBuffNumEvent::ProjectileIDs' has a wrong offset!");
+DUMPER7_ASSERTS_USpecialBuffNumEvent;
 
 // PythonClass DataBaseEvents.SpecialHitNumEvent
 // 0x0030 (0x0060 - 0x0030)
@@ -362,49 +377,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpecialHitNumEvent">();
+		STATIC_CLASS_IMPL("SpecialHitNumEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpecialHitNumEvent")
 	}
 	static class USpecialHitNumEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpecialHitNumEvent>();
 	}
 };
-static_assert(alignof(USpecialHitNumEvent) == 0x000008, "Wrong alignment on USpecialHitNumEvent");
-static_assert(sizeof(USpecialHitNumEvent) == 0x000060, "Wrong size on USpecialHitNumEvent");
-static_assert(offsetof(USpecialHitNumEvent, HeroID) == 0x000030, "Member 'USpecialHitNumEvent::HeroID' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, WithAbility) == 0x000034, "Member 'USpecialHitNumEvent::WithAbility' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, AbilityID) == 0x000038, "Member 'USpecialHitNumEvent::AbilityID' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, WithAbilityOnce) == 0x00003C, "Member 'USpecialHitNumEvent::WithAbilityOnce' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, WithSculptID) == 0x00003D, "Member 'USpecialHitNumEvent::WithSculptID' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, SculptID) == 0x000040, "Member 'USpecialHitNumEvent::SculptID' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, LastTime) == 0x000044, "Member 'USpecialHitNumEvent::LastTime' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, WithBuffID) == 0x000048, "Member 'USpecialHitNumEvent::WithBuffID' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, BuffID) == 0x00004C, "Member 'USpecialHitNumEvent::BuffID' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, BuffWithOther) == 0x000050, "Member 'USpecialHitNumEvent::BuffWithOther' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, BeatNum) == 0x000054, "Member 'USpecialHitNumEvent::BeatNum' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, WithSummonerID) == 0x000058, "Member 'USpecialHitNumEvent::WithSummonerID' has a wrong offset!");
-static_assert(offsetof(USpecialHitNumEvent, SummonerID) == 0x00005C, "Member 'USpecialHitNumEvent::SummonerID' has a wrong offset!");
+DUMPER7_ASSERTS_USpecialHitNumEvent;
 
-// PythonClass DataBaseEvents.PortalTeleportEvent
-// 0x0008 (0x0038 - 0x0030)
-class UPortalTeleportEvent final : public UPyDataBaseEvent
+// PythonClass DataBaseEvents.BuffDamageToCurrentEvent
+// 0x0000 (0x0030 - 0x0030)
+class UBuffDamageToCurrentEvent final : public UPyDataBaseEvent
 {
-public:
-	bool                                          IsLevelPortal;                                     // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PortalTeleportEvent">();
+		STATIC_CLASS_IMPL("BuffDamageToCurrentEvent")
 	}
-	static class UPortalTeleportEvent* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPortalTeleportEvent>();
+		STATIC_NAME_IMPL(L"BuffDamageToCurrentEvent")
+	}
+	static class UBuffDamageToCurrentEvent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBuffDamageToCurrentEvent>();
 	}
 };
-static_assert(alignof(UPortalTeleportEvent) == 0x000008, "Wrong alignment on UPortalTeleportEvent");
-static_assert(sizeof(UPortalTeleportEvent) == 0x000038, "Wrong size on UPortalTeleportEvent");
-static_assert(offsetof(UPortalTeleportEvent, IsLevelPortal) == 0x000030, "Member 'UPortalTeleportEvent::IsLevelPortal' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffDamageToCurrentEvent;
 
 // PythonClass DataBaseEvents.UltimateAbilityKillEvent
 // 0x0008 (0x0038 - 0x0030)
@@ -416,33 +420,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UltimateAbilityKillEvent">();
+		STATIC_CLASS_IMPL("UltimateAbilityKillEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UltimateAbilityKillEvent")
 	}
 	static class UUltimateAbilityKillEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUltimateAbilityKillEvent>();
 	}
 };
-static_assert(alignof(UUltimateAbilityKillEvent) == 0x000008, "Wrong alignment on UUltimateAbilityKillEvent");
-static_assert(sizeof(UUltimateAbilityKillEvent) == 0x000038, "Wrong size on UUltimateAbilityKillEvent");
-static_assert(offsetof(UUltimateAbilityKillEvent, HeroID) == 0x000030, "Member 'UUltimateAbilityKillEvent::HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_UUltimateAbilityKillEvent;
 
-// PythonClass DataBaseEvents.VenomCorrosionBreakEvent
-// 0x0000 (0x0030 - 0x0030)
-class UVenomCorrosionBreakEvent final : public UPyDataBaseEvent
+// PythonClass DataBaseEvents.PortalTeleportEvent
+// 0x0008 (0x0038 - 0x0030)
+class UPortalTeleportEvent final : public UPyDataBaseEvent
 {
+public:
+	bool                                          IsLevelPortal;                                     // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VenomCorrosionBreakEvent">();
+		STATIC_CLASS_IMPL("PortalTeleportEvent")
 	}
-	static class UVenomCorrosionBreakEvent* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UVenomCorrosionBreakEvent>();
+		STATIC_NAME_IMPL(L"PortalTeleportEvent")
+	}
+	static class UPortalTeleportEvent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPortalTeleportEvent>();
 	}
 };
-static_assert(alignof(UVenomCorrosionBreakEvent) == 0x000008, "Wrong alignment on UVenomCorrosionBreakEvent");
-static_assert(sizeof(UVenomCorrosionBreakEvent) == 0x000030, "Wrong size on UVenomCorrosionBreakEvent");
+DUMPER7_ASSERTS_UPortalTeleportEvent;
 
 // PythonClass DataBaseEvents.SpawnSummonerEvent
 // 0x0010 (0x0040 - 0x0030)
@@ -454,33 +466,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpawnSummonerEvent">();
+		STATIC_CLASS_IMPL("SpawnSummonerEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpawnSummonerEvent")
 	}
 	static class USpawnSummonerEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpawnSummonerEvent>();
 	}
 };
-static_assert(alignof(USpawnSummonerEvent) == 0x000008, "Wrong alignment on USpawnSummonerEvent");
-static_assert(sizeof(USpawnSummonerEvent) == 0x000040, "Wrong size on USpawnSummonerEvent");
-static_assert(offsetof(USpawnSummonerEvent, SummonerIDs) == 0x000030, "Member 'USpawnSummonerEvent::SummonerIDs' has a wrong offset!");
+DUMPER7_ASSERTS_USpawnSummonerEvent;
 
-// PythonClass DataBaseEvents.AnkaEvent
+// PythonClass DataBaseEvents.VenomCorrosionBreakEvent
 // 0x0000 (0x0030 - 0x0030)
-class UAnkaEvent final : public UPyDataBaseEvent
+class UVenomCorrosionBreakEvent final : public UPyDataBaseEvent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnkaEvent">();
+		STATIC_CLASS_IMPL("VenomCorrosionBreakEvent")
 	}
-	static class UAnkaEvent* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UAnkaEvent>();
+		STATIC_NAME_IMPL(L"VenomCorrosionBreakEvent")
+	}
+	static class UVenomCorrosionBreakEvent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UVenomCorrosionBreakEvent>();
 	}
 };
-static_assert(alignof(UAnkaEvent) == 0x000008, "Wrong alignment on UAnkaEvent");
-static_assert(sizeof(UAnkaEvent) == 0x000030, "Wrong size on UAnkaEvent");
+DUMPER7_ASSERTS_UVenomCorrosionBreakEvent;
 
 // PythonClass DataBaseEvents.HeroUseTime
 // 0x0000 (0x0030 - 0x0030)
@@ -489,32 +506,38 @@ class UHeroUseTime final : public UPyDataBaseEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HeroUseTime">();
+		STATIC_CLASS_IMPL("HeroUseTime")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroUseTime")
 	}
 	static class UHeroUseTime* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroUseTime>();
 	}
 };
-static_assert(alignof(UHeroUseTime) == 0x000008, "Wrong alignment on UHeroUseTime");
-static_assert(sizeof(UHeroUseTime) == 0x000030, "Wrong size on UHeroUseTime");
+DUMPER7_ASSERTS_UHeroUseTime;
 
-// PythonClass DataBaseEvents.IronSubDamage
+// PythonClass DataBaseEvents.AnkaEvent
 // 0x0000 (0x0030 - 0x0030)
-class UIronSubDamage final : public UPyDataBaseEvent
+class UAnkaEvent final : public UPyDataBaseEvent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IronSubDamage">();
+		STATIC_CLASS_IMPL("AnkaEvent")
 	}
-	static class UIronSubDamage* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UIronSubDamage>();
+		STATIC_NAME_IMPL(L"AnkaEvent")
+	}
+	static class UAnkaEvent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAnkaEvent>();
 	}
 };
-static_assert(alignof(UIronSubDamage) == 0x000008, "Wrong alignment on UIronSubDamage");
-static_assert(sizeof(UIronSubDamage) == 0x000030, "Wrong size on UIronSubDamage");
+DUMPER7_ASSERTS_UAnkaEvent;
 
 // PythonClass DataBaseEvents.AbilityRefresh
 // 0x0010 (0x0040 - 0x0030)
@@ -526,41 +549,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityRefresh">();
+		STATIC_CLASS_IMPL("AbilityRefresh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityRefresh")
 	}
 	static class UAbilityRefresh* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityRefresh>();
 	}
 };
-static_assert(alignof(UAbilityRefresh) == 0x000008, "Wrong alignment on UAbilityRefresh");
-static_assert(sizeof(UAbilityRefresh) == 0x000040, "Wrong size on UAbilityRefresh");
-static_assert(offsetof(UAbilityRefresh, AbilityIDs) == 0x000030, "Member 'UAbilityRefresh::AbilityIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityRefresh;
 
-// PythonClass DataBaseEvents.HearVoice
-// 0x0030 (0x0060 - 0x0030)
-class UHearVoice final : public UPyDataBaseEvent
+// PythonClass DataBaseEvents.IronSubDamage
+// 0x0000 (0x0030 - 0x0030)
+class UIronSubDamage final : public UPyDataBaseEvent
 {
-public:
-	TArray<int32>                                 HeroIDs;                                           // 0x0030(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FString>                         VoiceIDs;                                          // 0x0040(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<EHeroTeam>                             Families;                                          // 0x0050(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HearVoice">();
+		STATIC_CLASS_IMPL("IronSubDamage")
 	}
-	static class UHearVoice* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UHearVoice>();
+		STATIC_NAME_IMPL(L"IronSubDamage")
+	}
+	static class UIronSubDamage* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UIronSubDamage>();
 	}
 };
-static_assert(alignof(UHearVoice) == 0x000008, "Wrong alignment on UHearVoice");
-static_assert(sizeof(UHearVoice) == 0x000060, "Wrong size on UHearVoice");
-static_assert(offsetof(UHearVoice, HeroIDs) == 0x000030, "Member 'UHearVoice::HeroIDs' has a wrong offset!");
-static_assert(offsetof(UHearVoice, VoiceIDs) == 0x000040, "Member 'UHearVoice::VoiceIDs' has a wrong offset!");
-static_assert(offsetof(UHearVoice, Families) == 0x000050, "Member 'UHearVoice::Families' has a wrong offset!");
+DUMPER7_ASSERTS_UIronSubDamage;
 
 // PythonClass DataBaseEvents.KillEvent
 // 0x0028 (0x0058 - 0x0030)
@@ -596,32 +616,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KillEvent">();
+		STATIC_CLASS_IMPL("KillEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KillEvent")
 	}
 	static class UKillEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKillEvent>();
 	}
 };
-static_assert(alignof(UKillEvent) == 0x000008, "Wrong alignment on UKillEvent");
-static_assert(sizeof(UKillEvent) == 0x000058, "Wrong size on UKillEvent");
-static_assert(offsetof(UKillEvent, BeforeDeath) == 0x000030, "Member 'UKillEvent::BeforeDeath' has a wrong offset!");
-static_assert(offsetof(UKillEvent, HeroID) == 0x000034, "Member 'UKillEvent::HeroID' has a wrong offset!");
-static_assert(offsetof(UKillEvent, FamilyID) == 0x000038, "Member 'UKillEvent::FamilyID' has a wrong offset!");
-static_assert(offsetof(UKillEvent, LokiBackKill) == 0x000039, "Member 'UKillEvent::LokiBackKill' has a wrong offset!");
-static_assert(offsetof(UKillEvent, AssistHeroID) == 0x00003C, "Member 'UKillEvent::AssistHeroID' has a wrong offset!");
-static_assert(offsetof(UKillEvent, AssistFamilyID) == 0x000040, "Member 'UKillEvent::AssistFamilyID' has a wrong offset!");
-static_assert(offsetof(UKillEvent, LastKill) == 0x000041, "Member 'UKillEvent::LastKill' has a wrong offset!");
-static_assert(offsetof(UKillEvent, AssistKill) == 0x000042, "Member 'UKillEvent::AssistKill' has a wrong offset!");
-static_assert(offsetof(UKillEvent, SoloKill) == 0x000043, "Member 'UKillEvent::SoloKill' has a wrong offset!");
-static_assert(offsetof(UKillEvent, SurvivalKill) == 0x000044, "Member 'UKillEvent::SurvivalKill' has a wrong offset!");
-static_assert(offsetof(UKillEvent, SurvivalKillNum) == 0x000048, "Member 'UKillEvent::SurvivalKillNum' has a wrong offset!");
-static_assert(offsetof(UKillEvent, ContinueKill) == 0x00004C, "Member 'UKillEvent::ContinueKill' has a wrong offset!");
-static_assert(offsetof(UKillEvent, ContinueKillNum) == 0x000050, "Member 'UKillEvent::ContinueKillNum' has a wrong offset!");
-static_assert(offsetof(UKillEvent, CriticalKill) == 0x000054, "Member 'UKillEvent::CriticalKill' has a wrong offset!");
-static_assert(offsetof(UKillEvent, AllKill) == 0x000055, "Member 'UKillEvent::AllKill' has a wrong offset!");
-static_assert(offsetof(UKillEvent, TerrainKill) == 0x000056, "Member 'UKillEvent::TerrainKill' has a wrong offset!");
-static_assert(offsetof(UKillEvent, RecordForAllTeamMate) == 0x000057, "Member 'UKillEvent::RecordForAllTeamMate' has a wrong offset!");
+DUMPER7_ASSERTS_UKillEvent;
+
+// PythonClass DataBaseEvents.OccupyCamp
+// 0x0028 (0x0058 - 0x0030)
+class UOccupyCamp final : public UPyDataBaseEvent
+{
+public:
+	TArray<EBattleSide>                           SpecSides;                                         // 0x0030(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class APyCamp>                    CampType;                                          // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 LevelIDs;                                          // 0x0048(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	TSet<class FString> GetEventMapIDsAll();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OccupyCamp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OccupyCamp")
+	}
+	static class UOccupyCamp* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOccupyCamp>();
+	}
+};
+DUMPER7_ASSERTS_UOccupyCamp;
 
 // PythonClass DataBaseEvents.AssistEvent
 // 0x0010 (0x0040 - 0x0030)
@@ -645,24 +679,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AssistEvent">();
+		STATIC_CLASS_IMPL("AssistEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AssistEvent")
 	}
 	static class UAssistEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAssistEvent>();
 	}
 };
-static_assert(alignof(UAssistEvent) == 0x000008, "Wrong alignment on UAssistEvent");
-static_assert(sizeof(UAssistEvent) == 0x000040, "Wrong size on UAssistEvent");
-static_assert(offsetof(UAssistEvent, AttackAssist) == 0x000030, "Member 'UAssistEvent::AttackAssist' has a wrong offset!");
-static_assert(offsetof(UAssistEvent, DefendAssist) == 0x000031, "Member 'UAssistEvent::DefendAssist' has a wrong offset!");
-static_assert(offsetof(UAssistEvent, DetectAssist) == 0x000032, "Member 'UAssistEvent::DetectAssist' has a wrong offset!");
-static_assert(offsetof(UAssistEvent, BondAssist) == 0x000033, "Member 'UAssistEvent::BondAssist' has a wrong offset!");
-static_assert(offsetof(UAssistEvent, HeroID) == 0x000034, "Member 'UAssistEvent::HeroID' has a wrong offset!");
-static_assert(offsetof(UAssistEvent, KillHeroID) == 0x000038, "Member 'UAssistEvent::KillHeroID' has a wrong offset!");
-static_assert(offsetof(UAssistEvent, KillFamilyID) == 0x00003C, "Member 'UAssistEvent::KillFamilyID' has a wrong offset!");
-static_assert(offsetof(UAssistEvent, FamilyID) == 0x00003D, "Member 'UAssistEvent::FamilyID' has a wrong offset!");
-static_assert(offsetof(UAssistEvent, AllKill) == 0x00003E, "Member 'UAssistEvent::AllKill' has a wrong offset!");
+DUMPER7_ASSERTS_UAssistEvent;
 
 // PythonClass DataBaseEvents.DeathEvent
 // 0x0000 (0x0030 - 0x0030)
@@ -671,15 +699,18 @@ class UDeathEvent final : public UPyDataBaseEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DeathEvent">();
+		STATIC_CLASS_IMPL("DeathEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeathEvent")
 	}
 	static class UDeathEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDeathEvent>();
 	}
 };
-static_assert(alignof(UDeathEvent) == 0x000008, "Wrong alignment on UDeathEvent");
-static_assert(sizeof(UDeathEvent) == 0x000030, "Wrong size on UDeathEvent");
+DUMPER7_ASSERTS_UDeathEvent;
 
 // PythonClass DataBaseEvents.ReviveEvent
 // 0x0008 (0x0038 - 0x0030)
@@ -694,39 +725,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ReviveEvent">();
+		STATIC_CLASS_IMPL("ReviveEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReviveEvent")
 	}
 	static class UReviveEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReviveEvent>();
 	}
 };
-static_assert(alignof(UReviveEvent) == 0x000008, "Wrong alignment on UReviveEvent");
-static_assert(sizeof(UReviveEvent) == 0x000038, "Wrong size on UReviveEvent");
-static_assert(offsetof(UReviveEvent, FamilyID) == 0x000030, "Member 'UReviveEvent::FamilyID' has a wrong offset!");
+DUMPER7_ASSERTS_UReviveEvent;
 
-// PythonClass DataBaseEvents.BackTrackCollapseEvent
-// 0x0018 (0x0048 - 0x0030)
-class UBackTrackCollapseEvent final : public UPyDataBaseEvent
+// PythonClass DataBaseEvents.SingleDeath
+// 0x0000 (0x0030 - 0x0030)
+class USingleDeath final : public UPyDataBaseEvent
 {
-public:
-	class FString                                 SpecificTag;                                       // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LimitTime;                                         // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BackTrackCollapseEvent">();
+		STATIC_CLASS_IMPL("SingleDeath")
 	}
-	static class UBackTrackCollapseEvent* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UBackTrackCollapseEvent>();
+		STATIC_NAME_IMPL(L"SingleDeath")
+	}
+	static class USingleDeath* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USingleDeath>();
 	}
 };
-static_assert(alignof(UBackTrackCollapseEvent) == 0x000008, "Wrong alignment on UBackTrackCollapseEvent");
-static_assert(sizeof(UBackTrackCollapseEvent) == 0x000048, "Wrong size on UBackTrackCollapseEvent");
-static_assert(offsetof(UBackTrackCollapseEvent, SpecificTag) == 0x000030, "Member 'UBackTrackCollapseEvent::SpecificTag' has a wrong offset!");
-static_assert(offsetof(UBackTrackCollapseEvent, LimitTime) == 0x000040, "Member 'UBackTrackCollapseEvent::LimitTime' has a wrong offset!");
+DUMPER7_ASSERTS_USingleDeath;
 
 // PythonClass DataBaseEvents.DamageEvent
 // 0x0008 (0x0038 - 0x0030)
@@ -741,19 +771,62 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DamageEvent">();
+		STATIC_CLASS_IMPL("DamageEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageEvent")
 	}
 	static class UDamageEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageEvent>();
 	}
 };
-static_assert(alignof(UDamageEvent) == 0x000008, "Wrong alignment on UDamageEvent");
-static_assert(sizeof(UDamageEvent) == 0x000038, "Wrong size on UDamageEvent");
-static_assert(offsetof(UDamageEvent, HeroDamage) == 0x000030, "Member 'UDamageEvent::HeroDamage' has a wrong offset!");
-static_assert(offsetof(UDamageEvent, SummonerDamage) == 0x000031, "Member 'UDamageEvent::SummonerDamage' has a wrong offset!");
-static_assert(offsetof(UDamageEvent, ShieldDamage) == 0x000032, "Member 'UDamageEvent::ShieldDamage' has a wrong offset!");
-static_assert(offsetof(UDamageEvent, LokiBackDamage) == 0x000033, "Member 'UDamageEvent::LokiBackDamage' has a wrong offset!");
+DUMPER7_ASSERTS_UDamageEvent;
+
+// PythonClass DataBaseEvents.BackTrackCollapseEvent
+// 0x0018 (0x0048 - 0x0030)
+class UBackTrackCollapseEvent final : public UPyDataBaseEvent
+{
+public:
+	class FString                                 SpecificTag;                                       // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LimitTime;                                         // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BackTrackCollapseEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BackTrackCollapseEvent")
+	}
+	static class UBackTrackCollapseEvent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBackTrackCollapseEvent>();
+	}
+};
+DUMPER7_ASSERTS_UBackTrackCollapseEvent;
+
+// PythonClass DataBaseEvents.DamageTakenEvent
+// 0x0000 (0x0038 - 0x0038)
+class UDamageTakenEvent final : public UDamageEvent
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("DamageTakenEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageTakenEvent")
+	}
+	static class UDamageTakenEvent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UDamageTakenEvent>();
+	}
+};
+DUMPER7_ASSERTS_UDamageTakenEvent;
 
 // PythonClass DataBaseEvents.BuffClear
 // 0x0010 (0x0040 - 0x0030)
@@ -765,33 +838,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffClear">();
+		STATIC_CLASS_IMPL("BuffClear")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffClear")
 	}
 	static class UBuffClear* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffClear>();
 	}
 };
-static_assert(alignof(UBuffClear) == 0x000008, "Wrong alignment on UBuffClear");
-static_assert(sizeof(UBuffClear) == 0x000040, "Wrong size on UBuffClear");
-static_assert(offsetof(UBuffClear, BuffIDs) == 0x000030, "Member 'UBuffClear::BuffIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffClear;
 
-// PythonClass DataBaseEvents.DamageTakenEvent
-// 0x0000 (0x0038 - 0x0038)
-class UDamageTakenEvent final : public UDamageEvent
+// PythonClass DataBaseEvents.DangerousJugglingRefreshEvent
+// 0x0000 (0x0030 - 0x0030)
+class UDangerousJugglingRefreshEvent final : public UPyDataBaseEvent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DamageTakenEvent">();
+		STATIC_CLASS_IMPL("DangerousJugglingRefreshEvent")
 	}
-	static class UDamageTakenEvent* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UDamageTakenEvent>();
+		STATIC_NAME_IMPL(L"DangerousJugglingRefreshEvent")
+	}
+	static class UDangerousJugglingRefreshEvent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UDangerousJugglingRefreshEvent>();
 	}
 };
-static_assert(alignof(UDamageTakenEvent) == 0x000008, "Wrong alignment on UDamageTakenEvent");
-static_assert(sizeof(UDamageTakenEvent) == 0x000038, "Wrong size on UDamageTakenEvent");
+DUMPER7_ASSERTS_UDangerousJugglingRefreshEvent;
 
 // PythonClass DataBaseEvents.ChessKnockOver
 // 0x0000 (0x0030 - 0x0030)
@@ -800,15 +878,18 @@ class UChessKnockOver final : public UPyDataBaseEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChessKnockOver">();
+		STATIC_CLASS_IMPL("ChessKnockOver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChessKnockOver")
 	}
 	static class UChessKnockOver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChessKnockOver>();
 	}
 };
-static_assert(alignof(UChessKnockOver) == 0x000008, "Wrong alignment on UChessKnockOver");
-static_assert(sizeof(UChessKnockOver) == 0x000030, "Wrong size on UChessKnockOver");
+DUMPER7_ASSERTS_UChessKnockOver;
 
 // PythonClass DataBaseEvents.HealEvent
 // 0x0008 (0x0038 - 0x0030)
@@ -823,40 +904,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HealEvent">();
+		STATIC_CLASS_IMPL("HealEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HealEvent")
 	}
 	static class UHealEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHealEvent>();
 	}
 };
-static_assert(alignof(UHealEvent) == 0x000008, "Wrong alignment on UHealEvent");
-static_assert(sizeof(UHealEvent) == 0x000038, "Wrong size on UHealEvent");
-static_assert(offsetof(UHealEvent, SelfHeal) == 0x000030, "Member 'UHealEvent::SelfHeal' has a wrong offset!");
-static_assert(offsetof(UHealEvent, HeroHeal) == 0x000031, "Member 'UHealEvent::HeroHeal' has a wrong offset!");
-static_assert(offsetof(UHealEvent, SummonerHeal) == 0x000032, "Member 'UHealEvent::SummonerHeal' has a wrong offset!");
-static_assert(offsetof(UHealEvent, IsNearDeath) == 0x000033, "Member 'UHealEvent::IsNearDeath' has a wrong offset!");
+DUMPER7_ASSERTS_UHealEvent;
 
-// PythonClass DataBaseEvents.HalloweenDataBase
-// 0x0010 (0x0040 - 0x0030)
-class UHalloweenDataBase final : public UPyDataBaseEvent
+// PythonClass DataBaseEvents.EnergySorb
+// 0x0000 (0x0030 - 0x0030)
+class UEnergySorb final : public UPyDataBaseEvent
 {
-public:
-	class FString                                 DataBase;                                          // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HalloweenDataBase">();
+		STATIC_CLASS_IMPL("EnergySorb")
 	}
-	static class UHalloweenDataBase* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UHalloweenDataBase>();
+		STATIC_NAME_IMPL(L"EnergySorb")
+	}
+	static class UEnergySorb* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnergySorb>();
 	}
 };
-static_assert(alignof(UHalloweenDataBase) == 0x000008, "Wrong alignment on UHalloweenDataBase");
-static_assert(sizeof(UHalloweenDataBase) == 0x000040, "Wrong size on UHalloweenDataBase");
-static_assert(offsetof(UHalloweenDataBase, DataBase) == 0x000030, "Member 'UHalloweenDataBase::DataBase' has a wrong offset!");
+DUMPER7_ASSERTS_UEnergySorb;
 
 // PythonClass DataBaseEvents.AttributeChangeEvent
 // 0x0050 (0x0080 - 0x0030)
@@ -869,24 +948,46 @@ public:
 	EDataBaseBool                                 IsUp;                                              // 0x0078(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDataBaseBool                                 IsDown;                                            // 0x0079(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDataBaseBool                                 IsTarget;                                          // 0x007A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDataBaseBool                                 ExcludeSelf;                                       // 0x007B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AttributeChangeEvent">();
+		STATIC_CLASS_IMPL("AttributeChangeEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AttributeChangeEvent")
 	}
 	static class UAttributeChangeEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAttributeChangeEvent>();
 	}
 };
-static_assert(alignof(UAttributeChangeEvent) == 0x000008, "Wrong alignment on UAttributeChangeEvent");
-static_assert(sizeof(UAttributeChangeEvent) == 0x000080, "Wrong size on UAttributeChangeEvent");
-static_assert(offsetof(UAttributeChangeEvent, HeroID) == 0x000030, "Member 'UAttributeChangeEvent::HeroID' has a wrong offset!");
-static_assert(offsetof(UAttributeChangeEvent, EnergyType) == 0x000038, "Member 'UAttributeChangeEvent::EnergyType' has a wrong offset!");
-static_assert(offsetof(UAttributeChangeEvent, IsUp) == 0x000078, "Member 'UAttributeChangeEvent::IsUp' has a wrong offset!");
-static_assert(offsetof(UAttributeChangeEvent, IsDown) == 0x000079, "Member 'UAttributeChangeEvent::IsDown' has a wrong offset!");
-static_assert(offsetof(UAttributeChangeEvent, IsTarget) == 0x00007A, "Member 'UAttributeChangeEvent::IsTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UAttributeChangeEvent;
+
+// PythonClass DataBaseEvents.AbilitySorb
+// 0x0008 (0x0038 - 0x0030)
+class UAbilitySorb final : public UPyDataBaseEvent
+{
+public:
+	class UDataTable*                             CopyAbilityTable;                                  // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AbilitySorb")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilitySorb")
+	}
+	static class UAbilitySorb* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAbilitySorb>();
+	}
+};
+DUMPER7_ASSERTS_UAbilitySorb;
 
 // PythonClass DataBaseEvents.ApplyBuffEvent
 // 0x0028 (0x0058 - 0x0030)
@@ -908,25 +1009,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ApplyBuffEvent">();
+		STATIC_CLASS_IMPL("ApplyBuffEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ApplyBuffEvent")
 	}
 	static class UApplyBuffEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UApplyBuffEvent>();
 	}
 };
-static_assert(alignof(UApplyBuffEvent) == 0x000008, "Wrong alignment on UApplyBuffEvent");
-static_assert(sizeof(UApplyBuffEvent) == 0x000058, "Wrong size on UApplyBuffEvent");
-static_assert(offsetof(UApplyBuffEvent, BuffIds) == 0x000030, "Member 'UApplyBuffEvent::BuffIds' has a wrong offset!");
-static_assert(offsetof(UApplyBuffEvent, HeroID) == 0x000040, "Member 'UApplyBuffEvent::HeroID' has a wrong offset!");
-static_assert(offsetof(UApplyBuffEvent, ReturnTime) == 0x000044, "Member 'UApplyBuffEvent::ReturnTime' has a wrong offset!");
-static_assert(offsetof(UApplyBuffEvent, SameTimeNum) == 0x000048, "Member 'UApplyBuffEvent::SameTimeNum' has a wrong offset!");
-static_assert(offsetof(UApplyBuffEvent, ExcludeSelf) == 0x00004C, "Member 'UApplyBuffEvent::ExcludeSelf' has a wrong offset!");
-static_assert(offsetof(UApplyBuffEvent, ExcludeAlly) == 0x00004D, "Member 'UApplyBuffEvent::ExcludeAlly' has a wrong offset!");
-static_assert(offsetof(UApplyBuffEvent, ExcludeOther) == 0x00004E, "Member 'UApplyBuffEvent::ExcludeOther' has a wrong offset!");
-static_assert(offsetof(UApplyBuffEvent, IncludeSummon) == 0x00004F, "Member 'UApplyBuffEvent::IncludeSummon' has a wrong offset!");
-static_assert(offsetof(UApplyBuffEvent, SameAbilityNum) == 0x000050, "Member 'UApplyBuffEvent::SameAbilityNum' has a wrong offset!");
-static_assert(offsetof(UApplyBuffEvent, OwnOther) == 0x000054, "Member 'UApplyBuffEvent::OwnOther' has a wrong offset!");
+DUMPER7_ASSERTS_UApplyBuffEvent;
+
+// PythonClass DataBaseEvents.HalloweenDataBase
+// 0x0010 (0x0040 - 0x0030)
+class UHalloweenDataBase final : public UPyDataBaseEvent
+{
+public:
+	class FString                                 DataBase;                                          // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("HalloweenDataBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HalloweenDataBase")
+	}
+	static class UHalloweenDataBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UHalloweenDataBase>();
+	}
+};
+DUMPER7_ASSERTS_UHalloweenDataBase;
 
 // PythonClass DataBaseEvents.FinishBattleEvent
 // 0x0008 (0x0038 - 0x0030)
@@ -940,18 +1057,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FinishBattleEvent">();
+		STATIC_CLASS_IMPL("FinishBattleEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FinishBattleEvent")
 	}
 	static class UFinishBattleEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFinishBattleEvent>();
 	}
 };
-static_assert(alignof(UFinishBattleEvent) == 0x000008, "Wrong alignment on UFinishBattleEvent");
-static_assert(sizeof(UFinishBattleEvent) == 0x000038, "Wrong size on UFinishBattleEvent");
-static_assert(offsetof(UFinishBattleEvent, bWin) == 0x000030, "Member 'UFinishBattleEvent::bWin' has a wrong offset!");
-static_assert(offsetof(UFinishBattleEvent, bFail) == 0x000031, "Member 'UFinishBattleEvent::bFail' has a wrong offset!");
-static_assert(offsetof(UFinishBattleEvent, bNeutral) == 0x000032, "Member 'UFinishBattleEvent::bNeutral' has a wrong offset!");
+DUMPER7_ASSERTS_UFinishBattleEvent;
+
+// PythonClass DataBaseEvents.M2202DataBase
+// 0x0018 (0x0048 - 0x0030)
+class UM2202DataBase final : public UPyDataBaseEvent
+{
+public:
+	class FString                                 DataBase;                                          // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ByPaintType;                                       // 0x0040(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ByAttackType;                                      // 0x0041(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ByDefendType;                                      // 0x0042(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("M2202DataBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"M2202DataBase")
+	}
+	static class UM2202DataBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UM2202DataBase>();
+	}
+};
+DUMPER7_ASSERTS_UM2202DataBase;
 
 // PythonClass DataBaseEvents.ActivityFinish
 // 0x0010 (0x0040 - 0x0030)
@@ -963,42 +1106,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActivityFinish">();
+		STATIC_CLASS_IMPL("ActivityFinish")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivityFinish")
 	}
 	static class UActivityFinish* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivityFinish>();
 	}
 };
-static_assert(alignof(UActivityFinish) == 0x000008, "Wrong alignment on UActivityFinish");
-static_assert(sizeof(UActivityFinish) == 0x000040, "Wrong size on UActivityFinish");
-static_assert(offsetof(UActivityFinish, EvalStr) == 0x000030, "Member 'UActivityFinish::EvalStr' has a wrong offset!");
-
-// PythonClass DataBaseEvents.LevelPartInfoChange
-// 0x0018 (0x0048 - 0x0030)
-class ULevelPartInfoChange final : public UPyDataBaseEvent
-{
-public:
-	EDataBaseBool                                 bAttack;                                           // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDataBaseBool                                 bDefend;                                           // 0x0031(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 PartName;                                          // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"LevelPartInfoChange">();
-	}
-	static class ULevelPartInfoChange* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULevelPartInfoChange>();
-	}
-};
-static_assert(alignof(ULevelPartInfoChange) == 0x000008, "Wrong alignment on ULevelPartInfoChange");
-static_assert(sizeof(ULevelPartInfoChange) == 0x000048, "Wrong size on ULevelPartInfoChange");
-static_assert(offsetof(ULevelPartInfoChange, bAttack) == 0x000030, "Member 'ULevelPartInfoChange::bAttack' has a wrong offset!");
-static_assert(offsetof(ULevelPartInfoChange, bDefend) == 0x000031, "Member 'ULevelPartInfoChange::bDefend' has a wrong offset!");
-static_assert(offsetof(ULevelPartInfoChange, PartName) == 0x000038, "Member 'ULevelPartInfoChange::PartName' has a wrong offset!");
+DUMPER7_ASSERTS_UActivityFinish;
 
 // PythonClass DataBaseEvents.HealPackEvent
 // 0x0000 (0x0030 - 0x0030)
@@ -1007,15 +1126,18 @@ class UHealPackEvent final : public UPyDataBaseEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HealPackEvent">();
+		STATIC_CLASS_IMPL("HealPackEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HealPackEvent")
 	}
 	static class UHealPackEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHealPackEvent>();
 	}
 };
-static_assert(alignof(UHealPackEvent) == 0x000008, "Wrong alignment on UHealPackEvent");
-static_assert(sizeof(UHealPackEvent) == 0x000030, "Wrong size on UHealPackEvent");
+DUMPER7_ASSERTS_UHealPackEvent;
 
 // PythonClass DataBaseEvents.SprayPaintEvent
 // 0x0000 (0x0030 - 0x0030)
@@ -1024,15 +1146,18 @@ class USprayPaintEvent final : public UPyDataBaseEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SprayPaintEvent">();
+		STATIC_CLASS_IMPL("SprayPaintEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SprayPaintEvent")
 	}
 	static class USprayPaintEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USprayPaintEvent>();
 	}
 };
-static_assert(alignof(USprayPaintEvent) == 0x000008, "Wrong alignment on USprayPaintEvent");
-static_assert(sizeof(USprayPaintEvent) == 0x000030, "Wrong size on USprayPaintEvent");
+DUMPER7_ASSERTS_USprayPaintEvent;
 
 // PythonClass DataBaseEvents.QuickSignalEvent
 // 0x0008 (0x0038 - 0x0030)
@@ -1045,17 +1170,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"QuickSignalEvent">();
+		STATIC_CLASS_IMPL("QuickSignalEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuickSignalEvent")
 	}
 	static class UQuickSignalEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuickSignalEvent>();
 	}
 };
-static_assert(alignof(UQuickSignalEvent) == 0x000008, "Wrong alignment on UQuickSignalEvent");
-static_assert(sizeof(UQuickSignalEvent) == 0x000038, "Wrong size on UQuickSignalEvent");
-static_assert(offsetof(UQuickSignalEvent, SignalID) == 0x000030, "Member 'UQuickSignalEvent::SignalID' has a wrong offset!");
-static_assert(offsetof(UQuickSignalEvent, NeedResponse) == 0x000034, "Member 'UQuickSignalEvent::NeedResponse' has a wrong offset!");
+DUMPER7_ASSERTS_UQuickSignalEvent;
 
 // PythonClass DataBaseEvents.EmojiEvent
 // 0x0008 (0x0038 - 0x0030)
@@ -1067,16 +1193,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EmojiEvent">();
+		STATIC_CLASS_IMPL("EmojiEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EmojiEvent")
 	}
 	static class UEmojiEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEmojiEvent>();
 	}
 };
-static_assert(alignof(UEmojiEvent) == 0x000008, "Wrong alignment on UEmojiEvent");
-static_assert(sizeof(UEmojiEvent) == 0x000038, "Wrong size on UEmojiEvent");
-static_assert(offsetof(UEmojiEvent, EmojiID) == 0x000030, "Member 'UEmojiEvent::EmojiID' has a wrong offset!");
+DUMPER7_ASSERTS_UEmojiEvent;
 
 // PythonClass DataBaseEvents.TransitionEvent
 // 0x0008 (0x0038 - 0x0030)
@@ -1088,16 +1216,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TransitionEvent">();
+		STATIC_CLASS_IMPL("TransitionEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TransitionEvent")
 	}
 	static class UTransitionEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTransitionEvent>();
 	}
 };
-static_assert(alignof(UTransitionEvent) == 0x000008, "Wrong alignment on UTransitionEvent");
-static_assert(sizeof(UTransitionEvent) == 0x000038, "Wrong size on UTransitionEvent");
-static_assert(offsetof(UTransitionEvent, AbilityID) == 0x000030, "Member 'UTransitionEvent::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UTransitionEvent;
 
 // PythonClass DataBaseEvents.AimPointEvent
 // 0x0000 (0x0030 - 0x0030)
@@ -1106,15 +1236,18 @@ class UAimPointEvent final : public UPyDataBaseEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AimPointEvent">();
+		STATIC_CLASS_IMPL("AimPointEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AimPointEvent")
 	}
 	static class UAimPointEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAimPointEvent>();
 	}
 };
-static_assert(alignof(UAimPointEvent) == 0x000008, "Wrong alignment on UAimPointEvent");
-static_assert(sizeof(UAimPointEvent) == 0x000030, "Wrong size on UAimPointEvent");
+DUMPER7_ASSERTS_UAimPointEvent;
 
 // PythonClass DataBaseEvents.CarDistance
 // 0x0000 (0x0030 - 0x0030)
@@ -1123,15 +1256,18 @@ class UCarDistance final : public UPyDataBaseEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CarDistance">();
+		STATIC_CLASS_IMPL("CarDistance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CarDistance")
 	}
 	static class UCarDistance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCarDistance>();
 	}
 };
-static_assert(alignof(UCarDistance) == 0x000008, "Wrong alignment on UCarDistance");
-static_assert(sizeof(UCarDistance) == 0x000030, "Wrong size on UCarDistance");
+DUMPER7_ASSERTS_UCarDistance;
 
 // PythonClass DataBaseEvents.BuffDamageShareEvent
 // 0x0000 (0x0030 - 0x0030)
@@ -1140,15 +1276,18 @@ class UBuffDamageShareEvent final : public UPyDataBaseEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffDamageShareEvent">();
+		STATIC_CLASS_IMPL("BuffDamageShareEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffDamageShareEvent")
 	}
 	static class UBuffDamageShareEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffDamageShareEvent>();
 	}
 };
-static_assert(alignof(UBuffDamageShareEvent) == 0x000008, "Wrong alignment on UBuffDamageShareEvent");
-static_assert(sizeof(UBuffDamageShareEvent) == 0x000030, "Wrong size on UBuffDamageShareEvent");
+DUMPER7_ASSERTS_UBuffDamageShareEvent;
 
 // PythonClass DataBaseEvents.BuffExtraDamageEvent
 // 0x0018 (0x0048 - 0x0030)
@@ -1161,17 +1300,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffExtraDamageEvent">();
+		STATIC_CLASS_IMPL("BuffExtraDamageEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffExtraDamageEvent")
 	}
 	static class UBuffExtraDamageEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffExtraDamageEvent>();
 	}
 };
-static_assert(alignof(UBuffExtraDamageEvent) == 0x000008, "Wrong alignment on UBuffExtraDamageEvent");
-static_assert(sizeof(UBuffExtraDamageEvent) == 0x000048, "Wrong size on UBuffExtraDamageEvent");
-static_assert(offsetof(UBuffExtraDamageEvent, BuffIDList) == 0x000030, "Member 'UBuffExtraDamageEvent::BuffIDList' has a wrong offset!");
-static_assert(offsetof(UBuffExtraDamageEvent, IsDecrease) == 0x000040, "Member 'UBuffExtraDamageEvent::IsDecrease' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffExtraDamageEvent;
 
 // PythonClass DataBaseEvents.BuffDamageResistEvent
 // 0x0018 (0x0048 - 0x0030)
@@ -1185,63 +1325,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffDamageResistEvent">();
+		STATIC_CLASS_IMPL("BuffDamageResistEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffDamageResistEvent")
 	}
 	static class UBuffDamageResistEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffDamageResistEvent>();
 	}
 };
-static_assert(alignof(UBuffDamageResistEvent) == 0x000008, "Wrong alignment on UBuffDamageResistEvent");
-static_assert(sizeof(UBuffDamageResistEvent) == 0x000048, "Wrong size on UBuffDamageResistEvent");
-static_assert(offsetof(UBuffDamageResistEvent, BuffIDList) == 0x000030, "Member 'UBuffDamageResistEvent::BuffIDList' has a wrong offset!");
-static_assert(offsetof(UBuffDamageResistEvent, IsImmunity) == 0x000040, "Member 'UBuffDamageResistEvent::IsImmunity' has a wrong offset!");
-static_assert(offsetof(UBuffDamageResistEvent, IsTreat) == 0x000041, "Member 'UBuffDamageResistEvent::IsTreat' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffDamageResistEvent;
 
-// PythonClass DataBaseEvents.BuffDamageToCurrentEvent
-// 0x0000 (0x0030 - 0x0030)
-class UBuffDamageToCurrentEvent final : public UPyDataBaseEvent
+// PythonClass DataBaseEvents.HearVoice
+// 0x0030 (0x0060 - 0x0030)
+class UHearVoice final : public UPyDataBaseEvent
 {
 public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BuffDamageToCurrentEvent">();
-	}
-	static class UBuffDamageToCurrentEvent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBuffDamageToCurrentEvent>();
-	}
-};
-static_assert(alignof(UBuffDamageToCurrentEvent) == 0x000008, "Wrong alignment on UBuffDamageToCurrentEvent");
-static_assert(sizeof(UBuffDamageToCurrentEvent) == 0x000030, "Wrong size on UBuffDamageToCurrentEvent");
-
-// PythonClass DataBaseEvents.OccupyCamp
-// 0x0028 (0x0058 - 0x0030)
-class UOccupyCamp final : public UPyDataBaseEvent
-{
-public:
-	TArray<EBattleSide>                           SpecSides;                                         // 0x0030(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TSubclassOf<class APyCamp>                    CampType;                                          // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<int32>                                 LevelIDs;                                          // 0x0048(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	TSet<class FString> GetEventMapIDsAll();
+	TArray<int32>                                 HeroIDs;                                           // 0x0030(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FString>                         VoiceIDs;                                          // 0x0040(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<EHeroTeam>                             Families;                                          // 0x0050(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OccupyCamp">();
+		STATIC_CLASS_IMPL("HearVoice")
 	}
-	static class UOccupyCamp* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UOccupyCamp>();
+		STATIC_NAME_IMPL(L"HearVoice")
+	}
+	static class UHearVoice* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UHearVoice>();
 	}
 };
-static_assert(alignof(UOccupyCamp) == 0x000008, "Wrong alignment on UOccupyCamp");
-static_assert(sizeof(UOccupyCamp) == 0x000058, "Wrong size on UOccupyCamp");
-static_assert(offsetof(UOccupyCamp, SpecSides) == 0x000030, "Member 'UOccupyCamp::SpecSides' has a wrong offset!");
-static_assert(offsetof(UOccupyCamp, CampType) == 0x000040, "Member 'UOccupyCamp::CampType' has a wrong offset!");
-static_assert(offsetof(UOccupyCamp, LevelIDs) == 0x000048, "Member 'UOccupyCamp::LevelIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UHearVoice;
 
 // PythonClass DataBaseEvents.InteractionWithNPC
 // 0x0018 (0x0048 - 0x0030)
@@ -1255,17 +1375,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InteractionWithNPC">();
+		STATIC_CLASS_IMPL("InteractionWithNPC")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InteractionWithNPC")
 	}
 	static class UInteractionWithNPC* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInteractionWithNPC>();
 	}
 };
-static_assert(alignof(UInteractionWithNPC) == 0x000008, "Wrong alignment on UInteractionWithNPC");
-static_assert(sizeof(UInteractionWithNPC) == 0x000048, "Wrong size on UInteractionWithNPC");
-static_assert(offsetof(UInteractionWithNPC, is_repeatable) == 0x000030, "Member 'UInteractionWithNPC::is_repeatable' has a wrong offset!");
-static_assert(offsetof(UInteractionWithNPC, Tags) == 0x000038, "Member 'UInteractionWithNPC::Tags' has a wrong offset!");
+DUMPER7_ASSERTS_UInteractionWithNPC;
 
 // PythonClass DataBaseEvents.ChaosDesCollapse
 // 0x0018 (0x0048 - 0x0030)
@@ -1279,17 +1400,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosDesCollapse">();
+		STATIC_CLASS_IMPL("ChaosDesCollapse")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosDesCollapse")
 	}
 	static class UChaosDesCollapse* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosDesCollapse>();
 	}
 };
-static_assert(alignof(UChaosDesCollapse) == 0x000008, "Wrong alignment on UChaosDesCollapse");
-static_assert(sizeof(UChaosDesCollapse) == 0x000048, "Wrong size on UChaosDesCollapse");
-static_assert(offsetof(UChaosDesCollapse, Interval) == 0x000030, "Member 'UChaosDesCollapse::Interval' has a wrong offset!");
-static_assert(offsetof(UChaosDesCollapse, Tags) == 0x000038, "Member 'UChaosDesCollapse::Tags' has a wrong offset!");
+DUMPER7_ASSERTS_UChaosDesCollapse;
 
 // PythonClass DataBaseEvents.WinterFestivalFinishEvent
 // 0x0010 (0x0040 - 0x0030)
@@ -1304,35 +1426,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WinterFestivalFinishEvent">();
+		STATIC_CLASS_IMPL("WinterFestivalFinishEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterFestivalFinishEvent")
 	}
 	static class UWinterFestivalFinishEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterFestivalFinishEvent>();
 	}
 };
-static_assert(alignof(UWinterFestivalFinishEvent) == 0x000008, "Wrong alignment on UWinterFestivalFinishEvent");
-static_assert(sizeof(UWinterFestivalFinishEvent) == 0x000040, "Wrong size on UWinterFestivalFinishEvent");
-static_assert(offsetof(UWinterFestivalFinishEvent, bWin) == 0x000030, "Member 'UWinterFestivalFinishEvent::bWin' has a wrong offset!");
-static_assert(offsetof(UWinterFestivalFinishEvent, Points) == 0x000034, "Member 'UWinterFestivalFinishEvent::Points' has a wrong offset!");
-static_assert(offsetof(UWinterFestivalFinishEvent, PlayerScore) == 0x000038, "Member 'UWinterFestivalFinishEvent::PlayerScore' has a wrong offset!");
-
-// PythonClass DataBaseEvents.SingleDeath
-// 0x0000 (0x0030 - 0x0030)
-class USingleDeath final : public UPyDataBaseEvent
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SingleDeath">();
-	}
-	static class USingleDeath* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USingleDeath>();
-	}
-};
-static_assert(alignof(USingleDeath) == 0x000008, "Wrong alignment on USingleDeath");
-static_assert(sizeof(USingleDeath) == 0x000030, "Wrong size on USingleDeath");
+DUMPER7_ASSERTS_UWinterFestivalFinishEvent;
 
 }
 

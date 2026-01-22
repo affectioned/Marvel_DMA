@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Gallery_SerialsPanel.PyWidget_Gallery_SerialsPanel
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UPyWidget_Gallery_SerialsPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           FlipLeftBPAction;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           FlipRightBPAction;                                 // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SwitchGalleryBookStyle;                            // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                GalleryPageWidgetClass;                            // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           FlipLeftBPAction;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           FlipRightBPAction;                                 // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SwitchGalleryBookStyle;                            // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                GalleryPageWidgetClass;                            // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Gallery_SerialsPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Gallery_SerialsPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Gallery_SerialsPanel")
 	}
 	static class UPyWidget_Gallery_SerialsPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Gallery_SerialsPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Gallery_SerialsPanel) == 0x000008, "Wrong alignment on UPyWidget_Gallery_SerialsPanel");
-static_assert(sizeof(UPyWidget_Gallery_SerialsPanel) == 0x000620, "Wrong size on UPyWidget_Gallery_SerialsPanel");
-static_assert(offsetof(UPyWidget_Gallery_SerialsPanel, FlipLeftBPAction) == 0x0005F8, "Member 'UPyWidget_Gallery_SerialsPanel::FlipLeftBPAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SerialsPanel, FlipRightBPAction) == 0x000600, "Member 'UPyWidget_Gallery_SerialsPanel::FlipRightBPAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SerialsPanel, SwitchGalleryBookStyle) == 0x000608, "Member 'UPyWidget_Gallery_SerialsPanel::SwitchGalleryBookStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SerialsPanel, GalleryPageWidgetClass) == 0x000618, "Member 'UPyWidget_Gallery_SerialsPanel::GalleryPageWidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Gallery_SerialsPanel;
 
 }
 

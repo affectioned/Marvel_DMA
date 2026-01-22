@@ -23,15 +23,18 @@ class UAIAbilityExitStage_CheckTeammateAroundFullHealth_C final : public UPyAIAb
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStage_CheckTeammateAroundFullHealth_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStage_CheckTeammateAroundFullHealth_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStage_CheckTeammateAroundFullHealth_C")
 	}
 	static class UAIAbilityExitStage_CheckTeammateAroundFullHealth_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStage_CheckTeammateAroundFullHealth_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStage_CheckTeammateAroundFullHealth_C) == 0x000008, "Wrong alignment on UAIAbilityExitStage_CheckTeammateAroundFullHealth_C");
-static_assert(sizeof(UAIAbilityExitStage_CheckTeammateAroundFullHealth_C) == 0x000048, "Wrong size on UAIAbilityExitStage_CheckTeammateAroundFullHealth_C");
+DUMPER7_ASSERTS_UAIAbilityExitStage_CheckTeammateAroundFullHealth_C;
 
 }
 

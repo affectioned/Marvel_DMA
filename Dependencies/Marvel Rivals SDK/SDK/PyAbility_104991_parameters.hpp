@@ -24,9 +24,7 @@ struct PyAbility_104991_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_104991_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_104991_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_104991_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_104991_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_104991_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_104991_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104991_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_104991.PyAbility_104991.OnDashTaskFinish
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAbility_104991_OnDashTaskFinish final
 public:
 	EDashStopReason                               reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104991_OnDashTaskFinish) == 0x000001, "Wrong alignment on PyAbility_104991_OnDashTaskFinish");
-static_assert(sizeof(PyAbility_104991_OnDashTaskFinish) == 0x000001, "Wrong size on PyAbility_104991_OnDashTaskFinish");
-static_assert(offsetof(PyAbility_104991_OnDashTaskFinish, reason) == 0x000000, "Member 'PyAbility_104991_OnDashTaskFinish::reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104991_OnDashTaskFinish;
 
 // PythonFunction PyAbility_104991.PyAbility_104991.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -46,9 +42,7 @@ struct PyAbility_104991_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104991_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_104991_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_104991_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_104991_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_104991_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_104991_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104991_K2_OnEndAbility;
 
 // PythonFunction PyAbility_104991.PyAbility_104991.IsAbilityNormalEnd
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +51,7 @@ struct PyAbility_104991_IsAbilityNormalEnd final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104991_IsAbilityNormalEnd) == 0x000001, "Wrong alignment on PyAbility_104991_IsAbilityNormalEnd");
-static_assert(sizeof(PyAbility_104991_IsAbilityNormalEnd) == 0x000001, "Wrong size on PyAbility_104991_IsAbilityNormalEnd");
-static_assert(offsetof(PyAbility_104991_IsAbilityNormalEnd, ReturnValue) == 0x000000, "Member 'PyAbility_104991_IsAbilityNormalEnd::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104991_IsAbilityNormalEnd;
 
 }
 

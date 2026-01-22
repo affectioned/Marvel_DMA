@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_RollNumTopUnitBase.OnAnimationFinished
+// 0x0008 (0x0008 - 0x0000)
+struct PyWidget_Settlement_RollNumTopUnitBase_OnAnimationFinished final
+{
+public:
+	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_Settlement_RollNumTopUnitBase_OnAnimationFinished;
+
 // PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ActivityRewardTips.OnBtnNormalImageSoftTextureLoad
 // 0x0008 (0x0008 - 0x0000)
 struct PyWidget_Settlement_ActivityRewardTips_OnBtnNormalImageSoftTextureLoad final
@@ -21,9 +30,7 @@ struct PyWidget_Settlement_ActivityRewardTips_OnBtnNormalImageSoftTextureLoad fi
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Settlement_ActivityRewardTips_OnBtnNormalImageSoftTextureLoad) == 0x000008, "Wrong alignment on PyWidget_Settlement_ActivityRewardTips_OnBtnNormalImageSoftTextureLoad");
-static_assert(sizeof(PyWidget_Settlement_ActivityRewardTips_OnBtnNormalImageSoftTextureLoad) == 0x000008, "Wrong size on PyWidget_Settlement_ActivityRewardTips_OnBtnNormalImageSoftTextureLoad");
-static_assert(offsetof(PyWidget_Settlement_ActivityRewardTips_OnBtnNormalImageSoftTextureLoad, Texture) == 0x000000, "Member 'PyWidget_Settlement_ActivityRewardTips_OnBtnNormalImageSoftTextureLoad::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Settlement_ActivityRewardTips_OnBtnNormalImageSoftTextureLoad;
 
 // PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ActivityRewardTips.OnBtnHoveredImageSoftTextureLoad
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +39,7 @@ struct PyWidget_Settlement_ActivityRewardTips_OnBtnHoveredImageSoftTextureLoad f
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Settlement_ActivityRewardTips_OnBtnHoveredImageSoftTextureLoad) == 0x000008, "Wrong alignment on PyWidget_Settlement_ActivityRewardTips_OnBtnHoveredImageSoftTextureLoad");
-static_assert(sizeof(PyWidget_Settlement_ActivityRewardTips_OnBtnHoveredImageSoftTextureLoad) == 0x000008, "Wrong size on PyWidget_Settlement_ActivityRewardTips_OnBtnHoveredImageSoftTextureLoad");
-static_assert(offsetof(PyWidget_Settlement_ActivityRewardTips_OnBtnHoveredImageSoftTextureLoad, Texture) == 0x000000, "Member 'PyWidget_Settlement_ActivityRewardTips_OnBtnHoveredImageSoftTextureLoad::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Settlement_ActivityRewardTips_OnBtnHoveredImageSoftTextureLoad;
 
 // PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ActivityRewardTips.OnBtnPressedImageSoftTextureLoad
 // 0x0008 (0x0008 - 0x0000)
@@ -43,31 +48,7 @@ struct PyWidget_Settlement_ActivityRewardTips_OnBtnPressedImageSoftTextureLoad f
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Settlement_ActivityRewardTips_OnBtnPressedImageSoftTextureLoad) == 0x000008, "Wrong alignment on PyWidget_Settlement_ActivityRewardTips_OnBtnPressedImageSoftTextureLoad");
-static_assert(sizeof(PyWidget_Settlement_ActivityRewardTips_OnBtnPressedImageSoftTextureLoad) == 0x000008, "Wrong size on PyWidget_Settlement_ActivityRewardTips_OnBtnPressedImageSoftTextureLoad");
-static_assert(offsetof(PyWidget_Settlement_ActivityRewardTips_OnBtnPressedImageSoftTextureLoad, Texture) == 0x000000, "Member 'PyWidget_Settlement_ActivityRewardTips_OnBtnPressedImageSoftTextureLoad::Texture' has a wrong offset!");
-
-// PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ActivityTopUnit.OnTitleMaterialLoad
-// 0x0008 (0x0008 - 0x0000)
-struct PyWidget_Settlement_ActivityTopUnit_OnTitleMaterialLoad final
-{
-public:
-	class UObject*                                TitleMaterial;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_Settlement_ActivityTopUnit_OnTitleMaterialLoad) == 0x000008, "Wrong alignment on PyWidget_Settlement_ActivityTopUnit_OnTitleMaterialLoad");
-static_assert(sizeof(PyWidget_Settlement_ActivityTopUnit_OnTitleMaterialLoad) == 0x000008, "Wrong size on PyWidget_Settlement_ActivityTopUnit_OnTitleMaterialLoad");
-static_assert(offsetof(PyWidget_Settlement_ActivityTopUnit_OnTitleMaterialLoad, TitleMaterial) == 0x000000, "Member 'PyWidget_Settlement_ActivityTopUnit_OnTitleMaterialLoad::TitleMaterial' has a wrong offset!");
-
-// PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_RollNumTopUnitBase.OnAnimationFinished
-// 0x0008 (0x0008 - 0x0000)
-struct PyWidget_Settlement_RollNumTopUnitBase_OnAnimationFinished final
-{
-public:
-	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_Settlement_RollNumTopUnitBase_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Settlement_RollNumTopUnitBase_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Settlement_RollNumTopUnitBase_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Settlement_RollNumTopUnitBase_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Settlement_RollNumTopUnitBase_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Settlement_RollNumTopUnitBase_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Settlement_ActivityRewardTips_OnBtnPressedImageSoftTextureLoad;
 
 // PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ExtraRewardTopUnit.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -76,9 +57,7 @@ struct PyWidget_Settlement_ExtraRewardTopUnit_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Settlement_ExtraRewardTopUnit_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Settlement_ExtraRewardTopUnit_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Settlement_ExtraRewardTopUnit_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Settlement_ExtraRewardTopUnit_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Settlement_ExtraRewardTopUnit_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Settlement_ExtraRewardTopUnit_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Settlement_ExtraRewardTopUnit_OnAnimationFinished;
 
 }
 

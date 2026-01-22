@@ -130,31 +130,6 @@ void UPyAbility_104201::K2_OnEndAbility(bool bWasCancelled)
 }
 
 
-// PythonFunction PyAbility_104201.PyAbility_104201.K2_OnTick
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyAbility_104201::K2_OnTick(float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_104201", "K2_OnTick");
-
-	Params::PyAbility_104201_K2_OnTick Parms{};
-
-	Parms.DeltaTime = DeltaTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_104201.PyAbility_104201.K2_OnWallRunningEnd
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

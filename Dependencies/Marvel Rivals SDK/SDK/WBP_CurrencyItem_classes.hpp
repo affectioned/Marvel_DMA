@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CurrencyItem.WBP_CurrencyItem_C
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UWBP_CurrencyItem_C final : public UPyWidget_CurrencyItem
 {
 public:
-	class UMarvelButton*                          Btn_Main;                                          // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Item;                                      // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mall_Price_C*                      WBP_Mall_Price;                                    // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Main;                                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Item;                                      // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mall_Price_C*                      WBP_Mall_Price;                                    // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CurrencyItem_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CurrencyItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CurrencyItem_C")
 	}
 	static class UWBP_CurrencyItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CurrencyItem_C>();
 	}
 };
-static_assert(alignof(UWBP_CurrencyItem_C) == 0x000008, "Wrong alignment on UWBP_CurrencyItem_C");
-static_assert(sizeof(UWBP_CurrencyItem_C) == 0x0005D8, "Wrong size on UWBP_CurrencyItem_C");
-static_assert(offsetof(UWBP_CurrencyItem_C, Btn_Main) == 0x0005C0, "Member 'UWBP_CurrencyItem_C::Btn_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_CurrencyItem_C, SizeBox_Item) == 0x0005C8, "Member 'UWBP_CurrencyItem_C::SizeBox_Item' has a wrong offset!");
-static_assert(offsetof(UWBP_CurrencyItem_C, WBP_Mall_Price) == 0x0005D0, "Member 'UWBP_CurrencyItem_C::WBP_Mall_Price' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CurrencyItem_C;
 
 }
 

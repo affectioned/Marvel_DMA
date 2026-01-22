@@ -24,18 +24,21 @@ class UMission_UnitWidgetItemData : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Mission_UnitWidgetItemData">();
+		STATIC_CLASS_IMPL("Mission_UnitWidgetItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mission_UnitWidgetItemData")
 	}
 	static class UMission_UnitWidgetItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMission_UnitWidgetItemData>();
 	}
 };
-static_assert(alignof(UMission_UnitWidgetItemData) == 0x000008, "Wrong alignment on UMission_UnitWidgetItemData");
-static_assert(sizeof(UMission_UnitWidgetItemData) == 0x000030, "Wrong size on UMission_UnitWidgetItemData");
+DUMPER7_ASSERTS_UMission_UnitWidgetItemData;
 
 // PythonClass PyWidget_MissionUnit_Base.PyWidget_MissionUnit_Base
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyWidget_MissionUnit_Base : public UPyMarvelUserWidget
 {
@@ -47,7 +50,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MissionUnit_Base">();
+		STATIC_CLASS_IMPL("PyWidget_MissionUnit_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MissionUnit_Base")
 	}
 	static class UPyWidget_MissionUnit_Base* GetDefaultObj()
 	{
@@ -55,8 +62,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_MissionUnit_Base) == 0x000008, "Wrong alignment on UPyWidget_MissionUnit_Base");
-static_assert(sizeof(UPyWidget_MissionUnit_Base) == 0x0005C0, "Wrong size on UPyWidget_MissionUnit_Base");
+DUMPER7_ASSERTS_UPyWidget_MissionUnit_Base;
 
 }
 

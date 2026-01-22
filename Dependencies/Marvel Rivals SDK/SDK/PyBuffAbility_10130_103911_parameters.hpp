@@ -24,10 +24,7 @@ public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParamHandle;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10391031_OnAbilityDamage) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10391031_OnAbilityDamage");
-static_assert(sizeof(PyBuffAbility_10130_10391031_OnAbilityDamage) == 0x000020, "Wrong size on PyBuffAbility_10130_10391031_OnAbilityDamage");
-static_assert(offsetof(PyBuffAbility_10130_10391031_OnAbilityDamage, Ability) == 0x000000, "Member 'PyBuffAbility_10130_10391031_OnAbilityDamage::Ability' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10391031_OnAbilityDamage, ParamHandle) == 0x000008, "Member 'PyBuffAbility_10130_10391031_OnAbilityDamage::ParamHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10391031_OnAbilityDamage;
 
 // PythonFunction PyBuffAbility_10130_103911.PyBuffAbility_10130_10391032.OnApplyDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -38,11 +35,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParamterHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10391032_OnApplyDamage) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10391032_OnApplyDamage");
-static_assert(sizeof(PyBuffAbility_10130_10391032_OnApplyDamage) == 0x000028, "Wrong size on PyBuffAbility_10130_10391032_OnApplyDamage");
-static_assert(offsetof(PyBuffAbility_10130_10391032_OnApplyDamage, Instigator) == 0x000000, "Member 'PyBuffAbility_10130_10391032_OnApplyDamage::Instigator' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10391032_OnApplyDamage, Target) == 0x000008, "Member 'PyBuffAbility_10130_10391032_OnApplyDamage::Target' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10391032_OnApplyDamage, ParamterHandle) == 0x000010, "Member 'PyBuffAbility_10130_10391032_OnApplyDamage::ParamterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10391032_OnApplyDamage;
 
 }
 

@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyATCmdConfigItem">();
+		STATIC_CLASS_IMPL("PyATCmdConfigItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyATCmdConfigItem")
 	}
 	static class UPyATCmdConfigItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyATCmdConfigItem>();
 	}
 };
-static_assert(alignof(UPyATCmdConfigItem) == 0x000008, "Wrong alignment on UPyATCmdConfigItem");
-static_assert(sizeof(UPyATCmdConfigItem) == 0x000048, "Wrong size on UPyATCmdConfigItem");
-static_assert(offsetof(UPyATCmdConfigItem, ATCmdSequence) == 0x000038, "Member 'UPyATCmdConfigItem::ATCmdSequence' has a wrong offset!");
-static_assert(offsetof(UPyATCmdConfigItem, BaseDelayTime) == 0x000040, "Member 'UPyATCmdConfigItem::BaseDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyATCmdConfigItem, PrepareDelayTime) == 0x000044, "Member 'UPyATCmdConfigItem::PrepareDelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyATCmdConfigItem;
 
 }
 

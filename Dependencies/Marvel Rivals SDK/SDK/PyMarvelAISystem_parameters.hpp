@@ -18,17 +18,14 @@ namespace SDK::Params
 {
 
 // PythonFunction PyMarvelAISystem.PyMarvelAISystem.AddAICustom
-// 0x00C8 (0x00C8 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct PyMarvelAISystem_AddAICustom final
 {
 public:
-	struct FAISpawnParam                          spawn_param;                                       // 0x0000(0x00C0)(Parm)
-	class AMarvelAIController*                    ReturnValue;                                       // 0x00C0(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+	struct FAISpawnParam                          spawn_param;                                       // 0x0000(0x00C8)(Parm)
+	class AMarvelAIController*                    ReturnValue;                                       // 0x00C8(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelAISystem_AddAICustom) == 0x000008, "Wrong alignment on PyMarvelAISystem_AddAICustom");
-static_assert(sizeof(PyMarvelAISystem_AddAICustom) == 0x0000C8, "Wrong size on PyMarvelAISystem_AddAICustom");
-static_assert(offsetof(PyMarvelAISystem_AddAICustom, spawn_param) == 0x000000, "Member 'PyMarvelAISystem_AddAICustom::spawn_param' has a wrong offset!");
-static_assert(offsetof(PyMarvelAISystem_AddAICustom, ReturnValue) == 0x0000C0, "Member 'PyMarvelAISystem_AddAICustom::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelAISystem_AddAICustom;
 
 // PythonFunction PyMarvelAISystem.PyMarvelAISystem.RemoveAIByUID
 // 0x0008 (0x0008 - 0x0000)
@@ -38,13 +35,10 @@ public:
 	int32                                         uid;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelAISystem_RemoveAIByUID) == 0x000004, "Wrong alignment on PyMarvelAISystem_RemoveAIByUID");
-static_assert(sizeof(PyMarvelAISystem_RemoveAIByUID) == 0x000008, "Wrong size on PyMarvelAISystem_RemoveAIByUID");
-static_assert(offsetof(PyMarvelAISystem_RemoveAIByUID, uid) == 0x000000, "Member 'PyMarvelAISystem_RemoveAIByUID::uid' has a wrong offset!");
-static_assert(offsetof(PyMarvelAISystem_RemoveAIByUID, ReturnValue) == 0x000004, "Member 'PyMarvelAISystem_RemoveAIByUID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelAISystem_RemoveAIByUID;
 
 // PythonFunction PyMarvelAISystem.PyMarvelAISystem.AddAI
-// 0x0030 (0x0030 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct PyMarvelAISystem_AddAI final
 {
 public:
@@ -55,17 +49,11 @@ public:
 	class FString                                 name;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         difficulty_mode;                                   // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         difficulty_level;                                  // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMarvelAIControllerBase*                ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+	EHeroRole                                     hero_role;                                         // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMarvelAIControllerBase*                ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelAISystem_AddAI) == 0x000008, "Wrong alignment on PyMarvelAISystem_AddAI");
-static_assert(sizeof(PyMarvelAISystem_AddAI) == 0x000030, "Wrong size on PyMarvelAISystem_AddAI");
-static_assert(offsetof(PyMarvelAISystem_AddAI, uid) == 0x000000, "Member 'PyMarvelAISystem_AddAI::uid' has a wrong offset!");
-static_assert(offsetof(PyMarvelAISystem_AddAI, hero_id) == 0x000004, "Member 'PyMarvelAISystem_AddAI::hero_id' has a wrong offset!");
-static_assert(offsetof(PyMarvelAISystem_AddAI, battle_side) == 0x000008, "Member 'PyMarvelAISystem_AddAI::battle_side' has a wrong offset!");
-static_assert(offsetof(PyMarvelAISystem_AddAI, name) == 0x000010, "Member 'PyMarvelAISystem_AddAI::name' has a wrong offset!");
-static_assert(offsetof(PyMarvelAISystem_AddAI, difficulty_mode) == 0x000020, "Member 'PyMarvelAISystem_AddAI::difficulty_mode' has a wrong offset!");
-static_assert(offsetof(PyMarvelAISystem_AddAI, difficulty_level) == 0x000024, "Member 'PyMarvelAISystem_AddAI::difficulty_level' has a wrong offset!");
-static_assert(offsetof(PyMarvelAISystem_AddAI, ReturnValue) == 0x000028, "Member 'PyMarvelAISystem_AddAI::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelAISystem_AddAI;
 
 }
 

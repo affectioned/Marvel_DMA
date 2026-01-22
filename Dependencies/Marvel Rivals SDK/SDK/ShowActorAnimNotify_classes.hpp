@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyANS_ShowActor_SwitchReceivesDecals">();
+		STATIC_CLASS_IMPL("PyANS_ShowActor_SwitchReceivesDecals")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyANS_ShowActor_SwitchReceivesDecals")
 	}
 	static class UPyANS_ShowActor_SwitchReceivesDecals* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyANS_ShowActor_SwitchReceivesDecals>();
 	}
 };
-static_assert(alignof(UPyANS_ShowActor_SwitchReceivesDecals) == 0x000008, "Wrong alignment on UPyANS_ShowActor_SwitchReceivesDecals");
-static_assert(sizeof(UPyANS_ShowActor_SwitchReceivesDecals) == 0x000038, "Wrong size on UPyANS_ShowActor_SwitchReceivesDecals");
+DUMPER7_ASSERTS_UPyANS_ShowActor_SwitchReceivesDecals;
 
 }
 

@@ -24,12 +24,7 @@ public:
 	bool                                          IS_JP_KR_6_A67445BB4C1F12856F6C7DB93008467C;       // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IS_OTHER_7_7ADD60BB45BEF89D3AE9F8AE2DB25268;       // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FLogoVideoRegionStruct) == 0x000001, "Wrong alignment on FLogoVideoRegionStruct");
-static_assert(sizeof(FLogoVideoRegionStruct) == 0x000004, "Wrong size on FLogoVideoRegionStruct");
-static_assert(offsetof(FLogoVideoRegionStruct, IS_CN_1_0BEDD50644D69C41295D1AB1D2AC6207) == 0x000000, "Member 'FLogoVideoRegionStruct::IS_CN_1_0BEDD50644D69C41295D1AB1D2AC6207' has a wrong offset!");
-static_assert(offsetof(FLogoVideoRegionStruct, IS_HK_MO_TW_5_F5F20D7C4EA0DD11D716D8A8FD722DE4) == 0x000001, "Member 'FLogoVideoRegionStruct::IS_HK_MO_TW_5_F5F20D7C4EA0DD11D716D8A8FD722DE4' has a wrong offset!");
-static_assert(offsetof(FLogoVideoRegionStruct, IS_JP_KR_6_A67445BB4C1F12856F6C7DB93008467C) == 0x000002, "Member 'FLogoVideoRegionStruct::IS_JP_KR_6_A67445BB4C1F12856F6C7DB93008467C' has a wrong offset!");
-static_assert(offsetof(FLogoVideoRegionStruct, IS_OTHER_7_7ADD60BB45BEF89D3AE9F8AE2DB25268) == 0x000003, "Member 'FLogoVideoRegionStruct::IS_OTHER_7_7ADD60BB45BEF89D3AE9F8AE2DB25268' has a wrong offset!");
+DUMPER7_ASSERTS_FLogoVideoRegionStruct;
 
 }
 

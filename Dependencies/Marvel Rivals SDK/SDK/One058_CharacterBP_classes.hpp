@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1058_CharacterBP.1058_CharacterBP_C
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x22C0 - 0x22C0)
 class AOne058_CharacterBP_C final : public APyGambitCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1058_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1058_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1058_CharacterBP_C")
 	}
 	static class AOne058_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne058_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne058_CharacterBP_C) == 0x000010, "Wrong alignment on AOne058_CharacterBP_C");
-static_assert(sizeof(AOne058_CharacterBP_C) == 0x0021B0, "Wrong size on AOne058_CharacterBP_C");
+DUMPER7_ASSERTS_AOne058_CharacterBP_C;
 
 }
 

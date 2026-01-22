@@ -24,10 +24,7 @@ public:
 	struct FGameplayTag                           tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_PlayerUnit_OnCueTagUpdate) == 0x000004, "Wrong alignment on PyWidget_Replay_PlayerUnit_OnCueTagUpdate");
-static_assert(sizeof(PyWidget_Replay_PlayerUnit_OnCueTagUpdate) == 0x000010, "Wrong size on PyWidget_Replay_PlayerUnit_OnCueTagUpdate");
-static_assert(offsetof(PyWidget_Replay_PlayerUnit_OnCueTagUpdate, tag) == 0x000000, "Member 'PyWidget_Replay_PlayerUnit_OnCueTagUpdate::tag' has a wrong offset!");
-static_assert(offsetof(PyWidget_Replay_PlayerUnit_OnCueTagUpdate, exist) == 0x00000C, "Member 'PyWidget_Replay_PlayerUnit_OnCueTagUpdate::exist' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_PlayerUnit_OnCueTagUpdate;
 
 }
 

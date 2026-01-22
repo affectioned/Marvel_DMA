@@ -31,9 +31,7 @@ struct FAgentGameplayBehaviors final
 public:
 	TArray<class UGameplayBehavior*>              Behaviors;                                         // 0x0000(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAgentGameplayBehaviors) == 0x000008, "Wrong alignment on FAgentGameplayBehaviors");
-static_assert(sizeof(FAgentGameplayBehaviors) == 0x000010, "Wrong size on FAgentGameplayBehaviors");
-static_assert(offsetof(FAgentGameplayBehaviors, Behaviors) == 0x000000, "Member 'FAgentGameplayBehaviors::Behaviors' has a wrong offset!");
+DUMPER7_ASSERTS_FAgentGameplayBehaviors;
 
 // ScriptStruct GameplayBehaviorsModule.MontagePlaybackData
 // 0x0058 (0x0058 - 0x0000)
@@ -45,11 +43,7 @@ public:
 	class UAbilitySystemComponent*                AbilityComponent;                                  // 0x0010(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_18[0x40];                                      // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMontagePlaybackData) == 0x000008, "Wrong alignment on FMontagePlaybackData");
-static_assert(sizeof(FMontagePlaybackData) == 0x000058, "Wrong size on FMontagePlaybackData");
-static_assert(offsetof(FMontagePlaybackData, Avatar) == 0x000000, "Member 'FMontagePlaybackData::Avatar' has a wrong offset!");
-static_assert(offsetof(FMontagePlaybackData, AnimMontage) == 0x000008, "Member 'FMontagePlaybackData::AnimMontage' has a wrong offset!");
-static_assert(offsetof(FMontagePlaybackData, AbilityComponent) == 0x000010, "Member 'FMontagePlaybackData::AbilityComponent' has a wrong offset!");
+DUMPER7_ASSERTS_FMontagePlaybackData;
 
 }
 

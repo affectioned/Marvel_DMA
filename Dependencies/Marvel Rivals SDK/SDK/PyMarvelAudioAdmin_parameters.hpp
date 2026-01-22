@@ -23,9 +23,7 @@ struct PyMarvelAudioAdmin_OnGetSoundOutputDeviceName final
 public:
 	class FString                                 DeviceName;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelAudioAdmin_OnGetSoundOutputDeviceName) == 0x000008, "Wrong alignment on PyMarvelAudioAdmin_OnGetSoundOutputDeviceName");
-static_assert(sizeof(PyMarvelAudioAdmin_OnGetSoundOutputDeviceName) == 0x000010, "Wrong size on PyMarvelAudioAdmin_OnGetSoundOutputDeviceName");
-static_assert(offsetof(PyMarvelAudioAdmin_OnGetSoundOutputDeviceName, DeviceName) == 0x000000, "Member 'PyMarvelAudioAdmin_OnGetSoundOutputDeviceName::DeviceName' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelAudioAdmin_OnGetSoundOutputDeviceName;
 
 // PythonFunction PyMarvelAudioAdmin.PyMarvelAudioAdmin.OnGetAllSoundOutputDevices
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PyMarvelAudioAdmin_OnGetAllSoundOutputDevices final
 public:
 	TArray<struct FAudioOutputDeviceInfo>         DeviceInfos;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelAudioAdmin_OnGetAllSoundOutputDevices) == 0x000008, "Wrong alignment on PyMarvelAudioAdmin_OnGetAllSoundOutputDevices");
-static_assert(sizeof(PyMarvelAudioAdmin_OnGetAllSoundOutputDevices) == 0x000010, "Wrong size on PyMarvelAudioAdmin_OnGetAllSoundOutputDevices");
-static_assert(offsetof(PyMarvelAudioAdmin_OnGetAllSoundOutputDevices, DeviceInfos) == 0x000000, "Member 'PyMarvelAudioAdmin_OnGetAllSoundOutputDevices::DeviceInfos' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelAudioAdmin_OnGetAllSoundOutputDevices;
 
 // PythonFunction PyMarvelAudioAdmin.PyMarvelAudioAdmin.OnSwapSoundOutputDeviceComplete
 // 0x0028 (0x0028 - 0x0000)
@@ -45,9 +41,7 @@ struct PyMarvelAudioAdmin_OnSwapSoundOutputDeviceComplete final
 public:
 	struct FSwapAudioOutputResult                 SwapResult;                                        // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelAudioAdmin_OnSwapSoundOutputDeviceComplete) == 0x000008, "Wrong alignment on PyMarvelAudioAdmin_OnSwapSoundOutputDeviceComplete");
-static_assert(sizeof(PyMarvelAudioAdmin_OnSwapSoundOutputDeviceComplete) == 0x000028, "Wrong size on PyMarvelAudioAdmin_OnSwapSoundOutputDeviceComplete");
-static_assert(offsetof(PyMarvelAudioAdmin_OnSwapSoundOutputDeviceComplete, SwapResult) == 0x000000, "Member 'PyMarvelAudioAdmin_OnSwapSoundOutputDeviceComplete::SwapResult' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelAudioAdmin_OnSwapSoundOutputDeviceComplete;
 
 }
 

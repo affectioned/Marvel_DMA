@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyVenomCharacter.PyVenomChildActor
-// 0x0010 (0x2870 - 0x2860)
+// 0x0010 (0x2BE0 - 0x2BD0)
 class APyVenomChildActor final : public AVenomChildActor
 {
 public:
-	struct FGameplayTag                           SymbioteTag;                                       // 0x2860(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           SymbioteTag;                                       // 0x2BD0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceivePoolBeginPlay();
@@ -31,23 +31,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyVenomChildActor">();
+		STATIC_CLASS_IMPL("PyVenomChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyVenomChildActor")
 	}
 	static class APyVenomChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyVenomChildActor>();
 	}
 };
-static_assert(alignof(APyVenomChildActor) == 0x000010, "Wrong alignment on APyVenomChildActor");
-static_assert(sizeof(APyVenomChildActor) == 0x002870, "Wrong size on APyVenomChildActor");
-static_assert(offsetof(APyVenomChildActor, SymbioteTag) == 0x002860, "Member 'APyVenomChildActor::SymbioteTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyVenomChildActor;
 
 // PythonClass PyVenomCharacter.PyVenomCharacter
-// 0x0010 (0x2230 - 0x2220)
+// 0x0010 (0x2340 - 0x2330)
 class APyVenomCharacter : public AVenomCharacter
 {
 public:
-	struct FGameplayTag                           ClearVelocityTag;                                  // 0x2220(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ClearVelocityTag;                                  // 0x2330(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -58,16 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyVenomCharacter">();
+		STATIC_CLASS_IMPL("PyVenomCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyVenomCharacter")
 	}
 	static class APyVenomCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyVenomCharacter>();
 	}
 };
-static_assert(alignof(APyVenomCharacter) == 0x000010, "Wrong alignment on APyVenomCharacter");
-static_assert(sizeof(APyVenomCharacter) == 0x002230, "Wrong size on APyVenomCharacter");
-static_assert(offsetof(APyVenomCharacter, ClearVelocityTag) == 0x002220, "Member 'APyVenomCharacter::ClearVelocityTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyVenomCharacter;
 
 }
 

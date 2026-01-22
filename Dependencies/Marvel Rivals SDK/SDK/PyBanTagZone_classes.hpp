@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBanTagZone">();
+		STATIC_CLASS_IMPL("PyBanTagZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBanTagZone")
 	}
 	static class APyBanTagZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBanTagZone>();
 	}
 };
-static_assert(alignof(APyBanTagZone) == 0x000010, "Wrong alignment on APyBanTagZone");
-static_assert(sizeof(APyBanTagZone) == 0x0006F0, "Wrong size on APyBanTagZone");
-static_assert(offsetof(APyBanTagZone, BanTagList) == 0x0006E0, "Member 'APyBanTagZone::BanTagList' has a wrong offset!");
+DUMPER7_ASSERTS_APyBanTagZone;
 
 }
 

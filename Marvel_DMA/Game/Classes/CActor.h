@@ -27,7 +27,7 @@ public:
 		if (IsInvalid())
 			return;
 
-		uintptr_t LocationPtr = m_RootComponentAddress + Offsets::SceneComponent::Location;
+		uintptr_t LocationPtr = m_RootComponentAddress + offsetof(SDK::USceneComponent, RelativeLocation);
 		VMMDLL_Scatter_PrepareEx(vmsh, LocationPtr, sizeof(SDK::FVector), reinterpret_cast<BYTE*>(&m_Location), reinterpret_cast<DWORD*>(&m_BytesRead));
 	}
 	void Finalize()
@@ -40,7 +40,7 @@ public:
 		if (IsInvalid())
 			return;
 
-		uintptr_t LocationPtr = m_RootComponentAddress + Offsets::SceneComponent::Location;
+		uintptr_t LocationPtr = m_RootComponentAddress + offsetof(SDK::USceneComponent, RelativeLocation);
 		VMMDLL_Scatter_PrepareEx(vmsh, LocationPtr, sizeof(SDK::FVector), reinterpret_cast<BYTE*>(&m_Location), reinterpret_cast<DWORD*>(&m_BytesRead));
 	}
 	void QuickFinalize()

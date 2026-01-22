@@ -25,11 +25,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10460001_OnApplyTreat) == 0x000008, "Wrong alignment on PyBuffAbility_120_10460001_OnApplyTreat");
-static_assert(sizeof(PyBuffAbility_120_10460001_OnApplyTreat) == 0x000028, "Wrong size on PyBuffAbility_120_10460001_OnApplyTreat");
-static_assert(offsetof(PyBuffAbility_120_10460001_OnApplyTreat, InSourceAvatar) == 0x000000, "Member 'PyBuffAbility_120_10460001_OnApplyTreat::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10460001_OnApplyTreat, InTargetAvatar) == 0x000008, "Member 'PyBuffAbility_120_10460001_OnApplyTreat::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10460001_OnApplyTreat, ModifierParameterHandle) == 0x000010, "Member 'PyBuffAbility_120_10460001_OnApplyTreat::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10460001_OnApplyTreat;
 
 // PythonFunction PyBuffAbility_120_104641.PyBuffAbility_120_10460001.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -38,9 +34,7 @@ struct PyBuffAbility_120_10460001_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10460001_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_120_10460001_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_120_10460001_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_120_10460001_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_120_10460001_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_120_10460001_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10460001_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_120_104641.PyBuffAbility_120_10464105.OnApplyTreat
 // 0x0028 (0x0028 - 0x0000)
@@ -51,11 +45,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10464105_OnApplyTreat) == 0x000008, "Wrong alignment on PyBuffAbility_120_10464105_OnApplyTreat");
-static_assert(sizeof(PyBuffAbility_120_10464105_OnApplyTreat) == 0x000028, "Wrong size on PyBuffAbility_120_10464105_OnApplyTreat");
-static_assert(offsetof(PyBuffAbility_120_10464105_OnApplyTreat, InSourceAvatar) == 0x000000, "Member 'PyBuffAbility_120_10464105_OnApplyTreat::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10464105_OnApplyTreat, InTargetAvatar) == 0x000008, "Member 'PyBuffAbility_120_10464105_OnApplyTreat::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10464105_OnApplyTreat, ModifierParameterHandle) == 0x000010, "Member 'PyBuffAbility_120_10464105_OnApplyTreat::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10464105_OnApplyTreat;
 
 // PythonFunction PyBuffAbility_120_104641.PyBuffAbility_120_10464105.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -64,9 +54,7 @@ struct PyBuffAbility_120_10464105_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10464105_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_120_10464105_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_120_10464105_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_120_10464105_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_120_10464105_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_120_10464105_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10464105_K2_OnEndAbility;
 
 }
 

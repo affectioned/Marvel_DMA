@@ -35,15 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosNiagaraFunctionLibrary">();
+		STATIC_CLASS_IMPL("ChaosNiagaraFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosNiagaraFunctionLibrary")
 	}
 	static class UChaosNiagaraFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosNiagaraFunctionLibrary>();
 	}
 };
-static_assert(alignof(UChaosNiagaraFunctionLibrary) == 0x000008, "Wrong alignment on UChaosNiagaraFunctionLibrary");
-static_assert(sizeof(UChaosNiagaraFunctionLibrary) == 0x000030, "Wrong size on UChaosNiagaraFunctionLibrary");
+DUMPER7_ASSERTS_UChaosNiagaraFunctionLibrary;
 
 // Class ChaosNiagara.NiagaraDataInterfaceChaosEffect
 // 0x0150 (0x0190 - 0x0040)
@@ -65,19 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceChaosEffect">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceChaosEffect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceChaosEffect")
 	}
 	static class UNiagaraDataInterfaceChaosEffect* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceChaosEffect>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceChaosEffect) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceChaosEffect");
-static_assert(sizeof(UNiagaraDataInterfaceChaosEffect) == 0x000190, "Wrong size on UNiagaraDataInterfaceChaosEffect");
-static_assert(offsetof(UNiagaraDataInterfaceChaosEffect, bEnableRandomSampleEmitter) == 0x000040, "Member 'UNiagaraDataInterfaceChaosEffect::bEnableRandomSampleEmitter' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosEffect, RandomEmitterNum) == 0x000044, "Member 'UNiagaraDataInterfaceChaosEffect::RandomEmitterNum' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosEffect, bEnableUpdateBoundWithEvent) == 0x000048, "Member 'UNiagaraDataInterfaceChaosEffect::bEnableUpdateBoundWithEvent' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosEffect, bIsSpawnRateEffect) == 0x000049, "Member 'UNiagaraDataInterfaceChaosEffect::bIsSpawnRateEffect' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceChaosEffect;
 
 // Class ChaosNiagara.NiagaraDataInterfaceChaosDestruction
 // 0x0310 (0x0350 - 0x0040)
@@ -150,63 +152,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceChaosDestruction">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceChaosDestruction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceChaosDestruction")
 	}
 	static class UNiagaraDataInterfaceChaosDestruction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceChaosDestruction>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceChaosDestruction) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceChaosDestruction");
-static_assert(sizeof(UNiagaraDataInterfaceChaosDestruction) == 0x000350, "Wrong size on UNiagaraDataInterfaceChaosDestruction");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, ChaosSolverActorSet) == 0x000040, "Member 'UNiagaraDataInterfaceChaosDestruction::ChaosSolverActorSet' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, DataSourceType) == 0x000090, "Member 'UNiagaraDataInterfaceChaosDestruction::DataSourceType' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, DataProcessFrequency) == 0x000094, "Member 'UNiagaraDataInterfaceChaosDestruction::DataProcessFrequency' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, MaxNumberOfDataEntriesToSpawn) == 0x000098, "Member 'UNiagaraDataInterfaceChaosDestruction::MaxNumberOfDataEntriesToSpawn' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, DoSpawn) == 0x00009C, "Member 'UNiagaraDataInterfaceChaosDestruction::DoSpawn' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, SpawnMultiplierMinMax) == 0x0000A0, "Member 'UNiagaraDataInterfaceChaosDestruction::SpawnMultiplierMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, SpawnChance) == 0x0000B0, "Member 'UNiagaraDataInterfaceChaosDestruction::SpawnChance' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, ImpulseToSpawnMinMax) == 0x0000B8, "Member 'UNiagaraDataInterfaceChaosDestruction::ImpulseToSpawnMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, SpeedToSpawnMinMax) == 0x0000C8, "Member 'UNiagaraDataInterfaceChaosDestruction::SpeedToSpawnMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, MassToSpawnMinMax) == 0x0000D8, "Member 'UNiagaraDataInterfaceChaosDestruction::MassToSpawnMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, ExtentMinToSpawnMinMax) == 0x0000E8, "Member 'UNiagaraDataInterfaceChaosDestruction::ExtentMinToSpawnMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, ExtentMaxToSpawnMinMax) == 0x0000F8, "Member 'UNiagaraDataInterfaceChaosDestruction::ExtentMaxToSpawnMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, VolumeToSpawnMinMax) == 0x000108, "Member 'UNiagaraDataInterfaceChaosDestruction::VolumeToSpawnMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, SolverTimeToSpawnMinMax) == 0x000118, "Member 'UNiagaraDataInterfaceChaosDestruction::SolverTimeToSpawnMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, SurfaceTypeToSpawn) == 0x000128, "Member 'UNiagaraDataInterfaceChaosDestruction::SurfaceTypeToSpawn' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, LocationFilteringMode) == 0x00012C, "Member 'UNiagaraDataInterfaceChaosDestruction::LocationFilteringMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, LocationXToSpawn) == 0x00012D, "Member 'UNiagaraDataInterfaceChaosDestruction::LocationXToSpawn' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, LocationXToSpawnMinMax) == 0x000130, "Member 'UNiagaraDataInterfaceChaosDestruction::LocationXToSpawnMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, LocationYToSpawn) == 0x000140, "Member 'UNiagaraDataInterfaceChaosDestruction::LocationYToSpawn' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, LocationYToSpawnMinMax) == 0x000148, "Member 'UNiagaraDataInterfaceChaosDestruction::LocationYToSpawnMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, LocationZToSpawn) == 0x000158, "Member 'UNiagaraDataInterfaceChaosDestruction::LocationZToSpawn' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, LocationZToSpawnMinMax) == 0x000160, "Member 'UNiagaraDataInterfaceChaosDestruction::LocationZToSpawnMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, TrailMinSpeedToSpawn) == 0x000170, "Member 'UNiagaraDataInterfaceChaosDestruction::TrailMinSpeedToSpawn' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, DataSortingType) == 0x000174, "Member 'UNiagaraDataInterfaceChaosDestruction::DataSortingType' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, bGetExternalCollisionData) == 0x000175, "Member 'UNiagaraDataInterfaceChaosDestruction::bGetExternalCollisionData' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, DoSpatialHash) == 0x000176, "Member 'UNiagaraDataInterfaceChaosDestruction::DoSpatialHash' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, SpatialHashVolumeMin) == 0x000178, "Member 'UNiagaraDataInterfaceChaosDestruction::SpatialHashVolumeMin' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, SpatialHashVolumeMax) == 0x000190, "Member 'UNiagaraDataInterfaceChaosDestruction::SpatialHashVolumeMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, SpatialHashVolumeCellSize) == 0x0001A8, "Member 'UNiagaraDataInterfaceChaosDestruction::SpatialHashVolumeCellSize' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, MaxDataPerCell) == 0x0001C0, "Member 'UNiagaraDataInterfaceChaosDestruction::MaxDataPerCell' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, bApplyMaterialsFilter) == 0x0001C4, "Member 'UNiagaraDataInterfaceChaosDestruction::bApplyMaterialsFilter' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, ChaosBreakingMaterialSet) == 0x0001C8, "Member 'UNiagaraDataInterfaceChaosDestruction::ChaosBreakingMaterialSet' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, bGetExternalBreakingData) == 0x000218, "Member 'UNiagaraDataInterfaceChaosDestruction::bGetExternalBreakingData' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, bGetExternalTrailingData) == 0x000219, "Member 'UNiagaraDataInterfaceChaosDestruction::bGetExternalTrailingData' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, RandomPositionMagnitudeMinMax) == 0x000220, "Member 'UNiagaraDataInterfaceChaosDestruction::RandomPositionMagnitudeMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, InheritedVelocityMultiplier) == 0x000230, "Member 'UNiagaraDataInterfaceChaosDestruction::InheritedVelocityMultiplier' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, RandomVelocityGenerationType) == 0x000234, "Member 'UNiagaraDataInterfaceChaosDestruction::RandomVelocityGenerationType' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, RandomVelocityMagnitudeMinMax) == 0x000238, "Member 'UNiagaraDataInterfaceChaosDestruction::RandomVelocityMagnitudeMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, SpreadAngleMax) == 0x000248, "Member 'UNiagaraDataInterfaceChaosDestruction::SpreadAngleMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, VelocityOffsetMin) == 0x000250, "Member 'UNiagaraDataInterfaceChaosDestruction::VelocityOffsetMin' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, VelocityOffsetMax) == 0x000268, "Member 'UNiagaraDataInterfaceChaosDestruction::VelocityOffsetMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, FinalVelocityMagnitudeMinMax) == 0x000280, "Member 'UNiagaraDataInterfaceChaosDestruction::FinalVelocityMagnitudeMinMax' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, MaxLatency) == 0x000290, "Member 'UNiagaraDataInterfaceChaosDestruction::MaxLatency' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, DebugType) == 0x000294, "Member 'UNiagaraDataInterfaceChaosDestruction::DebugType' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, LastSpawnedPointID) == 0x000298, "Member 'UNiagaraDataInterfaceChaosDestruction::LastSpawnedPointID' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, LastSpawnTime) == 0x00029C, "Member 'UNiagaraDataInterfaceChaosDestruction::LastSpawnTime' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, SolverTime) == 0x0002B0, "Member 'UNiagaraDataInterfaceChaosDestruction::SolverTime' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceChaosDestruction, TimeStampOfLastProcessedData) == 0x0002B4, "Member 'UNiagaraDataInterfaceChaosDestruction::TimeStampOfLastProcessedData' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceChaosDestruction;
 
 // Class ChaosNiagara.NiagaraDataInterfaceGeometryCollection
 // 0x0008 (0x0048 - 0x0040)
@@ -218,16 +175,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceGeometryCollection">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceGeometryCollection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceGeometryCollection")
 	}
 	static class UNiagaraDataInterfaceGeometryCollection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceGeometryCollection>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceGeometryCollection) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceGeometryCollection");
-static_assert(sizeof(UNiagaraDataInterfaceGeometryCollection) == 0x000048, "Wrong size on UNiagaraDataInterfaceGeometryCollection");
-static_assert(offsetof(UNiagaraDataInterfaceGeometryCollection, GeometryCollectionActor) == 0x000040, "Member 'UNiagaraDataInterfaceGeometryCollection::GeometryCollectionActor' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceGeometryCollection;
 
 // Class ChaosNiagara.NiagaraDataInterfacePhysicsField
 // 0x0040 (0x0080 - 0x0040)
@@ -239,15 +198,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfacePhysicsField">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfacePhysicsField")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfacePhysicsField")
 	}
 	static class UNiagaraDataInterfacePhysicsField* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfacePhysicsField>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfacePhysicsField) == 0x000008, "Wrong alignment on UNiagaraDataInterfacePhysicsField");
-static_assert(sizeof(UNiagaraDataInterfacePhysicsField) == 0x000080, "Wrong size on UNiagaraDataInterfacePhysicsField");
+DUMPER7_ASSERTS_UNiagaraDataInterfacePhysicsField;
 
 }
 

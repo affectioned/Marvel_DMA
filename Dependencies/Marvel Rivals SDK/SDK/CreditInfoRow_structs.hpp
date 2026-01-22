@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_Secondary_CreditLevelChange_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "PyWidget_Secondary_CreditLevelChange_structs.hpp"
 
 
 namespace SDK
@@ -29,12 +29,7 @@ public:
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Icon_10_2484E05642D97518E905C3991DF31076;          // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FCreditInfoRow) == 0x000008, "Wrong alignment on FCreditInfoRow");
-static_assert(sizeof(FCreditInfoRow) == 0x000040, "Wrong size on FCreditInfoRow");
-static_assert(offsetof(FCreditInfoRow, Level_14_5CE48D194F0DE95C34B73F95F0F58B67) == 0x000000, "Member 'FCreditInfoRow::Level_14_5CE48D194F0DE95C34B73F95F0F58B67' has a wrong offset!");
-static_assert(offsetof(FCreditInfoRow, Name_11_CAF5FE2D457075A0557C6F944F097E34) == 0x000008, "Member 'FCreditInfoRow::Name_11_CAF5FE2D457075A0557C6F944F097E34' has a wrong offset!");
-static_assert(offsetof(FCreditInfoRow, Name_Color_19_A1A0CD484F317C2DD74F5C88AE10F366) == 0x000020, "Member 'FCreditInfoRow::Name_Color_19_A1A0CD484F317C2DD74F5C88AE10F366' has a wrong offset!");
-static_assert(offsetof(FCreditInfoRow, Icon_10_2484E05642D97518E905C3991DF31076) == 0x000038, "Member 'FCreditInfoRow::Icon_10_2484E05642D97518E905C3991DF31076' has a wrong offset!");
+DUMPER7_ASSERTS_FCreditInfoRow;
 
 }
 

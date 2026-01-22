@@ -29,18 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WC_KillcamBP_C">();
+		BP_STATIC_CLASS_IMPL("WC_KillcamBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_KillcamBP_C")
 	}
 	static class UWC_KillcamBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_KillcamBP_C>();
 	}
 };
-static_assert(alignof(UWC_KillcamBP_C) == 0x000010, "Wrong alignment on UWC_KillcamBP_C");
-static_assert(sizeof(UWC_KillcamBP_C) == 0x000B00, "Wrong size on UWC_KillcamBP_C");
-static_assert(offsetof(UWC_KillcamBP_C, Indicator) == 0x000AE0, "Member 'UWC_KillcamBP_C::Indicator' has a wrong offset!");
-static_assert(offsetof(UWC_KillcamBP_C, InKillcamWorld) == 0x000AE8, "Member 'UWC_KillcamBP_C::InKillcamWorld' has a wrong offset!");
-static_assert(offsetof(UWC_KillcamBP_C, Height) == 0x000AF0, "Member 'UWC_KillcamBP_C::Height' has a wrong offset!");
+DUMPER7_ASSERTS_UWC_KillcamBP_C;
 
 }
 

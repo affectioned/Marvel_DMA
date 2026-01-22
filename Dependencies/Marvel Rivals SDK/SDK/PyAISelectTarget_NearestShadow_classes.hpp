@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_NearestShadow">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_NearestShadow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_NearestShadow")
 	}
 	static class UPyAISelectTarget_NearestShadow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_NearestShadow>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_NearestShadow) == 0x000008, "Wrong alignment on UPyAISelectTarget_NearestShadow");
-static_assert(sizeof(UPyAISelectTarget_NearestShadow) == 0x000078, "Wrong size on UPyAISelectTarget_NearestShadow");
-static_assert(offsetof(UPyAISelectTarget_NearestShadow, SummonedID) == 0x000070, "Member 'UPyAISelectTarget_NearestShadow::SummonedID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_NearestShadow;
 
 }
 

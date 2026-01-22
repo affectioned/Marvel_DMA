@@ -10,42 +10,44 @@
 
 #include "Basic.hpp"
 
-#include "PyMarvelUserWidget_classes.hpp"
 #include "PyWidget_CommonItem_V2_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_CommonItem_Icon.PyWidget_CommonItem_IconData
-// 0x0000 (0x0048 - 0x0048)
+// 0x0008 (0x0078 - 0x0070)
 class UPyWidget_CommonItem_IconData final : public UPyWidget_CommonItem_ItemData
 {
 public:
-	bool                                          DisableDynamic;                                    // 0x0046(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DisableDynamic;                                    // 0x0070(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonItem_IconData">();
+		STATIC_CLASS_IMPL("PyWidget_CommonItem_IconData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonItem_IconData")
 	}
 	static class UPyWidget_CommonItem_IconData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonItem_IconData>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonItem_IconData) == 0x000008, "Wrong alignment on UPyWidget_CommonItem_IconData");
-static_assert(sizeof(UPyWidget_CommonItem_IconData) == 0x000048, "Wrong size on UPyWidget_CommonItem_IconData");
-static_assert(offsetof(UPyWidget_CommonItem_IconData, DisableDynamic) == 0x000046, "Member 'UPyWidget_CommonItem_IconData::DisableDynamic' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonItem_IconData;
 
 // PythonClass PyWidget_CommonItem_Icon.PyWidget_CommonItem_Icon
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_CommonItem_Icon final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            SpraySequencesAnimCurve;                           // 0x05C0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidget_CommonItem_IconData*          ItemObject;                                        // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            SpraySequencesAnimCurve;                           // 0x05C8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_CommonItem_IconData*          ItemObject;                                        // 0x05D0(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnCascadingVisibleChanged(bool bNewVisible);
@@ -54,17 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonItem_Icon">();
+		STATIC_CLASS_IMPL("PyWidget_CommonItem_Icon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonItem_Icon")
 	}
 	static class UPyWidget_CommonItem_Icon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonItem_Icon>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonItem_Icon) == 0x000008, "Wrong alignment on UPyWidget_CommonItem_Icon");
-static_assert(sizeof(UPyWidget_CommonItem_Icon) == 0x0005D0, "Wrong size on UPyWidget_CommonItem_Icon");
-static_assert(offsetof(UPyWidget_CommonItem_Icon, SpraySequencesAnimCurve) == 0x0005C0, "Member 'UPyWidget_CommonItem_Icon::SpraySequencesAnimCurve' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItem_Icon, ItemObject) == 0x0005C8, "Member 'UPyWidget_CommonItem_Icon::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonItem_Icon;
 
 }
 

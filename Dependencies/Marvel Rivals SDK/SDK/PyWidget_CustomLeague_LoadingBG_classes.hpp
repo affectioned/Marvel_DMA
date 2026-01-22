@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CustomLeague_LoadingBG.PyWidget_CustomLeague_LoadingBG
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_CustomLeague_LoadingBG final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomLeague_LoadingBG">();
+		STATIC_CLASS_IMPL("PyWidget_CustomLeague_LoadingBG")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomLeague_LoadingBG")
 	}
 	static class UPyWidget_CustomLeague_LoadingBG* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomLeague_LoadingBG>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomLeague_LoadingBG) == 0x000008, "Wrong alignment on UPyWidget_CustomLeague_LoadingBG");
-static_assert(sizeof(UPyWidget_CustomLeague_LoadingBG) == 0x0005C0, "Wrong size on UPyWidget_CustomLeague_LoadingBG");
+DUMPER7_ASSERTS_UPyWidget_CustomLeague_LoadingBG;
 
 }
 

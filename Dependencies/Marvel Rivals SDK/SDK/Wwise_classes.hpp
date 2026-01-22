@@ -18,33 +18,32 @@ namespace SDK
 {
 
 // Class Wwise.WwiseAudioLinkComponent
-// 0x0030 (0x0680 - 0x0650)
+// 0x0030 (0x0690 - 0x0660)
 class UWwiseAudioLinkComponent final : public UAkComponent
 {
 public:
-	class UWwiseAudioLinkSettings*                Settings;                                          // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USoundBase*                             Sound;                                             // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAutoPlay;                                         // 0x0660(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_661[0x7];                                      // 0x0661(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAudioComponent*                        AudioComponent;                                    // 0x0668(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_670[0x10];                                     // 0x0670(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UWwiseAudioLinkSettings*                Settings;                                          // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USoundBase*                             Sound;                                             // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAutoPlay;                                         // 0x0670(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_671[0x7];                                      // 0x0671(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAudioComponent*                        AudioComponent;                                    // 0x0678(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_680[0x10];                                     // 0x0680(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WwiseAudioLinkComponent">();
+		STATIC_CLASS_IMPL("WwiseAudioLinkComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WwiseAudioLinkComponent")
 	}
 	static class UWwiseAudioLinkComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWwiseAudioLinkComponent>();
 	}
 };
-static_assert(alignof(UWwiseAudioLinkComponent) == 0x000010, "Wrong alignment on UWwiseAudioLinkComponent");
-static_assert(sizeof(UWwiseAudioLinkComponent) == 0x000680, "Wrong size on UWwiseAudioLinkComponent");
-static_assert(offsetof(UWwiseAudioLinkComponent, Settings) == 0x000650, "Member 'UWwiseAudioLinkComponent::Settings' has a wrong offset!");
-static_assert(offsetof(UWwiseAudioLinkComponent, Sound) == 0x000658, "Member 'UWwiseAudioLinkComponent::Sound' has a wrong offset!");
-static_assert(offsetof(UWwiseAudioLinkComponent, bAutoPlay) == 0x000660, "Member 'UWwiseAudioLinkComponent::bAutoPlay' has a wrong offset!");
-static_assert(offsetof(UWwiseAudioLinkComponent, AudioComponent) == 0x000668, "Member 'UWwiseAudioLinkComponent::AudioComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UWwiseAudioLinkComponent;
 
 // Class Wwise.WwiseAudioLinkSettings
 // 0x0058 (0x0098 - 0x0040)
@@ -62,20 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WwiseAudioLinkSettings">();
+		STATIC_CLASS_IMPL("WwiseAudioLinkSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WwiseAudioLinkSettings")
 	}
 	static class UWwiseAudioLinkSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWwiseAudioLinkSettings>();
 	}
 };
-static_assert(alignof(UWwiseAudioLinkSettings) == 0x000008, "Wrong alignment on UWwiseAudioLinkSettings");
-static_assert(sizeof(UWwiseAudioLinkSettings) == 0x000098, "Wrong size on UWwiseAudioLinkSettings");
-static_assert(offsetof(UWwiseAudioLinkSettings, StartEvent) == 0x000040, "Member 'UWwiseAudioLinkSettings::StartEvent' has a wrong offset!");
-static_assert(offsetof(UWwiseAudioLinkSettings, bShouldClearBufferOnReceipt) == 0x000070, "Member 'UWwiseAudioLinkSettings::bShouldClearBufferOnReceipt' has a wrong offset!");
-static_assert(offsetof(UWwiseAudioLinkSettings, ProducerToConsumerBufferRatio) == 0x000074, "Member 'UWwiseAudioLinkSettings::ProducerToConsumerBufferRatio' has a wrong offset!");
-static_assert(offsetof(UWwiseAudioLinkSettings, InitialSilenceFillRatio) == 0x000078, "Member 'UWwiseAudioLinkSettings::InitialSilenceFillRatio' has a wrong offset!");
-static_assert(offsetof(UWwiseAudioLinkSettings, StartEventResolved) == 0x000090, "Member 'UWwiseAudioLinkSettings::StartEventResolved' has a wrong offset!");
+DUMPER7_ASSERTS_UWwiseAudioLinkSettings;
 
 }
 

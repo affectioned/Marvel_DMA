@@ -23,15 +23,18 @@ class UQA_ChangeHeroHealthAttribute_C final : public UMarvelGameplayEffectTempla
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QA_ChangeHeroHealthAttribute_C">();
+		BP_STATIC_CLASS_IMPL("QA_ChangeHeroHealthAttribute_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QA_ChangeHeroHealthAttribute_C")
 	}
 	static class UQA_ChangeHeroHealthAttribute_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQA_ChangeHeroHealthAttribute_C>();
 	}
 };
-static_assert(alignof(UQA_ChangeHeroHealthAttribute_C) == 0x000008, "Wrong alignment on UQA_ChangeHeroHealthAttribute_C");
-static_assert(sizeof(UQA_ChangeHeroHealthAttribute_C) == 0x001438, "Wrong size on UQA_ChangeHeroHealthAttribute_C");
+DUMPER7_ASSERTS_UQA_ChangeHeroHealthAttribute_C;
 
 }
 

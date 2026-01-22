@@ -23,9 +23,7 @@ struct PyWidget_League_SignUpListPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_SignUpListPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_League_SignUpListPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_League_SignUpListPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_League_SignUpListPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_League_SignUpListPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_League_SignUpListPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_SignUpListPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_League_SignUpListPanel.PyWidget_League_SignUpList_Item.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_League_SignUpList_Item_OnListItemObjectSet final
 public:
 	class UObject*                                ItemObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_SignUpList_Item_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_League_SignUpList_Item_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_League_SignUpList_Item_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_League_SignUpList_Item_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_League_SignUpList_Item_OnListItemObjectSet, ItemObject) == 0x000000, "Member 'PyWidget_League_SignUpList_Item_OnListItemObjectSet::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_SignUpList_Item_OnListItemObjectSet;
 
 // PythonFunction PyWidget_League_SignUpListPanel.PyWidget_League_SignUpList_Item.OnNav_Left
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_SignUpList_Item_OnNav_Left) == 0x000008, "Wrong alignment on PyWidget_League_SignUpList_Item_OnNav_Left");
-static_assert(sizeof(PyWidget_League_SignUpList_Item_OnNav_Left) == 0x000010, "Wrong size on PyWidget_League_SignUpList_Item_OnNav_Left");
-static_assert(offsetof(PyWidget_League_SignUpList_Item_OnNav_Left, Navigation_0) == 0x000000, "Member 'PyWidget_League_SignUpList_Item_OnNav_Left::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_League_SignUpList_Item_OnNav_Left, ReturnValue) == 0x000008, "Member 'PyWidget_League_SignUpList_Item_OnNav_Left::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_SignUpList_Item_OnNav_Left;
 
 // PythonFunction PyWidget_League_SignUpListPanel.PyWidget_League_SignUpList_Item.OnNav_Right
 // 0x0010 (0x0010 - 0x0000)
@@ -61,10 +54,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_SignUpList_Item_OnNav_Right) == 0x000008, "Wrong alignment on PyWidget_League_SignUpList_Item_OnNav_Right");
-static_assert(sizeof(PyWidget_League_SignUpList_Item_OnNav_Right) == 0x000010, "Wrong size on PyWidget_League_SignUpList_Item_OnNav_Right");
-static_assert(offsetof(PyWidget_League_SignUpList_Item_OnNav_Right, Navigation_0) == 0x000000, "Member 'PyWidget_League_SignUpList_Item_OnNav_Right::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_League_SignUpList_Item_OnNav_Right, ReturnValue) == 0x000008, "Member 'PyWidget_League_SignUpList_Item_OnNav_Right::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_SignUpList_Item_OnNav_Right;
 
 }
 

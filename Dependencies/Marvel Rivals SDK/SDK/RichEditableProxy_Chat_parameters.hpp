@@ -21,9 +21,7 @@ struct RichEditableProxy_Chat_BP_OnInitialized final
 public:
 	class UObject*                                OwnerWidget;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RichEditableProxy_Chat_BP_OnInitialized) == 0x000008, "Wrong alignment on RichEditableProxy_Chat_BP_OnInitialized");
-static_assert(sizeof(RichEditableProxy_Chat_BP_OnInitialized) == 0x000008, "Wrong size on RichEditableProxy_Chat_BP_OnInitialized");
-static_assert(offsetof(RichEditableProxy_Chat_BP_OnInitialized, OwnerWidget) == 0x000000, "Member 'RichEditableProxy_Chat_BP_OnInitialized::OwnerWidget' has a wrong offset!");
+DUMPER7_ASSERTS_RichEditableProxy_Chat_BP_OnInitialized;
 
 // PythonFunction RichEditableProxy_Chat.RichEditableProxy_Chat.BP_CheckIsImageTagValidExtra
 // 0x0018 (0x0018 - 0x0000)
@@ -33,10 +31,7 @@ public:
 	class FString                                 InImageTag;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RichEditableProxy_Chat_BP_CheckIsImageTagValidExtra) == 0x000008, "Wrong alignment on RichEditableProxy_Chat_BP_CheckIsImageTagValidExtra");
-static_assert(sizeof(RichEditableProxy_Chat_BP_CheckIsImageTagValidExtra) == 0x000018, "Wrong size on RichEditableProxy_Chat_BP_CheckIsImageTagValidExtra");
-static_assert(offsetof(RichEditableProxy_Chat_BP_CheckIsImageTagValidExtra, InImageTag) == 0x000000, "Member 'RichEditableProxy_Chat_BP_CheckIsImageTagValidExtra::InImageTag' has a wrong offset!");
-static_assert(offsetof(RichEditableProxy_Chat_BP_CheckIsImageTagValidExtra, ReturnValue) == 0x000010, "Member 'RichEditableProxy_Chat_BP_CheckIsImageTagValidExtra::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RichEditableProxy_Chat_BP_CheckIsImageTagValidExtra;
 
 }
 

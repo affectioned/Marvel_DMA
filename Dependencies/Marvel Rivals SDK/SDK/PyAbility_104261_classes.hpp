@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
+#include "UMG_classes.hpp"
 #include "Hero_1042_classes.hpp"
 #include "Marvel_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UMG_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_104261.PyWBP_Ability_DrawLine
-// 0x0018 (0x0580 - 0x0568)
+// 0x0018 (0x0588 - 0x0570)
 class UPyWBP_Ability_DrawLine final : public UMarvelUserWidget
 {
 public:
-	struct FLinearColor                           LineColor;                                         // 0x0568(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LineThickness;                                     // 0x0578(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           LineColor;                                         // 0x0570(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LineThickness;                                     // 0x0580(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnPaint(struct FPaintContext& Context) const;
@@ -33,41 +33,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWBP_Ability_DrawLine">();
+		STATIC_CLASS_IMPL("PyWBP_Ability_DrawLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWBP_Ability_DrawLine")
 	}
 	static class UPyWBP_Ability_DrawLine* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWBP_Ability_DrawLine>();
 	}
 };
-static_assert(alignof(UPyWBP_Ability_DrawLine) == 0x000008, "Wrong alignment on UPyWBP_Ability_DrawLine");
-static_assert(sizeof(UPyWBP_Ability_DrawLine) == 0x000580, "Wrong size on UPyWBP_Ability_DrawLine");
-static_assert(offsetof(UPyWBP_Ability_DrawLine, LineColor) == 0x000568, "Member 'UPyWBP_Ability_DrawLine::LineColor' has a wrong offset!");
-static_assert(offsetof(UPyWBP_Ability_DrawLine, LineThickness) == 0x000578, "Member 'UPyWBP_Ability_DrawLine::LineThickness' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWBP_Ability_DrawLine;
 
 // PythonClass PyAbility_104261.PyConfig_104261
-// 0x0020 (0x3B20 - 0x3B00)
+// 0x0020 (0x4540 - 0x4520)
 class UPyConfig_104261 final : public UConfig_104261
 {
 public:
-	int32                                         SpiderWebSummonedID;                               // 0x3B00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3B04[0x4];                                     // 0x3B04(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 NoEndTimelineAbilityIDs;                           // 0x3B08(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         SpiderWebSummonedID;                               // 0x4520(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4524[0x4];                                     // 0x4524(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 NoEndTimelineAbilityIDs;                           // 0x4528(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104261">();
+		STATIC_CLASS_IMPL("PyConfig_104261")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104261")
 	}
 	static class UPyConfig_104261* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104261>();
 	}
 };
-static_assert(alignof(UPyConfig_104261) == 0x000010, "Wrong alignment on UPyConfig_104261");
-static_assert(sizeof(UPyConfig_104261) == 0x003B20, "Wrong size on UPyConfig_104261");
-static_assert(offsetof(UPyConfig_104261, SpiderWebSummonedID) == 0x003B00, "Member 'UPyConfig_104261::SpiderWebSummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104261, NoEndTimelineAbilityIDs) == 0x003B08, "Member 'UPyConfig_104261::NoEndTimelineAbilityIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104261;
 
 // PythonClass PyAbility_104261.PyExtraWidget_104261_Arrow
 // 0x0050 (0x0408 - 0x03B8)
@@ -90,36 +92,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtraWidget_104261_Arrow">();
+		STATIC_CLASS_IMPL("PyExtraWidget_104261_Arrow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtraWidget_104261_Arrow")
 	}
 	static class UPyExtraWidget_104261_Arrow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtraWidget_104261_Arrow>();
 	}
 };
-static_assert(alignof(UPyExtraWidget_104261_Arrow) == 0x000008, "Wrong alignment on UPyExtraWidget_104261_Arrow");
-static_assert(sizeof(UPyExtraWidget_104261_Arrow) == 0x000408, "Wrong size on UPyExtraWidget_104261_Arrow");
-static_assert(offsetof(UPyExtraWidget_104261_Arrow, LineColor) == 0x0003B8, "Member 'UPyExtraWidget_104261_Arrow::LineColor' has a wrong offset!");
-static_assert(offsetof(UPyExtraWidget_104261_Arrow, LineThickness) == 0x0003C8, "Member 'UPyExtraWidget_104261_Arrow::LineThickness' has a wrong offset!");
-static_assert(offsetof(UPyExtraWidget_104261_Arrow, NormalLinkColor) == 0x0003CC, "Member 'UPyExtraWidget_104261_Arrow::NormalLinkColor' has a wrong offset!");
-static_assert(offsetof(UPyExtraWidget_104261_Arrow, SecondLinkColor) == 0x0003DC, "Member 'UPyExtraWidget_104261_Arrow::SecondLinkColor' has a wrong offset!");
-static_assert(offsetof(UPyExtraWidget_104261_Arrow, ThirdLinkColor) == 0x0003EC, "Member 'UPyExtraWidget_104261_Arrow::ThirdLinkColor' has a wrong offset!");
-static_assert(offsetof(UPyExtraWidget_104261_Arrow, Radius) == 0x0003FC, "Member 'UPyExtraWidget_104261_Arrow::Radius' has a wrong offset!");
-static_assert(offsetof(UPyExtraWidget_104261_Arrow, Angle) == 0x000400, "Member 'UPyExtraWidget_104261_Arrow::Angle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyExtraWidget_104261_Arrow;
 
 // PythonClass PyAbility_104261.PyCue_Ability_Loop_10426101
-// 0x0050 (0x1690 - 0x1640)
+// 0x0050 (0x1740 - 0x16F0)
 class APyCue_Ability_Loop_10426101 final : public ACue_Ability_Loop_10426101
 {
 public:
-	class FString                                 FXEndPointParamName;                               // 0x1640(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         DisappearFXAsset;                                  // 0x1650(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DisappearFXSocket;                                 // 0x1658(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         HitEndFXAsset;                                     // 0x1668(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DashAudioID;                                       // 0x1670(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1674[0x4];                                     // 0x1674(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            MaterialEndCurve;                                  // 0x1678(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 FXDissolveParamName;                               // 0x1680(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 FXEndPointParamName;                               // 0x16F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         DisappearFXAsset;                                  // 0x1700(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DisappearFXSocket;                                 // 0x1708(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         HitEndFXAsset;                                     // 0x1718(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DashAudioID;                                       // 0x1720(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1724[0x4];                                     // 0x1724(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            MaterialEndCurve;                                  // 0x1728(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 FXDissolveParamName;                               // 0x1730(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	class UMarvelGameplayAbility* GetOwnerAbility();
@@ -136,31 +134,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10426101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10426101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10426101")
 	}
 	static class APyCue_Ability_Loop_10426101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10426101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10426101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10426101");
-static_assert(sizeof(APyCue_Ability_Loop_10426101) == 0x001690, "Wrong size on APyCue_Ability_Loop_10426101");
-static_assert(offsetof(APyCue_Ability_Loop_10426101, FXEndPointParamName) == 0x001640, "Member 'APyCue_Ability_Loop_10426101::FXEndPointParamName' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10426101, DisappearFXAsset) == 0x001650, "Member 'APyCue_Ability_Loop_10426101::DisappearFXAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10426101, DisappearFXSocket) == 0x001658, "Member 'APyCue_Ability_Loop_10426101::DisappearFXSocket' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10426101, HitEndFXAsset) == 0x001668, "Member 'APyCue_Ability_Loop_10426101::HitEndFXAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10426101, DashAudioID) == 0x001670, "Member 'APyCue_Ability_Loop_10426101::DashAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10426101, MaterialEndCurve) == 0x001678, "Member 'APyCue_Ability_Loop_10426101::MaterialEndCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10426101, FXDissolveParamName) == 0x001680, "Member 'APyCue_Ability_Loop_10426101::FXDissolveParamName' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10426101;
 
 // PythonClass PyAbility_104261.PyAbility_104261
-// 0x0010 (0x41A0 - 0x4190)
+// 0x0010 (0x4540 - 0x4530)
 class UPyAbility_104261 : public UAbility_104261
 {
 public:
-	bool                                          ShouldAddCue;                                      // 0x4190(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4191[0x7];                                     // 0x4191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 SpawnWeb;                                          // 0x4198(0x0008)(BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShouldAddCue;                                      // 0x4530(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4531[0x7];                                     // 0x4531(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 SpawnWeb;                                          // 0x4538(0x0008)(BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -189,20 +183,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104261">();
+		STATIC_CLASS_IMPL("PyAbility_104261")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104261")
 	}
 	static class UPyAbility_104261* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104261>();
 	}
 };
-static_assert(alignof(UPyAbility_104261) == 0x000010, "Wrong alignment on UPyAbility_104261");
-static_assert(sizeof(UPyAbility_104261) == 0x0041A0, "Wrong size on UPyAbility_104261");
-static_assert(offsetof(UPyAbility_104261, ShouldAddCue) == 0x004190, "Member 'UPyAbility_104261::ShouldAddCue' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104261, SpawnWeb) == 0x004198, "Member 'UPyAbility_104261::SpawnWeb' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104261;
 
 // PythonClass PyAbility_104261.PyExtraWidget_104261
-// 0x0000 (0x0770 - 0x0770)
+// 0x0000 (0x0778 - 0x0778)
 class UPyExtraWidget_104261 final : public UWidget_AbilityStatus_Normal
 {
 public:
@@ -215,18 +210,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtraWidget_104261">();
+		STATIC_CLASS_IMPL("PyExtraWidget_104261")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtraWidget_104261")
 	}
 	static class UPyExtraWidget_104261* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtraWidget_104261>();
 	}
 };
-static_assert(alignof(UPyExtraWidget_104261) == 0x000008, "Wrong alignment on UPyExtraWidget_104261");
-static_assert(sizeof(UPyExtraWidget_104261) == 0x000770, "Wrong size on UPyExtraWidget_104261");
+DUMPER7_ASSERTS_UPyExtraWidget_104261;
 
 // PythonClass PyAbility_104261.PyUIController_104261
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_104261 final : public UUIC_Ability
 {
 public:
@@ -236,15 +234,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104261">();
+		STATIC_CLASS_IMPL("PyUIController_104261")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104261")
 	}
 	static class UPyUIController_104261* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104261>();
 	}
 };
-static_assert(alignof(UPyUIController_104261) == 0x000008, "Wrong alignment on UPyUIController_104261");
-static_assert(sizeof(UPyUIController_104261) == 0x000F10, "Wrong size on UPyUIController_104261");
+DUMPER7_ASSERTS_UPyUIController_104261;
 
 }
 

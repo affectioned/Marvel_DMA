@@ -10,67 +10,73 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "PyAbility_133_classes.hpp"
 #include "Hero_1035_classes.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_103551.PyAbility_103551
-// 0x0000 (0x2BD8 - 0x2BD8)
+// 0x0000 (0x2C28 - 0x2C28)
 class UPyAbility_103551 : public UPyAbility_133
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103551">();
+		STATIC_CLASS_IMPL("PyAbility_103551")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103551")
 	}
 	static class UPyAbility_103551* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103551>();
 	}
 };
-static_assert(alignof(UPyAbility_103551) == 0x000008, "Wrong alignment on UPyAbility_103551");
-static_assert(sizeof(UPyAbility_103551) == 0x002BD8, "Wrong size on UPyAbility_103551");
+DUMPER7_ASSERTS_UPyAbility_103551;
 
 // PythonClass PyAbility_103551.PyProjectile_10355101
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10355101 final : public APyProjectile_133_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10355101">();
+		STATIC_CLASS_IMPL("PyProjectile_10355101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10355101")
 	}
 	static class APyProjectile_10355101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10355101>();
 	}
 };
-static_assert(alignof(APyProjectile_10355101) == 0x000010, "Wrong alignment on APyProjectile_10355101");
-static_assert(sizeof(APyProjectile_10355101) == 0x003B90, "Wrong size on APyProjectile_10355101");
+DUMPER7_ASSERTS_APyProjectile_10355101;
 
 // PythonClass PyAbility_103551.PyCue_AbilityLoop_103551
-// 0x16C0 (0x2B50 - 0x1490)
+// 0x1A10 (0x2EB0 - 0x14A0)
 class APyCue_AbilityLoop_103551 final : public ACue_AbilityLoop_103551
 {
 public:
-	class FString                                 LeftSocket_Tentacle;                               // 0x1490(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 RightSocket_Tentacle;                              // 0x14A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SplitPos_NoHit;                                    // 0x14B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayToSplit_NoHit;                                // 0x14B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         PureHitFxAsset;                                    // 0x14B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayToSplit_LowSwing;                             // 0x14C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14C4[0xC];                                     // 0x14C4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x14D0(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         SplitPos_HighSwing;                                // 0x2B30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SwingingAudioID;                                   // 0x2B34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GenerateAudioID_SimpleSwing;                       // 0x2B38(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          UseTransientFXComponent;                           // 0x2B3C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2B3D[0x3];                                     // 0x2B3D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         BreakAudioID;                                      // 0x2B40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 LeftSocket_Tentacle;                               // 0x14A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 RightSocket_Tentacle;                              // 0x14B0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SplitPos_NoHit;                                    // 0x14C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayToSplit_NoHit;                                // 0x14C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         PureHitFxAsset;                                    // 0x14C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayToSplit_LowSwing;                             // 0x14D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14D4[0xC];                                     // 0x14D4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x14E0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         SplitPos_HighSwing;                                // 0x2E90(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SwingingAudioID;                                   // 0x2E94(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GenerateAudioID_SimpleSwing;                       // 0x2E98(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          UseTransientFXComponent;                           // 0x2E9C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2E9D[0x3];                                     // 0x2E9D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BreakAudioID;                                      // 0x2EA0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ResetDefault();
@@ -87,51 +93,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_103551">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_103551")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_103551")
 	}
 	static class APyCue_AbilityLoop_103551* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_103551>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_103551) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_103551");
-static_assert(sizeof(APyCue_AbilityLoop_103551) == 0x002B50, "Wrong size on APyCue_AbilityLoop_103551");
-static_assert(offsetof(APyCue_AbilityLoop_103551, LeftSocket_Tentacle) == 0x001490, "Member 'APyCue_AbilityLoop_103551::LeftSocket_Tentacle' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103551, RightSocket_Tentacle) == 0x0014A0, "Member 'APyCue_AbilityLoop_103551::RightSocket_Tentacle' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103551, SplitPos_NoHit) == 0x0014B0, "Member 'APyCue_AbilityLoop_103551::SplitPos_NoHit' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103551, DelayToSplit_NoHit) == 0x0014B4, "Member 'APyCue_AbilityLoop_103551::DelayToSplit_NoHit' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103551, PureHitFxAsset) == 0x0014B8, "Member 'APyCue_AbilityLoop_103551::PureHitFxAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103551, DelayToSplit_LowSwing) == 0x0014C0, "Member 'APyCue_AbilityLoop_103551::DelayToSplit_LowSwing' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103551, TraceContext) == 0x0014D0, "Member 'APyCue_AbilityLoop_103551::TraceContext' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103551, SplitPos_HighSwing) == 0x002B30, "Member 'APyCue_AbilityLoop_103551::SplitPos_HighSwing' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103551, SwingingAudioID) == 0x002B34, "Member 'APyCue_AbilityLoop_103551::SwingingAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103551, GenerateAudioID_SimpleSwing) == 0x002B38, "Member 'APyCue_AbilityLoop_103551::GenerateAudioID_SimpleSwing' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103551, UseTransientFXComponent) == 0x002B3C, "Member 'APyCue_AbilityLoop_103551::UseTransientFXComponent' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103551, BreakAudioID) == 0x002B40, "Member 'APyCue_AbilityLoop_103551::BreakAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_AbilityLoop_103551;
 
 // PythonClass PyAbility_103551.PyConfig_103551
-// 0x0010 (0x5350 - 0x5340)
+// 0x0010 (0x6350 - 0x6340)
 class UPyConfig_103551 final : public UPyConfig_133
 {
 public:
-	bool                                          EnableAvoidMeshPenetrationTrace;                   // 0x5340(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5341[0x3];                                     // 0x5341(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         AwayFromWallScale;                                 // 0x5344(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableAvoidMeshPenetrationTrace;                   // 0x6340(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6341[0x3];                                     // 0x6341(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         AwayFromWallScale;                                 // 0x6344(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103551">();
+		STATIC_CLASS_IMPL("PyConfig_103551")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103551")
 	}
 	static class UPyConfig_103551* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103551>();
 	}
 };
-static_assert(alignof(UPyConfig_103551) == 0x000010, "Wrong alignment on UPyConfig_103551");
-static_assert(sizeof(UPyConfig_103551) == 0x005350, "Wrong size on UPyConfig_103551");
-static_assert(offsetof(UPyConfig_103551, EnableAvoidMeshPenetrationTrace) == 0x005340, "Member 'UPyConfig_103551::EnableAvoidMeshPenetrationTrace' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103551, AwayFromWallScale) == 0x005344, "Member 'UPyConfig_103551::AwayFromWallScale' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103551;
 
 }
 

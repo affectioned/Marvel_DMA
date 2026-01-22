@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GMCmd_HistoryItem.PyWidget_GMCmd_HistoryItem
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_GMCmd_HistoryItem : public UPyWidget_Button
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GMCmd_HistoryItem">();
+		STATIC_CLASS_IMPL("PyWidget_GMCmd_HistoryItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GMCmd_HistoryItem")
 	}
 	static class UPyWidget_GMCmd_HistoryItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GMCmd_HistoryItem>();
 	}
 };
-static_assert(alignof(UPyWidget_GMCmd_HistoryItem) == 0x000008, "Wrong alignment on UPyWidget_GMCmd_HistoryItem");
-static_assert(sizeof(UPyWidget_GMCmd_HistoryItem) == 0x000728, "Wrong size on UPyWidget_GMCmd_HistoryItem");
+DUMPER7_ASSERTS_UPyWidget_GMCmd_HistoryItem;
 
 }
 

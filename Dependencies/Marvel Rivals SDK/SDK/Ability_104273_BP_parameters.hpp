@@ -25,12 +25,7 @@ public:
 	class UUserWidget*                            K2Node_Event_InExtraWidget;                        // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            K2Node_Event_InUserWidget;                         // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP) == 0x000008, "Wrong alignment on Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP");
-static_assert(sizeof(Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP) == 0x000018, "Wrong size on Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP");
-static_assert(offsetof(Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP, EntryPoint) == 0x000000, "Member 'Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP, K2Node_Event_bWasCancelled) == 0x000004, "Member 'Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP, K2Node_Event_InExtraWidget) == 0x000008, "Member 'Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP::K2Node_Event_InExtraWidget' has a wrong offset!");
-static_assert(offsetof(Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP, K2Node_Event_InUserWidget) == 0x000010, "Member 'Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP::K2Node_Event_InUserWidget' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104273_BP_C_ExecuteUbergraph_Ability_104273_BP;
 
 // Function Ability_104273_BP.Ability_104273_BP_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -39,9 +34,7 @@ struct Ability_104273_BP_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104273_BP_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on Ability_104273_BP_C_K2_OnEndAbility");
-static_assert(sizeof(Ability_104273_BP_C_K2_OnEndAbility) == 0x000001, "Wrong size on Ability_104273_BP_C_K2_OnEndAbility");
-static_assert(offsetof(Ability_104273_BP_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'Ability_104273_BP_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104273_BP_C_K2_OnEndAbility;
 
 // Function Ability_104273_BP.Ability_104273_BP_C.SetAbilityExtraWidget_1
 // 0x0008 (0x0008 - 0x0000)
@@ -50,9 +43,7 @@ struct Ability_104273_BP_C_SetAbilityExtraWidget_1 final
 public:
 	class UUserWidget*                            InExtraWidget;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104273_BP_C_SetAbilityExtraWidget_1) == 0x000008, "Wrong alignment on Ability_104273_BP_C_SetAbilityExtraWidget_1");
-static_assert(sizeof(Ability_104273_BP_C_SetAbilityExtraWidget_1) == 0x000008, "Wrong size on Ability_104273_BP_C_SetAbilityExtraWidget_1");
-static_assert(offsetof(Ability_104273_BP_C_SetAbilityExtraWidget_1, InExtraWidget) == 0x000000, "Member 'Ability_104273_BP_C_SetAbilityExtraWidget_1::InExtraWidget' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104273_BP_C_SetAbilityExtraWidget_1;
 
 // Function Ability_104273_BP.Ability_104273_BP_C.SetAbilityStatusWidget_1
 // 0x0008 (0x0008 - 0x0000)
@@ -61,9 +52,7 @@ struct Ability_104273_BP_C_SetAbilityStatusWidget_1 final
 public:
 	class UUserWidget*                            InUserWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104273_BP_C_SetAbilityStatusWidget_1) == 0x000008, "Wrong alignment on Ability_104273_BP_C_SetAbilityStatusWidget_1");
-static_assert(sizeof(Ability_104273_BP_C_SetAbilityStatusWidget_1) == 0x000008, "Wrong size on Ability_104273_BP_C_SetAbilityStatusWidget_1");
-static_assert(offsetof(Ability_104273_BP_C_SetAbilityStatusWidget_1, InUserWidget) == 0x000000, "Member 'Ability_104273_BP_C_SetAbilityStatusWidget_1::InUserWidget' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104273_BP_C_SetAbilityStatusWidget_1;
 
 }
 

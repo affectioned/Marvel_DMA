@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "PyRuleComponent_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "python_enums_structs.hpp"
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
+#include "PyRuleComponent_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -74,32 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySurrenderRuleComponent">();
+		STATIC_CLASS_IMPL("PySurrenderRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySurrenderRuleComponent")
 	}
 	static class UPySurrenderRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySurrenderRuleComponent>();
 	}
 };
-static_assert(alignof(UPySurrenderRuleComponent) == 0x000008, "Wrong alignment on UPySurrenderRuleComponent");
-static_assert(sizeof(UPySurrenderRuleComponent) == 0x000438, "Wrong size on UPySurrenderRuleComponent");
-static_assert(offsetof(UPySurrenderRuleComponent, RedSurrenderState) == 0x000108, "Member 'UPySurrenderRuleComponent::RedSurrenderState' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, BlueSurrenderState) == 0x000109, "Member 'UPySurrenderRuleComponent::BlueSurrenderState' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, SurrenderCountDownTime) == 0x00010C, "Member 'UPySurrenderRuleComponent::SurrenderCountDownTime' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, SurrenderAnnouncementTime) == 0x000110, "Member 'UPySurrenderRuleComponent::SurrenderAnnouncementTime' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, RedValidSurrenderPlayers) == 0x000118, "Member 'UPySurrenderRuleComponent::RedValidSurrenderPlayers' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, BlueValidSurrenderPlayers) == 0x000128, "Member 'UPySurrenderRuleComponent::BlueValidSurrenderPlayers' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, RedSurrenderResult) == 0x000138, "Member 'UPySurrenderRuleComponent::RedSurrenderResult' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, BlueSurrenderResult) == 0x000148, "Member 'UPySurrenderRuleComponent::BlueSurrenderResult' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, RedSurrenderPassed) == 0x000158, "Member 'UPySurrenderRuleComponent::RedSurrenderPassed' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, BlueSurrenderPassed) == 0x000159, "Member 'UPySurrenderRuleComponent::BlueSurrenderPassed' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, RedSurrenderTimer) == 0x000160, "Member 'UPySurrenderRuleComponent::RedSurrenderTimer' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, BlueSurrenderTimer) == 0x0001D8, "Member 'UPySurrenderRuleComponent::BlueSurrenderTimer' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, RedSurrenderAnnouncementTimer) == 0x000250, "Member 'UPySurrenderRuleComponent::RedSurrenderAnnouncementTimer' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, BlueSurrenderAnnouncementTimer) == 0x0002C8, "Member 'UPySurrenderRuleComponent::BlueSurrenderAnnouncementTimer' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, RedDelayEnterSurrenderAnnouncementTimer) == 0x000340, "Member 'UPySurrenderRuleComponent::RedDelayEnterSurrenderAnnouncementTimer' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, BlueDelayEnterSurrenderAnnouncementTimer) == 0x0003B8, "Member 'UPySurrenderRuleComponent::BlueDelayEnterSurrenderAnnouncementTimer' has a wrong offset!");
-static_assert(offsetof(UPySurrenderRuleComponent, VotePassingRate) == 0x000430, "Member 'UPySurrenderRuleComponent::VotePassingRate' has a wrong offset!");
+DUMPER7_ASSERTS_UPySurrenderRuleComponent;
 
 }
 

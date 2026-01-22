@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_DropDownList_Light.WBP_DropDownList_Light_C
-// 0x0000 (0x1540 - 0x1540)
+// 0x0000 (0x1590 - 0x1590)
 class UWBP_DropDownList_Light_C final : public UWBP_DropDownList_Dark_C
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_DropDownList_Light_C">();
+		BP_STATIC_CLASS_IMPL("WBP_DropDownList_Light_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DropDownList_Light_C")
 	}
 	static class UWBP_DropDownList_Light_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DropDownList_Light_C>();
 	}
 };
-static_assert(alignof(UWBP_DropDownList_Light_C) == 0x000010, "Wrong alignment on UWBP_DropDownList_Light_C");
-static_assert(sizeof(UWBP_DropDownList_Light_C) == 0x001540, "Wrong size on UWBP_DropDownList_Light_C");
+DUMPER7_ASSERTS_UWBP_DropDownList_Light_C;
 
 }
 

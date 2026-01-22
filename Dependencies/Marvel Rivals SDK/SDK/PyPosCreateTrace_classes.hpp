@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPosCreateTrace">();
+		STATIC_CLASS_IMPL("PyPosCreateTrace")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPosCreateTrace")
 	}
 	static class APyPosCreateTrace* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPosCreateTrace>();
 	}
 };
-static_assert(alignof(APyPosCreateTrace) == 0x000010, "Wrong alignment on APyPosCreateTrace");
-static_assert(sizeof(APyPosCreateTrace) == 0x000720, "Wrong size on APyPosCreateTrace");
-static_assert(offsetof(APyPosCreateTrace, PosPoint) == 0x0006E0, "Member 'APyPosCreateTrace::PosPoint' has a wrong offset!");
-static_assert(offsetof(APyPosCreateTrace, Spacing) == 0x0006E8, "Member 'APyPosCreateTrace::Spacing' has a wrong offset!");
-static_assert(offsetof(APyPosCreateTrace, PosPointList) == 0x0006F0, "Member 'APyPosCreateTrace::PosPointList' has a wrong offset!");
-static_assert(offsetof(APyPosCreateTrace, PosRelativeList) == 0x000700, "Member 'APyPosCreateTrace::PosRelativeList' has a wrong offset!");
-static_assert(offsetof(APyPosCreateTrace, PosWorldList) == 0x000710, "Member 'APyPosCreateTrace::PosWorldList' has a wrong offset!");
+DUMPER7_ASSERTS_APyPosCreateTrace;
 
 }
 

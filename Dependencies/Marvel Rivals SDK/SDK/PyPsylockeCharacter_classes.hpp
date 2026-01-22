@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyPsylockeCharacter.PyPsylockeCharacter
-// 0x0000 (0x21C0 - 0x21C0)
+// 0x0000 (0x22D0 - 0x22D0)
 class APyPsylockeCharacter : public APsylockeCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPsylockeCharacter">();
+		STATIC_CLASS_IMPL("PyPsylockeCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPsylockeCharacter")
 	}
 	static class APyPsylockeCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPsylockeCharacter>();
 	}
 };
-static_assert(alignof(APyPsylockeCharacter) == 0x000010, "Wrong alignment on APyPsylockeCharacter");
-static_assert(sizeof(APyPsylockeCharacter) == 0x0021C0, "Wrong size on APyPsylockeCharacter");
+DUMPER7_ASSERTS_APyPsylockeCharacter;
 
 }
 

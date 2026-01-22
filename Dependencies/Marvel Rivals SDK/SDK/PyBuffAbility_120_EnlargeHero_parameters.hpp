@@ -23,9 +23,7 @@ struct PyBuffAbility_120_EnlargeHero_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_EnlargeHero_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_120_EnlargeHero_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_120_EnlargeHero_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_120_EnlargeHero_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_120_EnlargeHero_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_120_EnlargeHero_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_EnlargeHero_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_120_EnlargeHero.PyBuffAbility_120_EnlargeHero.OnTakeDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -36,11 +34,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_EnlargeHero_OnTakeDamage) == 0x000008, "Wrong alignment on PyBuffAbility_120_EnlargeHero_OnTakeDamage");
-static_assert(sizeof(PyBuffAbility_120_EnlargeHero_OnTakeDamage) == 0x000028, "Wrong size on PyBuffAbility_120_EnlargeHero_OnTakeDamage");
-static_assert(offsetof(PyBuffAbility_120_EnlargeHero_OnTakeDamage, InSourceAvatar) == 0x000000, "Member 'PyBuffAbility_120_EnlargeHero_OnTakeDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_EnlargeHero_OnTakeDamage, InTargetAvatar) == 0x000008, "Member 'PyBuffAbility_120_EnlargeHero_OnTakeDamage::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_EnlargeHero_OnTakeDamage, ParameterHandle) == 0x000010, "Member 'PyBuffAbility_120_EnlargeHero_OnTakeDamage::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_EnlargeHero_OnTakeDamage;
 
 }
 

@@ -25,11 +25,7 @@ public:
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIMoveControlLogicBase_CustomSelectMoveDir) == 0x000008, "Wrong alignment on PyAIMoveControlLogicBase_CustomSelectMoveDir");
-static_assert(sizeof(PyAIMoveControlLogicBase_CustomSelectMoveDir) == 0x000028, "Wrong size on PyAIMoveControlLogicBase_CustomSelectMoveDir");
-static_assert(offsetof(PyAIMoveControlLogicBase_CustomSelectMoveDir, OwnerController) == 0x000000, "Member 'PyAIMoveControlLogicBase_CustomSelectMoveDir::OwnerController' has a wrong offset!");
-static_assert(offsetof(PyAIMoveControlLogicBase_CustomSelectMoveDir, ControlledPawn) == 0x000008, "Member 'PyAIMoveControlLogicBase_CustomSelectMoveDir::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(PyAIMoveControlLogicBase_CustomSelectMoveDir, ReturnValue) == 0x000010, "Member 'PyAIMoveControlLogicBase_CustomSelectMoveDir::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIMoveControlLogicBase_CustomSelectMoveDir;
 
 // PythonFunction ability_move_logic.PyAIMoveControlLogicBase.ShouldUseCustomSelectDir
 // 0x0018 (0x0018 - 0x0000)
@@ -40,11 +36,7 @@ public:
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIMoveControlLogicBase_ShouldUseCustomSelectDir) == 0x000008, "Wrong alignment on PyAIMoveControlLogicBase_ShouldUseCustomSelectDir");
-static_assert(sizeof(PyAIMoveControlLogicBase_ShouldUseCustomSelectDir) == 0x000018, "Wrong size on PyAIMoveControlLogicBase_ShouldUseCustomSelectDir");
-static_assert(offsetof(PyAIMoveControlLogicBase_ShouldUseCustomSelectDir, OwnerController) == 0x000000, "Member 'PyAIMoveControlLogicBase_ShouldUseCustomSelectDir::OwnerController' has a wrong offset!");
-static_assert(offsetof(PyAIMoveControlLogicBase_ShouldUseCustomSelectDir, ControlledPawn) == 0x000008, "Member 'PyAIMoveControlLogicBase_ShouldUseCustomSelectDir::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(PyAIMoveControlLogicBase_ShouldUseCustomSelectDir, ReturnValue) == 0x000010, "Member 'PyAIMoveControlLogicBase_ShouldUseCustomSelectDir::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIMoveControlLogicBase_ShouldUseCustomSelectDir;
 
 }
 

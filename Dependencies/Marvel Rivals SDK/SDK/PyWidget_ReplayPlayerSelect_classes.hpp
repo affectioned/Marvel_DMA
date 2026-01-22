@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ReplayPlayerSelect.PyWidget_ReplayPlayerSelect
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_ReplayPlayerSelect final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           ReturnAction;                                      // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ReturnAction;                                      // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReplayPlayerSelect">();
+		STATIC_CLASS_IMPL("PyWidget_ReplayPlayerSelect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReplayPlayerSelect")
 	}
 	static class UPyWidget_ReplayPlayerSelect* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReplayPlayerSelect>();
 	}
 };
-static_assert(alignof(UPyWidget_ReplayPlayerSelect) == 0x000008, "Wrong alignment on UPyWidget_ReplayPlayerSelect");
-static_assert(sizeof(UPyWidget_ReplayPlayerSelect) == 0x000600, "Wrong size on UPyWidget_ReplayPlayerSelect");
-static_assert(offsetof(UPyWidget_ReplayPlayerSelect, ReturnAction) == 0x0005F8, "Member 'UPyWidget_ReplayPlayerSelect::ReturnAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ReplayPlayerSelect;
 
 }
 

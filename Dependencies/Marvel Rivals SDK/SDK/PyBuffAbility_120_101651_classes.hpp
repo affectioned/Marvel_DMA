@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_101651.PyBuffAbility_120_10165111
-// 0x0060 (0x13D0 - 0x1370)
+// 0x0060 (0x13E8 - 0x1388)
 class UPyBuffAbility_120_10165111 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         NewSummonedMaxNum;                                 // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1374[0x4];                                     // 0x1374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, float>                            BuffAttributeMap;                                  // 0x1378(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         EnergyRecoverSpeed;                                // 0x13C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NewSummonedMaxNum;                                 // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138C[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, float>                            BuffAttributeMap;                                  // 0x1390(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         EnergyRecoverSpeed;                                // 0x13E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10165111">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10165111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10165111")
 	}
 	static class UPyBuffAbility_120_10165111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10165111>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10165111) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10165111");
-static_assert(sizeof(UPyBuffAbility_120_10165111) == 0x0013D0, "Wrong size on UPyBuffAbility_120_10165111");
-static_assert(offsetof(UPyBuffAbility_120_10165111, NewSummonedMaxNum) == 0x001370, "Member 'UPyBuffAbility_120_10165111::NewSummonedMaxNum' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10165111, BuffAttributeMap) == 0x001378, "Member 'UPyBuffAbility_120_10165111::BuffAttributeMap' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10165111, EnergyRecoverSpeed) == 0x0013C8, "Member 'UPyBuffAbility_120_10165111::EnergyRecoverSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10165111;
 
 }
 

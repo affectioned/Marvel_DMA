@@ -23,15 +23,18 @@ class UMarvelNavFilterBP_1026_C final : public UMarvelNavigationQueryFilter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelNavFilterBP_1026_C">();
+		BP_STATIC_CLASS_IMPL("MarvelNavFilterBP_1026_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavFilterBP_1026_C")
 	}
 	static class UMarvelNavFilterBP_1026_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelNavFilterBP_1026_C>();
 	}
 };
-static_assert(alignof(UMarvelNavFilterBP_1026_C) == 0x000008, "Wrong alignment on UMarvelNavFilterBP_1026_C");
-static_assert(sizeof(UMarvelNavFilterBP_1026_C) == 0x000058, "Wrong size on UMarvelNavFilterBP_1026_C");
+DUMPER7_ASSERTS_UMarvelNavFilterBP_1026_C;
 
 }
 

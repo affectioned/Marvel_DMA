@@ -59,19 +59,7 @@ public:
 	bool                                          bEnabled;                                          // 0x0090(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FVenomTentacleInfo) == 0x000008, "Wrong alignment on FVenomTentacleInfo");
-static_assert(sizeof(FVenomTentacleInfo) == 0x000098, "Wrong size on FVenomTentacleInfo");
-static_assert(offsetof(FVenomTentacleInfo, BoneNameNeedToScaling) == 0x000000, "Member 'FVenomTentacleInfo::BoneNameNeedToScaling' has a wrong offset!");
-static_assert(offsetof(FVenomTentacleInfo, TentacleScalingFactors) == 0x000010, "Member 'FVenomTentacleInfo::TentacleScalingFactors' has a wrong offset!");
-static_assert(offsetof(FVenomTentacleInfo, LoopAnimStartTime) == 0x000020, "Member 'FVenomTentacleInfo::LoopAnimStartTime' has a wrong offset!");
-static_assert(offsetof(FVenomTentacleInfo, LoopAnimStartTimes) == 0x000028, "Member 'FVenomTentacleInfo::LoopAnimStartTimes' has a wrong offset!");
-static_assert(offsetof(FVenomTentacleInfo, LoopAnimEndTimes) == 0x000038, "Member 'FVenomTentacleInfo::LoopAnimEndTimes' has a wrong offset!");
-static_assert(offsetof(FVenomTentacleInfo, AnimDistances) == 0x000048, "Member 'FVenomTentacleInfo::AnimDistances' has a wrong offset!");
-static_assert(offsetof(FVenomTentacleInfo, TraceRelativeLocation) == 0x000058, "Member 'FVenomTentacleInfo::TraceRelativeLocation' has a wrong offset!");
-static_assert(offsetof(FVenomTentacleInfo, ServerTraceRelativeLocation) == 0x000070, "Member 'FVenomTentacleInfo::ServerTraceRelativeLocation' has a wrong offset!");
-static_assert(offsetof(FVenomTentacleInfo, CanSwitchMTTime) == 0x000088, "Member 'FVenomTentacleInfo::CanSwitchMTTime' has a wrong offset!");
-static_assert(offsetof(FVenomTentacleInfo, StartTraceTime) == 0x00008C, "Member 'FVenomTentacleInfo::StartTraceTime' has a wrong offset!");
-static_assert(offsetof(FVenomTentacleInfo, bEnabled) == 0x000090, "Member 'FVenomTentacleInfo::bEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_FVenomTentacleInfo;
 
 // ScriptStruct Hero_1035.ArmEffectParam
 // 0x0080 (0x0080 - 0x0000)
@@ -85,13 +73,7 @@ public:
 	float                                         DelayTimeToShowFX;                                 // 0x0078(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FArmEffectParam) == 0x000008, "Wrong alignment on FArmEffectParam");
-static_assert(sizeof(FArmEffectParam) == 0x000080, "Wrong size on FArmEffectParam");
-static_assert(offsetof(FArmEffectParam, FXAsset) == 0x000000, "Member 'FArmEffectParam::FXAsset' has a wrong offset!");
-static_assert(offsetof(FArmEffectParam, RecycleCurveMap) == 0x000008, "Member 'FArmEffectParam::RecycleCurveMap' has a wrong offset!");
-static_assert(offsetof(FArmEffectParam, AttachSocket_Left) == 0x000058, "Member 'FArmEffectParam::AttachSocket_Left' has a wrong offset!");
-static_assert(offsetof(FArmEffectParam, AttachSocket_Right) == 0x000068, "Member 'FArmEffectParam::AttachSocket_Right' has a wrong offset!");
-static_assert(offsetof(FArmEffectParam, DelayTimeToShowFX) == 0x000078, "Member 'FArmEffectParam::DelayTimeToShowFX' has a wrong offset!");
+DUMPER7_ASSERTS_FArmEffectParam;
 
 // ScriptStruct Hero_1035.TentacleAnimInfo
 // 0x0050 (0x0050 - 0x0000)
@@ -102,10 +84,7 @@ public:
 	class UAnimMontage*                           TentacleEndMontage;                                // 0x0010(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_18[0x38];                                      // 0x0018(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTentacleAnimInfo) == 0x000008, "Wrong alignment on FTentacleAnimInfo");
-static_assert(sizeof(FTentacleAnimInfo) == 0x000050, "Wrong size on FTentacleAnimInfo");
-static_assert(offsetof(FTentacleAnimInfo, TentacleMontages) == 0x000000, "Member 'FTentacleAnimInfo::TentacleMontages' has a wrong offset!");
-static_assert(offsetof(FTentacleAnimInfo, TentacleEndMontage) == 0x000010, "Member 'FTentacleAnimInfo::TentacleEndMontage' has a wrong offset!");
+DUMPER7_ASSERTS_FTentacleAnimInfo;
 
 }
 

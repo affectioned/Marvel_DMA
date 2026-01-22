@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
+#include "Hero_1015_classes.hpp"
 #include "Marvel_classes.hpp"
 #include "GameplayTags_structs.hpp"
-#include "Hero_1015_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_101582.PyUIController_101582
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_101582 final : public UUIC_Ability
 {
 public:
@@ -32,22 +32,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_101582">();
+		STATIC_CLASS_IMPL("PyUIController_101582")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_101582")
 	}
 	static class UPyUIController_101582* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_101582>();
 	}
 };
-static_assert(alignof(UPyUIController_101582) == 0x000008, "Wrong alignment on UPyUIController_101582");
-static_assert(sizeof(UPyUIController_101582) == 0x000F10, "Wrong size on UPyUIController_101582");
+DUMPER7_ASSERTS_UPyUIController_101582;
 
 // PythonClass PyAbility_101582.PyWidget_101582
-// 0x0008 (0x0628 - 0x0620)
-class UPyWidget_101582 final : public UWidget_AbilityStatus_Base
+// 0x0008 (0x0630 - 0x0628)
+class UPyWidget_101582 : public UWidget_AbilityStatus_Base
 {
 public:
-	class UPanelWidget*                           PortaitList_Right;                                 // 0x0620(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPanelWidget*                           PortaitList_Right;                                 // 0x0628(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,23 +59,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_101582">();
+		STATIC_CLASS_IMPL("PyWidget_101582")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_101582")
 	}
 	static class UPyWidget_101582* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_101582>();
 	}
 };
-static_assert(alignof(UPyWidget_101582) == 0x000008, "Wrong alignment on UPyWidget_101582");
-static_assert(sizeof(UPyWidget_101582) == 0x000628, "Wrong size on UPyWidget_101582");
-static_assert(offsetof(UPyWidget_101582, PortaitList_Right) == 0x000620, "Member 'UPyWidget_101582::PortaitList_Right' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_101582;
 
 // PythonClass PyAbility_101582.PyWidget_101582_HeroList
-// 0x0068 (0x05D0 - 0x0568)
+// 0x0068 (0x05D8 - 0x0570)
 class UPyWidget_101582_HeroList final : public UMarvelUserWidget
 {
 public:
-	struct FGameplayTagContainer                  HeadCountVisibleModeTags;                          // 0x0568(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  HeadCountVisibleModeTags;                          // 0x0570(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -80,19 +85,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_101582_HeroList">();
+		STATIC_CLASS_IMPL("PyWidget_101582_HeroList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_101582_HeroList")
 	}
 	static class UPyWidget_101582_HeroList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_101582_HeroList>();
 	}
 };
-static_assert(alignof(UPyWidget_101582_HeroList) == 0x000008, "Wrong alignment on UPyWidget_101582_HeroList");
-static_assert(sizeof(UPyWidget_101582_HeroList) == 0x0005D0, "Wrong size on UPyWidget_101582_HeroList");
-static_assert(offsetof(UPyWidget_101582_HeroList, HeadCountVisibleModeTags) == 0x000568, "Member 'UPyWidget_101582_HeroList::HeadCountVisibleModeTags' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_101582_HeroList;
 
 // PythonClass PyAbility_101582.PyUIController_104784
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_104784 final : public UUIC_Ability
 {
 public:
@@ -105,18 +112,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104784">();
+		STATIC_CLASS_IMPL("PyUIController_104784")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104784")
 	}
 	static class UPyUIController_104784* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104784>();
 	}
 };
-static_assert(alignof(UPyUIController_104784) == 0x000008, "Wrong alignment on UPyUIController_104784");
-static_assert(sizeof(UPyUIController_104784) == 0x000F10, "Wrong size on UPyUIController_104784");
+DUMPER7_ASSERTS_UPyUIController_104784;
 
 // PythonClass PyAbility_101582.PyCue_Buff_10158203
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_10158203 final : public ACue_Buff_Loop_10158203
 {
 public:
@@ -126,15 +136,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10158203">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10158203")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10158203")
 	}
 	static class APyCue_Buff_10158203* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10158203>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10158203) == 0x000010, "Wrong alignment on APyCue_Buff_10158203");
-static_assert(sizeof(APyCue_Buff_10158203) == 0x001640, "Wrong size on APyCue_Buff_10158203");
+DUMPER7_ASSERTS_APyCue_Buff_10158203;
 
 }
 

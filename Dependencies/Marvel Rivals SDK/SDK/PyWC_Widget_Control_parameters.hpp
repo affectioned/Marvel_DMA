@@ -23,9 +23,7 @@ struct PyWC_Control_V2_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWC_Control_V2_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyWC_Control_V2_ReceiveEndPlay");
-static_assert(sizeof(PyWC_Control_V2_ReceiveEndPlay) == 0x000001, "Wrong size on PyWC_Control_V2_ReceiveEndPlay");
-static_assert(offsetof(PyWC_Control_V2_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyWC_Control_V2_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyWC_Control_V2_ReceiveEndPlay;
 
 }
 

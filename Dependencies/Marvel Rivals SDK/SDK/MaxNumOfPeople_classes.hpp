@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryMaxNumOfPeopleHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryMaxNumOfPeopleHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMaxNumOfPeopleHandler")
 	}
 	static class UUISettingEntryMaxNumOfPeopleHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryMaxNumOfPeopleHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryMaxNumOfPeopleHandler) == 0x000008, "Wrong alignment on UUISettingEntryMaxNumOfPeopleHandler");
-static_assert(sizeof(UUISettingEntryMaxNumOfPeopleHandler) == 0x000030, "Wrong size on UUISettingEntryMaxNumOfPeopleHandler");
+DUMPER7_ASSERTS_UUISettingEntryMaxNumOfPeopleHandler;
 
 }
 

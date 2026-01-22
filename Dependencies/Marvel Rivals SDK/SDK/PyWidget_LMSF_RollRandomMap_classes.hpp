@@ -17,51 +17,52 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LMSF_RollRandomMap.PyWidget_LMSF_RollRandomMapCard
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_LMSF_RollRandomMapCard final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LMSF_RollRandomMapCard">();
+		STATIC_CLASS_IMPL("PyWidget_LMSF_RollRandomMapCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LMSF_RollRandomMapCard")
 	}
 	static class UPyWidget_LMSF_RollRandomMapCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LMSF_RollRandomMapCard>();
 	}
 };
-static_assert(alignof(UPyWidget_LMSF_RollRandomMapCard) == 0x000008, "Wrong alignment on UPyWidget_LMSF_RollRandomMapCard");
-static_assert(sizeof(UPyWidget_LMSF_RollRandomMapCard) == 0x0005C0, "Wrong size on UPyWidget_LMSF_RollRandomMapCard");
+DUMPER7_ASSERTS_UPyWidget_LMSF_RollRandomMapCard;
 
 // PythonClass PyWidget_LMSF_RollRandomMap.PyWidget_LMSF_RollRandomMap
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_LMSF_RollRandomMap final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_StartRoll;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpeedBegin;                                        // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpeedEnd;                                          // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpeedExp;                                          // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RetentionTime;                                     // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_StartRoll;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpeedBegin;                                        // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpeedEnd;                                          // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpeedExp;                                          // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RetentionTime;                                     // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LMSF_RollRandomMap">();
+		STATIC_CLASS_IMPL("PyWidget_LMSF_RollRandomMap")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LMSF_RollRandomMap")
 	}
 	static class UPyWidget_LMSF_RollRandomMap* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LMSF_RollRandomMap>();
 	}
 };
-static_assert(alignof(UPyWidget_LMSF_RollRandomMap) == 0x000008, "Wrong alignment on UPyWidget_LMSF_RollRandomMap");
-static_assert(sizeof(UPyWidget_LMSF_RollRandomMap) == 0x0005D8, "Wrong size on UPyWidget_LMSF_RollRandomMap");
-static_assert(offsetof(UPyWidget_LMSF_RollRandomMap, AkEvent_StartRoll) == 0x0005C0, "Member 'UPyWidget_LMSF_RollRandomMap::AkEvent_StartRoll' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_RollRandomMap, SpeedBegin) == 0x0005C8, "Member 'UPyWidget_LMSF_RollRandomMap::SpeedBegin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_RollRandomMap, SpeedEnd) == 0x0005CC, "Member 'UPyWidget_LMSF_RollRandomMap::SpeedEnd' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_RollRandomMap, SpeedExp) == 0x0005D0, "Member 'UPyWidget_LMSF_RollRandomMap::SpeedExp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_RollRandomMap, RetentionTime) == 0x0005D4, "Member 'UPyWidget_LMSF_RollRandomMap::RetentionTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LMSF_RollRandomMap;
 
 }
 

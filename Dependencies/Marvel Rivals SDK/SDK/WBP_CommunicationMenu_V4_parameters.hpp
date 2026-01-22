@@ -21,9 +21,7 @@ struct WBP_CommunicationMenu_V4_C_ExecuteUbergraph_WBP_CommunicationMenu_V4 fina
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CommunicationMenu_V4_C_ExecuteUbergraph_WBP_CommunicationMenu_V4) == 0x000004, "Wrong alignment on WBP_CommunicationMenu_V4_C_ExecuteUbergraph_WBP_CommunicationMenu_V4");
-static_assert(sizeof(WBP_CommunicationMenu_V4_C_ExecuteUbergraph_WBP_CommunicationMenu_V4) == 0x000004, "Wrong size on WBP_CommunicationMenu_V4_C_ExecuteUbergraph_WBP_CommunicationMenu_V4");
-static_assert(offsetof(WBP_CommunicationMenu_V4_C_ExecuteUbergraph_WBP_CommunicationMenu_V4, EntryPoint) == 0x000000, "Member 'WBP_CommunicationMenu_V4_C_ExecuteUbergraph_WBP_CommunicationMenu_V4::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CommunicationMenu_V4_C_ExecuteUbergraph_WBP_CommunicationMenu_V4;
 
 }
 

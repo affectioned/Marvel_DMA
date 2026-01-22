@@ -18,36 +18,39 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattleTip.PyWidget_BattleTip
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_BattleTip : public UMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleTip">();
+		STATIC_CLASS_IMPL("PyWidget_BattleTip")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleTip")
 	}
 	static class UPyWidget_BattleTip* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleTip>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleTip) == 0x000008, "Wrong alignment on UPyWidget_BattleTip");
-static_assert(sizeof(UPyWidget_BattleTip) == 0x000568, "Wrong size on UPyWidget_BattleTip");
+DUMPER7_ASSERTS_UPyWidget_BattleTip;
 
 // PythonClass PyWidget_BattleTip.PyWidget_BattleTipsPanel
-// 0x0048 (0x05B0 - 0x0568)
+// 0x0048 (0x05B8 - 0x0570)
 class UPyWidget_BattleTipsPanel : public UWidget_BattleTipsPanel
 {
 public:
-	float                                         TransientTipDuration;                              // 0x0568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_56C[0x4];                                      // 0x056C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                TipWidgetClass;                                    // 0x0570(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Tip_Persistent;                                    // 0x0578(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                VBox_TransientTips;                                // 0x0580(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          AutoTest;                                          // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_589[0x7];                                      // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDeclarationHolder                     ViewTargetHolder;                                  // 0x0590(0x0010)(NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnTransientTipAdded;                               // 0x05A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	float                                         TransientTipDuration;                              // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_574[0x4];                                      // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                TipWidgetClass;                                    // 0x0578(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Tip_Persistent;                                    // 0x0580(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                VBox_TransientTips;                                // 0x0588(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          AutoTest;                                          // 0x0590(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_591[0x7];                                      // 0x0591(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDeclarationHolder                     ViewTargetHolder;                                  // 0x0598(0x0010)(NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTransientTipAdded;                               // 0x05A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -59,22 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleTipsPanel">();
+		STATIC_CLASS_IMPL("PyWidget_BattleTipsPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleTipsPanel")
 	}
 	static class UPyWidget_BattleTipsPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleTipsPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleTipsPanel) == 0x000008, "Wrong alignment on UPyWidget_BattleTipsPanel");
-static_assert(sizeof(UPyWidget_BattleTipsPanel) == 0x0005B0, "Wrong size on UPyWidget_BattleTipsPanel");
-static_assert(offsetof(UPyWidget_BattleTipsPanel, TransientTipDuration) == 0x000568, "Member 'UPyWidget_BattleTipsPanel::TransientTipDuration' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleTipsPanel, TipWidgetClass) == 0x000570, "Member 'UPyWidget_BattleTipsPanel::TipWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleTipsPanel, Tip_Persistent) == 0x000578, "Member 'UPyWidget_BattleTipsPanel::Tip_Persistent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleTipsPanel, VBox_TransientTips) == 0x000580, "Member 'UPyWidget_BattleTipsPanel::VBox_TransientTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleTipsPanel, AutoTest) == 0x000588, "Member 'UPyWidget_BattleTipsPanel::AutoTest' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleTipsPanel, ViewTargetHolder) == 0x000590, "Member 'UPyWidget_BattleTipsPanel::ViewTargetHolder' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleTipsPanel, OnTransientTipAdded) == 0x0005A0, "Member 'UPyWidget_BattleTipsPanel::OnTransientTipAdded' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattleTipsPanel;
 
 }
 

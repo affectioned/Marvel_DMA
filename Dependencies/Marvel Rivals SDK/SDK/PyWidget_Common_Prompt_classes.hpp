@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Prompt.PyWidget_Common_Prompt
-// 0x0350 (0x0910 - 0x05C0)
+// 0x0358 (0x0920 - 0x05C8)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_Common_Prompt : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            PromptBg_Brush;                                    // 0x05C0(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            PromptArrow_Brush;                                 // 0x0690(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            WarningBg_Brush;                                   // 0x0760(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            WarningArrow_Brush;                                // 0x0830(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_ShowWarning;                               // 0x0900(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0xE];                                      // 0x05C2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            PromptBg_Brush;                                    // 0x05D0(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            PromptArrow_Brush;                                 // 0x06A0(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            WarningBg_Brush;                                   // 0x0770(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            WarningArrow_Brush;                                // 0x0840(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_ShowWarning;                               // 0x0910(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,7 +42,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Prompt">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Prompt")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Prompt")
 	}
 	static class UPyWidget_Common_Prompt* GetDefaultObj()
 	{
@@ -50,13 +54,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_Common_Prompt) == 0x000010, "Wrong alignment on UPyWidget_Common_Prompt");
-static_assert(sizeof(UPyWidget_Common_Prompt) == 0x000910, "Wrong size on UPyWidget_Common_Prompt");
-static_assert(offsetof(UPyWidget_Common_Prompt, PromptBg_Brush) == 0x0005C0, "Member 'UPyWidget_Common_Prompt::PromptBg_Brush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Prompt, PromptArrow_Brush) == 0x000690, "Member 'UPyWidget_Common_Prompt::PromptArrow_Brush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Prompt, WarningBg_Brush) == 0x000760, "Member 'UPyWidget_Common_Prompt::WarningBg_Brush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Prompt, WarningArrow_Brush) == 0x000830, "Member 'UPyWidget_Common_Prompt::WarningArrow_Brush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Prompt, AKEvent_ShowWarning) == 0x000900, "Member 'UPyWidget_Common_Prompt::AKEvent_ShowWarning' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Prompt;
 
 }
 

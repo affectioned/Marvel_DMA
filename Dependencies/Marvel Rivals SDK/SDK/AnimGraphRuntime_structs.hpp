@@ -383,9 +383,7 @@ public:
 	struct FPoseLink                              Source;                                            // 0x0028(0x0010)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_38[0x28];                                      // 0x0038(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_MirrorBase) == 0x000008, "Wrong alignment on FAnimNode_MirrorBase");
-static_assert(sizeof(FAnimNode_MirrorBase) == 0x000060, "Wrong size on FAnimNode_MirrorBase");
-static_assert(offsetof(FAnimNode_MirrorBase, Source) == 0x000028, "Member 'FAnimNode_MirrorBase::Source' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_MirrorBase;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendSpaceGraphBase
 // 0x0058 (0x0080 - 0x0028)
@@ -401,14 +399,7 @@ public:
 	TArray<struct FPoseLink>                      SamplePoseLinks;                                   // 0x0048(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_58[0x28];                                      // 0x0058(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_BlendSpaceGraphBase) == 0x000008, "Wrong alignment on FAnimNode_BlendSpaceGraphBase");
-static_assert(sizeof(FAnimNode_BlendSpaceGraphBase) == 0x000080, "Wrong size on FAnimNode_BlendSpaceGraphBase");
-static_assert(offsetof(FAnimNode_BlendSpaceGraphBase, X) == 0x000028, "Member 'FAnimNode_BlendSpaceGraphBase::X' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpaceGraphBase, Y) == 0x00002C, "Member 'FAnimNode_BlendSpaceGraphBase::Y' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpaceGraphBase, GroupName) == 0x000030, "Member 'FAnimNode_BlendSpaceGraphBase::GroupName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpaceGraphBase, GroupRole) == 0x00003C, "Member 'FAnimNode_BlendSpaceGraphBase::GroupRole' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpaceGraphBase, BlendSpace) == 0x000040, "Member 'FAnimNode_BlendSpaceGraphBase::BlendSpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpaceGraphBase, SamplePoseLinks) == 0x000048, "Member 'FAnimNode_BlendSpaceGraphBase::SamplePoseLinks' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BlendSpaceGraphBase;
 
 // ScriptStruct AnimGraphRuntime.RandomPlayerSequenceEntry
 // 0x0050 (0x0050 - 0x0000)
@@ -424,15 +415,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAlphaBlend                            BlendIn;                                           // 0x0020(0x0030)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRandomPlayerSequenceEntry) == 0x000008, "Wrong alignment on FRandomPlayerSequenceEntry");
-static_assert(sizeof(FRandomPlayerSequenceEntry) == 0x000050, "Wrong size on FRandomPlayerSequenceEntry");
-static_assert(offsetof(FRandomPlayerSequenceEntry, Sequence) == 0x000000, "Member 'FRandomPlayerSequenceEntry::Sequence' has a wrong offset!");
-static_assert(offsetof(FRandomPlayerSequenceEntry, ChanceToPlay) == 0x000008, "Member 'FRandomPlayerSequenceEntry::ChanceToPlay' has a wrong offset!");
-static_assert(offsetof(FRandomPlayerSequenceEntry, MinLoopCount) == 0x00000C, "Member 'FRandomPlayerSequenceEntry::MinLoopCount' has a wrong offset!");
-static_assert(offsetof(FRandomPlayerSequenceEntry, MaxLoopCount) == 0x000010, "Member 'FRandomPlayerSequenceEntry::MaxLoopCount' has a wrong offset!");
-static_assert(offsetof(FRandomPlayerSequenceEntry, MinPlayRate) == 0x000014, "Member 'FRandomPlayerSequenceEntry::MinPlayRate' has a wrong offset!");
-static_assert(offsetof(FRandomPlayerSequenceEntry, MaxPlayRate) == 0x000018, "Member 'FRandomPlayerSequenceEntry::MaxPlayRate' has a wrong offset!");
-static_assert(offsetof(FRandomPlayerSequenceEntry, BlendIn) == 0x000020, "Member 'FRandomPlayerSequenceEntry::BlendIn' has a wrong offset!");
+DUMPER7_ASSERTS_FRandomPlayerSequenceEntry;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RandomPlayer
 // 0x0068 (0x0090 - 0x0028)
@@ -445,19 +428,14 @@ public:
 	bool                                          bShuffleMode;                                      // 0x008C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_RandomPlayer) == 0x000008, "Wrong alignment on FAnimNode_RandomPlayer");
-static_assert(sizeof(FAnimNode_RandomPlayer) == 0x000090, "Wrong size on FAnimNode_RandomPlayer");
-static_assert(offsetof(FAnimNode_RandomPlayer, Entries) == 0x000028, "Member 'FAnimNode_RandomPlayer::Entries' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RandomPlayer, BlendWeight) == 0x000088, "Member 'FAnimNode_RandomPlayer::BlendWeight' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RandomPlayer, bShuffleMode) == 0x00008C, "Member 'FAnimNode_RandomPlayer::bShuffleMode' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_RandomPlayer;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_MeshSpaceRefPose
 // 0x0000 (0x0028 - 0x0028)
 struct FAnimNode_MeshSpaceRefPose final : public FAnimNode_Base
 {
 };
-static_assert(alignof(FAnimNode_MeshSpaceRefPose) == 0x000008, "Wrong alignment on FAnimNode_MeshSpaceRefPose");
-static_assert(sizeof(FAnimNode_MeshSpaceRefPose) == 0x000028, "Wrong size on FAnimNode_MeshSpaceRefPose");
+DUMPER7_ASSERTS_FAnimNode_MeshSpaceRefPose;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_ModifyCurve
 // 0x0128 (0x0150 - 0x0028)
@@ -473,22 +451,14 @@ public:
 	EModifyCurveApplyMode                         ApplyMode;                                         // 0x014C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14D[0x3];                                      // 0x014D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_ModifyCurve) == 0x000008, "Wrong alignment on FAnimNode_ModifyCurve");
-static_assert(sizeof(FAnimNode_ModifyCurve) == 0x000150, "Wrong size on FAnimNode_ModifyCurve");
-static_assert(offsetof(FAnimNode_ModifyCurve, SourcePose) == 0x000028, "Member 'FAnimNode_ModifyCurve::SourcePose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyCurve, CurveMap) == 0x000038, "Member 'FAnimNode_ModifyCurve::CurveMap' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyCurve, CurveValues) == 0x000088, "Member 'FAnimNode_ModifyCurve::CurveValues' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyCurve, CurveNames) == 0x000098, "Member 'FAnimNode_ModifyCurve::CurveNames' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyCurve, Alpha) == 0x000148, "Member 'FAnimNode_ModifyCurve::Alpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyCurve, ApplyMode) == 0x00014C, "Member 'FAnimNode_ModifyCurve::ApplyMode' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_ModifyCurve;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendSpaceGraph
 // 0x0000 (0x0080 - 0x0080)
 struct FAnimNode_BlendSpaceGraph final : public FAnimNode_BlendSpaceGraphBase
 {
 };
-static_assert(alignof(FAnimNode_BlendSpaceGraph) == 0x000008, "Wrong alignment on FAnimNode_BlendSpaceGraph");
-static_assert(sizeof(FAnimNode_BlendSpaceGraph) == 0x000080, "Wrong size on FAnimNode_BlendSpaceGraph");
+DUMPER7_ASSERTS_FAnimNode_BlendSpaceGraph;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_PoseHandlerCache
 // 0x0058 (0x0058 - 0x0000)
@@ -497,8 +467,7 @@ struct alignas(0x08) FAnimNode_PoseHandlerCache final : public FAniNodeCacheBase
 public:
 	uint8                                         Pad_0[0x58];                                       // 0x0000(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_PoseHandlerCache) == 0x000008, "Wrong alignment on FAnimNode_PoseHandlerCache");
-static_assert(sizeof(FAnimNode_PoseHandlerCache) == 0x000058, "Wrong size on FAnimNode_PoseHandlerCache");
+DUMPER7_ASSERTS_FAnimNode_PoseHandlerCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SkeletalControlBase
 // 0x00C0 (0x00E8 - 0x0028)
@@ -518,18 +487,7 @@ public:
 	struct FInputScaleBiasClamp                   AlphaScaleBiasClamp;                               // 0x00A4(0x0030)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D4[0x14];                                      // 0x00D4(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_SkeletalControlBase) == 0x000008, "Wrong alignment on FAnimNode_SkeletalControlBase");
-static_assert(sizeof(FAnimNode_SkeletalControlBase) == 0x0000E8, "Wrong size on FAnimNode_SkeletalControlBase");
-static_assert(offsetof(FAnimNode_SkeletalControlBase, ComponentPose) == 0x000028, "Member 'FAnimNode_SkeletalControlBase::ComponentPose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SkeletalControlBase, LODThreshold) == 0x000038, "Member 'FAnimNode_SkeletalControlBase::LODThreshold' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SkeletalControlBase, ActualAlpha) == 0x00003C, "Member 'FAnimNode_SkeletalControlBase::ActualAlpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SkeletalControlBase, AlphaInputType) == 0x000040, "Member 'FAnimNode_SkeletalControlBase::AlphaInputType' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SkeletalControlBase, bAlphaBoolEnabled) == 0x000041, "Member 'FAnimNode_SkeletalControlBase::bAlphaBoolEnabled' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SkeletalControlBase, Alpha) == 0x000044, "Member 'FAnimNode_SkeletalControlBase::Alpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SkeletalControlBase, AlphaScaleBias) == 0x000048, "Member 'FAnimNode_SkeletalControlBase::AlphaScaleBias' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SkeletalControlBase, AlphaBoolBlend) == 0x000050, "Member 'FAnimNode_SkeletalControlBase::AlphaBoolBlend' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SkeletalControlBase, AlphaCurveName) == 0x000098, "Member 'FAnimNode_SkeletalControlBase::AlphaCurveName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SkeletalControlBase, AlphaScaleBiasClamp) == 0x0000A4, "Member 'FAnimNode_SkeletalControlBase::AlphaScaleBiasClamp' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_SkeletalControlBase;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_ModifyBone
 // 0x0198 (0x0280 - 0x00E8)
@@ -557,24 +515,7 @@ public:
 	EBoneControlSpace                             ScaleSpace;                                        // 0x027D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_27E[0x2];                                      // 0x027E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_ModifyBone) == 0x000010, "Wrong alignment on FAnimNode_ModifyBone");
-static_assert(sizeof(FAnimNode_ModifyBone) == 0x000280, "Wrong size on FAnimNode_ModifyBone");
-static_assert(offsetof(FAnimNode_ModifyBone, BoneToModify) == 0x0000E8, "Member 'FAnimNode_ModifyBone::BoneToModify' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, bUseExtendConfig) == 0x0000FC, "Member 'FAnimNode_ModifyBone::bUseExtendConfig' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, BonesToModifyExtend) == 0x000100, "Member 'FAnimNode_ModifyBone::BonesToModifyExtend' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, bUseTransformTarget) == 0x000110, "Member 'FAnimNode_ModifyBone::bUseTransformTarget' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, TransformTarget) == 0x000120, "Member 'FAnimNode_ModifyBone::TransformTarget' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, TransformTargetSpace) == 0x0001C0, "Member 'FAnimNode_ModifyBone::TransformTargetSpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, TransformOffset) == 0x0001D0, "Member 'FAnimNode_ModifyBone::TransformOffset' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, Translation) == 0x000230, "Member 'FAnimNode_ModifyBone::Translation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, Rotation) == 0x000248, "Member 'FAnimNode_ModifyBone::Rotation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, Scale) == 0x000260, "Member 'FAnimNode_ModifyBone::Scale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, TranslationMode) == 0x000278, "Member 'FAnimNode_ModifyBone::TranslationMode' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, RotationMode) == 0x000279, "Member 'FAnimNode_ModifyBone::RotationMode' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, ScaleMode) == 0x00027A, "Member 'FAnimNode_ModifyBone::ScaleMode' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, TranslationSpace) == 0x00027B, "Member 'FAnimNode_ModifyBone::TranslationSpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, RotationSpace) == 0x00027C, "Member 'FAnimNode_ModifyBone::RotationSpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ModifyBone, ScaleSpace) == 0x00027D, "Member 'FAnimNode_ModifyBone::ScaleSpace' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_ModifyBone;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_MultiWayBlend
 // 0x0040 (0x0068 - 0x0028)
@@ -589,21 +530,14 @@ public:
 	bool                                          bNormalizeAlpha;                                   // 0x0061(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_MultiWayBlend) == 0x000008, "Wrong alignment on FAnimNode_MultiWayBlend");
-static_assert(sizeof(FAnimNode_MultiWayBlend) == 0x000068, "Wrong size on FAnimNode_MultiWayBlend");
-static_assert(offsetof(FAnimNode_MultiWayBlend, Poses) == 0x000028, "Member 'FAnimNode_MultiWayBlend::Poses' has a wrong offset!");
-static_assert(offsetof(FAnimNode_MultiWayBlend, DesiredAlphas) == 0x000038, "Member 'FAnimNode_MultiWayBlend::DesiredAlphas' has a wrong offset!");
-static_assert(offsetof(FAnimNode_MultiWayBlend, AlphaScaleBias) == 0x000058, "Member 'FAnimNode_MultiWayBlend::AlphaScaleBias' has a wrong offset!");
-static_assert(offsetof(FAnimNode_MultiWayBlend, bAdditiveNode) == 0x000060, "Member 'FAnimNode_MultiWayBlend::bAdditiveNode' has a wrong offset!");
-static_assert(offsetof(FAnimNode_MultiWayBlend, bNormalizeAlpha) == 0x000061, "Member 'FAnimNode_MultiWayBlend::bNormalizeAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_MultiWayBlend;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendSpaceSampleResult
 // 0x0000 (0x0038 - 0x0038)
 struct FAnimNode_BlendSpaceSampleResult final : public FAnimNode_Root
 {
 };
-static_assert(alignof(FAnimNode_BlendSpaceSampleResult) == 0x000008, "Wrong alignment on FAnimNode_BlendSpaceSampleResult");
-static_assert(sizeof(FAnimNode_BlendSpaceSampleResult) == 0x000038, "Wrong size on FAnimNode_BlendSpaceSampleResult");
+DUMPER7_ASSERTS_FAnimNode_BlendSpaceSampleResult;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_PoseHandler
 // 0x0068 (0x00B8 - 0x0050)
@@ -613,9 +547,7 @@ public:
 	class UPoseAsset*                             PoseAsset;                                         // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_58[0x60];                                      // 0x0058(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_PoseHandler) == 0x000008, "Wrong alignment on FAnimNode_PoseHandler");
-static_assert(sizeof(FAnimNode_PoseHandler) == 0x0000B8, "Wrong size on FAnimNode_PoseHandler");
-static_assert(offsetof(FAnimNode_PoseHandler, PoseAsset) == 0x000050, "Member 'FAnimNode_PoseHandler::PoseAsset' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_PoseHandler;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RandomPlayerCache
 // 0x0018 (0x0018 - 0x0000)
@@ -624,16 +556,14 @@ struct alignas(0x08) FAnimNode_RandomPlayerCache final : public FAniNodeCacheBas
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_RandomPlayerCache) == 0x000008, "Wrong alignment on FAnimNode_RandomPlayerCache");
-static_assert(sizeof(FAnimNode_RandomPlayerCache) == 0x000018, "Wrong size on FAnimNode_RandomPlayerCache");
+DUMPER7_ASSERTS_FAnimNode_RandomPlayerCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RefPose
 // 0x0000 (0x0028 - 0x0028)
 struct FAnimNode_RefPose final : public FAnimNode_Base
 {
 };
-static_assert(alignof(FAnimNode_RefPose) == 0x000008, "Wrong alignment on FAnimNode_RefPose");
-static_assert(sizeof(FAnimNode_RefPose) == 0x000028, "Wrong size on FAnimNode_RefPose");
+DUMPER7_ASSERTS_FAnimNode_RefPose;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RotateRootBoneCache
 // 0x0008 (0x0008 - 0x0000)
@@ -642,8 +572,7 @@ struct alignas(0x04) FAnimNode_RotateRootBoneCache final : public FAniNodeCacheB
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_RotateRootBoneCache) == 0x000004, "Wrong alignment on FAnimNode_RotateRootBoneCache");
-static_assert(sizeof(FAnimNode_RotateRootBoneCache) == 0x000008, "Wrong size on FAnimNode_RotateRootBoneCache");
+DUMPER7_ASSERTS_FAnimNode_RotateRootBoneCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RotationMultiplier
 // 0x0030 (0x0118 - 0x00E8)
@@ -657,13 +586,7 @@ public:
 	bool                                          bIsAdditive;                                       // 0x0115(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_116[0x2];                                      // 0x0116(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_RotationMultiplier) == 0x000008, "Wrong alignment on FAnimNode_RotationMultiplier");
-static_assert(sizeof(FAnimNode_RotationMultiplier) == 0x000118, "Wrong size on FAnimNode_RotationMultiplier");
-static_assert(offsetof(FAnimNode_RotationMultiplier, TargetBone) == 0x0000E8, "Member 'FAnimNode_RotationMultiplier::TargetBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationMultiplier, SourceBone) == 0x0000FC, "Member 'FAnimNode_RotationMultiplier::SourceBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationMultiplier, Multiplier) == 0x000110, "Member 'FAnimNode_RotationMultiplier::Multiplier' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationMultiplier, RotationAxisToRefer) == 0x000114, "Member 'FAnimNode_RotationMultiplier::RotationAxisToRefer' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationMultiplier, bIsAdditive) == 0x000115, "Member 'FAnimNode_RotationMultiplier::bIsAdditive' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_RotationMultiplier;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_ROBSCache
 // 0x0008 (0x0018 - 0x0010)
@@ -672,16 +595,14 @@ struct FAnimNode_ROBSCache final : public FAnimNode_AssetPlayerCacheBase
 public:
 	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_ROBSCache) == 0x000004, "Wrong alignment on FAnimNode_ROBSCache");
-static_assert(sizeof(FAnimNode_ROBSCache) == 0x000018, "Wrong size on FAnimNode_ROBSCache");
+DUMPER7_ASSERTS_FAnimNode_ROBSCache;
 
 // ScriptStruct AnimGraphRuntime.BlendSpaceReference
 // 0x0000 (0x0010 - 0x0010)
 struct FBlendSpaceReference final : public FAnimNodeReference
 {
 };
-static_assert(alignof(FBlendSpaceReference) == 0x000008, "Wrong alignment on FBlendSpaceReference");
-static_assert(sizeof(FBlendSpaceReference) == 0x000010, "Wrong size on FBlendSpaceReference");
+DUMPER7_ASSERTS_FBlendSpaceReference;
 
 // ScriptStruct AnimGraphRuntime.RotationRetargetingInfo
 // 0x01A0 (0x01A0 - 0x0000)
@@ -710,23 +631,7 @@ public:
 	bool                                          bClamp;                                            // 0x0198(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRotationRetargetingInfo) == 0x000010, "Wrong alignment on FRotationRetargetingInfo");
-static_assert(sizeof(FRotationRetargetingInfo) == 0x0001A0, "Wrong size on FRotationRetargetingInfo");
-static_assert(offsetof(FRotationRetargetingInfo, bEnabled) == 0x000000, "Member 'FRotationRetargetingInfo::bEnabled' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, Source) == 0x000010, "Member 'FRotationRetargetingInfo::Source' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, Target) == 0x000070, "Member 'FRotationRetargetingInfo::Target' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, RotationComponent) == 0x0000D0, "Member 'FRotationRetargetingInfo::RotationComponent' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, TwistAxis) == 0x0000D8, "Member 'FRotationRetargetingInfo::TwistAxis' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, bUseAbsoluteAngle) == 0x0000F0, "Member 'FRotationRetargetingInfo::bUseAbsoluteAngle' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, SourceMinimum) == 0x0000F4, "Member 'FRotationRetargetingInfo::SourceMinimum' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, SourceMaximum) == 0x0000F8, "Member 'FRotationRetargetingInfo::SourceMaximum' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, TargetMinimum) == 0x0000FC, "Member 'FRotationRetargetingInfo::TargetMinimum' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, TargetMaximum) == 0x000100, "Member 'FRotationRetargetingInfo::TargetMaximum' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, EasingType) == 0x000104, "Member 'FRotationRetargetingInfo::EasingType' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, CustomCurve) == 0x000108, "Member 'FRotationRetargetingInfo::CustomCurve' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, bFlipEasing) == 0x000190, "Member 'FRotationRetargetingInfo::bFlipEasing' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, EasingWeight) == 0x000194, "Member 'FRotationRetargetingInfo::EasingWeight' has a wrong offset!");
-static_assert(offsetof(FRotationRetargetingInfo, bClamp) == 0x000198, "Member 'FRotationRetargetingInfo::bClamp' has a wrong offset!");
+DUMPER7_ASSERTS_FRotationRetargetingInfo;
 
 // ScriptStruct AnimGraphRuntime.PositionHistory
 // 0x0030 (0x0030 - 0x0000)
@@ -737,26 +642,21 @@ public:
 	float                                         Range;                                             // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x1C];                                      // 0x0014(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPositionHistory) == 0x000008, "Wrong alignment on FPositionHistory");
-static_assert(sizeof(FPositionHistory) == 0x000030, "Wrong size on FPositionHistory");
-static_assert(offsetof(FPositionHistory, Positions) == 0x000000, "Member 'FPositionHistory::Positions' has a wrong offset!");
-static_assert(offsetof(FPositionHistory, Range) == 0x000010, "Member 'FPositionHistory::Range' has a wrong offset!");
+DUMPER7_ASSERTS_FPositionHistory;
 
 // ScriptStruct AnimGraphRuntime.AnimationStateResultReference
 // 0x0000 (0x0010 - 0x0010)
 struct FAnimationStateResultReference final : public FAnimNodeReference
 {
 };
-static_assert(alignof(FAnimationStateResultReference) == 0x000008, "Wrong alignment on FAnimationStateResultReference");
-static_assert(sizeof(FAnimationStateResultReference) == 0x000010, "Wrong size on FAnimationStateResultReference");
+DUMPER7_ASSERTS_FAnimationStateResultReference;
 
 // ScriptStruct AnimGraphRuntime.AnimationStateMachineReference
 // 0x0000 (0x0010 - 0x0010)
 struct FAnimationStateMachineReference final : public FAnimNodeReference
 {
 };
-static_assert(alignof(FAnimationStateMachineReference) == 0x000008, "Wrong alignment on FAnimationStateMachineReference");
-static_assert(sizeof(FAnimationStateMachineReference) == 0x000010, "Wrong size on FAnimationStateMachineReference");
+DUMPER7_ASSERTS_FAnimationStateMachineReference;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_AimOffsetLookAtCache
 // 0x0040 (0x0040 - 0x0000)
@@ -765,8 +665,7 @@ struct alignas(0x08) FAnimNode_AimOffsetLookAtCache final : public FAniNodeCache
 public:
 	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_AimOffsetLookAtCache) == 0x000008, "Wrong alignment on FAnimNode_AimOffsetLookAtCache");
-static_assert(sizeof(FAnimNode_AimOffsetLookAtCache) == 0x000040, "Wrong size on FAnimNode_AimOffsetLookAtCache");
+DUMPER7_ASSERTS_FAnimNode_AimOffsetLookAtCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendSpacePlayerBase
 // 0x0030 (0x0080 - 0x0050)
@@ -776,9 +675,7 @@ public:
 	uint8                                         Pad_50[0x28];                                      // 0x0050(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBlendSpace*                            PreviousBlendSpace;                                // 0x0078(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FAnimNode_BlendSpacePlayerBase) == 0x000008, "Wrong alignment on FAnimNode_BlendSpacePlayerBase");
-static_assert(sizeof(FAnimNode_BlendSpacePlayerBase) == 0x000080, "Wrong size on FAnimNode_BlendSpacePlayerBase");
-static_assert(offsetof(FAnimNode_BlendSpacePlayerBase, PreviousBlendSpace) == 0x000078, "Member 'FAnimNode_BlendSpacePlayerBase::PreviousBlendSpace' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BlendSpacePlayerBase;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendSpacePlayer
 // 0x0010 (0x0090 - 0x0080)
@@ -789,11 +686,7 @@ public:
 	float                                         Y;                                                 // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UBlendSpace*                            BlendSpace;                                        // 0x0088(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimNode_BlendSpacePlayer) == 0x000008, "Wrong alignment on FAnimNode_BlendSpacePlayer");
-static_assert(sizeof(FAnimNode_BlendSpacePlayer) == 0x000090, "Wrong size on FAnimNode_BlendSpacePlayer");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer, X) == 0x000080, "Member 'FAnimNode_BlendSpacePlayer::X' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer, Y) == 0x000084, "Member 'FAnimNode_BlendSpacePlayer::Y' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer, BlendSpace) == 0x000088, "Member 'FAnimNode_BlendSpacePlayer::BlendSpace' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BlendSpacePlayer;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_AimOffsetLookAt
 // 0x0170 (0x0200 - 0x0090)
@@ -811,15 +704,7 @@ public:
 	float                                         Alpha;                                             // 0x01B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1B4[0x4C];                                     // 0x01B4(0x004C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_AimOffsetLookAt) == 0x000010, "Wrong alignment on FAnimNode_AimOffsetLookAt");
-static_assert(sizeof(FAnimNode_AimOffsetLookAt) == 0x000200, "Wrong size on FAnimNode_AimOffsetLookAt");
-static_assert(offsetof(FAnimNode_AimOffsetLookAt, BasePose) == 0x000150, "Member 'FAnimNode_AimOffsetLookAt::BasePose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimOffsetLookAt, LODThreshold) == 0x000160, "Member 'FAnimNode_AimOffsetLookAt::LODThreshold' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimOffsetLookAt, SourceSocketName) == 0x000164, "Member 'FAnimNode_AimOffsetLookAt::SourceSocketName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimOffsetLookAt, PivotSocketName) == 0x000170, "Member 'FAnimNode_AimOffsetLookAt::PivotSocketName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimOffsetLookAt, LookAtLocation) == 0x000180, "Member 'FAnimNode_AimOffsetLookAt::LookAtLocation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimOffsetLookAt, SocketAxis) == 0x000198, "Member 'FAnimNode_AimOffsetLookAt::SocketAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimOffsetLookAt, Alpha) == 0x0001B0, "Member 'FAnimNode_AimOffsetLookAt::Alpha' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_AimOffsetLookAt;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_ApplyAdditiveCache
 // 0x0004 (0x0004 - 0x0000)
@@ -828,8 +713,7 @@ struct alignas(0x04) FAnimNode_ApplyAdditiveCache final : public FAniNodeCacheBa
 public:
 	uint8                                         Pad_0[0x4];                                        // 0x0000(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_ApplyAdditiveCache) == 0x000004, "Wrong alignment on FAnimNode_ApplyAdditiveCache");
-static_assert(sizeof(FAnimNode_ApplyAdditiveCache) == 0x000004, "Wrong size on FAnimNode_ApplyAdditiveCache");
+DUMPER7_ASSERTS_FAnimNode_ApplyAdditiveCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_ApplyAdditive
 // 0x00C0 (0x00E8 - 0x0028)
@@ -849,18 +733,7 @@ public:
 	bool                                          bAlphaBoolEnabled;                                 // 0x00E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_E2[0x6];                                       // 0x00E2(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_ApplyAdditive) == 0x000008, "Wrong alignment on FAnimNode_ApplyAdditive");
-static_assert(sizeof(FAnimNode_ApplyAdditive) == 0x0000E8, "Wrong size on FAnimNode_ApplyAdditive");
-static_assert(offsetof(FAnimNode_ApplyAdditive, Base) == 0x000028, "Member 'FAnimNode_ApplyAdditive::Base' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ApplyAdditive, Additive) == 0x000038, "Member 'FAnimNode_ApplyAdditive::Additive' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ApplyAdditive, Alpha) == 0x000048, "Member 'FAnimNode_ApplyAdditive::Alpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ApplyAdditive, AlphaScaleBias) == 0x00004C, "Member 'FAnimNode_ApplyAdditive::AlphaScaleBias' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ApplyAdditive, LODThreshold) == 0x000054, "Member 'FAnimNode_ApplyAdditive::LODThreshold' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ApplyAdditive, AlphaBoolBlend) == 0x000058, "Member 'FAnimNode_ApplyAdditive::AlphaBoolBlend' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ApplyAdditive, AlphaCurveName) == 0x0000A0, "Member 'FAnimNode_ApplyAdditive::AlphaCurveName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ApplyAdditive, AlphaScaleBiasClamp) == 0x0000AC, "Member 'FAnimNode_ApplyAdditive::AlphaScaleBiasClamp' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ApplyAdditive, AlphaInputType) == 0x0000E0, "Member 'FAnimNode_ApplyAdditive::AlphaInputType' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ApplyAdditive, bAlphaBoolEnabled) == 0x0000E1, "Member 'FAnimNode_ApplyAdditive::bAlphaBoolEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_ApplyAdditive;
 
 // ScriptStruct AnimGraphRuntime.BlendBoneByChannelEntry
 // 0x002C (0x002C - 0x0000)
@@ -874,13 +747,7 @@ public:
 	bool                                          bBlendScale;                                       // 0x002A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2B[0x1];                                       // 0x002B(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBlendBoneByChannelEntry) == 0x000004, "Wrong alignment on FBlendBoneByChannelEntry");
-static_assert(sizeof(FBlendBoneByChannelEntry) == 0x00002C, "Wrong size on FBlendBoneByChannelEntry");
-static_assert(offsetof(FBlendBoneByChannelEntry, SourceBone) == 0x000000, "Member 'FBlendBoneByChannelEntry::SourceBone' has a wrong offset!");
-static_assert(offsetof(FBlendBoneByChannelEntry, TargetBone) == 0x000014, "Member 'FBlendBoneByChannelEntry::TargetBone' has a wrong offset!");
-static_assert(offsetof(FBlendBoneByChannelEntry, bBlendTranslation) == 0x000028, "Member 'FBlendBoneByChannelEntry::bBlendTranslation' has a wrong offset!");
-static_assert(offsetof(FBlendBoneByChannelEntry, bBlendRotation) == 0x000029, "Member 'FBlendBoneByChannelEntry::bBlendRotation' has a wrong offset!");
-static_assert(offsetof(FBlendBoneByChannelEntry, bBlendScale) == 0x00002A, "Member 'FBlendBoneByChannelEntry::bBlendScale' has a wrong offset!");
+DUMPER7_ASSERTS_FBlendBoneByChannelEntry;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendBoneByChannelCache
 // 0x0018 (0x0018 - 0x0000)
@@ -890,9 +757,7 @@ public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FBlendBoneByChannelEntry>       ValidBoneEntries;                                  // 0x0008(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimNode_BlendBoneByChannelCache) == 0x000008, "Wrong alignment on FAnimNode_BlendBoneByChannelCache");
-static_assert(sizeof(FAnimNode_BlendBoneByChannelCache) == 0x000018, "Wrong size on FAnimNode_BlendBoneByChannelCache");
-static_assert(offsetof(FAnimNode_BlendBoneByChannelCache, ValidBoneEntries) == 0x000008, "Member 'FAnimNode_BlendBoneByChannelCache::ValidBoneEntries' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BlendBoneByChannelCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendBoneByChannel
 // 0x0058 (0x0080 - 0x0028)
@@ -909,14 +774,7 @@ public:
 	EBoneControlSpace                             TransformsSpace;                                   // 0x0078(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_BlendBoneByChannel) == 0x000008, "Wrong alignment on FAnimNode_BlendBoneByChannel");
-static_assert(sizeof(FAnimNode_BlendBoneByChannel) == 0x000080, "Wrong size on FAnimNode_BlendBoneByChannel");
-static_assert(offsetof(FAnimNode_BlendBoneByChannel, A) == 0x000028, "Member 'FAnimNode_BlendBoneByChannel::A' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendBoneByChannel, B) == 0x000038, "Member 'FAnimNode_BlendBoneByChannel::B' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendBoneByChannel, BoneDefinitions) == 0x000048, "Member 'FAnimNode_BlendBoneByChannel::BoneDefinitions' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendBoneByChannel, Alpha) == 0x000068, "Member 'FAnimNode_BlendBoneByChannel::Alpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendBoneByChannel, AlphaScaleBias) == 0x000070, "Member 'FAnimNode_BlendBoneByChannel::AlphaScaleBias' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendBoneByChannel, TransformsSpace) == 0x000078, "Member 'FAnimNode_BlendBoneByChannel::TransformsSpace' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BlendBoneByChannel;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendListBaseCache
 // 0x0020 (0x0020 - 0x0000)
@@ -925,8 +783,7 @@ struct alignas(0x08) FAnimNode_BlendListBaseCache : public FAniNodeCacheBase
 public:
 	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_BlendListBaseCache) == 0x000008, "Wrong alignment on FAnimNode_BlendListBaseCache");
-static_assert(sizeof(FAnimNode_BlendListBaseCache) == 0x000020, "Wrong size on FAnimNode_BlendListBaseCache");
+DUMPER7_ASSERTS_FAnimNode_BlendListBaseCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendListBase
 // 0x0048 (0x0070 - 0x0028)
@@ -938,10 +795,7 @@ public:
 	bool                                          bSkipUpdateOnActivation;                           // 0x005C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_5D[0x13];                                      // 0x005D(0x0013)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_BlendListBase) == 0x000008, "Wrong alignment on FAnimNode_BlendListBase");
-static_assert(sizeof(FAnimNode_BlendListBase) == 0x000070, "Wrong size on FAnimNode_BlendListBase");
-static_assert(offsetof(FAnimNode_BlendListBase, BlendPose) == 0x000028, "Member 'FAnimNode_BlendListBase::BlendPose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendListBase, bSkipUpdateOnActivation) == 0x00005C, "Member 'FAnimNode_BlendListBase::bSkipUpdateOnActivation' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BlendListBase;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendListByBool
 // 0x0008 (0x0078 - 0x0070)
@@ -951,9 +805,7 @@ public:
 	bool                                          bActiveValue;                                      // 0x0070(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_BlendListByBool) == 0x000008, "Wrong alignment on FAnimNode_BlendListByBool");
-static_assert(sizeof(FAnimNode_BlendListByBool) == 0x000078, "Wrong size on FAnimNode_BlendListByBool");
-static_assert(offsetof(FAnimNode_BlendListByBool, bActiveValue) == 0x000070, "Member 'FAnimNode_BlendListByBool::bActiveValue' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BlendListByBool;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendListByEnum
 // 0x0008 (0x0078 - 0x0070)
@@ -963,9 +815,7 @@ public:
 	uint8                                         ActiveEnumValue;                                   // 0x0070(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_BlendListByEnum) == 0x000008, "Wrong alignment on FAnimNode_BlendListByEnum");
-static_assert(sizeof(FAnimNode_BlendListByEnum) == 0x000078, "Wrong size on FAnimNode_BlendListByEnum");
-static_assert(offsetof(FAnimNode_BlendListByEnum, ActiveEnumValue) == 0x000070, "Member 'FAnimNode_BlendListByEnum::ActiveEnumValue' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BlendListByEnum;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendListByInt
 // 0x0008 (0x0078 - 0x0070)
@@ -975,9 +825,7 @@ public:
 	int32                                         ActiveChildIndex;                                  // 0x0070(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_BlendListByInt) == 0x000008, "Wrong alignment on FAnimNode_BlendListByInt");
-static_assert(sizeof(FAnimNode_BlendListByInt) == 0x000078, "Wrong size on FAnimNode_BlendListByInt");
-static_assert(offsetof(FAnimNode_BlendListByInt, ActiveChildIndex) == 0x000070, "Member 'FAnimNode_BlendListByInt::ActiveChildIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BlendListByInt;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendSpaceEvaluator
 // 0x0008 (0x0098 - 0x0090)
@@ -988,10 +836,7 @@ public:
 	bool                                          bTeleportToNormalizedTime;                         // 0x0094(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_BlendSpaceEvaluator) == 0x000008, "Wrong alignment on FAnimNode_BlendSpaceEvaluator");
-static_assert(sizeof(FAnimNode_BlendSpaceEvaluator) == 0x000098, "Wrong size on FAnimNode_BlendSpaceEvaluator");
-static_assert(offsetof(FAnimNode_BlendSpaceEvaluator, NormalizedTime) == 0x000090, "Member 'FAnimNode_BlendSpaceEvaluator::NormalizedTime' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpaceEvaluator, bTeleportToNormalizedTime) == 0x000094, "Member 'FAnimNode_BlendSpaceEvaluator::bTeleportToNormalizedTime' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BlendSpaceEvaluator;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BSGraphCache
 // 0x0010 (0x0010 - 0x0000)
@@ -1000,9 +845,7 @@ struct FAnimNode_BSGraphCache : public FAniNodeCacheBase
 public:
 	TArray<struct FBlendSampleData>               BlendSampleDataCache;                              // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimNode_BSGraphCache) == 0x000008, "Wrong alignment on FAnimNode_BSGraphCache");
-static_assert(sizeof(FAnimNode_BSGraphCache) == 0x000010, "Wrong size on FAnimNode_BSGraphCache");
-static_assert(offsetof(FAnimNode_BSGraphCache, BlendSampleDataCache) == 0x000000, "Member 'FAnimNode_BSGraphCache::BlendSampleDataCache' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BSGraphCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNodeCache_BlendSpacePlayer
 // 0x0010 (0x0020 - 0x0010)
@@ -1011,8 +854,7 @@ struct alignas(0x08) FAnimNodeCache_BlendSpacePlayer final : public FAnimNode_As
 public:
 	uint8                                         Pad_10[0x10];                                      // 0x0010(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNodeCache_BlendSpacePlayer) == 0x000008, "Wrong alignment on FAnimNodeCache_BlendSpacePlayer");
-static_assert(sizeof(FAnimNodeCache_BlendSpacePlayer) == 0x000020, "Wrong size on FAnimNodeCache_BlendSpacePlayer");
+DUMPER7_ASSERTS_FAnimNodeCache_BlendSpacePlayer;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendSpacePlayer_Standalone
 // 0x0030 (0x00B0 - 0x0080)
@@ -1034,19 +876,7 @@ public:
 	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBlendSpace*                            BlendSpace;                                        // 0x00A8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FAnimNode_BlendSpacePlayer_Standalone) == 0x000008, "Wrong alignment on FAnimNode_BlendSpacePlayer_Standalone");
-static_assert(sizeof(FAnimNode_BlendSpacePlayer_Standalone) == 0x0000B0, "Wrong size on FAnimNode_BlendSpacePlayer_Standalone");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer_Standalone, GroupName) == 0x000080, "Member 'FAnimNode_BlendSpacePlayer_Standalone::GroupName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer_Standalone, GroupRole) == 0x00008C, "Member 'FAnimNode_BlendSpacePlayer_Standalone::GroupRole' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer_Standalone, Method) == 0x00008D, "Member 'FAnimNode_BlendSpacePlayer_Standalone::Method' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer_Standalone, bIgnoreForRelevancyTest) == 0x00008E, "Member 'FAnimNode_BlendSpacePlayer_Standalone::bIgnoreForRelevancyTest' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer_Standalone, X) == 0x000090, "Member 'FAnimNode_BlendSpacePlayer_Standalone::X' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer_Standalone, Y) == 0x000094, "Member 'FAnimNode_BlendSpacePlayer_Standalone::Y' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer_Standalone, PlayRate) == 0x000098, "Member 'FAnimNode_BlendSpacePlayer_Standalone::PlayRate' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer_Standalone, bLoop) == 0x00009C, "Member 'FAnimNode_BlendSpacePlayer_Standalone::bLoop' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer_Standalone, bResetPlayTimeWhenBlendSpaceChanges) == 0x00009D, "Member 'FAnimNode_BlendSpacePlayer_Standalone::bResetPlayTimeWhenBlendSpaceChanges' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer_Standalone, StartPosition) == 0x0000A0, "Member 'FAnimNode_BlendSpacePlayer_Standalone::StartPosition' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BlendSpacePlayer_Standalone, BlendSpace) == 0x0000A8, "Member 'FAnimNode_BlendSpacePlayer_Standalone::BlendSpace' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BlendSpacePlayer_Standalone;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_CallFunction
 // 0x0028 (0x0050 - 0x0028)
@@ -1057,10 +887,7 @@ public:
 	uint8                                         Pad_38[0x14];                                      // 0x0038(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
 	EAnimFunctionCallSite                         CallSite;                                          // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimNode_CallFunction) == 0x000008, "Wrong alignment on FAnimNode_CallFunction");
-static_assert(sizeof(FAnimNode_CallFunction) == 0x000050, "Wrong size on FAnimNode_CallFunction");
-static_assert(offsetof(FAnimNode_CallFunction, Source) == 0x000028, "Member 'FAnimNode_CallFunction::Source' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CallFunction, CallSite) == 0x00004C, "Member 'FAnimNode_CallFunction::CallSite' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_CallFunction;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_CopyPoseFromMeshCache
 // 0x0130 (0x0130 - 0x0000)
@@ -1071,9 +898,7 @@ public:
 	TArray<struct FTransform>                     SourceMeshTransformArray;                          // 0x0008(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_18[0x118];                                     // 0x0018(0x0118)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_CopyPoseFromMeshCache) == 0x000008, "Wrong alignment on FAnimNode_CopyPoseFromMeshCache");
-static_assert(sizeof(FAnimNode_CopyPoseFromMeshCache) == 0x000130, "Wrong size on FAnimNode_CopyPoseFromMeshCache");
-static_assert(offsetof(FAnimNode_CopyPoseFromMeshCache, SourceMeshTransformArray) == 0x000008, "Member 'FAnimNode_CopyPoseFromMeshCache::SourceMeshTransformArray' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_CopyPoseFromMeshCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_CopyPoseFromMesh
 // 0x0160 (0x0188 - 0x0028)
@@ -1089,11 +914,7 @@ public:
 	class FName                                   RootBoneToCopy;                                    // 0x0034(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_40[0x148];                                     // 0x0040(0x0148)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_CopyPoseFromMesh) == 0x000008, "Wrong alignment on FAnimNode_CopyPoseFromMesh");
-static_assert(sizeof(FAnimNode_CopyPoseFromMesh) == 0x000188, "Wrong size on FAnimNode_CopyPoseFromMesh");
-static_assert(offsetof(FAnimNode_CopyPoseFromMesh, SourceMeshComponent) == 0x000028, "Member 'FAnimNode_CopyPoseFromMesh::SourceMeshComponent' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyPoseFromMesh, bCopyCustomAttributes) == 0x000031, "Member 'FAnimNode_CopyPoseFromMesh::bCopyCustomAttributes' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyPoseFromMesh, RootBoneToCopy) == 0x000034, "Member 'FAnimNode_CopyPoseFromMesh::RootBoneToCopy' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_CopyPoseFromMesh;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_CurveSourceCache
 // 0x0010 (0x0010 - 0x0000)
@@ -1102,8 +923,7 @@ struct alignas(0x08) FAnimNode_CurveSourceCache final : public FAniNodeCacheBase
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_CurveSourceCache) == 0x000008, "Wrong alignment on FAnimNode_CurveSourceCache");
-static_assert(sizeof(FAnimNode_CurveSourceCache) == 0x000010, "Wrong size on FAnimNode_CurveSourceCache");
+DUMPER7_ASSERTS_FAnimNode_CurveSourceCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_CurveSource
 // 0x0030 (0x0058 - 0x0028)
@@ -1115,12 +935,7 @@ public:
 	float                                         Alpha;                                             // 0x0044(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TScriptInterface<class ICurveSourceInterface> CurveSource;                                       // 0x0048(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimNode_CurveSource) == 0x000008, "Wrong alignment on FAnimNode_CurveSource");
-static_assert(sizeof(FAnimNode_CurveSource) == 0x000058, "Wrong size on FAnimNode_CurveSource");
-static_assert(offsetof(FAnimNode_CurveSource, SourcePose) == 0x000028, "Member 'FAnimNode_CurveSource::SourcePose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CurveSource, SourceBinding) == 0x000038, "Member 'FAnimNode_CurveSource::SourceBinding' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CurveSource, Alpha) == 0x000044, "Member 'FAnimNode_CurveSource::Alpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CurveSource, CurveSource) == 0x000048, "Member 'FAnimNode_CurveSource::CurveSource' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_CurveSource;
 
 // ScriptStruct AnimGraphRuntime.LayeredBoneBlendExternalItem
 // 0x0030 (0x0030 - 0x0000)
@@ -1134,12 +949,7 @@ public:
 	bool                                          bShouldMerge;                                      // 0x0028(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FLayeredBoneBlendExternalItem) == 0x000008, "Wrong alignment on FLayeredBoneBlendExternalItem");
-static_assert(sizeof(FLayeredBoneBlendExternalItem) == 0x000030, "Wrong size on FLayeredBoneBlendExternalItem");
-static_assert(offsetof(FLayeredBoneBlendExternalItem, LayerID) == 0x000000, "Member 'FLayeredBoneBlendExternalItem::LayerID' has a wrong offset!");
-static_assert(offsetof(FLayeredBoneBlendExternalItem, CurveName) == 0x000008, "Member 'FLayeredBoneBlendExternalItem::CurveName' has a wrong offset!");
-static_assert(offsetof(FLayeredBoneBlendExternalItem, BranchFilters) == 0x000018, "Member 'FLayeredBoneBlendExternalItem::BranchFilters' has a wrong offset!");
-static_assert(offsetof(FLayeredBoneBlendExternalItem, bShouldMerge) == 0x000028, "Member 'FLayeredBoneBlendExternalItem::bShouldMerge' has a wrong offset!");
+DUMPER7_ASSERTS_FLayeredBoneBlendExternalItem;
 
 // ScriptStruct AnimGraphRuntime.LayeredBoneBlendExternalSetting
 // 0x0010 (0x0010 - 0x0000)
@@ -1148,9 +958,7 @@ struct FLayeredBoneBlendExternalSetting final
 public:
 	TArray<struct FLayeredBoneBlendExternalItem>  ExternalItems;                                     // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLayeredBoneBlendExternalSetting) == 0x000008, "Wrong alignment on FLayeredBoneBlendExternalSetting");
-static_assert(sizeof(FLayeredBoneBlendExternalSetting) == 0x000010, "Wrong size on FLayeredBoneBlendExternalSetting");
-static_assert(offsetof(FLayeredBoneBlendExternalSetting, ExternalItems) == 0x000000, "Member 'FLayeredBoneBlendExternalSetting::ExternalItems' has a wrong offset!");
+DUMPER7_ASSERTS_FLayeredBoneBlendExternalSetting;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_LayeredBoneBlendCache
 // 0x0060 (0x0060 - 0x0000)
@@ -1160,9 +968,7 @@ public:
 	uint8                                         Pad_0[0x50];                                       // 0x0000(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPerBoneBlendWeight>            CurrentBoneBlendWeights;                           // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimNode_LayeredBoneBlendCache) == 0x000008, "Wrong alignment on FAnimNode_LayeredBoneBlendCache");
-static_assert(sizeof(FAnimNode_LayeredBoneBlendCache) == 0x000060, "Wrong size on FAnimNode_LayeredBoneBlendCache");
-static_assert(offsetof(FAnimNode_LayeredBoneBlendCache, CurrentBoneBlendWeights) == 0x000050, "Member 'FAnimNode_LayeredBoneBlendCache::CurrentBoneBlendWeights' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_LayeredBoneBlendCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_LayeredBoneBlend
 // 0x0148 (0x0170 - 0x0028)
@@ -1194,27 +1000,7 @@ public:
 	struct FGuid                                  VirtualBoneGuid;                                   // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_110[0x60];                                     // 0x0110(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_LayeredBoneBlend) == 0x000008, "Wrong alignment on FAnimNode_LayeredBoneBlend");
-static_assert(sizeof(FAnimNode_LayeredBoneBlend) == 0x000170, "Wrong size on FAnimNode_LayeredBoneBlend");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, BasePose) == 0x000028, "Member 'FAnimNode_LayeredBoneBlend::BasePose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, BlendPoses) == 0x000038, "Member 'FAnimNode_LayeredBoneBlend::BlendPoses' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, BlendMode) == 0x000048, "Member 'FAnimNode_LayeredBoneBlend::BlendMode' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, BlendMasks) == 0x000050, "Member 'FAnimNode_LayeredBoneBlend::BlendMasks' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, BlendMasksName) == 0x000060, "Member 'FAnimNode_LayeredBoneBlend::BlendMasksName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, LayerSetup) == 0x000070, "Member 'FAnimNode_LayeredBoneBlend::LayerSetup' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, BlendWeights) == 0x000080, "Member 'FAnimNode_LayeredBoneBlend::BlendWeights' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, bMeshSpaceRotationBlend) == 0x000090, "Member 'FAnimNode_LayeredBoneBlend::bMeshSpaceRotationBlend' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, bMeshSpaceScaleBlend) == 0x000091, "Member 'FAnimNode_LayeredBoneBlend::bMeshSpaceScaleBlend' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, CurveBlendOption) == 0x000092, "Member 'FAnimNode_LayeredBoneBlend::CurveBlendOption' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, bBlendRootMotionBasedOnRootBone) == 0x000093, "Member 'FAnimNode_LayeredBoneBlend::bBlendRootMotionBasedOnRootBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, TotalLayerSetup) == 0x000098, "Member 'FAnimNode_LayeredBoneBlend::TotalLayerSetup' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, ExternalLayerSetting) == 0x0000A8, "Member 'FAnimNode_LayeredBoneBlend::ExternalLayerSetting' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, LastHashString) == 0x0000B8, "Member 'FAnimNode_LayeredBoneBlend::LastHashString' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, CurrHashString) == 0x0000C8, "Member 'FAnimNode_LayeredBoneBlend::CurrHashString' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, LODThreshold) == 0x0000DC, "Member 'FAnimNode_LayeredBoneBlend::LODThreshold' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, PerBoneBlendWeights) == 0x0000E0, "Member 'FAnimNode_LayeredBoneBlend::PerBoneBlendWeights' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, SkeletonGuid) == 0x0000F0, "Member 'FAnimNode_LayeredBoneBlend::SkeletonGuid' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LayeredBoneBlend, VirtualBoneGuid) == 0x000100, "Member 'FAnimNode_LayeredBoneBlend::VirtualBoneGuid' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_LayeredBoneBlend;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_MakeDynamicAdditive
 // 0x0028 (0x0050 - 0x0028)
@@ -1226,11 +1012,7 @@ public:
 	bool                                          bMeshSpaceAdditive;                                // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_MakeDynamicAdditive) == 0x000008, "Wrong alignment on FAnimNode_MakeDynamicAdditive");
-static_assert(sizeof(FAnimNode_MakeDynamicAdditive) == 0x000050, "Wrong size on FAnimNode_MakeDynamicAdditive");
-static_assert(offsetof(FAnimNode_MakeDynamicAdditive, Base) == 0x000028, "Member 'FAnimNode_MakeDynamicAdditive::Base' has a wrong offset!");
-static_assert(offsetof(FAnimNode_MakeDynamicAdditive, Additive) == 0x000038, "Member 'FAnimNode_MakeDynamicAdditive::Additive' has a wrong offset!");
-static_assert(offsetof(FAnimNode_MakeDynamicAdditive, bMeshSpaceAdditive) == 0x000048, "Member 'FAnimNode_MakeDynamicAdditive::bMeshSpaceAdditive' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_MakeDynamicAdditive;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_MirrorCache
 // 0x0001 (0x0001 - 0x0000)
@@ -1239,16 +1021,14 @@ struct FAnimNode_MirrorCache final : public FAniNodeCacheBase
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_MirrorCache) == 0x000001, "Wrong alignment on FAnimNode_MirrorCache");
-static_assert(sizeof(FAnimNode_MirrorCache) == 0x000001, "Wrong size on FAnimNode_MirrorCache");
+DUMPER7_ASSERTS_FAnimNode_MirrorCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_Mirror
 // 0x0000 (0x0060 - 0x0060)
 struct FAnimNode_Mirror final : public FAnimNode_MirrorBase
 {
 };
-static_assert(alignof(FAnimNode_Mirror) == 0x000008, "Wrong alignment on FAnimNode_Mirror");
-static_assert(sizeof(FAnimNode_Mirror) == 0x000060, "Wrong size on FAnimNode_Mirror");
+DUMPER7_ASSERTS_FAnimNode_Mirror;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_Mirror_Standalone
 // 0x0018 (0x0078 - 0x0060)
@@ -1264,15 +1044,7 @@ public:
 	bool                                          bCurveMirroring;                                   // 0x0076(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bAttributeMirroring;                               // 0x0077(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FAnimNode_Mirror_Standalone) == 0x000008, "Wrong alignment on FAnimNode_Mirror_Standalone");
-static_assert(sizeof(FAnimNode_Mirror_Standalone) == 0x000078, "Wrong size on FAnimNode_Mirror_Standalone");
-static_assert(offsetof(FAnimNode_Mirror_Standalone, bMirror) == 0x000060, "Member 'FAnimNode_Mirror_Standalone::bMirror' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Mirror_Standalone, MirrorDataTable) == 0x000068, "Member 'FAnimNode_Mirror_Standalone::MirrorDataTable' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Mirror_Standalone, BlendTime) == 0x000070, "Member 'FAnimNode_Mirror_Standalone::BlendTime' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Mirror_Standalone, bResetChild) == 0x000074, "Member 'FAnimNode_Mirror_Standalone::bResetChild' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Mirror_Standalone, bBoneMirroring) == 0x000075, "Member 'FAnimNode_Mirror_Standalone::bBoneMirroring' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Mirror_Standalone, bCurveMirroring) == 0x000076, "Member 'FAnimNode_Mirror_Standalone::bCurveMirroring' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Mirror_Standalone, bAttributeMirroring) == 0x000077, "Member 'FAnimNode_Mirror_Standalone::bAttributeMirroring' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_Mirror_Standalone;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_MultiWayBlendCache
 // 0x0010 (0x0010 - 0x0000)
@@ -1281,8 +1053,7 @@ struct alignas(0x08) FAnimNode_MultiWayBlendCache final : public FAniNodeCacheBa
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_MultiWayBlendCache) == 0x000008, "Wrong alignment on FAnimNode_MultiWayBlendCache");
-static_assert(sizeof(FAnimNode_MultiWayBlendCache) == 0x000010, "Wrong size on FAnimNode_MultiWayBlendCache");
+DUMPER7_ASSERTS_FAnimNode_MultiWayBlendCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_PoseBlendNode
 // 0x0038 (0x00F0 - 0x00B8)
@@ -1295,11 +1066,7 @@ public:
 	class UCurveFloat*                            CustomCurve;                                       // 0x00D0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D8[0x18];                                      // 0x00D8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_PoseBlendNode) == 0x000008, "Wrong alignment on FAnimNode_PoseBlendNode");
-static_assert(sizeof(FAnimNode_PoseBlendNode) == 0x0000F0, "Wrong size on FAnimNode_PoseBlendNode");
-static_assert(offsetof(FAnimNode_PoseBlendNode, SourcePose) == 0x0000B8, "Member 'FAnimNode_PoseBlendNode::SourcePose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseBlendNode, BlendOption) == 0x0000C8, "Member 'FAnimNode_PoseBlendNode::BlendOption' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseBlendNode, CustomCurve) == 0x0000D0, "Member 'FAnimNode_PoseBlendNode::CustomCurve' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_PoseBlendNode;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_PoseByName
 // 0x0020 (0x00D8 - 0x00B8)
@@ -1310,10 +1077,7 @@ public:
 	float                                         PoseWeight;                                        // 0x00C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C8[0x10];                                      // 0x00C8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_PoseByName) == 0x000008, "Wrong alignment on FAnimNode_PoseByName");
-static_assert(sizeof(FAnimNode_PoseByName) == 0x0000D8, "Wrong size on FAnimNode_PoseByName");
-static_assert(offsetof(FAnimNode_PoseByName, PoseName) == 0x0000B8, "Member 'FAnimNode_PoseByName::PoseName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseByName, PoseWeight) == 0x0000C4, "Member 'FAnimNode_PoseByName::PoseWeight' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_PoseByName;
 
 // ScriptStruct AnimGraphRuntime.PoseDriverTransform
 // 0x0030 (0x0030 - 0x0000)
@@ -1323,10 +1087,7 @@ public:
 	struct FVector                                TargetTranslation;                                 // 0x0000(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               TargetRotation;                                    // 0x0018(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPoseDriverTransform) == 0x000008, "Wrong alignment on FPoseDriverTransform");
-static_assert(sizeof(FPoseDriverTransform) == 0x000030, "Wrong size on FPoseDriverTransform");
-static_assert(offsetof(FPoseDriverTransform, TargetTranslation) == 0x000000, "Member 'FPoseDriverTransform::TargetTranslation' has a wrong offset!");
-static_assert(offsetof(FPoseDriverTransform, TargetRotation) == 0x000018, "Member 'FPoseDriverTransform::TargetRotation' has a wrong offset!");
+DUMPER7_ASSERTS_FPoseDriverTransform;
 
 // ScriptStruct AnimGraphRuntime.PoseDriverTarget
 // 0x00E0 (0x00E0 - 0x0000)
@@ -1348,18 +1109,7 @@ public:
 	bool                                          bIsHidden;                                         // 0x00D8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPoseDriverTarget) == 0x000008, "Wrong alignment on FPoseDriverTarget");
-static_assert(sizeof(FPoseDriverTarget) == 0x0000E0, "Wrong size on FPoseDriverTarget");
-static_assert(offsetof(FPoseDriverTarget, BoneTransforms) == 0x000000, "Member 'FPoseDriverTarget::BoneTransforms' has a wrong offset!");
-static_assert(offsetof(FPoseDriverTarget, TargetRotation) == 0x000010, "Member 'FPoseDriverTarget::TargetRotation' has a wrong offset!");
-static_assert(offsetof(FPoseDriverTarget, TargetScale) == 0x000028, "Member 'FPoseDriverTarget::TargetScale' has a wrong offset!");
-static_assert(offsetof(FPoseDriverTarget, DistanceMethod) == 0x00002C, "Member 'FPoseDriverTarget::DistanceMethod' has a wrong offset!");
-static_assert(offsetof(FPoseDriverTarget, FunctionType) == 0x00002D, "Member 'FPoseDriverTarget::FunctionType' has a wrong offset!");
-static_assert(offsetof(FPoseDriverTarget, bApplyCustomCurve) == 0x00002E, "Member 'FPoseDriverTarget::bApplyCustomCurve' has a wrong offset!");
-static_assert(offsetof(FPoseDriverTarget, CustomCurve) == 0x000030, "Member 'FPoseDriverTarget::CustomCurve' has a wrong offset!");
-static_assert(offsetof(FPoseDriverTarget, DrivenName) == 0x0000B0, "Member 'FPoseDriverTarget::DrivenName' has a wrong offset!");
-static_assert(offsetof(FPoseDriverTarget, MorphTargetNames) == 0x0000C0, "Member 'FPoseDriverTarget::MorphTargetNames' has a wrong offset!");
-static_assert(offsetof(FPoseDriverTarget, bIsHidden) == 0x0000D8, "Member 'FPoseDriverTarget::bIsHidden' has a wrong offset!");
+DUMPER7_ASSERTS_FPoseDriverTarget;
 
 // ScriptStruct AnimGraphRuntime.RBFParams
 // 0x0038 (0x0038 - 0x0000)
@@ -1381,20 +1131,7 @@ public:
 	float                                         MedianMin;                                         // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MedianMax;                                         // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRBFParams) == 0x000008, "Wrong alignment on FRBFParams");
-static_assert(sizeof(FRBFParams) == 0x000038, "Wrong size on FRBFParams");
-static_assert(offsetof(FRBFParams, TargetDimensions) == 0x000000, "Member 'FRBFParams::TargetDimensions' has a wrong offset!");
-static_assert(offsetof(FRBFParams, SolverType) == 0x000004, "Member 'FRBFParams::SolverType' has a wrong offset!");
-static_assert(offsetof(FRBFParams, Radius) == 0x000008, "Member 'FRBFParams::Radius' has a wrong offset!");
-static_assert(offsetof(FRBFParams, bAutomaticRadius) == 0x00000C, "Member 'FRBFParams::bAutomaticRadius' has a wrong offset!");
-static_assert(offsetof(FRBFParams, Function) == 0x00000D, "Member 'FRBFParams::Function' has a wrong offset!");
-static_assert(offsetof(FRBFParams, DistanceMethod) == 0x00000E, "Member 'FRBFParams::DistanceMethod' has a wrong offset!");
-static_assert(offsetof(FRBFParams, TwistAxis) == 0x00000F, "Member 'FRBFParams::TwistAxis' has a wrong offset!");
-static_assert(offsetof(FRBFParams, WeightThreshold) == 0x000010, "Member 'FRBFParams::WeightThreshold' has a wrong offset!");
-static_assert(offsetof(FRBFParams, NormalizeMethod) == 0x000014, "Member 'FRBFParams::NormalizeMethod' has a wrong offset!");
-static_assert(offsetof(FRBFParams, MedianReference) == 0x000018, "Member 'FRBFParams::MedianReference' has a wrong offset!");
-static_assert(offsetof(FRBFParams, MedianMin) == 0x000030, "Member 'FRBFParams::MedianMin' has a wrong offset!");
-static_assert(offsetof(FRBFParams, MedianMax) == 0x000034, "Member 'FRBFParams::MedianMax' has a wrong offset!");
+DUMPER7_ASSERTS_FRBFParams;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_PoseDriver
 // 0x0108 (0x01C0 - 0x00B8)
@@ -1415,18 +1152,7 @@ public:
 	int32                                         LODThreshold;                                      // 0x018C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_190[0x30];                                     // 0x0190(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_PoseDriver) == 0x000008, "Wrong alignment on FAnimNode_PoseDriver");
-static_assert(sizeof(FAnimNode_PoseDriver) == 0x0001C0, "Wrong size on FAnimNode_PoseDriver");
-static_assert(offsetof(FAnimNode_PoseDriver, SourcePose) == 0x0000B8, "Member 'FAnimNode_PoseDriver::SourcePose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseDriver, SourceBones) == 0x0000C8, "Member 'FAnimNode_PoseDriver::SourceBones' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseDriver, EvalSpaceBone) == 0x0000D8, "Member 'FAnimNode_PoseDriver::EvalSpaceBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseDriver, bEvalFromRefPose) == 0x0000EC, "Member 'FAnimNode_PoseDriver::bEvalFromRefPose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseDriver, OnlyDriveBones) == 0x0000F0, "Member 'FAnimNode_PoseDriver::OnlyDriveBones' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseDriver, PoseTargets) == 0x000100, "Member 'FAnimNode_PoseDriver::PoseTargets' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseDriver, RBFParams) == 0x000110, "Member 'FAnimNode_PoseDriver::RBFParams' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseDriver, DriveSource) == 0x000148, "Member 'FAnimNode_PoseDriver::DriveSource' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseDriver, DriveOutput) == 0x000149, "Member 'FAnimNode_PoseDriver::DriveOutput' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseDriver, LODThreshold) == 0x00018C, "Member 'FAnimNode_PoseDriver::LODThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_PoseDriver;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_PoseSnapshotCache
 // 0x0020 (0x0020 - 0x0000)
@@ -1435,8 +1161,7 @@ struct alignas(0x08) FAnimNode_PoseSnapshotCache final : public FAniNodeCacheBas
 public:
 	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_PoseSnapshotCache) == 0x000008, "Wrong alignment on FAnimNode_PoseSnapshotCache");
-static_assert(sizeof(FAnimNode_PoseSnapshotCache) == 0x000020, "Wrong size on FAnimNode_PoseSnapshotCache");
+DUMPER7_ASSERTS_FAnimNode_PoseSnapshotCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_PoseSnapshot
 // 0x00A0 (0x00C8 - 0x0028)
@@ -1449,11 +1174,7 @@ public:
 	ESnapshotSourceMode                           Mode;                                              // 0x0078(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_79[0x4F];                                      // 0x0079(0x004F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_PoseSnapshot) == 0x000008, "Wrong alignment on FAnimNode_PoseSnapshot");
-static_assert(sizeof(FAnimNode_PoseSnapshot) == 0x0000C8, "Wrong size on FAnimNode_PoseSnapshot");
-static_assert(offsetof(FAnimNode_PoseSnapshot, SnapshotName) == 0x000028, "Member 'FAnimNode_PoseSnapshot::SnapshotName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseSnapshot, Snapshot) == 0x000038, "Member 'FAnimNode_PoseSnapshot::Snapshot' has a wrong offset!");
-static_assert(offsetof(FAnimNode_PoseSnapshot, Mode) == 0x000078, "Member 'FAnimNode_PoseSnapshot::Mode' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_PoseSnapshot;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RotateRootBone
 // 0x00A0 (0x00C8 - 0x0028)
@@ -1469,15 +1190,7 @@ public:
 	bool                                          bRotateRootMotionAttribute;                        // 0x00B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B9[0xF];                                       // 0x00B9(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_RotateRootBone) == 0x000008, "Wrong alignment on FAnimNode_RotateRootBone");
-static_assert(sizeof(FAnimNode_RotateRootBone) == 0x0000C8, "Wrong size on FAnimNode_RotateRootBone");
-static_assert(offsetof(FAnimNode_RotateRootBone, BasePose) == 0x000028, "Member 'FAnimNode_RotateRootBone::BasePose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotateRootBone, Pitch) == 0x000038, "Member 'FAnimNode_RotateRootBone::Pitch' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotateRootBone, Yaw) == 0x00003C, "Member 'FAnimNode_RotateRootBone::Yaw' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotateRootBone, PitchScaleBiasClamp) == 0x000040, "Member 'FAnimNode_RotateRootBone::PitchScaleBiasClamp' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotateRootBone, YawScaleBiasClamp) == 0x000070, "Member 'FAnimNode_RotateRootBone::YawScaleBiasClamp' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotateRootBone, MeshToComponent) == 0x0000A0, "Member 'FAnimNode_RotateRootBone::MeshToComponent' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotateRootBone, bRotateRootMotionAttribute) == 0x0000B8, "Member 'FAnimNode_RotateRootBone::bRotateRootMotionAttribute' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_RotateRootBone;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RotationOffsetBlendSpace
 // 0x00B0 (0x0140 - 0x0090)
@@ -1496,17 +1209,7 @@ public:
 	bool                                          bAlphaBoolEnabled;                                 // 0x0139(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_13A[0x6];                                      // 0x013A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_RotationOffsetBlendSpace) == 0x000008, "Wrong alignment on FAnimNode_RotationOffsetBlendSpace");
-static_assert(sizeof(FAnimNode_RotationOffsetBlendSpace) == 0x000140, "Wrong size on FAnimNode_RotationOffsetBlendSpace");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpace, BasePose) == 0x000090, "Member 'FAnimNode_RotationOffsetBlendSpace::BasePose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpace, LODThreshold) == 0x0000A0, "Member 'FAnimNode_RotationOffsetBlendSpace::LODThreshold' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpace, Alpha) == 0x0000A4, "Member 'FAnimNode_RotationOffsetBlendSpace::Alpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpace, AlphaScaleBias) == 0x0000A8, "Member 'FAnimNode_RotationOffsetBlendSpace::AlphaScaleBias' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpace, AlphaBoolBlend) == 0x0000B0, "Member 'FAnimNode_RotationOffsetBlendSpace::AlphaBoolBlend' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpace, AlphaCurveName) == 0x0000F8, "Member 'FAnimNode_RotationOffsetBlendSpace::AlphaCurveName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpace, AlphaScaleBiasClamp) == 0x000104, "Member 'FAnimNode_RotationOffsetBlendSpace::AlphaScaleBiasClamp' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpace, AlphaInputType) == 0x000138, "Member 'FAnimNode_RotationOffsetBlendSpace::AlphaInputType' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpace, bAlphaBoolEnabled) == 0x000139, "Member 'FAnimNode_RotationOffsetBlendSpace::bAlphaBoolEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_RotationOffsetBlendSpace;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_ROBSGraphCache
 // 0x0008 (0x0018 - 0x0010)
@@ -1515,8 +1218,7 @@ struct FAnimNode_ROBSGraphCache final : public FAnimNode_BSGraphCache
 public:
 	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_ROBSGraphCache) == 0x000008, "Wrong alignment on FAnimNode_ROBSGraphCache");
-static_assert(sizeof(FAnimNode_ROBSGraphCache) == 0x000018, "Wrong size on FAnimNode_ROBSGraphCache");
+DUMPER7_ASSERTS_FAnimNode_ROBSGraphCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RotationOffsetBlendSpaceGraph
 // 0x00B0 (0x0130 - 0x0080)
@@ -1535,17 +1237,7 @@ public:
 	bool                                          bAlphaBoolEnabled;                                 // 0x0129(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_12A[0x6];                                      // 0x012A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_RotationOffsetBlendSpaceGraph) == 0x000008, "Wrong alignment on FAnimNode_RotationOffsetBlendSpaceGraph");
-static_assert(sizeof(FAnimNode_RotationOffsetBlendSpaceGraph) == 0x000130, "Wrong size on FAnimNode_RotationOffsetBlendSpaceGraph");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpaceGraph, BasePose) == 0x000080, "Member 'FAnimNode_RotationOffsetBlendSpaceGraph::BasePose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpaceGraph, LODThreshold) == 0x000090, "Member 'FAnimNode_RotationOffsetBlendSpaceGraph::LODThreshold' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpaceGraph, Alpha) == 0x000094, "Member 'FAnimNode_RotationOffsetBlendSpaceGraph::Alpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpaceGraph, AlphaScaleBias) == 0x000098, "Member 'FAnimNode_RotationOffsetBlendSpaceGraph::AlphaScaleBias' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpaceGraph, AlphaBoolBlend) == 0x0000A0, "Member 'FAnimNode_RotationOffsetBlendSpaceGraph::AlphaBoolBlend' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpaceGraph, AlphaCurveName) == 0x0000E8, "Member 'FAnimNode_RotationOffsetBlendSpaceGraph::AlphaCurveName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpaceGraph, AlphaScaleBiasClamp) == 0x0000F4, "Member 'FAnimNode_RotationOffsetBlendSpaceGraph::AlphaScaleBiasClamp' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpaceGraph, AlphaInputType) == 0x000128, "Member 'FAnimNode_RotationOffsetBlendSpaceGraph::AlphaInputType' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RotationOffsetBlendSpaceGraph, bAlphaBoolEnabled) == 0x000129, "Member 'FAnimNode_RotationOffsetBlendSpaceGraph::bAlphaBoolEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_RotationOffsetBlendSpaceGraph;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SequenceEvaluatorBase
 // 0x0008 (0x0058 - 0x0050)
@@ -1554,16 +1246,14 @@ struct FAnimNode_SequenceEvaluatorBase : public FAnimNode_AssetPlayerBase
 public:
 	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_SequenceEvaluatorBase) == 0x000008, "Wrong alignment on FAnimNode_SequenceEvaluatorBase");
-static_assert(sizeof(FAnimNode_SequenceEvaluatorBase) == 0x000058, "Wrong size on FAnimNode_SequenceEvaluatorBase");
+DUMPER7_ASSERTS_FAnimNode_SequenceEvaluatorBase;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SequenceEvaluator
 // 0x0000 (0x0058 - 0x0058)
 struct FAnimNode_SequenceEvaluator final : public FAnimNode_SequenceEvaluatorBase
 {
 };
-static_assert(alignof(FAnimNode_SequenceEvaluator) == 0x000008, "Wrong alignment on FAnimNode_SequenceEvaluator");
-static_assert(sizeof(FAnimNode_SequenceEvaluator) == 0x000058, "Wrong size on FAnimNode_SequenceEvaluator");
+DUMPER7_ASSERTS_FAnimNode_SequenceEvaluator;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SequenceEvaluator_Standalone
 // 0x0028 (0x0080 - 0x0058)
@@ -1584,18 +1274,7 @@ public:
 	float                                         StartPosition;                                     // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_SequenceEvaluator_Standalone) == 0x000008, "Wrong alignment on FAnimNode_SequenceEvaluator_Standalone");
-static_assert(sizeof(FAnimNode_SequenceEvaluator_Standalone) == 0x000080, "Wrong size on FAnimNode_SequenceEvaluator_Standalone");
-static_assert(offsetof(FAnimNode_SequenceEvaluator_Standalone, GroupName) == 0x000058, "Member 'FAnimNode_SequenceEvaluator_Standalone::GroupName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SequenceEvaluator_Standalone, GroupRole) == 0x000064, "Member 'FAnimNode_SequenceEvaluator_Standalone::GroupRole' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SequenceEvaluator_Standalone, Method) == 0x000065, "Member 'FAnimNode_SequenceEvaluator_Standalone::Method' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SequenceEvaluator_Standalone, bIgnoreForRelevancyTest) == 0x000066, "Member 'FAnimNode_SequenceEvaluator_Standalone::bIgnoreForRelevancyTest' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SequenceEvaluator_Standalone, Sequence) == 0x000068, "Member 'FAnimNode_SequenceEvaluator_Standalone::Sequence' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SequenceEvaluator_Standalone, ExplicitTime) == 0x000070, "Member 'FAnimNode_SequenceEvaluator_Standalone::ExplicitTime' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SequenceEvaluator_Standalone, bShouldLoop) == 0x000074, "Member 'FAnimNode_SequenceEvaluator_Standalone::bShouldLoop' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SequenceEvaluator_Standalone, bTeleportToExplicitTime) == 0x000075, "Member 'FAnimNode_SequenceEvaluator_Standalone::bTeleportToExplicitTime' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SequenceEvaluator_Standalone, ReinitializationBehavior) == 0x000076, "Member 'FAnimNode_SequenceEvaluator_Standalone::ReinitializationBehavior' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SequenceEvaluator_Standalone, StartPosition) == 0x000078, "Member 'FAnimNode_SequenceEvaluator_Standalone::StartPosition' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_SequenceEvaluator_Standalone;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SlotCache
 // 0x000C (0x000C - 0x0000)
@@ -1604,8 +1283,7 @@ struct alignas(0x04) FAnimNode_SlotCache final : public FAniNodeCacheBase
 public:
 	uint8                                         Pad_0[0xC];                                        // 0x0000(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_SlotCache) == 0x000004, "Wrong alignment on FAnimNode_SlotCache");
-static_assert(sizeof(FAnimNode_SlotCache) == 0x00000C, "Wrong size on FAnimNode_SlotCache");
+DUMPER7_ASSERTS_FAnimNode_SlotCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_Slot
 // 0x0068 (0x0090 - 0x0028)
@@ -1618,17 +1296,11 @@ public:
 	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ExternRotationBlendBoneName;                       // 0x0048(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceUpdateSourcePose;                            // 0x0054(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAlwaysUpdateSourcePose;                           // 0x0055(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_56[0x3A];                                      // 0x0056(0x003A)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bNoMontageEvaluation;                              // 0x0055(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAlwaysUpdateSourcePose;                           // 0x0056(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_57[0x39];                                      // 0x0057(0x0039)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_Slot) == 0x000008, "Wrong alignment on FAnimNode_Slot");
-static_assert(sizeof(FAnimNode_Slot) == 0x000090, "Wrong size on FAnimNode_Slot");
-static_assert(offsetof(FAnimNode_Slot, Source) == 0x000028, "Member 'FAnimNode_Slot::Source' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Slot, SlotName) == 0x000038, "Member 'FAnimNode_Slot::SlotName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Slot, ExternMontageBlendMode) == 0x000044, "Member 'FAnimNode_Slot::ExternMontageBlendMode' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Slot, ExternRotationBlendBoneName) == 0x000048, "Member 'FAnimNode_Slot::ExternRotationBlendBoneName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Slot, bForceUpdateSourcePose) == 0x000054, "Member 'FAnimNode_Slot::bForceUpdateSourcePose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Slot, bAlwaysUpdateSourcePose) == 0x000055, "Member 'FAnimNode_Slot::bAlwaysUpdateSourcePose' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_Slot;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_Sync
 // 0x0020 (0x0048 - 0x0028)
@@ -1640,11 +1312,7 @@ public:
 	EAnimGroupRole                                GroupRole;                                         // 0x0044(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_Sync) == 0x000008, "Wrong alignment on FAnimNode_Sync");
-static_assert(sizeof(FAnimNode_Sync) == 0x000048, "Wrong size on FAnimNode_Sync");
-static_assert(offsetof(FAnimNode_Sync, Source) == 0x000028, "Member 'FAnimNode_Sync::Source' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Sync, GroupName) == 0x000038, "Member 'FAnimNode_Sync::GroupName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Sync, GroupRole) == 0x000044, "Member 'FAnimNode_Sync::GroupRole' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_Sync;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_TwoWayBlendCache
 // 0x0008 (0x0008 - 0x0000)
@@ -1653,8 +1321,7 @@ struct alignas(0x04) FAnimNode_TwoWayBlendCache final : public FAniNodeCacheBase
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_TwoWayBlendCache) == 0x000004, "Wrong alignment on FAnimNode_TwoWayBlendCache");
-static_assert(sizeof(FAnimNode_TwoWayBlendCache) == 0x000008, "Wrong size on FAnimNode_TwoWayBlendCache");
+DUMPER7_ASSERTS_FAnimNode_TwoWayBlendCache;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_TwoWayBlend
 // 0x00B8 (0x00E0 - 0x0028)
@@ -1675,16 +1342,7 @@ public:
 	struct FInputScaleBiasClamp                   AlphaScaleBiasClamp;                               // 0x00AC(0x0030)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_TwoWayBlend) == 0x000008, "Wrong alignment on FAnimNode_TwoWayBlend");
-static_assert(sizeof(FAnimNode_TwoWayBlend) == 0x0000E0, "Wrong size on FAnimNode_TwoWayBlend");
-static_assert(offsetof(FAnimNode_TwoWayBlend, A) == 0x000028, "Member 'FAnimNode_TwoWayBlend::A' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoWayBlend, B) == 0x000038, "Member 'FAnimNode_TwoWayBlend::B' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoWayBlend, AlphaInputType) == 0x000048, "Member 'FAnimNode_TwoWayBlend::AlphaInputType' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoWayBlend, Alpha) == 0x00004C, "Member 'FAnimNode_TwoWayBlend::Alpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoWayBlend, AlphaScaleBias) == 0x000050, "Member 'FAnimNode_TwoWayBlend::AlphaScaleBias' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoWayBlend, AlphaBoolBlend) == 0x000058, "Member 'FAnimNode_TwoWayBlend::AlphaBoolBlend' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoWayBlend, AlphaCurveName) == 0x0000A0, "Member 'FAnimNode_TwoWayBlend::AlphaCurveName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoWayBlend, AlphaScaleBiasClamp) == 0x0000AC, "Member 'FAnimNode_TwoWayBlend::AlphaScaleBiasClamp' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_TwoWayBlend;
 
 // ScriptStruct AnimGraphRuntime.AnimSequencerInstanceProxy
 // 0x04F0 (0x0D20 - 0x0830)
@@ -1693,24 +1351,21 @@ struct FAnimSequencerInstanceProxy final : public FAnimInstanceProxy
 public:
 	uint8                                         Pad_830[0x4F0];                                    // 0x0830(0x04F0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimSequencerInstanceProxy) == 0x000010, "Wrong alignment on FAnimSequencerInstanceProxy");
-static_assert(sizeof(FAnimSequencerInstanceProxy) == 0x000D20, "Wrong size on FAnimSequencerInstanceProxy");
+DUMPER7_ASSERTS_FAnimSequencerInstanceProxy;
 
 // ScriptStruct AnimGraphRuntime.BlendListBaseReference
 // 0x0000 (0x0010 - 0x0010)
 struct FBlendListBaseReference final : public FAnimNodeReference
 {
 };
-static_assert(alignof(FBlendListBaseReference) == 0x000008, "Wrong alignment on FBlendListBaseReference");
-static_assert(sizeof(FBlendListBaseReference) == 0x000010, "Wrong size on FBlendListBaseReference");
+DUMPER7_ASSERTS_FBlendListBaseReference;
 
 // ScriptStruct AnimGraphRuntime.BlendSpacePlayerReference
 // 0x0000 (0x0010 - 0x0010)
 struct FBlendSpacePlayerReference final : public FAnimNodeReference
 {
 };
-static_assert(alignof(FBlendSpacePlayerReference) == 0x000008, "Wrong alignment on FBlendSpacePlayerReference");
-static_assert(sizeof(FBlendSpacePlayerReference) == 0x000010, "Wrong size on FBlendSpacePlayerReference");
+DUMPER7_ASSERTS_FBlendSpacePlayerReference;
 
 // ScriptStruct AnimGraphRuntime.AnimPhysConstraintSetup
 // 0x0088 (0x0088 - 0x0000)
@@ -1732,20 +1387,7 @@ public:
 	struct FVector                                AngularLimitsMax;                                  // 0x0058(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                AngularTarget;                                     // 0x0070(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimPhysConstraintSetup) == 0x000008, "Wrong alignment on FAnimPhysConstraintSetup");
-static_assert(sizeof(FAnimPhysConstraintSetup) == 0x000088, "Wrong size on FAnimPhysConstraintSetup");
-static_assert(offsetof(FAnimPhysConstraintSetup, LinearXLimitType) == 0x000000, "Member 'FAnimPhysConstraintSetup::LinearXLimitType' has a wrong offset!");
-static_assert(offsetof(FAnimPhysConstraintSetup, LinearYLimitType) == 0x000001, "Member 'FAnimPhysConstraintSetup::LinearYLimitType' has a wrong offset!");
-static_assert(offsetof(FAnimPhysConstraintSetup, LinearZLimitType) == 0x000002, "Member 'FAnimPhysConstraintSetup::LinearZLimitType' has a wrong offset!");
-static_assert(offsetof(FAnimPhysConstraintSetup, LinearAxesMin) == 0x000008, "Member 'FAnimPhysConstraintSetup::LinearAxesMin' has a wrong offset!");
-static_assert(offsetof(FAnimPhysConstraintSetup, LinearAxesMax) == 0x000020, "Member 'FAnimPhysConstraintSetup::LinearAxesMax' has a wrong offset!");
-static_assert(offsetof(FAnimPhysConstraintSetup, AngularConstraintType) == 0x000038, "Member 'FAnimPhysConstraintSetup::AngularConstraintType' has a wrong offset!");
-static_assert(offsetof(FAnimPhysConstraintSetup, TwistAxis) == 0x000039, "Member 'FAnimPhysConstraintSetup::TwistAxis' has a wrong offset!");
-static_assert(offsetof(FAnimPhysConstraintSetup, AngularTargetAxis) == 0x00003A, "Member 'FAnimPhysConstraintSetup::AngularTargetAxis' has a wrong offset!");
-static_assert(offsetof(FAnimPhysConstraintSetup, ConeAngle) == 0x00003C, "Member 'FAnimPhysConstraintSetup::ConeAngle' has a wrong offset!");
-static_assert(offsetof(FAnimPhysConstraintSetup, AngularLimitsMin) == 0x000040, "Member 'FAnimPhysConstraintSetup::AngularLimitsMin' has a wrong offset!");
-static_assert(offsetof(FAnimPhysConstraintSetup, AngularLimitsMax) == 0x000058, "Member 'FAnimPhysConstraintSetup::AngularLimitsMax' has a wrong offset!");
-static_assert(offsetof(FAnimPhysConstraintSetup, AngularTarget) == 0x000070, "Member 'FAnimPhysConstraintSetup::AngularTarget' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimPhysConstraintSetup;
 
 // ScriptStruct AnimGraphRuntime.AnimPhysPlanarLimit
 // 0x0080 (0x0080 - 0x0000)
@@ -1756,10 +1398,7 @@ public:
 	uint8                                         Pad_14[0xC];                                       // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             PlaneTransform;                                    // 0x0020(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimPhysPlanarLimit) == 0x000010, "Wrong alignment on FAnimPhysPlanarLimit");
-static_assert(sizeof(FAnimPhysPlanarLimit) == 0x000080, "Wrong size on FAnimPhysPlanarLimit");
-static_assert(offsetof(FAnimPhysPlanarLimit, DrivingBone) == 0x000000, "Member 'FAnimPhysPlanarLimit::DrivingBone' has a wrong offset!");
-static_assert(offsetof(FAnimPhysPlanarLimit, PlaneTransform) == 0x000020, "Member 'FAnimPhysPlanarLimit::PlaneTransform' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimPhysPlanarLimit;
 
 // ScriptStruct AnimGraphRuntime.AnimPhysSphericalLimit
 // 0x0038 (0x0038 - 0x0000)
@@ -1773,12 +1412,7 @@ public:
 	ESphericalLimitType                           LimitType;                                         // 0x0034(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimPhysSphericalLimit) == 0x000008, "Wrong alignment on FAnimPhysSphericalLimit");
-static_assert(sizeof(FAnimPhysSphericalLimit) == 0x000038, "Wrong size on FAnimPhysSphericalLimit");
-static_assert(offsetof(FAnimPhysSphericalLimit, DrivingBone) == 0x000000, "Member 'FAnimPhysSphericalLimit::DrivingBone' has a wrong offset!");
-static_assert(offsetof(FAnimPhysSphericalLimit, SphereLocalOffset) == 0x000018, "Member 'FAnimPhysSphericalLimit::SphereLocalOffset' has a wrong offset!");
-static_assert(offsetof(FAnimPhysSphericalLimit, LimitRadius) == 0x000030, "Member 'FAnimPhysSphericalLimit::LimitRadius' has a wrong offset!");
-static_assert(offsetof(FAnimPhysSphericalLimit, LimitType) == 0x000034, "Member 'FAnimPhysSphericalLimit::LimitType' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimPhysSphericalLimit;
 
 // ScriptStruct AnimGraphRuntime.AnimPhysBodyDefinition
 // 0x00D8 (0x00D8 - 0x0000)
@@ -1794,14 +1428,7 @@ public:
 	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         SphereCollisionRadius;                             // 0x00D4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimPhysBodyDefinition) == 0x000008, "Wrong alignment on FAnimPhysBodyDefinition");
-static_assert(sizeof(FAnimPhysBodyDefinition) == 0x0000D8, "Wrong size on FAnimPhysBodyDefinition");
-static_assert(offsetof(FAnimPhysBodyDefinition, BoundBone) == 0x000000, "Member 'FAnimPhysBodyDefinition::BoundBone' has a wrong offset!");
-static_assert(offsetof(FAnimPhysBodyDefinition, BoxExtents) == 0x000018, "Member 'FAnimPhysBodyDefinition::BoxExtents' has a wrong offset!");
-static_assert(offsetof(FAnimPhysBodyDefinition, LocalJointOffset) == 0x000030, "Member 'FAnimPhysBodyDefinition::LocalJointOffset' has a wrong offset!");
-static_assert(offsetof(FAnimPhysBodyDefinition, ConstraintSetup) == 0x000048, "Member 'FAnimPhysBodyDefinition::ConstraintSetup' has a wrong offset!");
-static_assert(offsetof(FAnimPhysBodyDefinition, CollisionType) == 0x0000D0, "Member 'FAnimPhysBodyDefinition::CollisionType' has a wrong offset!");
-static_assert(offsetof(FAnimPhysBodyDefinition, SphereCollisionRadius) == 0x0000D4, "Member 'FAnimPhysBodyDefinition::SphereCollisionRadius' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimPhysBodyDefinition;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_AnimDynamics
 // 0x0468 (0x0550 - 0x00E8)
@@ -1853,30 +1480,7 @@ public:
 	struct FRotationRetargetingInfo               RetargetingSettings;                               // 0x02D0(0x01A0)(Edit, NativeAccessSpecifierPublic)
 	uint8                                         Pad_470[0xE0];                                     // 0x0470(0x00E0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_AnimDynamics) == 0x000010, "Wrong alignment on FAnimNode_AnimDynamics");
-static_assert(sizeof(FAnimNode_AnimDynamics) == 0x000550, "Wrong size on FAnimNode_AnimDynamics");
-static_assert(offsetof(FAnimNode_AnimDynamics, LinearDampingOverride) == 0x0000E8, "Member 'FAnimNode_AnimDynamics::LinearDampingOverride' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, AngularDampingOverride) == 0x0000EC, "Member 'FAnimNode_AnimDynamics::AngularDampingOverride' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, RelativeSpaceBone) == 0x0001B0, "Member 'FAnimNode_AnimDynamics::RelativeSpaceBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, BoundBone) == 0x0001C4, "Member 'FAnimNode_AnimDynamics::BoundBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, ChainEnd) == 0x0001D8, "Member 'FAnimNode_AnimDynamics::ChainEnd' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, PhysicsBodyDefinitions) == 0x0001F0, "Member 'FAnimNode_AnimDynamics::PhysicsBodyDefinitions' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, GravityScale) == 0x000200, "Member 'FAnimNode_AnimDynamics::GravityScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, GravityOverride) == 0x000208, "Member 'FAnimNode_AnimDynamics::GravityOverride' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, LinearSpringConstant) == 0x000220, "Member 'FAnimNode_AnimDynamics::LinearSpringConstant' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, AngularSpringConstant) == 0x000224, "Member 'FAnimNode_AnimDynamics::AngularSpringConstant' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, WindScale) == 0x000228, "Member 'FAnimNode_AnimDynamics::WindScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, ComponentLinearAccScale) == 0x000230, "Member 'FAnimNode_AnimDynamics::ComponentLinearAccScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, ComponentLinearVelScale) == 0x000248, "Member 'FAnimNode_AnimDynamics::ComponentLinearVelScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, ComponentAppliedLinearAccClamp) == 0x000260, "Member 'FAnimNode_AnimDynamics::ComponentAppliedLinearAccClamp' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, AngularBiasOverride) == 0x000278, "Member 'FAnimNode_AnimDynamics::AngularBiasOverride' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, NumSolverIterationsPreUpdate) == 0x00027C, "Member 'FAnimNode_AnimDynamics::NumSolverIterationsPreUpdate' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, NumSolverIterationsPostUpdate) == 0x000280, "Member 'FAnimNode_AnimDynamics::NumSolverIterationsPostUpdate' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, SphericalLimits) == 0x000288, "Member 'FAnimNode_AnimDynamics::SphericalLimits' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, ExternalForce) == 0x000298, "Member 'FAnimNode_AnimDynamics::ExternalForce' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, PlanarLimits) == 0x0002B0, "Member 'FAnimNode_AnimDynamics::PlanarLimits' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, SimulationSpace) == 0x0002C0, "Member 'FAnimNode_AnimDynamics::SimulationSpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AnimDynamics, RetargetingSettings) == 0x0002D0, "Member 'FAnimNode_AnimDynamics::RetargetingSettings' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_AnimDynamics;
 
 // ScriptStruct AnimGraphRuntime.AngularRangeLimit
 // 0x0048 (0x0048 - 0x0000)
@@ -1888,11 +1492,7 @@ public:
 	struct FBoneReference                         Bone;                                              // 0x0030(0x0014)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAngularRangeLimit) == 0x000008, "Wrong alignment on FAngularRangeLimit");
-static_assert(sizeof(FAngularRangeLimit) == 0x000048, "Wrong size on FAngularRangeLimit");
-static_assert(offsetof(FAngularRangeLimit, LimitMin) == 0x000000, "Member 'FAngularRangeLimit::LimitMin' has a wrong offset!");
-static_assert(offsetof(FAngularRangeLimit, LimitMax) == 0x000018, "Member 'FAngularRangeLimit::LimitMax' has a wrong offset!");
-static_assert(offsetof(FAngularRangeLimit, Bone) == 0x000030, "Member 'FAngularRangeLimit::Bone' has a wrong offset!");
+DUMPER7_ASSERTS_FAngularRangeLimit;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_ApplyLimits
 // 0x0020 (0x0108 - 0x00E8)
@@ -1902,10 +1502,7 @@ public:
 	TArray<struct FAngularRangeLimit>             AngularRangeLimits;                                // 0x00E8(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        AngularOffsets;                                    // 0x00F8(0x0010)(Edit, BlueprintVisible, EditFixedSize, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimNode_ApplyLimits) == 0x000008, "Wrong alignment on FAnimNode_ApplyLimits");
-static_assert(sizeof(FAnimNode_ApplyLimits) == 0x000108, "Wrong size on FAnimNode_ApplyLimits");
-static_assert(offsetof(FAnimNode_ApplyLimits, AngularRangeLimits) == 0x0000E8, "Member 'FAnimNode_ApplyLimits::AngularRangeLimits' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ApplyLimits, AngularOffsets) == 0x0000F8, "Member 'FAnimNode_ApplyLimits::AngularOffsets' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_ApplyLimits;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BoneDrivenController
 // 0x0070 (0x0158 - 0x00E8)
@@ -1938,20 +1535,7 @@ public:
 	uint8                                         bAffectTargetScaleZ : 1;                           // 0x0154(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_155[0x3];                                      // 0x0155(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_BoneDrivenController) == 0x000008, "Wrong alignment on FAnimNode_BoneDrivenController");
-static_assert(sizeof(FAnimNode_BoneDrivenController) == 0x000158, "Wrong size on FAnimNode_BoneDrivenController");
-static_assert(offsetof(FAnimNode_BoneDrivenController, SourceBone) == 0x0000E8, "Member 'FAnimNode_BoneDrivenController::SourceBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BoneDrivenController, DrivingCurve) == 0x000100, "Member 'FAnimNode_BoneDrivenController::DrivingCurve' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BoneDrivenController, Multiplier) == 0x000108, "Member 'FAnimNode_BoneDrivenController::Multiplier' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BoneDrivenController, RangeMin) == 0x000110, "Member 'FAnimNode_BoneDrivenController::RangeMin' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BoneDrivenController, RangeMax) == 0x000118, "Member 'FAnimNode_BoneDrivenController::RangeMax' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BoneDrivenController, RemappedMin) == 0x000120, "Member 'FAnimNode_BoneDrivenController::RemappedMin' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BoneDrivenController, RemappedMax) == 0x000128, "Member 'FAnimNode_BoneDrivenController::RemappedMax' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BoneDrivenController, ParameterName) == 0x000130, "Member 'FAnimNode_BoneDrivenController::ParameterName' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BoneDrivenController, TargetBone) == 0x00013C, "Member 'FAnimNode_BoneDrivenController::TargetBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BoneDrivenController, DestinationMode) == 0x000150, "Member 'FAnimNode_BoneDrivenController::DestinationMode' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BoneDrivenController, ModificationMode) == 0x000151, "Member 'FAnimNode_BoneDrivenController::ModificationMode' has a wrong offset!");
-static_assert(offsetof(FAnimNode_BoneDrivenController, SourceComponent) == 0x000152, "Member 'FAnimNode_BoneDrivenController::SourceComponent' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_BoneDrivenController;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_CCDIK
 // 0x0118 (0x0200 - 0x00E8)
@@ -1972,18 +1556,7 @@ public:
 	TArray<float>                                 RotationLimitPerJoints;                            // 0x01E8(0x0010)(Edit, EditFixedSize, ZeroConstructor, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_1F8[0x8];                                      // 0x01F8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_CCDIK) == 0x000010, "Wrong alignment on FAnimNode_CCDIK");
-static_assert(sizeof(FAnimNode_CCDIK) == 0x000200, "Wrong size on FAnimNode_CCDIK");
-static_assert(offsetof(FAnimNode_CCDIK, EffectorLocation) == 0x0000E8, "Member 'FAnimNode_CCDIK::EffectorLocation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CCDIK, EffectorLocationSpace) == 0x000100, "Member 'FAnimNode_CCDIK::EffectorLocationSpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CCDIK, EffectorTarget) == 0x000110, "Member 'FAnimNode_CCDIK::EffectorTarget' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CCDIK, TipBone) == 0x0001B0, "Member 'FAnimNode_CCDIK::TipBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CCDIK, RootBone) == 0x0001C4, "Member 'FAnimNode_CCDIK::RootBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CCDIK, Precision) == 0x0001D8, "Member 'FAnimNode_CCDIK::Precision' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CCDIK, MaxIterations) == 0x0001DC, "Member 'FAnimNode_CCDIK::MaxIterations' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CCDIK, bStartFromTail) == 0x0001E0, "Member 'FAnimNode_CCDIK::bStartFromTail' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CCDIK, bEnableRotationLimit) == 0x0001E1, "Member 'FAnimNode_CCDIK::bEnableRotationLimit' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CCDIK, RotationLimitPerJoints) == 0x0001E8, "Member 'FAnimNode_CCDIK::RotationLimitPerJoints' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_CCDIK;
 
 // ScriptStruct AnimGraphRuntime.Constraint
 // 0x0020 (0x0020 - 0x0000)
@@ -1996,12 +1569,7 @@ public:
 	struct FFilterOptionPerAxis                   PerAxis;                                           // 0x0016(0x0003)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FConstraint) == 0x000004, "Wrong alignment on FConstraint");
-static_assert(sizeof(FConstraint) == 0x000020, "Wrong size on FConstraint");
-static_assert(offsetof(FConstraint, TargetBone) == 0x000000, "Member 'FConstraint::TargetBone' has a wrong offset!");
-static_assert(offsetof(FConstraint, OffsetOption) == 0x000014, "Member 'FConstraint::OffsetOption' has a wrong offset!");
-static_assert(offsetof(FConstraint, TransformType) == 0x000015, "Member 'FConstraint::TransformType' has a wrong offset!");
-static_assert(offsetof(FConstraint, PerAxis) == 0x000016, "Member 'FConstraint::PerAxis' has a wrong offset!");
+DUMPER7_ASSERTS_FConstraint;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_Constraint
 // 0x0048 (0x0130 - 0x00E8)
@@ -2014,11 +1582,7 @@ public:
 	TArray<float>                                 ConstraintWeights;                                 // 0x0110(0x0010)(Edit, EditFixedSize, ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_120[0x10];                                     // 0x0120(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_Constraint) == 0x000008, "Wrong alignment on FAnimNode_Constraint");
-static_assert(sizeof(FAnimNode_Constraint) == 0x000130, "Wrong size on FAnimNode_Constraint");
-static_assert(offsetof(FAnimNode_Constraint, BoneToModify) == 0x0000E8, "Member 'FAnimNode_Constraint::BoneToModify' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Constraint, ConstraintSetup) == 0x000100, "Member 'FAnimNode_Constraint::ConstraintSetup' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Constraint, ConstraintWeights) == 0x000110, "Member 'FAnimNode_Constraint::ConstraintWeights' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_Constraint;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_CopyBone
 // 0x0060 (0x0148 - 0x00E8)
@@ -2037,18 +1601,7 @@ public:
 	struct FVector                                TranslationOffset;                                 // 0x0118(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               RotationOffset;                                    // 0x0130(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimNode_CopyBone) == 0x000008, "Wrong alignment on FAnimNode_CopyBone");
-static_assert(sizeof(FAnimNode_CopyBone) == 0x000148, "Wrong size on FAnimNode_CopyBone");
-static_assert(offsetof(FAnimNode_CopyBone, SourceBone) == 0x0000E8, "Member 'FAnimNode_CopyBone::SourceBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBone, TargetBone) == 0x0000FC, "Member 'FAnimNode_CopyBone::TargetBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBone, bCopyTranslation) == 0x000110, "Member 'FAnimNode_CopyBone::bCopyTranslation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBone, bCopyRotation) == 0x000111, "Member 'FAnimNode_CopyBone::bCopyRotation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBone, bCopyScale) == 0x000112, "Member 'FAnimNode_CopyBone::bCopyScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBone, ControlSpace) == 0x000113, "Member 'FAnimNode_CopyBone::ControlSpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBone, bOnlyCopyOnScaleNormalized) == 0x000114, "Member 'FAnimNode_CopyBone::bOnlyCopyOnScaleNormalized' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBone, bUseAddictiveOffset) == 0x000115, "Member 'FAnimNode_CopyBone::bUseAddictiveOffset' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBone, TranslationOffset) == 0x000118, "Member 'FAnimNode_CopyBone::TranslationOffset' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBone, RotationOffset) == 0x000130, "Member 'FAnimNode_CopyBone::RotationOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_CopyBone;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_CopyBoneDelta
 // 0x0038 (0x0120 - 0x00E8)
@@ -2065,17 +1618,7 @@ public:
 	float                                         RotationMultiplier;                                // 0x0118(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ScaleMultiplier;                                   // 0x011C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimNode_CopyBoneDelta) == 0x000008, "Wrong alignment on FAnimNode_CopyBoneDelta");
-static_assert(sizeof(FAnimNode_CopyBoneDelta) == 0x000120, "Wrong size on FAnimNode_CopyBoneDelta");
-static_assert(offsetof(FAnimNode_CopyBoneDelta, SourceBone) == 0x0000E8, "Member 'FAnimNode_CopyBoneDelta::SourceBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBoneDelta, TargetBone) == 0x0000FC, "Member 'FAnimNode_CopyBoneDelta::TargetBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBoneDelta, bCopyTranslation) == 0x000110, "Member 'FAnimNode_CopyBoneDelta::bCopyTranslation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBoneDelta, bCopyRotation) == 0x000111, "Member 'FAnimNode_CopyBoneDelta::bCopyRotation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBoneDelta, bCopyScale) == 0x000112, "Member 'FAnimNode_CopyBoneDelta::bCopyScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBoneDelta, CopyMode) == 0x000113, "Member 'FAnimNode_CopyBoneDelta::CopyMode' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBoneDelta, TranslationMultiplier) == 0x000114, "Member 'FAnimNode_CopyBoneDelta::TranslationMultiplier' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBoneDelta, RotationMultiplier) == 0x000118, "Member 'FAnimNode_CopyBoneDelta::RotationMultiplier' has a wrong offset!");
-static_assert(offsetof(FAnimNode_CopyBoneDelta, ScaleMultiplier) == 0x00011C, "Member 'FAnimNode_CopyBoneDelta::ScaleMultiplier' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_CopyBoneDelta;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_Fabrik
 // 0x0148 (0x0230 - 0x00E8)
@@ -2093,16 +1636,7 @@ public:
 	EBoneRotationSource                           EffectorRotationSource;                            // 0x0221(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_222[0xE];                                      // 0x0222(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_Fabrik) == 0x000010, "Wrong alignment on FAnimNode_Fabrik");
-static_assert(sizeof(FAnimNode_Fabrik) == 0x000230, "Wrong size on FAnimNode_Fabrik");
-static_assert(offsetof(FAnimNode_Fabrik, EffectorTransform) == 0x0000F0, "Member 'FAnimNode_Fabrik::EffectorTransform' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Fabrik, EffectorTarget) == 0x000150, "Member 'FAnimNode_Fabrik::EffectorTarget' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Fabrik, TipBone) == 0x0001F0, "Member 'FAnimNode_Fabrik::TipBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Fabrik, RootBone) == 0x000204, "Member 'FAnimNode_Fabrik::RootBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Fabrik, Precision) == 0x000218, "Member 'FAnimNode_Fabrik::Precision' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Fabrik, MaxIterations) == 0x00021C, "Member 'FAnimNode_Fabrik::MaxIterations' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Fabrik, EffectorTransformSpace) == 0x000220, "Member 'FAnimNode_Fabrik::EffectorTransformSpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Fabrik, EffectorRotationSource) == 0x000221, "Member 'FAnimNode_Fabrik::EffectorRotationSource' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_Fabrik;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_HandIKRetargeting
 // 0x0068 (0x0150 - 0x00E8)
@@ -2117,14 +1651,7 @@ public:
 	float                                         HandFKWeight;                                      // 0x0148(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_HandIKRetargeting) == 0x000008, "Wrong alignment on FAnimNode_HandIKRetargeting");
-static_assert(sizeof(FAnimNode_HandIKRetargeting) == 0x000150, "Wrong size on FAnimNode_HandIKRetargeting");
-static_assert(offsetof(FAnimNode_HandIKRetargeting, RightHandFK) == 0x0000E8, "Member 'FAnimNode_HandIKRetargeting::RightHandFK' has a wrong offset!");
-static_assert(offsetof(FAnimNode_HandIKRetargeting, LeftHandFK) == 0x0000FC, "Member 'FAnimNode_HandIKRetargeting::LeftHandFK' has a wrong offset!");
-static_assert(offsetof(FAnimNode_HandIKRetargeting, RightHandIK) == 0x000110, "Member 'FAnimNode_HandIKRetargeting::RightHandIK' has a wrong offset!");
-static_assert(offsetof(FAnimNode_HandIKRetargeting, LeftHandIK) == 0x000124, "Member 'FAnimNode_HandIKRetargeting::LeftHandIK' has a wrong offset!");
-static_assert(offsetof(FAnimNode_HandIKRetargeting, IKBonesToMove) == 0x000138, "Member 'FAnimNode_HandIKRetargeting::IKBonesToMove' has a wrong offset!");
-static_assert(offsetof(FAnimNode_HandIKRetargeting, HandFKWeight) == 0x000148, "Member 'FAnimNode_HandIKRetargeting::HandFKWeight' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_HandIKRetargeting;
 
 // ScriptStruct AnimGraphRuntime.IKChainLink
 // 0x0078 (0x0078 - 0x0000)
@@ -2133,8 +1660,7 @@ struct alignas(0x08) FIKChainLink final
 public:
 	uint8                                         Pad_0[0x78];                                       // 0x0000(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FIKChainLink) == 0x000008, "Wrong alignment on FIKChainLink");
-static_assert(sizeof(FIKChainLink) == 0x000078, "Wrong size on FIKChainLink");
+DUMPER7_ASSERTS_FIKChainLink;
 
 // ScriptStruct AnimGraphRuntime.IKChain
 // 0x0050 (0x0050 - 0x0000)
@@ -2143,8 +1669,7 @@ struct alignas(0x08) FIKChain final
 public:
 	uint8                                         Pad_0[0x50];                                       // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FIKChain) == 0x000008, "Wrong alignment on FIKChain");
-static_assert(sizeof(FIKChain) == 0x000050, "Wrong size on FIKChain");
+DUMPER7_ASSERTS_FIKChain;
 
 // ScriptStruct AnimGraphRuntime.AnimLegIKDefinition
 // 0x0040 (0x0040 - 0x0000)
@@ -2161,17 +1686,7 @@ public:
 	bool                                          bEnableKneeTwistCorrection;                        // 0x0033(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   TwistOffsetCurveName;                              // 0x0034(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimLegIKDefinition) == 0x000004, "Wrong alignment on FAnimLegIKDefinition");
-static_assert(sizeof(FAnimLegIKDefinition) == 0x000040, "Wrong size on FAnimLegIKDefinition");
-static_assert(offsetof(FAnimLegIKDefinition, IKFootBone) == 0x000000, "Member 'FAnimLegIKDefinition::IKFootBone' has a wrong offset!");
-static_assert(offsetof(FAnimLegIKDefinition, FKFootBone) == 0x000014, "Member 'FAnimLegIKDefinition::FKFootBone' has a wrong offset!");
-static_assert(offsetof(FAnimLegIKDefinition, NumBonesInLimb) == 0x000028, "Member 'FAnimLegIKDefinition::NumBonesInLimb' has a wrong offset!");
-static_assert(offsetof(FAnimLegIKDefinition, MinRotationAngle) == 0x00002C, "Member 'FAnimLegIKDefinition::MinRotationAngle' has a wrong offset!");
-static_assert(offsetof(FAnimLegIKDefinition, FootBoneForwardAxis) == 0x000030, "Member 'FAnimLegIKDefinition::FootBoneForwardAxis' has a wrong offset!");
-static_assert(offsetof(FAnimLegIKDefinition, HingeRotationAxis) == 0x000031, "Member 'FAnimLegIKDefinition::HingeRotationAxis' has a wrong offset!");
-static_assert(offsetof(FAnimLegIKDefinition, bEnableRotationLimit) == 0x000032, "Member 'FAnimLegIKDefinition::bEnableRotationLimit' has a wrong offset!");
-static_assert(offsetof(FAnimLegIKDefinition, bEnableKneeTwistCorrection) == 0x000033, "Member 'FAnimLegIKDefinition::bEnableKneeTwistCorrection' has a wrong offset!");
-static_assert(offsetof(FAnimLegIKDefinition, TwistOffsetCurveName) == 0x000034, "Member 'FAnimLegIKDefinition::TwistOffsetCurveName' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimLegIKDefinition;
 
 // ScriptStruct AnimGraphRuntime.AnimLegIKData
 // 0x00F0 (0x00F0 - 0x0000)
@@ -2180,8 +1695,7 @@ struct alignas(0x10) FAnimLegIKData final
 public:
 	uint8                                         Pad_0[0xF0];                                       // 0x0000(0x00F0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimLegIKData) == 0x000010, "Wrong alignment on FAnimLegIKData");
-static_assert(sizeof(FAnimLegIKData) == 0x0000F0, "Wrong size on FAnimLegIKData");
+DUMPER7_ASSERTS_FAnimLegIKData;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_LegIK
 // 0x0030 (0x0118 - 0x00E8)
@@ -2193,11 +1707,7 @@ public:
 	TArray<struct FAnimLegIKDefinition>           LegsDefinition;                                    // 0x00F0(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_100[0x18];                                     // 0x0100(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_LegIK) == 0x000008, "Wrong alignment on FAnimNode_LegIK");
-static_assert(sizeof(FAnimNode_LegIK) == 0x000118, "Wrong size on FAnimNode_LegIK");
-static_assert(offsetof(FAnimNode_LegIK, ReachPrecision) == 0x0000E8, "Member 'FAnimNode_LegIK::ReachPrecision' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LegIK, MaxIterations) == 0x0000EC, "Member 'FAnimNode_LegIK::MaxIterations' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LegIK, LegsDefinition) == 0x0000F0, "Member 'FAnimNode_LegIK::LegsDefinition' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_LegIK;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_LookAt
 // 0x0198 (0x0280 - 0x00E8)
@@ -2218,18 +1728,7 @@ public:
 	float                                         InterpolationTriggerThreashold;                    // 0x0208(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_20C[0x74];                                     // 0x020C(0x0074)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_LookAt) == 0x000010, "Wrong alignment on FAnimNode_LookAt");
-static_assert(sizeof(FAnimNode_LookAt) == 0x000280, "Wrong size on FAnimNode_LookAt");
-static_assert(offsetof(FAnimNode_LookAt, BoneToModify) == 0x0000E8, "Member 'FAnimNode_LookAt::BoneToModify' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LookAt, LookAtTarget) == 0x000100, "Member 'FAnimNode_LookAt::LookAtTarget' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LookAt, LookAtLocation) == 0x0001A0, "Member 'FAnimNode_LookAt::LookAtLocation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LookAt, LookAt_Axis) == 0x0001B8, "Member 'FAnimNode_LookAt::LookAt_Axis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LookAt, bUseLookUpAxis) == 0x0001D8, "Member 'FAnimNode_LookAt::bUseLookUpAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LookAt, InterpolationType) == 0x0001D9, "Member 'FAnimNode_LookAt::InterpolationType' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LookAt, LookUp_Axis) == 0x0001E0, "Member 'FAnimNode_LookAt::LookUp_Axis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LookAt, LookAtClamp) == 0x000200, "Member 'FAnimNode_LookAt::LookAtClamp' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LookAt, InterpolationTime) == 0x000204, "Member 'FAnimNode_LookAt::InterpolationTime' has a wrong offset!");
-static_assert(offsetof(FAnimNode_LookAt, InterpolationTriggerThreashold) == 0x000208, "Member 'FAnimNode_LookAt::InterpolationTriggerThreashold' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_LookAt;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_ObserveBone
 // 0x0060 (0x0148 - 0x00E8)
@@ -2244,14 +1743,7 @@ public:
 	struct FRotator                               Rotation;                                          // 0x0118(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                Scale;                                             // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimNode_ObserveBone) == 0x000008, "Wrong alignment on FAnimNode_ObserveBone");
-static_assert(sizeof(FAnimNode_ObserveBone) == 0x000148, "Wrong size on FAnimNode_ObserveBone");
-static_assert(offsetof(FAnimNode_ObserveBone, BoneToObserve) == 0x0000E8, "Member 'FAnimNode_ObserveBone::BoneToObserve' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ObserveBone, DisplaySpace) == 0x0000FC, "Member 'FAnimNode_ObserveBone::DisplaySpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ObserveBone, bRelativeToRefPose) == 0x0000FD, "Member 'FAnimNode_ObserveBone::bRelativeToRefPose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ObserveBone, Translation) == 0x000100, "Member 'FAnimNode_ObserveBone::Translation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ObserveBone, Rotation) == 0x000118, "Member 'FAnimNode_ObserveBone::Rotation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ObserveBone, Scale) == 0x000130, "Member 'FAnimNode_ObserveBone::Scale' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_ObserveBone;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_ResetRoot
 // 0x0010 (0x00F8 - 0x00E8)
@@ -2260,8 +1752,7 @@ struct FAnimNode_ResetRoot final : public FAnimNode_SkeletalControlBase
 public:
 	uint8                                         Pad_E8[0x10];                                      // 0x00E8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_ResetRoot) == 0x000008, "Wrong alignment on FAnimNode_ResetRoot");
-static_assert(sizeof(FAnimNode_ResetRoot) == 0x0000F8, "Wrong size on FAnimNode_ResetRoot");
+DUMPER7_ASSERTS_FAnimNode_ResetRoot;
 
 // ScriptStruct AnimGraphRuntime.SimSpaceSettings
 // 0x0060 (0x0060 - 0x0000)
@@ -2278,20 +1769,10 @@ public:
 	struct FVector                                ExternalLinearVelocity;                            // 0x0030(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ExternalAngularVelocity;                           // 0x0048(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSimSpaceSettings) == 0x000008, "Wrong alignment on FSimSpaceSettings");
-static_assert(sizeof(FSimSpaceSettings) == 0x000060, "Wrong size on FSimSpaceSettings");
-static_assert(offsetof(FSimSpaceSettings, WorldAlpha) == 0x000000, "Member 'FSimSpaceSettings::WorldAlpha' has a wrong offset!");
-static_assert(offsetof(FSimSpaceSettings, VelocityScaleZ) == 0x000004, "Member 'FSimSpaceSettings::VelocityScaleZ' has a wrong offset!");
-static_assert(offsetof(FSimSpaceSettings, MaxLinearVelocity) == 0x000008, "Member 'FSimSpaceSettings::MaxLinearVelocity' has a wrong offset!");
-static_assert(offsetof(FSimSpaceSettings, MaxAngularVelocity) == 0x00000C, "Member 'FSimSpaceSettings::MaxAngularVelocity' has a wrong offset!");
-static_assert(offsetof(FSimSpaceSettings, MaxLinearAcceleration) == 0x000010, "Member 'FSimSpaceSettings::MaxLinearAcceleration' has a wrong offset!");
-static_assert(offsetof(FSimSpaceSettings, MaxAngularAcceleration) == 0x000014, "Member 'FSimSpaceSettings::MaxAngularAcceleration' has a wrong offset!");
-static_assert(offsetof(FSimSpaceSettings, ExternalLinearDragV) == 0x000018, "Member 'FSimSpaceSettings::ExternalLinearDragV' has a wrong offset!");
-static_assert(offsetof(FSimSpaceSettings, ExternalLinearVelocity) == 0x000030, "Member 'FSimSpaceSettings::ExternalLinearVelocity' has a wrong offset!");
-static_assert(offsetof(FSimSpaceSettings, ExternalAngularVelocity) == 0x000048, "Member 'FSimSpaceSettings::ExternalAngularVelocity' has a wrong offset!");
+DUMPER7_ASSERTS_FSimSpaceSettings;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RigidBody
-// 0x0998 (0x0A80 - 0x00E8)
+// 0x09A8 (0x0A90 - 0x00E8)
 struct alignas(0x10) FAnimNode_RigidBody final : public FAnimNode_SkeletalControlBase
 {
 public:
@@ -2320,26 +1801,9 @@ public:
 	float                                         EvaluationResetTime;                               // 0x0314(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_318[0x1];                                      // 0x0318(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	ESimulationTiming                             SimulationTiming;                                  // 0x0319(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31A[0x766];                                    // 0x031A(0x0766)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31A[0x776];                                    // 0x031A(0x0776)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_RigidBody) == 0x000010, "Wrong alignment on FAnimNode_RigidBody");
-static_assert(sizeof(FAnimNode_RigidBody) == 0x000A80, "Wrong size on FAnimNode_RigidBody");
-static_assert(offsetof(FAnimNode_RigidBody, OverridePhysicsAsset) == 0x0000E8, "Member 'FAnimNode_RigidBody::OverridePhysicsAsset' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, OverrideWorldGravity) == 0x000218, "Member 'FAnimNode_RigidBody::OverrideWorldGravity' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, ExternalForce) == 0x000230, "Member 'FAnimNode_RigidBody::ExternalForce' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, ComponentLinearAccScale) == 0x000248, "Member 'FAnimNode_RigidBody::ComponentLinearAccScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, ComponentLinearVelScale) == 0x000260, "Member 'FAnimNode_RigidBody::ComponentLinearVelScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, ComponentAppliedLinearAccClamp) == 0x000278, "Member 'FAnimNode_RigidBody::ComponentAppliedLinearAccClamp' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, SimSpaceSettings) == 0x000290, "Member 'FAnimNode_RigidBody::SimSpaceSettings' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, CachedBoundsScale) == 0x0002F0, "Member 'FAnimNode_RigidBody::CachedBoundsScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, BaseBoneRef) == 0x0002F4, "Member 'FAnimNode_RigidBody::BaseBoneRef' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, OverlapChannel) == 0x000308, "Member 'FAnimNode_RigidBody::OverlapChannel' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, SimulationSpace) == 0x000309, "Member 'FAnimNode_RigidBody::SimulationSpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, bForceDisableCollisionBetweenConstraintBodies) == 0x00030A, "Member 'FAnimNode_RigidBody::bForceDisableCollisionBetweenConstraintBodies' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, bUseExternalClothCollision) == 0x00030B, "Member 'FAnimNode_RigidBody::bUseExternalClothCollision' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, WorldSpaceMinimumScale) == 0x000310, "Member 'FAnimNode_RigidBody::WorldSpaceMinimumScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, EvaluationResetTime) == 0x000314, "Member 'FAnimNode_RigidBody::EvaluationResetTime' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, SimulationTiming) == 0x000319, "Member 'FAnimNode_RigidBody::SimulationTiming' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_RigidBody;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_ScaleChainLength
 // 0x0080 (0x00A8 - 0x0028)
@@ -2358,16 +1822,7 @@ public:
 	EScaleChainInitialLength                      ChainInitialLength;                                // 0x0090(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_91[0x17];                                      // 0x0091(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_ScaleChainLength) == 0x000008, "Wrong alignment on FAnimNode_ScaleChainLength");
-static_assert(sizeof(FAnimNode_ScaleChainLength) == 0x0000A8, "Wrong size on FAnimNode_ScaleChainLength");
-static_assert(offsetof(FAnimNode_ScaleChainLength, InputPose) == 0x000028, "Member 'FAnimNode_ScaleChainLength::InputPose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ScaleChainLength, DefaultChainLength) == 0x000038, "Member 'FAnimNode_ScaleChainLength::DefaultChainLength' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ScaleChainLength, ChainStartBone) == 0x00003C, "Member 'FAnimNode_ScaleChainLength::ChainStartBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ScaleChainLength, ChainEndBone) == 0x000050, "Member 'FAnimNode_ScaleChainLength::ChainEndBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ScaleChainLength, TargetLocation) == 0x000068, "Member 'FAnimNode_ScaleChainLength::TargetLocation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ScaleChainLength, Alpha) == 0x000080, "Member 'FAnimNode_ScaleChainLength::Alpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ScaleChainLength, AlphaScaleBias) == 0x000088, "Member 'FAnimNode_ScaleChainLength::AlphaScaleBias' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ScaleChainLength, ChainInitialLength) == 0x000090, "Member 'FAnimNode_ScaleChainLength::ChainInitialLength' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_ScaleChainLength;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SkeletalControlCacheBase
 // 0x0004 (0x0004 - 0x0000)
@@ -2376,8 +1831,7 @@ struct alignas(0x04) FAnimNode_SkeletalControlCacheBase : public FAniNodeCacheBa
 public:
 	uint8                                         Pad_0[0x4];                                        // 0x0000(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_SkeletalControlCacheBase) == 0x000004, "Wrong alignment on FAnimNode_SkeletalControlCacheBase");
-static_assert(sizeof(FAnimNode_SkeletalControlCacheBase) == 0x000004, "Wrong size on FAnimNode_SkeletalControlCacheBase");
+DUMPER7_ASSERTS_FAnimNode_SkeletalControlCacheBase;
 
 // ScriptStruct AnimGraphRuntime.SplineIKCachedBoneData
 // 0x0018 (0x0018 - 0x0000)
@@ -2387,10 +1841,7 @@ public:
 	struct FBoneReference                         Bone;                                              // 0x0000(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         RefSkeletonIndex;                                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSplineIKCachedBoneData) == 0x000004, "Wrong alignment on FSplineIKCachedBoneData");
-static_assert(sizeof(FSplineIKCachedBoneData) == 0x000018, "Wrong size on FSplineIKCachedBoneData");
-static_assert(offsetof(FSplineIKCachedBoneData, Bone) == 0x000000, "Member 'FSplineIKCachedBoneData::Bone' has a wrong offset!");
-static_assert(offsetof(FSplineIKCachedBoneData, RefSkeletonIndex) == 0x000014, "Member 'FSplineIKCachedBoneData::RefSkeletonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FSplineIKCachedBoneData;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SplineIK
 // 0x01B0 (0x0298 - 0x00E8)
@@ -2413,20 +1864,7 @@ public:
 	float                                         Offset;                                            // 0x016C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_170[0x128];                                    // 0x0170(0x0128)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_SplineIK) == 0x000008, "Wrong alignment on FAnimNode_SplineIK");
-static_assert(sizeof(FAnimNode_SplineIK) == 0x000298, "Wrong size on FAnimNode_SplineIK");
-static_assert(offsetof(FAnimNode_SplineIK, StartBone) == 0x0000E8, "Member 'FAnimNode_SplineIK::StartBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SplineIK, EndBone) == 0x0000FC, "Member 'FAnimNode_SplineIK::EndBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SplineIK, BoneAxis) == 0x000110, "Member 'FAnimNode_SplineIK::BoneAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SplineIK, bAutoCalculateSpline) == 0x000111, "Member 'FAnimNode_SplineIK::bAutoCalculateSpline' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SplineIK, PointCount) == 0x000114, "Member 'FAnimNode_SplineIK::PointCount' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SplineIK, ControlPoints) == 0x000118, "Member 'FAnimNode_SplineIK::ControlPoints' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SplineIK, Roll) == 0x000128, "Member 'FAnimNode_SplineIK::Roll' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SplineIK, TwistStart) == 0x00012C, "Member 'FAnimNode_SplineIK::TwistStart' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SplineIK, TwistEnd) == 0x000130, "Member 'FAnimNode_SplineIK::TwistEnd' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SplineIK, TwistBlend) == 0x000138, "Member 'FAnimNode_SplineIK::TwistBlend' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SplineIK, Stretch) == 0x000168, "Member 'FAnimNode_SplineIK::Stretch' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SplineIK, Offset) == 0x00016C, "Member 'FAnimNode_SplineIK::Offset' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_SplineIK;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SpringBone
 // 0x00A8 (0x0190 - 0x00E8)
@@ -2449,13 +1887,7 @@ public:
 	uint8                                         bRotateZ : 1;                                      // 0x018C(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_18D[0x3];                                      // 0x018D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_SpringBone) == 0x000008, "Wrong alignment on FAnimNode_SpringBone");
-static_assert(sizeof(FAnimNode_SpringBone) == 0x000190, "Wrong size on FAnimNode_SpringBone");
-static_assert(offsetof(FAnimNode_SpringBone, SpringBone) == 0x0000E8, "Member 'FAnimNode_SpringBone::SpringBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SpringBone, MaxDisplacement) == 0x000100, "Member 'FAnimNode_SpringBone::MaxDisplacement' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SpringBone, SpringStiffness) == 0x000108, "Member 'FAnimNode_SpringBone::SpringStiffness' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SpringBone, SpringDamping) == 0x000110, "Member 'FAnimNode_SpringBone::SpringDamping' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SpringBone, ErrorResetThresh) == 0x000118, "Member 'FAnimNode_SpringBone::ErrorResetThresh' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_SpringBone;
 
 // ScriptStruct AnimGraphRuntime.RotationLimit
 // 0x0030 (0x0030 - 0x0000)
@@ -2465,10 +1897,7 @@ public:
 	struct FVector                                LimitMin;                                          // 0x0000(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                LimitMax;                                          // 0x0018(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRotationLimit) == 0x000008, "Wrong alignment on FRotationLimit");
-static_assert(sizeof(FRotationLimit) == 0x000030, "Wrong size on FRotationLimit");
-static_assert(offsetof(FRotationLimit, LimitMin) == 0x000000, "Member 'FRotationLimit::LimitMin' has a wrong offset!");
-static_assert(offsetof(FRotationLimit, LimitMax) == 0x000018, "Member 'FRotationLimit::LimitMax' has a wrong offset!");
+DUMPER7_ASSERTS_FRotationLimit;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_Trail
 // 0x01E8 (0x02D0 - 0x00E8)
@@ -2501,22 +1930,7 @@ public:
 	float                                         LastBoneRotationAnimAlphaBlend;                    // 0x0294(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_298[0x38];                                     // 0x0298(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_Trail) == 0x000010, "Wrong alignment on FAnimNode_Trail");
-static_assert(sizeof(FAnimNode_Trail) == 0x0002D0, "Wrong size on FAnimNode_Trail");
-static_assert(offsetof(FAnimNode_Trail, TrailBone) == 0x000150, "Member 'FAnimNode_Trail::TrailBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, ChainLength) == 0x000164, "Member 'FAnimNode_Trail::ChainLength' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, ChainBoneAxis) == 0x000168, "Member 'FAnimNode_Trail::ChainBoneAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, MaxDeltaTime) == 0x00016C, "Member 'FAnimNode_Trail::MaxDeltaTime' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, RelaxationSpeedScale) == 0x000170, "Member 'FAnimNode_Trail::RelaxationSpeedScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, TrailRelaxationSpeed) == 0x000178, "Member 'FAnimNode_Trail::TrailRelaxationSpeed' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, RelaxationSpeedScaleInputProcessor) == 0x000200, "Member 'FAnimNode_Trail::RelaxationSpeedScaleInputProcessor' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, RotationLimits) == 0x000230, "Member 'FAnimNode_Trail::RotationLimits' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, RotationOffsets) == 0x000240, "Member 'FAnimNode_Trail::RotationOffsets' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, PlanarLimits) == 0x000250, "Member 'FAnimNode_Trail::PlanarLimits' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, StretchLimit) == 0x000260, "Member 'FAnimNode_Trail::StretchLimit' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, FakeVelocity) == 0x000268, "Member 'FAnimNode_Trail::FakeVelocity' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, BaseJoint) == 0x000280, "Member 'FAnimNode_Trail::BaseJoint' has a wrong offset!");
-static_assert(offsetof(FAnimNode_Trail, LastBoneRotationAnimAlphaBlend) == 0x000294, "Member 'FAnimNode_Trail::LastBoneRotationAnimAlphaBlend' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_Trail;
 
 // ScriptStruct AnimGraphRuntime.ReferenceBoneFrame
 // 0x0038 (0x0038 - 0x0000)
@@ -2527,10 +1941,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAxis                                  Axis;                                              // 0x0018(0x0020)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FReferenceBoneFrame) == 0x000008, "Wrong alignment on FReferenceBoneFrame");
-static_assert(sizeof(FReferenceBoneFrame) == 0x000038, "Wrong size on FReferenceBoneFrame");
-static_assert(offsetof(FReferenceBoneFrame, Bone) == 0x000000, "Member 'FReferenceBoneFrame::Bone' has a wrong offset!");
-static_assert(offsetof(FReferenceBoneFrame, Axis) == 0x000018, "Member 'FReferenceBoneFrame::Axis' has a wrong offset!");
+DUMPER7_ASSERTS_FReferenceBoneFrame;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_TwistCorrectiveNode
 // 0x00B0 (0x0198 - 0x00E8)
@@ -2546,15 +1957,7 @@ public:
 	class FName                                   CurveName;                                         // 0x0184(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_190[0x8];                                      // 0x0190(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_TwistCorrectiveNode) == 0x000008, "Wrong alignment on FAnimNode_TwistCorrectiveNode");
-static_assert(sizeof(FAnimNode_TwistCorrectiveNode) == 0x000198, "Wrong size on FAnimNode_TwistCorrectiveNode");
-static_assert(offsetof(FAnimNode_TwistCorrectiveNode, BaseFrame) == 0x0000E8, "Member 'FAnimNode_TwistCorrectiveNode::BaseFrame' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwistCorrectiveNode, TwistFrame) == 0x000120, "Member 'FAnimNode_TwistCorrectiveNode::TwistFrame' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwistCorrectiveNode, TwistPlaneNormalAxis) == 0x000158, "Member 'FAnimNode_TwistCorrectiveNode::TwistPlaneNormalAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwistCorrectiveNode, RangeMax) == 0x000178, "Member 'FAnimNode_TwistCorrectiveNode::RangeMax' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwistCorrectiveNode, RemappedMin) == 0x00017C, "Member 'FAnimNode_TwistCorrectiveNode::RemappedMin' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwistCorrectiveNode, RemappedMax) == 0x000180, "Member 'FAnimNode_TwistCorrectiveNode::RemappedMax' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwistCorrectiveNode, CurveName) == 0x000184, "Member 'FAnimNode_TwistCorrectiveNode::CurveName' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_TwistCorrectiveNode;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_TwoBoneIK
 // 0x01D8 (0x02C0 - 0x00E8)
@@ -2580,18 +1983,7 @@ public:
 	uint8                                         bAllowTwist : 1;                                   // 0x02B2(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_2B3[0xD];                                      // 0x02B3(0x000D)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_TwoBoneIK) == 0x000010, "Wrong alignment on FAnimNode_TwoBoneIK");
-static_assert(sizeof(FAnimNode_TwoBoneIK) == 0x0002C0, "Wrong size on FAnimNode_TwoBoneIK");
-static_assert(offsetof(FAnimNode_TwoBoneIK, IKBone) == 0x0000E8, "Member 'FAnimNode_TwoBoneIK::IKBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoBoneIK, StartStretchRatio) == 0x000100, "Member 'FAnimNode_TwoBoneIK::StartStretchRatio' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoBoneIK, MaxStretchScale) == 0x000108, "Member 'FAnimNode_TwoBoneIK::MaxStretchScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoBoneIK, EffectorLocation) == 0x000110, "Member 'FAnimNode_TwoBoneIK::EffectorLocation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoBoneIK, EffectorTarget) == 0x000130, "Member 'FAnimNode_TwoBoneIK::EffectorTarget' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoBoneIK, JointTargetLocation) == 0x0001D0, "Member 'FAnimNode_TwoBoneIK::JointTargetLocation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoBoneIK, JointTarget) == 0x0001F0, "Member 'FAnimNode_TwoBoneIK::JointTarget' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoBoneIK, TwistAxis) == 0x000290, "Member 'FAnimNode_TwoBoneIK::TwistAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoBoneIK, EffectorLocationSpace) == 0x0002B0, "Member 'FAnimNode_TwoBoneIK::EffectorLocationSpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_TwoBoneIK, JointTargetLocationSpace) == 0x0002B1, "Member 'FAnimNode_TwoBoneIK::JointTargetLocationSpace' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_TwoBoneIK;
 
 // ScriptStruct AnimGraphRuntime.IKFootPelvisPullDownSolver
 // 0x0080 (0x0080 - 0x0000)
@@ -2606,13 +1998,7 @@ public:
 	int32                                         PelvisAdjustmentMaxIter;                           // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FIKFootPelvisPullDownSolver) == 0x000008, "Wrong alignment on FIKFootPelvisPullDownSolver");
-static_assert(sizeof(FIKFootPelvisPullDownSolver) == 0x000080, "Wrong size on FIKFootPelvisPullDownSolver");
-static_assert(offsetof(FIKFootPelvisPullDownSolver, PelvisAdjustmentInterp) == 0x000000, "Member 'FIKFootPelvisPullDownSolver::PelvisAdjustmentInterp' has a wrong offset!");
-static_assert(offsetof(FIKFootPelvisPullDownSolver, PelvisAdjustmentInterpAlpha) == 0x000060, "Member 'FIKFootPelvisPullDownSolver::PelvisAdjustmentInterpAlpha' has a wrong offset!");
-static_assert(offsetof(FIKFootPelvisPullDownSolver, PelvisAdjustmentMaxDistance) == 0x000068, "Member 'FIKFootPelvisPullDownSolver::PelvisAdjustmentMaxDistance' has a wrong offset!");
-static_assert(offsetof(FIKFootPelvisPullDownSolver, PelvisAdjustmentErrorTolerance) == 0x000070, "Member 'FIKFootPelvisPullDownSolver::PelvisAdjustmentErrorTolerance' has a wrong offset!");
-static_assert(offsetof(FIKFootPelvisPullDownSolver, PelvisAdjustmentMaxIter) == 0x000078, "Member 'FIKFootPelvisPullDownSolver::PelvisAdjustmentMaxIter' has a wrong offset!");
+DUMPER7_ASSERTS_FIKFootPelvisPullDownSolver;
 
 // ScriptStruct AnimGraphRuntime.WarpingVectorValue
 // 0x0020 (0x0020 - 0x0000)
@@ -2623,26 +2009,21 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Value;                                             // 0x0008(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWarpingVectorValue) == 0x000008, "Wrong alignment on FWarpingVectorValue");
-static_assert(sizeof(FWarpingVectorValue) == 0x000020, "Wrong size on FWarpingVectorValue");
-static_assert(offsetof(FWarpingVectorValue, Mode) == 0x000000, "Member 'FWarpingVectorValue::Mode' has a wrong offset!");
-static_assert(offsetof(FWarpingVectorValue, Value) == 0x000008, "Member 'FWarpingVectorValue::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FWarpingVectorValue;
 
 // ScriptStruct AnimGraphRuntime.LayeredBoneBlendReference
 // 0x0000 (0x0010 - 0x0010)
 struct FLayeredBoneBlendReference final : public FAnimNodeReference
 {
 };
-static_assert(alignof(FLayeredBoneBlendReference) == 0x000008, "Wrong alignment on FLayeredBoneBlendReference");
-static_assert(sizeof(FLayeredBoneBlendReference) == 0x000010, "Wrong size on FLayeredBoneBlendReference");
+DUMPER7_ASSERTS_FLayeredBoneBlendReference;
 
 // ScriptStruct AnimGraphRuntime.LinkedAnimGraphReference
 // 0x0000 (0x0010 - 0x0010)
 struct FLinkedAnimGraphReference final : public FAnimNodeReference
 {
 };
-static_assert(alignof(FLinkedAnimGraphReference) == 0x000008, "Wrong alignment on FLinkedAnimGraphReference");
-static_assert(sizeof(FLinkedAnimGraphReference) == 0x000010, "Wrong size on FLinkedAnimGraphReference");
+DUMPER7_ASSERTS_FLinkedAnimGraphReference;
 
 // ScriptStruct AnimGraphRuntime.RBFEntry
 // 0x0010 (0x0010 - 0x0000)
@@ -2651,9 +2032,7 @@ struct FRBFEntry
 public:
 	TArray<float>                                 Values;                                            // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRBFEntry) == 0x000008, "Wrong alignment on FRBFEntry");
-static_assert(sizeof(FRBFEntry) == 0x000010, "Wrong size on FRBFEntry");
-static_assert(offsetof(FRBFEntry, Values) == 0x000000, "Member 'FRBFEntry::Values' has a wrong offset!");
+DUMPER7_ASSERTS_FRBFEntry;
 
 // ScriptStruct AnimGraphRuntime.RBFTarget
 // 0x0090 (0x00A0 - 0x0010)
@@ -2668,37 +2047,28 @@ public:
 	ERBFFunctionType                              FunctionType;                                      // 0x0099(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRBFTarget) == 0x000008, "Wrong alignment on FRBFTarget");
-static_assert(sizeof(FRBFTarget) == 0x0000A0, "Wrong size on FRBFTarget");
-static_assert(offsetof(FRBFTarget, ScaleFactor) == 0x000010, "Member 'FRBFTarget::ScaleFactor' has a wrong offset!");
-static_assert(offsetof(FRBFTarget, bApplyCustomCurve) == 0x000014, "Member 'FRBFTarget::bApplyCustomCurve' has a wrong offset!");
-static_assert(offsetof(FRBFTarget, CustomCurve) == 0x000018, "Member 'FRBFTarget::CustomCurve' has a wrong offset!");
-static_assert(offsetof(FRBFTarget, DistanceMethod) == 0x000098, "Member 'FRBFTarget::DistanceMethod' has a wrong offset!");
-static_assert(offsetof(FRBFTarget, FunctionType) == 0x000099, "Member 'FRBFTarget::FunctionType' has a wrong offset!");
+DUMPER7_ASSERTS_FRBFTarget;
 
 // ScriptStruct AnimGraphRuntime.SequenceEvaluatorReference
 // 0x0000 (0x0010 - 0x0010)
 struct FSequenceEvaluatorReference final : public FAnimNodeReference
 {
 };
-static_assert(alignof(FSequenceEvaluatorReference) == 0x000008, "Wrong alignment on FSequenceEvaluatorReference");
-static_assert(sizeof(FSequenceEvaluatorReference) == 0x000010, "Wrong size on FSequenceEvaluatorReference");
+DUMPER7_ASSERTS_FSequenceEvaluatorReference;
 
 // ScriptStruct AnimGraphRuntime.SequencePlayerReference
 // 0x0000 (0x0010 - 0x0010)
 struct FSequencePlayerReference final : public FAnimNodeReference
 {
 };
-static_assert(alignof(FSequencePlayerReference) == 0x000008, "Wrong alignment on FSequencePlayerReference");
-static_assert(sizeof(FSequencePlayerReference) == 0x000010, "Wrong size on FSequencePlayerReference");
+DUMPER7_ASSERTS_FSequencePlayerReference;
 
 // ScriptStruct AnimGraphRuntime.SkeletalControlReference
 // 0x0000 (0x0010 - 0x0010)
 struct FSkeletalControlReference final : public FAnimNodeReference
 {
 };
-static_assert(alignof(FSkeletalControlReference) == 0x000008, "Wrong alignment on FSkeletalControlReference");
-static_assert(sizeof(FSkeletalControlReference) == 0x000010, "Wrong size on FSkeletalControlReference");
+DUMPER7_ASSERTS_FSkeletalControlReference;
 
 }
 

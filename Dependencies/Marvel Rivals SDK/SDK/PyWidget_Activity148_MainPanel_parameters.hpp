@@ -21,9 +21,7 @@ struct PyWidget_Activity148_MainPanel_Item_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity148_MainPanel_Item_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_Activity148_MainPanel_Item_SetIsHover");
-static_assert(sizeof(PyWidget_Activity148_MainPanel_Item_SetIsHover) == 0x000001, "Wrong size on PyWidget_Activity148_MainPanel_Item_SetIsHover");
-static_assert(offsetof(PyWidget_Activity148_MainPanel_Item_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_Activity148_MainPanel_Item_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity148_MainPanel_Item_SetIsHover;
 
 // PythonFunction PyWidget_Activity148_MainPanel.PyWidget_Activity148_MainPanel_Item.SetBtnIsPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Activity148_MainPanel_Item_SetBtnIsPressed final
 public:
 	bool                                          IsBtnPressed_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity148_MainPanel_Item_SetBtnIsPressed) == 0x000001, "Wrong alignment on PyWidget_Activity148_MainPanel_Item_SetBtnIsPressed");
-static_assert(sizeof(PyWidget_Activity148_MainPanel_Item_SetBtnIsPressed) == 0x000001, "Wrong size on PyWidget_Activity148_MainPanel_Item_SetBtnIsPressed");
-static_assert(offsetof(PyWidget_Activity148_MainPanel_Item_SetBtnIsPressed, IsBtnPressed_0) == 0x000000, "Member 'PyWidget_Activity148_MainPanel_Item_SetBtnIsPressed::IsBtnPressed_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity148_MainPanel_Item_SetBtnIsPressed;
 
 // PythonFunction PyWidget_Activity148_MainPanel.PyWidget_Activity148_MainPanel.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Activity148_MainPanel_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity148_MainPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Activity148_MainPanel_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Activity148_MainPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Activity148_MainPanel_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Activity148_MainPanel_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Activity148_MainPanel_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity148_MainPanel_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Activity148_MainPanel.PyWidget_Activity148_MainPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_Activity148_MainPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity148_MainPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Activity148_MainPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Activity148_MainPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Activity148_MainPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Activity148_MainPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Activity148_MainPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity148_MainPanel_OnAnimationFinished;
 
 // PythonFunction PyWidget_Activity148_MainPanel.PyWidget_Activity148_MainPanel.TimeToPlayItemAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_Activity148_MainPanel_TimeToPlayItemAnimation final
 public:
 	int32                                         index;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity148_MainPanel_TimeToPlayItemAnimation) == 0x000004, "Wrong alignment on PyWidget_Activity148_MainPanel_TimeToPlayItemAnimation");
-static_assert(sizeof(PyWidget_Activity148_MainPanel_TimeToPlayItemAnimation) == 0x000004, "Wrong size on PyWidget_Activity148_MainPanel_TimeToPlayItemAnimation");
-static_assert(offsetof(PyWidget_Activity148_MainPanel_TimeToPlayItemAnimation, index) == 0x000000, "Member 'PyWidget_Activity148_MainPanel_TimeToPlayItemAnimation::index' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity148_MainPanel_TimeToPlayItemAnimation;
 
 }
 

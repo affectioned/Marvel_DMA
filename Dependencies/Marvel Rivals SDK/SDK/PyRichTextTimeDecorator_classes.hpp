@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRichTextTimeDecorator">();
+		STATIC_CLASS_IMPL("PyRichTextTimeDecorator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRichTextTimeDecorator")
 	}
 	static class UPyRichTextTimeDecorator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRichTextTimeDecorator>();
 	}
 };
-static_assert(alignof(UPyRichTextTimeDecorator) == 0x000008, "Wrong alignment on UPyRichTextTimeDecorator");
-static_assert(sizeof(UPyRichTextTimeDecorator) == 0x000030, "Wrong size on UPyRichTextTimeDecorator");
+DUMPER7_ASSERTS_UPyRichTextTimeDecorator;
 
 }
 

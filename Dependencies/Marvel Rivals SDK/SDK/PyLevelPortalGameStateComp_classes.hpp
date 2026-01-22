@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelPortalGameStateComp">();
+		STATIC_CLASS_IMPL("PyLevelPortalGameStateComp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelPortalGameStateComp")
 	}
 	static class UPyLevelPortalGameStateComp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelPortalGameStateComp>();
 	}
 };
-static_assert(alignof(UPyLevelPortalGameStateComp) == 0x000008, "Wrong alignment on UPyLevelPortalGameStateComp");
-static_assert(sizeof(UPyLevelPortalGameStateComp) == 0x000108, "Wrong size on UPyLevelPortalGameStateComp");
+DUMPER7_ASSERTS_UPyLevelPortalGameStateComp;
 
 }
 

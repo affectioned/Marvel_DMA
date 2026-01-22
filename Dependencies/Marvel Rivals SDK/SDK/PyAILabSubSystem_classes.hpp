@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAILabSubSystem.PyAILabSubSystem
-// 0x0000 (0x02C0 - 0x02C0)
+// 0x0000 (0x02C8 - 0x02C8)
 class UPyAILabSubSystem final : public UAILabSubSystem
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAILabSubSystem">();
+		STATIC_CLASS_IMPL("PyAILabSubSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAILabSubSystem")
 	}
 	static class UPyAILabSubSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAILabSubSystem>();
 	}
 };
-static_assert(alignof(UPyAILabSubSystem) == 0x000008, "Wrong alignment on UPyAILabSubSystem");
-static_assert(sizeof(UPyAILabSubSystem) == 0x0002C0, "Wrong size on UPyAILabSubSystem");
+DUMPER7_ASSERTS_UPyAILabSubSystem;
 
 }
 

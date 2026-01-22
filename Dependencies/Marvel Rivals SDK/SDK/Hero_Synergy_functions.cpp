@@ -1802,10 +1802,11 @@ void UAbility_100021::OnTargetCharacterForcedPortal(class APortalViewActor* InPo
 // (Final, Native, Public, HasOutParams)
 // Parameters:
 // const float                             CurrentHealth                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float                             TotalDamageLeft                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FGameplayEffectSpec&       DamageSpec                                             (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool USynergyAbility_100026::OnCheckDontKill(const float CurrentHealth, const struct FGameplayEffectSpec& DamageSpec)
+bool USynergyAbility_100026::OnCheckDontKill(const float CurrentHealth, const float TotalDamageLeft, const struct FGameplayEffectSpec& DamageSpec)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1815,6 +1816,7 @@ bool USynergyAbility_100026::OnCheckDontKill(const float CurrentHealth, const st
 	Params::SynergyAbility_100026_OnCheckDontKill Parms{};
 
 	Parms.CurrentHealth = CurrentHealth;
+	Parms.TotalDamageLeft = TotalDamageLeft;
 	Parms.DamageSpec = std::move(DamageSpec);
 
 	auto Flgs = Func->FunctionFlags;

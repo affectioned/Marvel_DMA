@@ -1399,6 +1399,31 @@ void UAbility_101661::OnMySelfPossessedPawnChanged(class APawn* OldPawn, class A
 }
 
 
+// Function Hero_1016.Ability_101661.OnReCalculateAbilityEnd
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FAbilityEndedData&         InAbilityEndedData                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UAbility_101661::OnReCalculateAbilityEnd(const struct FAbilityEndedData& InAbilityEndedData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_101661", "OnReCalculateAbilityEnd");
+
+	Params::Ability_101661_OnReCalculateAbilityEnd Parms{};
+
+	Parms.InAbilityEndedData = std::move(InAbilityEndedData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1016.Ability_101661.OnServerControllerPostNewPawn
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -1626,8 +1651,9 @@ void UAbility_101661::PrepDisguiseEffect()
 // (Final, Native, Protected)
 // Parameters:
 // class UMarvelGameplayAbility*           InAbility                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   OverTime                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UAbility_101661::ReCalculateAbilityRemainTime(class UMarvelGameplayAbility* InAbility)
+void UAbility_101661::ReCalculateAbilityRemainTime(class UMarvelGameplayAbility* InAbility, float OverTime)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1637,6 +1663,7 @@ void UAbility_101661::ReCalculateAbilityRemainTime(class UMarvelGameplayAbility*
 	Params::Ability_101661_ReCalculateAbilityRemainTime Parms{};
 
 	Parms.InAbility = InAbility;
+	Parms.OverTime = OverTime;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

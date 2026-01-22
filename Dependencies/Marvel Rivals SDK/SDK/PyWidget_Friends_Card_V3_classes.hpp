@@ -18,25 +18,25 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Friends_Card_V3.PyWidget_Friends_Card_V3
-// 0x00C8 (0x0688 - 0x05C0)
+// 0x00C8 (0x0690 - 0x05C8)
 class UPyWidget_Friends_Card_V3 final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, class FText>                      TabPlayerState;                                    // 0x05C0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                   TabStateColor;                                     // 0x0610(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<int32, class UTexture2D*>                TabBtnTexture;                                     // 0x0620(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          IsSelfCard;                                        // 0x0670(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSelectCard;                                      // 0x0671(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsFriend;                                          // 0x0672(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsClicked;                                         // 0x0673(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEquip;                                           // 0x0674(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSelfVisible;                                     // 0x0675(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsUnlock;                                          // 0x0676(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_677[0x1];                                      // 0x0677(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PlayEventID;                                       // 0x0678(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_67C[0x4];                                      // 0x067C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelButton*                          AvatarBtn;                                         // 0x0680(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, class FText>                      TabPlayerState;                                    // 0x05C8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   TabStateColor;                                     // 0x0618(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, class UTexture2D*>                TabBtnTexture;                                     // 0x0628(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsSelfCard;                                        // 0x0678(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSelectCard;                                      // 0x0679(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsFriend;                                          // 0x067A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsClicked;                                         // 0x067B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEquip;                                           // 0x067C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSelfVisible;                                     // 0x067D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsUnlock;                                          // 0x067E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_67F[0x1];                                      // 0x067F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PlayEventID;                                       // 0x0680(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_684[0x4];                                      // 0x0684(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelButton*                          AvatarBtn;                                         // 0x0688(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Destruct();
@@ -45,27 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Friends_Card_V3">();
+		STATIC_CLASS_IMPL("PyWidget_Friends_Card_V3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Friends_Card_V3")
 	}
 	static class UPyWidget_Friends_Card_V3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Friends_Card_V3>();
 	}
 };
-static_assert(alignof(UPyWidget_Friends_Card_V3) == 0x000008, "Wrong alignment on UPyWidget_Friends_Card_V3");
-static_assert(sizeof(UPyWidget_Friends_Card_V3) == 0x000688, "Wrong size on UPyWidget_Friends_Card_V3");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, TabPlayerState) == 0x0005C0, "Member 'UPyWidget_Friends_Card_V3::TabPlayerState' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, TabStateColor) == 0x000610, "Member 'UPyWidget_Friends_Card_V3::TabStateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, TabBtnTexture) == 0x000620, "Member 'UPyWidget_Friends_Card_V3::TabBtnTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, IsSelfCard) == 0x000670, "Member 'UPyWidget_Friends_Card_V3::IsSelfCard' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, IsSelectCard) == 0x000671, "Member 'UPyWidget_Friends_Card_V3::IsSelectCard' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, IsFriend) == 0x000672, "Member 'UPyWidget_Friends_Card_V3::IsFriend' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, IsClicked) == 0x000673, "Member 'UPyWidget_Friends_Card_V3::IsClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, IsEquip) == 0x000674, "Member 'UPyWidget_Friends_Card_V3::IsEquip' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, IsSelfVisible) == 0x000675, "Member 'UPyWidget_Friends_Card_V3::IsSelfVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, IsUnlock) == 0x000676, "Member 'UPyWidget_Friends_Card_V3::IsUnlock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, PlayEventID) == 0x000678, "Member 'UPyWidget_Friends_Card_V3::PlayEventID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_Card_V3, AvatarBtn) == 0x000680, "Member 'UPyWidget_Friends_Card_V3::AvatarBtn' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Friends_Card_V3;
 
 }
 

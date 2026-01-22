@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDefaultSettingEntryHandler">();
+		STATIC_CLASS_IMPL("PyDefaultSettingEntryHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDefaultSettingEntryHandler")
 	}
 	static class UPyDefaultSettingEntryHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDefaultSettingEntryHandler>();
 	}
 };
-static_assert(alignof(UPyDefaultSettingEntryHandler) == 0x000008, "Wrong alignment on UPyDefaultSettingEntryHandler");
-static_assert(sizeof(UPyDefaultSettingEntryHandler) == 0x000030, "Wrong size on UPyDefaultSettingEntryHandler");
+DUMPER7_ASSERTS_UPyDefaultSettingEntryHandler;
 
 }
 

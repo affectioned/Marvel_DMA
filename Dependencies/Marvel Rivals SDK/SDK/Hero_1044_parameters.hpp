@@ -20,74 +20,6 @@
 namespace SDK::Params
 {
 
-// Function Hero_1044.Cue_Ability_Loop_10445102.GetDesiredCameraRotation
-// 0x0018 (0x0018 - 0x0000)
-struct Cue_Ability_Loop_10445102_GetDesiredCameraRotation final
-{
-public:
-	struct FRotator                               ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(Cue_Ability_Loop_10445102_GetDesiredCameraRotation) == 0x000008, "Wrong alignment on Cue_Ability_Loop_10445102_GetDesiredCameraRotation");
-static_assert(sizeof(Cue_Ability_Loop_10445102_GetDesiredCameraRotation) == 0x000018, "Wrong size on Cue_Ability_Loop_10445102_GetDesiredCameraRotation");
-static_assert(offsetof(Cue_Ability_Loop_10445102_GetDesiredCameraRotation, ReturnValue) == 0x000000, "Member 'Cue_Ability_Loop_10445102_GetDesiredCameraRotation::ReturnValue' has a wrong offset!");
-
-// Function Hero_1044.Ability_104451.AddSegInfo
-// 0x0030 (0x0030 - 0x0000)
-struct Ability_104451_AddSegInfo final
-{
-public:
-	struct FVector                                SegStart;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                SegEnd;                                            // 0x0018(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(Ability_104451_AddSegInfo) == 0x000008, "Wrong alignment on Ability_104451_AddSegInfo");
-static_assert(sizeof(Ability_104451_AddSegInfo) == 0x000030, "Wrong size on Ability_104451_AddSegInfo");
-static_assert(offsetof(Ability_104451_AddSegInfo, SegStart) == 0x000000, "Member 'Ability_104451_AddSegInfo::SegStart' has a wrong offset!");
-static_assert(offsetof(Ability_104451_AddSegInfo, SegEnd) == 0x000018, "Member 'Ability_104451_AddSegInfo::SegEnd' has a wrong offset!");
-
-// Function Hero_1044.Ability_104451.OnDashFinish
-// 0x0001 (0x0001 - 0x0000)
-struct Ability_104451_OnDashFinish final
-{
-public:
-	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(Ability_104451_OnDashFinish) == 0x000001, "Wrong alignment on Ability_104451_OnDashFinish");
-static_assert(sizeof(Ability_104451_OnDashFinish) == 0x000001, "Wrong size on Ability_104451_OnDashFinish");
-static_assert(offsetof(Ability_104451_OnDashFinish, Reason) == 0x000000, "Member 'Ability_104451_OnDashFinish::Reason' has a wrong offset!");
-
-// Function Hero_1044.Ability_104451.OnForceMoveByPortal
-// 0x0008 (0x0008 - 0x0000)
-struct Ability_104451_OnForceMoveByPortal final
-{
-public:
-	class APortalViewActor*                       InPortal;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(Ability_104451_OnForceMoveByPortal) == 0x000008, "Wrong alignment on Ability_104451_OnForceMoveByPortal");
-static_assert(sizeof(Ability_104451_OnForceMoveByPortal) == 0x000008, "Wrong size on Ability_104451_OnForceMoveByPortal");
-static_assert(offsetof(Ability_104451_OnForceMoveByPortal, InPortal) == 0x000000, "Member 'Ability_104451_OnForceMoveByPortal::InPortal' has a wrong offset!");
-
-// Function Hero_1044.Ability_104451.StartDash
-// 0x0008 (0x0008 - 0x0000)
-struct Ability_104451_StartDash final
-{
-public:
-	class UMarvelAbilityTask_Dash*                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(Ability_104451_StartDash) == 0x000008, "Wrong alignment on Ability_104451_StartDash");
-static_assert(sizeof(Ability_104451_StartDash) == 0x000008, "Wrong size on Ability_104451_StartDash");
-static_assert(offsetof(Ability_104451_StartDash, ReturnValue) == 0x000000, "Member 'Ability_104451_StartDash::ReturnValue' has a wrong offset!");
-
-// Function Hero_1044.BladeCharacter.SetCurrentSculpt
-// 0x0001 (0x0001 - 0x0000)
-struct BladeCharacter_SetCurrentSculpt final
-{
-public:
-	EBladeSculpt                                  NewSculpt;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(BladeCharacter_SetCurrentSculpt) == 0x000001, "Wrong alignment on BladeCharacter_SetCurrentSculpt");
-static_assert(sizeof(BladeCharacter_SetCurrentSculpt) == 0x000001, "Wrong size on BladeCharacter_SetCurrentSculpt");
-static_assert(offsetof(BladeCharacter_SetCurrentSculpt, NewSculpt) == 0x000000, "Member 'BladeCharacter_SetCurrentSculpt::NewSculpt' has a wrong offset!");
-
 // Function Hero_1044.Ability_104441.GetTreatableHpPercent
 // 0x0010 (0x0010 - 0x0000)
 struct Ability_104441_GetTreatableHpPercent final
@@ -97,10 +29,7 @@ public:
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(Ability_104441_GetTreatableHpPercent) == 0x000008, "Wrong alignment on Ability_104441_GetTreatableHpPercent");
-static_assert(sizeof(Ability_104441_GetTreatableHpPercent) == 0x000010, "Wrong size on Ability_104441_GetTreatableHpPercent");
-static_assert(offsetof(Ability_104441_GetTreatableHpPercent, InActor) == 0x000000, "Member 'Ability_104441_GetTreatableHpPercent::InActor' has a wrong offset!");
-static_assert(offsetof(Ability_104441_GetTreatableHpPercent, ReturnValue) == 0x000008, "Member 'Ability_104441_GetTreatableHpPercent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104441_GetTreatableHpPercent;
 
 // Function Hero_1044.Ability_104441.OnCustomTakeTreatWithVampire
 // 0x0A10 (0x0A10 - 0x0000)
@@ -115,31 +44,66 @@ public:
 	bool                                          ReturnValue;                                       // 0x0A08(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A09[0x7];                                      // 0x0A09(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(Ability_104441_OnCustomTakeTreatWithVampire) == 0x000008, "Wrong alignment on Ability_104441_OnCustomTakeTreatWithVampire");
-static_assert(sizeof(Ability_104441_OnCustomTakeTreatWithVampire) == 0x000A10, "Wrong size on Ability_104441_OnCustomTakeTreatWithVampire");
-static_assert(offsetof(Ability_104441_OnCustomTakeTreatWithVampire, Spec) == 0x000000, "Member 'Ability_104441_OnCustomTakeTreatWithVampire::Spec' has a wrong offset!");
-static_assert(offsetof(Ability_104441_OnCustomTakeTreatWithVampire, InOutValue) == 0x0009F0, "Member 'Ability_104441_OnCustomTakeTreatWithVampire::InOutValue' has a wrong offset!");
-static_assert(offsetof(Ability_104441_OnCustomTakeTreatWithVampire, SourceASC) == 0x0009F8, "Member 'Ability_104441_OnCustomTakeTreatWithVampire::SourceASC' has a wrong offset!");
-static_assert(offsetof(Ability_104441_OnCustomTakeTreatWithVampire, TargetASC) == 0x000A00, "Member 'Ability_104441_OnCustomTakeTreatWithVampire::TargetASC' has a wrong offset!");
-static_assert(offsetof(Ability_104441_OnCustomTakeTreatWithVampire, ReturnValue) == 0x000A08, "Member 'Ability_104441_OnCustomTakeTreatWithVampire::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104441_OnCustomTakeTreatWithVampire;
 
 // Function Hero_1044.TraceComponent_10445101.IsValidTraceResult
-// 0x0228 (0x0228 - 0x0000)
+// 0x0240 (0x0240 - 0x0000)
 struct TraceComponent_10445101_IsValidTraceResult final
 {
 public:
-	struct FHitResult                             InHit;                                             // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	struct FVector                                SegStart;                                          // 0x01F0(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                SegEnd;                                            // 0x0208(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0220(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_221[0x7];                                      // 0x0221(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             InHit;                                             // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FVector                                SegStart;                                          // 0x0208(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                SegEnd;                                            // 0x0220(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0238(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(TraceComponent_10445101_IsValidTraceResult) == 0x000008, "Wrong alignment on TraceComponent_10445101_IsValidTraceResult");
-static_assert(sizeof(TraceComponent_10445101_IsValidTraceResult) == 0x000228, "Wrong size on TraceComponent_10445101_IsValidTraceResult");
-static_assert(offsetof(TraceComponent_10445101_IsValidTraceResult, InHit) == 0x000000, "Member 'TraceComponent_10445101_IsValidTraceResult::InHit' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10445101_IsValidTraceResult, SegStart) == 0x0001F0, "Member 'TraceComponent_10445101_IsValidTraceResult::SegStart' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10445101_IsValidTraceResult, SegEnd) == 0x000208, "Member 'TraceComponent_10445101_IsValidTraceResult::SegEnd' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10445101_IsValidTraceResult, ReturnValue) == 0x000220, "Member 'TraceComponent_10445101_IsValidTraceResult::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TraceComponent_10445101_IsValidTraceResult;
+
+// Function Hero_1044.Ability_104451.AddSegInfo
+// 0x0030 (0x0030 - 0x0000)
+struct Ability_104451_AddSegInfo final
+{
+public:
+	struct FVector                                SegStart;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                SegEnd;                                            // 0x0018(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_Ability_104451_AddSegInfo;
+
+// Function Hero_1044.Ability_104451.OnDashFinish
+// 0x0001 (0x0001 - 0x0000)
+struct Ability_104451_OnDashFinish final
+{
+public:
+	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_Ability_104451_OnDashFinish;
+
+// Function Hero_1044.Ability_104451.OnForceMoveByPortal
+// 0x0008 (0x0008 - 0x0000)
+struct Ability_104451_OnForceMoveByPortal final
+{
+public:
+	class APortalViewActor*                       InPortal;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_Ability_104451_OnForceMoveByPortal;
+
+// Function Hero_1044.Ability_104451.StartDash
+// 0x0008 (0x0008 - 0x0000)
+struct Ability_104451_StartDash final
+{
+public:
+	class UMarvelAbilityTask_Dash*                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_Ability_104451_StartDash;
+
+// Function Hero_1044.Cue_Ability_Loop_10445102.GetDesiredCameraRotation
+// 0x0018 (0x0018 - 0x0000)
+struct Cue_Ability_Loop_10445102_GetDesiredCameraRotation final
+{
+public:
+	struct FRotator                               ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_Cue_Ability_Loop_10445102_GetDesiredCameraRotation;
 
 // Function Hero_1044.EffectAbility_DynamicDamageReduction.IsDamageEffect
 // 0x09F8 (0x09F8 - 0x0000)
@@ -150,10 +114,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x09F0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9F1[0x7];                                      // 0x09F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(EffectAbility_DynamicDamageReduction_IsDamageEffect) == 0x000008, "Wrong alignment on EffectAbility_DynamicDamageReduction_IsDamageEffect");
-static_assert(sizeof(EffectAbility_DynamicDamageReduction_IsDamageEffect) == 0x0009F8, "Wrong size on EffectAbility_DynamicDamageReduction_IsDamageEffect");
-static_assert(offsetof(EffectAbility_DynamicDamageReduction_IsDamageEffect, GameplayEffect) == 0x000000, "Member 'EffectAbility_DynamicDamageReduction_IsDamageEffect::GameplayEffect' has a wrong offset!");
-static_assert(offsetof(EffectAbility_DynamicDamageReduction_IsDamageEffect, ReturnValue) == 0x0009F0, "Member 'EffectAbility_DynamicDamageReduction_IsDamageEffect::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EffectAbility_DynamicDamageReduction_IsDamageEffect;
 
 // Function Hero_1044.EffectAbility_DynamicDamageReduction.OnPreGameplayEffectExecuteOnSelf
 // 0x0018 (0x0018 - 0x0000)
@@ -164,11 +125,16 @@ public:
 	struct FGameplayEffectSpecStackHandle         SpecHandle;                                        // 0x0008(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FActiveGameplayEffectHandle            ActiveHandle;                                      // 0x0010(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf) == 0x000008, "Wrong alignment on EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf");
-static_assert(sizeof(EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf) == 0x000018, "Wrong size on EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf");
-static_assert(offsetof(EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf, SourceASC) == 0x000000, "Member 'EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf::SourceASC' has a wrong offset!");
-static_assert(offsetof(EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf, SpecHandle) == 0x000008, "Member 'EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf::SpecHandle' has a wrong offset!");
-static_assert(offsetof(EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf, ActiveHandle) == 0x000010, "Member 'EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf::ActiveHandle' has a wrong offset!");
+DUMPER7_ASSERTS_EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf;
+
+// Function Hero_1044.BladeCharacter.SetCurrentSculpt
+// 0x0001 (0x0001 - 0x0000)
+struct BladeCharacter_SetCurrentSculpt final
+{
+public:
+	EBladeSculpt                                  NewSculpt;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_BladeCharacter_SetCurrentSculpt;
 
 }
 

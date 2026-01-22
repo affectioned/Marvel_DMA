@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PS5P_UISettingEntryGraphicSettingHandlerBP_C">();
+		BP_STATIC_CLASS_IMPL("PS5P_UISettingEntryGraphicSettingHandlerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PS5P_UISettingEntryGraphicSettingHandlerBP_C")
 	}
 	static class UPS5P_UISettingEntryGraphicSettingHandlerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPS5P_UISettingEntryGraphicSettingHandlerBP_C>();
 	}
 };
-static_assert(alignof(UPS5P_UISettingEntryGraphicSettingHandlerBP_C) == 0x000008, "Wrong alignment on UPS5P_UISettingEntryGraphicSettingHandlerBP_C");
-static_assert(sizeof(UPS5P_UISettingEntryGraphicSettingHandlerBP_C) == 0x000068, "Wrong size on UPS5P_UISettingEntryGraphicSettingHandlerBP_C");
-static_assert(offsetof(UPS5P_UISettingEntryGraphicSettingHandlerBP_C, UberGraphFrame) == 0x000030, "Member 'UPS5P_UISettingEntryGraphicSettingHandlerBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPS5P_UISettingEntryGraphicSettingHandlerBP_C, ProResolution) == 0x000038, "Member 'UPS5P_UISettingEntryGraphicSettingHandlerBP_C::ProResolution' has a wrong offset!");
-static_assert(offsetof(UPS5P_UISettingEntryGraphicSettingHandlerBP_C, HighRateResolution) == 0x000040, "Member 'UPS5P_UISettingEntryGraphicSettingHandlerBP_C::HighRateResolution' has a wrong offset!");
-static_assert(offsetof(UPS5P_UISettingEntryGraphicSettingHandlerBP_C, ProGraphic) == 0x000048, "Member 'UPS5P_UISettingEntryGraphicSettingHandlerBP_C::ProGraphic' has a wrong offset!");
-static_assert(offsetof(UPS5P_UISettingEntryGraphicSettingHandlerBP_C, HighRateGraphic) == 0x000058, "Member 'UPS5P_UISettingEntryGraphicSettingHandlerBP_C::HighRateGraphic' has a wrong offset!");
+DUMPER7_ASSERTS_UPS5P_UISettingEntryGraphicSettingHandlerBP_C;
 
 }
 

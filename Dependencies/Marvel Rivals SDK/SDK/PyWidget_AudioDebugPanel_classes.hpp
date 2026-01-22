@@ -11,40 +11,38 @@
 #include "Basic.hpp"
 
 #include "PyMarvelUserWidget_classes.hpp"
-#include "Marvel_structs.hpp"
 
 
 namespace SDK
 {
 
-// PythonClass PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyAudioDebugPanel_TriggerDisplay : public UPyMarvelUserWidget
+// PythonClass PyWidget_AudioDebugPanel.PyWidget_AudioDebugPanel
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_AudioDebugPanel : public UPyMarvelUserWidget
 {
 public:
 	void OnInitialized();
-	class FText GetText_AudioEnabled();
-	class FText GetText_Reverb();
-	class FText GetText_ThreatValue();
-	class FText GetText_Doppler();
-	class FText GetText_Midi();
-	class FText GetText_Spatial();
-	class FText GetText_Reflect();
-	void OnAudioTypeEnabledChanged(int32 EnableMask);
-	class FString GetTextOfType(EMarvelAudioType AudioType, const class FString& Prefix);
+	void MarvelDestruct();
+	void UpdateSpatialVolumeText();
+	void UpdateDebugInfoText();
+	class FString GetSoloedString();
+	class FString GetStateString();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAudioDebugPanel_TriggerDisplay">();
+		STATIC_CLASS_IMPL("PyWidget_AudioDebugPanel")
 	}
-	static class UPyAudioDebugPanel_TriggerDisplay* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyAudioDebugPanel_TriggerDisplay>();
+		STATIC_NAME_IMPL(L"PyWidget_AudioDebugPanel")
+	}
+	static class UPyWidget_AudioDebugPanel* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_AudioDebugPanel>();
 	}
 };
-static_assert(alignof(UPyAudioDebugPanel_TriggerDisplay) == 0x000008, "Wrong alignment on UPyAudioDebugPanel_TriggerDisplay");
-static_assert(sizeof(UPyAudioDebugPanel_TriggerDisplay) == 0x0005C0, "Wrong size on UPyAudioDebugPanel_TriggerDisplay");
+DUMPER7_ASSERTS_UPyWidget_AudioDebugPanel;
 
 }
 

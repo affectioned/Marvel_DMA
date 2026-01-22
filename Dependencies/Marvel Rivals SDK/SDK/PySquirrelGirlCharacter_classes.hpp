@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PySquirrelGirlCharacter.PySquirrelGirlCharacter
-// 0x0000 (0x21C0 - 0x21C0)
+// 0x0000 (0x22D0 - 0x22D0)
 class APySquirrelGirlCharacter : public ASquirrelGirlCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySquirrelGirlCharacter">();
+		STATIC_CLASS_IMPL("PySquirrelGirlCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySquirrelGirlCharacter")
 	}
 	static class APySquirrelGirlCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySquirrelGirlCharacter>();
 	}
 };
-static_assert(alignof(APySquirrelGirlCharacter) == 0x000010, "Wrong alignment on APySquirrelGirlCharacter");
-static_assert(sizeof(APySquirrelGirlCharacter) == 0x0021C0, "Wrong size on APySquirrelGirlCharacter");
+DUMPER7_ASSERTS_APySquirrelGirlCharacter;
 
 }
 

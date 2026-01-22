@@ -26,10 +26,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 args;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyActor_CallPythonActorMethod) == 0x000008, "Wrong alignment on PyActor_CallPythonActorMethod");
-static_assert(sizeof(PyActor_CallPythonActorMethod) == 0x000020, "Wrong size on PyActor_CallPythonActorMethod");
-static_assert(offsetof(PyActor_CallPythonActorMethod, method_name) == 0x000000, "Member 'PyActor_CallPythonActorMethod::method_name' has a wrong offset!");
-static_assert(offsetof(PyActor_CallPythonActorMethod, args) == 0x000010, "Member 'PyActor_CallPythonActorMethod::args' has a wrong offset!");
+DUMPER7_ASSERTS_PyActor_CallPythonActorMethod;
 
 // Function UnrealEnginePython.PyActor.CallPythonActorMethodBool
 // 0x0028 (0x0028 - 0x0000)
@@ -42,11 +39,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PyActor_CallPythonActorMethodBool) == 0x000008, "Wrong alignment on PyActor_CallPythonActorMethodBool");
-static_assert(sizeof(PyActor_CallPythonActorMethodBool) == 0x000028, "Wrong size on PyActor_CallPythonActorMethodBool");
-static_assert(offsetof(PyActor_CallPythonActorMethodBool, method_name) == 0x000000, "Member 'PyActor_CallPythonActorMethodBool::method_name' has a wrong offset!");
-static_assert(offsetof(PyActor_CallPythonActorMethodBool, args) == 0x000010, "Member 'PyActor_CallPythonActorMethodBool::args' has a wrong offset!");
-static_assert(offsetof(PyActor_CallPythonActorMethodBool, ReturnValue) == 0x000020, "Member 'PyActor_CallPythonActorMethodBool::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyActor_CallPythonActorMethodBool;
 
 // Function UnrealEnginePython.PyActor.CallPythonActorMethodString
 // 0x0030 (0x0030 - 0x0000)
@@ -58,11 +51,7 @@ public:
 	class FString                                 args;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyActor_CallPythonActorMethodString) == 0x000008, "Wrong alignment on PyActor_CallPythonActorMethodString");
-static_assert(sizeof(PyActor_CallPythonActorMethodString) == 0x000030, "Wrong size on PyActor_CallPythonActorMethodString");
-static_assert(offsetof(PyActor_CallPythonActorMethodString, method_name) == 0x000000, "Member 'PyActor_CallPythonActorMethodString::method_name' has a wrong offset!");
-static_assert(offsetof(PyActor_CallPythonActorMethodString, args) == 0x000010, "Member 'PyActor_CallPythonActorMethodString::args' has a wrong offset!");
-static_assert(offsetof(PyActor_CallPythonActorMethodString, ReturnValue) == 0x000020, "Member 'PyActor_CallPythonActorMethodString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyActor_CallPythonActorMethodString;
 
 // Function UnrealEnginePython.PyCharacter.CallPyCharacterMethod
 // 0x0020 (0x0020 - 0x0000)
@@ -73,10 +62,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 args;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyCharacter_CallPyCharacterMethod) == 0x000008, "Wrong alignment on PyCharacter_CallPyCharacterMethod");
-static_assert(sizeof(PyCharacter_CallPyCharacterMethod) == 0x000020, "Wrong size on PyCharacter_CallPyCharacterMethod");
-static_assert(offsetof(PyCharacter_CallPyCharacterMethod, method_name) == 0x000000, "Member 'PyCharacter_CallPyCharacterMethod::method_name' has a wrong offset!");
-static_assert(offsetof(PyCharacter_CallPyCharacterMethod, args) == 0x000010, "Member 'PyCharacter_CallPyCharacterMethod::args' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacter_CallPyCharacterMethod;
 
 // Function UnrealEnginePython.PyCharacter.CallPyCharacterMethodBool
 // 0x0028 (0x0028 - 0x0000)
@@ -89,11 +75,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PyCharacter_CallPyCharacterMethodBool) == 0x000008, "Wrong alignment on PyCharacter_CallPyCharacterMethodBool");
-static_assert(sizeof(PyCharacter_CallPyCharacterMethodBool) == 0x000028, "Wrong size on PyCharacter_CallPyCharacterMethodBool");
-static_assert(offsetof(PyCharacter_CallPyCharacterMethodBool, method_name) == 0x000000, "Member 'PyCharacter_CallPyCharacterMethodBool::method_name' has a wrong offset!");
-static_assert(offsetof(PyCharacter_CallPyCharacterMethodBool, args) == 0x000010, "Member 'PyCharacter_CallPyCharacterMethodBool::args' has a wrong offset!");
-static_assert(offsetof(PyCharacter_CallPyCharacterMethodBool, ReturnValue) == 0x000020, "Member 'PyCharacter_CallPyCharacterMethodBool::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacter_CallPyCharacterMethodBool;
 
 // Function UnrealEnginePython.PyCharacter.CallPyCharacterMethodFloat
 // 0x0028 (0x0028 - 0x0000)
@@ -106,11 +88,7 @@ public:
 	float                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PyCharacter_CallPyCharacterMethodFloat) == 0x000008, "Wrong alignment on PyCharacter_CallPyCharacterMethodFloat");
-static_assert(sizeof(PyCharacter_CallPyCharacterMethodFloat) == 0x000028, "Wrong size on PyCharacter_CallPyCharacterMethodFloat");
-static_assert(offsetof(PyCharacter_CallPyCharacterMethodFloat, method_name) == 0x000000, "Member 'PyCharacter_CallPyCharacterMethodFloat::method_name' has a wrong offset!");
-static_assert(offsetof(PyCharacter_CallPyCharacterMethodFloat, args) == 0x000010, "Member 'PyCharacter_CallPyCharacterMethodFloat::args' has a wrong offset!");
-static_assert(offsetof(PyCharacter_CallPyCharacterMethodFloat, ReturnValue) == 0x000020, "Member 'PyCharacter_CallPyCharacterMethodFloat::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacter_CallPyCharacterMethodFloat;
 
 // Function UnrealEnginePython.PyCharacter.CallPyCharacterMethodString
 // 0x0030 (0x0030 - 0x0000)
@@ -122,11 +100,7 @@ public:
 	class FString                                 args;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyCharacter_CallPyCharacterMethodString) == 0x000008, "Wrong alignment on PyCharacter_CallPyCharacterMethodString");
-static_assert(sizeof(PyCharacter_CallPyCharacterMethodString) == 0x000030, "Wrong size on PyCharacter_CallPyCharacterMethodString");
-static_assert(offsetof(PyCharacter_CallPyCharacterMethodString, method_name) == 0x000000, "Member 'PyCharacter_CallPyCharacterMethodString::method_name' has a wrong offset!");
-static_assert(offsetof(PyCharacter_CallPyCharacterMethodString, args) == 0x000010, "Member 'PyCharacter_CallPyCharacterMethodString::args' has a wrong offset!");
-static_assert(offsetof(PyCharacter_CallPyCharacterMethodString, ReturnValue) == 0x000020, "Member 'PyCharacter_CallPyCharacterMethodString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacter_CallPyCharacterMethodString;
 
 // Function UnrealEnginePython.PyCharacter.SetPythonAttrBool
 // 0x0010 (0x0010 - 0x0000)
@@ -137,10 +111,7 @@ public:
 	bool                                          Boolean;                                           // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PyCharacter_SetPythonAttrBool) == 0x000004, "Wrong alignment on PyCharacter_SetPythonAttrBool");
-static_assert(sizeof(PyCharacter_SetPythonAttrBool) == 0x000010, "Wrong size on PyCharacter_SetPythonAttrBool");
-static_assert(offsetof(PyCharacter_SetPythonAttrBool, attr) == 0x000000, "Member 'PyCharacter_SetPythonAttrBool::attr' has a wrong offset!");
-static_assert(offsetof(PyCharacter_SetPythonAttrBool, Boolean) == 0x00000C, "Member 'PyCharacter_SetPythonAttrBool::Boolean' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacter_SetPythonAttrBool;
 
 // Function UnrealEnginePython.PyCharacter.SetPythonAttrFloat
 // 0x0010 (0x0010 - 0x0000)
@@ -150,10 +121,7 @@ public:
 	class FName                                   attr;                                              // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Float;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyCharacter_SetPythonAttrFloat) == 0x000004, "Wrong alignment on PyCharacter_SetPythonAttrFloat");
-static_assert(sizeof(PyCharacter_SetPythonAttrFloat) == 0x000010, "Wrong size on PyCharacter_SetPythonAttrFloat");
-static_assert(offsetof(PyCharacter_SetPythonAttrFloat, attr) == 0x000000, "Member 'PyCharacter_SetPythonAttrFloat::attr' has a wrong offset!");
-static_assert(offsetof(PyCharacter_SetPythonAttrFloat, Float) == 0x00000C, "Member 'PyCharacter_SetPythonAttrFloat::Float' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacter_SetPythonAttrFloat;
 
 // Function UnrealEnginePython.PyCharacter.SetPythonAttrInt
 // 0x0010 (0x0010 - 0x0000)
@@ -163,10 +131,7 @@ public:
 	class FName                                   attr;                                              // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Integer;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyCharacter_SetPythonAttrInt) == 0x000004, "Wrong alignment on PyCharacter_SetPythonAttrInt");
-static_assert(sizeof(PyCharacter_SetPythonAttrInt) == 0x000010, "Wrong size on PyCharacter_SetPythonAttrInt");
-static_assert(offsetof(PyCharacter_SetPythonAttrInt, attr) == 0x000000, "Member 'PyCharacter_SetPythonAttrInt::attr' has a wrong offset!");
-static_assert(offsetof(PyCharacter_SetPythonAttrInt, Integer) == 0x00000C, "Member 'PyCharacter_SetPythonAttrInt::Integer' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacter_SetPythonAttrInt;
 
 // Function UnrealEnginePython.PyCharacter.SetPythonAttrObject
 // 0x0018 (0x0018 - 0x0000)
@@ -177,10 +142,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Object;                                            // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyCharacter_SetPythonAttrObject) == 0x000008, "Wrong alignment on PyCharacter_SetPythonAttrObject");
-static_assert(sizeof(PyCharacter_SetPythonAttrObject) == 0x000018, "Wrong size on PyCharacter_SetPythonAttrObject");
-static_assert(offsetof(PyCharacter_SetPythonAttrObject, attr) == 0x000000, "Member 'PyCharacter_SetPythonAttrObject::attr' has a wrong offset!");
-static_assert(offsetof(PyCharacter_SetPythonAttrObject, Object) == 0x000010, "Member 'PyCharacter_SetPythonAttrObject::Object' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacter_SetPythonAttrObject;
 
 // Function UnrealEnginePython.PyCharacter.SetPythonAttrRotator
 // 0x0028 (0x0028 - 0x0000)
@@ -191,10 +153,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               Rotator;                                           // 0x0010(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyCharacter_SetPythonAttrRotator) == 0x000008, "Wrong alignment on PyCharacter_SetPythonAttrRotator");
-static_assert(sizeof(PyCharacter_SetPythonAttrRotator) == 0x000028, "Wrong size on PyCharacter_SetPythonAttrRotator");
-static_assert(offsetof(PyCharacter_SetPythonAttrRotator, attr) == 0x000000, "Member 'PyCharacter_SetPythonAttrRotator::attr' has a wrong offset!");
-static_assert(offsetof(PyCharacter_SetPythonAttrRotator, Rotator) == 0x000010, "Member 'PyCharacter_SetPythonAttrRotator::Rotator' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacter_SetPythonAttrRotator;
 
 // Function UnrealEnginePython.PyCharacter.SetPythonAttrString
 // 0x0020 (0x0020 - 0x0000)
@@ -205,10 +164,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 String;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyCharacter_SetPythonAttrString) == 0x000008, "Wrong alignment on PyCharacter_SetPythonAttrString");
-static_assert(sizeof(PyCharacter_SetPythonAttrString) == 0x000020, "Wrong size on PyCharacter_SetPythonAttrString");
-static_assert(offsetof(PyCharacter_SetPythonAttrString, attr) == 0x000000, "Member 'PyCharacter_SetPythonAttrString::attr' has a wrong offset!");
-static_assert(offsetof(PyCharacter_SetPythonAttrString, String) == 0x000010, "Member 'PyCharacter_SetPythonAttrString::String' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacter_SetPythonAttrString;
 
 // Function UnrealEnginePython.PyCharacter.SetPythonAttrVector
 // 0x0028 (0x0028 - 0x0000)
@@ -219,10 +175,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Vector;                                            // 0x0010(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyCharacter_SetPythonAttrVector) == 0x000008, "Wrong alignment on PyCharacter_SetPythonAttrVector");
-static_assert(sizeof(PyCharacter_SetPythonAttrVector) == 0x000028, "Wrong size on PyCharacter_SetPythonAttrVector");
-static_assert(offsetof(PyCharacter_SetPythonAttrVector, attr) == 0x000000, "Member 'PyCharacter_SetPythonAttrVector::attr' has a wrong offset!");
-static_assert(offsetof(PyCharacter_SetPythonAttrVector, Vector) == 0x000010, "Member 'PyCharacter_SetPythonAttrVector::Vector' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacter_SetPythonAttrVector;
 
 // Function UnrealEnginePython.PyHUD.CallPythonHUDMethod
 // 0x0020 (0x0020 - 0x0000)
@@ -233,10 +186,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 args;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyHUD_CallPythonHUDMethod) == 0x000008, "Wrong alignment on PyHUD_CallPythonHUDMethod");
-static_assert(sizeof(PyHUD_CallPythonHUDMethod) == 0x000020, "Wrong size on PyHUD_CallPythonHUDMethod");
-static_assert(offsetof(PyHUD_CallPythonHUDMethod, method_name) == 0x000000, "Member 'PyHUD_CallPythonHUDMethod::method_name' has a wrong offset!");
-static_assert(offsetof(PyHUD_CallPythonHUDMethod, args) == 0x000010, "Member 'PyHUD_CallPythonHUDMethod::args' has a wrong offset!");
+DUMPER7_ASSERTS_PyHUD_CallPythonHUDMethod;
 
 // Function UnrealEnginePython.PyHUD.CallPythonHUDMethodBool
 // 0x0028 (0x0028 - 0x0000)
@@ -249,11 +199,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PyHUD_CallPythonHUDMethodBool) == 0x000008, "Wrong alignment on PyHUD_CallPythonHUDMethodBool");
-static_assert(sizeof(PyHUD_CallPythonHUDMethodBool) == 0x000028, "Wrong size on PyHUD_CallPythonHUDMethodBool");
-static_assert(offsetof(PyHUD_CallPythonHUDMethodBool, method_name) == 0x000000, "Member 'PyHUD_CallPythonHUDMethodBool::method_name' has a wrong offset!");
-static_assert(offsetof(PyHUD_CallPythonHUDMethodBool, args) == 0x000010, "Member 'PyHUD_CallPythonHUDMethodBool::args' has a wrong offset!");
-static_assert(offsetof(PyHUD_CallPythonHUDMethodBool, ReturnValue) == 0x000020, "Member 'PyHUD_CallPythonHUDMethodBool::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyHUD_CallPythonHUDMethodBool;
 
 // Function UnrealEnginePython.PyHUD.CallPythonHUDMethodString
 // 0x0030 (0x0030 - 0x0000)
@@ -265,11 +211,7 @@ public:
 	class FString                                 args;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyHUD_CallPythonHUDMethodString) == 0x000008, "Wrong alignment on PyHUD_CallPythonHUDMethodString");
-static_assert(sizeof(PyHUD_CallPythonHUDMethodString) == 0x000030, "Wrong size on PyHUD_CallPythonHUDMethodString");
-static_assert(offsetof(PyHUD_CallPythonHUDMethodString, method_name) == 0x000000, "Member 'PyHUD_CallPythonHUDMethodString::method_name' has a wrong offset!");
-static_assert(offsetof(PyHUD_CallPythonHUDMethodString, args) == 0x000010, "Member 'PyHUD_CallPythonHUDMethodString::args' has a wrong offset!");
-static_assert(offsetof(PyHUD_CallPythonHUDMethodString, ReturnValue) == 0x000020, "Member 'PyHUD_CallPythonHUDMethodString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyHUD_CallPythonHUDMethodString;
 
 // Function UnrealEnginePython.PyPawn.CallPythonPawnMethod
 // 0x000C (0x000C - 0x0000)
@@ -278,9 +220,7 @@ struct PyPawn_CallPythonPawnMethod final
 public:
 	class FName                                   method_name;                                       // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyPawn_CallPythonPawnMethod) == 0x000004, "Wrong alignment on PyPawn_CallPythonPawnMethod");
-static_assert(sizeof(PyPawn_CallPythonPawnMethod) == 0x00000C, "Wrong size on PyPawn_CallPythonPawnMethod");
-static_assert(offsetof(PyPawn_CallPythonPawnMethod, method_name) == 0x000000, "Member 'PyPawn_CallPythonPawnMethod::method_name' has a wrong offset!");
+DUMPER7_ASSERTS_PyPawn_CallPythonPawnMethod;
 
 // Function UnrealEnginePython.PyPawn.CallPythonPawnMethodBool
 // 0x0010 (0x0010 - 0x0000)
@@ -291,10 +231,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PyPawn_CallPythonPawnMethodBool) == 0x000004, "Wrong alignment on PyPawn_CallPythonPawnMethodBool");
-static_assert(sizeof(PyPawn_CallPythonPawnMethodBool) == 0x000010, "Wrong size on PyPawn_CallPythonPawnMethodBool");
-static_assert(offsetof(PyPawn_CallPythonPawnMethodBool, method_name) == 0x000000, "Member 'PyPawn_CallPythonPawnMethodBool::method_name' has a wrong offset!");
-static_assert(offsetof(PyPawn_CallPythonPawnMethodBool, ReturnValue) == 0x00000C, "Member 'PyPawn_CallPythonPawnMethodBool::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPawn_CallPythonPawnMethodBool;
 
 // Function UnrealEnginePython.PyPawn.CallPythonPawnMethodString
 // 0x0020 (0x0020 - 0x0000)
@@ -305,10 +242,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyPawn_CallPythonPawnMethodString) == 0x000008, "Wrong alignment on PyPawn_CallPythonPawnMethodString");
-static_assert(sizeof(PyPawn_CallPythonPawnMethodString) == 0x000020, "Wrong size on PyPawn_CallPythonPawnMethodString");
-static_assert(offsetof(PyPawn_CallPythonPawnMethodString, method_name) == 0x000000, "Member 'PyPawn_CallPythonPawnMethodString::method_name' has a wrong offset!");
-static_assert(offsetof(PyPawn_CallPythonPawnMethodString, ReturnValue) == 0x000010, "Member 'PyPawn_CallPythonPawnMethodString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPawn_CallPythonPawnMethodString;
 
 // Function UnrealEnginePython.TestOnlyObject.AddRefCount
 // 0x0008 (0x0008 - 0x0000)
@@ -318,10 +252,7 @@ public:
 	struct FTestOnlyRefCount                      InOutRefCount;                                     // 0x0000(0x0004)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestOnlyObject_AddRefCount) == 0x000004, "Wrong alignment on TestOnlyObject_AddRefCount");
-static_assert(sizeof(TestOnlyObject_AddRefCount) == 0x000008, "Wrong size on TestOnlyObject_AddRefCount");
-static_assert(offsetof(TestOnlyObject_AddRefCount, InOutRefCount) == 0x000000, "Member 'TestOnlyObject_AddRefCount::InOutRefCount' has a wrong offset!");
-static_assert(offsetof(TestOnlyObject_AddRefCount, ReturnValue) == 0x000004, "Member 'TestOnlyObject_AddRefCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TestOnlyObject_AddRefCount;
 
 // Function UnrealEnginePython.TestOnlyObject.GetOwnedRefs
 // 0x0008 (0x0008 - 0x0000)
@@ -331,10 +262,7 @@ public:
 	struct FTestOnlyRefCount                      RefCount;                                          // 0x0000(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestOnlyObject_GetOwnedRefs) == 0x000004, "Wrong alignment on TestOnlyObject_GetOwnedRefs");
-static_assert(sizeof(TestOnlyObject_GetOwnedRefs) == 0x000008, "Wrong size on TestOnlyObject_GetOwnedRefs");
-static_assert(offsetof(TestOnlyObject_GetOwnedRefs, RefCount) == 0x000000, "Member 'TestOnlyObject_GetOwnedRefs::RefCount' has a wrong offset!");
-static_assert(offsetof(TestOnlyObject_GetOwnedRefs, ReturnValue) == 0x000004, "Member 'TestOnlyObject_GetOwnedRefs::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TestOnlyObject_GetOwnedRefs;
 
 // Function UnrealEnginePython.TestOnlyObject.GetTotalRefs
 // 0x0004 (0x0004 - 0x0000)
@@ -343,9 +271,7 @@ struct TestOnlyObject_GetTotalRefs final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestOnlyObject_GetTotalRefs) == 0x000004, "Wrong alignment on TestOnlyObject_GetTotalRefs");
-static_assert(sizeof(TestOnlyObject_GetTotalRefs) == 0x000004, "Wrong size on TestOnlyObject_GetTotalRefs");
-static_assert(offsetof(TestOnlyObject_GetTotalRefs, ReturnValue) == 0x000000, "Member 'TestOnlyObject_GetTotalRefs::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TestOnlyObject_GetTotalRefs;
 
 // Function UnrealEnginePython.TestOnlyObject.NewRefCount
 // 0x0004 (0x0004 - 0x0000)
@@ -354,9 +280,7 @@ struct TestOnlyObject_NewRefCount final
 public:
 	struct FTestOnlyRefCount                      ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestOnlyObject_NewRefCount) == 0x000004, "Wrong alignment on TestOnlyObject_NewRefCount");
-static_assert(sizeof(TestOnlyObject_NewRefCount) == 0x000004, "Wrong size on TestOnlyObject_NewRefCount");
-static_assert(offsetof(TestOnlyObject_NewRefCount, ReturnValue) == 0x000000, "Member 'TestOnlyObject_NewRefCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TestOnlyObject_NewRefCount;
 
 // Function UnrealEnginePython.TestOnlyObject.NewRefCount2
 // 0x0004 (0x0004 - 0x0000)
@@ -365,9 +289,7 @@ struct TestOnlyObject_NewRefCount2 final
 public:
 	struct FTestOnlyRefCount                      ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestOnlyObject_NewRefCount2) == 0x000004, "Wrong alignment on TestOnlyObject_NewRefCount2");
-static_assert(sizeof(TestOnlyObject_NewRefCount2) == 0x000004, "Wrong size on TestOnlyObject_NewRefCount2");
-static_assert(offsetof(TestOnlyObject_NewRefCount2, ReturnValue) == 0x000000, "Member 'TestOnlyObject_NewRefCount2::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TestOnlyObject_NewRefCount2;
 
 // Function UnrealEnginePython.TestOnlyObject.OutRefCount
 // 0x0004 (0x0004 - 0x0000)
@@ -376,9 +298,7 @@ struct TestOnlyObject_OutRefCount final
 public:
 	struct FTestOnlyRefCount                      OutRefCount_0;                                     // 0x0000(0x0004)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestOnlyObject_OutRefCount) == 0x000004, "Wrong alignment on TestOnlyObject_OutRefCount");
-static_assert(sizeof(TestOnlyObject_OutRefCount) == 0x000004, "Wrong size on TestOnlyObject_OutRefCount");
-static_assert(offsetof(TestOnlyObject_OutRefCount, OutRefCount_0) == 0x000000, "Member 'TestOnlyObject_OutRefCount::OutRefCount_0' has a wrong offset!");
+DUMPER7_ASSERTS_TestOnlyObject_OutRefCount;
 
 // Function UnrealEnginePython.TestOnlyObject.OutRefCount2
 // 0x0004 (0x0004 - 0x0000)
@@ -387,9 +307,7 @@ struct TestOnlyObject_OutRefCount2 final
 public:
 	struct FTestOnlyRefCount                      OutRefCount;                                       // 0x0000(0x0004)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestOnlyObject_OutRefCount2) == 0x000004, "Wrong alignment on TestOnlyObject_OutRefCount2");
-static_assert(sizeof(TestOnlyObject_OutRefCount2) == 0x000004, "Wrong size on TestOnlyObject_OutRefCount2");
-static_assert(offsetof(TestOnlyObject_OutRefCount2, OutRefCount) == 0x000000, "Member 'TestOnlyObject_OutRefCount2::OutRefCount' has a wrong offset!");
+DUMPER7_ASSERTS_TestOnlyObject_OutRefCount2;
 
 // Function UnrealEnginePython.TestOnlyObject.OutRefCount_NoImpl
 // 0x0004 (0x0004 - 0x0000)
@@ -398,9 +316,7 @@ struct TestOnlyObject_OutRefCount_NoImpl final
 public:
 	struct FTestOnlyRefCount                      OutRefCount;                                       // 0x0000(0x0004)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestOnlyObject_OutRefCount_NoImpl) == 0x000004, "Wrong alignment on TestOnlyObject_OutRefCount_NoImpl");
-static_assert(sizeof(TestOnlyObject_OutRefCount_NoImpl) == 0x000004, "Wrong size on TestOnlyObject_OutRefCount_NoImpl");
-static_assert(offsetof(TestOnlyObject_OutRefCount_NoImpl, OutRefCount) == 0x000000, "Member 'TestOnlyObject_OutRefCount_NoImpl::OutRefCount' has a wrong offset!");
+DUMPER7_ASSERTS_TestOnlyObject_OutRefCount_NoImpl;
 
 // Function UnrealEnginePython.TestOnlyObject.BP_NewRefCount
 // 0x0004 (0x0004 - 0x0000)
@@ -409,9 +325,7 @@ struct TestOnlyObject_BP_NewRefCount final
 public:
 	struct FTestOnlyRefCount                      ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestOnlyObject_BP_NewRefCount) == 0x000004, "Wrong alignment on TestOnlyObject_BP_NewRefCount");
-static_assert(sizeof(TestOnlyObject_BP_NewRefCount) == 0x000004, "Wrong size on TestOnlyObject_BP_NewRefCount");
-static_assert(offsetof(TestOnlyObject_BP_NewRefCount, ReturnValue) == 0x000000, "Member 'TestOnlyObject_BP_NewRefCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TestOnlyObject_BP_NewRefCount;
 
 // Function UnrealEnginePython.TestOnlyObject.Call_BP_NewRefCount
 // 0x0004 (0x0004 - 0x0000)
@@ -420,9 +334,7 @@ struct TestOnlyObject_Call_BP_NewRefCount final
 public:
 	struct FTestOnlyRefCount                      ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestOnlyObject_Call_BP_NewRefCount) == 0x000004, "Wrong alignment on TestOnlyObject_Call_BP_NewRefCount");
-static_assert(sizeof(TestOnlyObject_Call_BP_NewRefCount) == 0x000004, "Wrong size on TestOnlyObject_Call_BP_NewRefCount");
-static_assert(offsetof(TestOnlyObject_Call_BP_NewRefCount, ReturnValue) == 0x000000, "Member 'TestOnlyObject_Call_BP_NewRefCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TestOnlyObject_Call_BP_NewRefCount;
 
 // Function UnrealEnginePython.PythonBlueprintFunctionLibrary.ExecutePythonScript
 // 0x0010 (0x0010 - 0x0000)
@@ -431,9 +343,7 @@ struct PythonBlueprintFunctionLibrary_ExecutePythonScript final
 public:
 	class FString                                 script;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonBlueprintFunctionLibrary_ExecutePythonScript) == 0x000008, "Wrong alignment on PythonBlueprintFunctionLibrary_ExecutePythonScript");
-static_assert(sizeof(PythonBlueprintFunctionLibrary_ExecutePythonScript) == 0x000010, "Wrong size on PythonBlueprintFunctionLibrary_ExecutePythonScript");
-static_assert(offsetof(PythonBlueprintFunctionLibrary_ExecutePythonScript, script) == 0x000000, "Member 'PythonBlueprintFunctionLibrary_ExecutePythonScript::script' has a wrong offset!");
+DUMPER7_ASSERTS_PythonBlueprintFunctionLibrary_ExecutePythonScript;
 
 // Function UnrealEnginePython.PythonBlueprintFunctionLibrary.ExecutePythonString
 // 0x0010 (0x0010 - 0x0000)
@@ -442,9 +352,7 @@ struct PythonBlueprintFunctionLibrary_ExecutePythonString final
 public:
 	class FString                                 PythonCmd;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonBlueprintFunctionLibrary_ExecutePythonString) == 0x000008, "Wrong alignment on PythonBlueprintFunctionLibrary_ExecutePythonString");
-static_assert(sizeof(PythonBlueprintFunctionLibrary_ExecutePythonString) == 0x000010, "Wrong size on PythonBlueprintFunctionLibrary_ExecutePythonString");
-static_assert(offsetof(PythonBlueprintFunctionLibrary_ExecutePythonString, PythonCmd) == 0x000000, "Member 'PythonBlueprintFunctionLibrary_ExecutePythonString::PythonCmd' has a wrong offset!");
+DUMPER7_ASSERTS_PythonBlueprintFunctionLibrary_ExecutePythonString;
 
 // Function UnrealEnginePython.PythonComponent.CallPythonComponentMethod
 // 0x0020 (0x0020 - 0x0000)
@@ -455,10 +363,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 args;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonComponent_CallPythonComponentMethod) == 0x000008, "Wrong alignment on PythonComponent_CallPythonComponentMethod");
-static_assert(sizeof(PythonComponent_CallPythonComponentMethod) == 0x000020, "Wrong size on PythonComponent_CallPythonComponentMethod");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethod, method_name) == 0x000000, "Member 'PythonComponent_CallPythonComponentMethod::method_name' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethod, args) == 0x000010, "Member 'PythonComponent_CallPythonComponentMethod::args' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_CallPythonComponentMethod;
 
 // Function UnrealEnginePython.PythonComponent.CallPythonComponentMethodBool
 // 0x0028 (0x0028 - 0x0000)
@@ -471,11 +376,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PythonComponent_CallPythonComponentMethodBool) == 0x000008, "Wrong alignment on PythonComponent_CallPythonComponentMethodBool");
-static_assert(sizeof(PythonComponent_CallPythonComponentMethodBool) == 0x000028, "Wrong size on PythonComponent_CallPythonComponentMethodBool");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodBool, method_name) == 0x000000, "Member 'PythonComponent_CallPythonComponentMethodBool::method_name' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodBool, args) == 0x000010, "Member 'PythonComponent_CallPythonComponentMethodBool::args' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodBool, ReturnValue) == 0x000020, "Member 'PythonComponent_CallPythonComponentMethodBool::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_CallPythonComponentMethodBool;
 
 // Function UnrealEnginePython.PythonComponent.CallPythonComponentMethodFloat
 // 0x0028 (0x0028 - 0x0000)
@@ -488,11 +389,7 @@ public:
 	float                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PythonComponent_CallPythonComponentMethodFloat) == 0x000008, "Wrong alignment on PythonComponent_CallPythonComponentMethodFloat");
-static_assert(sizeof(PythonComponent_CallPythonComponentMethodFloat) == 0x000028, "Wrong size on PythonComponent_CallPythonComponentMethodFloat");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodFloat, method_name) == 0x000000, "Member 'PythonComponent_CallPythonComponentMethodFloat::method_name' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodFloat, args) == 0x000010, "Member 'PythonComponent_CallPythonComponentMethodFloat::args' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodFloat, ReturnValue) == 0x000020, "Member 'PythonComponent_CallPythonComponentMethodFloat::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_CallPythonComponentMethodFloat;
 
 // Function UnrealEnginePython.PythonComponent.CallPythonComponentMethodInt
 // 0x0028 (0x0028 - 0x0000)
@@ -505,11 +402,7 @@ public:
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PythonComponent_CallPythonComponentMethodInt) == 0x000008, "Wrong alignment on PythonComponent_CallPythonComponentMethodInt");
-static_assert(sizeof(PythonComponent_CallPythonComponentMethodInt) == 0x000028, "Wrong size on PythonComponent_CallPythonComponentMethodInt");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodInt, method_name) == 0x000000, "Member 'PythonComponent_CallPythonComponentMethodInt::method_name' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodInt, args) == 0x000010, "Member 'PythonComponent_CallPythonComponentMethodInt::args' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodInt, ReturnValue) == 0x000020, "Member 'PythonComponent_CallPythonComponentMethodInt::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_CallPythonComponentMethodInt;
 
 // Function UnrealEnginePython.PythonComponent.CallPythonComponentMethodMap
 // 0x0070 (0x0070 - 0x0000)
@@ -521,11 +414,7 @@ public:
 	class FString                                 args;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, class FString>            ReturnValue;                                       // 0x0020(0x0050)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonComponent_CallPythonComponentMethodMap) == 0x000008, "Wrong alignment on PythonComponent_CallPythonComponentMethodMap");
-static_assert(sizeof(PythonComponent_CallPythonComponentMethodMap) == 0x000070, "Wrong size on PythonComponent_CallPythonComponentMethodMap");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodMap, method_name) == 0x000000, "Member 'PythonComponent_CallPythonComponentMethodMap::method_name' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodMap, args) == 0x000010, "Member 'PythonComponent_CallPythonComponentMethodMap::args' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodMap, ReturnValue) == 0x000020, "Member 'PythonComponent_CallPythonComponentMethodMap::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_CallPythonComponentMethodMap;
 
 // Function UnrealEnginePython.PythonComponent.CallPythonComponentMethodObject
 // 0x0020 (0x0020 - 0x0000)
@@ -537,11 +426,7 @@ public:
 	class UObject*                                arg;                                               // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonComponent_CallPythonComponentMethodObject) == 0x000008, "Wrong alignment on PythonComponent_CallPythonComponentMethodObject");
-static_assert(sizeof(PythonComponent_CallPythonComponentMethodObject) == 0x000020, "Wrong size on PythonComponent_CallPythonComponentMethodObject");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodObject, method_name) == 0x000000, "Member 'PythonComponent_CallPythonComponentMethodObject::method_name' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodObject, arg) == 0x000010, "Member 'PythonComponent_CallPythonComponentMethodObject::arg' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodObject, ReturnValue) == 0x000018, "Member 'PythonComponent_CallPythonComponentMethodObject::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_CallPythonComponentMethodObject;
 
 // Function UnrealEnginePython.PythonComponent.CallPythonComponentMethodString
 // 0x0030 (0x0030 - 0x0000)
@@ -553,11 +438,7 @@ public:
 	class FString                                 args;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonComponent_CallPythonComponentMethodString) == 0x000008, "Wrong alignment on PythonComponent_CallPythonComponentMethodString");
-static_assert(sizeof(PythonComponent_CallPythonComponentMethodString) == 0x000030, "Wrong size on PythonComponent_CallPythonComponentMethodString");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodString, method_name) == 0x000000, "Member 'PythonComponent_CallPythonComponentMethodString::method_name' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodString, args) == 0x000010, "Member 'PythonComponent_CallPythonComponentMethodString::args' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodString, ReturnValue) == 0x000020, "Member 'PythonComponent_CallPythonComponentMethodString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_CallPythonComponentMethodString;
 
 // Function UnrealEnginePython.PythonComponent.CallPythonComponentMethodStringArray
 // 0x0030 (0x0030 - 0x0000)
@@ -569,11 +450,7 @@ public:
 	class FString                                 args;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         output_strings;                                    // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonComponent_CallPythonComponentMethodStringArray) == 0x000008, "Wrong alignment on PythonComponent_CallPythonComponentMethodStringArray");
-static_assert(sizeof(PythonComponent_CallPythonComponentMethodStringArray) == 0x000030, "Wrong size on PythonComponent_CallPythonComponentMethodStringArray");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodStringArray, method_name) == 0x000000, "Member 'PythonComponent_CallPythonComponentMethodStringArray::method_name' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodStringArray, args) == 0x000010, "Member 'PythonComponent_CallPythonComponentMethodStringArray::args' has a wrong offset!");
-static_assert(offsetof(PythonComponent_CallPythonComponentMethodStringArray, output_strings) == 0x000020, "Member 'PythonComponent_CallPythonComponentMethodStringArray::output_strings' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_CallPythonComponentMethodStringArray;
 
 // Function UnrealEnginePython.PythonComponent.SetPythonAttrBool
 // 0x0010 (0x0010 - 0x0000)
@@ -584,10 +461,7 @@ public:
 	bool                                          Boolean;                                           // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PythonComponent_SetPythonAttrBool) == 0x000004, "Wrong alignment on PythonComponent_SetPythonAttrBool");
-static_assert(sizeof(PythonComponent_SetPythonAttrBool) == 0x000010, "Wrong size on PythonComponent_SetPythonAttrBool");
-static_assert(offsetof(PythonComponent_SetPythonAttrBool, attr) == 0x000000, "Member 'PythonComponent_SetPythonAttrBool::attr' has a wrong offset!");
-static_assert(offsetof(PythonComponent_SetPythonAttrBool, Boolean) == 0x00000C, "Member 'PythonComponent_SetPythonAttrBool::Boolean' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_SetPythonAttrBool;
 
 // Function UnrealEnginePython.PythonComponent.SetPythonAttrFloat
 // 0x0010 (0x0010 - 0x0000)
@@ -597,10 +471,7 @@ public:
 	class FName                                   attr;                                              // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Float;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonComponent_SetPythonAttrFloat) == 0x000004, "Wrong alignment on PythonComponent_SetPythonAttrFloat");
-static_assert(sizeof(PythonComponent_SetPythonAttrFloat) == 0x000010, "Wrong size on PythonComponent_SetPythonAttrFloat");
-static_assert(offsetof(PythonComponent_SetPythonAttrFloat, attr) == 0x000000, "Member 'PythonComponent_SetPythonAttrFloat::attr' has a wrong offset!");
-static_assert(offsetof(PythonComponent_SetPythonAttrFloat, Float) == 0x00000C, "Member 'PythonComponent_SetPythonAttrFloat::Float' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_SetPythonAttrFloat;
 
 // Function UnrealEnginePython.PythonComponent.SetPythonAttrInt
 // 0x0010 (0x0010 - 0x0000)
@@ -610,10 +481,7 @@ public:
 	class FName                                   attr;                                              // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Integer;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonComponent_SetPythonAttrInt) == 0x000004, "Wrong alignment on PythonComponent_SetPythonAttrInt");
-static_assert(sizeof(PythonComponent_SetPythonAttrInt) == 0x000010, "Wrong size on PythonComponent_SetPythonAttrInt");
-static_assert(offsetof(PythonComponent_SetPythonAttrInt, attr) == 0x000000, "Member 'PythonComponent_SetPythonAttrInt::attr' has a wrong offset!");
-static_assert(offsetof(PythonComponent_SetPythonAttrInt, Integer) == 0x00000C, "Member 'PythonComponent_SetPythonAttrInt::Integer' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_SetPythonAttrInt;
 
 // Function UnrealEnginePython.PythonComponent.SetPythonAttrObject
 // 0x0018 (0x0018 - 0x0000)
@@ -624,10 +492,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Object;                                            // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonComponent_SetPythonAttrObject) == 0x000008, "Wrong alignment on PythonComponent_SetPythonAttrObject");
-static_assert(sizeof(PythonComponent_SetPythonAttrObject) == 0x000018, "Wrong size on PythonComponent_SetPythonAttrObject");
-static_assert(offsetof(PythonComponent_SetPythonAttrObject, attr) == 0x000000, "Member 'PythonComponent_SetPythonAttrObject::attr' has a wrong offset!");
-static_assert(offsetof(PythonComponent_SetPythonAttrObject, Object) == 0x000010, "Member 'PythonComponent_SetPythonAttrObject::Object' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_SetPythonAttrObject;
 
 // Function UnrealEnginePython.PythonComponent.SetPythonAttrRotator
 // 0x0028 (0x0028 - 0x0000)
@@ -638,10 +503,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               Rotator;                                           // 0x0010(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonComponent_SetPythonAttrRotator) == 0x000008, "Wrong alignment on PythonComponent_SetPythonAttrRotator");
-static_assert(sizeof(PythonComponent_SetPythonAttrRotator) == 0x000028, "Wrong size on PythonComponent_SetPythonAttrRotator");
-static_assert(offsetof(PythonComponent_SetPythonAttrRotator, attr) == 0x000000, "Member 'PythonComponent_SetPythonAttrRotator::attr' has a wrong offset!");
-static_assert(offsetof(PythonComponent_SetPythonAttrRotator, Rotator) == 0x000010, "Member 'PythonComponent_SetPythonAttrRotator::Rotator' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_SetPythonAttrRotator;
 
 // Function UnrealEnginePython.PythonComponent.SetPythonAttrString
 // 0x0020 (0x0020 - 0x0000)
@@ -652,10 +514,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 String;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonComponent_SetPythonAttrString) == 0x000008, "Wrong alignment on PythonComponent_SetPythonAttrString");
-static_assert(sizeof(PythonComponent_SetPythonAttrString) == 0x000020, "Wrong size on PythonComponent_SetPythonAttrString");
-static_assert(offsetof(PythonComponent_SetPythonAttrString, attr) == 0x000000, "Member 'PythonComponent_SetPythonAttrString::attr' has a wrong offset!");
-static_assert(offsetof(PythonComponent_SetPythonAttrString, String) == 0x000010, "Member 'PythonComponent_SetPythonAttrString::String' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_SetPythonAttrString;
 
 // Function UnrealEnginePython.PythonComponent.SetPythonAttrVector
 // 0x0028 (0x0028 - 0x0000)
@@ -666,10 +525,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Vector;                                            // 0x0010(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PythonComponent_SetPythonAttrVector) == 0x000008, "Wrong alignment on PythonComponent_SetPythonAttrVector");
-static_assert(sizeof(PythonComponent_SetPythonAttrVector) == 0x000028, "Wrong size on PythonComponent_SetPythonAttrVector");
-static_assert(offsetof(PythonComponent_SetPythonAttrVector, attr) == 0x000000, "Member 'PythonComponent_SetPythonAttrVector::attr' has a wrong offset!");
-static_assert(offsetof(PythonComponent_SetPythonAttrVector, Vector) == 0x000010, "Member 'PythonComponent_SetPythonAttrVector::Vector' has a wrong offset!");
+DUMPER7_ASSERTS_PythonComponent_SetPythonAttrVector;
 
 // Function UnrealEnginePython.PyUserWidget.CallPythonUserWidgetMethod
 // 0x0020 (0x0020 - 0x0000)
@@ -680,10 +536,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 args;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PyUserWidget_CallPythonUserWidgetMethod) == 0x000008, "Wrong alignment on PyUserWidget_CallPythonUserWidgetMethod");
-static_assert(sizeof(PyUserWidget_CallPythonUserWidgetMethod) == 0x000020, "Wrong size on PyUserWidget_CallPythonUserWidgetMethod");
-static_assert(offsetof(PyUserWidget_CallPythonUserWidgetMethod, method_name) == 0x000000, "Member 'PyUserWidget_CallPythonUserWidgetMethod::method_name' has a wrong offset!");
-static_assert(offsetof(PyUserWidget_CallPythonUserWidgetMethod, args) == 0x000010, "Member 'PyUserWidget_CallPythonUserWidgetMethod::args' has a wrong offset!");
+DUMPER7_ASSERTS_PyUserWidget_CallPythonUserWidgetMethod;
 
 // Function UnrealEnginePython.TestInvokeObject.Call_int
 // 0x0004 (0x0004 - 0x0000)
@@ -692,9 +545,7 @@ struct TestInvokeObject_Call_int final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestInvokeObject_Call_int) == 0x000004, "Wrong alignment on TestInvokeObject_Call_int");
-static_assert(sizeof(TestInvokeObject_Call_int) == 0x000004, "Wrong size on TestInvokeObject_Call_int");
-static_assert(offsetof(TestInvokeObject_Call_int, ReturnValue) == 0x000000, "Member 'TestInvokeObject_Call_int::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TestInvokeObject_Call_int;
 
 // Function UnrealEnginePython.TestInvokeObject.Call_obj
 // 0x0008 (0x0008 - 0x0000)
@@ -703,9 +554,7 @@ struct TestInvokeObject_Call_obj final
 public:
 	class UTestInvokeObject*                      ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestInvokeObject_Call_obj) == 0x000008, "Wrong alignment on TestInvokeObject_Call_obj");
-static_assert(sizeof(TestInvokeObject_Call_obj) == 0x000008, "Wrong size on TestInvokeObject_Call_obj");
-static_assert(offsetof(TestInvokeObject_Call_obj, ReturnValue) == 0x000000, "Member 'TestInvokeObject_Call_obj::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TestInvokeObject_Call_obj;
 
 // Function UnrealEnginePython.TestInvokeObject.Call_str
 // 0x0010 (0x0010 - 0x0000)
@@ -714,9 +563,7 @@ struct TestInvokeObject_Call_str final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestInvokeObject_Call_str) == 0x000008, "Wrong alignment on TestInvokeObject_Call_str");
-static_assert(sizeof(TestInvokeObject_Call_str) == 0x000010, "Wrong size on TestInvokeObject_Call_str");
-static_assert(offsetof(TestInvokeObject_Call_str, ReturnValue) == 0x000000, "Member 'TestInvokeObject_Call_str::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TestInvokeObject_Call_str;
 
 // Function UnrealEnginePython.TestInvokeObject.Call_struct
 // 0x0040 (0x0040 - 0x0000)
@@ -725,9 +572,7 @@ struct TestInvokeObject_Call_struct final
 public:
 	struct FTestInvokeStruct                      ReturnValue;                                       // 0x0000(0x0040)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestInvokeObject_Call_struct) == 0x000008, "Wrong alignment on TestInvokeObject_Call_struct");
-static_assert(sizeof(TestInvokeObject_Call_struct) == 0x000040, "Wrong size on TestInvokeObject_Call_struct");
-static_assert(offsetof(TestInvokeObject_Call_struct, ReturnValue) == 0x000000, "Member 'TestInvokeObject_Call_struct::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TestInvokeObject_Call_struct;
 
 // Function UnrealEnginePython.TestInvokeObject.Call_void_int
 // 0x0004 (0x0004 - 0x0000)
@@ -736,9 +581,7 @@ struct TestInvokeObject_Call_void_int final
 public:
 	int32                                         InArg1;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestInvokeObject_Call_void_int) == 0x000004, "Wrong alignment on TestInvokeObject_Call_void_int");
-static_assert(sizeof(TestInvokeObject_Call_void_int) == 0x000004, "Wrong size on TestInvokeObject_Call_void_int");
-static_assert(offsetof(TestInvokeObject_Call_void_int, InArg1) == 0x000000, "Member 'TestInvokeObject_Call_void_int::InArg1' has a wrong offset!");
+DUMPER7_ASSERTS_TestInvokeObject_Call_void_int;
 
 // Function UnrealEnginePython.TestInvokeObject.Call_void_int_int
 // 0x0008 (0x0008 - 0x0000)
@@ -748,10 +591,7 @@ public:
 	int32                                         InArg1;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InArg2;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestInvokeObject_Call_void_int_int) == 0x000004, "Wrong alignment on TestInvokeObject_Call_void_int_int");
-static_assert(sizeof(TestInvokeObject_Call_void_int_int) == 0x000008, "Wrong size on TestInvokeObject_Call_void_int_int");
-static_assert(offsetof(TestInvokeObject_Call_void_int_int, InArg1) == 0x000000, "Member 'TestInvokeObject_Call_void_int_int::InArg1' has a wrong offset!");
-static_assert(offsetof(TestInvokeObject_Call_void_int_int, InArg2) == 0x000004, "Member 'TestInvokeObject_Call_void_int_int::InArg2' has a wrong offset!");
+DUMPER7_ASSERTS_TestInvokeObject_Call_void_int_int;
 
 // Function UnrealEnginePython.TestInvokeObject.Call_void_int_int_float
 // 0x000C (0x000C - 0x0000)
@@ -762,11 +602,7 @@ public:
 	int32                                         InArg2;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         IntArg3;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestInvokeObject_Call_void_int_int_float) == 0x000004, "Wrong alignment on TestInvokeObject_Call_void_int_int_float");
-static_assert(sizeof(TestInvokeObject_Call_void_int_int_float) == 0x00000C, "Wrong size on TestInvokeObject_Call_void_int_int_float");
-static_assert(offsetof(TestInvokeObject_Call_void_int_int_float, InArg1) == 0x000000, "Member 'TestInvokeObject_Call_void_int_int_float::InArg1' has a wrong offset!");
-static_assert(offsetof(TestInvokeObject_Call_void_int_int_float, InArg2) == 0x000004, "Member 'TestInvokeObject_Call_void_int_int_float::InArg2' has a wrong offset!");
-static_assert(offsetof(TestInvokeObject_Call_void_int_int_float, IntArg3) == 0x000008, "Member 'TestInvokeObject_Call_void_int_int_float::IntArg3' has a wrong offset!");
+DUMPER7_ASSERTS_TestInvokeObject_Call_void_int_int_float;
 
 // Function UnrealEnginePython.TestInvokeObject.Call_void_object
 // 0x0008 (0x0008 - 0x0000)
@@ -775,9 +611,7 @@ struct TestInvokeObject_Call_void_object final
 public:
 	class UTestInvokeObject*                      InArg1;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestInvokeObject_Call_void_object) == 0x000008, "Wrong alignment on TestInvokeObject_Call_void_object");
-static_assert(sizeof(TestInvokeObject_Call_void_object) == 0x000008, "Wrong size on TestInvokeObject_Call_void_object");
-static_assert(offsetof(TestInvokeObject_Call_void_object, InArg1) == 0x000000, "Member 'TestInvokeObject_Call_void_object::InArg1' has a wrong offset!");
+DUMPER7_ASSERTS_TestInvokeObject_Call_void_object;
 
 // Function UnrealEnginePython.TestInvokeObject.Call_void_str
 // 0x0010 (0x0010 - 0x0000)
@@ -786,9 +620,7 @@ struct TestInvokeObject_Call_void_str final
 public:
 	class FString                                 InArg1;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestInvokeObject_Call_void_str) == 0x000008, "Wrong alignment on TestInvokeObject_Call_void_str");
-static_assert(sizeof(TestInvokeObject_Call_void_str) == 0x000010, "Wrong size on TestInvokeObject_Call_void_str");
-static_assert(offsetof(TestInvokeObject_Call_void_str, InArg1) == 0x000000, "Member 'TestInvokeObject_Call_void_str::InArg1' has a wrong offset!");
+DUMPER7_ASSERTS_TestInvokeObject_Call_void_str;
 
 // Function UnrealEnginePython.TestInvokeObject.Call_void_struct
 // 0x0040 (0x0040 - 0x0000)
@@ -797,9 +629,7 @@ struct TestInvokeObject_Call_void_struct final
 public:
 	struct FTestInvokeStruct                      InArg1;                                            // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TestInvokeObject_Call_void_struct) == 0x000008, "Wrong alignment on TestInvokeObject_Call_void_struct");
-static_assert(sizeof(TestInvokeObject_Call_void_struct) == 0x000040, "Wrong size on TestInvokeObject_Call_void_struct");
-static_assert(offsetof(TestInvokeObject_Call_void_struct, InArg1) == 0x000000, "Member 'TestInvokeObject_Call_void_struct::InArg1' has a wrong offset!");
+DUMPER7_ASSERTS_TestInvokeObject_Call_void_struct;
 
 }
 

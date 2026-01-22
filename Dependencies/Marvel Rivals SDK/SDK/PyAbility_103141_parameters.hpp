@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_103142_SetAbility) == 0x000008, "Wrong alignment on PyUIController_103142_SetAbility");
-static_assert(sizeof(PyUIController_103142_SetAbility) == 0x000010, "Wrong size on PyUIController_103142_SetAbility");
-static_assert(offsetof(PyUIController_103142_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_103142_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_103142_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_103142_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_103142_SetAbility;
 
 // PythonFunction PyAbility_103141.PyUIController_103141.SetAbility
 // 0x0010 (0x0010 - 0x0000)
@@ -39,10 +36,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_103141_SetAbility) == 0x000008, "Wrong alignment on PyUIController_103141_SetAbility");
-static_assert(sizeof(PyUIController_103141_SetAbility) == 0x000010, "Wrong size on PyUIController_103141_SetAbility");
-static_assert(offsetof(PyUIController_103141_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_103141_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_103141_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_103141_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_103141_SetAbility;
 
 // PythonFunction PyAbility_103141.PyCue_Scope_HitImpact_10314201.OnNiagaraSpawned
 // 0x01E0 (0x01E0 - 0x0000)
@@ -53,11 +47,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_HitImpact_10314201_OnNiagaraSpawned) == 0x000008, "Wrong alignment on PyCue_Scope_HitImpact_10314201_OnNiagaraSpawned");
-static_assert(sizeof(PyCue_Scope_HitImpact_10314201_OnNiagaraSpawned) == 0x0001E0, "Wrong size on PyCue_Scope_HitImpact_10314201_OnNiagaraSpawned");
-static_assert(offsetof(PyCue_Scope_HitImpact_10314201_OnNiagaraSpawned, InFXComponent) == 0x000000, "Member 'PyCue_Scope_HitImpact_10314201_OnNiagaraSpawned::InFXComponent' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10314201_OnNiagaraSpawned, MyTarget) == 0x000008, "Member 'PyCue_Scope_HitImpact_10314201_OnNiagaraSpawned::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10314201_OnNiagaraSpawned, Parameters) == 0x000010, "Member 'PyCue_Scope_HitImpact_10314201_OnNiagaraSpawned::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_HitImpact_10314201_OnNiagaraSpawned;
 
 }
 

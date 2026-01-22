@@ -25,11 +25,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_HitImpact_10353101_OnNiagaraSpawned) == 0x000008, "Wrong alignment on PyCue_Scope_HitImpact_10353101_OnNiagaraSpawned");
-static_assert(sizeof(PyCue_Scope_HitImpact_10353101_OnNiagaraSpawned) == 0x0001E0, "Wrong size on PyCue_Scope_HitImpact_10353101_OnNiagaraSpawned");
-static_assert(offsetof(PyCue_Scope_HitImpact_10353101_OnNiagaraSpawned, InFXComponent) == 0x000000, "Member 'PyCue_Scope_HitImpact_10353101_OnNiagaraSpawned::InFXComponent' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10353101_OnNiagaraSpawned, MyTarget) == 0x000008, "Member 'PyCue_Scope_HitImpact_10353101_OnNiagaraSpawned::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10353101_OnNiagaraSpawned, Parameters) == 0x000010, "Member 'PyCue_Scope_HitImpact_10353101_OnNiagaraSpawned::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_HitImpact_10353101_OnNiagaraSpawned;
 
 }
 

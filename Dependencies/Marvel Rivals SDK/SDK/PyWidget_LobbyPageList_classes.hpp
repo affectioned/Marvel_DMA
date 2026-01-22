@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LobbyPageList.PyWidget_LobbyPageList
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_LobbyPageList : public UPyWidget_ModuleMainPanel
 {
 public:
-	int32                                         RowCount;                                          // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ColumnCount;                                       // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidget_HeroList_Scorll*              ScrollBox;                                         // 0x0600(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RowCount;                                          // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ColumnCount;                                       // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_HeroList_Scorll*              ScrollBox;                                         // 0x0608(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LobbyPageList">();
+		STATIC_CLASS_IMPL("PyWidget_LobbyPageList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LobbyPageList")
 	}
 	static class UPyWidget_LobbyPageList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LobbyPageList>();
 	}
 };
-static_assert(alignof(UPyWidget_LobbyPageList) == 0x000008, "Wrong alignment on UPyWidget_LobbyPageList");
-static_assert(sizeof(UPyWidget_LobbyPageList) == 0x000608, "Wrong size on UPyWidget_LobbyPageList");
-static_assert(offsetof(UPyWidget_LobbyPageList, RowCount) == 0x0005F8, "Member 'UPyWidget_LobbyPageList::RowCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyPageList, ColumnCount) == 0x0005FC, "Member 'UPyWidget_LobbyPageList::ColumnCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyPageList, ScrollBox) == 0x000600, "Member 'UPyWidget_LobbyPageList::ScrollBox' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LobbyPageList;
 
 }
 

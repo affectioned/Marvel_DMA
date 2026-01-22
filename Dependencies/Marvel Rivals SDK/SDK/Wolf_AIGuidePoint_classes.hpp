@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Wolf_AIGuidePoint_C">();
+		BP_STATIC_CLASS_IMPL("Wolf_AIGuidePoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Wolf_AIGuidePoint_C")
 	}
 	static class AWolf_AIGuidePoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWolf_AIGuidePoint_C>();
 	}
 };
-static_assert(alignof(AWolf_AIGuidePoint_C) == 0x000010, "Wrong alignment on AWolf_AIGuidePoint_C");
-static_assert(sizeof(AWolf_AIGuidePoint_C) == 0x0006F0, "Wrong size on AWolf_AIGuidePoint_C");
-static_assert(offsetof(AWolf_AIGuidePoint_C, DefaultSceneRoot) == 0x0006E0, "Member 'AWolf_AIGuidePoint_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AWolf_AIGuidePoint_C;
 
 }
 

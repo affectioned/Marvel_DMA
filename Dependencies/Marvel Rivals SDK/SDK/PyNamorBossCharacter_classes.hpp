@@ -17,32 +17,12 @@
 namespace SDK
 {
 
-// PythonClass PyNamorBossCharacter.PyNamorBossCharacter
-// 0x0000 (0x2250 - 0x2250)
-class APyNamorBossCharacter final : public ANamorBossCharacter
-{
-public:
-	void ReceiveBeginPlay();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyNamorBossCharacter">();
-	}
-	static class APyNamorBossCharacter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyNamorBossCharacter>();
-	}
-};
-static_assert(alignof(APyNamorBossCharacter) == 0x000010, "Wrong alignment on APyNamorBossCharacter");
-static_assert(sizeof(APyNamorBossCharacter) == 0x002250, "Wrong size on APyNamorBossCharacter");
-
 // PythonClass PyNamorBossCharacter.PyNamorBossChildActor
-// 0x0010 (0x0E30 - 0x0E20)
+// 0x0010 (0x0E40 - 0x0E30)
 class APyNamorBossChildActor final : public ANamorChildActor
 {
 public:
-	class UAnimMontage*                           IntroAnim;                                         // 0x0E20(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimMontage*                           IntroAnim;                                         // 0x0E30(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceivePoolBeginPlay();
@@ -54,16 +34,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNamorBossChildActor">();
+		STATIC_CLASS_IMPL("PyNamorBossChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNamorBossChildActor")
 	}
 	static class APyNamorBossChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyNamorBossChildActor>();
 	}
 };
-static_assert(alignof(APyNamorBossChildActor) == 0x000010, "Wrong alignment on APyNamorBossChildActor");
-static_assert(sizeof(APyNamorBossChildActor) == 0x000E30, "Wrong size on APyNamorBossChildActor");
-static_assert(offsetof(APyNamorBossChildActor, IntroAnim) == 0x000E20, "Member 'APyNamorBossChildActor::IntroAnim' has a wrong offset!");
+DUMPER7_ASSERTS_APyNamorBossChildActor;
+
+// PythonClass PyNamorBossCharacter.PyNamorBossCharacter
+// 0x0000 (0x2360 - 0x2360)
+class APyNamorBossCharacter final : public ANamorBossCharacter
+{
+public:
+	void ReceiveBeginPlay();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyNamorBossCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNamorBossCharacter")
+	}
+	static class APyNamorBossCharacter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyNamorBossCharacter>();
+	}
+};
+DUMPER7_ASSERTS_APyNamorBossCharacter;
 
 }
 

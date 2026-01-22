@@ -17,47 +17,38 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BattleChess_CategoryIcon.WBP_BattleChess_CategoryIcon_C
-// 0x0060 (0x0628 - 0x05C8)
+// 0x0060 (0x0630 - 0x05D0)
 class UWBP_BattleChess_CategoryIcon_C final : public UPyWidget_BattleChessCategoryIcon
 {
 public:
-	class UWidgetAnimation*                       Anim_Upgrade;                                      // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_CategoryStatus;                               // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelButton*                          Btn_Main;                                          // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg;                                            // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_1;                                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Frame;                                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Icon;                                          // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Icon_1;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_LevelBg;                                       // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_CardLevel;                                 // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Icon;                                      // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Level;                                        // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Upgrade;                                      // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_CategoryStatus;                               // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Main;                                          // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg;                                            // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_1;                                          // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Frame;                                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Icon;                                          // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Icon_1;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_LevelBg;                                       // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_CardLevel;                                 // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Icon;                                      // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Level;                                        // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BattleChess_CategoryIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BattleChess_CategoryIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BattleChess_CategoryIcon_C")
 	}
 	static class UWBP_BattleChess_CategoryIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BattleChess_CategoryIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_BattleChess_CategoryIcon_C) == 0x000008, "Wrong alignment on UWBP_BattleChess_CategoryIcon_C");
-static_assert(sizeof(UWBP_BattleChess_CategoryIcon_C) == 0x000628, "Wrong size on UWBP_BattleChess_CategoryIcon_C");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, Anim_Upgrade) == 0x0005C8, "Member 'UWBP_BattleChess_CategoryIcon_C::Anim_Upgrade' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, Anim_CategoryStatus) == 0x0005D0, "Member 'UWBP_BattleChess_CategoryIcon_C::Anim_CategoryStatus' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, Btn_Main) == 0x0005D8, "Member 'UWBP_BattleChess_CategoryIcon_C::Btn_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, Img_Bg) == 0x0005E0, "Member 'UWBP_BattleChess_CategoryIcon_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, Img_Bg_1) == 0x0005E8, "Member 'UWBP_BattleChess_CategoryIcon_C::Img_Bg_1' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, Img_Frame) == 0x0005F0, "Member 'UWBP_BattleChess_CategoryIcon_C::Img_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, Img_Icon) == 0x0005F8, "Member 'UWBP_BattleChess_CategoryIcon_C::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, Img_Icon_1) == 0x000600, "Member 'UWBP_BattleChess_CategoryIcon_C::Img_Icon_1' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, Img_LevelBg) == 0x000608, "Member 'UWBP_BattleChess_CategoryIcon_C::Img_LevelBg' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, Overlay_CardLevel) == 0x000610, "Member 'UWBP_BattleChess_CategoryIcon_C::Overlay_CardLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, SizeBox_Icon) == 0x000618, "Member 'UWBP_BattleChess_CategoryIcon_C::SizeBox_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CategoryIcon_C, Text_Level) == 0x000620, "Member 'UWBP_BattleChess_CategoryIcon_C::Text_Level' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BattleChess_CategoryIcon_C;
 
 }
 

@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PowerCosmicPool.PowerCosmicPool_C
-// 0x0010 (0x08C0 - 0x08B0)
+// 0x0010 (0x0910 - 0x0900)
 class APowerCosmicPool_C final : public ALevelComputer_C
 {
 public:
-	class UNiagaraComponent*                      NS_FullEenergy_01;                                 // 0x08A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           Ak;                                                // 0x08B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAmbientAudioComponent*                 AmbientAudio;                                      // 0x08B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_FullEenergy_01;                                 // 0x08F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x0900(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAmbientAudioComponent*                 AmbientAudio;                                      // 0x0908(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PowerCosmicPool_C">();
+		BP_STATIC_CLASS_IMPL("PowerCosmicPool_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PowerCosmicPool_C")
 	}
 	static class APowerCosmicPool_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APowerCosmicPool_C>();
 	}
 };
-static_assert(alignof(APowerCosmicPool_C) == 0x000010, "Wrong alignment on APowerCosmicPool_C");
-static_assert(sizeof(APowerCosmicPool_C) == 0x0008C0, "Wrong size on APowerCosmicPool_C");
-static_assert(offsetof(APowerCosmicPool_C, NS_FullEenergy_01) == 0x0008A8, "Member 'APowerCosmicPool_C::NS_FullEenergy_01' has a wrong offset!");
-static_assert(offsetof(APowerCosmicPool_C, Ak) == 0x0008B0, "Member 'APowerCosmicPool_C::Ak' has a wrong offset!");
-static_assert(offsetof(APowerCosmicPool_C, AmbientAudio) == 0x0008B8, "Member 'APowerCosmicPool_C::AmbientAudio' has a wrong offset!");
+DUMPER7_ASSERTS_APowerCosmicPool_C;
 
 }
 

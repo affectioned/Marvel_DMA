@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PyRuleComponent_classes.hpp"
 #include "Marvel_structs.hpp"
+#include "PyRuleComponent_classes.hpp"
 
 
 namespace SDK
@@ -140,69 +140,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyContestRuleComponent">();
+		STATIC_CLASS_IMPL("PyEnergyContestRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyContestRuleComponent")
 	}
 	static class UPyEnergyContestRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEnergyContestRuleComponent>();
 	}
 };
-static_assert(alignof(UPyEnergyContestRuleComponent) == 0x000008, "Wrong alignment on UPyEnergyContestRuleComponent");
-static_assert(sizeof(UPyEnergyContestRuleComponent) == 0x000340, "Wrong size on UPyEnergyContestRuleComponent");
-static_assert(offsetof(UPyEnergyContestRuleComponent, Mines) == 0x000108, "Member 'UPyEnergyContestRuleComponent::Mines' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, MineOrderList) == 0x000118, "Member 'UPyEnergyContestRuleComponent::MineOrderList' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, ShuffledMines) == 0x000128, "Member 'UPyEnergyContestRuleComponent::ShuffledMines' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, CurActivedMines) == 0x000138, "Member 'UPyEnergyContestRuleComponent::CurActivedMines' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, LastActivedMine) == 0x000148, "Member 'UPyEnergyContestRuleComponent::LastActivedMine' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, LastActivedMines) == 0x000150, "Member 'UPyEnergyContestRuleComponent::LastActivedMines' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, LastDeactivatedMines) == 0x000160, "Member 'UPyEnergyContestRuleComponent::LastDeactivatedMines' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, MineUnlockTimeSecondsOffset) == 0x000170, "Member 'UPyEnergyContestRuleComponent::MineUnlockTimeSecondsOffset' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, CurMineAssociatedWithBirthBasePlayerStart) == 0x000178, "Member 'UPyEnergyContestRuleComponent::CurMineAssociatedWithBirthBasePlayerStart' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, StartAfterInit) == 0x000180, "Member 'UPyEnergyContestRuleComponent::StartAfterInit' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, WinScore) == 0x000184, "Member 'UPyEnergyContestRuleComponent::WinScore' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, PillageThresholdScore) == 0x000188, "Member 'UPyEnergyContestRuleComponent::PillageThresholdScore' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, GoingToWinScore_NotInPillageStage) == 0x00018C, "Member 'UPyEnergyContestRuleComponent::GoingToWinScore_NotInPillageStage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, GoingToWinScore_InPillageStage) == 0x000190, "Member 'UPyEnergyContestRuleComponent::GoingToWinScore_InPillageStage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, DelayHideGuidinglineTimeSeconds) == 0x000194, "Member 'UPyEnergyContestRuleComponent::DelayHideGuidinglineTimeSeconds' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, ScoreBoard) == 0x000198, "Member 'UPyEnergyContestRuleComponent::ScoreBoard' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, PillageStage) == 0x0001A8, "Member 'UPyEnergyContestRuleComponent::PillageStage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, BluePillageStage) == 0x0001AC, "Member 'UPyEnergyContestRuleComponent::BluePillageStage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, RedPillageStage) == 0x0001B0, "Member 'UPyEnergyContestRuleComponent::RedPillageStage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, OwnerBattleSide) == 0x0001B4, "Member 'UPyEnergyContestRuleComponent::OwnerBattleSide' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, AlmostWinBattleSide) == 0x0001B5, "Member 'UPyEnergyContestRuleComponent::AlmostWinBattleSide' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, SettleScorePaused) == 0x0001B6, "Member 'UPyEnergyContestRuleComponent::SettleScorePaused' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, CurStorage) == 0x0001B8, "Member 'UPyEnergyContestRuleComponent::CurStorage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, SettleProgressMultiplier) == 0x0001C8, "Member 'UPyEnergyContestRuleComponent::SettleProgressMultiplier' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, PillageTimeCountingMultiplier) == 0x0001CC, "Member 'UPyEnergyContestRuleComponent::PillageTimeCountingMultiplier' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, LockPillageStage) == 0x0001D0, "Member 'UPyEnergyContestRuleComponent::LockPillageStage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, SubTaskIndex) == 0x0001D4, "Member 'UPyEnergyContestRuleComponent::SubTaskIndex' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, PreShowNextMineTipsCurNum) == 0x0001D8, "Member 'UPyEnergyContestRuleComponent::PreShowNextMineTipsCurNum' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, PreActiveShiftMineBoostDoorsCurNum) == 0x0001DC, "Member 'UPyEnergyContestRuleComponent::PreActiveShiftMineBoostDoorsCurNum' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, PreHintNextPillageMineTipsMinCurNum) == 0x0001E0, "Member 'UPyEnergyContestRuleComponent::PreHintNextPillageMineTipsMinCurNum' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, Highlight_AnimPlayCount_FightStart) == 0x0001E4, "Member 'UPyEnergyContestRuleComponent::Highlight_AnimPlayCount_FightStart' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, Highlight_AnimPlayCount_PreShowNextMine) == 0x0001E8, "Member 'UPyEnergyContestRuleComponent::Highlight_AnimPlayCount_PreShowNextMine' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, Highlight_AnimPlayCount_LastMineExhansted) == 0x0001EC, "Member 'UPyEnergyContestRuleComponent::Highlight_AnimPlayCount_LastMineExhansted' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyContestMinesShuffled) == 0x0001F0, "Member 'UPyEnergyContestRuleComponent::EnergyContestMinesShuffled' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, NewMineControlActivated) == 0x000200, "Member 'UPyEnergyContestRuleComponent::NewMineControlActivated' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, MineControlDeactivated) == 0x000210, "Member 'UPyEnergyContestRuleComponent::MineControlDeactivated' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyCurActivedMinesChanged) == 0x000220, "Member 'UPyEnergyContestRuleComponent::EnergyCurActivedMinesChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyLastActivedMinesChanged) == 0x000230, "Member 'UPyEnergyContestRuleComponent::EnergyLastActivedMinesChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyLastDeactivatedMinesChanged) == 0x000240, "Member 'UPyEnergyContestRuleComponent::EnergyLastDeactivatedMinesChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyCurStorageChanged) == 0x000250, "Member 'UPyEnergyContestRuleComponent::EnergyCurStorageChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergySettleScorePaused) == 0x000260, "Member 'UPyEnergyContestRuleComponent::EnergySettleScorePaused' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyBluePillageStageChanged) == 0x000270, "Member 'UPyEnergyContestRuleComponent::EnergyBluePillageStageChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyRedPillageStageChanged) == 0x000280, "Member 'UPyEnergyContestRuleComponent::EnergyRedPillageStageChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyFirstTimeEnterPillageStage) == 0x000290, "Member 'UPyEnergyContestRuleComponent::EnergyFirstTimeEnterPillageStage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyAlmostWinBattleSideChanged) == 0x0002A0, "Member 'UPyEnergyContestRuleComponent::EnergyAlmostWinBattleSideChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyPillageThresholdScoreChanged) == 0x0002B0, "Member 'UPyEnergyContestRuleComponent::EnergyPillageThresholdScoreChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyGoingToWinScore_NotInPillageStageChanged) == 0x0002C0, "Member 'UPyEnergyContestRuleComponent::EnergyGoingToWinScore_NotInPillageStageChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyGoingToWinScore_InPillageStageChanged) == 0x0002D0, "Member 'UPyEnergyContestRuleComponent::EnergyGoingToWinScore_InPillageStageChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergySubTaskChanged) == 0x0002E0, "Member 'UPyEnergyContestRuleComponent::EnergySubTaskChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyPreShowNextMineTipsCurNumChanged) == 0x0002F0, "Member 'UPyEnergyContestRuleComponent::EnergyPreShowNextMineTipsCurNumChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyPreActiveShiftMineBoostDoorsCurNumChanged) == 0x000300, "Member 'UPyEnergyContestRuleComponent::EnergyPreActiveShiftMineBoostDoorsCurNumChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyPreHintNextPillageMineTipsMinCurNumChanged) == 0x000310, "Member 'UPyEnergyContestRuleComponent::EnergyPreHintNextPillageMineTipsMinCurNumChanged' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyPreHintMineTips) == 0x000320, "Member 'UPyEnergyContestRuleComponent::EnergyPreHintMineTips' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestRuleComponent, EnergyMineUnlockTimeSecondsOffsetChanged) == 0x000330, "Member 'UPyEnergyContestRuleComponent::EnergyMineUnlockTimeSecondsOffsetChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEnergyContestRuleComponent;
 
 }
 

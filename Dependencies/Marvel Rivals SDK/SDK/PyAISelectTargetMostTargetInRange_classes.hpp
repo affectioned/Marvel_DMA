@@ -42,29 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTargetMostTargetInRange">();
+		STATIC_CLASS_IMPL("PyAISelectTargetMostTargetInRange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTargetMostTargetInRange")
 	}
 	static class UPyAISelectTargetMostTargetInRange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTargetMostTargetInRange>();
 	}
 };
-static_assert(alignof(UPyAISelectTargetMostTargetInRange) == 0x000008, "Wrong alignment on UPyAISelectTargetMostTargetInRange");
-static_assert(sizeof(UPyAISelectTargetMostTargetInRange) == 0x000098, "Wrong size on UPyAISelectTargetMostTargetInRange");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, IgnoreSelf) == 0x000070, "Member 'UPyAISelectTargetMostTargetInRange::IgnoreSelf' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, SelectEnemies) == 0x000071, "Member 'UPyAISelectTargetMostTargetInRange::SelectEnemies' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, SelectTeammates) == 0x000072, "Member 'UPyAISelectTargetMostTargetInRange::SelectTeammates' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, CenterIsSelf) == 0x000073, "Member 'UPyAISelectTargetMostTargetInRange::CenterIsSelf' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, CenterIsUsageTarget) == 0x000074, "Member 'UPyAISelectTargetMostTargetInRange::CenterIsUsageTarget' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, TargetCountRangeDistance) == 0x000078, "Member 'UPyAISelectTargetMostTargetInRange::TargetCountRangeDistance' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, TargetCountRangeHeight) == 0x00007C, "Member 'UPyAISelectTargetMostTargetInRange::TargetCountRangeHeight' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, AbilityRangeRadius) == 0x000080, "Member 'UPyAISelectTargetMostTargetInRange::AbilityRangeRadius' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, FocusSelectRangeDistance) == 0x000084, "Member 'UPyAISelectTargetMostTargetInRange::FocusSelectRangeDistance' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, SelectGroundTracePos) == 0x000088, "Member 'UPyAISelectTargetMostTargetInRange::SelectGroundTracePos' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, IsAdjustFinalPosZ) == 0x000089, "Member 'UPyAISelectTargetMostTargetInRange::IsAdjustFinalPosZ' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, AdjustAngle) == 0x00008C, "Member 'UPyAISelectTargetMostTargetInRange::AdjustAngle' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, Debug) == 0x000090, "Member 'UPyAISelectTargetMostTargetInRange::Debug' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTargetMostTargetInRange, DebugTime) == 0x000094, "Member 'UPyAISelectTargetMostTargetInRange::DebugTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTargetMostTargetInRange;
 
 }
 

@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryHoldSlowMoveHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryHoldSlowMoveHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryHoldSlowMoveHandler")
 	}
 	static class UUISettingEntryHoldSlowMoveHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryHoldSlowMoveHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryHoldSlowMoveHandler) == 0x000008, "Wrong alignment on UUISettingEntryHoldSlowMoveHandler");
-static_assert(sizeof(UUISettingEntryHoldSlowMoveHandler) == 0x000030, "Wrong size on UUISettingEntryHoldSlowMoveHandler");
+DUMPER7_ASSERTS_UUISettingEntryHoldSlowMoveHandler;
 
 }
 

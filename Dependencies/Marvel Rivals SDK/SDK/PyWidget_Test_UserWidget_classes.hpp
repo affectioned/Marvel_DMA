@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Test_UserWidget.PyWidget_Test_UserWidget
-// 0x0000 (0x0458 - 0x0458)
+// 0x0000 (0x0438 - 0x0438)
 class UPyWidget_Test_UserWidget final : public UMarvelSimpleUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Test_UserWidget">();
+		STATIC_CLASS_IMPL("PyWidget_Test_UserWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Test_UserWidget")
 	}
 	static class UPyWidget_Test_UserWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Test_UserWidget>();
 	}
 };
-static_assert(alignof(UPyWidget_Test_UserWidget) == 0x000008, "Wrong alignment on UPyWidget_Test_UserWidget");
-static_assert(sizeof(UPyWidget_Test_UserWidget) == 0x000458, "Wrong size on UPyWidget_Test_UserWidget");
+DUMPER7_ASSERTS_UPyWidget_Test_UserWidget;
 
 }
 

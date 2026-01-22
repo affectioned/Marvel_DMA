@@ -16,7 +16,7 @@ namespace SDK
 
 // PythonEnum PyWinterFestivalRuleComponent.EWinterFestivalBuffState
 // NumValues: 0x0004
-enum class EWinterFestivalBuffState : uint8
+enum class PyWinterFestivalRuleComponent::EWinterFestivalBuffState : uint8
 {
 	NoBuff                                   = 0,
 	AllyBuff                                 = 1,

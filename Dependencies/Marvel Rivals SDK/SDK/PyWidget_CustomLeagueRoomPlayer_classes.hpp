@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CustomLeagueRoomPlayer.PyWidget_CustomLeagueRoomPlayer
-// 0x0000 (0x1270 - 0x1270)
+// 0x0000 (0x12D0 - 0x12D0)
 class UPyWidget_CustomLeagueRoomPlayer final : public UPyWidget_RoomPlayerV4
 {
 public:
@@ -35,18 +35,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomLeagueRoomPlayer">();
+		STATIC_CLASS_IMPL("PyWidget_CustomLeagueRoomPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomLeagueRoomPlayer")
 	}
 	static class UPyWidget_CustomLeagueRoomPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomLeagueRoomPlayer>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomLeagueRoomPlayer) == 0x000010, "Wrong alignment on UPyWidget_CustomLeagueRoomPlayer");
-static_assert(sizeof(UPyWidget_CustomLeagueRoomPlayer) == 0x001270, "Wrong size on UPyWidget_CustomLeagueRoomPlayer");
+DUMPER7_ASSERTS_UPyWidget_CustomLeagueRoomPlayer;
 
 // PythonClass PyWidget_CustomLeagueRoomPlayer.PyWidget_CustomLeagueRoomCoach
-// 0x0000 (0x1270 - 0x1270)
+// 0x0000 (0x12D0 - 0x12D0)
 class UPyWidget_CustomLeagueRoomCoach final : public UPyWidget_RoomPlayerV4
 {
 public:
@@ -56,15 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomLeagueRoomCoach">();
+		STATIC_CLASS_IMPL("PyWidget_CustomLeagueRoomCoach")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomLeagueRoomCoach")
 	}
 	static class UPyWidget_CustomLeagueRoomCoach* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomLeagueRoomCoach>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomLeagueRoomCoach) == 0x000010, "Wrong alignment on UPyWidget_CustomLeagueRoomCoach");
-static_assert(sizeof(UPyWidget_CustomLeagueRoomCoach) == 0x001270, "Wrong size on UPyWidget_CustomLeagueRoomCoach");
+DUMPER7_ASSERTS_UPyWidget_CustomLeagueRoomCoach;
 
 }
 

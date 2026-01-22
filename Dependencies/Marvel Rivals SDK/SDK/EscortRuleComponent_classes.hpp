@@ -23,15 +23,18 @@ class UEscortRuleComponent_C final : public UPyEscortRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EscortRuleComponent_C">();
+		BP_STATIC_CLASS_IMPL("EscortRuleComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EscortRuleComponent_C")
 	}
 	static class UEscortRuleComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEscortRuleComponent_C>();
 	}
 };
-static_assert(alignof(UEscortRuleComponent_C) == 0x000008, "Wrong alignment on UEscortRuleComponent_C");
-static_assert(sizeof(UEscortRuleComponent_C) == 0x000128, "Wrong size on UEscortRuleComponent_C");
+DUMPER7_ASSERTS_UEscortRuleComponent_C;
 
 }
 

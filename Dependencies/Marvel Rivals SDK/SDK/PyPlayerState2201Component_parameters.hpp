@@ -10,6 +10,8 @@
 
 #include "Basic.hpp"
 
+#include "python_enums_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -23,9 +25,147 @@ struct PyPlayerState2201Component_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerState2201Component_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyPlayerState2201Component_ReceiveEndPlay");
-static_assert(sizeof(PyPlayerState2201Component_ReceiveEndPlay) == 0x000001, "Wrong size on PyPlayerState2201Component_ReceiveEndPlay");
-static_assert(offsetof(PyPlayerState2201Component_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyPlayerState2201Component_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerState2201Component_ReceiveEndPlay;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_ShowPymTips
+// 0x0004 (0x0004 - 0x0000)
+struct PyPlayerState2201Component_Client_ShowPymTips final
+{
+public:
+	int32                                         TipsType;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_Client_ShowPymTips;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.SyncDuelSetting
+// 0x0018 (0x0018 - 0x0000)
+struct PyPlayerState2201Component_SyncDuelSetting final
+{
+public:
+	EDuelType                                     duel_type;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 duel_setting;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_SyncDuelSetting;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.StartDuel
+// 0x0001 (0x0001 - 0x0000)
+struct PyPlayerState2201Component_StartDuel final
+{
+public:
+	EDuelType                                     duel_type;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_StartDuel;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.StartDuelWithSetting
+// 0x0018 (0x0018 - 0x0000)
+struct PyPlayerState2201Component_StartDuelWithSetting final
+{
+public:
+	EDuelType                                     duel_type;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 duel_setting;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_StartDuelWithSetting;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.NotifyDuelSettingIndex
+// 0x0001 (0x0001 - 0x0000)
+struct PyPlayerState2201Component_NotifyDuelSettingIndex final
+{
+public:
+	EDuelType                                     duel_type;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_NotifyDuelSettingIndex;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.InitDuelSetting
+// 0x0010 (0x0010 - 0x0000)
+struct PyPlayerState2201Component_InitDuelSetting final
+{
+public:
+	class FString                                 content;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_InitDuelSetting;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Server_InviteToDuel
+// 0x0020 (0x0020 - 0x0000)
+struct PyPlayerState2201Component_Server_InviteToDuel final
+{
+public:
+	int32                                         self_player_uid;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         target_player_uid;                                 // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 invitation_msg;                                    // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          is_public;                                         // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_Server_InviteToDuel;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Server_ProcessDuelInvition
+// 0x000C (0x000C - 0x0000)
+struct PyPlayerState2201Component_Server_ProcessDuelInvition final
+{
+public:
+	int32                                         initiator_uid;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         receiver_uid;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          is_public;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_Server_ProcessDuelInvition;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Server_CancelDuel
+// 0x0004 (0x0004 - 0x0000)
+struct PyPlayerState2201Component_Server_CancelDuel final
+{
+public:
+	int32                                         duel_queue_index;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_Server_CancelDuel;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_UpdateInvitedUidTimestampDict
+// 0x0008 (0x0008 - 0x0000)
+struct PyPlayerState2201Component_Client_UpdateInvitedUidTimestampDict final
+{
+public:
+	int32                                         invited_uid;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         timestamp;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_Client_UpdateInvitedUidTimestampDict;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_OnInvitedToDuel
+// 0x0020 (0x0020 - 0x0000)
+struct PyPlayerState2201Component_Client_OnInvitedToDuel final
+{
+public:
+	int32                                         initiator_uid;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         receiver_uid;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 invitation_msg;                                    // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          is_public;                                         // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_Client_OnInvitedToDuel;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_NotifyDuelLoading
+// 0x0004 (0x0004 - 0x0000)
+struct PyPlayerState2201Component_Client_NotifyDuelLoading final
+{
+public:
+	float                                         ShowTime;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_Client_NotifyDuelLoading;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_NotifyDuelInvitationFail
+// 0x0010 (0x0010 - 0x0000)
+struct PyPlayerState2201Component_Client_NotifyDuelInvitationFail final
+{
+public:
+	class FString                                 key_str;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_Client_NotifyDuelInvitationFail;
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_NotifyDuelInvitationSucceed
+// 0x0020 (0x0020 - 0x0000)
+struct PyPlayerState2201Component_Client_NotifyDuelInvitationSucceed final
+{
+public:
+	class FString                                 key_str;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 player_name;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyPlayerState2201Component_Client_NotifyDuelInvitationSucceed;
 
 }
 

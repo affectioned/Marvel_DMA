@@ -23,9 +23,7 @@ struct PyBuffAbility_10130_10140005_K2_OnConditionSatisfied final
 public:
 	struct FCardEffectParameter                   Parameter;                                         // 0x0000(0x0010)(Parm)
 };
-static_assert(alignof(PyBuffAbility_10130_10140005_K2_OnConditionSatisfied) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10140005_K2_OnConditionSatisfied");
-static_assert(sizeof(PyBuffAbility_10130_10140005_K2_OnConditionSatisfied) == 0x000010, "Wrong size on PyBuffAbility_10130_10140005_K2_OnConditionSatisfied");
-static_assert(offsetof(PyBuffAbility_10130_10140005_K2_OnConditionSatisfied, Parameter) == 0x000000, "Member 'PyBuffAbility_10130_10140005_K2_OnConditionSatisfied::Parameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10140005_K2_OnConditionSatisfied;
 
 }
 

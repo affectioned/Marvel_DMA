@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilityHUDCom_DurationReticleBelow.WBP_AbilityHUDCom_DurationReticleBelow_C
-// 0x0010 (0x1C30 - 0x1C20)
+// 0x0010 (0x1CD8 - 0x1CC8)
 class UWBP_AbilityHUDCom_DurationReticleBelow_C final : public UWidget_AbilityDuration
 {
 public:
-	class UCanvasPanel*                           Canvas_Root;                                       // 0x1C20(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_BarBg;                                         // 0x1C28(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Canvas_Root;                                       // 0x1CC8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_BarBg;                                         // 0x1CD0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityHUDCom_DurationReticleBelow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityHUDCom_DurationReticleBelow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityHUDCom_DurationReticleBelow_C")
 	}
 	static class UWBP_AbilityHUDCom_DurationReticleBelow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityHUDCom_DurationReticleBelow_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityHUDCom_DurationReticleBelow_C) == 0x000008, "Wrong alignment on UWBP_AbilityHUDCom_DurationReticleBelow_C");
-static_assert(sizeof(UWBP_AbilityHUDCom_DurationReticleBelow_C) == 0x001C30, "Wrong size on UWBP_AbilityHUDCom_DurationReticleBelow_C");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationReticleBelow_C, Canvas_Root) == 0x001C20, "Member 'UWBP_AbilityHUDCom_DurationReticleBelow_C::Canvas_Root' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationReticleBelow_C, Img_BarBg) == 0x001C28, "Member 'UWBP_AbilityHUDCom_DurationReticleBelow_C::Img_BarBg' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityHUDCom_DurationReticleBelow_C;
 
 }
 

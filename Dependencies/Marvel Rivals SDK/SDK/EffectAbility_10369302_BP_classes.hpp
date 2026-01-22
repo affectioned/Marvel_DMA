@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass EffectAbility_10369302_BP.EffectAbility_10369302_BP_C
-// 0x0000 (0x1388 - 0x1388)
+// 0x0000 (0x13A0 - 0x13A0)
 class UEffectAbility_10369302_BP_C final : public UEffectAbility_10362111
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EffectAbility_10369302_BP_C">();
+		BP_STATIC_CLASS_IMPL("EffectAbility_10369302_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectAbility_10369302_BP_C")
 	}
 	static class UEffectAbility_10369302_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectAbility_10369302_BP_C>();
 	}
 };
-static_assert(alignof(UEffectAbility_10369302_BP_C) == 0x000008, "Wrong alignment on UEffectAbility_10369302_BP_C");
-static_assert(sizeof(UEffectAbility_10369302_BP_C) == 0x001388, "Wrong size on UEffectAbility_10369302_BP_C");
+DUMPER7_ASSERTS_UEffectAbility_10369302_BP_C;
 
 }
 

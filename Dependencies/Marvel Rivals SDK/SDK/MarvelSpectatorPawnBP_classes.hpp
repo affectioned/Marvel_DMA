@@ -23,15 +23,18 @@ class AMarvelSpectatorPawnBP_C final : public APyMarvelSpectatorPawn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelSpectatorPawnBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelSpectatorPawnBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelSpectatorPawnBP_C")
 	}
 	static class AMarvelSpectatorPawnBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelSpectatorPawnBP_C>();
 	}
 };
-static_assert(alignof(AMarvelSpectatorPawnBP_C) == 0x000010, "Wrong alignment on AMarvelSpectatorPawnBP_C");
-static_assert(sizeof(AMarvelSpectatorPawnBP_C) == 0x000AB0, "Wrong size on AMarvelSpectatorPawnBP_C");
+DUMPER7_ASSERTS_AMarvelSpectatorPawnBP_C;
 
 }
 

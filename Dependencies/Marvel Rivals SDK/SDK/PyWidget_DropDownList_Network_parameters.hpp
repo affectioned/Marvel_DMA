@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// PythonFunction PyWidget_DropDownList_Network.PyWidget_DataCenter_Btn.OnCascadingVisibleChanged
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_DataCenter_Btn_OnCascadingVisibleChanged final
+{
+public:
+	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_DataCenter_Btn_OnCascadingVisibleChanged;
+
 // PythonFunction PyWidget_DropDownList_Network.PyWidget_DropDownList_Network.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
 struct PyWidget_DropDownList_Network_PreConstruct final
@@ -21,9 +30,7 @@ struct PyWidget_DropDownList_Network_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_Network_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_DropDownList_Network_PreConstruct");
-static_assert(sizeof(PyWidget_DropDownList_Network_PreConstruct) == 0x000001, "Wrong size on PyWidget_DropDownList_Network_PreConstruct");
-static_assert(offsetof(PyWidget_DropDownList_Network_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_DropDownList_Network_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_Network_PreConstruct;
 
 // PythonFunction PyWidget_DropDownList_Network.PyWidget_DropDownList_Network.SetIsExtend
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +39,7 @@ struct PyWidget_DropDownList_Network_SetIsExtend final
 public:
 	bool                                          IsExtended_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_Network_SetIsExtend) == 0x000001, "Wrong alignment on PyWidget_DropDownList_Network_SetIsExtend");
-static_assert(sizeof(PyWidget_DropDownList_Network_SetIsExtend) == 0x000001, "Wrong size on PyWidget_DropDownList_Network_SetIsExtend");
-static_assert(offsetof(PyWidget_DropDownList_Network_SetIsExtend, IsExtended_0) == 0x000000, "Member 'PyWidget_DropDownList_Network_SetIsExtend::IsExtended_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_Network_SetIsExtend;
 
 // PythonFunction PyWidget_DropDownList_Network.PyWidget_DropDownList_Network.SetItemID
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +48,7 @@ struct PyWidget_DropDownList_Network_SetItemID final
 public:
 	int32                                         ItemID_0;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_Network_SetItemID) == 0x000004, "Wrong alignment on PyWidget_DropDownList_Network_SetItemID");
-static_assert(sizeof(PyWidget_DropDownList_Network_SetItemID) == 0x000004, "Wrong size on PyWidget_DropDownList_Network_SetItemID");
-static_assert(offsetof(PyWidget_DropDownList_Network_SetItemID, ItemID_0) == 0x000000, "Member 'PyWidget_DropDownList_Network_SetItemID::ItemID_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_Network_SetItemID;
 
 }
 

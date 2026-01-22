@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectHero_Custom_ListView_Item.PyWidget_SelectHero_Custom_ListView_Item
-// 0x0000 (0x0778 - 0x0778)
+// 0x0000 (0x07D0 - 0x07D0)
 class UPyWidget_SelectHero_Custom_ListView_Item : public UPyWidget_DropDownList_ListView_Item
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectHero_Custom_ListView_Item">();
+		STATIC_CLASS_IMPL("PyWidget_SelectHero_Custom_ListView_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectHero_Custom_ListView_Item")
 	}
 	static class UPyWidget_SelectHero_Custom_ListView_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectHero_Custom_ListView_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectHero_Custom_ListView_Item) == 0x000008, "Wrong alignment on UPyWidget_SelectHero_Custom_ListView_Item");
-static_assert(sizeof(UPyWidget_SelectHero_Custom_ListView_Item) == 0x000778, "Wrong size on UPyWidget_SelectHero_Custom_ListView_Item");
+DUMPER7_ASSERTS_UPyWidget_SelectHero_Custom_ListView_Item;
 
 }
 

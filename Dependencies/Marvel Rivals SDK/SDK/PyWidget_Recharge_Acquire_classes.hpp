@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Recharge_Acquire.PyWidget_Recharge_Acquire
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Recharge_Acquire final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Recharge_Acquire">();
+		STATIC_CLASS_IMPL("PyWidget_Recharge_Acquire")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Recharge_Acquire")
 	}
 	static class UPyWidget_Recharge_Acquire* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Recharge_Acquire>();
 	}
 };
-static_assert(alignof(UPyWidget_Recharge_Acquire) == 0x000008, "Wrong alignment on UPyWidget_Recharge_Acquire");
-static_assert(sizeof(UPyWidget_Recharge_Acquire) == 0x0005F8, "Wrong size on UPyWidget_Recharge_Acquire");
+DUMPER7_ASSERTS_UPyWidget_Recharge_Acquire;
 
 }
 

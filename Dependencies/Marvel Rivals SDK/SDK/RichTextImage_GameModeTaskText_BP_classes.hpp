@@ -23,15 +23,18 @@ class URichTextImage_GameModeTaskText_BP_C final : public URichTextBlockImageTex
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RichTextImage_GameModeTaskText_BP_C">();
+		BP_STATIC_CLASS_IMPL("RichTextImage_GameModeTaskText_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextImage_GameModeTaskText_BP_C")
 	}
 	static class URichTextImage_GameModeTaskText_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextImage_GameModeTaskText_BP_C>();
 	}
 };
-static_assert(alignof(URichTextImage_GameModeTaskText_BP_C) == 0x000008, "Wrong alignment on URichTextImage_GameModeTaskText_BP_C");
-static_assert(sizeof(URichTextImage_GameModeTaskText_BP_C) == 0x000050, "Wrong size on URichTextImage_GameModeTaskText_BP_C");
+DUMPER7_ASSERTS_URichTextImage_GameModeTaskText_BP_C;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyDevTestConfigSubsystem.PyDevTestConfigSubsystem
-// 0x0000 (0x0068 - 0x0068)
+// 0x0000 (0x0070 - 0x0070)
 class UPyDevTestConfigSubsystem final : public UDevTestConfigSubsystem
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDevTestConfigSubsystem">();
+		STATIC_CLASS_IMPL("PyDevTestConfigSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDevTestConfigSubsystem")
 	}
 	static class UPyDevTestConfigSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDevTestConfigSubsystem>();
 	}
 };
-static_assert(alignof(UPyDevTestConfigSubsystem) == 0x000008, "Wrong alignment on UPyDevTestConfigSubsystem");
-static_assert(sizeof(UPyDevTestConfigSubsystem) == 0x000068, "Wrong size on UPyDevTestConfigSubsystem");
+DUMPER7_ASSERTS_UPyDevTestConfigSubsystem;
 
 }
 

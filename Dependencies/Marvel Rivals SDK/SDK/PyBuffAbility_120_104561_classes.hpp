@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_104561.PyBuffAbility_120_10456192
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10456192 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         IncreaseDuration;                                  // 0x1370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         IncreaseDuration;                                  // 0x1388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -30,24 +30,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10456192">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10456192")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10456192")
 	}
 	static class UPyBuffAbility_120_10456192* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10456192>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10456192) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10456192");
-static_assert(sizeof(UPyBuffAbility_120_10456192) == 0x001378, "Wrong size on UPyBuffAbility_120_10456192");
-static_assert(offsetof(UPyBuffAbility_120_10456192, IncreaseDuration) == 0x001370, "Member 'UPyBuffAbility_120_10456192::IncreaseDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10456192;
 
 // PythonClass PyBuffAbility_120_104561.PyBuffAbility_120_10456191
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10456191 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         SecondSummonDelay;                                 // 0x1370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SecondSummonBuffID;                                // 0x1374(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SecondSummonDelay;                                 // 0x1388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SecondSummonBuffID;                                // 0x138C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -57,25 +59,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10456191">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10456191")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10456191")
 	}
 	static class UPyBuffAbility_120_10456191* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10456191>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10456191) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10456191");
-static_assert(sizeof(UPyBuffAbility_120_10456191) == 0x001378, "Wrong size on UPyBuffAbility_120_10456191");
-static_assert(offsetof(UPyBuffAbility_120_10456191, SecondSummonDelay) == 0x001370, "Member 'UPyBuffAbility_120_10456191::SecondSummonDelay' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10456191, SecondSummonBuffID) == 0x001374, "Member 'UPyBuffAbility_120_10456191::SecondSummonBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10456191;
 
 // PythonClass PyBuffAbility_120_104561.PyEffectiveComponent_120_10456191
-// 0x0050 (0x1CC0 - 0x1C70)
+// 0x0050 (0x2090 - 0x2040)
 class UPyEffectiveComponent_120_10456191 final : public UMarvelAgentEffectiveComponent
 {
 public:
-	uint8                                         Pad_1C68[0x8];                                     // 0x1C68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, float>                            DamageRatio;                                       // 0x1C70(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            DamageRatio;                                       // 0x2040(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	TArray<struct FHitResult> K2_OnPreApplyContainer(const TArray<struct FHitResult>& HitResults);
@@ -83,16 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_120_10456191">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_120_10456191")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_120_10456191")
 	}
 	static class UPyEffectiveComponent_120_10456191* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_120_10456191>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_120_10456191) == 0x000010, "Wrong alignment on UPyEffectiveComponent_120_10456191");
-static_assert(sizeof(UPyEffectiveComponent_120_10456191) == 0x001CC0, "Wrong size on UPyEffectiveComponent_120_10456191");
-static_assert(offsetof(UPyEffectiveComponent_120_10456191, DamageRatio) == 0x001C70, "Member 'UPyEffectiveComponent_120_10456191::DamageRatio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectiveComponent_120_10456191;
 
 }
 

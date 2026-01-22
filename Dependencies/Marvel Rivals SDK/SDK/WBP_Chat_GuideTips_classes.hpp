@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Chat_GuideTips.WBP_Chat_GuideTips_C
-// 0x0010 (0x06F0 - 0x06E0)
+// 0x0010 (0x06F8 - 0x06E8)
 class UWBP_Chat_GuideTips_C final : public UPyWidget_GameChatGuideTips
 {
 public:
-	class UWBP_Common_KeyWidget_C*                Key_Img;                                           // 0x06E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_BtnName;                                      // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                Key_Img;                                           // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_BtnName;                                      // 0x06F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Chat_GuideTips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Chat_GuideTips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Chat_GuideTips_C")
 	}
 	static class UWBP_Chat_GuideTips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Chat_GuideTips_C>();
 	}
 };
-static_assert(alignof(UWBP_Chat_GuideTips_C) == 0x000008, "Wrong alignment on UWBP_Chat_GuideTips_C");
-static_assert(sizeof(UWBP_Chat_GuideTips_C) == 0x0006F0, "Wrong size on UWBP_Chat_GuideTips_C");
-static_assert(offsetof(UWBP_Chat_GuideTips_C, Key_Img) == 0x0006E0, "Member 'UWBP_Chat_GuideTips_C::Key_Img' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_GuideTips_C, Text_BtnName) == 0x0006E8, "Member 'UWBP_Chat_GuideTips_C::Text_BtnName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Chat_GuideTips_C;
 
 }
 

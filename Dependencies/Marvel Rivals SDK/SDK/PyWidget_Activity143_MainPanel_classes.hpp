@@ -20,15 +20,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity143_MainPanel.PyWidget_Activity143_MainPanel
-// 0x0050 (0x0648 - 0x05F8)
+// 0x0050 (0x0650 - 0x0600)
 class UPyWidget_Activity143_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FSlateColor                            RedSlateColor;                                     // 0x05F8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FLinearColor                           RedLinearColor;                                    // 0x060C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            WhiteSlateColor;                                   // 0x061C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FLinearColor                           WhiteLinearColor;                                  // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Collect;                                   // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RedSlateColor;                                     // 0x0600(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FLinearColor                           RedLinearColor;                                    // 0x0614(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WhiteSlateColor;                                   // 0x0624(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FLinearColor                           WhiteLinearColor;                                  // 0x0638(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Collect;                                   // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,30 +40,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity143_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity143_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity143_MainPanel")
 	}
 	static class UPyWidget_Activity143_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity143_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity143_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity143_MainPanel");
-static_assert(sizeof(UPyWidget_Activity143_MainPanel) == 0x000648, "Wrong size on UPyWidget_Activity143_MainPanel");
-static_assert(offsetof(UPyWidget_Activity143_MainPanel, RedSlateColor) == 0x0005F8, "Member 'UPyWidget_Activity143_MainPanel::RedSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity143_MainPanel, RedLinearColor) == 0x00060C, "Member 'UPyWidget_Activity143_MainPanel::RedLinearColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity143_MainPanel, WhiteSlateColor) == 0x00061C, "Member 'UPyWidget_Activity143_MainPanel::WhiteSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity143_MainPanel, WhiteLinearColor) == 0x000630, "Member 'UPyWidget_Activity143_MainPanel::WhiteLinearColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity143_MainPanel, AkEvent_Collect) == 0x000640, "Member 'UPyWidget_Activity143_MainPanel::AkEvent_Collect' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity143_MainPanel;
 
 // PythonClass PyWidget_Activity143_MainPanel.PyWidget_Activity143_Entry
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Activity143_Entry final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMediaPlayer*                           EntryMediaPlayer;                                  // 0x05C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMediaSource*                           EntryMediaSource;                                  // 0x05C8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_Entry;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMediaPlayer*                           EntryMediaPlayer;                                  // 0x05C8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaSource*                           EntryMediaSource;                                  // 0x05D0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_Entry;                                     // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -73,18 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity143_Entry">();
+		STATIC_CLASS_IMPL("PyWidget_Activity143_Entry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity143_Entry")
 	}
 	static class UPyWidget_Activity143_Entry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity143_Entry>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity143_Entry) == 0x000008, "Wrong alignment on UPyWidget_Activity143_Entry");
-static_assert(sizeof(UPyWidget_Activity143_Entry) == 0x0005D8, "Wrong size on UPyWidget_Activity143_Entry");
-static_assert(offsetof(UPyWidget_Activity143_Entry, EntryMediaPlayer) == 0x0005C0, "Member 'UPyWidget_Activity143_Entry::EntryMediaPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity143_Entry, EntryMediaSource) == 0x0005C8, "Member 'UPyWidget_Activity143_Entry::EntryMediaSource' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity143_Entry, AKEvent_Entry) == 0x0005D0, "Member 'UPyWidget_Activity143_Entry::AKEvent_Entry' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity143_Entry;
 
 }
 

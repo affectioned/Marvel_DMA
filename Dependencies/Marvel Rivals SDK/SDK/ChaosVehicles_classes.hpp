@@ -125,59 +125,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosVehicleMovementComponent">();
+		STATIC_CLASS_IMPL("ChaosVehicleMovementComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosVehicleMovementComponent")
 	}
 	static class UChaosVehicleMovementComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosVehicleMovementComponent>();
 	}
 };
-static_assert(alignof(UChaosVehicleMovementComponent) == 0x000010, "Wrong alignment on UChaosVehicleMovementComponent");
-static_assert(sizeof(UChaosVehicleMovementComponent) == 0x0009D0, "Wrong size on UChaosVehicleMovementComponent");
-static_assert(offsetof(UChaosVehicleMovementComponent, Mass) == 0x0001FC, "Member 'UChaosVehicleMovementComponent::Mass' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, bEnableCenterOfMassOverride) == 0x000200, "Member 'UChaosVehicleMovementComponent::bEnableCenterOfMassOverride' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, CenterOfMassOverride) == 0x000208, "Member 'UChaosVehicleMovementComponent::CenterOfMassOverride' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, ChassisWidth) == 0x000220, "Member 'UChaosVehicleMovementComponent::ChassisWidth' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, ChassisHeight) == 0x000224, "Member 'UChaosVehicleMovementComponent::ChassisHeight' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, DragCoefficient) == 0x000228, "Member 'UChaosVehicleMovementComponent::DragCoefficient' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, DownforceCoefficient) == 0x00022C, "Member 'UChaosVehicleMovementComponent::DownforceCoefficient' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, DragArea) == 0x000230, "Member 'UChaosVehicleMovementComponent::DragArea' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, DebugDragMagnitude) == 0x000234, "Member 'UChaosVehicleMovementComponent::DebugDragMagnitude' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, InertiaTensorScale) == 0x000238, "Member 'UChaosVehicleMovementComponent::InertiaTensorScale' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, SleepThreshold) == 0x000250, "Member 'UChaosVehicleMovementComponent::SleepThreshold' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, SleepSlopeLimit) == 0x000254, "Member 'UChaosVehicleMovementComponent::SleepSlopeLimit' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, Aerofoils) == 0x000258, "Member 'UChaosVehicleMovementComponent::Aerofoils' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, Thrusters) == 0x000268, "Member 'UChaosVehicleMovementComponent::Thrusters' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, TorqueControl) == 0x000278, "Member 'UChaosVehicleMovementComponent::TorqueControl' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, TargetRotationControl) == 0x0002B8, "Member 'UChaosVehicleMovementComponent::TargetRotationControl' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, StabilizeControl) == 0x000310, "Member 'UChaosVehicleMovementComponent::StabilizeControl' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, NetworkPhysicsComponent) == 0x000338, "Member 'UChaosVehicleMovementComponent::NetworkPhysicsComponent' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, ReplicatedState) == 0x000378, "Member 'UChaosVehicleMovementComponent::ReplicatedState' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, RawSteeringInput) == 0x0003A4, "Member 'UChaosVehicleMovementComponent::RawSteeringInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, RawThrottleInput) == 0x0003A8, "Member 'UChaosVehicleMovementComponent::RawThrottleInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, RawBrakeInput) == 0x0003AC, "Member 'UChaosVehicleMovementComponent::RawBrakeInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, RawPitchInput) == 0x0003B0, "Member 'UChaosVehicleMovementComponent::RawPitchInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, RawRollInput) == 0x0003B4, "Member 'UChaosVehicleMovementComponent::RawRollInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, RawYawInput) == 0x0003B8, "Member 'UChaosVehicleMovementComponent::RawYawInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, SteeringInput) == 0x0003BC, "Member 'UChaosVehicleMovementComponent::SteeringInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, ThrottleInput) == 0x0003C0, "Member 'UChaosVehicleMovementComponent::ThrottleInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, BrakeInput) == 0x0003C4, "Member 'UChaosVehicleMovementComponent::BrakeInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, PitchInput) == 0x0003C8, "Member 'UChaosVehicleMovementComponent::PitchInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, RollInput) == 0x0003CC, "Member 'UChaosVehicleMovementComponent::RollInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, YawInput) == 0x0003D0, "Member 'UChaosVehicleMovementComponent::YawInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, HandbrakeInput) == 0x0003D4, "Member 'UChaosVehicleMovementComponent::HandbrakeInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, bRequiresControllerForInputs) == 0x0003D8, "Member 'UChaosVehicleMovementComponent::bRequiresControllerForInputs' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, IdleBrakeInput) == 0x0003DC, "Member 'UChaosVehicleMovementComponent::IdleBrakeInput' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, StopThreshold) == 0x0003E0, "Member 'UChaosVehicleMovementComponent::StopThreshold' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, WrongDirectionThreshold) == 0x0003E4, "Member 'UChaosVehicleMovementComponent::WrongDirectionThreshold' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, ThrottleInputRate) == 0x0003E8, "Member 'UChaosVehicleMovementComponent::ThrottleInputRate' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, BrakeInputRate) == 0x000480, "Member 'UChaosVehicleMovementComponent::BrakeInputRate' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, SteeringInputRate) == 0x000518, "Member 'UChaosVehicleMovementComponent::SteeringInputRate' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, HandbrakeInputRate) == 0x0005B0, "Member 'UChaosVehicleMovementComponent::HandbrakeInputRate' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, PitchInputRate) == 0x000648, "Member 'UChaosVehicleMovementComponent::PitchInputRate' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, RollInputRate) == 0x0006E0, "Member 'UChaosVehicleMovementComponent::RollInputRate' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, YawInputRate) == 0x000778, "Member 'UChaosVehicleMovementComponent::YawInputRate' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleMovementComponent, OverrideController) == 0x0009A8, "Member 'UChaosVehicleMovementComponent::OverrideController' has a wrong offset!");
+DUMPER7_ASSERTS_UChaosVehicleMovementComponent;
 
 // Class ChaosVehicles.ChaosVehicleWheel
 // 0x02B8 (0x02E8 - 0x0030)
@@ -253,61 +212,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosVehicleWheel">();
+		STATIC_CLASS_IMPL("ChaosVehicleWheel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosVehicleWheel")
 	}
 	static class UChaosVehicleWheel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosVehicleWheel>();
 	}
 };
-static_assert(alignof(UChaosVehicleWheel) == 0x000008, "Wrong alignment on UChaosVehicleWheel");
-static_assert(sizeof(UChaosVehicleWheel) == 0x0002E8, "Wrong size on UChaosVehicleWheel");
-static_assert(offsetof(UChaosVehicleWheel, CollisionMesh) == 0x000030, "Member 'UChaosVehicleWheel::CollisionMesh' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, AxleType) == 0x000038, "Member 'UChaosVehicleWheel::AxleType' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, Offset) == 0x000040, "Member 'UChaosVehicleWheel::Offset' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, WheelRadius) == 0x000058, "Member 'UChaosVehicleWheel::WheelRadius' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, WheelWidth) == 0x00005C, "Member 'UChaosVehicleWheel::WheelWidth' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, WheelMass) == 0x000060, "Member 'UChaosVehicleWheel::WheelMass' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, CorneringStiffness) == 0x000064, "Member 'UChaosVehicleWheel::CorneringStiffness' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, FrictionForceMultiplier) == 0x000068, "Member 'UChaosVehicleWheel::FrictionForceMultiplier' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SideSlipModifier) == 0x00006C, "Member 'UChaosVehicleWheel::SideSlipModifier' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SlipThreshold) == 0x000070, "Member 'UChaosVehicleWheel::SlipThreshold' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SkidThreshold) == 0x000074, "Member 'UChaosVehicleWheel::SkidThreshold' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, MaxSteerAngle) == 0x000078, "Member 'UChaosVehicleWheel::MaxSteerAngle' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, bAffectedBySteering) == 0x00007C, "Member 'UChaosVehicleWheel::bAffectedBySteering' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, bAffectedByBrake) == 0x00007D, "Member 'UChaosVehicleWheel::bAffectedByBrake' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, bAffectedByHandbrake) == 0x00007E, "Member 'UChaosVehicleWheel::bAffectedByHandbrake' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, bAffectedByEngine) == 0x00007F, "Member 'UChaosVehicleWheel::bAffectedByEngine' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, bABSEnabled) == 0x000080, "Member 'UChaosVehicleWheel::bABSEnabled' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, bTractionControlEnabled) == 0x000081, "Member 'UChaosVehicleWheel::bTractionControlEnabled' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, MaxWheelspinRotation) == 0x000084, "Member 'UChaosVehicleWheel::MaxWheelspinRotation' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, ExternalTorqueCombineMethod) == 0x000088, "Member 'UChaosVehicleWheel::ExternalTorqueCombineMethod' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, LateralSlipGraph) == 0x000090, "Member 'UChaosVehicleWheel::LateralSlipGraph' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SuspensionAxis) == 0x000118, "Member 'UChaosVehicleWheel::SuspensionAxis' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SuspensionForceOffset) == 0x000130, "Member 'UChaosVehicleWheel::SuspensionForceOffset' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SuspensionMaxRaise) == 0x000148, "Member 'UChaosVehicleWheel::SuspensionMaxRaise' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SuspensionMaxDrop) == 0x00014C, "Member 'UChaosVehicleWheel::SuspensionMaxDrop' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SuspensionDampingRatio) == 0x000150, "Member 'UChaosVehicleWheel::SuspensionDampingRatio' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, WheelLoadRatio) == 0x000154, "Member 'UChaosVehicleWheel::WheelLoadRatio' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SpringRate) == 0x000158, "Member 'UChaosVehicleWheel::SpringRate' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SpringPreload) == 0x00015C, "Member 'UChaosVehicleWheel::SpringPreload' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SuspensionSmoothing) == 0x000160, "Member 'UChaosVehicleWheel::SuspensionSmoothing' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, RollbarScaling) == 0x000164, "Member 'UChaosVehicleWheel::RollbarScaling' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SweepShape) == 0x000168, "Member 'UChaosVehicleWheel::SweepShape' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, SweepType) == 0x000169, "Member 'UChaosVehicleWheel::SweepType' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, MaxBrakeTorque) == 0x00016C, "Member 'UChaosVehicleWheel::MaxBrakeTorque' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, MaxHandBrakeTorque) == 0x000170, "Member 'UChaosVehicleWheel::MaxHandBrakeTorque' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, VehicleComponent) == 0x000178, "Member 'UChaosVehicleWheel::VehicleComponent' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, WheelIndex) == 0x000180, "Member 'UChaosVehicleWheel::WheelIndex' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, DebugLongSlip) == 0x000184, "Member 'UChaosVehicleWheel::DebugLongSlip' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, DebugLatSlip) == 0x000188, "Member 'UChaosVehicleWheel::DebugLatSlip' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, DebugNormalizedTireLoad) == 0x00018C, "Member 'UChaosVehicleWheel::DebugNormalizedTireLoad' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, DebugWheelTorque) == 0x000194, "Member 'UChaosVehicleWheel::DebugWheelTorque' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, DebugLongForce) == 0x000198, "Member 'UChaosVehicleWheel::DebugLongForce' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, DebugLatForce) == 0x00019C, "Member 'UChaosVehicleWheel::DebugLatForce' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, Location) == 0x0001A0, "Member 'UChaosVehicleWheel::Location' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, OldLocation) == 0x0001B8, "Member 'UChaosVehicleWheel::OldLocation' has a wrong offset!");
-static_assert(offsetof(UChaosVehicleWheel, Velocity) == 0x0001D0, "Member 'UChaosVehicleWheel::Velocity' has a wrong offset!");
+DUMPER7_ASSERTS_UChaosVehicleWheel;
 
 // Class ChaosVehicles.ChaosWheeledVehicleMovementComponent
 // 0x0320 (0x0CF0 - 0x09D0)
@@ -372,26 +288,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosWheeledVehicleMovementComponent">();
+		STATIC_CLASS_IMPL("ChaosWheeledVehicleMovementComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosWheeledVehicleMovementComponent")
 	}
 	static class UChaosWheeledVehicleMovementComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosWheeledVehicleMovementComponent>();
 	}
 };
-static_assert(alignof(UChaosWheeledVehicleMovementComponent) == 0x000010, "Wrong alignment on UChaosWheeledVehicleMovementComponent");
-static_assert(sizeof(UChaosWheeledVehicleMovementComponent) == 0x000CF0, "Wrong size on UChaosWheeledVehicleMovementComponent");
-static_assert(offsetof(UChaosWheeledVehicleMovementComponent, bSuspensionEnabled) == 0x0009D0, "Member 'UChaosWheeledVehicleMovementComponent::bSuspensionEnabled' has a wrong offset!");
-static_assert(offsetof(UChaosWheeledVehicleMovementComponent, bWheelFrictionEnabled) == 0x0009D1, "Member 'UChaosWheeledVehicleMovementComponent::bWheelFrictionEnabled' has a wrong offset!");
-static_assert(offsetof(UChaosWheeledVehicleMovementComponent, bLegacyWheelFrictionPosition) == 0x0009D2, "Member 'UChaosWheeledVehicleMovementComponent::bLegacyWheelFrictionPosition' has a wrong offset!");
-static_assert(offsetof(UChaosWheeledVehicleMovementComponent, WheelSetups) == 0x0009D8, "Member 'UChaosWheeledVehicleMovementComponent::WheelSetups' has a wrong offset!");
-static_assert(offsetof(UChaosWheeledVehicleMovementComponent, WheelTraceCollisionResponses) == 0x0009E8, "Member 'UChaosWheeledVehicleMovementComponent::WheelTraceCollisionResponses' has a wrong offset!");
-static_assert(offsetof(UChaosWheeledVehicleMovementComponent, bMechanicalSimEnabled) == 0x000A08, "Member 'UChaosWheeledVehicleMovementComponent::bMechanicalSimEnabled' has a wrong offset!");
-static_assert(offsetof(UChaosWheeledVehicleMovementComponent, EngineSetup) == 0x000A10, "Member 'UChaosWheeledVehicleMovementComponent::EngineSetup' has a wrong offset!");
-static_assert(offsetof(UChaosWheeledVehicleMovementComponent, DifferentialSetup) == 0x000AD8, "Member 'UChaosWheeledVehicleMovementComponent::DifferentialSetup' has a wrong offset!");
-static_assert(offsetof(UChaosWheeledVehicleMovementComponent, TransmissionSetup) == 0x000AE8, "Member 'UChaosWheeledVehicleMovementComponent::TransmissionSetup' has a wrong offset!");
-static_assert(offsetof(UChaosWheeledVehicleMovementComponent, SteeringSetup) == 0x000B58, "Member 'UChaosWheeledVehicleMovementComponent::SteeringSetup' has a wrong offset!");
-static_assert(offsetof(UChaosWheeledVehicleMovementComponent, Wheels) == 0x000C30, "Member 'UChaosWheeledVehicleMovementComponent::Wheels' has a wrong offset!");
+DUMPER7_ASSERTS_UChaosWheeledVehicleMovementComponent;
 
 // Class ChaosVehicles.VehicleAnimationInstance
 // 0x0870 (0x0CC0 - 0x0450)
@@ -408,16 +316,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VehicleAnimationInstance">();
+		STATIC_CLASS_IMPL("VehicleAnimationInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VehicleAnimationInstance")
 	}
 	static class UVehicleAnimationInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVehicleAnimationInstance>();
 	}
 };
-static_assert(alignof(UVehicleAnimationInstance) == 0x000010, "Wrong alignment on UVehicleAnimationInstance");
-static_assert(sizeof(UVehicleAnimationInstance) == 0x000CC0, "Wrong size on UVehicleAnimationInstance");
-static_assert(offsetof(UVehicleAnimationInstance, WheeledVehicleComponent) == 0x000CB0, "Member 'UVehicleAnimationInstance::WheeledVehicleComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UVehicleAnimationInstance;
 
 // Class ChaosVehicles.WheeledVehiclePawn
 // 0x0010 (0x0780 - 0x0770)
@@ -430,17 +340,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WheeledVehiclePawn">();
+		STATIC_CLASS_IMPL("WheeledVehiclePawn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WheeledVehiclePawn")
 	}
 	static class AWheeledVehiclePawn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWheeledVehiclePawn>();
 	}
 };
-static_assert(alignof(AWheeledVehiclePawn) == 0x000010, "Wrong alignment on AWheeledVehiclePawn");
-static_assert(sizeof(AWheeledVehiclePawn) == 0x000780, "Wrong size on AWheeledVehiclePawn");
-static_assert(offsetof(AWheeledVehiclePawn, Mesh) == 0x000770, "Member 'AWheeledVehiclePawn::Mesh' has a wrong offset!");
-static_assert(offsetof(AWheeledVehiclePawn, VehicleMovementComponent) == 0x000778, "Member 'AWheeledVehiclePawn::VehicleMovementComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AWheeledVehiclePawn;
 
 }
 

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_ThirdPart_Task.PyWidget_Activity120_ThirdPart_Task
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Activity120_ThirdPart_Task final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -30,18 +30,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_ThirdPart_Task">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_ThirdPart_Task")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_ThirdPart_Task")
 	}
 	static class UPyWidget_Activity120_ThirdPart_Task* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_ThirdPart_Task>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_ThirdPart_Task) == 0x000008, "Wrong alignment on UPyWidget_Activity120_ThirdPart_Task");
-static_assert(sizeof(UPyWidget_Activity120_ThirdPart_Task) == 0x0005F8, "Wrong size on UPyWidget_Activity120_ThirdPart_Task");
+DUMPER7_ASSERTS_UPyWidget_Activity120_ThirdPart_Task;
 
 // PythonClass PyWidget_Activity120_ThirdPart_Task.PyWidget_Activity120_ThirdPart_TaskItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity120_ThirdPart_TaskItem final : public UPyMarvelUserWidget
 {
 public:
@@ -52,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_ThirdPart_TaskItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_ThirdPart_TaskItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_ThirdPart_TaskItem")
 	}
 	static class UPyWidget_Activity120_ThirdPart_TaskItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_ThirdPart_TaskItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_ThirdPart_TaskItem) == 0x000008, "Wrong alignment on UPyWidget_Activity120_ThirdPart_TaskItem");
-static_assert(sizeof(UPyWidget_Activity120_ThirdPart_TaskItem) == 0x0005C0, "Wrong size on UPyWidget_Activity120_ThirdPart_TaskItem");
+DUMPER7_ASSERTS_UPyWidget_Activity120_ThirdPart_TaskItem;
 
 }
 

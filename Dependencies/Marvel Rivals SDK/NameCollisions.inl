@@ -9,87 +9,89 @@
 // FORWARD DECLARATIONS
 
 
-namespace Post_1031001_Physics { struct FAnimBlueprintGeneratedConstantData; }
+namespace Ability_104494_BP_0 { class UAbility_104494_BP_C; }
 
-namespace One053001_AnimBP { struct FAnimBlueprintGeneratedConstantData; }
+namespace PyWidget_Mission_Activity143 { class UEventWidgetItemData; }
 
-namespace PyWidget_Common_NewReddot { class UPyWidget_Common_NewReddot; }
+namespace Post_1047001_Physics { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace One047001_AnimBPV2 { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace One031001_AnimBP { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace Post_1053001_Physics { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace PyWidgetVideoBackground { enum class EVideoState : uint8; }
-
-namespace Four016000_AnimBP { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace CameraShake_102472_Hit { class UCameraShake_102472_Hit_C; }
-
-namespace CameraShake_105361_01_BP { class UCameraShake_105361_01_BP_C; }
-
-namespace PyControl { class APyCue_Level_100002; }
-
-namespace GC_CommonProps001A_BP { class AGC_CommonProps001A_BP_C; }
-
-namespace const_input { enum class EInputType : uint8; }
-
-namespace PyObjective { class APyCue_Level_100002; }
+namespace Four018000_AnimBP { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace PyWidget_Common_Reddot { class UPyWidget_Common_NewReddot; }
 
-namespace GC_CommonProps001A_BP_0 { class AGC_CommonProps001A_BP_C; }
+namespace PyControl { class APyCue_Level_100002; }
 
-namespace Ability_104494_BP { class UAbility_104494_BP_C; }
+namespace Post_1031001_Physics { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace PyBattleChessAutoTestController { enum class ECategoryStrategy : uint8; }
+namespace CameraShake_102472_Hit { class UCameraShake_102472_Hit_C; }
+
+namespace Four016000_AnimBP { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace Ability_104495_BP_0 { class UAbility_104495_BP_C; }
 
+namespace PyObjective { class APyCue_Level_100002; }
+
+namespace PyWidget_LeagueSchedule_Cup { class UPyWidget_LeagueSchedule_Cup; }
+
+namespace PyWidget_LeagueSchedule_Dual { class UPyWidget_LeagueSchedule_Dual; }
+
+namespace PyAbility_201 { enum class ESignalInputState : uint8; }
+
+namespace PyWidget_Common_NewReddot { class UPyWidget_Common_NewReddot; }
+
+namespace PyWidget_Mission_Activity153 { class UEventWidgetItemData; }
+
 namespace CameraShake_102472_Hit_0 { class UCameraShake_102472_Hit_C; }
-
-namespace Ability_104494_BP_0 { class UAbility_104494_BP_C; }
-
-namespace PyWidget_MissionPanel_New { enum class ETaskCategory : uint8; }
 
 namespace Ability_104495_BP { class UAbility_104495_BP_C; }
 
+namespace Ability_104494_BP { class UAbility_104494_BP_C; }
+
+namespace Ability_104724_BP_0 { class UAbility_104724_BP_C; }
+
+namespace Ability_104724_BP { class UAbility_104724_BP_C; }
+
 namespace HitReact_Additive { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace CameraShake_105342_Hit_01_BP_0 { class UCameraShake_105342_Hit_01_BP_C; }
+namespace GC_CommonProps001A_BP_0 { class AGC_CommonProps001A_BP_C; }
 
-namespace CameraShake_105361_01_BP_0 { class UCameraShake_105361_01_BP_C; }
+namespace const_input { enum class EInputType : uint8; }
 
-namespace Four018000_AnimBP { struct FAnimBlueprintGeneratedConstantData; }
+namespace PyWinterFestivalRuleComponent { enum class EWinterFestivalBuffState : uint8; }
 
-namespace CameraShake_105342_Hit_01_BP { class UCameraShake_105342_Hit_01_BP_C; }
+namespace GC_CommonProps001A_BP { class AGC_CommonProps001A_BP_C; }
+
+namespace PyWidgetVideoBackground { enum class EVideoState : uint8; }
+
+namespace PyUI_201 { enum class ESignalInputState : uint8; }
+
+namespace One047001_AnimBPV3 { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace MarvelAI { enum class ETargetType : uint8; }
 
+namespace PyWidget_MissionPanel_New { enum class ETaskCategory : uint8; }
+
+namespace PyBattleChessAutoTestController { enum class ECategoryStrategy : uint8; }
+
 namespace const_bg_video { enum class EVideoState : uint8; }
 
+namespace PyWinterFestivalV2RuleComponent { enum class EWinterFestivalBuffState : uint8; }
 
-namespace GroundMotion
+
+namespace PyWidget_LeagueSchedule_Common
 {
-	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
+	class UPyWidget_LeagueSchedule_Dual;
+	class UPyWidget_LeagueSchedule_Cup;
 }
 
 namespace HeroState1
 {
-	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace AimOffsetBlend
-{
 	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace PyBattleChessAutoTestController3
-{
-	enum class ECategoryStrategy : uint8;
-	enum class EDrawCardStrategy : uint8;
 }
 
 namespace AbilityBlend
@@ -98,7 +100,31 @@ namespace AbilityBlend
 	struct FAnimBlueprintGeneratedConstantData;
 }
 
+namespace One047001_JeffGroundMotionV2
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
 namespace AeroLocomotionV2
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace GroundMotion
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace PyBattleChessAutoTestController3
+{
+	enum class EDrawCardStrategy : uint8;
+	enum class ECategoryStrategy : uint8;
+}
+
+namespace AimOffsetBlend
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
@@ -106,9 +132,9 @@ namespace AeroLocomotionV2
 
 namespace Marvel
 {
-	enum class ETaskCategory : uint8;
 	enum class EInputType : uint8;
 	enum class ETargetType : uint8;
+	enum class ETaskCategory : uint8;
 }
 
 namespace PyBattleChessAutoActionController
@@ -117,8 +143,26 @@ namespace PyBattleChessAutoActionController
 	enum class ECategoryStrategy : uint8;
 }
 
+namespace One047001_JeffGroundMotionV3
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
 namespace PyBattleChessAutoTestController2
 {
 	enum class ECategoryStrategy : uint8;
 	enum class EDrawCardStrategy : uint8;
+}
+
+namespace PyFillColorBox
+{
+	enum class EFillColorState : uint8;
+	enum class EScenePaintState : uint64;
+}
+
+namespace PyFillColorBoxV2
+{
+	enum class EScenePaintState : uint64;
+	enum class EFillColorState : uint8;
 }

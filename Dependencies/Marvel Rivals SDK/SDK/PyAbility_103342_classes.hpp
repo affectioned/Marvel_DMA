@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103342.PyEffectAbility_GravityChange_103342
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyEffectAbility_GravityChange_103342 : public UMarvelEffectGameplayAbility
 {
 public:
-	class UCurveFloat*                            GravityScaleCurve;                                 // 0x1370(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Debug;                                             // 0x1378(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            GravityScaleCurve;                                 // 0x1388(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Debug;                                             // 0x1390(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_GravityChange_103342">();
+		STATIC_CLASS_IMPL("PyEffectAbility_GravityChange_103342")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_GravityChange_103342")
 	}
 	static class UPyEffectAbility_GravityChange_103342* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_GravityChange_103342>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_GravityChange_103342) == 0x000008, "Wrong alignment on UPyEffectAbility_GravityChange_103342");
-static_assert(sizeof(UPyEffectAbility_GravityChange_103342) == 0x001380, "Wrong size on UPyEffectAbility_GravityChange_103342");
-static_assert(offsetof(UPyEffectAbility_GravityChange_103342, GravityScaleCurve) == 0x001370, "Member 'UPyEffectAbility_GravityChange_103342::GravityScaleCurve' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_GravityChange_103342, Debug) == 0x001378, "Member 'UPyEffectAbility_GravityChange_103342::Debug' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_GravityChange_103342;
 
 }
 

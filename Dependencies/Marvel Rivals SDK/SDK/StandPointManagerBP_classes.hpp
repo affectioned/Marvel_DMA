@@ -23,15 +23,18 @@ class UStandPointManagerBP_C final : public UMarvelAIStandPointManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StandPointManagerBP_C">();
+		BP_STATIC_CLASS_IMPL("StandPointManagerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StandPointManagerBP_C")
 	}
 	static class UStandPointManagerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStandPointManagerBP_C>();
 	}
 };
-static_assert(alignof(UStandPointManagerBP_C) == 0x000008, "Wrong alignment on UStandPointManagerBP_C");
-static_assert(sizeof(UStandPointManagerBP_C) == 0x000080, "Wrong size on UStandPointManagerBP_C");
+DUMPER7_ASSERTS_UStandPointManagerBP_C;
 
 }
 

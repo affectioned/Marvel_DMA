@@ -39,18 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_Indicator">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_Indicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_Indicator")
 	}
 	static class UPyWidget_Halloween_Indicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_Indicator>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_Indicator) == 0x000010, "Wrong alignment on UPyWidget_Halloween_Indicator");
-static_assert(sizeof(UPyWidget_Halloween_Indicator) == 0x000880, "Wrong size on UPyWidget_Halloween_Indicator");
-static_assert(offsetof(UPyWidget_Halloween_Indicator, WaveType) == 0x000870, "Member 'UPyWidget_Halloween_Indicator::WaveType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Indicator, BossID) == 0x000874, "Member 'UPyWidget_Halloween_Indicator::BossID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Indicator, HightLightDisplayTimes) == 0x000878, "Member 'UPyWidget_Halloween_Indicator::HightLightDisplayTimes' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_Indicator;
 
 }
 

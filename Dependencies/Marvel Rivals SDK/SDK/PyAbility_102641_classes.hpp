@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102641.PyTraceComponent_10264101
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10264101 final : public UMarvelAgentTraceComponent
 {
 public:
@@ -30,18 +30,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10264101">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10264101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10264101")
 	}
 	static class UPyTraceComponent_10264101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10264101>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10264101) == 0x000010, "Wrong alignment on UPyTraceComponent_10264101");
-static_assert(sizeof(UPyTraceComponent_10264101) == 0x002200, "Wrong size on UPyTraceComponent_10264101");
+DUMPER7_ASSERTS_UPyTraceComponent_10264101;
 
 // PythonClass PyAbility_102641.PyScope_10264101
-// 0x0000 (0x1AA0 - 0x1AA0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10264101 final : public AMarvelAbilityTargetActor_Scope
 {
 public:
@@ -52,50 +55,50 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10264101">();
+		STATIC_CLASS_IMPL("PyScope_10264101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10264101")
 	}
 	static class APyScope_10264101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10264101>();
 	}
 };
-static_assert(alignof(APyScope_10264101) == 0x000010, "Wrong alignment on APyScope_10264101");
-static_assert(sizeof(APyScope_10264101) == 0x001AA0, "Wrong size on APyScope_10264101");
+DUMPER7_ASSERTS_APyScope_10264101;
 
 // PythonClass PyAbility_102641.PyConfig_102641
-// 0x0018 (0x0C90 - 0x0C78)
+// 0x0018 (0x0FB0 - 0x0F98)
 class UPyConfig_102641 final : public UConfig_102641
 {
 public:
-	float                                         LimitYaw;                                          // 0x0C78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LimitRoll;                                         // 0x0C7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LimitPitch;                                        // 0x0C80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RotatingBodyTime;                                  // 0x0C84(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          LockCamera;                                        // 0x0C88(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C89[0x3];                                      // 0x0C89(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RotatingCameraTime;                                // 0x0C8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LimitYaw;                                          // 0x0F98(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LimitRoll;                                         // 0x0F9C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LimitPitch;                                        // 0x0FA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RotatingBodyTime;                                  // 0x0FA4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LockCamera;                                        // 0x0FA8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_FA9[0x3];                                      // 0x0FA9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RotatingCameraTime;                                // 0x0FAC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102641">();
+		STATIC_CLASS_IMPL("PyConfig_102641")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102641")
 	}
 	static class UPyConfig_102641* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102641>();
 	}
 };
-static_assert(alignof(UPyConfig_102641) == 0x000008, "Wrong alignment on UPyConfig_102641");
-static_assert(sizeof(UPyConfig_102641) == 0x000C90, "Wrong size on UPyConfig_102641");
-static_assert(offsetof(UPyConfig_102641, LimitYaw) == 0x000C78, "Member 'UPyConfig_102641::LimitYaw' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102641, LimitRoll) == 0x000C7C, "Member 'UPyConfig_102641::LimitRoll' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102641, LimitPitch) == 0x000C80, "Member 'UPyConfig_102641::LimitPitch' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102641, RotatingBodyTime) == 0x000C84, "Member 'UPyConfig_102641::RotatingBodyTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102641, LockCamera) == 0x000C88, "Member 'UPyConfig_102641::LockCamera' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102641, RotatingCameraTime) == 0x000C8C, "Member 'UPyConfig_102641::RotatingCameraTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102641;
 
 // PythonClass PyAbility_102641.PyAbility_102641
-// 0x0000 (0x2A60 - 0x2A60)
+// 0x0000 (0x2AB0 - 0x2AB0)
 class UPyAbility_102641 : public UAbility_102641
 {
 public:
@@ -107,15 +110,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102641">();
+		STATIC_CLASS_IMPL("PyAbility_102641")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102641")
 	}
 	static class UPyAbility_102641* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102641>();
 	}
 };
-static_assert(alignof(UPyAbility_102641) == 0x000008, "Wrong alignment on UPyAbility_102641");
-static_assert(sizeof(UPyAbility_102641) == 0x002A60, "Wrong size on UPyAbility_102641");
+DUMPER7_ASSERTS_UPyAbility_102641;
 
 }
 

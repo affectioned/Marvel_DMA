@@ -18,24 +18,26 @@ namespace SDK
 {
 
 // PythonClass PyAbility_202.PyAbility_202
-// 0x0078 (0x2A78 - 0x2A00)
+// 0x0098 (0x2AE8 - 0x2A50)
 class UPyAbility_202 : public UAbility_202
 {
 public:
-	float                                         DurationTime;                                      // 0x2A00(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DurationFreq;                                      // 0x2A04(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SignDurationTime;                                  // 0x2A08(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A0C[0x4];                                     // 0x2A0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimaryDataAsset*                      SignalDataAsset;                                   // 0x2A10(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LastActiveTime;                                    // 0x2A18(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LastCommID;                                        // 0x2A1C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           EndSignalTag;                                      // 0x2A20(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           CancelSignalTag;                                   // 0x2A2C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ResponseSignalTag;                                 // 0x2A38(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A44[0x4];                                     // 0x2A44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnCoolDownFinishDispatcher;                        // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 SignalID, class AMarvelBaseCharacter* ResonseTarget)> OnSendSignalSuccess; // 0x2A58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 SignalID, class AMarvelBaseCharacter* SourceActor)> OnSignalBeResponded; // 0x2A68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	float                                         DurationTime;                                      // 0x2A50(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DurationFreq;                                      // 0x2A54(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SignDurationTime;                                  // 0x2A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A5C[0x4];                                     // 0x2A5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimaryDataAsset*                      SignalDataAsset;                                   // 0x2A60(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LastActiveTime;                                    // 0x2A68(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LastCommID;                                        // 0x2A6C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           EndSignalTag;                                      // 0x2A70(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           CancelSignalTag;                                   // 0x2A7C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ResponseSignalTag;                                 // 0x2A88(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           M2202CommonTag;                                    // 0x2A94(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           M2202AttackTag;                                    // 0x2AA0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           M2202DefendTag;                                    // 0x2AAC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnCoolDownFinishDispatcher;                        // 0x2AB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 SignalID, class AMarvelBaseCharacter* ResonseTarget)> OnSendSignalSuccess; // 0x2AC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 SignalID, class AMarvelBaseCharacter* SourceActor)> OnSignalBeResponded; // 0x2AD8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -48,27 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_202">();
+		STATIC_CLASS_IMPL("PyAbility_202")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_202")
 	}
 	static class UPyAbility_202* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_202>();
 	}
 };
-static_assert(alignof(UPyAbility_202) == 0x000008, "Wrong alignment on UPyAbility_202");
-static_assert(sizeof(UPyAbility_202) == 0x002A78, "Wrong size on UPyAbility_202");
-static_assert(offsetof(UPyAbility_202, DurationTime) == 0x002A00, "Member 'UPyAbility_202::DurationTime' has a wrong offset!");
-static_assert(offsetof(UPyAbility_202, DurationFreq) == 0x002A04, "Member 'UPyAbility_202::DurationFreq' has a wrong offset!");
-static_assert(offsetof(UPyAbility_202, SignDurationTime) == 0x002A08, "Member 'UPyAbility_202::SignDurationTime' has a wrong offset!");
-static_assert(offsetof(UPyAbility_202, SignalDataAsset) == 0x002A10, "Member 'UPyAbility_202::SignalDataAsset' has a wrong offset!");
-static_assert(offsetof(UPyAbility_202, LastActiveTime) == 0x002A18, "Member 'UPyAbility_202::LastActiveTime' has a wrong offset!");
-static_assert(offsetof(UPyAbility_202, LastCommID) == 0x002A1C, "Member 'UPyAbility_202::LastCommID' has a wrong offset!");
-static_assert(offsetof(UPyAbility_202, EndSignalTag) == 0x002A20, "Member 'UPyAbility_202::EndSignalTag' has a wrong offset!");
-static_assert(offsetof(UPyAbility_202, CancelSignalTag) == 0x002A2C, "Member 'UPyAbility_202::CancelSignalTag' has a wrong offset!");
-static_assert(offsetof(UPyAbility_202, ResponseSignalTag) == 0x002A38, "Member 'UPyAbility_202::ResponseSignalTag' has a wrong offset!");
-static_assert(offsetof(UPyAbility_202, OnCoolDownFinishDispatcher) == 0x002A48, "Member 'UPyAbility_202::OnCoolDownFinishDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyAbility_202, OnSendSignalSuccess) == 0x002A58, "Member 'UPyAbility_202::OnSendSignalSuccess' has a wrong offset!");
-static_assert(offsetof(UPyAbility_202, OnSignalBeResponded) == 0x002A68, "Member 'UPyAbility_202::OnSignalBeResponded' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_202;
 
 }
 

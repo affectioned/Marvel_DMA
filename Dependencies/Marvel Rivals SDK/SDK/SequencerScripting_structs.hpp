@@ -70,11 +70,7 @@ public:
 	int32                                         ExclusiveEnd;                                      // 0x0008(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameRate                             InternalRate;                                      // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSequencerScriptingRange) == 0x000004, "Wrong alignment on FSequencerScriptingRange");
-static_assert(sizeof(FSequencerScriptingRange) == 0x000014, "Wrong size on FSequencerScriptingRange");
-static_assert(offsetof(FSequencerScriptingRange, InclusiveStart) == 0x000004, "Member 'FSequencerScriptingRange::InclusiveStart' has a wrong offset!");
-static_assert(offsetof(FSequencerScriptingRange, ExclusiveEnd) == 0x000008, "Member 'FSequencerScriptingRange::ExclusiveEnd' has a wrong offset!");
-static_assert(offsetof(FSequencerScriptingRange, InternalRate) == 0x00000C, "Member 'FSequencerScriptingRange::InternalRate' has a wrong offset!");
+DUMPER7_ASSERTS_FSequencerScriptingRange;
 
 // ScriptStruct SequencerScripting.TodInfo
 // 0x0030 (0x0040 - 0x0010)
@@ -88,12 +84,7 @@ public:
 	ETodTrackType                                 PropertyClass;                                     // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTodInfo) == 0x000008, "Wrong alignment on FTodInfo");
-static_assert(sizeof(FTodInfo) == 0x000040, "Wrong size on FTodInfo");
-static_assert(offsetof(FTodInfo, PropertyType) == 0x000010, "Member 'FTodInfo::PropertyType' has a wrong offset!");
-static_assert(offsetof(FTodInfo, PropertyName) == 0x000018, "Member 'FTodInfo::PropertyName' has a wrong offset!");
-static_assert(offsetof(FTodInfo, PropertyPath) == 0x000028, "Member 'FTodInfo::PropertyPath' has a wrong offset!");
-static_assert(offsetof(FTodInfo, PropertyClass) == 0x000038, "Member 'FTodInfo::PropertyClass' has a wrong offset!");
+DUMPER7_ASSERTS_FTodInfo;
 
 }
 

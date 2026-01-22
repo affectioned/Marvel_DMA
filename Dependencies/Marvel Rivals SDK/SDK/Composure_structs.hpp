@@ -91,11 +91,7 @@ public:
 	TMap<class FName, struct FLinearColor>        VectorParamOverrides;                              // 0x0050(0x0050)(NativeAccessSpecifierPublic)
 	TMap<class FName, class UTexture*>            TextureParamOverrides;                             // 0x00A0(0x0050)(UObjectWrapper, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCompositingParamPayload) == 0x000008, "Wrong alignment on FCompositingParamPayload");
-static_assert(sizeof(FCompositingParamPayload) == 0x0000F0, "Wrong size on FCompositingParamPayload");
-static_assert(offsetof(FCompositingParamPayload, ScalarParamOverrides) == 0x000000, "Member 'FCompositingParamPayload::ScalarParamOverrides' has a wrong offset!");
-static_assert(offsetof(FCompositingParamPayload, VectorParamOverrides) == 0x000050, "Member 'FCompositingParamPayload::VectorParamOverrides' has a wrong offset!");
-static_assert(offsetof(FCompositingParamPayload, TextureParamOverrides) == 0x0000A0, "Member 'FCompositingParamPayload::TextureParamOverrides' has a wrong offset!");
+DUMPER7_ASSERTS_FCompositingParamPayload;
 
 // ScriptStruct Composure.NamedCompMaterialParam
 // 0x000C (0x000C - 0x0000)
@@ -104,9 +100,7 @@ struct FNamedCompMaterialParam final
 public:
 	class FName                                   ParamName;                                         // 0x0000(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNamedCompMaterialParam) == 0x000004, "Wrong alignment on FNamedCompMaterialParam");
-static_assert(sizeof(FNamedCompMaterialParam) == 0x00000C, "Wrong size on FNamedCompMaterialParam");
-static_assert(offsetof(FNamedCompMaterialParam, ParamName) == 0x000000, "Member 'FNamedCompMaterialParam::ParamName' has a wrong offset!");
+DUMPER7_ASSERTS_FNamedCompMaterialParam;
 
 // ScriptStruct Composure.CompositingMaterial
 // 0x00B8 (0x01A8 - 0x00F0)
@@ -119,12 +113,7 @@ public:
 	uint8                                         Pad_198[0x8];                                      // 0x0198(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CachedMID;                                         // 0x01A0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FCompositingMaterial) == 0x000008, "Wrong alignment on FCompositingMaterial");
-static_assert(sizeof(FCompositingMaterial) == 0x0001A8, "Wrong size on FCompositingMaterial");
-static_assert(offsetof(FCompositingMaterial, Material) == 0x0000F0, "Member 'FCompositingMaterial::Material' has a wrong offset!");
-static_assert(offsetof(FCompositingMaterial, ParamPassMappings) == 0x0000F8, "Member 'FCompositingMaterial::ParamPassMappings' has a wrong offset!");
-static_assert(offsetof(FCompositingMaterial, RequiredMaterialParams) == 0x000148, "Member 'FCompositingMaterial::RequiredMaterialParams' has a wrong offset!");
-static_assert(offsetof(FCompositingMaterial, CachedMID) == 0x0001A0, "Member 'FCompositingMaterial::CachedMID' has a wrong offset!");
+DUMPER7_ASSERTS_FCompositingMaterial;
 
 // ScriptStruct Composure.ComposurePostMoveSettings
 // 0x0028 (0x0028 - 0x0000)
@@ -136,12 +125,7 @@ public:
 	float                                         RotationAngle;                                     // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Scale;                                             // 0x0024(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FComposurePostMoveSettings) == 0x000008, "Wrong alignment on FComposurePostMoveSettings");
-static_assert(sizeof(FComposurePostMoveSettings) == 0x000028, "Wrong size on FComposurePostMoveSettings");
-static_assert(offsetof(FComposurePostMoveSettings, Pivot) == 0x000000, "Member 'FComposurePostMoveSettings::Pivot' has a wrong offset!");
-static_assert(offsetof(FComposurePostMoveSettings, Translation) == 0x000010, "Member 'FComposurePostMoveSettings::Translation' has a wrong offset!");
-static_assert(offsetof(FComposurePostMoveSettings, RotationAngle) == 0x000020, "Member 'FComposurePostMoveSettings::RotationAngle' has a wrong offset!");
-static_assert(offsetof(FComposurePostMoveSettings, Scale) == 0x000024, "Member 'FComposurePostMoveSettings::Scale' has a wrong offset!");
+DUMPER7_ASSERTS_FComposurePostMoveSettings;
 
 // ScriptStruct Composure.ComposureUVMapSettings
 // 0x0120 (0x0120 - 0x0000)
@@ -155,12 +139,7 @@ public:
 	uint8                                         bUseDisplacementBlueAndAlphaChannels : 1;          // 0x0118(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FComposureUVMapSettings) == 0x000010, "Wrong alignment on FComposureUVMapSettings");
-static_assert(sizeof(FComposureUVMapSettings) == 0x000120, "Wrong size on FComposureUVMapSettings");
-static_assert(offsetof(FComposureUVMapSettings, PreUVDisplacementMatrix) == 0x000000, "Member 'FComposureUVMapSettings::PreUVDisplacementMatrix' has a wrong offset!");
-static_assert(offsetof(FComposureUVMapSettings, PostUVDisplacementMatrix) == 0x000080, "Member 'FComposureUVMapSettings::PostUVDisplacementMatrix' has a wrong offset!");
-static_assert(offsetof(FComposureUVMapSettings, DisplacementDecodeParameters) == 0x000100, "Member 'FComposureUVMapSettings::DisplacementDecodeParameters' has a wrong offset!");
-static_assert(offsetof(FComposureUVMapSettings, DisplacementTexture) == 0x000110, "Member 'FComposureUVMapSettings::DisplacementTexture' has a wrong offset!");
+DUMPER7_ASSERTS_FComposureUVMapSettings;
 
 // ScriptStruct Composure.MovieSceneComposureExportPass
 // 0x001C (0x001C - 0x0000)
@@ -172,11 +151,7 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ExportedAs;                                        // 0x0010(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneComposureExportPass) == 0x000004, "Wrong alignment on FMovieSceneComposureExportPass");
-static_assert(sizeof(FMovieSceneComposureExportPass) == 0x00001C, "Wrong size on FMovieSceneComposureExportPass");
-static_assert(offsetof(FMovieSceneComposureExportPass, TransformPassName) == 0x000000, "Member 'FMovieSceneComposureExportPass::TransformPassName' has a wrong offset!");
-static_assert(offsetof(FMovieSceneComposureExportPass, bRenamePass) == 0x00000C, "Member 'FMovieSceneComposureExportPass::bRenamePass' has a wrong offset!");
-static_assert(offsetof(FMovieSceneComposureExportPass, ExportedAs) == 0x000010, "Member 'FMovieSceneComposureExportPass::ExportedAs' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneComposureExportPass;
 
 // ScriptStruct Composure.MovieSceneComposureExportSectionTemplate
 // 0x0020 (0x0040 - 0x0020)
@@ -186,9 +161,7 @@ public:
 	struct FMovieSceneComposureExportPass         Pass;                                              // 0x0020(0x001C)(NoDestructor, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneComposureExportSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneComposureExportSectionTemplate");
-static_assert(sizeof(FMovieSceneComposureExportSectionTemplate) == 0x000040, "Wrong size on FMovieSceneComposureExportSectionTemplate");
-static_assert(offsetof(FMovieSceneComposureExportSectionTemplate, Pass) == 0x000020, "Member 'FMovieSceneComposureExportSectionTemplate::Pass' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneComposureExportSectionTemplate;
 
 // ScriptStruct Composure.MovieSceneComposurePostMoveSettingsSectionTemplate
 // 0x0668 (0x06A8 - 0x0040)
@@ -202,13 +175,7 @@ public:
 	EMovieSceneBlendType                          BlendType;                                         // 0x06A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_6A1[0x7];                                      // 0x06A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneComposurePostMoveSettingsSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneComposurePostMoveSettingsSectionTemplate");
-static_assert(sizeof(FMovieSceneComposurePostMoveSettingsSectionTemplate) == 0x0006A8, "Wrong size on FMovieSceneComposurePostMoveSettingsSectionTemplate");
-static_assert(offsetof(FMovieSceneComposurePostMoveSettingsSectionTemplate, Pivot) == 0x000040, "Member 'FMovieSceneComposurePostMoveSettingsSectionTemplate::Pivot' has a wrong offset!");
-static_assert(offsetof(FMovieSceneComposurePostMoveSettingsSectionTemplate, Translation) == 0x000260, "Member 'FMovieSceneComposurePostMoveSettingsSectionTemplate::Translation' has a wrong offset!");
-static_assert(offsetof(FMovieSceneComposurePostMoveSettingsSectionTemplate, RotationAngle) == 0x000480, "Member 'FMovieSceneComposurePostMoveSettingsSectionTemplate::RotationAngle' has a wrong offset!");
-static_assert(offsetof(FMovieSceneComposurePostMoveSettingsSectionTemplate, Scale) == 0x000590, "Member 'FMovieSceneComposurePostMoveSettingsSectionTemplate::Scale' has a wrong offset!");
-static_assert(offsetof(FMovieSceneComposurePostMoveSettingsSectionTemplate, BlendType) == 0x0006A0, "Member 'FMovieSceneComposurePostMoveSettingsSectionTemplate::BlendType' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneComposurePostMoveSettingsSectionTemplate;
 
 }
 

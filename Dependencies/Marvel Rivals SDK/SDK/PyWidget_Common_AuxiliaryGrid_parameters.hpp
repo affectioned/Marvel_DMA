@@ -23,9 +23,7 @@ struct PyWidget_Common_AuxiliaryGrid_OnPaint final
 public:
 	struct FPaintContext                          Context;                                           // 0x0000(0x0030)(Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyWidget_Common_AuxiliaryGrid_OnPaint) == 0x000008, "Wrong alignment on PyWidget_Common_AuxiliaryGrid_OnPaint");
-static_assert(sizeof(PyWidget_Common_AuxiliaryGrid_OnPaint) == 0x000030, "Wrong size on PyWidget_Common_AuxiliaryGrid_OnPaint");
-static_assert(offsetof(PyWidget_Common_AuxiliaryGrid_OnPaint, Context) == 0x000000, "Member 'PyWidget_Common_AuxiliaryGrid_OnPaint::Context' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_AuxiliaryGrid_OnPaint;
 
 }
 

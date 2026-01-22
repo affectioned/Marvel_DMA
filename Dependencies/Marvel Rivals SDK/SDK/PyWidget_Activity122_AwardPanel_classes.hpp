@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity122_AwardPanel.PyWidget_Activity122_AwardPanel_TurnPageLogic
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Activity122_AwardPanel_TurnPageLogic : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -26,18 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_AwardPanel_TurnPageLogic">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_AwardPanel_TurnPageLogic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_AwardPanel_TurnPageLogic")
 	}
 	static class UPyWidget_Activity122_AwardPanel_TurnPageLogic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_AwardPanel_TurnPageLogic>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_AwardPanel_TurnPageLogic) == 0x000008, "Wrong alignment on UPyWidget_Activity122_AwardPanel_TurnPageLogic");
-static_assert(sizeof(UPyWidget_Activity122_AwardPanel_TurnPageLogic) == 0x0005F8, "Wrong size on UPyWidget_Activity122_AwardPanel_TurnPageLogic");
+DUMPER7_ASSERTS_UPyWidget_Activity122_AwardPanel_TurnPageLogic;
 
 // PythonClass PyWidget_Activity122_AwardPanel.PyWidget_Activity122_AwardPanel_DataProcess
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Activity122_AwardPanel_DataProcess : public UPyWidget_Activity122_AwardPanel_TurnPageLogic
 {
 public:
@@ -46,25 +49,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_AwardPanel_DataProcess">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_AwardPanel_DataProcess")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_AwardPanel_DataProcess")
 	}
 	static class UPyWidget_Activity122_AwardPanel_DataProcess* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_AwardPanel_DataProcess>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_AwardPanel_DataProcess) == 0x000008, "Wrong alignment on UPyWidget_Activity122_AwardPanel_DataProcess");
-static_assert(sizeof(UPyWidget_Activity122_AwardPanel_DataProcess) == 0x0005F8, "Wrong size on UPyWidget_Activity122_AwardPanel_DataProcess");
+DUMPER7_ASSERTS_UPyWidget_Activity122_AwardPanel_DataProcess;
 
 // PythonClass PyWidget_Activity122_AwardPanel.PyWidget_Activity122_AwardPanel
-// 0x0020 (0x0618 - 0x05F8)
+// 0x0020 (0x0620 - 0x0600)
 class UPyWidget_Activity122_AwardPanel final : public UPyWidget_Activity122_AwardPanel_DataProcess
 {
 public:
-	TSubclassOf<class UUserWidget>                Row_Item_With_2_Cards;                             // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                Row_Item_With_4_Cards;                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SelectHeroIcon_Normal;                             // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SelectHeroIcon_Selected;                           // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                Row_Item_With_2_Cards;                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                Row_Item_With_4_Cards;                             // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SelectHeroIcon_Normal;                             // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SelectHeroIcon_Selected;                           // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -74,19 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_AwardPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_AwardPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_AwardPanel")
 	}
 	static class UPyWidget_Activity122_AwardPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_AwardPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_AwardPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity122_AwardPanel");
-static_assert(sizeof(UPyWidget_Activity122_AwardPanel) == 0x000618, "Wrong size on UPyWidget_Activity122_AwardPanel");
-static_assert(offsetof(UPyWidget_Activity122_AwardPanel, Row_Item_With_2_Cards) == 0x0005F8, "Member 'UPyWidget_Activity122_AwardPanel::Row_Item_With_2_Cards' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_AwardPanel, Row_Item_With_4_Cards) == 0x000600, "Member 'UPyWidget_Activity122_AwardPanel::Row_Item_With_4_Cards' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_AwardPanel, SelectHeroIcon_Normal) == 0x000608, "Member 'UPyWidget_Activity122_AwardPanel::SelectHeroIcon_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_AwardPanel, SelectHeroIcon_Selected) == 0x000610, "Member 'UPyWidget_Activity122_AwardPanel::SelectHeroIcon_Selected' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity122_AwardPanel;
 
 }
 

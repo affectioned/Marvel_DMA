@@ -17,33 +17,34 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CharacterInfo.WBP_CharacterInfo_C
-// 0x0030 (0x1B50 - 0x1B20)
+// 0x0040 (0x2420 - 0x23E0)
 class UWBP_CharacterInfo_C final : public UPyWidget3D_CharacterInfo
 {
 public:
-	class UCanvasPanel*                           CanvasPanel_0;                                     // 0x1B20(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_PlayerName;                                   // 0x1B28(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULazyWidget*                            Lazy_DutyIcon;                                     // 0x1B30(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         MarvelOverlay_0;                                   // 0x1B38(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           PlayerInfo;                                        // 0x1B40(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel_0;                                     // 0x23E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_PlayerName;                                   // 0x23E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_Right;                                        // 0x23F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_DutyIcon;                                     // 0x23F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         MarvelOverlay_0;                                   // 0x2400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           PlayerInfo;                                        // 0x2408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Left;                                      // 0x2410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Right;                                     // 0x2418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CharacterInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CharacterInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CharacterInfo_C")
 	}
 	static class UWBP_CharacterInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CharacterInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_CharacterInfo_C) == 0x000010, "Wrong alignment on UWBP_CharacterInfo_C");
-static_assert(sizeof(UWBP_CharacterInfo_C) == 0x001B50, "Wrong size on UWBP_CharacterInfo_C");
-static_assert(offsetof(UWBP_CharacterInfo_C, CanvasPanel_0) == 0x001B20, "Member 'UWBP_CharacterInfo_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterInfo_C, HBox_PlayerName) == 0x001B28, "Member 'UWBP_CharacterInfo_C::HBox_PlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterInfo_C, Lazy_DutyIcon) == 0x001B30, "Member 'UWBP_CharacterInfo_C::Lazy_DutyIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterInfo_C, MarvelOverlay_0) == 0x001B38, "Member 'UWBP_CharacterInfo_C::MarvelOverlay_0' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterInfo_C, PlayerInfo) == 0x001B40, "Member 'UWBP_CharacterInfo_C::PlayerInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CharacterInfo_C;
 
 }
 

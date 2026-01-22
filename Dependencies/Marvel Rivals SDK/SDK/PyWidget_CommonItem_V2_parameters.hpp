@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
-#include "python_enums_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "python_enums_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 
@@ -27,9 +27,7 @@ struct PyWidget_CommonItem_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_CommonItem_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_CommonItem_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_CommonItem_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_CommonItem_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_CommonItem_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -38,9 +36,16 @@ struct PyWidget_CommonItem_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsHover");
-static_assert(sizeof(PyWidget_CommonItem_SetIsHover) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsHover");
-static_assert(offsetof(PyWidget_CommonItem_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsHover;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_OnItemSelectionChanged;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.OnFocusReceived
 // 0x0100 (0x0100 - 0x0000)
@@ -51,11 +56,7 @@ public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(Parm, NoDestructor)
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00C0)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_CommonItem_OnFocusReceived) == 0x000008, "Wrong alignment on PyWidget_CommonItem_OnFocusReceived");
-static_assert(sizeof(PyWidget_CommonItem_OnFocusReceived) == 0x000100, "Wrong size on PyWidget_CommonItem_OnFocusReceived");
-static_assert(offsetof(PyWidget_CommonItem_OnFocusReceived, MyGeometry) == 0x000000, "Member 'PyWidget_CommonItem_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'PyWidget_CommonItem_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_OnFocusReceived, ReturnValue) == 0x000040, "Member 'PyWidget_CommonItem_OnFocusReceived::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_OnFocusReceived;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsFocusable
 // 0x0001 (0x0001 - 0x0000)
@@ -64,9 +65,7 @@ struct PyWidget_CommonItem_SetIsFocusable final
 public:
 	bool                                          IsFocusable;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetIsFocusable) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsFocusable");
-static_assert(sizeof(PyWidget_CommonItem_SetIsFocusable) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsFocusable");
-static_assert(offsetof(PyWidget_CommonItem_SetIsFocusable, IsFocusable) == 0x000000, "Member 'PyWidget_CommonItem_SetIsFocusable::IsFocusable' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsFocusable;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -75,9 +74,7 @@ struct PyWidget_CommonItem_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_CommonItem_OnAnimationFinished");
-static_assert(sizeof(PyWidget_CommonItem_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_CommonItem_OnAnimationFinished");
-static_assert(offsetof(PyWidget_CommonItem_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_CommonItem_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_OnAnimationFinished;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemObject
 // 0x0008 (0x0008 - 0x0000)
@@ -86,20 +83,7 @@ struct PyWidget_CommonItem_SetItemObject final
 public:
 	class UObject*                                ItemObject_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetItemObject) == 0x000008, "Wrong alignment on PyWidget_CommonItem_SetItemObject");
-static_assert(sizeof(PyWidget_CommonItem_SetItemObject) == 0x000008, "Wrong size on PyWidget_CommonItem_SetItemObject");
-static_assert(offsetof(PyWidget_CommonItem_SetItemObject, ItemObject_0) == 0x000000, "Member 'PyWidget_CommonItem_SetItemObject::ItemObject_0' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.OnItemSelectionChanged
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_OnItemSelectionChanged final
-{
-public:
-	bool                                          bIsSelected;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_OnItemSelectionChanged) == 0x000001, "Wrong alignment on PyWidget_CommonItem_OnItemSelectionChanged");
-static_assert(sizeof(PyWidget_CommonItem_OnItemSelectionChanged) == 0x000001, "Wrong size on PyWidget_CommonItem_OnItemSelectionChanged");
-static_assert(offsetof(PyWidget_CommonItem_OnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'PyWidget_CommonItem_OnItemSelectionChanged::bIsSelected' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetItemObject;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemData
 // 0x0030 (0x0030 - 0x0000)
@@ -116,15 +100,7 @@ public:
 	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ItemUID;                                           // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetItemData) == 0x000008, "Wrong alignment on PyWidget_CommonItem_SetItemData");
-static_assert(sizeof(PyWidget_CommonItem_SetItemData) == 0x000030, "Wrong size on PyWidget_CommonItem_SetItemData");
-static_assert(offsetof(PyWidget_CommonItem_SetItemData, ItemID_0) == 0x000000, "Member 'PyWidget_CommonItem_SetItemData::ItemID_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_SetItemData, ItemType_0) == 0x000010, "Member 'PyWidget_CommonItem_SetItemData::ItemType_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_SetItemData, ItemNum_0) == 0x000014, "Member 'PyWidget_CommonItem_SetItemData::ItemNum_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_SetItemData, Multiple) == 0x000018, "Member 'PyWidget_CommonItem_SetItemData::Multiple' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_SetItemData, Small) == 0x00001C, "Member 'PyWidget_CommonItem_SetItemData::Small' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_SetItemData, DisableDynamic) == 0x00001D, "Member 'PyWidget_CommonItem_SetItemData::DisableDynamic' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_SetItemData, ItemUID) == 0x000020, "Member 'PyWidget_CommonItem_SetItemData::ItemUID' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetItemData;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetConvertNum
 // 0x0020 (0x0020 - 0x0000)
@@ -136,11 +112,16 @@ public:
 	class FString                                 CurrencyID;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Small;                                             // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetConvertNum) == 0x000008, "Wrong alignment on PyWidget_CommonItem_SetConvertNum");
-static_assert(sizeof(PyWidget_CommonItem_SetConvertNum) == 0x000020, "Wrong size on PyWidget_CommonItem_SetConvertNum");
-static_assert(offsetof(PyWidget_CommonItem_SetConvertNum, ConvertNum) == 0x000000, "Member 'PyWidget_CommonItem_SetConvertNum::ConvertNum' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_SetConvertNum, CurrencyID) == 0x000008, "Member 'PyWidget_CommonItem_SetConvertNum::CurrencyID' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_SetConvertNum, Small) == 0x000018, "Member 'PyWidget_CommonItem_SetConvertNum::Small' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetConvertNum;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsNeedTips
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_SetIsNeedTips final
+{
+public:
+	bool                                          IsNeedTips_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsNeedTips;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemName
 // 0x0018 (0x0018 - 0x0000)
@@ -149,9 +130,7 @@ struct PyWidget_CommonItem_SetItemName final
 public:
 	class FText                                   ItemName_0;                                        // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_CommonItem_SetItemName) == 0x000008, "Wrong alignment on PyWidget_CommonItem_SetItemName");
-static_assert(sizeof(PyWidget_CommonItem_SetItemName) == 0x000018, "Wrong size on PyWidget_CommonItem_SetItemName");
-static_assert(offsetof(PyWidget_CommonItem_SetItemName, ItemName_0) == 0x000000, "Member 'PyWidget_CommonItem_SetItemName::ItemName_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetItemName;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsNameVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -160,9 +139,7 @@ struct PyWidget_CommonItem_SetIsNameVisible final
 public:
 	bool                                          IsNameVisible_0;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetIsNameVisible) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsNameVisible");
-static_assert(sizeof(PyWidget_CommonItem_SetIsNameVisible) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsNameVisible");
-static_assert(offsetof(PyWidget_CommonItem_SetIsNameVisible, IsNameVisible_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsNameVisible::IsNameVisible_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsNameVisible;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemIcon
 // 0x0038 (0x0038 - 0x0000)
@@ -172,23 +149,7 @@ public:
 	class UTexture2D*                             Img_Icon;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>              Image_Icon_Soft;                                   // 0x0008(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetItemIcon) == 0x000008, "Wrong alignment on PyWidget_CommonItem_SetItemIcon");
-static_assert(sizeof(PyWidget_CommonItem_SetItemIcon) == 0x000038, "Wrong size on PyWidget_CommonItem_SetItemIcon");
-static_assert(offsetof(PyWidget_CommonItem_SetItemIcon, Img_Icon) == 0x000000, "Member 'PyWidget_CommonItem_SetItemIcon::Img_Icon' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_SetItemIcon, Image_Icon_Soft) == 0x000008, "Member 'PyWidget_CommonItem_SetItemIcon::Image_Icon_Soft' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemDynamicIcon
-// 0x0020 (0x0020 - 0x0000)
-struct PyWidget_CommonItem_SetItemDynamicIcon final
-{
-public:
-	class FString                                 AtlasPath;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 SkeletonPath;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetItemDynamicIcon) == 0x000008, "Wrong alignment on PyWidget_CommonItem_SetItemDynamicIcon");
-static_assert(sizeof(PyWidget_CommonItem_SetItemDynamicIcon) == 0x000020, "Wrong size on PyWidget_CommonItem_SetItemDynamicIcon");
-static_assert(offsetof(PyWidget_CommonItem_SetItemDynamicIcon, AtlasPath) == 0x000000, "Member 'PyWidget_CommonItem_SetItemDynamicIcon::AtlasPath' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_SetItemDynamicIcon, SkeletonPath) == 0x000010, "Member 'PyWidget_CommonItem_SetItemDynamicIcon::SkeletonPath' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetItemIcon;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemIconQuality
 // 0x0001 (0x0001 - 0x0000)
@@ -197,9 +158,116 @@ struct PyWidget_CommonItem_SetItemIconQuality final
 public:
 	EItemQualityType                              ItemQuality;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetItemIconQuality) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetItemIconQuality");
-static_assert(sizeof(PyWidget_CommonItem_SetItemIconQuality) == 0x000001, "Wrong size on PyWidget_CommonItem_SetItemIconQuality");
-static_assert(offsetof(PyWidget_CommonItem_SetItemIconQuality, ItemQuality) == 0x000000, "Member 'PyWidget_CommonItem_SetItemIconQuality::ItemQuality' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetItemIconQuality;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsEmpty
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_SetIsEmpty final
+{
+public:
+	bool                                          IsEmpty_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsEmpty;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsNeedClick
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_SetIsNeedClick final
+{
+public:
+	bool                                          IsNeedClick_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsNeedClick;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsSelected
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_SetIsSelected final
+{
+public:
+	bool                                          IsSelected_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsSelected;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsSelectedImmediately
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_SetIsSelectedImmediately final
+{
+public:
+	bool                                          IsSelected_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsSelectedImmediately;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsGot
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_SetIsGot final
+{
+public:
+	bool                                          IsGot_0;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsGot;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsActivity
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_SetIsActivity final
+{
+public:
+	bool                                          IsActivity;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsActivity;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsLocked
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_SetIsLocked final
+{
+public:
+	bool                                          IsLocked_0;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsLocked;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsEquipped
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_SetIsEquipped final
+{
+public:
+	bool                                          IsEquipped_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsEquipped;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsPreviewing
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_SetIsPreviewing final
+{
+public:
+	bool                                          IsPreviewing_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsPreviewing;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemSize
+// 0x0010 (0x0010 - 0x0000)
+struct PyWidget_CommonItem_SetItemSize final
+{
+public:
+	struct FVector2D                              ItemSize_0;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetItemSize;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsOverlay
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_CommonItem_SetIsOverlay final
+{
+public:
+	bool                                          IsOverlay;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsOverlay;
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemTag
+// 0x0028 (0x0028 - 0x0000)
+struct PyWidget_CommonItem_SetItemTag final
+{
+public:
+	class FText                                   Content;                                           // 0x0000(0x0018)(Parm)
+	class FString                                 Color;                                             // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetItemTag;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemNum
 // 0x0008 (0x0008 - 0x0000)
@@ -209,10 +277,7 @@ public:
 	int32                                         ItemNum_0;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Multiple;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetItemNum) == 0x000004, "Wrong alignment on PyWidget_CommonItem_SetItemNum");
-static_assert(sizeof(PyWidget_CommonItem_SetItemNum) == 0x000008, "Wrong size on PyWidget_CommonItem_SetItemNum");
-static_assert(offsetof(PyWidget_CommonItem_SetItemNum, ItemNum_0) == 0x000000, "Member 'PyWidget_CommonItem_SetItemNum::ItemNum_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_SetItemNum, Multiple) == 0x000004, "Member 'PyWidget_CommonItem_SetItemNum::Multiple' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetItemNum;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsNumVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -221,75 +286,7 @@ struct PyWidget_CommonItem_SetIsNumVisible final
 public:
 	bool                                          IsNumVisible;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetIsNumVisible) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsNumVisible");
-static_assert(sizeof(PyWidget_CommonItem_SetIsNumVisible) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsNumVisible");
-static_assert(offsetof(PyWidget_CommonItem_SetIsNumVisible, IsNumVisible) == 0x000000, "Member 'PyWidget_CommonItem_SetIsNumVisible::IsNumVisible' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsEmpty
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_SetIsEmpty final
-{
-public:
-	bool                                          IsEmpty_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetIsEmpty) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsEmpty");
-static_assert(sizeof(PyWidget_CommonItem_SetIsEmpty) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsEmpty");
-static_assert(offsetof(PyWidget_CommonItem_SetIsEmpty, IsEmpty_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsEmpty::IsEmpty_0' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsNeedClick
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_SetIsNeedClick final
-{
-public:
-	bool                                          IsNeedClick_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetIsNeedClick) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsNeedClick");
-static_assert(sizeof(PyWidget_CommonItem_SetIsNeedClick) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsNeedClick");
-static_assert(offsetof(PyWidget_CommonItem_SetIsNeedClick, IsNeedClick_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsNeedClick::IsNeedClick_0' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsNeedTips
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_SetIsNeedTips final
-{
-public:
-	bool                                          IsNeedTips_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetIsNeedTips) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsNeedTips");
-static_assert(sizeof(PyWidget_CommonItem_SetIsNeedTips) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsNeedTips");
-static_assert(offsetof(PyWidget_CommonItem_SetIsNeedTips, IsNeedTips_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsNeedTips::IsNeedTips_0' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsSelected
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_SetIsSelected final
-{
-public:
-	bool                                          IsSelected_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetIsSelected) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsSelected");
-static_assert(sizeof(PyWidget_CommonItem_SetIsSelected) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsSelected");
-static_assert(offsetof(PyWidget_CommonItem_SetIsSelected, IsSelected_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsSelected::IsSelected_0' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsSelectedImmediately
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_SetIsSelectedImmediately final
-{
-public:
-	bool                                          IsSelected_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetIsSelectedImmediately) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsSelectedImmediately");
-static_assert(sizeof(PyWidget_CommonItem_SetIsSelectedImmediately) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsSelectedImmediately");
-static_assert(offsetof(PyWidget_CommonItem_SetIsSelectedImmediately, IsSelected_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsSelectedImmediately::IsSelected_0' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsGot
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_SetIsGot final
-{
-public:
-	bool                                          IsGot_0;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetIsGot) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsGot");
-static_assert(sizeof(PyWidget_CommonItem_SetIsGot) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsGot");
-static_assert(offsetof(PyWidget_CommonItem_SetIsGot, IsGot_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsGot::IsGot_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsNumVisible;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsExpire
 // 0x0001 (0x0001 - 0x0000)
@@ -298,20 +295,7 @@ struct PyWidget_CommonItem_SetIsExpire final
 public:
 	bool                                          IsExpire_0;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetIsExpire) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsExpire");
-static_assert(sizeof(PyWidget_CommonItem_SetIsExpire) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsExpire");
-static_assert(offsetof(PyWidget_CommonItem_SetIsExpire, IsExpire_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsExpire::IsExpire_0' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsActivity
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_SetIsActivity final
-{
-public:
-	bool                                          IsActivity;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetIsActivity) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsActivity");
-static_assert(sizeof(PyWidget_CommonItem_SetIsActivity) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsActivity");
-static_assert(offsetof(PyWidget_CommonItem_SetIsActivity, IsActivity) == 0x000000, "Member 'PyWidget_CommonItem_SetIsActivity::IsActivity' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsExpire;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsLimitTime
 // 0x0001 (0x0001 - 0x0000)
@@ -320,9 +304,7 @@ struct PyWidget_CommonItem_SetIsLimitTime final
 public:
 	bool                                          IsLimitTime_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetIsLimitTime) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsLimitTime");
-static_assert(sizeof(PyWidget_CommonItem_SetIsLimitTime) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsLimitTime");
-static_assert(offsetof(PyWidget_CommonItem_SetIsLimitTime, IsLimitTime_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsLimitTime::IsLimitTime_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsLimitTime;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetTimeColorState
 // 0x0001 (0x0001 - 0x0000)
@@ -331,64 +313,17 @@ struct PyWidget_CommonItem_SetTimeColorState final
 public:
 	EItemTimeColorState                           time_color_state;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetTimeColorState) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetTimeColorState");
-static_assert(sizeof(PyWidget_CommonItem_SetTimeColorState) == 0x000001, "Wrong size on PyWidget_CommonItem_SetTimeColorState");
-static_assert(offsetof(PyWidget_CommonItem_SetTimeColorState, time_color_state) == 0x000000, "Member 'PyWidget_CommonItem_SetTimeColorState::time_color_state' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetTimeColorState;
 
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsLocked
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_SetIsLocked final
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemSpineIcon
+// 0x0020 (0x0020 - 0x0000)
+struct PyWidget_CommonItem_SetItemSpineIcon final
 {
 public:
-	bool                                          IsLocked_0;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 AtlasPath;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 SkeletonPath;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetIsLocked) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsLocked");
-static_assert(sizeof(PyWidget_CommonItem_SetIsLocked) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsLocked");
-static_assert(offsetof(PyWidget_CommonItem_SetIsLocked, IsLocked_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsLocked::IsLocked_0' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsEquipped
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_SetIsEquipped final
-{
-public:
-	bool                                          IsEquipped_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetIsEquipped) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsEquipped");
-static_assert(sizeof(PyWidget_CommonItem_SetIsEquipped) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsEquipped");
-static_assert(offsetof(PyWidget_CommonItem_SetIsEquipped, IsEquipped_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsEquipped::IsEquipped_0' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsPreviewing
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_SetIsPreviewing final
-{
-public:
-	bool                                          IsPreviewing_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetIsPreviewing) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsPreviewing");
-static_assert(sizeof(PyWidget_CommonItem_SetIsPreviewing) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsPreviewing");
-static_assert(offsetof(PyWidget_CommonItem_SetIsPreviewing, IsPreviewing_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsPreviewing::IsPreviewing_0' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemSize
-// 0x0010 (0x0010 - 0x0000)
-struct PyWidget_CommonItem_SetItemSize final
-{
-public:
-	struct FVector2D                              ItemSize_0;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetItemSize) == 0x000008, "Wrong alignment on PyWidget_CommonItem_SetItemSize");
-static_assert(sizeof(PyWidget_CommonItem_SetItemSize) == 0x000010, "Wrong size on PyWidget_CommonItem_SetItemSize");
-static_assert(offsetof(PyWidget_CommonItem_SetItemSize, ItemSize_0) == 0x000000, "Member 'PyWidget_CommonItem_SetItemSize::ItemSize_0' has a wrong offset!");
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsOverlay
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_CommonItem_SetIsOverlay final
-{
-public:
-	bool                                          IsOverlay;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_CommonItem_SetIsOverlay) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsOverlay");
-static_assert(sizeof(PyWidget_CommonItem_SetIsOverlay) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsOverlay");
-static_assert(offsetof(PyWidget_CommonItem_SetIsOverlay, IsOverlay) == 0x000000, "Member 'PyWidget_CommonItem_SetIsOverlay::IsOverlay' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetItemSpineIcon;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsNewReddotType
 // 0x0001 (0x0001 - 0x0000)
@@ -397,9 +332,7 @@ struct PyWidget_CommonItem_SetIsNewReddotType final
 public:
 	bool                                          IsNewReddotType;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetIsNewReddotType) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsNewReddotType");
-static_assert(sizeof(PyWidget_CommonItem_SetIsNewReddotType) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsNewReddotType");
-static_assert(offsetof(PyWidget_CommonItem_SetIsNewReddotType, IsNewReddotType) == 0x000000, "Member 'PyWidget_CommonItem_SetIsNewReddotType::IsNewReddotType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsNewReddotType;
 
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsShowRed
 // 0x0001 (0x0001 - 0x0000)
@@ -408,9 +341,7 @@ struct PyWidget_CommonItem_SetIsShowRed final
 public:
 	bool                                          IsShowRed_0;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_SetIsShowRed) == 0x000001, "Wrong alignment on PyWidget_CommonItem_SetIsShowRed");
-static_assert(sizeof(PyWidget_CommonItem_SetIsShowRed) == 0x000001, "Wrong size on PyWidget_CommonItem_SetIsShowRed");
-static_assert(offsetof(PyWidget_CommonItem_SetIsShowRed, IsShowRed_0) == 0x000000, "Member 'PyWidget_CommonItem_SetIsShowRed::IsShowRed_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_SetIsShowRed;
 
 }
 

@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_SliderNumber_btn_navigation_rule_custom) == 0x000008, "Wrong alignment on PyWidget_Common_SliderNumber_btn_navigation_rule_custom");
-static_assert(sizeof(PyWidget_Common_SliderNumber_btn_navigation_rule_custom) == 0x000010, "Wrong size on PyWidget_Common_SliderNumber_btn_navigation_rule_custom");
-static_assert(offsetof(PyWidget_Common_SliderNumber_btn_navigation_rule_custom, NavType) == 0x000000, "Member 'PyWidget_Common_SliderNumber_btn_navigation_rule_custom::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_SliderNumber_btn_navigation_rule_custom, ReturnValue) == 0x000008, "Member 'PyWidget_Common_SliderNumber_btn_navigation_rule_custom::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_SliderNumber_btn_navigation_rule_custom;
 
 // PythonFunction PyWidget_Common_SliderNumber.PyWidget_Common_SliderNumber.OnMouseEnter
 // 0x00B8 (0x00B8 - 0x0000)
@@ -38,10 +35,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_Common_SliderNumber_OnMouseEnter) == 0x000008, "Wrong alignment on PyWidget_Common_SliderNumber_OnMouseEnter");
-static_assert(sizeof(PyWidget_Common_SliderNumber_OnMouseEnter) == 0x0000B8, "Wrong size on PyWidget_Common_SliderNumber_OnMouseEnter");
-static_assert(offsetof(PyWidget_Common_SliderNumber_OnMouseEnter, MyGeometry) == 0x000000, "Member 'PyWidget_Common_SliderNumber_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_SliderNumber_OnMouseEnter, MouseEvent) == 0x000038, "Member 'PyWidget_Common_SliderNumber_OnMouseEnter::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_SliderNumber_OnMouseEnter;
 
 // PythonFunction PyWidget_Common_SliderNumber.PyWidget_Common_SliderNumber.OnMouseLeave
 // 0x0080 (0x0080 - 0x0000)
@@ -50,9 +44,7 @@ struct PyWidget_Common_SliderNumber_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_Common_SliderNumber_OnMouseLeave) == 0x000008, "Wrong alignment on PyWidget_Common_SliderNumber_OnMouseLeave");
-static_assert(sizeof(PyWidget_Common_SliderNumber_OnMouseLeave) == 0x000080, "Wrong size on PyWidget_Common_SliderNumber_OnMouseLeave");
-static_assert(offsetof(PyWidget_Common_SliderNumber_OnMouseLeave, MouseEvent) == 0x000000, "Member 'PyWidget_Common_SliderNumber_OnMouseLeave::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_SliderNumber_OnMouseLeave;
 
 }
 

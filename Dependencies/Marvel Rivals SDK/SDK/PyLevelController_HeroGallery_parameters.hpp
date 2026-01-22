@@ -23,9 +23,7 @@ struct PyLevelController_HeroDetail_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelController_HeroDetail_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelController_HeroDetail_ReceiveEndPlay");
-static_assert(sizeof(PyLevelController_HeroDetail_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelController_HeroDetail_ReceiveEndPlay");
-static_assert(offsetof(PyLevelController_HeroDetail_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelController_HeroDetail_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelController_HeroDetail_ReceiveEndPlay;
 
 // PythonFunction PyLevelController_HeroGallery.PyLevelController_HeroDetail.LoadCharacterMI
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyLevelController_HeroDetail_LoadCharacterMI final
 public:
 	class UObject*                                LevelComponentMI;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelController_HeroDetail_LoadCharacterMI) == 0x000008, "Wrong alignment on PyLevelController_HeroDetail_LoadCharacterMI");
-static_assert(sizeof(PyLevelController_HeroDetail_LoadCharacterMI) == 0x000008, "Wrong size on PyLevelController_HeroDetail_LoadCharacterMI");
-static_assert(offsetof(PyLevelController_HeroDetail_LoadCharacterMI, LevelComponentMI) == 0x000000, "Member 'PyLevelController_HeroDetail_LoadCharacterMI::LevelComponentMI' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelController_HeroDetail_LoadCharacterMI;
 
 // PythonFunction PyLevelController_HeroGallery.PyLevelController_HeroDetail.LoadCharacterBGMI
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +41,7 @@ struct PyLevelController_HeroDetail_LoadCharacterBGMI final
 public:
 	class UObject*                                LevelComponentMI;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelController_HeroDetail_LoadCharacterBGMI) == 0x000008, "Wrong alignment on PyLevelController_HeroDetail_LoadCharacterBGMI");
-static_assert(sizeof(PyLevelController_HeroDetail_LoadCharacterBGMI) == 0x000008, "Wrong size on PyLevelController_HeroDetail_LoadCharacterBGMI");
-static_assert(offsetof(PyLevelController_HeroDetail_LoadCharacterBGMI, LevelComponentMI) == 0x000000, "Member 'PyLevelController_HeroDetail_LoadCharacterBGMI::LevelComponentMI' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelController_HeroDetail_LoadCharacterBGMI;
 
 // PythonFunction PyLevelController_HeroGallery.PyLevelController_HeroDetail.LoadColorOffsetMI
 // 0x0008 (0x0008 - 0x0000)
@@ -56,9 +50,7 @@ struct PyLevelController_HeroDetail_LoadColorOffsetMI final
 public:
 	class UObject*                                LevelComponentMI;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelController_HeroDetail_LoadColorOffsetMI) == 0x000008, "Wrong alignment on PyLevelController_HeroDetail_LoadColorOffsetMI");
-static_assert(sizeof(PyLevelController_HeroDetail_LoadColorOffsetMI) == 0x000008, "Wrong size on PyLevelController_HeroDetail_LoadColorOffsetMI");
-static_assert(offsetof(PyLevelController_HeroDetail_LoadColorOffsetMI, LevelComponentMI) == 0x000000, "Member 'PyLevelController_HeroDetail_LoadColorOffsetMI::LevelComponentMI' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelController_HeroDetail_LoadColorOffsetMI;
 
 // PythonFunction PyLevelController_HeroGallery.PyLevelController_HeroDetail.LoadCrystalMI
 // 0x0008 (0x0008 - 0x0000)
@@ -67,9 +59,7 @@ struct PyLevelController_HeroDetail_LoadCrystalMI final
 public:
 	class UObject*                                LevelComponentMI;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelController_HeroDetail_LoadCrystalMI) == 0x000008, "Wrong alignment on PyLevelController_HeroDetail_LoadCrystalMI");
-static_assert(sizeof(PyLevelController_HeroDetail_LoadCrystalMI) == 0x000008, "Wrong size on PyLevelController_HeroDetail_LoadCrystalMI");
-static_assert(offsetof(PyLevelController_HeroDetail_LoadCrystalMI, LevelComponentMI) == 0x000000, "Member 'PyLevelController_HeroDetail_LoadCrystalMI::LevelComponentMI' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelController_HeroDetail_LoadCrystalMI;
 
 // PythonFunction PyLevelController_HeroGallery.PyLevelController_HeroDetail.LoadBackBGMI
 // 0x0008 (0x0008 - 0x0000)
@@ -78,9 +68,7 @@ struct PyLevelController_HeroDetail_LoadBackBGMI final
 public:
 	class UObject*                                LevelComponentMI;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelController_HeroDetail_LoadBackBGMI) == 0x000008, "Wrong alignment on PyLevelController_HeroDetail_LoadBackBGMI");
-static_assert(sizeof(PyLevelController_HeroDetail_LoadBackBGMI) == 0x000008, "Wrong size on PyLevelController_HeroDetail_LoadBackBGMI");
-static_assert(offsetof(PyLevelController_HeroDetail_LoadBackBGMI, LevelComponentMI) == 0x000000, "Member 'PyLevelController_HeroDetail_LoadBackBGMI::LevelComponentMI' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelController_HeroDetail_LoadBackBGMI;
 
 }
 

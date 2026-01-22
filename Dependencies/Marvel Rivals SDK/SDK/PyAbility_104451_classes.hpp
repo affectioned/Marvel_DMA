@@ -20,34 +20,36 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104451.PyConfig_104451
-// 0x0008 (0x0C80 - 0x0C78)
+// 0x0008 (0x0FA0 - 0x0F98)
 class UPyConfig_104451 final : public UConfig_104451
 {
 public:
-	int32                                         DecelerateBuffID;                                  // 0x0C78(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DecelerateBuffID;                                  // 0x0F98(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104451">();
+		STATIC_CLASS_IMPL("PyConfig_104451")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104451")
 	}
 	static class UPyConfig_104451* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104451>();
 	}
 };
-static_assert(alignof(UPyConfig_104451) == 0x000008, "Wrong alignment on UPyConfig_104451");
-static_assert(sizeof(UPyConfig_104451) == 0x000C80, "Wrong size on UPyConfig_104451");
-static_assert(offsetof(UPyConfig_104451, DecelerateBuffID) == 0x000C78, "Member 'UPyConfig_104451::DecelerateBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104451;
 
 // PythonClass PyAbility_104451.PyAbility_104451
-// 0x0018 (0x2A60 - 0x2A48)
+// 0x0018 (0x2AB0 - 0x2A98)
 class UPyAbility_104451 : public UAbility_104451
 {
 public:
-	EAbilityStage_104451                          AbilityStage;                                      // 0x2A48(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A49[0x7];                                     // 0x2A49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(EAbilityStage_104451 Stage)> OnUltimateStageChangeDelegate;        // 0x2A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	EAbilityStage_104451                          AbilityStage;                                      // 0x2A98(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A99[0x7];                                     // 0x2A99(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(EAbilityStage_104451 Stage)> OnUltimateStageChangeDelegate;        // 0x2AA0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -69,27 +71,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104451">();
+		STATIC_CLASS_IMPL("PyAbility_104451")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104451")
 	}
 	static class UPyAbility_104451* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104451>();
 	}
 };
-static_assert(alignof(UPyAbility_104451) == 0x000008, "Wrong alignment on UPyAbility_104451");
-static_assert(sizeof(UPyAbility_104451) == 0x002A60, "Wrong size on UPyAbility_104451");
-static_assert(offsetof(UPyAbility_104451, AbilityStage) == 0x002A48, "Member 'UPyAbility_104451::AbilityStage' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104451, OnUltimateStageChangeDelegate) == 0x002A50, "Member 'UPyAbility_104451::OnUltimateStageChangeDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104451;
 
 // PythonClass PyAbility_104451.PyCue_Ability_Loop_10445101
-// 0x0030 (0x11E0 - 0x11B0)
+// 0x0030 (0x11F0 - 0x11C0)
 class APyCue_Ability_Loop_10445101 final : public AMarvelCueNotify_Ability
 {
 public:
-	int32                                         CancelAudioID;                                     // 0x11B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11B4[0x4];                                     // 0x11B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnReleasingStageDelegate;                          // 0x11B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnDashEndStageDelegate;                            // 0x11C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         CancelAudioID;                                     // 0x11C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11C4[0x4];                                     // 0x11C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnReleasingStageDelegate;                          // 0x11C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDashEndStageDelegate;                            // 0x11D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -99,18 +102,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10445101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10445101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10445101")
 	}
 	static class APyCue_Ability_Loop_10445101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10445101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10445101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10445101");
-static_assert(sizeof(APyCue_Ability_Loop_10445101) == 0x0011E0, "Wrong size on APyCue_Ability_Loop_10445101");
-static_assert(offsetof(APyCue_Ability_Loop_10445101, CancelAudioID) == 0x0011B0, "Member 'APyCue_Ability_Loop_10445101::CancelAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10445101, OnReleasingStageDelegate) == 0x0011B8, "Member 'APyCue_Ability_Loop_10445101::OnReleasingStageDelegate' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10445101, OnDashEndStageDelegate) == 0x0011C8, "Member 'APyCue_Ability_Loop_10445101::OnDashEndStageDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10445101;
 
 }
 

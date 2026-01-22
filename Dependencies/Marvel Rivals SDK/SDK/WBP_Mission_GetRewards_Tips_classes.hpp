@@ -17,55 +17,42 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Mission_GetRewards_Tips.WBP_Mission_GetRewards_Tips_C
-// 0x0080 (0x0670 - 0x05F0)
+// 0x0080 (0x0678 - 0x05F8)
 class UWBP_Mission_GetRewards_Tips_C final : public UPyWidget_Common_TaskRewards
 {
 public:
-	class UWidgetAnimation*                       Anim_Toggle;                                       // 0x05F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_GetRewards_FadeIn;                            // 0x05F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_MissionStage_FadeIn;                          // 0x0600(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_GetRewards_Tips;                           // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_MissionStage_Tips;                         // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelScrollBox*                       ScrollBox_RewardItems;                             // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Vx_light;                                          // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Vx_light_1;                                        // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Item_V2_C*                  WBP_Common_Item_V2;                                // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Item_V2_C*                  WBP_Common_Item_V2_1;                              // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_SettlementItem_C*          WBP_Mission_SettlementItem;                        // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_SettlementItem_C*          WBP_Mission_SettlementItem_4;                      // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_SettlementItem_C*          WBP_Mission_SettlementItem_5;                      // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_SettlementItem_C*          WBP_Mission_SettlementItem_6;                      // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_SettlementItem_C*          WBP_Mission_SettlementItem_7;                      // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWrapBox*                               WrapBox_SettlementItems;                           // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Toggle;                                       // 0x05F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_GetRewards_FadeIn;                            // 0x0600(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_MissionStage_FadeIn;                          // 0x0608(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_GetRewards_Tips;                           // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_MissionStage_Tips;                         // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelScrollBox*                       ScrollBox_RewardItems;                             // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Vx_light;                                          // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Vx_light_1;                                        // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Item_V2_C*                  WBP_Common_Item_V2;                                // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Item_V2_C*                  WBP_Common_Item_V2_1;                              // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_SettlementItem_C*          WBP_Mission_SettlementItem;                        // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_SettlementItem_C*          WBP_Mission_SettlementItem_4;                      // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_SettlementItem_C*          WBP_Mission_SettlementItem_5;                      // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_SettlementItem_C*          WBP_Mission_SettlementItem_6;                      // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_SettlementItem_C*          WBP_Mission_SettlementItem_7;                      // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWrapBox*                               WrapBox_SettlementItems;                           // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Mission_GetRewards_Tips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Mission_GetRewards_Tips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Mission_GetRewards_Tips_C")
 	}
 	static class UWBP_Mission_GetRewards_Tips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Mission_GetRewards_Tips_C>();
 	}
 };
-static_assert(alignof(UWBP_Mission_GetRewards_Tips_C) == 0x000008, "Wrong alignment on UWBP_Mission_GetRewards_Tips_C");
-static_assert(sizeof(UWBP_Mission_GetRewards_Tips_C) == 0x000670, "Wrong size on UWBP_Mission_GetRewards_Tips_C");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, Anim_Toggle) == 0x0005F0, "Member 'UWBP_Mission_GetRewards_Tips_C::Anim_Toggle' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, Anim_GetRewards_FadeIn) == 0x0005F8, "Member 'UWBP_Mission_GetRewards_Tips_C::Anim_GetRewards_FadeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, Anim_MissionStage_FadeIn) == 0x000600, "Member 'UWBP_Mission_GetRewards_Tips_C::Anim_MissionStage_FadeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, Overlay_GetRewards_Tips) == 0x000608, "Member 'UWBP_Mission_GetRewards_Tips_C::Overlay_GetRewards_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, Overlay_MissionStage_Tips) == 0x000610, "Member 'UWBP_Mission_GetRewards_Tips_C::Overlay_MissionStage_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, ScrollBox_RewardItems) == 0x000618, "Member 'UWBP_Mission_GetRewards_Tips_C::ScrollBox_RewardItems' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, Vx_light) == 0x000620, "Member 'UWBP_Mission_GetRewards_Tips_C::Vx_light' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, Vx_light_1) == 0x000628, "Member 'UWBP_Mission_GetRewards_Tips_C::Vx_light_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, WBP_Common_Item_V2) == 0x000630, "Member 'UWBP_Mission_GetRewards_Tips_C::WBP_Common_Item_V2' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, WBP_Common_Item_V2_1) == 0x000638, "Member 'UWBP_Mission_GetRewards_Tips_C::WBP_Common_Item_V2_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, WBP_Mission_SettlementItem) == 0x000640, "Member 'UWBP_Mission_GetRewards_Tips_C::WBP_Mission_SettlementItem' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, WBP_Mission_SettlementItem_4) == 0x000648, "Member 'UWBP_Mission_GetRewards_Tips_C::WBP_Mission_SettlementItem_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, WBP_Mission_SettlementItem_5) == 0x000650, "Member 'UWBP_Mission_GetRewards_Tips_C::WBP_Mission_SettlementItem_5' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, WBP_Mission_SettlementItem_6) == 0x000658, "Member 'UWBP_Mission_GetRewards_Tips_C::WBP_Mission_SettlementItem_6' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, WBP_Mission_SettlementItem_7) == 0x000660, "Member 'UWBP_Mission_GetRewards_Tips_C::WBP_Mission_SettlementItem_7' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_GetRewards_Tips_C, WrapBox_SettlementItems) == 0x000668, "Member 'UWBP_Mission_GetRewards_Tips_C::WrapBox_SettlementItems' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Mission_GetRewards_Tips_C;
 
 }
 

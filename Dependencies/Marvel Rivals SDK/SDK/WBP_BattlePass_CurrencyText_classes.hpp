@@ -23,15 +23,18 @@ class UWBP_BattlePass_CurrencyText_C final : public UPyWidget_BattlePass_Currenc
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BattlePass_CurrencyText_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BattlePass_CurrencyText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BattlePass_CurrencyText_C")
 	}
 	static class UWBP_BattlePass_CurrencyText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BattlePass_CurrencyText_C>();
 	}
 };
-static_assert(alignof(UWBP_BattlePass_CurrencyText_C) == 0x000008, "Wrong alignment on UWBP_BattlePass_CurrencyText_C");
-static_assert(sizeof(UWBP_BattlePass_CurrencyText_C) == 0x0003E0, "Wrong size on UWBP_BattlePass_CurrencyText_C");
+DUMPER7_ASSERTS_UWBP_BattlePass_CurrencyText_C;
 
 }
 

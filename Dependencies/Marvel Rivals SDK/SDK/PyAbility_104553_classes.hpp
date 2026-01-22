@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "Marvel_classes.hpp"
 #include "Hero_1045_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
@@ -31,22 +31,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104553">();
+		STATIC_CLASS_IMPL("PyConfig_104553")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104553")
 	}
 	static class UPyConfig_104553* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104553>();
 	}
 };
-static_assert(alignof(UPyConfig_104553) == 0x000008, "Wrong alignment on UPyConfig_104553");
-static_assert(sizeof(UPyConfig_104553) == 0x0000F8, "Wrong size on UPyConfig_104553");
-static_assert(offsetof(UPyConfig_104553, MaxShootAngle) == 0x000098, "Member 'UPyConfig_104553::MaxShootAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104553, MinShootInterval) == 0x00009C, "Member 'UPyConfig_104553::MinShootInterval' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104553, IntervalReplaceMap) == 0x0000A0, "Member 'UPyConfig_104553::IntervalReplaceMap' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104553, SpawnScopeID) == 0x0000F0, "Member 'UPyConfig_104553::SpawnScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104553;
 
 // PythonClass PyAbility_104553.PyAbility_104553
-// 0x0000 (0x2A08 - 0x2A08)
+// 0x0000 (0x2A58 - 0x2A58)
 class UPyAbility_104553 : public UAbility_104553
 {
 public:
@@ -59,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104553">();
+		STATIC_CLASS_IMPL("PyAbility_104553")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104553")
 	}
 	static class UPyAbility_104553* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104553>();
 	}
 };
-static_assert(alignof(UPyAbility_104553) == 0x000008, "Wrong alignment on UPyAbility_104553");
-static_assert(sizeof(UPyAbility_104553) == 0x002A08, "Wrong size on UPyAbility_104553");
+DUMPER7_ASSERTS_UPyAbility_104553;
 
 }
 

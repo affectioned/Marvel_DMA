@@ -12,8 +12,8 @@
 
 #include "MarvelLevel_structs.hpp"
 #include "MarvelLevel_classes.hpp"
-#include "PyRuleComponent_classes.hpp"
 #include "Marvel_structs.hpp"
+#include "PyRuleComponent_classes.hpp"
 
 
 namespace SDK
@@ -34,21 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpawnPipelineConfig">();
+		STATIC_CLASS_IMPL("PySpawnPipelineConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpawnPipelineConfig")
 	}
 	static class UPySpawnPipelineConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySpawnPipelineConfig>();
 	}
 };
-static_assert(alignof(UPySpawnPipelineConfig) == 0x000008, "Wrong alignment on UPySpawnPipelineConfig");
-static_assert(sizeof(UPySpawnPipelineConfig) == 0x000258, "Wrong size on UPySpawnPipelineConfig");
-static_assert(offsetof(UPySpawnPipelineConfig, SpawnPipelineClass) == 0x000030, "Member 'UPySpawnPipelineConfig::SpawnPipelineClass' has a wrong offset!");
-static_assert(offsetof(UPySpawnPipelineConfig, SpawnPipelineConfig) == 0x000038, "Member 'UPySpawnPipelineConfig::SpawnPipelineConfig' has a wrong offset!");
-static_assert(offsetof(UPySpawnPipelineConfig, HeroBlockAbility) == 0x000160, "Member 'UPySpawnPipelineConfig::HeroBlockAbility' has a wrong offset!");
-static_assert(offsetof(UPySpawnPipelineConfig, HeroLimitAbility) == 0x0001B0, "Member 'UPySpawnPipelineConfig::HeroLimitAbility' has a wrong offset!");
-static_assert(offsetof(UPySpawnPipelineConfig, SpawnAddedBuff) == 0x000200, "Member 'UPySpawnPipelineConfig::SpawnAddedBuff' has a wrong offset!");
-static_assert(offsetof(UPySpawnPipelineConfig, bAutoRemoveStateAddedBuff) == 0x000250, "Member 'UPySpawnPipelineConfig::bAutoRemoveStateAddedBuff' has a wrong offset!");
+DUMPER7_ASSERTS_UPySpawnPipelineConfig;
 
 // PythonClass PySpawnPipelineRuleComponent.PySpawnPipelineRuleComponent
 // 0x0008 (0x0110 - 0x0108)
@@ -60,16 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpawnPipelineRuleComponent">();
+		STATIC_CLASS_IMPL("PySpawnPipelineRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpawnPipelineRuleComponent")
 	}
 	static class UPySpawnPipelineRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySpawnPipelineRuleComponent>();
 	}
 };
-static_assert(alignof(UPySpawnPipelineRuleComponent) == 0x000008, "Wrong alignment on UPySpawnPipelineRuleComponent");
-static_assert(sizeof(UPySpawnPipelineRuleComponent) == 0x000110, "Wrong size on UPySpawnPipelineRuleComponent");
-static_assert(offsetof(UPySpawnPipelineRuleComponent, Config) == 0x000108, "Member 'UPySpawnPipelineRuleComponent::Config' has a wrong offset!");
+DUMPER7_ASSERTS_UPySpawnPipelineRuleComponent;
 
 }
 

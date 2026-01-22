@@ -26,11 +26,7 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_Replay_ProgressButton_OnMouseButtonDown) == 0x000008, "Wrong alignment on PyWidget_Replay_ProgressButton_OnMouseButtonDown");
-static_assert(sizeof(PyWidget_Replay_ProgressButton_OnMouseButtonDown) == 0x000178, "Wrong size on PyWidget_Replay_ProgressButton_OnMouseButtonDown");
-static_assert(offsetof(PyWidget_Replay_ProgressButton_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'PyWidget_Replay_ProgressButton_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Replay_ProgressButton_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'PyWidget_Replay_ProgressButton_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(PyWidget_Replay_ProgressButton_OnMouseButtonDown, ReturnValue) == 0x0000B8, "Member 'PyWidget_Replay_ProgressButton_OnMouseButtonDown::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_ProgressButton_OnMouseButtonDown;
 
 // PythonFunction PyWidget_Replay_ProgressButton.PyWidget_Replay_ProgressButton.OnMouseMove
 // 0x0178 (0x0178 - 0x0000)
@@ -41,11 +37,7 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_Replay_ProgressButton_OnMouseMove) == 0x000008, "Wrong alignment on PyWidget_Replay_ProgressButton_OnMouseMove");
-static_assert(sizeof(PyWidget_Replay_ProgressButton_OnMouseMove) == 0x000178, "Wrong size on PyWidget_Replay_ProgressButton_OnMouseMove");
-static_assert(offsetof(PyWidget_Replay_ProgressButton_OnMouseMove, MyGeometry) == 0x000000, "Member 'PyWidget_Replay_ProgressButton_OnMouseMove::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Replay_ProgressButton_OnMouseMove, MouseEvent) == 0x000038, "Member 'PyWidget_Replay_ProgressButton_OnMouseMove::MouseEvent' has a wrong offset!");
-static_assert(offsetof(PyWidget_Replay_ProgressButton_OnMouseMove, ReturnValue) == 0x0000B8, "Member 'PyWidget_Replay_ProgressButton_OnMouseMove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_ProgressButton_OnMouseMove;
 
 // PythonFunction PyWidget_Replay_ProgressButton.PyWidget_Replay_ProgressButton.OnMouseButtonUp
 // 0x0178 (0x0178 - 0x0000)
@@ -56,11 +48,7 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_Replay_ProgressButton_OnMouseButtonUp) == 0x000008, "Wrong alignment on PyWidget_Replay_ProgressButton_OnMouseButtonUp");
-static_assert(sizeof(PyWidget_Replay_ProgressButton_OnMouseButtonUp) == 0x000178, "Wrong size on PyWidget_Replay_ProgressButton_OnMouseButtonUp");
-static_assert(offsetof(PyWidget_Replay_ProgressButton_OnMouseButtonUp, MyGeometry) == 0x000000, "Member 'PyWidget_Replay_ProgressButton_OnMouseButtonUp::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Replay_ProgressButton_OnMouseButtonUp, MouseEvent) == 0x000038, "Member 'PyWidget_Replay_ProgressButton_OnMouseButtonUp::MouseEvent' has a wrong offset!");
-static_assert(offsetof(PyWidget_Replay_ProgressButton_OnMouseButtonUp, ReturnValue) == 0x0000B8, "Member 'PyWidget_Replay_ProgressButton_OnMouseButtonUp::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_ProgressButton_OnMouseButtonUp;
 
 }
 

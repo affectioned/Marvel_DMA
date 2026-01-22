@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_KarmicStaff.Weapon_KarmicStaff_C
-// 0x0000 (0x0CB0 - 0x0CB0)
+// 0x0000 (0x0CC0 - 0x0CC0)
 class AWeapon_KarmicStaff_C final : public AShootingWeapon
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Weapon_KarmicStaff_C">();
+		BP_STATIC_CLASS_IMPL("Weapon_KarmicStaff_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Weapon_KarmicStaff_C")
 	}
 	static class AWeapon_KarmicStaff_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeapon_KarmicStaff_C>();
 	}
 };
-static_assert(alignof(AWeapon_KarmicStaff_C) == 0x000010, "Wrong alignment on AWeapon_KarmicStaff_C");
-static_assert(sizeof(AWeapon_KarmicStaff_C) == 0x000CB0, "Wrong size on AWeapon_KarmicStaff_C");
+DUMPER7_ASSERTS_AWeapon_KarmicStaff_C;
 
 }
 

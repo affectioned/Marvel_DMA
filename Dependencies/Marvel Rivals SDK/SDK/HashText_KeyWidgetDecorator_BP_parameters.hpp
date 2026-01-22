@@ -23,11 +23,7 @@ public:
 	const class UUserWidget*                      Widget;                                            // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TMap<class FString, class FString>            InMetaData;                                        // 0x0010(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(HashText_KeyWidgetDecorator_BP_C_SetWidgetData) == 0x000008, "Wrong alignment on HashText_KeyWidgetDecorator_BP_C_SetWidgetData");
-static_assert(sizeof(HashText_KeyWidgetDecorator_BP_C_SetWidgetData) == 0x000060, "Wrong size on HashText_KeyWidgetDecorator_BP_C_SetWidgetData");
-static_assert(offsetof(HashText_KeyWidgetDecorator_BP_C_SetWidgetData, Owner) == 0x000000, "Member 'HashText_KeyWidgetDecorator_BP_C_SetWidgetData::Owner' has a wrong offset!");
-static_assert(offsetof(HashText_KeyWidgetDecorator_BP_C_SetWidgetData, Widget) == 0x000008, "Member 'HashText_KeyWidgetDecorator_BP_C_SetWidgetData::Widget' has a wrong offset!");
-static_assert(offsetof(HashText_KeyWidgetDecorator_BP_C_SetWidgetData, InMetaData) == 0x000010, "Member 'HashText_KeyWidgetDecorator_BP_C_SetWidgetData::InMetaData' has a wrong offset!");
+DUMPER7_ASSERTS_HashText_KeyWidgetDecorator_BP_C_SetWidgetData;
 
 // Function HashText_KeyWidgetDecorator_BP.HashText_KeyWidgetDecorator_BP_C.ExecuteUbergraph_HashText_KeyWidgetDecorator_BP
 // 0x0078 (0x0078 - 0x0000)
@@ -42,14 +38,7 @@ public:
 	class UWBP_ChatKeyWidget_C*                   K2Node_DynamicCast_AsWBP_Chat_Key_Widget;          // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP) == 0x000008, "Wrong alignment on HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP");
-static_assert(sizeof(HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP) == 0x000078, "Wrong size on HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP");
-static_assert(offsetof(HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP, EntryPoint) == 0x000000, "Member 'HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP, K2Node_Event_Owner) == 0x000008, "Member 'HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP::K2Node_Event_Owner' has a wrong offset!");
-static_assert(offsetof(HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP, K2Node_Event_Widget) == 0x000010, "Member 'HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP, K2Node_Event_InMetaData) == 0x000018, "Member 'HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP::K2Node_Event_InMetaData' has a wrong offset!");
-static_assert(offsetof(HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP, K2Node_DynamicCast_AsWBP_Chat_Key_Widget) == 0x000068, "Member 'HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP::K2Node_DynamicCast_AsWBP_Chat_Key_Widget' has a wrong offset!");
-static_assert(offsetof(HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP, K2Node_DynamicCast_bSuccess) == 0x000070, "Member 'HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_HashText_KeyWidgetDecorator_BP_C_ExecuteUbergraph_HashText_KeyWidgetDecorator_BP;
 
 }
 

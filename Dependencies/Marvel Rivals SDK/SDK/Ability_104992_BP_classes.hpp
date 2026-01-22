@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_104992_BP.Ability_104992_BP_C
-// 0x17E0 (0x41D0 - 0x29F0)
+// 0x1B90 (0x45D0 - 0x2A40)
 class UAbility_104992_BP_C final : public UMarvelGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x29F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	uint8                                         Pad_29F8[0x8];                                     // 0x29F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSelectTaskParam                       选取参数;                                          // 0x2A00(0x17C0)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class AActor*                                 AttachToChar;                                      // 0x41C0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2A40(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	uint8                                         Pad_2A48[0x8];                                     // 0x2A48(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSelectTaskParam                       选取参数;                                          // 0x2A50(0x1B70)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class AActor*                                 AttachToChar;                                      // 0x45C0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BeginAttach();
@@ -44,18 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_104992_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_104992_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_104992_BP_C")
 	}
 	static class UAbility_104992_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_104992_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_104992_BP_C) == 0x000010, "Wrong alignment on UAbility_104992_BP_C");
-static_assert(sizeof(UAbility_104992_BP_C) == 0x0041D0, "Wrong size on UAbility_104992_BP_C");
-static_assert(offsetof(UAbility_104992_BP_C, UberGraphFrame) == 0x0029F0, "Member 'UAbility_104992_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAbility_104992_BP_C, 选取参数) == 0x002A00, "Member 'UAbility_104992_BP_C::选取参数' has a wrong offset!");
-static_assert(offsetof(UAbility_104992_BP_C, AttachToChar) == 0x0041C0, "Member 'UAbility_104992_BP_C::AttachToChar' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_104992_BP_C;
 
 }
 

@@ -17,29 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_HeroPortrait.WBP_Common_HeroPortrait_C
-// 0x0018 (0x0470 - 0x0458)
+// 0x0008 (0x04B0 - 0x04A8)
 class UWBP_Common_HeroPortrait_C final : public UPyWidget_Common_HeroPortrait
 {
 public:
-	class UWidgetAnimation*                       Anim_FadeIn;                                       // 0x0458(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMaskHeroHeadBP_C*                      ImgMaskContent;                                    // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Main;                                      // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_FadeIn;                                       // 0x04A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_HeroPortrait_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_HeroPortrait_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_HeroPortrait_C")
 	}
 	static class UWBP_Common_HeroPortrait_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_HeroPortrait_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_HeroPortrait_C) == 0x000008, "Wrong alignment on UWBP_Common_HeroPortrait_C");
-static_assert(sizeof(UWBP_Common_HeroPortrait_C) == 0x000470, "Wrong size on UWBP_Common_HeroPortrait_C");
-static_assert(offsetof(UWBP_Common_HeroPortrait_C, Anim_FadeIn) == 0x000458, "Member 'UWBP_Common_HeroPortrait_C::Anim_FadeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_HeroPortrait_C, ImgMaskContent) == 0x000460, "Member 'UWBP_Common_HeroPortrait_C::ImgMaskContent' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_HeroPortrait_C, Overlay_Main) == 0x000468, "Member 'UWBP_Common_HeroPortrait_C::Overlay_Main' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_HeroPortrait_C;
 
 }
 

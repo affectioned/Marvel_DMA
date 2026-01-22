@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "MarvelLevel_structs.hpp"
+#include "Marvel_structs.hpp"
 #include "PyAudioItemConfig_classes.hpp"
 #include "PyModeAudioComponent_classes.hpp"
-#include "Marvel_structs.hpp"
 
 
 namespace SDK
@@ -38,25 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelControlAudioItem">();
+		STATIC_CLASS_IMPL("PyLevelControlAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelControlAudioItem")
 	}
 	static class UPyLevelControlAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelControlAudioItem>();
 	}
 };
-static_assert(alignof(UPyLevelControlAudioItem) == 0x000008, "Wrong alignment on UPyLevelControlAudioItem");
-static_assert(sizeof(UPyLevelControlAudioItem) == 0x000178, "Wrong size on UPyLevelControlAudioItem");
-static_assert(offsetof(UPyLevelControlAudioItem, CampLockStage) == 0x0000D8, "Member 'UPyLevelControlAudioItem::CampLockStage' has a wrong offset!");
-static_assert(offsetof(UPyLevelControlAudioItem, CampLockFinish) == 0x0000E8, "Member 'UPyLevelControlAudioItem::CampLockFinish' has a wrong offset!");
-static_assert(offsetof(UPyLevelControlAudioItem, ControlGrowStage) == 0x0000F8, "Member 'UPyLevelControlAudioItem::ControlGrowStage' has a wrong offset!");
-static_assert(offsetof(UPyLevelControlAudioItem, ControlBothStage) == 0x000108, "Member 'UPyLevelControlAudioItem::ControlBothStage' has a wrong offset!");
-static_assert(offsetof(UPyLevelControlAudioItem, ControlOccupiedOneSide) == 0x000118, "Member 'UPyLevelControlAudioItem::ControlOccupiedOneSide' has a wrong offset!");
-static_assert(offsetof(UPyLevelControlAudioItem, ControlOccupiedFirst) == 0x000128, "Member 'UPyLevelControlAudioItem::ControlOccupiedFirst' has a wrong offset!");
-static_assert(offsetof(UPyLevelControlAudioItem, ControlVictoryInCrease) == 0x000138, "Member 'UPyLevelControlAudioItem::ControlVictoryInCrease' has a wrong offset!");
-static_assert(offsetof(UPyLevelControlAudioItem, ControlVictoryProgress50) == 0x000148, "Member 'UPyLevelControlAudioItem::ControlVictoryProgress50' has a wrong offset!");
-static_assert(offsetof(UPyLevelControlAudioItem, ControlVictoryProgress80) == 0x000158, "Member 'UPyLevelControlAudioItem::ControlVictoryProgress80' has a wrong offset!");
-static_assert(offsetof(UPyLevelControlAudioItem, ControlVictoryProgress90) == 0x000168, "Member 'UPyLevelControlAudioItem::ControlVictoryProgress90' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelControlAudioItem;
 
 // PythonClass PyControlAudioComponent.PyControlAudioComponent
 // 0x0000 (0x0120 - 0x0120)
@@ -73,15 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyControlAudioComponent">();
+		STATIC_CLASS_IMPL("PyControlAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyControlAudioComponent")
 	}
 	static class UPyControlAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyControlAudioComponent>();
 	}
 };
-static_assert(alignof(UPyControlAudioComponent) == 0x000008, "Wrong alignment on UPyControlAudioComponent");
-static_assert(sizeof(UPyControlAudioComponent) == 0x000120, "Wrong size on UPyControlAudioComponent");
+DUMPER7_ASSERTS_UPyControlAudioComponent;
 
 }
 

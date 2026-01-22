@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Settlement_PersonalData_Exp.PyWidget_Settlement_PersonalData_Exp
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Settlement_PersonalData_Exp final : public UPyWidget_Settlement_PersonalData_Base
 {
 public:
-	class UAkAudioEvent*                          AkEvent_OnExpIncreaced;                            // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnLevelUp;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpgradeAnimTime;                                   // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelatTime_LevelUp;                                 // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnExpIncreaced;                            // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnLevelUp;                                 // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UpgradeAnimTime;                                   // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelatTime_LevelUp;                                 // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_PersonalData_Exp">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_Exp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_Exp")
 	}
 	static class UPyWidget_Settlement_PersonalData_Exp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_Exp>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_PersonalData_Exp) == 0x000008, "Wrong alignment on UPyWidget_Settlement_PersonalData_Exp");
-static_assert(sizeof(UPyWidget_Settlement_PersonalData_Exp) == 0x0005D8, "Wrong size on UPyWidget_Settlement_PersonalData_Exp");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_Exp, AkEvent_OnExpIncreaced) == 0x0005C0, "Member 'UPyWidget_Settlement_PersonalData_Exp::AkEvent_OnExpIncreaced' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_Exp, AkEvent_OnLevelUp) == 0x0005C8, "Member 'UPyWidget_Settlement_PersonalData_Exp::AkEvent_OnLevelUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_Exp, UpgradeAnimTime) == 0x0005D0, "Member 'UPyWidget_Settlement_PersonalData_Exp::UpgradeAnimTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_Exp, DelatTime_LevelUp) == 0x0005D4, "Member 'UPyWidget_Settlement_PersonalData_Exp::DelatTime_LevelUp' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_Exp;
 
 }
 

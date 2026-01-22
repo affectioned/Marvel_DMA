@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyAbilityAction_ConfigButton">();
+		STATIC_CLASS_IMPL("BTT_PyAbilityAction_ConfigButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyAbilityAction_ConfigButton")
 	}
 	static class UBTT_PyAbilityAction_ConfigButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyAbilityAction_ConfigButton>();
 	}
 };
-static_assert(alignof(UBTT_PyAbilityAction_ConfigButton) == 0x000008, "Wrong alignment on UBTT_PyAbilityAction_ConfigButton");
-static_assert(sizeof(UBTT_PyAbilityAction_ConfigButton) == 0x000128, "Wrong size on UBTT_PyAbilityAction_ConfigButton");
-static_assert(offsetof(UBTT_PyAbilityAction_ConfigButton, InAction) == 0x0000F8, "Member 'UBTT_PyAbilityAction_ConfigButton::InAction' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyAbilityAction_ConfigButton;
 
 }
 

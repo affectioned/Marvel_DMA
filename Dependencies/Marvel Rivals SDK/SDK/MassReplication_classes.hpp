@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassClientBubbleInfoBase">();
+		STATIC_CLASS_IMPL("MassClientBubbleInfoBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassClientBubbleInfoBase")
 	}
 	static class AMassClientBubbleInfoBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMassClientBubbleInfoBase>();
 	}
 };
-static_assert(alignof(AMassClientBubbleInfoBase) == 0x000010, "Wrong alignment on AMassClientBubbleInfoBase");
-static_assert(sizeof(AMassClientBubbleInfoBase) == 0x0006F0, "Wrong size on AMassClientBubbleInfoBase");
+DUMPER7_ASSERTS_AMassClientBubbleInfoBase;
 
 // Class MassReplication.MassNetworkIDFragmentInitializer
 // 0x02A0 (0x0380 - 0x00E0)
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassNetworkIDFragmentInitializer">();
+		STATIC_CLASS_IMPL("MassNetworkIDFragmentInitializer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassNetworkIDFragmentInitializer")
 	}
 	static class UMassNetworkIDFragmentInitializer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassNetworkIDFragmentInitializer>();
 	}
 };
-static_assert(alignof(UMassNetworkIDFragmentInitializer) == 0x000008, "Wrong alignment on UMassNetworkIDFragmentInitializer");
-static_assert(sizeof(UMassNetworkIDFragmentInitializer) == 0x000380, "Wrong size on UMassNetworkIDFragmentInitializer");
+DUMPER7_ASSERTS_UMassNetworkIDFragmentInitializer;
 
 // Class MassReplication.MassReplicationGridProcessor
 // 0x07E8 (0x08B0 - 0x00C8)
@@ -70,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassReplicationGridProcessor">();
+		STATIC_CLASS_IMPL("MassReplicationGridProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassReplicationGridProcessor")
 	}
 	static class UMassReplicationGridProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassReplicationGridProcessor>();
 	}
 };
-static_assert(alignof(UMassReplicationGridProcessor) == 0x000008, "Wrong alignment on UMassReplicationGridProcessor");
-static_assert(sizeof(UMassReplicationGridProcessor) == 0x0008B0, "Wrong size on UMassReplicationGridProcessor");
+DUMPER7_ASSERTS_UMassReplicationGridProcessor;
 
 // Class MassReplication.MassReplicationGridRemoverProcessor
 // 0x02A0 (0x0380 - 0x00E0)
@@ -90,15 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassReplicationGridRemoverProcessor">();
+		STATIC_CLASS_IMPL("MassReplicationGridRemoverProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassReplicationGridRemoverProcessor")
 	}
 	static class UMassReplicationGridRemoverProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassReplicationGridRemoverProcessor>();
 	}
 };
-static_assert(alignof(UMassReplicationGridRemoverProcessor) == 0x000008, "Wrong alignment on UMassReplicationGridRemoverProcessor");
-static_assert(sizeof(UMassReplicationGridRemoverProcessor) == 0x000380, "Wrong size on UMassReplicationGridRemoverProcessor");
+DUMPER7_ASSERTS_UMassReplicationGridRemoverProcessor;
 
 // Class MassReplication.MassReplicationProcessor
 // 0x0D28 (0x0DF0 - 0x00C8)
@@ -111,16 +123,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassReplicationProcessor">();
+		STATIC_CLASS_IMPL("MassReplicationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassReplicationProcessor")
 	}
 	static class UMassReplicationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassReplicationProcessor>();
 	}
 };
-static_assert(alignof(UMassReplicationProcessor) == 0x000010, "Wrong alignment on UMassReplicationProcessor");
-static_assert(sizeof(UMassReplicationProcessor) == 0x000DF0, "Wrong size on UMassReplicationProcessor");
-static_assert(offsetof(UMassReplicationProcessor, ReplicationSubsystem) == 0x0000C8, "Member 'UMassReplicationProcessor::ReplicationSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_UMassReplicationProcessor;
 
 // Class MassReplication.MassReplicatorBase
 // 0x0000 (0x0030 - 0x0030)
@@ -129,15 +143,18 @@ class UMassReplicatorBase : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassReplicatorBase">();
+		STATIC_CLASS_IMPL("MassReplicatorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassReplicatorBase")
 	}
 	static class UMassReplicatorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassReplicatorBase>();
 	}
 };
-static_assert(alignof(UMassReplicatorBase) == 0x000008, "Wrong alignment on UMassReplicatorBase");
-static_assert(sizeof(UMassReplicatorBase) == 0x000030, "Wrong size on UMassReplicatorBase");
+DUMPER7_ASSERTS_UMassReplicatorBase;
 
 // Class MassReplication.MassReplicationSettings
 // 0x0018 (0x0048 - 0x0030)
@@ -151,45 +168,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassReplicationSettings">();
+		STATIC_CLASS_IMPL("MassReplicationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassReplicationSettings")
 	}
 	static class UMassReplicationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassReplicationSettings>();
 	}
 };
-static_assert(alignof(UMassReplicationSettings) == 0x000008, "Wrong alignment on UMassReplicationSettings");
-static_assert(sizeof(UMassReplicationSettings) == 0x000048, "Wrong size on UMassReplicationSettings");
-static_assert(offsetof(UMassReplicationSettings, ReplicationGridCellSize) == 0x000030, "Member 'UMassReplicationSettings::ReplicationGridCellSize' has a wrong offset!");
-static_assert(offsetof(UMassReplicationSettings, ServerGeneralTickRatePerLOD) == 0x000034, "Member 'UMassReplicationSettings::ServerGeneralTickRatePerLOD' has a wrong offset!");
+DUMPER7_ASSERTS_UMassReplicationSettings;
 
 // Class MassReplication.MassReplicationSubsystem
-// 0x01C8 (0x0200 - 0x0038)
+// 0x01C8 (0x0208 - 0x0040)
 class UMassReplicationSubsystem final : public UWorldSubsystem
 {
 public:
-	uint8                                         Pad_38[0x30];                                      // 0x0038(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FMassClientBubbleInfoData>      BubbleInfoArray;                                   // 0x0068(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_78[0x30];                                      // 0x0078(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWorld*                                 World;                                             // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMassLODSubsystem*                      MassLODSubsystem;                                  // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_B8[0x148];                                     // 0x00B8(0x0148)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x30];                                      // 0x0040(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FMassClientBubbleInfoData>      BubbleInfoArray;                                   // 0x0070(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_80[0x30];                                      // 0x0080(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWorld*                                 World;                                             // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMassLODSubsystem*                      MassLODSubsystem;                                  // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_C0[0x148];                                     // 0x00C0(0x0148)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassReplicationSubsystem">();
+		STATIC_CLASS_IMPL("MassReplicationSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassReplicationSubsystem")
 	}
 	static class UMassReplicationSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassReplicationSubsystem>();
 	}
 };
-static_assert(alignof(UMassReplicationSubsystem) == 0x000008, "Wrong alignment on UMassReplicationSubsystem");
-static_assert(sizeof(UMassReplicationSubsystem) == 0x000200, "Wrong size on UMassReplicationSubsystem");
-static_assert(offsetof(UMassReplicationSubsystem, BubbleInfoArray) == 0x000068, "Member 'UMassReplicationSubsystem::BubbleInfoArray' has a wrong offset!");
-static_assert(offsetof(UMassReplicationSubsystem, World) == 0x0000A8, "Member 'UMassReplicationSubsystem::World' has a wrong offset!");
-static_assert(offsetof(UMassReplicationSubsystem, MassLODSubsystem) == 0x0000B0, "Member 'UMassReplicationSubsystem::MassLODSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_UMassReplicationSubsystem;
 
 // Class MassReplication.MassReplicationTrait
 // 0x0058 (0x0088 - 0x0030)
@@ -201,16 +219,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassReplicationTrait">();
+		STATIC_CLASS_IMPL("MassReplicationTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassReplicationTrait")
 	}
 	static class UMassReplicationTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassReplicationTrait>();
 	}
 };
-static_assert(alignof(UMassReplicationTrait) == 0x000008, "Wrong alignment on UMassReplicationTrait");
-static_assert(sizeof(UMassReplicationTrait) == 0x000088, "Wrong size on UMassReplicationTrait");
-static_assert(offsetof(UMassReplicationTrait, Params_0) == 0x000030, "Member 'UMassReplicationTrait::Params_0' has a wrong offset!");
+DUMPER7_ASSERTS_UMassReplicationTrait;
 
 }
 

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_105344.PyBuffAbility_120_10534409
-// 0x0BC8 (0x1F38 - 0x1370)
+// 0x0EE8 (0x2270 - 0x1388)
 class UPyBuffAbility_120_10534409 final : public UMarvelEffectGameplayAbility
 {
 public:
-	struct FDashAbilityInfo                       NewDashInfo;                                       // 0x1370(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       NewDashInfo;                                       // 0x1388(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10534409">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10534409")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10534409")
 	}
 	static class UPyBuffAbility_120_10534409* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10534409>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10534409) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10534409");
-static_assert(sizeof(UPyBuffAbility_120_10534409) == 0x001F38, "Wrong size on UPyBuffAbility_120_10534409");
-static_assert(offsetof(UPyBuffAbility_120_10534409, NewDashInfo) == 0x001370, "Member 'UPyBuffAbility_120_10534409::NewDashInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10534409;
 
 }
 

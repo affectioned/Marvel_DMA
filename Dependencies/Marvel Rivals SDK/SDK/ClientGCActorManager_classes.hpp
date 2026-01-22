@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ClientGCActorManager_C">();
+		BP_STATIC_CLASS_IMPL("ClientGCActorManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClientGCActorManager_C")
 	}
 	static class AClientGCActorManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AClientGCActorManager_C>();
 	}
 };
-static_assert(alignof(AClientGCActorManager_C) == 0x000010, "Wrong alignment on AClientGCActorManager_C");
-static_assert(sizeof(AClientGCActorManager_C) == 0x000850, "Wrong size on AClientGCActorManager_C");
-static_assert(offsetof(AClientGCActorManager_C, Arrow) == 0x000840, "Member 'AClientGCActorManager_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AClientGCActorManager_C, DefaultSceneRoot) == 0x000848, "Member 'AClientGCActorManager_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AClientGCActorManager_C;
 
 }
 

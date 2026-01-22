@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VirtualActorManager_BPC_C">();
+		BP_STATIC_CLASS_IMPL("VirtualActorManager_BPC_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VirtualActorManager_BPC_C")
 	}
 	static class AVirtualActorManager_BPC_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AVirtualActorManager_BPC_C>();
 	}
 };
-static_assert(alignof(AVirtualActorManager_BPC_C) == 0x000010, "Wrong alignment on AVirtualActorManager_BPC_C");
-static_assert(sizeof(AVirtualActorManager_BPC_C) == 0x000740, "Wrong size on AVirtualActorManager_BPC_C");
-static_assert(offsetof(AVirtualActorManager_BPC_C, DefaultSceneRoot) == 0x000730, "Member 'AVirtualActorManager_BPC_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AVirtualActorManager_BPC_C;
 
 }
 

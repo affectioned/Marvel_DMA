@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNpcAudioComponent">();
+		STATIC_CLASS_IMPL("PyNpcAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNpcAudioComponent")
 	}
 	static class UPyNpcAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyNpcAudioComponent>();
 	}
 };
-static_assert(alignof(UPyNpcAudioComponent) == 0x000008, "Wrong alignment on UPyNpcAudioComponent");
-static_assert(sizeof(UPyNpcAudioComponent) == 0x000160, "Wrong size on UPyNpcAudioComponent");
+DUMPER7_ASSERTS_UPyNpcAudioComponent;
 
 }
 

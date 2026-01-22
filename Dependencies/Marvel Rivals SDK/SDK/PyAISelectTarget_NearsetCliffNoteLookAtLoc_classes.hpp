@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc")
 	}
 	static class UPyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc) == 0x000008, "Wrong alignment on UPyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc");
-static_assert(sizeof(UPyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc) == 0x000078, "Wrong size on UPyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc");
-static_assert(offsetof(UPyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc, ChangeFocusDistance) == 0x000070, "Member 'UPyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc::ChangeFocusDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_NearsetCliffEdgeNoteLookAtLoc;
 
 }
 

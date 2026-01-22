@@ -39,20 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIManager">();
+		STATIC_CLASS_IMPL("PyUIManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIManager")
 	}
 	static class UPyUIManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIManager>();
 	}
 };
-static_assert(alignof(UPyUIManager) == 0x000008, "Wrong alignment on UPyUIManager");
-static_assert(sizeof(UPyUIManager) == 0x000108, "Wrong size on UPyUIManager");
-static_assert(offsetof(UPyUIManager, UseExtraWorldForEntireLobby) == 0x0000D8, "Member 'UPyUIManager::UseExtraWorldForEntireLobby' has a wrong offset!");
-static_assert(offsetof(UPyUIManager, Class_GlobalRootWidget) == 0x0000E0, "Member 'UPyUIManager::Class_GlobalRootWidget' has a wrong offset!");
-static_assert(offsetof(UPyUIManager, Class_UIC_Loading) == 0x0000E8, "Member 'UPyUIManager::Class_UIC_Loading' has a wrong offset!");
-static_assert(offsetof(UPyUIManager, Class_UIC_LevelTransition) == 0x0000F0, "Member 'UPyUIManager::Class_UIC_LevelTransition' has a wrong offset!");
-static_assert(offsetof(UPyUIManager, DataAssets) == 0x0000F8, "Member 'UPyUIManager::DataAssets' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIManager;
 
 }
 

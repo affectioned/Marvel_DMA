@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GatewayButton_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GatewayButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GatewayButton_C")
 	}
 	static class UWBP_GatewayButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GatewayButton_C>();
 	}
 };
-static_assert(alignof(UWBP_GatewayButton_C) == 0x000008, "Wrong alignment on UWBP_GatewayButton_C");
-static_assert(sizeof(UWBP_GatewayButton_C) == 0x0003D8, "Wrong size on UWBP_GatewayButton_C");
-static_assert(offsetof(UWBP_GatewayButton_C, Btn_SwitchMap) == 0x0003B8, "Member 'UWBP_GatewayButton_C::Btn_SwitchMap' has a wrong offset!");
-static_assert(offsetof(UWBP_GatewayButton_C, Img_Change) == 0x0003C0, "Member 'UWBP_GatewayButton_C::Img_Change' has a wrong offset!");
-static_assert(offsetof(UWBP_GatewayButton_C, Img_Tips) == 0x0003C8, "Member 'UWBP_GatewayButton_C::Img_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_GatewayButton_C, Text_HeroName) == 0x0003D0, "Member 'UWBP_GatewayButton_C::Text_HeroName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GatewayButton_C;
 
 }
 

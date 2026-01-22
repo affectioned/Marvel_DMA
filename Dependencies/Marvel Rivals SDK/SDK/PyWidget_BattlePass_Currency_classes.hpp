@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UMG_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
@@ -34,33 +34,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_CurrencyText">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_CurrencyText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_CurrencyText")
 	}
 	static class UPyWidget_BattlePass_CurrencyText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_CurrencyText>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_CurrencyText) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_CurrencyText");
-static_assert(sizeof(UPyWidget_BattlePass_CurrencyText) == 0x0003E0, "Wrong size on UPyWidget_BattlePass_CurrencyText");
-static_assert(offsetof(UPyWidget_BattlePass_CurrencyText, MarvelOverlay_Num) == 0x0003B8, "Member 'UPyWidget_BattlePass_CurrencyText::MarvelOverlay_Num' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_CurrencyText, Text_Num1) == 0x0003C0, "Member 'UPyWidget_BattlePass_CurrencyText::Text_Num1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_CurrencyText, Anim_Roll) == 0x0003C8, "Member 'UPyWidget_BattlePass_CurrencyText::Anim_Roll' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_CurrencyText, OnRollAnimFinished) == 0x0003D0, "Member 'UPyWidget_BattlePass_CurrencyText::OnRollAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_CurrencyText;
 
 // PythonClass PyWidget_BattlePass_Currency.PyWidget_BattlePass_Currency
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyWidget_BattlePass_Currency final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_BattlePass_CurrencyText> NumWidget;                                  // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Icon;                                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelHorizontalBox*                   HBox_CurrencyNum;                                  // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelButton*                          Btn_Currency;                                      // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_AddNum;                                       // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Add;                                          // 0x05E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Refresh;                                      // 0x05F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_BattlePass_CurrencyText> NumWidget;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Icon;                                          // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelHorizontalBox*                   HBox_CurrencyNum;                                  // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelButton*                          Btn_Currency;                                      // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_AddNum;                                       // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Add;                                          // 0x05F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Refresh;                                      // 0x05F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -70,22 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Currency">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Currency")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Currency")
 	}
 	static class UPyWidget_BattlePass_Currency* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Currency>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Currency) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_Currency");
-static_assert(sizeof(UPyWidget_BattlePass_Currency) == 0x0005F8, "Wrong size on UPyWidget_BattlePass_Currency");
-static_assert(offsetof(UPyWidget_BattlePass_Currency, NumWidget) == 0x0005C0, "Member 'UPyWidget_BattlePass_Currency::NumWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Currency, Img_Icon) == 0x0005C8, "Member 'UPyWidget_BattlePass_Currency::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Currency, HBox_CurrencyNum) == 0x0005D0, "Member 'UPyWidget_BattlePass_Currency::HBox_CurrencyNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Currency, Btn_Currency) == 0x0005D8, "Member 'UPyWidget_BattlePass_Currency::Btn_Currency' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Currency, Text_AddNum) == 0x0005E0, "Member 'UPyWidget_BattlePass_Currency::Text_AddNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Currency, Anim_Add) == 0x0005E8, "Member 'UPyWidget_BattlePass_Currency::Anim_Add' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Currency, Anim_Refresh) == 0x0005F0, "Member 'UPyWidget_BattlePass_Currency::Anim_Refresh' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Currency;
 
 }
 

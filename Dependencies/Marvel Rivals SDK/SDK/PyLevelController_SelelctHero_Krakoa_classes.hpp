@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_SelelctHero_Krakoa">();
+		STATIC_CLASS_IMPL("PyLevelController_SelelctHero_Krakoa")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_SelelctHero_Krakoa")
 	}
 	static class APyLevelController_SelelctHero_Krakoa* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_SelelctHero_Krakoa>();
 	}
 };
-static_assert(alignof(APyLevelController_SelelctHero_Krakoa) == 0x000010, "Wrong alignment on APyLevelController_SelelctHero_Krakoa");
-static_assert(sizeof(APyLevelController_SelelctHero_Krakoa) == 0x000820, "Wrong size on APyLevelController_SelelctHero_Krakoa");
-static_assert(offsetof(APyLevelController_SelelctHero_Krakoa, BlendCamera) == 0x000810, "Member 'APyLevelController_SelelctHero_Krakoa::BlendCamera' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelelctHero_Krakoa, BlendTime) == 0x000818, "Member 'APyLevelController_SelelctHero_Krakoa::BlendTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_SelelctHero_Krakoa;
 
 }
 

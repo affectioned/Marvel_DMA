@@ -23,15 +23,18 @@ class UBP_ScoreRuleBattleChess_NearestEnemy_C final : public UAIScoreModuleRule
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ScoreRuleBattleChess_NearestEnemy_C">();
+		BP_STATIC_CLASS_IMPL("BP_ScoreRuleBattleChess_NearestEnemy_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ScoreRuleBattleChess_NearestEnemy_C")
 	}
 	static class UBP_ScoreRuleBattleChess_NearestEnemy_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_ScoreRuleBattleChess_NearestEnemy_C>();
 	}
 };
-static_assert(alignof(UBP_ScoreRuleBattleChess_NearestEnemy_C) == 0x000008, "Wrong alignment on UBP_ScoreRuleBattleChess_NearestEnemy_C");
-static_assert(sizeof(UBP_ScoreRuleBattleChess_NearestEnemy_C) == 0x000060, "Wrong size on UBP_ScoreRuleBattleChess_NearestEnemy_C");
+DUMPER7_ASSERTS_UBP_ScoreRuleBattleChess_NearestEnemy_C;
 
 }
 

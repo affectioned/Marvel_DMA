@@ -38,27 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Amb_Practicerange_Gorge_Far_C">();
+		BP_STATIC_CLASS_IMPL("Amb_Practicerange_Gorge_Far_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Amb_Practicerange_Gorge_Far_C")
 	}
 	static class AAmb_Practicerange_Gorge_Far_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAmb_Practicerange_Gorge_Far_C>();
 	}
 };
-static_assert(alignof(AAmb_Practicerange_Gorge_Far_C) == 0x000010, "Wrong alignment on AAmb_Practicerange_Gorge_Far_C");
-static_assert(sizeof(AAmb_Practicerange_Gorge_Far_C) == 0x000740, "Wrong size on AAmb_Practicerange_Gorge_Far_C");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, Sphere9) == 0x0006E0, "Member 'AAmb_Practicerange_Gorge_Far_C::Sphere9' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, Sphere8) == 0x0006E8, "Member 'AAmb_Practicerange_Gorge_Far_C::Sphere8' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, Sphere7) == 0x0006F0, "Member 'AAmb_Practicerange_Gorge_Far_C::Sphere7' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, Sphere6) == 0x0006F8, "Member 'AAmb_Practicerange_Gorge_Far_C::Sphere6' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, Sphere5) == 0x000700, "Member 'AAmb_Practicerange_Gorge_Far_C::Sphere5' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, Sphere4) == 0x000708, "Member 'AAmb_Practicerange_Gorge_Far_C::Sphere4' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, Sphere3) == 0x000710, "Member 'AAmb_Practicerange_Gorge_Far_C::Sphere3' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, Sphere2) == 0x000718, "Member 'AAmb_Practicerange_Gorge_Far_C::Sphere2' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, Sphere1) == 0x000720, "Member 'AAmb_Practicerange_Gorge_Far_C::Sphere1' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, Sphere) == 0x000728, "Member 'AAmb_Practicerange_Gorge_Far_C::Sphere' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, MultiPosition) == 0x000730, "Member 'AAmb_Practicerange_Gorge_Far_C::MultiPosition' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Gorge_Far_C, DefaultSceneRoot) == 0x000738, "Member 'AAmb_Practicerange_Gorge_Far_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AAmb_Practicerange_Gorge_Far_C;
 
 }
 

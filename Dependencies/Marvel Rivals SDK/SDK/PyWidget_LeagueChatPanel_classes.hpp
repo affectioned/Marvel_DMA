@@ -18,15 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LeagueChatPanel.PyWidget_LeagueChatPanel
-// 0x0858 (0x0E50 - 0x05F8)
+// 0x0850 (0x0E50 - 0x0600)
 class UPyWidget_LeagueChatPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           ChatScrollAction;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ChatSwitchAction;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ClashSwitchLeftAction;                             // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ClashSwitchRightAction;                            // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_618[0x8];                                      // 0x0618(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           ChatScrollAction;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ChatSwitchAction;                                  // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ClashSwitchLeftAction;                             // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ClashSwitchRightAction;                            // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            MRCIcon;                                           // 0x0620(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            ClashIcon;                                         // 0x06F0(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            MRCPanelBg;                                        // 0x07C0(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
@@ -48,30 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueChatPanel">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueChatPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueChatPanel")
 	}
 	static class UPyWidget_LeagueChatPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueChatPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueChatPanel) == 0x000010, "Wrong alignment on UPyWidget_LeagueChatPanel");
-static_assert(sizeof(UPyWidget_LeagueChatPanel) == 0x000E50, "Wrong size on UPyWidget_LeagueChatPanel");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, ChatScrollAction) == 0x0005F8, "Member 'UPyWidget_LeagueChatPanel::ChatScrollAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, ChatSwitchAction) == 0x000600, "Member 'UPyWidget_LeagueChatPanel::ChatSwitchAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, ClashSwitchLeftAction) == 0x000608, "Member 'UPyWidget_LeagueChatPanel::ClashSwitchLeftAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, ClashSwitchRightAction) == 0x000610, "Member 'UPyWidget_LeagueChatPanel::ClashSwitchRightAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, MRCIcon) == 0x000620, "Member 'UPyWidget_LeagueChatPanel::MRCIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, ClashIcon) == 0x0006F0, "Member 'UPyWidget_LeagueChatPanel::ClashIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, MRCPanelBg) == 0x0007C0, "Member 'UPyWidget_LeagueChatPanel::MRCPanelBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, ClashPanelBg) == 0x000890, "Member 'UPyWidget_LeagueChatPanel::ClashPanelBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, MRCSearchBarBg) == 0x000960, "Member 'UPyWidget_LeagueChatPanel::MRCSearchBarBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, MRCSearchBarHoverBg) == 0x000A30, "Member 'UPyWidget_LeagueChatPanel::MRCSearchBarHoverBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, MRCSearchBarPressBg) == 0x000B00, "Member 'UPyWidget_LeagueChatPanel::MRCSearchBarPressBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, ClashSearchBarBg) == 0x000BD0, "Member 'UPyWidget_LeagueChatPanel::ClashSearchBarBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, ClashSearchBarHoverBg) == 0x000CA0, "Member 'UPyWidget_LeagueChatPanel::ClashSearchBarHoverBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, ClashSearchBarPressBg) == 0x000D70, "Member 'UPyWidget_LeagueChatPanel::ClashSearchBarPressBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatPanel, PlayerSendMsgCD) == 0x000E40, "Member 'UPyWidget_LeagueChatPanel::PlayerSendMsgCD' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueChatPanel;
 
 }
 

@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_RandomShootFront">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_RandomShootFront")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_RandomShootFront")
 	}
 	static class UPyAISelectTarget_RandomShootFront* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_RandomShootFront>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_RandomShootFront) == 0x000008, "Wrong alignment on UPyAISelectTarget_RandomShootFront");
-static_assert(sizeof(UPyAISelectTarget_RandomShootFront) == 0x000080, "Wrong size on UPyAISelectTarget_RandomShootFront");
-static_assert(offsetof(UPyAISelectTarget_RandomShootFront, Offset) == 0x000070, "Member 'UPyAISelectTarget_RandomShootFront::Offset' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_RandomShootFront, Radius) == 0x000074, "Member 'UPyAISelectTarget_RandomShootFront::Radius' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_RandomShootFront, SpeedThreshold) == 0x000078, "Member 'UPyAISelectTarget_RandomShootFront::SpeedThreshold' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_RandomShootFront, DebugDisplayDuration) == 0x00007C, "Member 'UPyAISelectTarget_RandomShootFront::DebugDisplayDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_RandomShootFront;
 
 }
 

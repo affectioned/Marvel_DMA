@@ -17,22 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectModeMainV2.PyWidget_SelectModeMainV2
-// 0x0070 (0x0668 - 0x05F8)
+// 0x0088 (0x0688 - 0x0600)
 class UPyWidget_SelectModeMainV2 final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                BigModeSeletionItem;                               // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                BothModeSeletionItem;                              // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ExtraModeSeletionItem;                             // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnSelectMode;                              // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnSelectModeLocked;                        // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Items_FadeIn_Time;                                 // 0x0620(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_624[0x4];                                      // 0x0624(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UUserWidget*>                    BigModeUnitList;                                   // 0x0628(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class UUserWidget*>                    BothModeUnitList;                                  // 0x0638(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class UUserWidget*>                    ExtraModeUnitList;                                 // 0x0648(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UInputAction*                           RuleKeyInputAction;                                // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           OpenHybridPopupKeyInputAction;                     // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                BigModeSeletionItem;                               // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                SmallModeSeletionItem;                             // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                BothModeSeletionItem;                              // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ExtraModeSeletionItem;                             // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnSelectMode;                              // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnSelectModeLocked;                        // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Items_FadeIn_Time;                                 // 0x0630(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_634[0x4];                                      // 0x0634(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UUserWidget*>                    BigModeUnitList;                                   // 0x0638(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class UUserWidget*>                    SmallModeUnitList;                                 // 0x0648(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class UUserWidget*>                    BothModeUnitList;                                  // 0x0658(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class UUserWidget*>                    ExtraModeUnitList;                                 // 0x0668(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UInputAction*                           RuleKeyInputAction;                                // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           OpenHybridPopupKeyInputAction;                     // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -46,26 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectModeMainV2">();
+		STATIC_CLASS_IMPL("PyWidget_SelectModeMainV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectModeMainV2")
 	}
 	static class UPyWidget_SelectModeMainV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectModeMainV2>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectModeMainV2) == 0x000008, "Wrong alignment on UPyWidget_SelectModeMainV2");
-static_assert(sizeof(UPyWidget_SelectModeMainV2) == 0x000668, "Wrong size on UPyWidget_SelectModeMainV2");
-static_assert(offsetof(UPyWidget_SelectModeMainV2, BigModeSeletionItem) == 0x0005F8, "Member 'UPyWidget_SelectModeMainV2::BigModeSeletionItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMainV2, BothModeSeletionItem) == 0x000600, "Member 'UPyWidget_SelectModeMainV2::BothModeSeletionItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMainV2, ExtraModeSeletionItem) == 0x000608, "Member 'UPyWidget_SelectModeMainV2::ExtraModeSeletionItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMainV2, AkEvent_OnSelectMode) == 0x000610, "Member 'UPyWidget_SelectModeMainV2::AkEvent_OnSelectMode' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMainV2, AkEvent_OnSelectModeLocked) == 0x000618, "Member 'UPyWidget_SelectModeMainV2::AkEvent_OnSelectModeLocked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMainV2, Items_FadeIn_Time) == 0x000620, "Member 'UPyWidget_SelectModeMainV2::Items_FadeIn_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMainV2, BigModeUnitList) == 0x000628, "Member 'UPyWidget_SelectModeMainV2::BigModeUnitList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMainV2, BothModeUnitList) == 0x000638, "Member 'UPyWidget_SelectModeMainV2::BothModeUnitList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMainV2, ExtraModeUnitList) == 0x000648, "Member 'UPyWidget_SelectModeMainV2::ExtraModeUnitList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMainV2, RuleKeyInputAction) == 0x000658, "Member 'UPyWidget_SelectModeMainV2::RuleKeyInputAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMainV2, OpenHybridPopupKeyInputAction) == 0x000660, "Member 'UPyWidget_SelectModeMainV2::OpenHybridPopupKeyInputAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectModeMainV2;
 
 }
 

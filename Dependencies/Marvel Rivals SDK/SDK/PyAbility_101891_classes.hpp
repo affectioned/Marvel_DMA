@@ -18,36 +18,38 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101891.PyConfig_101891
-// 0x0BD0 (0x0CC8 - 0x00F8)
+// 0x0EF0 (0x0FE8 - 0x00F8)
 class UPyConfig_101891 final : public UConfig_AeroBase
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x00F8(0x0BC8)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          CanFallingActivate;                                // 0x0CC0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x00F8(0x0EE8)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          CanFallingActivate;                                // 0x0FE0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllowCancelAfterDashStartElseDashEnd;             // 0x0FE1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101891">();
+		STATIC_CLASS_IMPL("PyConfig_101891")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101891")
 	}
 	static class UPyConfig_101891* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101891>();
 	}
 };
-static_assert(alignof(UPyConfig_101891) == 0x000008, "Wrong alignment on UPyConfig_101891");
-static_assert(sizeof(UPyConfig_101891) == 0x000CC8, "Wrong size on UPyConfig_101891");
-static_assert(offsetof(UPyConfig_101891, DashInfo) == 0x0000F8, "Member 'UPyConfig_101891::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101891, CanFallingActivate) == 0x000CC0, "Member 'UPyConfig_101891::CanFallingActivate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101891;
 
 // PythonClass PyAbility_101891.PyCue_Ability_Loop_10189101
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_Ability_Loop_10189101 final : public AMarvelCueNotify_Ability
 {
 public:
-	float                                         AudioDelay;                                        // 0x11B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LandingAudioID;                                    // 0x11B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FloatingAudioID;                                   // 0x11B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AudioDelay;                                        // 0x11C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LandingAudioID;                                    // 0x11C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FloatingAudioID;                                   // 0x11C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -57,21 +59,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10189101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10189101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10189101")
 	}
 	static class APyCue_Ability_Loop_10189101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10189101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10189101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10189101");
-static_assert(sizeof(APyCue_Ability_Loop_10189101) == 0x0011C0, "Wrong size on APyCue_Ability_Loop_10189101");
-static_assert(offsetof(APyCue_Ability_Loop_10189101, AudioDelay) == 0x0011B0, "Member 'APyCue_Ability_Loop_10189101::AudioDelay' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10189101, LandingAudioID) == 0x0011B4, "Member 'APyCue_Ability_Loop_10189101::LandingAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10189101, FloatingAudioID) == 0x0011B8, "Member 'APyCue_Ability_Loop_10189101::FloatingAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10189101;
 
 // PythonClass PyAbility_101891.PyAbility_101891
-// 0x0000 (0x2B10 - 0x2B10)
+// 0x0000 (0x2B60 - 0x2B60)
 class UPyAbility_101891 : public UMarvelAeroBaseAbility
 {
 public:
@@ -85,15 +87,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101891">();
+		STATIC_CLASS_IMPL("PyAbility_101891")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101891")
 	}
 	static class UPyAbility_101891* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101891>();
 	}
 };
-static_assert(alignof(UPyAbility_101891) == 0x000008, "Wrong alignment on UPyAbility_101891");
-static_assert(sizeof(UPyAbility_101891) == 0x002B10, "Wrong size on UPyAbility_101891");
+DUMPER7_ASSERTS_UPyAbility_101891;
 
 }
 

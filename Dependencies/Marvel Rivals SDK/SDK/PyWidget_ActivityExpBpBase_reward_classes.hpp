@@ -11,22 +11,22 @@
 #include "Basic.hpp"
 
 #include "PyMarvelUserWidget_classes.hpp"
+#include "PyWidget_ActivityExpBpBase_PanelBase_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
-#include "PyWidget_ActivityExpBpBase_PanelBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_ActivityExpBpBase_reward.PyWidget_ActivityExpBpBase_Reward_PageTab
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_ActivityExpBpBase_Reward_PageTab : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 idx)>     OnSelectTab;                                       // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 idx)>     OnSelectTab;                                       // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,25 +35,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ActivityExpBpBase_Reward_PageTab">();
+		STATIC_CLASS_IMPL("PyWidget_ActivityExpBpBase_Reward_PageTab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ActivityExpBpBase_Reward_PageTab")
 	}
 	static class UPyWidget_ActivityExpBpBase_Reward_PageTab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ActivityExpBpBase_Reward_PageTab>();
 	}
 };
-static_assert(alignof(UPyWidget_ActivityExpBpBase_Reward_PageTab) == 0x000008, "Wrong alignment on UPyWidget_ActivityExpBpBase_Reward_PageTab");
-static_assert(sizeof(UPyWidget_ActivityExpBpBase_Reward_PageTab) == 0x0005D0, "Wrong size on UPyWidget_ActivityExpBpBase_Reward_PageTab");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward_PageTab, OnSelectTab) == 0x0005C0, "Member 'UPyWidget_ActivityExpBpBase_Reward_PageTab::OnSelectTab' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ActivityExpBpBase_Reward_PageTab;
 
 // PythonClass PyWidget_ActivityExpBpBase_reward.PyWidget_ActivityExpBpBase_Reward_Card
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_ActivityExpBpBase_Reward_Card : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Activity_Reward_ID;                                // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 reward_index)> OnSelectItem;                                 // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Activity_Reward_ID;                                // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 reward_index)> OnSelectItem;                                 // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -63,38 +65,39 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ActivityExpBpBase_Reward_Card">();
+		STATIC_CLASS_IMPL("PyWidget_ActivityExpBpBase_Reward_Card")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ActivityExpBpBase_Reward_Card")
 	}
 	static class UPyWidget_ActivityExpBpBase_Reward_Card* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ActivityExpBpBase_Reward_Card>();
 	}
 };
-static_assert(alignof(UPyWidget_ActivityExpBpBase_Reward_Card) == 0x000008, "Wrong alignment on UPyWidget_ActivityExpBpBase_Reward_Card");
-static_assert(sizeof(UPyWidget_ActivityExpBpBase_Reward_Card) == 0x0005D0, "Wrong size on UPyWidget_ActivityExpBpBase_Reward_Card");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward_Card, Activity_Reward_ID) == 0x0005BC, "Member 'UPyWidget_ActivityExpBpBase_Reward_Card::Activity_Reward_ID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward_Card, OnSelectItem) == 0x0005C0, "Member 'UPyWidget_ActivityExpBpBase_Reward_Card::OnSelectItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ActivityExpBpBase_Reward_Card;
 
 // PythonClass PyWidget_ActivityExpBpBase_reward.PyWidget_ActivityExpBpBase_Reward
-// 0x00E0 (0x06E0 - 0x0600)
+// 0x00E0 (0x06E8 - 0x0608)
 class UPyWidget_ActivityExpBpBase_Reward : public UPyWidget_ActivityExpBpBase_PanelBase
 {
 public:
-	TSubclassOf<class UPyWidget_ActivityExpBpBase_Reward_PageTab> TabWidget;                         // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                TabPadding;                                        // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                AppreciationTipsStyle;                             // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SkipStyle;                                         // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ShowMenuStyle;                                     // 0x0638(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            RedSlateColor;                                     // 0x0648(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FLinearColor                           RedLinearColor;                                    // 0x065C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            WhiteSlateColor;                                   // 0x066C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FLinearColor                           WhiteLinearColor;                                  // 0x0680(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ColorTextLimitNormal;                              // 0x0690(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ColorTextLimitExpLimit;                            // 0x06A4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ColorTextLimitLevelLimit;                          // 0x06B8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6CC[0x4];                                      // 0x06CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_LevelUp;                                   // 0x06D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_ChangePageBtnClick;                        // 0x06D8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_ActivityExpBpBase_Reward_PageTab> TabWidget;                         // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                TabPadding;                                        // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                AppreciationTipsStyle;                             // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipStyle;                                         // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShowMenuStyle;                                     // 0x0640(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RedSlateColor;                                     // 0x0650(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FLinearColor                           RedLinearColor;                                    // 0x0664(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WhiteSlateColor;                                   // 0x0674(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FLinearColor                           WhiteLinearColor;                                  // 0x0688(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorTextLimitNormal;                              // 0x0698(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorTextLimitExpLimit;                            // 0x06AC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorTextLimitLevelLimit;                          // 0x06C0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6D4[0x4];                                      // 0x06D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_LevelUp;                                   // 0x06D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ChangePageBtnClick;                        // 0x06E0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -106,29 +109,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ActivityExpBpBase_Reward">();
+		STATIC_CLASS_IMPL("PyWidget_ActivityExpBpBase_Reward")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ActivityExpBpBase_Reward")
 	}
 	static class UPyWidget_ActivityExpBpBase_Reward* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ActivityExpBpBase_Reward>();
 	}
 };
-static_assert(alignof(UPyWidget_ActivityExpBpBase_Reward) == 0x000008, "Wrong alignment on UPyWidget_ActivityExpBpBase_Reward");
-static_assert(sizeof(UPyWidget_ActivityExpBpBase_Reward) == 0x0006E0, "Wrong size on UPyWidget_ActivityExpBpBase_Reward");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, TabWidget) == 0x000600, "Member 'UPyWidget_ActivityExpBpBase_Reward::TabWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, TabPadding) == 0x000608, "Member 'UPyWidget_ActivityExpBpBase_Reward::TabPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, AppreciationTipsStyle) == 0x000618, "Member 'UPyWidget_ActivityExpBpBase_Reward::AppreciationTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, SkipStyle) == 0x000628, "Member 'UPyWidget_ActivityExpBpBase_Reward::SkipStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, ShowMenuStyle) == 0x000638, "Member 'UPyWidget_ActivityExpBpBase_Reward::ShowMenuStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, RedSlateColor) == 0x000648, "Member 'UPyWidget_ActivityExpBpBase_Reward::RedSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, RedLinearColor) == 0x00065C, "Member 'UPyWidget_ActivityExpBpBase_Reward::RedLinearColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, WhiteSlateColor) == 0x00066C, "Member 'UPyWidget_ActivityExpBpBase_Reward::WhiteSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, WhiteLinearColor) == 0x000680, "Member 'UPyWidget_ActivityExpBpBase_Reward::WhiteLinearColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, ColorTextLimitNormal) == 0x000690, "Member 'UPyWidget_ActivityExpBpBase_Reward::ColorTextLimitNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, ColorTextLimitExpLimit) == 0x0006A4, "Member 'UPyWidget_ActivityExpBpBase_Reward::ColorTextLimitExpLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, ColorTextLimitLevelLimit) == 0x0006B8, "Member 'UPyWidget_ActivityExpBpBase_Reward::ColorTextLimitLevelLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, AkEvent_LevelUp) == 0x0006D0, "Member 'UPyWidget_ActivityExpBpBase_Reward::AkEvent_LevelUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Reward, AkEvent_ChangePageBtnClick) == 0x0006D8, "Member 'UPyWidget_ActivityExpBpBase_Reward::AkEvent_ChangePageBtnClick' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ActivityExpBpBase_Reward;
 
 }
 

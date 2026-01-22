@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Replay_ProcessBar.PyWidget_Replay_ProcessBar
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyWidget_Replay_ProcessBar final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTexture2D*>                     MapEventIconList;                                  // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_ProcessChange;                             // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ReplayButtonClass;                                 // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ReplayKillinfoClass;                               // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ReplayKillinfoUnitClass;                           // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ReplayRoundResultInfoClass;                        // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UTexture2D*>                     MapEventIconList;                                  // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ProcessChange;                             // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ReplayButtonClass;                                 // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ReplayKillinfoClass;                               // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ReplayKillinfoUnitClass;                           // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ReplayRoundResultInfoClass;                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,34 +40,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_ProcessBar">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_ProcessBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_ProcessBar")
 	}
 	static class UPyWidget_Replay_ProcessBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_ProcessBar>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_ProcessBar) == 0x000008, "Wrong alignment on UPyWidget_Replay_ProcessBar");
-static_assert(sizeof(UPyWidget_Replay_ProcessBar) == 0x0005F8, "Wrong size on UPyWidget_Replay_ProcessBar");
-static_assert(offsetof(UPyWidget_Replay_ProcessBar, MapEventIconList) == 0x0005C0, "Member 'UPyWidget_Replay_ProcessBar::MapEventIconList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ProcessBar, AkEvent_ProcessChange) == 0x0005D0, "Member 'UPyWidget_Replay_ProcessBar::AkEvent_ProcessChange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ProcessBar, ReplayButtonClass) == 0x0005D8, "Member 'UPyWidget_Replay_ProcessBar::ReplayButtonClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ProcessBar, ReplayKillinfoClass) == 0x0005E0, "Member 'UPyWidget_Replay_ProcessBar::ReplayKillinfoClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ProcessBar, ReplayKillinfoUnitClass) == 0x0005E8, "Member 'UPyWidget_Replay_ProcessBar::ReplayKillinfoUnitClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ProcessBar, ReplayRoundResultInfoClass) == 0x0005F0, "Member 'UPyWidget_Replay_ProcessBar::ReplayRoundResultInfoClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_ProcessBar;
 
 // PythonClass PyWidget_Replay_ProcessBar.PyWidget_Replay_SingleProcessBar
-// 0x0100 (0x06C0 - 0x05C0)
+// 0x0108 (0x06D0 - 0x05C8)
 class UPyWidget_Replay_SingleProcessBar final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          bIsAlly;                                           // 0x05BA(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x1];                                      // 0x05BB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           BackboardColor;                                    // 0x05BC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           PreloadColor;                                      // 0x05CC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ProgressColor;                                     // 0x05DC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            PreloadBrush;                                      // 0x05F0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          bIsAlly;                                           // 0x05C2(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x1];                                      // 0x05C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           BackboardColor;                                    // 0x05C4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           PreloadColor;                                      // 0x05D4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ProgressColor;                                     // 0x05E4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5F4[0xC];                                      // 0x05F4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            PreloadBrush;                                      // 0x0600(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -76,20 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_SingleProcessBar">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_SingleProcessBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_SingleProcessBar")
 	}
 	static class UPyWidget_Replay_SingleProcessBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_SingleProcessBar>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_SingleProcessBar) == 0x000010, "Wrong alignment on UPyWidget_Replay_SingleProcessBar");
-static_assert(sizeof(UPyWidget_Replay_SingleProcessBar) == 0x0006C0, "Wrong size on UPyWidget_Replay_SingleProcessBar");
-static_assert(offsetof(UPyWidget_Replay_SingleProcessBar, bIsAlly) == 0x0005BA, "Member 'UPyWidget_Replay_SingleProcessBar::bIsAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_SingleProcessBar, BackboardColor) == 0x0005BC, "Member 'UPyWidget_Replay_SingleProcessBar::BackboardColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_SingleProcessBar, PreloadColor) == 0x0005CC, "Member 'UPyWidget_Replay_SingleProcessBar::PreloadColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_SingleProcessBar, ProgressColor) == 0x0005DC, "Member 'UPyWidget_Replay_SingleProcessBar::ProgressColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_SingleProcessBar, PreloadBrush) == 0x0005F0, "Member 'UPyWidget_Replay_SingleProcessBar::PreloadBrush' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_SingleProcessBar;
 
 }
 

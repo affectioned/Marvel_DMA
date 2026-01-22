@@ -20,24 +20,24 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103631.PyCue_AbilityLoop_103631
-// 0x0070 (0x1520 - 0x14B0)
+// 0x0070 (0x1530 - 0x14C0)
 class APyCue_AbilityLoop_103631 final : public APyCue_AbilityLoop_Cable_Base
 {
 public:
-	class FString                                 TargetAttachSocketName;                            // 0x14B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                TargetAttachLocationOffset;                        // 0x14C0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 LeftHandSocketName;                                // 0x14D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeToGrapLeftHand;                                // 0x14E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeToBreakLeftHand;                               // 0x14EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeToBreakRightHand;                              // 0x14F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeToBreakCableHead;                              // 0x14F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          UseFixedHitLocation;                               // 0x14F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14F9[0x7];                                     // 0x14F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         HitFx;                                             // 0x1500(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShrinkRatio_HitScene;                              // 0x1508(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinLength_HitScene;                                // 0x150C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShrinkRatio_NoHit;                                 // 0x1510(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinLength_NoHit;                                   // 0x1514(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 TargetAttachSocketName;                            // 0x14C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                TargetAttachLocationOffset;                        // 0x14D0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 LeftHandSocketName;                                // 0x14E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeToGrapLeftHand;                                // 0x14F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeToBreakLeftHand;                               // 0x14FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeToBreakRightHand;                              // 0x1500(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeToBreakCableHead;                              // 0x1504(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          UseFixedHitLocation;                               // 0x1508(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1509[0x7];                                     // 0x1509(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFXSystemAsset*                         HitFx;                                             // 0x1510(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShrinkRatio_HitScene;                              // 0x1518(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinLength_HitScene;                                // 0x151C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShrinkRatio_NoHit;                                 // 0x1520(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinLength_NoHit;                                   // 0x1524(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ResetDefault();
@@ -56,39 +56,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_103631">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_103631")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_103631")
 	}
 	static class APyCue_AbilityLoop_103631* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_103631>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_103631) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_103631");
-static_assert(sizeof(APyCue_AbilityLoop_103631) == 0x001520, "Wrong size on APyCue_AbilityLoop_103631");
-static_assert(offsetof(APyCue_AbilityLoop_103631, TargetAttachSocketName) == 0x0014B0, "Member 'APyCue_AbilityLoop_103631::TargetAttachSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, TargetAttachLocationOffset) == 0x0014C0, "Member 'APyCue_AbilityLoop_103631::TargetAttachLocationOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, LeftHandSocketName) == 0x0014D8, "Member 'APyCue_AbilityLoop_103631::LeftHandSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, TimeToGrapLeftHand) == 0x0014E8, "Member 'APyCue_AbilityLoop_103631::TimeToGrapLeftHand' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, TimeToBreakLeftHand) == 0x0014EC, "Member 'APyCue_AbilityLoop_103631::TimeToBreakLeftHand' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, TimeToBreakRightHand) == 0x0014F0, "Member 'APyCue_AbilityLoop_103631::TimeToBreakRightHand' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, TimeToBreakCableHead) == 0x0014F4, "Member 'APyCue_AbilityLoop_103631::TimeToBreakCableHead' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, UseFixedHitLocation) == 0x0014F8, "Member 'APyCue_AbilityLoop_103631::UseFixedHitLocation' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, HitFx) == 0x001500, "Member 'APyCue_AbilityLoop_103631::HitFx' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, ShrinkRatio_HitScene) == 0x001508, "Member 'APyCue_AbilityLoop_103631::ShrinkRatio_HitScene' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, MinLength_HitScene) == 0x00150C, "Member 'APyCue_AbilityLoop_103631::MinLength_HitScene' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, ShrinkRatio_NoHit) == 0x001510, "Member 'APyCue_AbilityLoop_103631::ShrinkRatio_NoHit' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103631, MinLength_NoHit) == 0x001514, "Member 'APyCue_AbilityLoop_103631::MinLength_NoHit' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_AbilityLoop_103631;
 
 // PythonClass PyAbility_103631.PyCue_Buff_10363101
-// 0x0080 (0x1740 - 0x16C0)
+// 0x0080 (0x17F0 - 0x1770)
 class APyCue_Buff_10363101 final : public ACue_Buff_WebTying
 {
 public:
-	int32                                         StartBundleAudioId;                                // 0x16C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LoopBundleAudioID;                                 // 0x16C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         EndBundleAudioID;                                  // 0x16C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BundleEffectDuration;                              // 0x16CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  ChangedSculptAbilityTags;                          // 0x16D0(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         StartBundleAudioId;                                // 0x1770(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LoopBundleAudioID;                                 // 0x1774(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         EndBundleAudioID;                                  // 0x1778(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BundleEffectDuration;                              // 0x177C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  ChangedSculptAbilityTags;                          // 0x1780(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -99,20 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10363101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10363101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10363101")
 	}
 	static class APyCue_Buff_10363101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10363101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10363101) == 0x000010, "Wrong alignment on APyCue_Buff_10363101");
-static_assert(sizeof(APyCue_Buff_10363101) == 0x001740, "Wrong size on APyCue_Buff_10363101");
-static_assert(offsetof(APyCue_Buff_10363101, StartBundleAudioId) == 0x0016C0, "Member 'APyCue_Buff_10363101::StartBundleAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10363101, LoopBundleAudioID) == 0x0016C4, "Member 'APyCue_Buff_10363101::LoopBundleAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10363101, EndBundleAudioID) == 0x0016C8, "Member 'APyCue_Buff_10363101::EndBundleAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10363101, BundleEffectDuration) == 0x0016CC, "Member 'APyCue_Buff_10363101::BundleEffectDuration' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10363101, ChangedSculptAbilityTags) == 0x0016D0, "Member 'APyCue_Buff_10363101::ChangedSculptAbilityTags' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10363101;
 
 }
 

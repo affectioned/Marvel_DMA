@@ -40,15 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenAudioComponent">();
+		STATIC_CLASS_IMPL("PyHalloweenAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenAudioComponent")
 	}
 	static class UPyHalloweenAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHalloweenAudioComponent>();
 	}
 };
-static_assert(alignof(UPyHalloweenAudioComponent) == 0x000008, "Wrong alignment on UPyHalloweenAudioComponent");
-static_assert(sizeof(UPyHalloweenAudioComponent) == 0x000120, "Wrong size on UPyHalloweenAudioComponent");
+DUMPER7_ASSERTS_UPyHalloweenAudioComponent;
 
 }
 

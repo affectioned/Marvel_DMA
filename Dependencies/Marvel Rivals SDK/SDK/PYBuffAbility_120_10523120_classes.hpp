@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PYBuffAbility_120_10523120.PyBuffAbility_120_10523120
-// 0x0058 (0x13C8 - 0x1370)
+// 0x0058 (0x13E0 - 0x1388)
 class UPyBuffAbility_120_10523120 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         DamageRatio;                                       // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1374[0x4];                                     // 0x1374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, TArray<int32>>                    ScopeDict;                                         // 0x1378(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         DamageRatio;                                       // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138C[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, TArray<int32>>                    ScopeDict;                                         // 0x1390(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10523120">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10523120")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10523120")
 	}
 	static class UPyBuffAbility_120_10523120* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10523120>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10523120) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10523120");
-static_assert(sizeof(UPyBuffAbility_120_10523120) == 0x0013C8, "Wrong size on UPyBuffAbility_120_10523120");
-static_assert(offsetof(UPyBuffAbility_120_10523120, DamageRatio) == 0x001370, "Member 'UPyBuffAbility_120_10523120::DamageRatio' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10523120, ScopeDict) == 0x001378, "Member 'UPyBuffAbility_120_10523120::ScopeDict' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10523120;
 
 }
 

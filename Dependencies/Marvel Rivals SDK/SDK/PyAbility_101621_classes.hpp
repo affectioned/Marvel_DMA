@@ -18,45 +18,51 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101621.PyCue_Projectile_Loop_10162101
-// 0x0000 (0x1130 - 0x1130)
+// 0x0000 (0x1140 - 0x1140)
 class APyCue_Projectile_Loop_10162101 final : public AMarvelCueNotify_Projectile
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10162101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10162101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10162101")
 	}
 	static class APyCue_Projectile_Loop_10162101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10162101>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10162101) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10162101");
-static_assert(sizeof(APyCue_Projectile_Loop_10162101) == 0x001130, "Wrong size on APyCue_Projectile_Loop_10162101");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10162101;
 
 // PythonClass PyAbility_101621.PyProjectile_10162101
-// 0x0000 (0x3BA0 - 0x3BA0)
+// 0x0000 (0x3EB0 - 0x3EB0)
 class APyProjectile_10162101 final : public AProjectile_10162101
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10162101">();
+		STATIC_CLASS_IMPL("PyProjectile_10162101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10162101")
 	}
 	static class APyProjectile_10162101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10162101>();
 	}
 };
-static_assert(alignof(APyProjectile_10162101) == 0x000010, "Wrong alignment on APyProjectile_10162101");
-static_assert(sizeof(APyProjectile_10162101) == 0x003BA0, "Wrong size on APyProjectile_10162101");
+DUMPER7_ASSERTS_APyProjectile_10162101;
 
 // PythonClass PyAbility_101621.PyAbility_101621
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_101621 : public UAbility_101621
 {
 public:
-	TMulticastInlineDelegate<void(class AActor* SpawnActor)> OnSourceCharacterProjectileSuccess;     // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* SpawnActor)> OnSourceCharacterProjectileSuccess;     // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -73,67 +79,78 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101621">();
+		STATIC_CLASS_IMPL("PyAbility_101621")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101621")
 	}
 	static class UPyAbility_101621* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101621>();
 	}
 };
-static_assert(alignof(UPyAbility_101621) == 0x000008, "Wrong alignment on UPyAbility_101621");
-static_assert(sizeof(UPyAbility_101621) == 0x002A00, "Wrong size on UPyAbility_101621");
-static_assert(offsetof(UPyAbility_101621, OnSourceCharacterProjectileSuccess) == 0x0029F0, "Member 'UPyAbility_101621::OnSourceCharacterProjectileSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_101621;
 
 // PythonClass PyAbility_101621.PyCue_Projectile_HitImpact_10162101
-// 0x0000 (0x05C8 - 0x05C8)
+// 0x0000 (0x05E8 - 0x05E8)
 class UPyCue_Projectile_HitImpact_10162101 final : public UMarvelCueNotify_HitImpact
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_HitImpact_10162101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_HitImpact_10162101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_HitImpact_10162101")
 	}
 	static class UPyCue_Projectile_HitImpact_10162101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Projectile_HitImpact_10162101>();
 	}
 };
-static_assert(alignof(UPyCue_Projectile_HitImpact_10162101) == 0x000008, "Wrong alignment on UPyCue_Projectile_HitImpact_10162101");
-static_assert(sizeof(UPyCue_Projectile_HitImpact_10162101) == 0x0005C8, "Wrong size on UPyCue_Projectile_HitImpact_10162101");
+DUMPER7_ASSERTS_UPyCue_Projectile_HitImpact_10162101;
 
 // PythonClass PyAbility_101621.PyEffectiveComponent_10162101
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10162101 final : public UEffectiveComponent_Loki_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10162101">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10162101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10162101")
 	}
 	static class UPyEffectiveComponent_10162101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10162101>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10162101) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10162101");
-static_assert(sizeof(UPyEffectiveComponent_10162101) == 0x001C70, "Wrong size on UPyEffectiveComponent_10162101");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10162101;
 
 // PythonClass PyAbility_101621.PyEffectiveComponent_10162102
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10162102 final : public UEffectiveComponent_Loki_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10162102">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10162102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10162102")
 	}
 	static class UPyEffectiveComponent_10162102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10162102>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10162102) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10162102");
-static_assert(sizeof(UPyEffectiveComponent_10162102) == 0x001C70, "Wrong size on UPyEffectiveComponent_10162102");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10162102;
 
 }
 

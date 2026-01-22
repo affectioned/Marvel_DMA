@@ -23,10 +23,7 @@ public:
 	bool                                          bAffect;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ChaosRuntimeHelperBPLibrary_SetAffectIndirectLightingWhileHidden) == 0x000008, "Wrong alignment on ChaosRuntimeHelperBPLibrary_SetAffectIndirectLightingWhileHidden");
-static_assert(sizeof(ChaosRuntimeHelperBPLibrary_SetAffectIndirectLightingWhileHidden) == 0x000010, "Wrong size on ChaosRuntimeHelperBPLibrary_SetAffectIndirectLightingWhileHidden");
-static_assert(offsetof(ChaosRuntimeHelperBPLibrary_SetAffectIndirectLightingWhileHidden, Target) == 0x000000, "Member 'ChaosRuntimeHelperBPLibrary_SetAffectIndirectLightingWhileHidden::Target' has a wrong offset!");
-static_assert(offsetof(ChaosRuntimeHelperBPLibrary_SetAffectIndirectLightingWhileHidden, bAffect) == 0x000008, "Member 'ChaosRuntimeHelperBPLibrary_SetAffectIndirectLightingWhileHidden::bAffect' has a wrong offset!");
+DUMPER7_ASSERTS_ChaosRuntimeHelperBPLibrary_SetAffectIndirectLightingWhileHidden;
 
 }
 

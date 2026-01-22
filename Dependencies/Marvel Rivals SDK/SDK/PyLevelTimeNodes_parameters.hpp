@@ -23,11 +23,7 @@ public:
 	class FString                                 TimeName;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	float                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelTimeNodes_GetTimerElapsedTime) == 0x000008, "Wrong alignment on PyLevelTimeNodes_GetTimerElapsedTime");
-static_assert(sizeof(PyLevelTimeNodes_GetTimerElapsedTime) == 0x000020, "Wrong size on PyLevelTimeNodes_GetTimerElapsedTime");
-static_assert(offsetof(PyLevelTimeNodes_GetTimerElapsedTime, Instance) == 0x000000, "Member 'PyLevelTimeNodes_GetTimerElapsedTime::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelTimeNodes_GetTimerElapsedTime, TimeName) == 0x000008, "Member 'PyLevelTimeNodes_GetTimerElapsedTime::TimeName' has a wrong offset!");
-static_assert(offsetof(PyLevelTimeNodes_GetTimerElapsedTime, ReturnValue) == 0x000018, "Member 'PyLevelTimeNodes_GetTimerElapsedTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelTimeNodes_GetTimerElapsedTime;
 
 // PythonFunction PyLevelTimeNodes.PyLevelTimeNodes.GetTimerRemainingTime
 // 0x0020 (0x0020 - 0x0000)
@@ -38,11 +34,7 @@ public:
 	class FString                                 TimeName;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	float                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelTimeNodes_GetTimerRemainingTime) == 0x000008, "Wrong alignment on PyLevelTimeNodes_GetTimerRemainingTime");
-static_assert(sizeof(PyLevelTimeNodes_GetTimerRemainingTime) == 0x000020, "Wrong size on PyLevelTimeNodes_GetTimerRemainingTime");
-static_assert(offsetof(PyLevelTimeNodes_GetTimerRemainingTime, Instance) == 0x000000, "Member 'PyLevelTimeNodes_GetTimerRemainingTime::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelTimeNodes_GetTimerRemainingTime, TimeName) == 0x000008, "Member 'PyLevelTimeNodes_GetTimerRemainingTime::TimeName' has a wrong offset!");
-static_assert(offsetof(PyLevelTimeNodes_GetTimerRemainingTime, ReturnValue) == 0x000018, "Member 'PyLevelTimeNodes_GetTimerRemainingTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelTimeNodes_GetTimerRemainingTime;
 
 }
 

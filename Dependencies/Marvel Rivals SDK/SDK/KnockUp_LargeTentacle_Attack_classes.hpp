@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass KnockUp_LargeTentacle_Attack.KnockUp_LargeTentacle_Attack_C
-// 0x0000 (0x2038 - 0x2038)
+// 0x0000 (0x2388 - 0x2388)
 class UKnockUp_LargeTentacle_Attack_C final : public UPyKnockUp_LargeTentacle_Attack
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"KnockUp_LargeTentacle_Attack_C">();
+		BP_STATIC_CLASS_IMPL("KnockUp_LargeTentacle_Attack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KnockUp_LargeTentacle_Attack_C")
 	}
 	static class UKnockUp_LargeTentacle_Attack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKnockUp_LargeTentacle_Attack_C>();
 	}
 };
-static_assert(alignof(UKnockUp_LargeTentacle_Attack_C) == 0x000008, "Wrong alignment on UKnockUp_LargeTentacle_Attack_C");
-static_assert(sizeof(UKnockUp_LargeTentacle_Attack_C) == 0x002038, "Wrong size on UKnockUp_LargeTentacle_Attack_C");
+DUMPER7_ASSERTS_UKnockUp_LargeTentacle_Attack_C;
 
 }
 

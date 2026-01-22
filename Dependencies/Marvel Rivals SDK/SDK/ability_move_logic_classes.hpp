@@ -33,7 +33,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIMoveControlLogicBase">();
+		STATIC_CLASS_IMPL("PyAIMoveControlLogicBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIMoveControlLogicBase")
 	}
 	static class UPyAIMoveControlLogicBase* GetDefaultObj()
 	{
@@ -41,10 +45,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyAIMoveControlLogicBase) == 0x000008, "Wrong alignment on UPyAIMoveControlLogicBase");
-static_assert(sizeof(UPyAIMoveControlLogicBase) == 0x0000B8, "Wrong size on UPyAIMoveControlLogicBase");
-static_assert(offsetof(UPyAIMoveControlLogicBase, ValidTags) == 0x000048, "Member 'UPyAIMoveControlLogicBase::ValidTags' has a wrong offset!");
-static_assert(offsetof(UPyAIMoveControlLogicBase, InvertTag) == 0x0000B0, "Member 'UPyAIMoveControlLogicBase::InvertTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIMoveControlLogicBase;
 
 // PythonClass ability_move_logic.PyAIMoveControl_MoveByForce
 // 0x0010 (0x00C8 - 0x00B8)
@@ -61,20 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIMoveControl_MoveByForce">();
+		STATIC_CLASS_IMPL("PyAIMoveControl_MoveByForce")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIMoveControl_MoveByForce")
 	}
 	static class UPyAIMoveControl_MoveByForce* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIMoveControl_MoveByForce>();
 	}
 };
-static_assert(alignof(UPyAIMoveControl_MoveByForce) == 0x000008, "Wrong alignment on UPyAIMoveControl_MoveByForce");
-static_assert(sizeof(UPyAIMoveControl_MoveByForce) == 0x0000C8, "Wrong size on UPyAIMoveControl_MoveByForce");
-static_assert(offsetof(UPyAIMoveControl_MoveByForce, CheckRange) == 0x0000B4, "Member 'UPyAIMoveControl_MoveByForce::CheckRange' has a wrong offset!");
-static_assert(offsetof(UPyAIMoveControl_MoveByForce, TeammateForce) == 0x0000B8, "Member 'UPyAIMoveControl_MoveByForce::TeammateForce' has a wrong offset!");
-static_assert(offsetof(UPyAIMoveControl_MoveByForce, EnemyForce) == 0x0000BC, "Member 'UPyAIMoveControl_MoveByForce::EnemyForce' has a wrong offset!");
-static_assert(offsetof(UPyAIMoveControl_MoveByForce, ShouldHaveTeammate) == 0x0000C0, "Member 'UPyAIMoveControl_MoveByForce::ShouldHaveTeammate' has a wrong offset!");
-static_assert(offsetof(UPyAIMoveControl_MoveByForce, ShouldHaveEnemy) == 0x0000C1, "Member 'UPyAIMoveControl_MoveByForce::ShouldHaveEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIMoveControl_MoveByForce;
 
 // PythonClass ability_move_logic.PyAIMoveControl_MoveThroughEnemy
 // 0x0008 (0x00C0 - 0x00B8)
@@ -89,18 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIMoveControl_MoveThroughEnemy">();
+		STATIC_CLASS_IMPL("PyAIMoveControl_MoveThroughEnemy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIMoveControl_MoveThroughEnemy")
 	}
 	static class UPyAIMoveControl_MoveThroughEnemy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIMoveControl_MoveThroughEnemy>();
 	}
 };
-static_assert(alignof(UPyAIMoveControl_MoveThroughEnemy) == 0x000008, "Wrong alignment on UPyAIMoveControl_MoveThroughEnemy");
-static_assert(sizeof(UPyAIMoveControl_MoveThroughEnemy) == 0x0000C0, "Wrong size on UPyAIMoveControl_MoveThroughEnemy");
-static_assert(offsetof(UPyAIMoveControl_MoveThroughEnemy, CheckRange) == 0x0000B4, "Member 'UPyAIMoveControl_MoveThroughEnemy::CheckRange' has a wrong offset!");
-static_assert(offsetof(UPyAIMoveControl_MoveThroughEnemy, EnemyDistanceRange) == 0x0000B8, "Member 'UPyAIMoveControl_MoveThroughEnemy::EnemyDistanceRange' has a wrong offset!");
-static_assert(offsetof(UPyAIMoveControl_MoveThroughEnemy, AccessRange) == 0x0000BC, "Member 'UPyAIMoveControl_MoveThroughEnemy::AccessRange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIMoveControl_MoveThroughEnemy;
 
 }
 

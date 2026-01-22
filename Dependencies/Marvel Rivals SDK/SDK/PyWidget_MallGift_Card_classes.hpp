@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "PyMarvelUserWidget_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -20,42 +20,45 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallGift_Card.PyWidget_MallGift_Card_Prop_Item
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_MallGift_Card_Prop_Item final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallGift_Card_Prop_Item">();
+		STATIC_CLASS_IMPL("PyWidget_MallGift_Card_Prop_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallGift_Card_Prop_Item")
 	}
 	static class UPyWidget_MallGift_Card_Prop_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallGift_Card_Prop_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_MallGift_Card_Prop_Item) == 0x000008, "Wrong alignment on UPyWidget_MallGift_Card_Prop_Item");
-static_assert(sizeof(UPyWidget_MallGift_Card_Prop_Item) == 0x0005C0, "Wrong size on UPyWidget_MallGift_Card_Prop_Item");
+DUMPER7_ASSERTS_UPyWidget_MallGift_Card_Prop_Item;
 
 // PythonClass PyWidget_MallGift_Card.PyWidget_MallGift_Card
-// 0x0088 (0x0648 - 0x05C0)
+// 0x0088 (0x0650 - 0x05C8)
 class UPyWidget_MallGift_Card final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGuideTipsStyle>                InputTipsStyle;                                    // 0x05C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                CancelTipsStyle;                                   // 0x05D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_MallGift_Card_Prop_Item> Gift_Props_Item;                            // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Gift_Props_Item_Size_Big;                          // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Gift_Props_Item_Size_Small;                        // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Gift_Props_Count;                                  // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Gift_Props_Count_Small;                            // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Is_Receive_Card;                                   // 0x0610(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_611[0x3];                                      // 0x0611(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Input_Editing_Opacity;                             // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Input_Not_Editing_Opacity;                         // 0x0618(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MultiLineText_ViewLine;                            // 0x061C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextPlayerNameNormal;                              // 0x0620(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextPlayerNameDiscord;                             // 0x0634(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuideTipsStyle>                InputTipsStyle;                                    // 0x05C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                CancelTipsStyle;                                   // 0x05D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_MallGift_Card_Prop_Item> Gift_Props_Item;                            // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Gift_Props_Item_Size_Big;                          // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Gift_Props_Item_Size_Small;                        // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Gift_Props_Count;                                  // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Gift_Props_Count_Small;                            // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Is_Receive_Card;                                   // 0x0618(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_619[0x3];                                      // 0x0619(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Input_Editing_Opacity;                             // 0x061C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Input_Not_Editing_Opacity;                         // 0x0620(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MultiLineText_ViewLine;                            // 0x0624(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextPlayerNameNormal;                              // 0x0628(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextPlayerNameDiscord;                             // 0x063C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -68,28 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallGift_Card">();
+		STATIC_CLASS_IMPL("PyWidget_MallGift_Card")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallGift_Card")
 	}
 	static class UPyWidget_MallGift_Card* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallGift_Card>();
 	}
 };
-static_assert(alignof(UPyWidget_MallGift_Card) == 0x000008, "Wrong alignment on UPyWidget_MallGift_Card");
-static_assert(sizeof(UPyWidget_MallGift_Card) == 0x000648, "Wrong size on UPyWidget_MallGift_Card");
-static_assert(offsetof(UPyWidget_MallGift_Card, InputTipsStyle) == 0x0005C0, "Member 'UPyWidget_MallGift_Card::InputTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, CancelTipsStyle) == 0x0005D0, "Member 'UPyWidget_MallGift_Card::CancelTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, Gift_Props_Item) == 0x0005E0, "Member 'UPyWidget_MallGift_Card::Gift_Props_Item' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, Gift_Props_Item_Size_Big) == 0x0005E8, "Member 'UPyWidget_MallGift_Card::Gift_Props_Item_Size_Big' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, Gift_Props_Item_Size_Small) == 0x0005F8, "Member 'UPyWidget_MallGift_Card::Gift_Props_Item_Size_Small' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, Gift_Props_Count) == 0x000608, "Member 'UPyWidget_MallGift_Card::Gift_Props_Count' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, Gift_Props_Count_Small) == 0x00060C, "Member 'UPyWidget_MallGift_Card::Gift_Props_Count_Small' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, Is_Receive_Card) == 0x000610, "Member 'UPyWidget_MallGift_Card::Is_Receive_Card' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, Input_Editing_Opacity) == 0x000614, "Member 'UPyWidget_MallGift_Card::Input_Editing_Opacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, Input_Not_Editing_Opacity) == 0x000618, "Member 'UPyWidget_MallGift_Card::Input_Not_Editing_Opacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, MultiLineText_ViewLine) == 0x00061C, "Member 'UPyWidget_MallGift_Card::MultiLineText_ViewLine' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, TextPlayerNameNormal) == 0x000620, "Member 'UPyWidget_MallGift_Card::TextPlayerNameNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Card, TextPlayerNameDiscord) == 0x000634, "Member 'UPyWidget_MallGift_Card::TextPlayerNameDiscord' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallGift_Card;
 
 }
 

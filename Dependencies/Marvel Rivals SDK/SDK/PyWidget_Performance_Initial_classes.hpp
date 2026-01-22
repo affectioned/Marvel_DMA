@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Performance_Initial.PyWidget_Performance_Initial
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Performance_Initial final : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_Initial">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_Initial")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_Initial")
 	}
 	static class UPyWidget_Performance_Initial* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_Initial>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_Initial) == 0x000008, "Wrong alignment on UPyWidget_Performance_Initial");
-static_assert(sizeof(UPyWidget_Performance_Initial) == 0x0005C0, "Wrong size on UPyWidget_Performance_Initial");
+DUMPER7_ASSERTS_UPyWidget_Performance_Initial;
 
 }
 

@@ -24,9 +24,7 @@ struct PyBattleChessPlaceController_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleChessPlaceController_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyBattleChessPlaceController_ReceiveEndPlay");
-static_assert(sizeof(PyBattleChessPlaceController_ReceiveEndPlay) == 0x000001, "Wrong size on PyBattleChessPlaceController_ReceiveEndPlay");
-static_assert(offsetof(PyBattleChessPlaceController_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyBattleChessPlaceController_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleChessPlaceController_ReceiveEndPlay;
 
 // PythonFunction PyBattleChessPlaceController.PyBattleChessPlaceController.OnSelectBattleChessGrid
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyBattleChessPlaceController_OnSelectBattleChessGrid final
 public:
 	class AActor*                                 CharacterStart;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleChessPlaceController_OnSelectBattleChessGrid) == 0x000008, "Wrong alignment on PyBattleChessPlaceController_OnSelectBattleChessGrid");
-static_assert(sizeof(PyBattleChessPlaceController_OnSelectBattleChessGrid) == 0x000008, "Wrong size on PyBattleChessPlaceController_OnSelectBattleChessGrid");
-static_assert(offsetof(PyBattleChessPlaceController_OnSelectBattleChessGrid, CharacterStart) == 0x000000, "Member 'PyBattleChessPlaceController_OnSelectBattleChessGrid::CharacterStart' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleChessPlaceController_OnSelectBattleChessGrid;
 
 // PythonFunction PyBattleChessPlaceController.PyBattleChessPlaceController.C_OnClickBattleChessGrid
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +42,7 @@ struct PyBattleChessPlaceController_C_OnClickBattleChessGrid final
 public:
 	class AActor*                                 CharacterStart;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleChessPlaceController_C_OnClickBattleChessGrid) == 0x000008, "Wrong alignment on PyBattleChessPlaceController_C_OnClickBattleChessGrid");
-static_assert(sizeof(PyBattleChessPlaceController_C_OnClickBattleChessGrid) == 0x000008, "Wrong size on PyBattleChessPlaceController_C_OnClickBattleChessGrid");
-static_assert(offsetof(PyBattleChessPlaceController_C_OnClickBattleChessGrid, CharacterStart) == 0x000000, "Member 'PyBattleChessPlaceController_C_OnClickBattleChessGrid::CharacterStart' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleChessPlaceController_C_OnClickBattleChessGrid;
 
 // PythonFunction PyBattleChessPlaceController.PyBattleChessPlaceController.C_OnHoverBattleChessGrid
 // 0x0010 (0x0010 - 0x0000)
@@ -59,10 +53,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CharacterStart;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleChessPlaceController_C_OnHoverBattleChessGrid) == 0x000008, "Wrong alignment on PyBattleChessPlaceController_C_OnHoverBattleChessGrid");
-static_assert(sizeof(PyBattleChessPlaceController_C_OnHoverBattleChessGrid) == 0x000010, "Wrong size on PyBattleChessPlaceController_C_OnHoverBattleChessGrid");
-static_assert(offsetof(PyBattleChessPlaceController_C_OnHoverBattleChessGrid, IsHover) == 0x000000, "Member 'PyBattleChessPlaceController_C_OnHoverBattleChessGrid::IsHover' has a wrong offset!");
-static_assert(offsetof(PyBattleChessPlaceController_C_OnHoverBattleChessGrid, CharacterStart) == 0x000008, "Member 'PyBattleChessPlaceController_C_OnHoverBattleChessGrid::CharacterStart' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleChessPlaceController_C_OnHoverBattleChessGrid;
 
 // PythonFunction PyBattleChessPlaceController.PyBattleChessPlaceController.C_OnDraggingBattleChessGrid
 // 0x0001 (0x0001 - 0x0000)
@@ -71,9 +62,7 @@ struct PyBattleChessPlaceController_C_OnDraggingBattleChessGrid final
 public:
 	bool                                          IsDragging;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleChessPlaceController_C_OnDraggingBattleChessGrid) == 0x000001, "Wrong alignment on PyBattleChessPlaceController_C_OnDraggingBattleChessGrid");
-static_assert(sizeof(PyBattleChessPlaceController_C_OnDraggingBattleChessGrid) == 0x000001, "Wrong size on PyBattleChessPlaceController_C_OnDraggingBattleChessGrid");
-static_assert(offsetof(PyBattleChessPlaceController_C_OnDraggingBattleChessGrid, IsDragging) == 0x000000, "Member 'PyBattleChessPlaceController_C_OnDraggingBattleChessGrid::IsDragging' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleChessPlaceController_C_OnDraggingBattleChessGrid;
 
 }
 

@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PyMarvelUserWidget_classes.hpp"
 #include "PyWidget_SecondaryChildBase_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_AwardInfoConfirm.PyWidget_Secondary_AwardInfoConfirm
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_AwardInfoConfirm final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -27,24 +27,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_AwardInfoConfirm">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_AwardInfoConfirm")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_AwardInfoConfirm")
 	}
 	static class UPyWidget_Secondary_AwardInfoConfirm* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_AwardInfoConfirm>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_AwardInfoConfirm) == 0x000008, "Wrong alignment on UPyWidget_Secondary_AwardInfoConfirm");
-static_assert(sizeof(UPyWidget_Secondary_AwardInfoConfirm) == 0x0005C0, "Wrong size on UPyWidget_Secondary_AwardInfoConfirm");
+DUMPER7_ASSERTS_UPyWidget_Secondary_AwardInfoConfirm;
 
 // PythonClass PyWidget_Secondary_AwardInfoConfirm.PyWidget_Secondary_AwardInfoConfirmItem
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_Secondary_AwardInfoConfirmItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Text_Title;                                        // 0x05C0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	class FText                                   Text_Content;                                      // 0x05D8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Text_Title;                                        // 0x05C8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	class FText                                   Text_Content;                                      // 0x05E0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -53,17 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_AwardInfoConfirmItem">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_AwardInfoConfirmItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_AwardInfoConfirmItem")
 	}
 	static class UPyWidget_Secondary_AwardInfoConfirmItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_AwardInfoConfirmItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_AwardInfoConfirmItem) == 0x000008, "Wrong alignment on UPyWidget_Secondary_AwardInfoConfirmItem");
-static_assert(sizeof(UPyWidget_Secondary_AwardInfoConfirmItem) == 0x0005F0, "Wrong size on UPyWidget_Secondary_AwardInfoConfirmItem");
-static_assert(offsetof(UPyWidget_Secondary_AwardInfoConfirmItem, Text_Title) == 0x0005C0, "Member 'UPyWidget_Secondary_AwardInfoConfirmItem::Text_Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_AwardInfoConfirmItem, Text_Content) == 0x0005D8, "Member 'UPyWidget_Secondary_AwardInfoConfirmItem::Text_Content' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_AwardInfoConfirmItem;
 
 }
 

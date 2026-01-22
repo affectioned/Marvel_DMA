@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_NavigationBar_Button.PyWidget_BattlePass_NavigationBar_Button
-// 0x0000 (0x07C0 - 0x07C0)
+// 0x0000 (0x0818 - 0x0818)
 class UPyWidget_BattlePass_NavigationBar_Button final : public UPyWidget_Common_NavigationBar_FirstInfo_Button
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_NavigationBar_Button">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_NavigationBar_Button")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_NavigationBar_Button")
 	}
 	static class UPyWidget_BattlePass_NavigationBar_Button* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_NavigationBar_Button>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_NavigationBar_Button) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_NavigationBar_Button");
-static_assert(sizeof(UPyWidget_BattlePass_NavigationBar_Button) == 0x0007C0, "Wrong size on UPyWidget_BattlePass_NavigationBar_Button");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_NavigationBar_Button;
 
 }
 

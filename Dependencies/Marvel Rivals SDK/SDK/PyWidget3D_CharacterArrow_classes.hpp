@@ -23,15 +23,18 @@ class UPyWidget3D_CharacterArrow : public UWidget3D_LittleArrow
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_CharacterArrow">();
+		STATIC_CLASS_IMPL("PyWidget3D_CharacterArrow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_CharacterArrow")
 	}
 	static class UPyWidget3D_CharacterArrow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget3D_CharacterArrow>();
 	}
 };
-static_assert(alignof(UPyWidget3D_CharacterArrow) == 0x000010, "Wrong alignment on UPyWidget3D_CharacterArrow");
-static_assert(sizeof(UPyWidget3D_CharacterArrow) == 0x0008A0, "Wrong size on UPyWidget3D_CharacterArrow");
+DUMPER7_ASSERTS_UPyWidget3D_CharacterArrow;
 
 }
 

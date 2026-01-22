@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Chat_ColorBtn.WBP_Chat_ColorBtn_C
-// 0x0018 (0x05E8 - 0x05D0)
+// 0x0018 (0x05F0 - 0x05D8)
 class UWBP_Chat_ColorBtn_C final : public UPyWidget_ChatColorButton
 {
 public:
-	class UMarvelButton*                          Btn_Chat_Enter;                                    // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Color_Line;                                    // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Color;                                        // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Chat_Enter;                                    // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Color_Line;                                    // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Color;                                        // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Chat_ColorBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Chat_ColorBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Chat_ColorBtn_C")
 	}
 	static class UWBP_Chat_ColorBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Chat_ColorBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_Chat_ColorBtn_C) == 0x000008, "Wrong alignment on UWBP_Chat_ColorBtn_C");
-static_assert(sizeof(UWBP_Chat_ColorBtn_C) == 0x0005E8, "Wrong size on UWBP_Chat_ColorBtn_C");
-static_assert(offsetof(UWBP_Chat_ColorBtn_C, Btn_Chat_Enter) == 0x0005D0, "Member 'UWBP_Chat_ColorBtn_C::Btn_Chat_Enter' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_ColorBtn_C, Img_Color_Line) == 0x0005D8, "Member 'UWBP_Chat_ColorBtn_C::Img_Color_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_ColorBtn_C, Text_Color) == 0x0005E0, "Member 'UWBP_Chat_ColorBtn_C::Text_Color' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Chat_ColorBtn_C;
 
 }
 

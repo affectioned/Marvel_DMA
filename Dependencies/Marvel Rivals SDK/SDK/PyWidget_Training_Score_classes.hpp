@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Training_Score.PyWidget_Training_Score
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Training_Score : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            TextColor_White;                                   // 0x05BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColor_Yellow;                                  // 0x05D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         EmphasizeVxTime;                                   // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            TextColor_White;                                   // 0x05C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Yellow;                                  // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         EmphasizeVxTime;                                   // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Training_Score">();
+		STATIC_CLASS_IMPL("PyWidget_Training_Score")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Training_Score")
 	}
 	static class UPyWidget_Training_Score* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Training_Score>();
 	}
 };
-static_assert(alignof(UPyWidget_Training_Score) == 0x000008, "Wrong alignment on UPyWidget_Training_Score");
-static_assert(sizeof(UPyWidget_Training_Score) == 0x0005E8, "Wrong size on UPyWidget_Training_Score");
-static_assert(offsetof(UPyWidget_Training_Score, TextColor_White) == 0x0005BC, "Member 'UPyWidget_Training_Score::TextColor_White' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Training_Score, TextColor_Yellow) == 0x0005D0, "Member 'UPyWidget_Training_Score::TextColor_Yellow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Training_Score, EmphasizeVxTime) == 0x0005E4, "Member 'UPyWidget_Training_Score::EmphasizeVxTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Training_Score;
 
 }
 

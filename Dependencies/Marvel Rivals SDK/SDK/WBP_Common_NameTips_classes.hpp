@@ -17,35 +17,32 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_NameTips.WBP_Common_NameTips_C
-// 0x0030 (0x07C0 - 0x0790)
+// 0x0030 (0x07C8 - 0x0798)
 class UWBP_Common_NameTips_C final : public UPyWidget_Common_NameTips
 {
 public:
-	class UMarvelImage*                           Img_Bg;                                            // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Frame;                                         // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Icon;                                      // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   Text_Name;                                         // 0x07A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Com_Platform_C*                    WBP_Com_Platform;                                  // 0x07B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                WBP_Common_KeyWidget;                              // 0x07B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg;                                            // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Frame;                                         // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Icon;                                      // 0x07A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   Text_Name;                                         // 0x07B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Com_Platform_C*                    WBP_Com_Platform;                                  // 0x07B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                WBP_Common_KeyWidget;                              // 0x07C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_NameTips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_NameTips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_NameTips_C")
 	}
 	static class UWBP_Common_NameTips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_NameTips_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_NameTips_C) == 0x000008, "Wrong alignment on UWBP_Common_NameTips_C");
-static_assert(sizeof(UWBP_Common_NameTips_C) == 0x0007C0, "Wrong size on UWBP_Common_NameTips_C");
-static_assert(offsetof(UWBP_Common_NameTips_C, Img_Bg) == 0x000790, "Member 'UWBP_Common_NameTips_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NameTips_C, Img_Frame) == 0x000798, "Member 'UWBP_Common_NameTips_C::Img_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NameTips_C, Overlay_Icon) == 0x0007A0, "Member 'UWBP_Common_NameTips_C::Overlay_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NameTips_C, Text_Name) == 0x0007A8, "Member 'UWBP_Common_NameTips_C::Text_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NameTips_C, WBP_Com_Platform) == 0x0007B0, "Member 'UWBP_Common_NameTips_C::WBP_Com_Platform' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NameTips_C, WBP_Common_KeyWidget) == 0x0007B8, "Member 'UWBP_Common_NameTips_C::WBP_Common_KeyWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_NameTips_C;
 
 }
 

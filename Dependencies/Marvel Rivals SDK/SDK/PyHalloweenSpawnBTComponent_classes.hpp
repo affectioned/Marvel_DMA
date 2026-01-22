@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenSpawnBTComponent">();
+		STATIC_CLASS_IMPL("PyHalloweenSpawnBTComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenSpawnBTComponent")
 	}
 	static class UPyHalloweenSpawnBTComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHalloweenSpawnBTComponent>();
 	}
 };
-static_assert(alignof(UPyHalloweenSpawnBTComponent) == 0x000008, "Wrong alignment on UPyHalloweenSpawnBTComponent");
-static_assert(sizeof(UPyHalloweenSpawnBTComponent) == 0x000110, "Wrong size on UPyHalloweenSpawnBTComponent");
-static_assert(offsetof(UPyHalloweenSpawnBTComponent, ActiveBTTree) == 0x000108, "Member 'UPyHalloweenSpawnBTComponent::ActiveBTTree' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHalloweenSpawnBTComponent;
 
 }
 

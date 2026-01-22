@@ -20,34 +20,34 @@ namespace SDK
 {
 
 // PythonClass PyWidget_FriendsModular_V3.PyWidget_FriendsModular_V3
-// 0x01D8 (0x0748 - 0x0570)
+// 0x01D8 (0x0750 - 0x0578)
 class UPyWidget_FriendsModular_V3 final : public UWidget_ListEntry
 {
 public:
-	TArray<struct FLinearColor>                   TabStateColor;                                     // 0x0570(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<class FString, struct FLinearColor>      NameColor;                                         // 0x0580(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           TabPlayerState;                                    // 0x05D0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           FriendsText;                                       // 0x05E0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           PSFriendsText;                                     // 0x05F0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           OnlyPSFriendsText;                                 // 0x0600(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           AddFriendsText;                                    // 0x0610(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           SearchPlayerInBlacklistText;                       // 0x0620(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           ApplyText;                                         // 0x0630(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<EDiscordDisplayState, struct FSlateBrush> DiscordOnlineImgs;                                // 0x0640(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          NormalItem;                                        // 0x0690(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_691[0x3];                                      // 0x0691(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ApplyTime;                                         // 0x0694(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   AddBtnTips;                                        // 0x0698(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   AcceptAdd;                                         // 0x06B0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   RefuceAdd;                                         // 0x06C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   InviteTips;                                        // 0x06E0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   ApplyTips;                                         // 0x06F8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   TeamText;                                          // 0x0710(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         TestState;                                         // 0x0728(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_72C[0x4];                                      // 0x072C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_OpenSelectBox;                             // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_DeleteFriendsPanel;                        // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                Item_Object;                                       // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   TabStateColor;                                     // 0x0578(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<class FString, struct FLinearColor>      NameColor;                                         // 0x0588(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           TabPlayerState;                                    // 0x05D8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           FriendsText;                                       // 0x05E8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           PSFriendsText;                                     // 0x05F8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           OnlyPSFriendsText;                                 // 0x0608(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           AddFriendsText;                                    // 0x0618(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           SearchPlayerInBlacklistText;                       // 0x0628(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           ApplyText;                                         // 0x0638(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<EDiscordDisplayState, struct FSlateBrush> DiscordOnlineImgs;                                // 0x0648(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          NormalItem;                                        // 0x0698(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_699[0x3];                                      // 0x0699(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ApplyTime;                                         // 0x069C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   AddBtnTips;                                        // 0x06A0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   AcceptAdd;                                         // 0x06B8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   RefuceAdd;                                         // 0x06D0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   InviteTips;                                        // 0x06E8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   ApplyTips;                                         // 0x0700(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   TeamText;                                          // 0x0718(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         TestState;                                         // 0x0730(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_734[0x4];                                      // 0x0734(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_OpenSelectBox;                             // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_DeleteFriendsPanel;                        // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                Item_Object;                                       // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -60,37 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_FriendsModular_V3">();
+		STATIC_CLASS_IMPL("PyWidget_FriendsModular_V3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_FriendsModular_V3")
 	}
 	static class UPyWidget_FriendsModular_V3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_FriendsModular_V3>();
 	}
 };
-static_assert(alignof(UPyWidget_FriendsModular_V3) == 0x000008, "Wrong alignment on UPyWidget_FriendsModular_V3");
-static_assert(sizeof(UPyWidget_FriendsModular_V3) == 0x000748, "Wrong size on UPyWidget_FriendsModular_V3");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, TabStateColor) == 0x000570, "Member 'UPyWidget_FriendsModular_V3::TabStateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, NameColor) == 0x000580, "Member 'UPyWidget_FriendsModular_V3::NameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, TabPlayerState) == 0x0005D0, "Member 'UPyWidget_FriendsModular_V3::TabPlayerState' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, FriendsText) == 0x0005E0, "Member 'UPyWidget_FriendsModular_V3::FriendsText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, PSFriendsText) == 0x0005F0, "Member 'UPyWidget_FriendsModular_V3::PSFriendsText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, OnlyPSFriendsText) == 0x000600, "Member 'UPyWidget_FriendsModular_V3::OnlyPSFriendsText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, AddFriendsText) == 0x000610, "Member 'UPyWidget_FriendsModular_V3::AddFriendsText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, SearchPlayerInBlacklistText) == 0x000620, "Member 'UPyWidget_FriendsModular_V3::SearchPlayerInBlacklistText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, ApplyText) == 0x000630, "Member 'UPyWidget_FriendsModular_V3::ApplyText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, DiscordOnlineImgs) == 0x000640, "Member 'UPyWidget_FriendsModular_V3::DiscordOnlineImgs' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, NormalItem) == 0x000690, "Member 'UPyWidget_FriendsModular_V3::NormalItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, ApplyTime) == 0x000694, "Member 'UPyWidget_FriendsModular_V3::ApplyTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, AddBtnTips) == 0x000698, "Member 'UPyWidget_FriendsModular_V3::AddBtnTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, AcceptAdd) == 0x0006B0, "Member 'UPyWidget_FriendsModular_V3::AcceptAdd' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, RefuceAdd) == 0x0006C8, "Member 'UPyWidget_FriendsModular_V3::RefuceAdd' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, InviteTips) == 0x0006E0, "Member 'UPyWidget_FriendsModular_V3::InviteTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, ApplyTips) == 0x0006F8, "Member 'UPyWidget_FriendsModular_V3::ApplyTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, TeamText) == 0x000710, "Member 'UPyWidget_FriendsModular_V3::TeamText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, TestState) == 0x000728, "Member 'UPyWidget_FriendsModular_V3::TestState' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, AkEvent_OpenSelectBox) == 0x000730, "Member 'UPyWidget_FriendsModular_V3::AkEvent_OpenSelectBox' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, AkEvent_DeleteFriendsPanel) == 0x000738, "Member 'UPyWidget_FriendsModular_V3::AkEvent_DeleteFriendsPanel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsModular_V3, Item_Object) == 0x000740, "Member 'UPyWidget_FriendsModular_V3::Item_Object' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_FriendsModular_V3;
 
 }
 

@@ -12,8 +12,8 @@
 
 #include "Marvel_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 
 
 namespace SDK::Params
@@ -28,11 +28,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_MineControl_WhileActive) == 0x000008, "Wrong alignment on PyCue_Level_MineControl_WhileActive");
-static_assert(sizeof(PyCue_Level_MineControl_WhileActive) == 0x0001E0, "Wrong size on PyCue_Level_MineControl_WhileActive");
-static_assert(offsetof(PyCue_Level_MineControl_WhileActive, ControlActor) == 0x000000, "Member 'PyCue_Level_MineControl_WhileActive::ControlActor' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_MineControl_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Level_MineControl_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_MineControl_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Level_MineControl_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_MineControl_WhileActive;
 
 // PythonFunction PyMineControl.PyCue_Level_MineControl.OnControlOwnerChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -42,10 +38,7 @@ public:
 	class AActor*                                 ControlPoint;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                OwnerSide;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_MineControl_OnControlOwnerChanged) == 0x000008, "Wrong alignment on PyCue_Level_MineControl_OnControlOwnerChanged");
-static_assert(sizeof(PyCue_Level_MineControl_OnControlOwnerChanged) == 0x000010, "Wrong size on PyCue_Level_MineControl_OnControlOwnerChanged");
-static_assert(offsetof(PyCue_Level_MineControl_OnControlOwnerChanged, ControlPoint) == 0x000000, "Member 'PyCue_Level_MineControl_OnControlOwnerChanged::ControlPoint' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_MineControl_OnControlOwnerChanged, OwnerSide) == 0x000008, "Member 'PyCue_Level_MineControl_OnControlOwnerChanged::OwnerSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_MineControl_OnControlOwnerChanged;
 
 // PythonFunction PyMineControl.PyMineControl.GetLastLeaveTime
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +47,7 @@ struct PyMineControl_GetLastLeaveTime final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMineControl_GetLastLeaveTime) == 0x000004, "Wrong alignment on PyMineControl_GetLastLeaveTime");
-static_assert(sizeof(PyMineControl_GetLastLeaveTime) == 0x000004, "Wrong size on PyMineControl_GetLastLeaveTime");
-static_assert(offsetof(PyMineControl_GetLastLeaveTime, ReturnValue) == 0x000000, "Member 'PyMineControl_GetLastLeaveTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMineControl_GetLastLeaveTime;
 
 // PythonFunction PyMineControl.PyMineControl.SetSceneHUDVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +56,7 @@ struct PyMineControl_SetSceneHUDVisible final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMineControl_SetSceneHUDVisible) == 0x000001, "Wrong alignment on PyMineControl_SetSceneHUDVisible");
-static_assert(sizeof(PyMineControl_SetSceneHUDVisible) == 0x000001, "Wrong size on PyMineControl_SetSceneHUDVisible");
-static_assert(offsetof(PyMineControl_SetSceneHUDVisible, visible) == 0x000000, "Member 'PyMineControl_SetSceneHUDVisible::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyMineControl_SetSceneHUDVisible;
 
 // PythonFunction PyMineControl.PyMineControl.ShouldShowSceneHUD
 // 0x0001 (0x0001 - 0x0000)
@@ -76,9 +65,7 @@ struct PyMineControl_ShouldShowSceneHUD final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMineControl_ShouldShowSceneHUD) == 0x000001, "Wrong alignment on PyMineControl_ShouldShowSceneHUD");
-static_assert(sizeof(PyMineControl_ShouldShowSceneHUD) == 0x000001, "Wrong size on PyMineControl_ShouldShowSceneHUD");
-static_assert(offsetof(PyMineControl_ShouldShowSceneHUD, ReturnValue) == 0x000000, "Member 'PyMineControl_ShouldShowSceneHUD::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMineControl_ShouldShowSceneHUD;
 
 // PythonFunction PyMineControl.PyMineControl.Multicast_SetMineUnlockTime
 // 0x0004 (0x0004 - 0x0000)
@@ -87,9 +74,7 @@ struct PyMineControl_Multicast_SetMineUnlockTime final
 public:
 	int32                                         UnlockTime;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMineControl_Multicast_SetMineUnlockTime) == 0x000004, "Wrong alignment on PyMineControl_Multicast_SetMineUnlockTime");
-static_assert(sizeof(PyMineControl_Multicast_SetMineUnlockTime) == 0x000004, "Wrong size on PyMineControl_Multicast_SetMineUnlockTime");
-static_assert(offsetof(PyMineControl_Multicast_SetMineUnlockTime, UnlockTime) == 0x000000, "Member 'PyMineControl_Multicast_SetMineUnlockTime::UnlockTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyMineControl_Multicast_SetMineUnlockTime;
 
 // PythonFunction PyMineControl.PyMineControl.S_InitMineConfigs
 // 0x0060 (0x0060 - 0x0000)
@@ -101,12 +86,7 @@ public:
 	TMap<int32, float>                            InCostSpeedMap;                                    // 0x0008(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          InPausedWhenFighting;                              // 0x0058(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMineControl_S_InitMineConfigs) == 0x000008, "Wrong alignment on PyMineControl_S_InitMineConfigs");
-static_assert(sizeof(PyMineControl_S_InitMineConfigs) == 0x000060, "Wrong size on PyMineControl_S_InitMineConfigs");
-static_assert(offsetof(PyMineControl_S_InitMineConfigs, InMaxLimit) == 0x000000, "Member 'PyMineControl_S_InitMineConfigs::InMaxLimit' has a wrong offset!");
-static_assert(offsetof(PyMineControl_S_InitMineConfigs, InUnlockTime) == 0x000004, "Member 'PyMineControl_S_InitMineConfigs::InUnlockTime' has a wrong offset!");
-static_assert(offsetof(PyMineControl_S_InitMineConfigs, InCostSpeedMap) == 0x000008, "Member 'PyMineControl_S_InitMineConfigs::InCostSpeedMap' has a wrong offset!");
-static_assert(offsetof(PyMineControl_S_InitMineConfigs, InPausedWhenFighting) == 0x000058, "Member 'PyMineControl_S_InitMineConfigs::InPausedWhenFighting' has a wrong offset!");
+DUMPER7_ASSERTS_PyMineControl_S_InitMineConfigs;
 
 // PythonFunction PyMineControl.PyMineControl.S_InitPillageConfigs
 // 0x00C8 (0x00C8 - 0x0000)
@@ -115,9 +95,7 @@ struct PyMineControl_S_InitPillageConfigs final
 public:
 	struct FMarvelLevelEnergyContestPillageConfig InPillageConfig;                                   // 0x0000(0x00C8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMineControl_S_InitPillageConfigs) == 0x000008, "Wrong alignment on PyMineControl_S_InitPillageConfigs");
-static_assert(sizeof(PyMineControl_S_InitPillageConfigs) == 0x0000C8, "Wrong size on PyMineControl_S_InitPillageConfigs");
-static_assert(offsetof(PyMineControl_S_InitPillageConfigs, InPillageConfig) == 0x000000, "Member 'PyMineControl_S_InitPillageConfigs::InPillageConfig' has a wrong offset!");
+DUMPER7_ASSERTS_PyMineControl_S_InitPillageConfigs;
 
 // PythonFunction PyMineControl.PyMineControl.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -126,9 +104,7 @@ struct PyMineControl_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMineControl_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMineControl_ReceiveEndPlay");
-static_assert(sizeof(PyMineControl_ReceiveEndPlay) == 0x000001, "Wrong size on PyMineControl_ReceiveEndPlay");
-static_assert(offsetof(PyMineControl_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyMineControl_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMineControl_ReceiveEndPlay;
 
 }
 

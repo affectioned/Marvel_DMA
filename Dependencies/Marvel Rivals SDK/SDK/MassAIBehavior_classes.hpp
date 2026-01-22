@@ -32,27 +32,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassBehaviorSettings">();
+		STATIC_CLASS_IMPL("MassBehaviorSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassBehaviorSettings")
 	}
 	static class UMassBehaviorSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassBehaviorSettings>();
 	}
 };
-static_assert(alignof(UMassBehaviorSettings) == 0x000008, "Wrong alignment on UMassBehaviorSettings");
-static_assert(sizeof(UMassBehaviorSettings) == 0x000040, "Wrong size on UMassBehaviorSettings");
-static_assert(offsetof(UMassBehaviorSettings, MaxActivationsPerLOD) == 0x000030, "Member 'UMassBehaviorSettings::MaxActivationsPerLOD' has a wrong offset!");
+DUMPER7_ASSERTS_UMassBehaviorSettings;
 
 // Class MassAIBehavior.MassComponentHitSubsystem
-// 0x0100 (0x0148 - 0x0048)
+// 0x0100 (0x0150 - 0x0050)
 class UMassComponentHitSubsystem final : public UTickableWorldSubsystem
 {
 public:
-	class UMassSignalSubsystem*                   SignalSubsystem;                                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMassAgentSubsystem*                    AgentSubsystem;                                    // 0x0050(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<struct FMassEntityHandle, struct FMassHitResult> HitResults;                                // 0x0058(0x0050)(Protected, NativeAccessSpecifierProtected)
-	TMap<class UActorComponent*, struct FMassEntityHandle> ComponentToEntityMap;                     // 0x00A8(0x0050)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	TMap<struct FMassEntityHandle, class UActorComponent*> EntityToComponentMap;                     // 0x00F8(0x0050)(ExportObject, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	class UMassSignalSubsystem*                   SignalSubsystem;                                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMassAgentSubsystem*                    AgentSubsystem;                                    // 0x0058(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<struct FMassEntityHandle, struct FMassHitResult> HitResults;                                // 0x0060(0x0050)(Protected, NativeAccessSpecifierProtected)
+	TMap<class UActorComponent*, struct FMassEntityHandle> ComponentToEntityMap;                     // 0x00B0(0x0050)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TMap<struct FMassEntityHandle, class UActorComponent*> EntityToComponentMap;                     // 0x0100(0x0050)(ExportObject, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 
 public:
 	void OnHitCallback(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
@@ -60,20 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassComponentHitSubsystem">();
+		STATIC_CLASS_IMPL("MassComponentHitSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassComponentHitSubsystem")
 	}
 	static class UMassComponentHitSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassComponentHitSubsystem>();
 	}
 };
-static_assert(alignof(UMassComponentHitSubsystem) == 0x000008, "Wrong alignment on UMassComponentHitSubsystem");
-static_assert(sizeof(UMassComponentHitSubsystem) == 0x000148, "Wrong size on UMassComponentHitSubsystem");
-static_assert(offsetof(UMassComponentHitSubsystem, SignalSubsystem) == 0x000048, "Member 'UMassComponentHitSubsystem::SignalSubsystem' has a wrong offset!");
-static_assert(offsetof(UMassComponentHitSubsystem, AgentSubsystem) == 0x000050, "Member 'UMassComponentHitSubsystem::AgentSubsystem' has a wrong offset!");
-static_assert(offsetof(UMassComponentHitSubsystem, HitResults) == 0x000058, "Member 'UMassComponentHitSubsystem::HitResults' has a wrong offset!");
-static_assert(offsetof(UMassComponentHitSubsystem, ComponentToEntityMap) == 0x0000A8, "Member 'UMassComponentHitSubsystem::ComponentToEntityMap' has a wrong offset!");
-static_assert(offsetof(UMassComponentHitSubsystem, EntityToComponentMap) == 0x0000F8, "Member 'UMassComponentHitSubsystem::EntityToComponentMap' has a wrong offset!");
+DUMPER7_ASSERTS_UMassComponentHitSubsystem;
 
 // Class MassAIBehavior.MassLookAtProcessor
 // 0x02B8 (0x0380 - 0x00C8)
@@ -90,20 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLookAtProcessor">();
+		STATIC_CLASS_IMPL("MassLookAtProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLookAtProcessor")
 	}
 	static class UMassLookAtProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassLookAtProcessor>();
 	}
 };
-static_assert(alignof(UMassLookAtProcessor) == 0x000008, "Wrong alignment on UMassLookAtProcessor");
-static_assert(sizeof(UMassLookAtProcessor) == 0x000380, "Wrong size on UMassLookAtProcessor");
-static_assert(offsetof(UMassLookAtProcessor, QueryExtent) == 0x0000C8, "Member 'UMassLookAtProcessor::QueryExtent' has a wrong offset!");
-static_assert(offsetof(UMassLookAtProcessor, Duration) == 0x0000CC, "Member 'UMassLookAtProcessor::Duration' has a wrong offset!");
-static_assert(offsetof(UMassLookAtProcessor, DurationVariation) == 0x0000D0, "Member 'UMassLookAtProcessor::DurationVariation' has a wrong offset!");
-static_assert(offsetof(UMassLookAtProcessor, DebugZOffset) == 0x0000D4, "Member 'UMassLookAtProcessor::DebugZOffset' has a wrong offset!");
-static_assert(offsetof(UMassLookAtProcessor, AngleThresholdInDegrees) == 0x0000D8, "Member 'UMassLookAtProcessor::AngleThresholdInDegrees' has a wrong offset!");
+DUMPER7_ASSERTS_UMassLookAtProcessor;
 
 // Class MassAIBehavior.MassLookAtTargetTrait
 // 0x0000 (0x0030 - 0x0030)
@@ -112,15 +110,18 @@ class UMassLookAtTargetTrait final : public UMassEntityTraitBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLookAtTargetTrait">();
+		STATIC_CLASS_IMPL("MassLookAtTargetTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLookAtTargetTrait")
 	}
 	static class UMassLookAtTargetTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassLookAtTargetTrait>();
 	}
 };
-static_assert(alignof(UMassLookAtTargetTrait) == 0x000008, "Wrong alignment on UMassLookAtTargetTrait");
-static_assert(sizeof(UMassLookAtTargetTrait) == 0x000030, "Wrong size on UMassLookAtTargetTrait");
+DUMPER7_ASSERTS_UMassLookAtTargetTrait;
 
 // Class MassAIBehavior.MassLookAtTrait
 // 0x0000 (0x0030 - 0x0030)
@@ -129,15 +130,18 @@ class UMassLookAtTrait final : public UMassEntityTraitBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLookAtTrait">();
+		STATIC_CLASS_IMPL("MassLookAtTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLookAtTrait")
 	}
 	static class UMassLookAtTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassLookAtTrait>();
 	}
 };
-static_assert(alignof(UMassLookAtTrait) == 0x000008, "Wrong alignment on UMassLookAtTrait");
-static_assert(sizeof(UMassLookAtTrait) == 0x000030, "Wrong size on UMassLookAtTrait");
+DUMPER7_ASSERTS_UMassLookAtTrait;
 
 // Class MassAIBehavior.MassStateTreeFragmentDestructor
 // 0x02B0 (0x0390 - 0x00E0)
@@ -151,16 +155,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassStateTreeFragmentDestructor">();
+		STATIC_CLASS_IMPL("MassStateTreeFragmentDestructor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassStateTreeFragmentDestructor")
 	}
 	static class UMassStateTreeFragmentDestructor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassStateTreeFragmentDestructor>();
 	}
 };
-static_assert(alignof(UMassStateTreeFragmentDestructor) == 0x000010, "Wrong alignment on UMassStateTreeFragmentDestructor");
-static_assert(sizeof(UMassStateTreeFragmentDestructor) == 0x000390, "Wrong size on UMassStateTreeFragmentDestructor");
-static_assert(offsetof(UMassStateTreeFragmentDestructor, SignalSubsystem) == 0x000380, "Member 'UMassStateTreeFragmentDestructor::SignalSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_UMassStateTreeFragmentDestructor;
 
 // Class MassAIBehavior.MassStateTreeActivationProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -172,15 +178,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassStateTreeActivationProcessor">();
+		STATIC_CLASS_IMPL("MassStateTreeActivationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassStateTreeActivationProcessor")
 	}
 	static class UMassStateTreeActivationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassStateTreeActivationProcessor>();
 	}
 };
-static_assert(alignof(UMassStateTreeActivationProcessor) == 0x000008, "Wrong alignment on UMassStateTreeActivationProcessor");
-static_assert(sizeof(UMassStateTreeActivationProcessor) == 0x000370, "Wrong size on UMassStateTreeActivationProcessor");
+DUMPER7_ASSERTS_UMassStateTreeActivationProcessor;
 
 // Class MassAIBehavior.MassStateTreeProcessor
 // 0x0000 (0x0430 - 0x0430)
@@ -189,15 +198,18 @@ class UMassStateTreeProcessor final : public UMassSignalProcessorBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassStateTreeProcessor">();
+		STATIC_CLASS_IMPL("MassStateTreeProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassStateTreeProcessor")
 	}
 	static class UMassStateTreeProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassStateTreeProcessor>();
 	}
 };
-static_assert(alignof(UMassStateTreeProcessor) == 0x000008, "Wrong alignment on UMassStateTreeProcessor");
-static_assert(sizeof(UMassStateTreeProcessor) == 0x000430, "Wrong size on UMassStateTreeProcessor");
+DUMPER7_ASSERTS_UMassStateTreeProcessor;
 
 // Class MassAIBehavior.MassStateTreeSchema
 // 0x0000 (0x0030 - 0x0030)
@@ -206,37 +218,42 @@ class UMassStateTreeSchema final : public UStateTreeSchema
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassStateTreeSchema">();
+		STATIC_CLASS_IMPL("MassStateTreeSchema")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassStateTreeSchema")
 	}
 	static class UMassStateTreeSchema* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassStateTreeSchema>();
 	}
 };
-static_assert(alignof(UMassStateTreeSchema) == 0x000008, "Wrong alignment on UMassStateTreeSchema");
-static_assert(sizeof(UMassStateTreeSchema) == 0x000030, "Wrong size on UMassStateTreeSchema");
+DUMPER7_ASSERTS_UMassStateTreeSchema;
 
 // Class MassAIBehavior.MassStateTreeSubsystem
-// 0x0020 (0x0058 - 0x0038)
+// 0x0020 (0x0060 - 0x0040)
 class UMassStateTreeSubsystem final : public UWorldSubsystem
 {
 public:
-	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FMassStateTreeInstanceDataItem> InstanceDataArray;                                 // 0x0048(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FMassStateTreeInstanceDataItem> InstanceDataArray;                                 // 0x0050(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassStateTreeSubsystem">();
+		STATIC_CLASS_IMPL("MassStateTreeSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassStateTreeSubsystem")
 	}
 	static class UMassStateTreeSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassStateTreeSubsystem>();
 	}
 };
-static_assert(alignof(UMassStateTreeSubsystem) == 0x000008, "Wrong alignment on UMassStateTreeSubsystem");
-static_assert(sizeof(UMassStateTreeSubsystem) == 0x000058, "Wrong size on UMassStateTreeSubsystem");
-static_assert(offsetof(UMassStateTreeSubsystem, InstanceDataArray) == 0x000048, "Member 'UMassStateTreeSubsystem::InstanceDataArray' has a wrong offset!");
+DUMPER7_ASSERTS_UMassStateTreeSubsystem;
 
 // Class MassAIBehavior.MassStateTreeTrait
 // 0x0008 (0x0038 - 0x0030)
@@ -248,16 +265,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassStateTreeTrait">();
+		STATIC_CLASS_IMPL("MassStateTreeTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassStateTreeTrait")
 	}
 	static class UMassStateTreeTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassStateTreeTrait>();
 	}
 };
-static_assert(alignof(UMassStateTreeTrait) == 0x000008, "Wrong alignment on UMassStateTreeTrait");
-static_assert(sizeof(UMassStateTreeTrait) == 0x000038, "Wrong size on UMassStateTreeTrait");
-static_assert(offsetof(UMassStateTreeTrait, StateTree) == 0x000030, "Member 'UMassStateTreeTrait::StateTree' has a wrong offset!");
+DUMPER7_ASSERTS_UMassStateTreeTrait;
 
 // Class MassAIBehavior.MassZoneGraphAnnotationTagsInitializer
 // 0x02A0 (0x0380 - 0x00E0)
@@ -269,15 +288,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassZoneGraphAnnotationTagsInitializer">();
+		STATIC_CLASS_IMPL("MassZoneGraphAnnotationTagsInitializer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassZoneGraphAnnotationTagsInitializer")
 	}
 	static class UMassZoneGraphAnnotationTagsInitializer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassZoneGraphAnnotationTagsInitializer>();
 	}
 };
-static_assert(alignof(UMassZoneGraphAnnotationTagsInitializer) == 0x000008, "Wrong alignment on UMassZoneGraphAnnotationTagsInitializer");
-static_assert(sizeof(UMassZoneGraphAnnotationTagsInitializer) == 0x000380, "Wrong size on UMassZoneGraphAnnotationTagsInitializer");
+DUMPER7_ASSERTS_UMassZoneGraphAnnotationTagsInitializer;
 
 // Class MassAIBehavior.MassZoneGraphAnnotationTagUpdateProcessor
 // 0x0010 (0x0440 - 0x0430)
@@ -289,15 +311,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassZoneGraphAnnotationTagUpdateProcessor">();
+		STATIC_CLASS_IMPL("MassZoneGraphAnnotationTagUpdateProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassZoneGraphAnnotationTagUpdateProcessor")
 	}
 	static class UMassZoneGraphAnnotationTagUpdateProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassZoneGraphAnnotationTagUpdateProcessor>();
 	}
 };
-static_assert(alignof(UMassZoneGraphAnnotationTagUpdateProcessor) == 0x000008, "Wrong alignment on UMassZoneGraphAnnotationTagUpdateProcessor");
-static_assert(sizeof(UMassZoneGraphAnnotationTagUpdateProcessor) == 0x000440, "Wrong size on UMassZoneGraphAnnotationTagUpdateProcessor");
+DUMPER7_ASSERTS_UMassZoneGraphAnnotationTagUpdateProcessor;
 
 // Class MassAIBehavior.MassZoneGraphAnnotationTrait
 // 0x0000 (0x0030 - 0x0030)
@@ -306,15 +331,18 @@ class UMassZoneGraphAnnotationTrait final : public UMassEntityTraitBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassZoneGraphAnnotationTrait">();
+		STATIC_CLASS_IMPL("MassZoneGraphAnnotationTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassZoneGraphAnnotationTrait")
 	}
 	static class UMassZoneGraphAnnotationTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassZoneGraphAnnotationTrait>();
 	}
 };
-static_assert(alignof(UMassZoneGraphAnnotationTrait) == 0x000008, "Wrong alignment on UMassZoneGraphAnnotationTrait");
-static_assert(sizeof(UMassZoneGraphAnnotationTrait) == 0x000030, "Wrong size on UMassZoneGraphAnnotationTrait");
+DUMPER7_ASSERTS_UMassZoneGraphAnnotationTrait;
 
 }
 

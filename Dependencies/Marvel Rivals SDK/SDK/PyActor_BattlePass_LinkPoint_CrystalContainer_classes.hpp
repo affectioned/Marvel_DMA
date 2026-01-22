@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyActor_BattlePass_LinkPoint_CrystalContainer">();
+		STATIC_CLASS_IMPL("PyActor_BattlePass_LinkPoint_CrystalContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyActor_BattlePass_LinkPoint_CrystalContainer")
 	}
 	static class APyActor_BattlePass_LinkPoint_CrystalContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyActor_BattlePass_LinkPoint_CrystalContainer>();
 	}
 };
-static_assert(alignof(APyActor_BattlePass_LinkPoint_CrystalContainer) == 0x000010, "Wrong alignment on APyActor_BattlePass_LinkPoint_CrystalContainer");
-static_assert(sizeof(APyActor_BattlePass_LinkPoint_CrystalContainer) == 0x0006F0, "Wrong size on APyActor_BattlePass_LinkPoint_CrystalContainer");
-static_assert(offsetof(APyActor_BattlePass_LinkPoint_CrystalContainer, ChildActorComp_Crystal) == 0x0006E0, "Member 'APyActor_BattlePass_LinkPoint_CrystalContainer::ChildActorComp_Crystal' has a wrong offset!");
+DUMPER7_ASSERTS_APyActor_BattlePass_LinkPoint_CrystalContainer;
 
 }
 

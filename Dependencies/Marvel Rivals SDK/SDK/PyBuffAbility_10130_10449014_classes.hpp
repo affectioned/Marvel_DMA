@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10449014.PyBuffAbility_10130_10443191
-// 0x03A0 (0x1DD0 - 0x1A30)
+// 0x04E0 (0x1F28 - 0x1A48)
 class UPyBuffAbility_10130_10443191 : public UBuffAbility_CommonCardEffect
 {
 public:
-	int32                                         SummonedId;                                        // 0x1A30(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A34[0x4];                                     // 0x1A34(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelTraceRule                       TargetFilter;                                      // 0x1A38(0x0398)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         SummonedId;                                        // 0x1A48(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A4C[0x4];                                     // 0x1A4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelTraceRule                       TargetFilter;                                      // 0x1A50(0x04D8)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnConditionSatisfied(const struct FCardEffectParameter& Parameter);
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10443191">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10443191")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10443191")
 	}
 	static class UPyBuffAbility_10130_10443191* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10443191>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10443191) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10443191");
-static_assert(sizeof(UPyBuffAbility_10130_10443191) == 0x001DD0, "Wrong size on UPyBuffAbility_10130_10443191");
-static_assert(offsetof(UPyBuffAbility_10130_10443191, SummonedId) == 0x001A30, "Member 'UPyBuffAbility_10130_10443191::SummonedId' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10443191, TargetFilter) == 0x001A38, "Member 'UPyBuffAbility_10130_10443191::TargetFilter' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10443191;
 
 }
 

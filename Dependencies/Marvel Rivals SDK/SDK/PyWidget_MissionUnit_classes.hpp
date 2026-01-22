@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MissionUnit.PyWidget_Mission_PinMark
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Mission_PinMark : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             MarkTexture;                                       // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             UnMarkTexture;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GrayOpacity;                                       // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsGray;                                            // 0x05D4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             MarkTexture;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             UnMarkTexture;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GrayOpacity;                                       // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsGray;                                            // 0x05DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_PinMark">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_PinMark")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_PinMark")
 	}
 	static class UPyWidget_Mission_PinMark* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_PinMark>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_PinMark) == 0x000008, "Wrong alignment on UPyWidget_Mission_PinMark");
-static_assert(sizeof(UPyWidget_Mission_PinMark) == 0x0005D8, "Wrong size on UPyWidget_Mission_PinMark");
-static_assert(offsetof(UPyWidget_Mission_PinMark, MarkTexture) == 0x0005C0, "Member 'UPyWidget_Mission_PinMark::MarkTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_PinMark, UnMarkTexture) == 0x0005C8, "Member 'UPyWidget_Mission_PinMark::UnMarkTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_PinMark, GrayOpacity) == 0x0005D0, "Member 'UPyWidget_Mission_PinMark::GrayOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_PinMark, IsGray) == 0x0005D4, "Member 'UPyWidget_Mission_PinMark::IsGray' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mission_PinMark;
 
 // PythonClass PyWidget_MissionUnit.Mission_UnitWidgetItem
 // 0x0000 (0x0030 - 0x0030)
@@ -57,28 +56,31 @@ class UMission_UnitWidgetItem final : public UMission_UnitWidgetItemData
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Mission_UnitWidgetItem">();
+		STATIC_CLASS_IMPL("Mission_UnitWidgetItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mission_UnitWidgetItem")
 	}
 	static class UMission_UnitWidgetItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMission_UnitWidgetItem>();
 	}
 };
-static_assert(alignof(UMission_UnitWidgetItem) == 0x000008, "Wrong alignment on UMission_UnitWidgetItem");
-static_assert(sizeof(UMission_UnitWidgetItem) == 0x000030, "Wrong size on UMission_UnitWidgetItem");
+DUMPER7_ASSERTS_UMission_UnitWidgetItem;
 
 // PythonClass PyWidget_MissionUnit.PyWidget_MissionUnit
-// 0x0058 (0x0618 - 0x05C0)
+// 0x0058 (0x0620 - 0x05C8)
 class UPyWidget_MissionUnit : public UPyWidget_MissionUnit_Base
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            NormalProgressColor;                               // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            PreviewProgressColor;                              // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalTimeColor;                                   // 0x05E4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            WarnCloseTimeColor;                                // 0x05F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         WarnTimeSeconds;                                   // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Content;                                   // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            NormalProgressColor;                               // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PreviewProgressColor;                              // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalTimeColor;                                   // 0x05EC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WarnCloseTimeColor;                                // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         WarnTimeSeconds;                                   // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Content;                                   // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -97,21 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MissionUnit">();
+		STATIC_CLASS_IMPL("PyWidget_MissionUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MissionUnit")
 	}
 	static class UPyWidget_MissionUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MissionUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_MissionUnit) == 0x000008, "Wrong alignment on UPyWidget_MissionUnit");
-static_assert(sizeof(UPyWidget_MissionUnit) == 0x000618, "Wrong size on UPyWidget_MissionUnit");
-static_assert(offsetof(UPyWidget_MissionUnit, NormalProgressColor) == 0x0005BC, "Member 'UPyWidget_MissionUnit::NormalProgressColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MissionUnit, PreviewProgressColor) == 0x0005D0, "Member 'UPyWidget_MissionUnit::PreviewProgressColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MissionUnit, NormalTimeColor) == 0x0005E4, "Member 'UPyWidget_MissionUnit::NormalTimeColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MissionUnit, WarnCloseTimeColor) == 0x0005F8, "Member 'UPyWidget_MissionUnit::WarnCloseTimeColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MissionUnit, WarnTimeSeconds) == 0x00060C, "Member 'UPyWidget_MissionUnit::WarnTimeSeconds' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MissionUnit, Overlay_Content) == 0x000610, "Member 'UPyWidget_MissionUnit::Overlay_Content' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MissionUnit;
 
 }
 

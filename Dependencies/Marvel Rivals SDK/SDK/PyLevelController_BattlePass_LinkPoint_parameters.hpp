@@ -23,9 +23,7 @@ struct PyLevelController_BattlePass_LinkPoint_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelController_BattlePass_LinkPoint_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelController_BattlePass_LinkPoint_ReceiveEndPlay");
-static_assert(sizeof(PyLevelController_BattlePass_LinkPoint_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelController_BattlePass_LinkPoint_ReceiveEndPlay");
-static_assert(offsetof(PyLevelController_BattlePass_LinkPoint_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelController_BattlePass_LinkPoint_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelController_BattlePass_LinkPoint_ReceiveEndPlay;
 
 // PythonFunction PyLevelController_BattlePass_LinkPoint.PyLevelController_BattlePass_LinkPoint.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyLevelController_BattlePass_LinkPoint_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelController_BattlePass_LinkPoint_ReceiveTick) == 0x000004, "Wrong alignment on PyLevelController_BattlePass_LinkPoint_ReceiveTick");
-static_assert(sizeof(PyLevelController_BattlePass_LinkPoint_ReceiveTick) == 0x000004, "Wrong size on PyLevelController_BattlePass_LinkPoint_ReceiveTick");
-static_assert(offsetof(PyLevelController_BattlePass_LinkPoint_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyLevelController_BattlePass_LinkPoint_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelController_BattlePass_LinkPoint_ReceiveTick;
 
 }
 

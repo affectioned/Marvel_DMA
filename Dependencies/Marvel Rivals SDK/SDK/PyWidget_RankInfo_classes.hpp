@@ -18,232 +18,38 @@
 namespace SDK
 {
 
-// PythonClass PyWidget_RankInfo.PyWidget_RankStar
-// 0x0030 (0x05F0 - 0x05C0)
-class UPyWidget_RankStar final : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_OnNormalRankStarUp;                        // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnNormalRankStarDown;                      // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnProRankStarUp;                           // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnProRankStarDown;                         // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnStarPlayAnimFinish;                              // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-
-public:
-	void Construct();
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_RankStar">();
-	}
-	static class UPyWidget_RankStar* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_RankStar>();
-	}
-};
-static_assert(alignof(UPyWidget_RankStar) == 0x000008, "Wrong alignment on UPyWidget_RankStar");
-static_assert(sizeof(UPyWidget_RankStar) == 0x0005F0, "Wrong size on UPyWidget_RankStar");
-static_assert(offsetof(UPyWidget_RankStar, AkEvent_OnNormalRankStarUp) == 0x0005C0, "Member 'UPyWidget_RankStar::AkEvent_OnNormalRankStarUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankStar, AkEvent_OnNormalRankStarDown) == 0x0005C8, "Member 'UPyWidget_RankStar::AkEvent_OnNormalRankStarDown' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankStar, AkEvent_OnProRankStarUp) == 0x0005D0, "Member 'UPyWidget_RankStar::AkEvent_OnProRankStarUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankStar, AkEvent_OnProRankStarDown) == 0x0005D8, "Member 'UPyWidget_RankStar::AkEvent_OnProRankStarDown' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankStar, OnStarPlayAnimFinish) == 0x0005E0, "Member 'UPyWidget_RankStar::OnStarPlayAnimFinish' has a wrong offset!");
-
-// PythonClass PyWidget_RankInfo.PyWidget_Settlement_RankUp_Icon_VX
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_Settlement_RankUp_Icon_VX final : public UPyMarvelUserWidget
-{
-public:
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Settlement_RankUp_Icon_VX">();
-	}
-	static class UPyWidget_Settlement_RankUp_Icon_VX* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Settlement_RankUp_Icon_VX>();
-	}
-};
-static_assert(alignof(UPyWidget_Settlement_RankUp_Icon_VX) == 0x000008, "Wrong alignment on UPyWidget_Settlement_RankUp_Icon_VX");
-static_assert(sizeof(UPyWidget_Settlement_RankUp_Icon_VX) == 0x0005C0, "Wrong size on UPyWidget_Settlement_RankUp_Icon_VX");
-
-// PythonClass PyWidget_RankInfo.PyWidget_RankIcon
-// 0x00C8 (0x0688 - 0x05C0)
-class UPyWidget_RankIcon final : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            Color_Rank1;                                       // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Rank2;                                       // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Rank3;                                       // 0x05E4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Rank4;                                       // 0x05F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Rank5;                                       // 0x060C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Rank6;                                       // 0x0620(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Rank7;                                       // 0x0634(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Rank8;                                       // 0x0648(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Rank9;                                       // 0x065C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FVector2D                              Rank_Dan_Size;                                     // 0x0670(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Rank_Dan_Alpha;                                    // 0x0680(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseSmallTexture;                                  // 0x0684(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bNeedShowRankText;                                 // 0x0685(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void PreConstruct(bool IsDesignTime);
-	void Construct();
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_RankIcon">();
-	}
-	static class UPyWidget_RankIcon* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_RankIcon>();
-	}
-};
-static_assert(alignof(UPyWidget_RankIcon) == 0x000008, "Wrong alignment on UPyWidget_RankIcon");
-static_assert(sizeof(UPyWidget_RankIcon) == 0x000688, "Wrong size on UPyWidget_RankIcon");
-static_assert(offsetof(UPyWidget_RankIcon, Color_Rank1) == 0x0005BC, "Member 'UPyWidget_RankIcon::Color_Rank1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, Color_Rank2) == 0x0005D0, "Member 'UPyWidget_RankIcon::Color_Rank2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, Color_Rank3) == 0x0005E4, "Member 'UPyWidget_RankIcon::Color_Rank3' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, Color_Rank4) == 0x0005F8, "Member 'UPyWidget_RankIcon::Color_Rank4' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, Color_Rank5) == 0x00060C, "Member 'UPyWidget_RankIcon::Color_Rank5' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, Color_Rank6) == 0x000620, "Member 'UPyWidget_RankIcon::Color_Rank6' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, Color_Rank7) == 0x000634, "Member 'UPyWidget_RankIcon::Color_Rank7' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, Color_Rank8) == 0x000648, "Member 'UPyWidget_RankIcon::Color_Rank8' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, Color_Rank9) == 0x00065C, "Member 'UPyWidget_RankIcon::Color_Rank9' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, Rank_Dan_Size) == 0x000670, "Member 'UPyWidget_RankIcon::Rank_Dan_Size' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, Rank_Dan_Alpha) == 0x000680, "Member 'UPyWidget_RankIcon::Rank_Dan_Alpha' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, bUseSmallTexture) == 0x000684, "Member 'UPyWidget_RankIcon::bUseSmallTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon, bNeedShowRankText) == 0x000685, "Member 'UPyWidget_RankIcon::bNeedShowRankText' has a wrong offset!");
-
-// PythonClass PyWidget_RankInfo.PyWidget_RankIcon_Small
-// 0x0038 (0x05F8 - 0x05C0)
-class UPyWidget_RankIcon_Small final : public UPyMarvelUserWidget
-{
-public:
-	bool                                          bUseSmallTexture;                                  // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x5];                                      // 0x05BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSoftObjectPath>                Tex2D_Rank_Frame_List;                             // 0x05C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FSlateColor>                    Color_Rank_Frame_List;                             // 0x05D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Rank_DanFrame;                                 // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Rank_DanIcon;                                  // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_SmallDan;                                     // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_RankIcon_Small">();
-	}
-	static class UPyWidget_RankIcon_Small* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_RankIcon_Small>();
-	}
-};
-static_assert(alignof(UPyWidget_RankIcon_Small) == 0x000008, "Wrong alignment on UPyWidget_RankIcon_Small");
-static_assert(sizeof(UPyWidget_RankIcon_Small) == 0x0005F8, "Wrong size on UPyWidget_RankIcon_Small");
-static_assert(offsetof(UPyWidget_RankIcon_Small, bUseSmallTexture) == 0x0005BA, "Member 'UPyWidget_RankIcon_Small::bUseSmallTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small, Tex2D_Rank_Frame_List) == 0x0005C0, "Member 'UPyWidget_RankIcon_Small::Tex2D_Rank_Frame_List' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small, Color_Rank_Frame_List) == 0x0005D0, "Member 'UPyWidget_RankIcon_Small::Color_Rank_Frame_List' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small, Img_Rank_DanFrame) == 0x0005E0, "Member 'UPyWidget_RankIcon_Small::Img_Rank_DanFrame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small, Img_Rank_DanIcon) == 0x0005E8, "Member 'UPyWidget_RankIcon_Small::Img_Rank_DanIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small, Text_SmallDan) == 0x0005F0, "Member 'UPyWidget_RankIcon_Small::Text_SmallDan' has a wrong offset!");
-
-// PythonClass PyWidget_RankInfo.PyWidget_RankIcon_Small2
-// 0x0058 (0x0618 - 0x05C0)
-class UPyWidget_RankIcon_Small2 : public UPyMarvelUserWidget
-{
-public:
-	bool                                          bUseSpecialShadow;                                 // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x5];                                      // 0x05BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSoftObjectPath>                Tex2D_Rank_Projeciton_List;                        // 0x05C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FSlateColor>                    Color_Rank_Text_List;                              // 0x05D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FSlateColor>                    Color_Rank_Outline_Shadow_List;                    // 0x05E0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FSlateColor>                    Color_Rank_Projeciton_List;                        // 0x05F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Rank_DanProjection;                            // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Rank_DanIcon;                                  // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_SmallDan;                                     // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_RankIcon_Small2">();
-	}
-	static class UPyWidget_RankIcon_Small2* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_RankIcon_Small2>();
-	}
-};
-static_assert(alignof(UPyWidget_RankIcon_Small2) == 0x000008, "Wrong alignment on UPyWidget_RankIcon_Small2");
-static_assert(sizeof(UPyWidget_RankIcon_Small2) == 0x000618, "Wrong size on UPyWidget_RankIcon_Small2");
-static_assert(offsetof(UPyWidget_RankIcon_Small2, bUseSpecialShadow) == 0x0005BA, "Member 'UPyWidget_RankIcon_Small2::bUseSpecialShadow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small2, Tex2D_Rank_Projeciton_List) == 0x0005C0, "Member 'UPyWidget_RankIcon_Small2::Tex2D_Rank_Projeciton_List' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small2, Color_Rank_Text_List) == 0x0005D0, "Member 'UPyWidget_RankIcon_Small2::Color_Rank_Text_List' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small2, Color_Rank_Outline_Shadow_List) == 0x0005E0, "Member 'UPyWidget_RankIcon_Small2::Color_Rank_Outline_Shadow_List' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small2, Color_Rank_Projeciton_List) == 0x0005F0, "Member 'UPyWidget_RankIcon_Small2::Color_Rank_Projeciton_List' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small2, Img_Rank_DanProjection) == 0x000600, "Member 'UPyWidget_RankIcon_Small2::Img_Rank_DanProjection' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small2, Img_Rank_DanIcon) == 0x000608, "Member 'UPyWidget_RankIcon_Small2::Img_Rank_DanIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Small2, Text_SmallDan) == 0x000610, "Member 'UPyWidget_RankIcon_Small2::Text_SmallDan' has a wrong offset!");
-
-// PythonClass PyWidget_RankInfo.PyWidget_RankIcon_Ranking
-// 0x0020 (0x05E0 - 0x05C0)
-class UPyWidget_RankIcon_Ranking final : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSlateColor>                    Color_Rank_Text_Outline_List;                      // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FMargin>                        Margin_Rank_Text_Offset_List;                      // 0x05D0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_RankIcon_Ranking">();
-	}
-	static class UPyWidget_RankIcon_Ranking* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_RankIcon_Ranking>();
-	}
-};
-static_assert(alignof(UPyWidget_RankIcon_Ranking) == 0x000008, "Wrong alignment on UPyWidget_RankIcon_Ranking");
-static_assert(sizeof(UPyWidget_RankIcon_Ranking) == 0x0005E0, "Wrong size on UPyWidget_RankIcon_Ranking");
-static_assert(offsetof(UPyWidget_RankIcon_Ranking, Color_Rank_Text_Outline_List) == 0x0005C0, "Member 'UPyWidget_RankIcon_Ranking::Color_Rank_Text_Outline_List' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankIcon_Ranking, Margin_Rank_Text_Offset_List) == 0x0005D0, "Member 'UPyWidget_RankIcon_Ranking::Margin_Rank_Text_Offset_List' has a wrong offset!");
-
 // PythonClass PyWidget_RankInfo.PyWidget_Settlement_RankUp_Icon_LiftingVX
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Settlement_RankUp_Icon_LiftingVX final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_RankUp_Icon_LiftingVX">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_RankUp_Icon_LiftingVX")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_RankUp_Icon_LiftingVX")
 	}
 	static class UPyWidget_Settlement_RankUp_Icon_LiftingVX* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_RankUp_Icon_LiftingVX>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_RankUp_Icon_LiftingVX) == 0x000008, "Wrong alignment on UPyWidget_Settlement_RankUp_Icon_LiftingVX");
-static_assert(sizeof(UPyWidget_Settlement_RankUp_Icon_LiftingVX) == 0x0005C0, "Wrong size on UPyWidget_Settlement_RankUp_Icon_LiftingVX");
+DUMPER7_ASSERTS_UPyWidget_Settlement_RankUp_Icon_LiftingVX;
 
 // PythonClass PyWidget_RankInfo.PyWidget_RankInfo
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0048 (0x0610 - 0x05C8)
 class UPyWidget_RankInfo final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                Margin_Normal_Rank;                                // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Margin_Top_Rank;                                   // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          IsSimpleMode;                                      // 0x05DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5DD[0x3];                                      // 0x05DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            RankExperienceNormalColor;                         // 0x05E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            RankExperienceHoverColor;                          // 0x05F4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                Margin_Normal_Rank;                                // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Margin_Top_Rank;                                   // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          IsSimpleMode;                                      // 0x05E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E5[0x3];                                      // 0x05E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            RankExperienceNormalColor;                         // 0x05E8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RankExperienceHoverColor;                          // 0x05FC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -253,23 +59,202 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RankInfo">();
+		STATIC_CLASS_IMPL("PyWidget_RankInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankInfo")
 	}
 	static class UPyWidget_RankInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RankInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_RankInfo) == 0x000008, "Wrong alignment on UPyWidget_RankInfo");
-static_assert(sizeof(UPyWidget_RankInfo) == 0x000608, "Wrong size on UPyWidget_RankInfo");
-static_assert(offsetof(UPyWidget_RankInfo, Margin_Normal_Rank) == 0x0005BC, "Member 'UPyWidget_RankInfo::Margin_Normal_Rank' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankInfo, Margin_Top_Rank) == 0x0005CC, "Member 'UPyWidget_RankInfo::Margin_Top_Rank' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankInfo, IsSimpleMode) == 0x0005DC, "Member 'UPyWidget_RankInfo::IsSimpleMode' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankInfo, RankExperienceNormalColor) == 0x0005E0, "Member 'UPyWidget_RankInfo::RankExperienceNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankInfo, RankExperienceHoverColor) == 0x0005F4, "Member 'UPyWidget_RankInfo::RankExperienceHoverColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_RankInfo;
+
+// PythonClass PyWidget_RankInfo.PyWidget_RankStar
+// 0x0030 (0x05F8 - 0x05C8)
+class UPyWidget_RankStar final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_OnNormalRankStarUp;                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnNormalRankStarDown;                      // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnProRankStarUp;                           // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnProRankStarDown;                         // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnStarPlayAnimFinish;                              // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+
+public:
+	void Construct();
+	void OnAnimationFinished(const class UWidgetAnimation* Animation);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_RankStar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankStar")
+	}
+	static class UPyWidget_RankStar* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_RankStar>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_RankStar;
+
+// PythonClass PyWidget_RankInfo.PyWidget_Settlement_RankUp_Icon_VX
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Settlement_RankUp_Icon_VX final : public UPyMarvelUserWidget
+{
+public:
+	void OnAnimationFinished(const class UWidgetAnimation* Animation);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Settlement_RankUp_Icon_VX")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_RankUp_Icon_VX")
+	}
+	static class UPyWidget_Settlement_RankUp_Icon_VX* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Settlement_RankUp_Icon_VX>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Settlement_RankUp_Icon_VX;
+
+// PythonClass PyWidget_RankInfo.PyWidget_RankIcon
+// 0x00C8 (0x0690 - 0x05C8)
+class UPyWidget_RankIcon final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            Color_Rank1;                                       // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Rank2;                                       // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Rank3;                                       // 0x05EC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Rank4;                                       // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Rank5;                                       // 0x0614(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Rank6;                                       // 0x0628(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Rank7;                                       // 0x063C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Rank8;                                       // 0x0650(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Rank9;                                       // 0x0664(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FVector2D                              Rank_Dan_Size;                                     // 0x0678(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Rank_Dan_Alpha;                                    // 0x0688(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseSmallTexture;                                  // 0x068C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bNeedShowRankText;                                 // 0x068D(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void PreConstruct(bool IsDesignTime);
+	void Construct();
+	void OnAnimationFinished(const class UWidgetAnimation* Animation);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_RankIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankIcon")
+	}
+	static class UPyWidget_RankIcon* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_RankIcon>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_RankIcon;
+
+// PythonClass PyWidget_RankInfo.PyWidget_RankIcon_Small
+// 0x0038 (0x0600 - 0x05C8)
+class UPyWidget_RankIcon_Small final : public UPyMarvelUserWidget
+{
+public:
+	bool                                          bUseSmallTexture;                                  // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x5];                                      // 0x05C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSoftObjectPath>                Tex2D_Rank_Frame_List;                             // 0x05C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FSlateColor>                    Color_Rank_Frame_List;                             // 0x05D8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Rank_DanFrame;                                 // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Rank_DanIcon;                                  // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_SmallDan;                                     // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_RankIcon_Small")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankIcon_Small")
+	}
+	static class UPyWidget_RankIcon_Small* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_RankIcon_Small>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_RankIcon_Small;
+
+// PythonClass PyWidget_RankInfo.PyWidget_RankIcon_Small2
+// 0x0058 (0x0620 - 0x05C8)
+class UPyWidget_RankIcon_Small2 : public UPyMarvelUserWidget
+{
+public:
+	bool                                          bUseSpecialShadow;                                 // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x5];                                      // 0x05C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSoftObjectPath>                Tex2D_Rank_Projeciton_List;                        // 0x05C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FSlateColor>                    Color_Rank_Text_List;                              // 0x05D8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FSlateColor>                    Color_Rank_Outline_Shadow_List;                    // 0x05E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FSlateColor>                    Color_Rank_Projeciton_List;                        // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Rank_DanProjection;                            // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Rank_DanIcon;                                  // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_SmallDan;                                     // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_RankIcon_Small2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankIcon_Small2")
+	}
+	static class UPyWidget_RankIcon_Small2* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_RankIcon_Small2>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_RankIcon_Small2;
+
+// PythonClass PyWidget_RankInfo.PyWidget_RankIcon_Ranking
+// 0x0020 (0x05E8 - 0x05C8)
+class UPyWidget_RankIcon_Ranking final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSlateColor>                    Color_Rank_Text_Outline_List;                      // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FMargin>                        Margin_Rank_Text_Offset_List;                      // 0x05D8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_RankIcon_Ranking")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankIcon_Ranking")
+	}
+	static class UPyWidget_RankIcon_Ranking* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_RankIcon_Ranking>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_RankIcon_Ranking;
 
 // PythonClass PyWidget_RankInfo.PyWidget_Settlement_RankUp_Star_Protection
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Settlement_RankUp_Star_Protection final : public UPyMarvelUserWidget
 {
 public:
@@ -278,26 +263,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_RankUp_Star_Protection">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_RankUp_Star_Protection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_RankUp_Star_Protection")
 	}
 	static class UPyWidget_Settlement_RankUp_Star_Protection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_RankUp_Star_Protection>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_RankUp_Star_Protection) == 0x000008, "Wrong alignment on UPyWidget_Settlement_RankUp_Star_Protection");
-static_assert(sizeof(UPyWidget_Settlement_RankUp_Star_Protection) == 0x0005C0, "Wrong size on UPyWidget_Settlement_RankUp_Star_Protection");
+DUMPER7_ASSERTS_UPyWidget_Settlement_RankUp_Star_Protection;
 
 // PythonClass PyWidget_RankInfo.PyWidget_Settlement_Rank_Score_Bar
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_Settlement_Rank_Score_Bar final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            Color_Score_Non;                                   // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Score_Add;                                   // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Score_Sub;                                   // 0x05E4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Score_Protected;                             // 0x05F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            Color_Score_Non;                                   // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Score_Add;                                   // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Score_Sub;                                   // 0x05EC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Score_Protected;                             // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -308,22 +296,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_Rank_Score_Bar">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_Rank_Score_Bar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_Rank_Score_Bar")
 	}
 	static class UPyWidget_Settlement_Rank_Score_Bar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_Rank_Score_Bar>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_Rank_Score_Bar) == 0x000008, "Wrong alignment on UPyWidget_Settlement_Rank_Score_Bar");
-static_assert(sizeof(UPyWidget_Settlement_Rank_Score_Bar) == 0x000610, "Wrong size on UPyWidget_Settlement_Rank_Score_Bar");
-static_assert(offsetof(UPyWidget_Settlement_Rank_Score_Bar, Color_Score_Non) == 0x0005BC, "Member 'UPyWidget_Settlement_Rank_Score_Bar::Color_Score_Non' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_Rank_Score_Bar, Color_Score_Add) == 0x0005D0, "Member 'UPyWidget_Settlement_Rank_Score_Bar::Color_Score_Add' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_Rank_Score_Bar, Color_Score_Sub) == 0x0005E4, "Member 'UPyWidget_Settlement_Rank_Score_Bar::Color_Score_Sub' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_Rank_Score_Bar, Color_Score_Protected) == 0x0005F8, "Member 'UPyWidget_Settlement_Rank_Score_Bar::Color_Score_Protected' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_Rank_Score_Bar;
 
 // PythonClass PyWidget_RankInfo.PyWidget_Settlement_Rank_Protection
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Settlement_Rank_Protection final : public UPyMarvelUserWidget
 {
 public:
@@ -333,15 +320,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_Rank_Protection">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_Rank_Protection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_Rank_Protection")
 	}
 	static class UPyWidget_Settlement_Rank_Protection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_Rank_Protection>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_Rank_Protection) == 0x000008, "Wrong alignment on UPyWidget_Settlement_Rank_Protection");
-static_assert(sizeof(UPyWidget_Settlement_Rank_Protection) == 0x0005C0, "Wrong size on UPyWidget_Settlement_Rank_Protection");
+DUMPER7_ASSERTS_UPyWidget_Settlement_Rank_Protection;
 
 }
 

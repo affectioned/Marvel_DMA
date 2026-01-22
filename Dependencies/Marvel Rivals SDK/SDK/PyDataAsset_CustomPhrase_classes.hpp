@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataAsset_CustomPhrase">();
+		STATIC_CLASS_IMPL("PyDataAsset_CustomPhrase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataAsset_CustomPhrase")
 	}
 	static class UPyDataAsset_CustomPhrase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataAsset_CustomPhrase>();
 	}
 };
-static_assert(alignof(UPyDataAsset_CustomPhrase) == 0x000008, "Wrong alignment on UPyDataAsset_CustomPhrase");
-static_assert(sizeof(UPyDataAsset_CustomPhrase) == 0x000088, "Wrong size on UPyDataAsset_CustomPhrase");
-static_assert(offsetof(UPyDataAsset_CustomPhrase, PharseIconDict) == 0x000038, "Member 'UPyDataAsset_CustomPhrase::PharseIconDict' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDataAsset_CustomPhrase;
 
 }
 

@@ -28,21 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_10130_104774">();
+		STATIC_CLASS_IMPL("PyConfig_10130_104774")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_10130_104774")
 	}
 	static class UPyConfig_10130_104774* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_10130_104774>();
 	}
 };
-static_assert(alignof(UPyConfig_10130_104774) == 0x000008, "Wrong alignment on UPyConfig_10130_104774");
-static_assert(sizeof(UPyConfig_10130_104774) == 0x000268, "Wrong size on UPyConfig_10130_104774");
-static_assert(offsetof(UPyConfig_10130_104774, EnemySpitMaxWaves) == 0x000258, "Member 'UPyConfig_10130_104774::EnemySpitMaxWaves' has a wrong offset!");
-static_assert(offsetof(UPyConfig_10130_104774, HealBuffID) == 0x00025C, "Member 'UPyConfig_10130_104774::HealBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_10130_104774, AccelerationBuffID) == 0x000260, "Member 'UPyConfig_10130_104774::AccelerationBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_10130_104774;
 
 // PythonClass PyAbility_10130_104774.PyAbility_10130_104774
-// 0x0000 (0x2DA8 - 0x2DA8)
+// 0x0000 (0x2DF8 - 0x2DF8)
 class UPyAbility_10130_104774 : public UPyAbility_104771_New
 {
 public:
@@ -54,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_10130_104774">();
+		STATIC_CLASS_IMPL("PyAbility_10130_104774")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_10130_104774")
 	}
 	static class UPyAbility_10130_104774* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_10130_104774>();
 	}
 };
-static_assert(alignof(UPyAbility_10130_104774) == 0x000008, "Wrong alignment on UPyAbility_10130_104774");
-static_assert(sizeof(UPyAbility_10130_104774) == 0x002DA8, "Wrong size on UPyAbility_10130_104774");
+DUMPER7_ASSERTS_UPyAbility_10130_104774;
 
 }
 

@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_RadioCheckBox.PyWidget_Common_RadioCheckBox
-// 0x0010 (0x0920 - 0x0910)
+// 0x0010 (0x0970 - 0x0960)
 class UPyWidget_Common_RadioCheckBox : public UPyWidget_CommonCheckBox
 {
 public:
-	bool                                          IsWeak;                                            // 0x0908(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_909[0x7];                                      // 0x0909(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             ImgIconLeft;                                       // 0x0910(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgIconRight;                                      // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsWeak;                                            // 0x0958(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_959[0x7];                                      // 0x0959(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             ImgIconLeft;                                       // 0x0960(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgIconRight;                                      // 0x0968(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_RadioCheckBox">();
+		STATIC_CLASS_IMPL("PyWidget_Common_RadioCheckBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_RadioCheckBox")
 	}
 	static class UPyWidget_Common_RadioCheckBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_RadioCheckBox>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_RadioCheckBox) == 0x000010, "Wrong alignment on UPyWidget_Common_RadioCheckBox");
-static_assert(sizeof(UPyWidget_Common_RadioCheckBox) == 0x000920, "Wrong size on UPyWidget_Common_RadioCheckBox");
-static_assert(offsetof(UPyWidget_Common_RadioCheckBox, IsWeak) == 0x000908, "Member 'UPyWidget_Common_RadioCheckBox::IsWeak' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RadioCheckBox, ImgIconLeft) == 0x000910, "Member 'UPyWidget_Common_RadioCheckBox::ImgIconLeft' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RadioCheckBox, ImgIconRight) == 0x000918, "Member 'UPyWidget_Common_RadioCheckBox::ImgIconRight' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_RadioCheckBox;
 
 }
 

@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Activity_10130_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "PyWidget_Halloween_Card_Base_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Activity_10130_structs.hpp"
+#include "PyWidget_Halloween_Card_Base_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "PyWidget_Common_Button_classes.hpp"
 
 
@@ -22,23 +22,23 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_Card_Base.PyWidget_Halloween_Card_Base
-// 0x0190 (0x0A50 - 0x08C0)
+// 0x0190 (0x0AB0 - 0x0920)
 class UPyWidget_Halloween_Card_Base final : public UPyWidget_BaseCommonButton
 {
 public:
-	int32                                         PreviewCardID;                                     // 0x08B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EHalloweenCardType                            PreviewCardType;                                   // 0x08BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsStoreCard;                                       // 0x08BD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8BE[0x2];                                      // 0x08BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            CurrencyEnoughColor;                               // 0x08C0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CurrencyNoEnoughColor;                             // 0x08D4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<ECardQualityType, class UTexture2D*>     QualityStarT2D;                                    // 0x08E8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<ECardQualityType, class UTexture2D*>     QualityLineT2D;                                    // 0x0938(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UTexture2D*                             DefaultBDIcon;                                     // 0x0988(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EImageCardType, class UTexture2D*>       ImageIcons;                                        // 0x0990(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<EWaveRewardType, class UTexture2D*>      RewardIcons;                                       // 0x09E0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     BGT2D;                                             // 0x0A30(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FVector2D                              TipsOffset;                                        // 0x0A40(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PreviewCardID;                                     // 0x0918(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EHalloweenCardType                            PreviewCardType;                                   // 0x091C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsStoreCard;                                       // 0x091D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_91E[0x2];                                      // 0x091E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            CurrencyEnoughColor;                               // 0x0920(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CurrencyNoEnoughColor;                             // 0x0934(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<ECardQualityType, class UTexture2D*>     QualityStarT2D;                                    // 0x0948(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<ECardQualityType, class UTexture2D*>     QualityLineT2D;                                    // 0x0998(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DefaultBDIcon;                                     // 0x09E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EImageCardType, class UTexture2D*>       ImageIcons;                                        // 0x09F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EWaveRewardType, class UTexture2D*>      RewardIcons;                                       // 0x0A40(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     BGT2D;                                             // 0x0A90(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FVector2D                              TipsOffset;                                        // 0x0AA0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -52,27 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_Card_Base">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_Card_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_Card_Base")
 	}
 	static class UPyWidget_Halloween_Card_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_Card_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_Card_Base) == 0x000010, "Wrong alignment on UPyWidget_Halloween_Card_Base");
-static_assert(sizeof(UPyWidget_Halloween_Card_Base) == 0x000A50, "Wrong size on UPyWidget_Halloween_Card_Base");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, PreviewCardID) == 0x0008B8, "Member 'UPyWidget_Halloween_Card_Base::PreviewCardID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, PreviewCardType) == 0x0008BC, "Member 'UPyWidget_Halloween_Card_Base::PreviewCardType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, IsStoreCard) == 0x0008BD, "Member 'UPyWidget_Halloween_Card_Base::IsStoreCard' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, CurrencyEnoughColor) == 0x0008C0, "Member 'UPyWidget_Halloween_Card_Base::CurrencyEnoughColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, CurrencyNoEnoughColor) == 0x0008D4, "Member 'UPyWidget_Halloween_Card_Base::CurrencyNoEnoughColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, QualityStarT2D) == 0x0008E8, "Member 'UPyWidget_Halloween_Card_Base::QualityStarT2D' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, QualityLineT2D) == 0x000938, "Member 'UPyWidget_Halloween_Card_Base::QualityLineT2D' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, DefaultBDIcon) == 0x000988, "Member 'UPyWidget_Halloween_Card_Base::DefaultBDIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, ImageIcons) == 0x000990, "Member 'UPyWidget_Halloween_Card_Base::ImageIcons' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, RewardIcons) == 0x0009E0, "Member 'UPyWidget_Halloween_Card_Base::RewardIcons' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, BGT2D) == 0x000A30, "Member 'UPyWidget_Halloween_Card_Base::BGT2D' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card_Base, TipsOffset) == 0x000A40, "Member 'UPyWidget_Halloween_Card_Base::TipsOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_Card_Base;
 
 }
 

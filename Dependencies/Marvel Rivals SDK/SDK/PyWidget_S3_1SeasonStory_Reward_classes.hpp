@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_S3_1SeasonStory_Reward.PyWidget_S3_1SeasonStory_Reward
-// 0x0030 (0x0628 - 0x05F8)
+// 0x0030 (0x0630 - 0x0600)
 class UPyWidget_S3_1SeasonStory_Reward final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                InspectTipsStyle;                                  // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ShowMenuTipsStyle;                                 // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamePad_GoTo;                                      // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_GoTo;                                      // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                InspectTipsStyle;                                  // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShowMenuTipsStyle;                                 // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamePad_GoTo;                                      // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_GoTo;                                      // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S3_1SeasonStory_Reward">();
+		STATIC_CLASS_IMPL("PyWidget_S3_1SeasonStory_Reward")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S3_1SeasonStory_Reward")
 	}
 	static class UPyWidget_S3_1SeasonStory_Reward* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S3_1SeasonStory_Reward>();
 	}
 };
-static_assert(alignof(UPyWidget_S3_1SeasonStory_Reward) == 0x000008, "Wrong alignment on UPyWidget_S3_1SeasonStory_Reward");
-static_assert(sizeof(UPyWidget_S3_1SeasonStory_Reward) == 0x000628, "Wrong size on UPyWidget_S3_1SeasonStory_Reward");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_Reward, InspectTipsStyle) == 0x0005F8, "Member 'UPyWidget_S3_1SeasonStory_Reward::InspectTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_Reward, ShowMenuTipsStyle) == 0x000608, "Member 'UPyWidget_S3_1SeasonStory_Reward::ShowMenuTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_Reward, GamePad_GoTo) == 0x000618, "Member 'UPyWidget_S3_1SeasonStory_Reward::GamePad_GoTo' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_Reward, AKEvent_GoTo) == 0x000620, "Member 'UPyWidget_S3_1SeasonStory_Reward::AKEvent_GoTo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S3_1SeasonStory_Reward;
 
 }
 

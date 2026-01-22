@@ -21,9 +21,7 @@ struct PyControlRuleComponent_ActivationNow final
 public:
 	class APyControl*                             control;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControlRuleComponent_ActivationNow) == 0x000008, "Wrong alignment on PyControlRuleComponent_ActivationNow");
-static_assert(sizeof(PyControlRuleComponent_ActivationNow) == 0x000008, "Wrong size on PyControlRuleComponent_ActivationNow");
-static_assert(offsetof(PyControlRuleComponent_ActivationNow, control) == 0x000000, "Member 'PyControlRuleComponent_ActivationNow::control' has a wrong offset!");
+DUMPER7_ASSERTS_PyControlRuleComponent_ActivationNow;
 
 }
 

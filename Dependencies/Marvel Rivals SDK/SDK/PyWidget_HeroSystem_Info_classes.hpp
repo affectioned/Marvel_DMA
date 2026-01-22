@@ -17,17 +17,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Info.PyWidget_HeroSystem_Info
-// 0x0038 (0x0630 - 0x05F8)
+// 0x0038 (0x0638 - 0x0600)
 class UPyWidget_HeroSystem_Info final : public UPyWidget_ModuleMainPanel
 {
 public:
-	float                                         SwitchShapeTime;                                   // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SwitchShapeCountdown;                              // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Role_Unknown;                                      // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Role_Tank;                                         // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Role_Damage;                                       // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Role_Support;                                      // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ShapeID)> OnSwitchShape;                                     // 0x0620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	float                                         SwitchShapeTime;                                   // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SwitchShapeCountdown;                              // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Role_Unknown;                                      // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Role_Tank;                                         // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Role_Damage;                                       // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Role_Support;                                      // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ShapeID)> OnSwitchShape;                                     // 0x0628(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,22 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Info">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Info")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Info")
 	}
 	static class UPyWidget_HeroSystem_Info* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Info>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Info) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Info");
-static_assert(sizeof(UPyWidget_HeroSystem_Info) == 0x000630, "Wrong size on UPyWidget_HeroSystem_Info");
-static_assert(offsetof(UPyWidget_HeroSystem_Info, SwitchShapeTime) == 0x0005F8, "Member 'UPyWidget_HeroSystem_Info::SwitchShapeTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Info, SwitchShapeCountdown) == 0x0005FC, "Member 'UPyWidget_HeroSystem_Info::SwitchShapeCountdown' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Info, Role_Unknown) == 0x000600, "Member 'UPyWidget_HeroSystem_Info::Role_Unknown' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Info, Role_Tank) == 0x000608, "Member 'UPyWidget_HeroSystem_Info::Role_Tank' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Info, Role_Damage) == 0x000610, "Member 'UPyWidget_HeroSystem_Info::Role_Damage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Info, Role_Support) == 0x000618, "Member 'UPyWidget_HeroSystem_Info::Role_Support' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Info, OnSwitchShape) == 0x000620, "Member 'UPyWidget_HeroSystem_Info::OnSwitchShape' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Info;
 
 }
 

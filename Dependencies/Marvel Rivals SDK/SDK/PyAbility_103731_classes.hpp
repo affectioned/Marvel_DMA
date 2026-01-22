@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103731.PyCue_Summoner_Loop_10373101
-// 0x0000 (0x1350 - 0x1350)
+// 0x0000 (0x13B0 - 0x13B0)
 class APyCue_Summoner_Loop_10373101 final : public ACue_Summoned_Loop_10373101
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10373101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10373101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10373101")
 	}
 	static class APyCue_Summoner_Loop_10373101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10373101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10373101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10373101");
-static_assert(sizeof(APyCue_Summoner_Loop_10373101) == 0x001350, "Wrong size on APyCue_Summoner_Loop_10373101");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10373101;
 
 // PythonClass PyAbility_103731.PyConfig_103731
 // 0x0028 (0x00C8 - 0x00A0)
@@ -48,19 +51,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103731">();
+		STATIC_CLASS_IMPL("PyConfig_103731")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103731")
 	}
 	static class UPyConfig_103731* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103731>();
 	}
 };
-static_assert(alignof(UPyConfig_103731) == 0x000008, "Wrong alignment on UPyConfig_103731");
-static_assert(sizeof(UPyConfig_103731) == 0x0000C8, "Wrong size on UPyConfig_103731");
-static_assert(offsetof(UPyConfig_103731, ActiveUserSetting) == 0x0000A0, "Member 'UPyConfig_103731::ActiveUserSetting' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103731;
 
 // PythonClass PyAbility_103731.PyAbility_103731
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_103731 : public UAbility_108
 {
 public:
@@ -80,15 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103731">();
+		STATIC_CLASS_IMPL("PyAbility_103731")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103731")
 	}
 	static class UPyAbility_103731* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103731>();
 	}
 };
-static_assert(alignof(UPyAbility_103731) == 0x000008, "Wrong alignment on UPyAbility_103731");
-static_assert(sizeof(UPyAbility_103731) == 0x0029F8, "Wrong size on UPyAbility_103731");
+DUMPER7_ASSERTS_UPyAbility_103731;
 
 }
 

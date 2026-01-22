@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SM_PracticeRangeRailing001A_Part3_Des.SM_PracticeRangeRailing001A_Part3_Des_C
-// 0x0270 (0x09D0 - 0x0760)
+// 0x01E0 (0x0940 - 0x0760)
 class ASM_PracticeRangeRailing001A_Part3_Des_C final : public ARecoveryEffectMeshActor
 {
 public:
@@ -28,166 +28,75 @@ public:
 	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A35;                     // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B34;                     // 0x0788(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A34;                     // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B33;                     // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A33;                     // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B32;                     // 0x07A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A32;                     // 0x07B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B31;                     // 0x07B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A31;                     // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B30;                     // 0x07C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A30;                     // 0x07D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B29;                     // 0x07D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A29;                     // 0x07E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B28;                     // 0x07E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A28;                     // 0x07F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B27;                     // 0x07F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A27;                     // 0x0800(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B26;                     // 0x0808(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A26;                     // 0x0810(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B25;                     // 0x0818(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A25;                     // 0x0820(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B24;                     // 0x0828(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A24;                     // 0x0830(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B23;                     // 0x0838(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A23;                     // 0x0840(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B22;                     // 0x0848(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A22;                     // 0x0850(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B21;                     // 0x0858(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A21;                     // 0x0860(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B20;                     // 0x0868(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A20;                     // 0x0870(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B19;                     // 0x0878(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A19;                     // 0x0880(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B18;                     // 0x0888(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A18;                     // 0x0890(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B17;                     // 0x0898(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A17;                     // 0x08A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B16;                     // 0x08A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A16;                     // 0x08B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B15;                     // 0x08B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A15;                     // 0x08C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B14;                     // 0x08C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A14;                     // 0x08D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B13;                     // 0x08D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A13;                     // 0x08E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B12;                     // 0x08E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A12;                     // 0x08F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B11;                     // 0x08F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A11;                     // 0x0900(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B10;                     // 0x0908(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A10;                     // 0x0910(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B9;                      // 0x0918(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A9;                      // 0x0920(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B8;                      // 0x0928(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A8;                      // 0x0930(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B7;                      // 0x0938(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A7;                      // 0x0940(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B6;                      // 0x0948(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A6;                      // 0x0950(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B5;                      // 0x0958(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A5;                      // 0x0960(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B4;                      // 0x0968(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A4;                      // 0x0970(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B3;                      // 0x0978(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A3;                      // 0x0980(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B2;                      // 0x0988(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A2;                      // 0x0990(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B1;                      // 0x0998(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A1;                      // 0x09A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B;                       // 0x09A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A;                       // 0x09B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Railing_Part;                                      // 0x09B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        SM_PracticeRangeBuilding001A_Part1_Des;            // 0x09C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A25;                     // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B24;                     // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A24;                     // 0x07A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B23;                     // 0x07B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A23;                     // 0x07B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B22;                     // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A22;                     // 0x07C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B21;                     // 0x07D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A21;                     // 0x07D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B20;                     // 0x07E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A20;                     // 0x07E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B19;                     // 0x07F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A19;                     // 0x07F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B18;                     // 0x0800(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A18;                     // 0x0808(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B17;                     // 0x0810(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A17;                     // 0x0818(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B16;                     // 0x0820(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A16;                     // 0x0828(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B15;                     // 0x0830(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A15;                     // 0x0838(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B14;                     // 0x0840(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A14;                     // 0x0848(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B13;                     // 0x0850(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A13;                     // 0x0858(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B12;                     // 0x0860(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A12;                     // 0x0868(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B11;                     // 0x0870(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A11;                     // 0x0878(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B10;                     // 0x0880(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A10;                     // 0x0888(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B9;                      // 0x0890(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A9;                      // 0x0898(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B8;                      // 0x08A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A8;                      // 0x08A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B7;                      // 0x08B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A7;                      // 0x08B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B6;                      // 0x08C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A6;                      // 0x08C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B5;                      // 0x08D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A5;                      // 0x08D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B4;                      // 0x08E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A4;                      // 0x08E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B3;                      // 0x08F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A3;                      // 0x08F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B2;                      // 0x0900(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A2;                      // 0x0908(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B1;                      // 0x0910(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A1;                      // 0x0918(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_B;                       // 0x0920(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Building009A_A;                       // 0x0928(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Railing_Part;                                      // 0x0930(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        SM_PracticeRangeBuilding001A_Part1_Des;            // 0x0938(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_PracticeRangeRailing001A_Part3_Des_C">();
+		BP_STATIC_CLASS_IMPL("SM_PracticeRangeRailing001A_Part3_Des_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_PracticeRangeRailing001A_Part3_Des_C")
 	}
 	static class ASM_PracticeRangeRailing001A_Part3_Des_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_PracticeRangeRailing001A_Part3_Des_C>();
 	}
 };
-static_assert(alignof(ASM_PracticeRangeRailing001A_Part3_Des_C) == 0x000010, "Wrong alignment on ASM_PracticeRangeRailing001A_Part3_Des_C");
-static_assert(sizeof(ASM_PracticeRangeRailing001A_Part3_Des_C) == 0x0009D0, "Wrong size on ASM_PracticeRangeRailing001A_Part3_Des_C");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A37) == 0x000760, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A37' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B36) == 0x000768, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B36' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A36) == 0x000770, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A36' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B35) == 0x000778, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B35' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A35) == 0x000780, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A35' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B34) == 0x000788, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B34' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A34) == 0x000790, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A34' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B33) == 0x000798, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B33' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A33) == 0x0007A0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A33' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B32) == 0x0007A8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B32' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A32) == 0x0007B0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A32' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B31) == 0x0007B8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B31' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A31) == 0x0007C0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A31' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B30) == 0x0007C8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B30' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A30) == 0x0007D0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A30' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B29) == 0x0007D8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B29' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A29) == 0x0007E0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A29' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B28) == 0x0007E8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B28' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A28) == 0x0007F0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A28' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B27) == 0x0007F8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B27' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A27) == 0x000800, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A27' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B26) == 0x000808, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B26' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A26) == 0x000810, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A26' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B25) == 0x000818, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B25' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A25) == 0x000820, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A25' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B24) == 0x000828, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B24' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A24) == 0x000830, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A24' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B23) == 0x000838, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B23' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A23) == 0x000840, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A23' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B22) == 0x000848, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B22' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A22) == 0x000850, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A22' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B21) == 0x000858, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B21' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A21) == 0x000860, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A21' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B20) == 0x000868, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B20' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A20) == 0x000870, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A20' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B19) == 0x000878, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B19' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A19) == 0x000880, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A19' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B18) == 0x000888, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B18' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A18) == 0x000890, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A18' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B17) == 0x000898, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B17' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A17) == 0x0008A0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A17' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B16) == 0x0008A8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B16' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A16) == 0x0008B0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A16' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B15) == 0x0008B8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B15' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A15) == 0x0008C0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A15' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B14) == 0x0008C8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B14' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A14) == 0x0008D0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A14' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B13) == 0x0008D8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B13' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A13) == 0x0008E0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A13' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B12) == 0x0008E8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B12' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A12) == 0x0008F0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A12' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B11) == 0x0008F8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B11' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A11) == 0x000900, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A11' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B10) == 0x000908, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B10' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A10) == 0x000910, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A10' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B9) == 0x000918, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B9' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A9) == 0x000920, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A9' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B8) == 0x000928, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B8' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A8) == 0x000930, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A8' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B7) == 0x000938, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B7' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A7) == 0x000940, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A7' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B6) == 0x000948, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B6' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A6) == 0x000950, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A6' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B5) == 0x000958, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B5' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A5) == 0x000960, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A5' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B4) == 0x000968, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B4' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A4) == 0x000970, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A4' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B3) == 0x000978, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B3' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A3) == 0x000980, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A3' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B2) == 0x000988, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B2' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A2) == 0x000990, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A2' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B1) == 0x000998, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B1' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A1) == 0x0009A0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A1' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_B) == 0x0009A8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_B' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_WakandaH01Building009A_A) == 0x0009B0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_WakandaH01Building009A_A' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, Railing_Part) == 0x0009B8, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::Railing_Part' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part3_Des_C, SM_PracticeRangeBuilding001A_Part1_Des) == 0x0009C0, "Member 'ASM_PracticeRangeRailing001A_Part3_Des_C::SM_PracticeRangeBuilding001A_Part1_Des' has a wrong offset!");
+DUMPER7_ASSERTS_ASM_PracticeRangeRailing001A_Part3_Des_C;
 
 }
 

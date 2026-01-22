@@ -32,7 +32,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNoviceTargetRange">();
+		STATIC_CLASS_IMPL("PyNoviceTargetRange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNoviceTargetRange")
 	}
 	static class APyNoviceTargetRange* GetDefaultObj()
 	{
@@ -40,9 +44,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyNoviceTargetRange) == 0x000010, "Wrong alignment on APyNoviceTargetRange");
-static_assert(sizeof(APyNoviceTargetRange) == 0x0006F0, "Wrong size on APyNoviceTargetRange");
-static_assert(offsetof(APyNoviceTargetRange, FadeOutCurve) == 0x0006E0, "Member 'APyNoviceTargetRange::FadeOutCurve' has a wrong offset!");
+DUMPER7_ASSERTS_APyNoviceTargetRange;
 
 }
 

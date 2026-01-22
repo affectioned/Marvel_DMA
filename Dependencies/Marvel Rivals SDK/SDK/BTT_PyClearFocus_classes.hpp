@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyClearFocus">();
+		STATIC_CLASS_IMPL("BTT_PyClearFocus")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyClearFocus")
 	}
 	static class UBTT_PyClearFocus* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyClearFocus>();
 	}
 };
-static_assert(alignof(UBTT_PyClearFocus) == 0x000008, "Wrong alignment on UBTT_PyClearFocus");
-static_assert(sizeof(UBTT_PyClearFocus) == 0x0000C8, "Wrong size on UBTT_PyClearFocus");
-static_assert(offsetof(UBTT_PyClearFocus, NeedClearAllFocus) == 0x0000C0, "Member 'UBTT_PyClearFocus::NeedClearAllFocus' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyClearFocus;
 
 }
 

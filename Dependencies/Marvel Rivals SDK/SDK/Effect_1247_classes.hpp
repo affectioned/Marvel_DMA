@@ -23,15 +23,18 @@ class UEffect_1247_C final : public UMarvelEnergyPercentageEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Effect_1247_C">();
+		BP_STATIC_CLASS_IMPL("Effect_1247_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Effect_1247_C")
 	}
 	static class UEffect_1247_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffect_1247_C>();
 	}
 };
-static_assert(alignof(UEffect_1247_C) == 0x000008, "Wrong alignment on UEffect_1247_C");
-static_assert(sizeof(UEffect_1247_C) == 0x001438, "Wrong size on UEffect_1247_C");
+DUMPER7_ASSERTS_UEffect_1247_C;
 
 }
 

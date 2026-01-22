@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Drag_10297601_BP.Drag_10297601_BP_C
-// 0x0000 (0x1FA8 - 0x1FA8)
+// 0x0000 (0x22E0 - 0x22E0)
 class UDrag_10297601_BP_C final : public UMarvelDragAbility_10297501
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Drag_10297601_BP_C">();
+		BP_STATIC_CLASS_IMPL("Drag_10297601_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Drag_10297601_BP_C")
 	}
 	static class UDrag_10297601_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDrag_10297601_BP_C>();
 	}
 };
-static_assert(alignof(UDrag_10297601_BP_C) == 0x000008, "Wrong alignment on UDrag_10297601_BP_C");
-static_assert(sizeof(UDrag_10297601_BP_C) == 0x001FA8, "Wrong size on UDrag_10297601_BP_C");
+DUMPER7_ASSERTS_UDrag_10297601_BP_C;
 
 }
 

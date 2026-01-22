@@ -12,9 +12,9 @@
 
 #include "MarvelLevel_structs.hpp"
 #include "MarvelLevel_classes.hpp"
-#include "PyRuleComponent_classes.hpp"
 #include "python_enums_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "PyRuleComponent_classes.hpp"
 
 
 namespace SDK
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBanPickConfig">();
+		STATIC_CLASS_IMPL("PyBanPickConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBanPickConfig")
 	}
 	static class UPyBanPickConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBanPickConfig>();
 	}
 };
-static_assert(alignof(UPyBanPickConfig) == 0x000008, "Wrong alignment on UPyBanPickConfig");
-static_assert(sizeof(UPyBanPickConfig) == 0x000038, "Wrong size on UPyBanPickConfig");
-static_assert(offsetof(UPyBanPickConfig, EnableBanPick) == 0x000030, "Member 'UPyBanPickConfig::EnableBanPick' has a wrong offset!");
-static_assert(offsetof(UPyBanPickConfig, ConfID) == 0x000034, "Member 'UPyBanPickConfig::ConfID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBanPickConfig;
 
 // PythonClass PyBanPickRuleComponent.PyMultiBanPickConfig
 // 0x0010 (0x0040 - 0x0030)
@@ -54,16 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMultiBanPickConfig">();
+		STATIC_CLASS_IMPL("PyMultiBanPickConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMultiBanPickConfig")
 	}
 	static class UPyMultiBanPickConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMultiBanPickConfig>();
 	}
 };
-static_assert(alignof(UPyMultiBanPickConfig) == 0x000008, "Wrong alignment on UPyMultiBanPickConfig");
-static_assert(sizeof(UPyMultiBanPickConfig) == 0x000040, "Wrong size on UPyMultiBanPickConfig");
-static_assert(offsetof(UPyMultiBanPickConfig, BPList) == 0x000030, "Member 'UPyMultiBanPickConfig::BPList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMultiBanPickConfig;
 
 // PythonClass PyBanPickRuleComponent.PyBanPickRuleComponent
 // 0x02A8 (0x03B0 - 0x0108)
@@ -124,41 +127,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBanPickRuleComponent">();
+		STATIC_CLASS_IMPL("PyBanPickRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBanPickRuleComponent")
 	}
 	static class UPyBanPickRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBanPickRuleComponent>();
 	}
 };
-static_assert(alignof(UPyBanPickRuleComponent) == 0x000008, "Wrong alignment on UPyBanPickRuleComponent");
-static_assert(sizeof(UPyBanPickRuleComponent) == 0x0003B0, "Wrong size on UPyBanPickRuleComponent");
-static_assert(offsetof(UPyBanPickRuleComponent, EnableBanPick) == 0x000108, "Member 'UPyBanPickRuleComponent::EnableBanPick' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, bOneSideEffect) == 0x000109, "Member 'UPyBanPickRuleComponent::bOneSideEffect' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, ClientEnableBanPick) == 0x00010A, "Member 'UPyBanPickRuleComponent::ClientEnableBanPick' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, LowestRank) == 0x00010C, "Member 'UPyBanPickRuleComponent::LowestRank' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, LowestRankNum) == 0x000110, "Member 'UPyBanPickRuleComponent::LowestRankNum' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, PreSelectHeroTime) == 0x000114, "Member 'UPyBanPickRuleComponent::PreSelectHeroTime' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, AnnouncementTime) == 0x000118, "Member 'UPyBanPickRuleComponent::AnnouncementTime' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, LastRoundExtraAnnouncementTime) == 0x00011C, "Member 'UPyBanPickRuleComponent::LastRoundExtraAnnouncementTime' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, TeammateAnnouncementTime) == 0x000120, "Member 'UPyBanPickRuleComponent::TeammateAnnouncementTime' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, BanPickMemberType) == 0x000124, "Member 'UPyBanPickRuleComponent::BanPickMemberType' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, BanPickOperateType) == 0x000125, "Member 'UPyBanPickRuleComponent::BanPickOperateType' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, BanPickCountingType) == 0x000126, "Member 'UPyBanPickRuleComponent::BanPickCountingType' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, BanPickOneSideList) == 0x000128, "Member 'UPyBanPickRuleComponent::BanPickOneSideList' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, BanPickOneSideInfoList) == 0x000138, "Member 'UPyBanPickRuleComponent::BanPickOneSideInfoList' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, BanPickResultList) == 0x000148, "Member 'UPyBanPickRuleComponent::BanPickResultList' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, CurRoundRedBanPickResult) == 0x000158, "Member 'UPyBanPickRuleComponent::CurRoundRedBanPickResult' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, CurRoundBlueBanPickResult) == 0x000188, "Member 'UPyBanPickRuleComponent::CurRoundBlueBanPickResult' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, CurBanPickSide) == 0x0001B8, "Member 'UPyBanPickRuleComponent::CurBanPickSide' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, CurBanPickIndex) == 0x0001BC, "Member 'UPyBanPickRuleComponent::CurBanPickIndex' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, BanPickState) == 0x0001C0, "Member 'UPyBanPickRuleComponent::BanPickState' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, RedBanPickLeaderID) == 0x0001C4, "Member 'UPyBanPickRuleComponent::RedBanPickLeaderID' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, BlueBanPickLeaderID) == 0x0001C8, "Member 'UPyBanPickRuleComponent::BlueBanPickLeaderID' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, PreSelectHeroTimer) == 0x0001D0, "Member 'UPyBanPickRuleComponent::PreSelectHeroTimer' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, BanPickHeroTimer) == 0x000248, "Member 'UPyBanPickRuleComponent::BanPickHeroTimer' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, BanPickTeammateAnnouncementTimer) == 0x0002C0, "Member 'UPyBanPickRuleComponent::BanPickTeammateAnnouncementTimer' has a wrong offset!");
-static_assert(offsetof(UPyBanPickRuleComponent, BanPickAnnouncementTimer) == 0x000338, "Member 'UPyBanPickRuleComponent::BanPickAnnouncementTimer' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBanPickRuleComponent;
 
 }
 

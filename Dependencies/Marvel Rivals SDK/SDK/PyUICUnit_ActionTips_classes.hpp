@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUICUnit_ActionTips">();
+		STATIC_CLASS_IMPL("PyUICUnit_ActionTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUICUnit_ActionTips")
 	}
 	static class UPyUICUnit_ActionTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUICUnit_ActionTips>();
 	}
 };
-static_assert(alignof(UPyUICUnit_ActionTips) == 0x000008, "Wrong alignment on UPyUICUnit_ActionTips");
-static_assert(sizeof(UPyUICUnit_ActionTips) == 0x000050, "Wrong size on UPyUICUnit_ActionTips");
-static_assert(offsetof(UPyUICUnit_ActionTips, ActionTips) == 0x000040, "Member 'UPyUICUnit_ActionTips::ActionTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUICUnit_ActionTips;
 
 }
 

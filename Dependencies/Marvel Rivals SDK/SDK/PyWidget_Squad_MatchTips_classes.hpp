@@ -18,25 +18,25 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Squad_MatchTips.PyWidget_Squad_MatchTips_Base
-// 0x0088 (0x0648 - 0x05C0)
+// 0x0088 (0x0650 - 0x05C8)
 class UPyWidget_Squad_MatchTips_Base : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                Btn_Window_Close;                                  // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Text_HintMatchingOutside;                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                RichText_Match;                                    // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Text_Match_Time;                                   // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Text_Estimated;                                    // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Com_VX_PressSmall;                             // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                ScaleBox_Stream;                                   // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Success;                                      // 0x05F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Cancel;                                       // 0x0600(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Hover;                                        // 0x0608(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Press;                                        // 0x0610(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color_Btn_Cancel_Normal;                           // 0x0618(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color_Btn_Cancel_Hover;                            // 0x0628(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color_Btn_Cancel_Click;                            // 0x0638(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                Btn_Window_Close;                                  // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Text_HintMatchingOutside;                          // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                RichText_Match;                                    // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Text_Match_Time;                                   // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Text_Estimated;                                    // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Com_VX_PressSmall;                             // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                ScaleBox_Stream;                                   // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Success;                                      // 0x0600(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Cancel;                                       // 0x0608(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Hover;                                        // 0x0610(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Press;                                        // 0x0618(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Btn_Cancel_Normal;                           // 0x0620(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Btn_Cancel_Hover;                            // 0x0630(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Btn_Cancel_Click;                            // 0x0640(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -49,63 +49,58 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_MatchTips_Base">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_MatchTips_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_MatchTips_Base")
 	}
 	static class UPyWidget_Squad_MatchTips_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_MatchTips_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_MatchTips_Base) == 0x000008, "Wrong alignment on UPyWidget_Squad_MatchTips_Base");
-static_assert(sizeof(UPyWidget_Squad_MatchTips_Base) == 0x000648, "Wrong size on UPyWidget_Squad_MatchTips_Base");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, Btn_Window_Close) == 0x0005C0, "Member 'UPyWidget_Squad_MatchTips_Base::Btn_Window_Close' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, Text_HintMatchingOutside) == 0x0005C8, "Member 'UPyWidget_Squad_MatchTips_Base::Text_HintMatchingOutside' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, RichText_Match) == 0x0005D0, "Member 'UPyWidget_Squad_MatchTips_Base::RichText_Match' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, Text_Match_Time) == 0x0005D8, "Member 'UPyWidget_Squad_MatchTips_Base::Text_Match_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, Text_Estimated) == 0x0005E0, "Member 'UPyWidget_Squad_MatchTips_Base::Text_Estimated' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, WBP_Com_VX_PressSmall) == 0x0005E8, "Member 'UPyWidget_Squad_MatchTips_Base::WBP_Com_VX_PressSmall' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, ScaleBox_Stream) == 0x0005F0, "Member 'UPyWidget_Squad_MatchTips_Base::ScaleBox_Stream' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, Anim_Success) == 0x0005F8, "Member 'UPyWidget_Squad_MatchTips_Base::Anim_Success' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, Anim_Cancel) == 0x000600, "Member 'UPyWidget_Squad_MatchTips_Base::Anim_Cancel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, Anim_Hover) == 0x000608, "Member 'UPyWidget_Squad_MatchTips_Base::Anim_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, Anim_Press) == 0x000610, "Member 'UPyWidget_Squad_MatchTips_Base::Anim_Press' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, Color_Btn_Cancel_Normal) == 0x000618, "Member 'UPyWidget_Squad_MatchTips_Base::Color_Btn_Cancel_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, Color_Btn_Cancel_Hover) == 0x000628, "Member 'UPyWidget_Squad_MatchTips_Base::Color_Btn_Cancel_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MatchTips_Base, Color_Btn_Cancel_Click) == 0x000638, "Member 'UPyWidget_Squad_MatchTips_Base::Color_Btn_Cancel_Click' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Squad_MatchTips_Base;
 
 // PythonClass PyWidget_Squad_MatchTips.PyWidget_Squad_MatchTips
-// 0x0000 (0x0648 - 0x0648)
+// 0x0000 (0x0650 - 0x0650)
 class UPyWidget_Squad_MatchTips final : public UPyWidget_Squad_MatchTips_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_MatchTips">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_MatchTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_MatchTips")
 	}
 	static class UPyWidget_Squad_MatchTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_MatchTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_MatchTips) == 0x000008, "Wrong alignment on UPyWidget_Squad_MatchTips");
-static_assert(sizeof(UPyWidget_Squad_MatchTips) == 0x000648, "Wrong size on UPyWidget_Squad_MatchTips");
+DUMPER7_ASSERTS_UPyWidget_Squad_MatchTips;
 
 // PythonClass PyWidget_Squad_MatchTips.PyWidget_Squad_MatchTips_Leagues
-// 0x0000 (0x0648 - 0x0648)
+// 0x0000 (0x0650 - 0x0650)
 class UPyWidget_Squad_MatchTips_Leagues final : public UPyWidget_Squad_MatchTips_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_MatchTips_Leagues">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_MatchTips_Leagues")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_MatchTips_Leagues")
 	}
 	static class UPyWidget_Squad_MatchTips_Leagues* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_MatchTips_Leagues>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_MatchTips_Leagues) == 0x000008, "Wrong alignment on UPyWidget_Squad_MatchTips_Leagues");
-static_assert(sizeof(UPyWidget_Squad_MatchTips_Leagues) == 0x000648, "Wrong size on UPyWidget_Squad_MatchTips_Leagues");
+DUMPER7_ASSERTS_UPyWidget_Squad_MatchTips_Leagues;
 
 }
 

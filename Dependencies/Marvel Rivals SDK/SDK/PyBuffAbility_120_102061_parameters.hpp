@@ -23,9 +23,7 @@ struct PyEffectAbility_120_10206111_OnTagEventReceived final
 public:
 	struct FGameplayEventData                     Payload;                                           // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyEffectAbility_120_10206111_OnTagEventReceived) == 0x000008, "Wrong alignment on PyEffectAbility_120_10206111_OnTagEventReceived");
-static_assert(sizeof(PyEffectAbility_120_10206111_OnTagEventReceived) == 0x000290, "Wrong size on PyEffectAbility_120_10206111_OnTagEventReceived");
-static_assert(offsetof(PyEffectAbility_120_10206111_OnTagEventReceived, Payload) == 0x000000, "Member 'PyEffectAbility_120_10206111_OnTagEventReceived::Payload' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_120_10206111_OnTagEventReceived;
 
 }
 

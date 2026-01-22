@@ -28,16 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SPCRJointDynamicsComponent">();
+		STATIC_CLASS_IMPL("SPCRJointDynamicsComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SPCRJointDynamicsComponent")
 	}
 	static class USPCRJointDynamicsComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USPCRJointDynamicsComponent>();
 	}
 };
-static_assert(alignof(USPCRJointDynamicsComponent) == 0x000008, "Wrong alignment on USPCRJointDynamicsComponent");
-static_assert(sizeof(USPCRJointDynamicsComponent) == 0x000110, "Wrong size on USPCRJointDynamicsComponent");
-static_assert(offsetof(USPCRJointDynamicsComponent, isReset) == 0x000108, "Member 'USPCRJointDynamicsComponent::isReset' has a wrong offset!");
+DUMPER7_ASSERTS_USPCRJointDynamicsComponent;
 
 // Class SPCRJointDynamics.SPCRJointDynamicsMngComponent
 // 0x0010 (0x0118 - 0x0108)
@@ -53,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SPCRJointDynamicsMngComponent">();
+		STATIC_CLASS_IMPL("SPCRJointDynamicsMngComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SPCRJointDynamicsMngComponent")
 	}
 	static class USPCRJointDynamicsMngComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USPCRJointDynamicsMngComponent>();
 	}
 };
-static_assert(alignof(USPCRJointDynamicsMngComponent) == 0x000008, "Wrong alignment on USPCRJointDynamicsMngComponent");
-static_assert(sizeof(USPCRJointDynamicsMngComponent) == 0x000118, "Wrong size on USPCRJointDynamicsMngComponent");
+DUMPER7_ASSERTS_USPCRJointDynamicsMngComponent;
 
 // Class SPCRJointDynamics.SPCRJointDynamicsRuntimeSettings
 // 0x0000 (0x0030 - 0x0030)
@@ -70,15 +75,18 @@ class USPCRJointDynamicsRuntimeSettings final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SPCRJointDynamicsRuntimeSettings">();
+		STATIC_CLASS_IMPL("SPCRJointDynamicsRuntimeSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SPCRJointDynamicsRuntimeSettings")
 	}
 	static class USPCRJointDynamicsRuntimeSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USPCRJointDynamicsRuntimeSettings>();
 	}
 };
-static_assert(alignof(USPCRJointDynamicsRuntimeSettings) == 0x000008, "Wrong alignment on USPCRJointDynamicsRuntimeSettings");
-static_assert(sizeof(USPCRJointDynamicsRuntimeSettings) == 0x000030, "Wrong size on USPCRJointDynamicsRuntimeSettings");
+DUMPER7_ASSERTS_USPCRJointDynamicsRuntimeSettings;
 
 // Class SPCRJointDynamics.SPCRJointDynamicsStaticFunctions
 // 0x0000 (0x0030 - 0x0030)
@@ -87,15 +95,18 @@ class USPCRJointDynamicsStaticFunctions final : public UBlueprintFunctionLibrary
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SPCRJointDynamicsStaticFunctions">();
+		STATIC_CLASS_IMPL("SPCRJointDynamicsStaticFunctions")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SPCRJointDynamicsStaticFunctions")
 	}
 	static class USPCRJointDynamicsStaticFunctions* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USPCRJointDynamicsStaticFunctions>();
 	}
 };
-static_assert(alignof(USPCRJointDynamicsStaticFunctions) == 0x000008, "Wrong alignment on USPCRJointDynamicsStaticFunctions");
-static_assert(sizeof(USPCRJointDynamicsStaticFunctions) == 0x000030, "Wrong size on USPCRJointDynamicsStaticFunctions");
+DUMPER7_ASSERTS_USPCRJointDynamicsStaticFunctions;
 
 }
 

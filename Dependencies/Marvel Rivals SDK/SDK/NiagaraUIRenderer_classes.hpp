@@ -51,27 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraSystemWidget">();
+		STATIC_CLASS_IMPL("NiagaraSystemWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraSystemWidget")
 	}
 	static class UNiagaraSystemWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraSystemWidget>();
 	}
 };
-static_assert(alignof(UNiagaraSystemWidget) == 0x000008, "Wrong alignment on UNiagaraSystemWidget");
-static_assert(sizeof(UNiagaraSystemWidget) == 0x000250, "Wrong size on UNiagaraSystemWidget");
-static_assert(offsetof(UNiagaraSystemWidget, NiagaraSystemReference) == 0x0001B8, "Member 'UNiagaraSystemWidget::NiagaraSystemReference' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystemWidget, MaterialRemapList) == 0x0001C0, "Member 'UNiagaraSystemWidget::MaterialRemapList' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystemWidget, bIsActiveSystem) == 0x000210, "Member 'UNiagaraSystemWidget::bIsActiveSystem' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystemWidget, bDeactivateImmediate) == 0x000211, "Member 'UNiagaraSystemWidget::bDeactivateImmediate' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystemWidget, TickWhenPaused) == 0x000212, "Member 'UNiagaraSystemWidget::TickWhenPaused' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystemWidget, FakeDepthScale) == 0x000213, "Member 'UNiagaraSystemWidget::FakeDepthScale' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystemWidget, FakeDepthScaleDistance) == 0x000214, "Member 'UNiagaraSystemWidget::FakeDepthScaleDistance' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystemWidget, ShowDebugSystemInWorld) == 0x000218, "Member 'UNiagaraSystemWidget::ShowDebugSystemInWorld' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystemWidget, DisableWarnings) == 0x000219, "Member 'UNiagaraSystemWidget::DisableWarnings' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystemWidget, OverrideNiagaraWorld) == 0x000220, "Member 'UNiagaraSystemWidget::OverrideNiagaraWorld' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystemWidget, NiagaraActor) == 0x000238, "Member 'UNiagaraSystemWidget::NiagaraActor' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystemWidget, NiagaraComponent) == 0x000240, "Member 'UNiagaraSystemWidget::NiagaraComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraSystemWidget;
 
 // Class NiagaraUIRenderer.NiagaraUIActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -80,15 +71,18 @@ class ANiagaraUIActor final : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraUIActor">();
+		STATIC_CLASS_IMPL("NiagaraUIActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraUIActor")
 	}
 	static class ANiagaraUIActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANiagaraUIActor>();
 	}
 };
-static_assert(alignof(ANiagaraUIActor) == 0x000010, "Wrong alignment on ANiagaraUIActor");
-static_assert(sizeof(ANiagaraUIActor) == 0x0006E0, "Wrong size on ANiagaraUIActor");
+DUMPER7_ASSERTS_ANiagaraUIActor;
 
 // Class NiagaraUIRenderer.NiagaraUIComponent
 // 0x0000 (0x0B00 - 0x0B00)
@@ -97,15 +91,18 @@ class UNiagaraUIComponent final : public UNiagaraComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraUIComponent">();
+		STATIC_CLASS_IMPL("NiagaraUIComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraUIComponent")
 	}
 	static class UNiagaraUIComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraUIComponent>();
 	}
 };
-static_assert(alignof(UNiagaraUIComponent) == 0x000010, "Wrong alignment on UNiagaraUIComponent");
-static_assert(sizeof(UNiagaraUIComponent) == 0x000B00, "Wrong size on UNiagaraUIComponent");
+DUMPER7_ASSERTS_UNiagaraUIComponent;
 
 }
 

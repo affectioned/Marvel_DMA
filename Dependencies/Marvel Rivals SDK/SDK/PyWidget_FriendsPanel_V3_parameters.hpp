@@ -24,9 +24,7 @@ struct PyWidget_FriendsPanel_V3_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FriendsPanel_V3_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_FriendsPanel_V3_PreConstruct");
-static_assert(sizeof(PyWidget_FriendsPanel_V3_PreConstruct) == 0x000001, "Wrong size on PyWidget_FriendsPanel_V3_PreConstruct");
-static_assert(offsetof(PyWidget_FriendsPanel_V3_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_FriendsPanel_V3_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FriendsPanel_V3_PreConstruct;
 
 // PythonFunction PyWidget_FriendsPanel_V3.PyWidget_FriendsPanel_V3.OnAnimationStarted
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyWidget_FriendsPanel_V3_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FriendsPanel_V3_OnAnimationStarted) == 0x000008, "Wrong alignment on PyWidget_FriendsPanel_V3_OnAnimationStarted");
-static_assert(sizeof(PyWidget_FriendsPanel_V3_OnAnimationStarted) == 0x000008, "Wrong size on PyWidget_FriendsPanel_V3_OnAnimationStarted");
-static_assert(offsetof(PyWidget_FriendsPanel_V3_OnAnimationStarted, Animation) == 0x000000, "Member 'PyWidget_FriendsPanel_V3_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FriendsPanel_V3_OnAnimationStarted;
 
 // PythonFunction PyWidget_FriendsPanel_V3.PyWidget_FriendsPanel_V3.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +42,7 @@ struct PyWidget_FriendsPanel_V3_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FriendsPanel_V3_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_FriendsPanel_V3_OnAnimationFinished");
-static_assert(sizeof(PyWidget_FriendsPanel_V3_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_FriendsPanel_V3_OnAnimationFinished");
-static_assert(offsetof(PyWidget_FriendsPanel_V3_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_FriendsPanel_V3_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FriendsPanel_V3_OnAnimationFinished;
 
 // PythonFunction PyWidget_FriendsPanel_V3.PyWidget_FriendsPanel_V3.SetIsOpen
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +51,7 @@ struct PyWidget_FriendsPanel_V3_SetIsOpen final
 public:
 	bool                                          IsOpen_0;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FriendsPanel_V3_SetIsOpen) == 0x000001, "Wrong alignment on PyWidget_FriendsPanel_V3_SetIsOpen");
-static_assert(sizeof(PyWidget_FriendsPanel_V3_SetIsOpen) == 0x000001, "Wrong size on PyWidget_FriendsPanel_V3_SetIsOpen");
-static_assert(offsetof(PyWidget_FriendsPanel_V3_SetIsOpen, IsOpen_0) == 0x000000, "Member 'PyWidget_FriendsPanel_V3_SetIsOpen::IsOpen_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FriendsPanel_V3_SetIsOpen;
 
 // PythonFunction PyWidget_FriendsPanel_V3.PyWidget_FriendsPanel_V3.SetFocusingWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -68,9 +60,7 @@ struct PyWidget_FriendsPanel_V3_SetFocusingWidget final
 public:
 	class UWidget*                                widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FriendsPanel_V3_SetFocusingWidget) == 0x000008, "Wrong alignment on PyWidget_FriendsPanel_V3_SetFocusingWidget");
-static_assert(sizeof(PyWidget_FriendsPanel_V3_SetFocusingWidget) == 0x000008, "Wrong size on PyWidget_FriendsPanel_V3_SetFocusingWidget");
-static_assert(offsetof(PyWidget_FriendsPanel_V3_SetFocusingWidget, widget) == 0x000000, "Member 'PyWidget_FriendsPanel_V3_SetFocusingWidget::widget' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FriendsPanel_V3_SetFocusingWidget;
 
 // PythonFunction PyWidget_FriendsPanel_V3.PyWidget_FriendsPanel_V3.OnMouseButtonDown
 // 0x0178 (0x0178 - 0x0000)
@@ -81,11 +71,7 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_FriendsPanel_V3_OnMouseButtonDown) == 0x000008, "Wrong alignment on PyWidget_FriendsPanel_V3_OnMouseButtonDown");
-static_assert(sizeof(PyWidget_FriendsPanel_V3_OnMouseButtonDown) == 0x000178, "Wrong size on PyWidget_FriendsPanel_V3_OnMouseButtonDown");
-static_assert(offsetof(PyWidget_FriendsPanel_V3_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'PyWidget_FriendsPanel_V3_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_FriendsPanel_V3_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'PyWidget_FriendsPanel_V3_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(PyWidget_FriendsPanel_V3_OnMouseButtonDown, ReturnValue) == 0x0000B8, "Member 'PyWidget_FriendsPanel_V3_OnMouseButtonDown::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FriendsPanel_V3_OnMouseButtonDown;
 
 // PythonFunction PyWidget_FriendsPanel_V3.PyWidget_Friends_StateBtnList.SetVisible
 // 0x0008 (0x0008 - 0x0000)
@@ -96,10 +82,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         i_state;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Friends_StateBtnList_SetVisible) == 0x000004, "Wrong alignment on PyWidget_Friends_StateBtnList_SetVisible");
-static_assert(sizeof(PyWidget_Friends_StateBtnList_SetVisible) == 0x000008, "Wrong size on PyWidget_Friends_StateBtnList_SetVisible");
-static_assert(offsetof(PyWidget_Friends_StateBtnList_SetVisible, IsVisible_0) == 0x000000, "Member 'PyWidget_Friends_StateBtnList_SetVisible::IsVisible_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Friends_StateBtnList_SetVisible, i_state) == 0x000004, "Member 'PyWidget_Friends_StateBtnList_SetVisible::i_state' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Friends_StateBtnList_SetVisible;
 
 // PythonFunction PyWidget_FriendsPanel_V3.PyWidget_Friends_SelectBoxBtn_V3.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -108,9 +91,7 @@ struct PyWidget_Friends_SelectBoxBtn_V3_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Friends_SelectBoxBtn_V3_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Friends_SelectBoxBtn_V3_PreConstruct");
-static_assert(sizeof(PyWidget_Friends_SelectBoxBtn_V3_PreConstruct) == 0x000001, "Wrong size on PyWidget_Friends_SelectBoxBtn_V3_PreConstruct");
-static_assert(offsetof(PyWidget_Friends_SelectBoxBtn_V3_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Friends_SelectBoxBtn_V3_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Friends_SelectBoxBtn_V3_PreConstruct;
 
 // PythonFunction PyWidget_FriendsPanel_V3.PyWidget_Friends_TabBtn_V2.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -119,9 +100,7 @@ struct PyWidget_Friends_TabBtn_V2_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Friends_TabBtn_V2_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Friends_TabBtn_V2_PreConstruct");
-static_assert(sizeof(PyWidget_Friends_TabBtn_V2_PreConstruct) == 0x000001, "Wrong size on PyWidget_Friends_TabBtn_V2_PreConstruct");
-static_assert(offsetof(PyWidget_Friends_TabBtn_V2_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Friends_TabBtn_V2_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Friends_TabBtn_V2_PreConstruct;
 
 // PythonFunction PyWidget_FriendsPanel_V3.PyWidget_FriendsTips.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -130,9 +109,7 @@ struct PyWidget_FriendsTips_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FriendsTips_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_FriendsTips_PreConstruct");
-static_assert(sizeof(PyWidget_FriendsTips_PreConstruct) == 0x000001, "Wrong size on PyWidget_FriendsTips_PreConstruct");
-static_assert(offsetof(PyWidget_FriendsTips_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_FriendsTips_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FriendsTips_PreConstruct;
 
 }
 

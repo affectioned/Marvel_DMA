@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyControlAnalyzerSubsystem">();
+		STATIC_CLASS_IMPL("PyControlAnalyzerSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyControlAnalyzerSubsystem")
 	}
 	static class UPyControlAnalyzerSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyControlAnalyzerSubsystem>();
 	}
 };
-static_assert(alignof(UPyControlAnalyzerSubsystem) == 0x000008, "Wrong alignment on UPyControlAnalyzerSubsystem");
-static_assert(sizeof(UPyControlAnalyzerSubsystem) == 0x0000E8, "Wrong size on UPyControlAnalyzerSubsystem");
+DUMPER7_ASSERTS_UPyControlAnalyzerSubsystem;
 
 }
 

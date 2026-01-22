@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyUpdateControlFrontier">();
+		STATIC_CLASS_IMPL("BTS_PyUpdateControlFrontier")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyUpdateControlFrontier")
 	}
 	static class UBTS_PyUpdateControlFrontier* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyUpdateControlFrontier>();
 	}
 };
-static_assert(alignof(UBTS_PyUpdateControlFrontier) == 0x000008, "Wrong alignment on UBTS_PyUpdateControlFrontier");
-static_assert(sizeof(UBTS_PyUpdateControlFrontier) == 0x000108, "Wrong size on UBTS_PyUpdateControlFrontier");
-static_assert(offsetof(UBTS_PyUpdateControlFrontier, OutFrontier) == 0x0000A8, "Member 'UBTS_PyUpdateControlFrontier::OutFrontier' has a wrong offset!");
-static_assert(offsetof(UBTS_PyUpdateControlFrontier, OutNextFrontier) == 0x0000D8, "Member 'UBTS_PyUpdateControlFrontier::OutNextFrontier' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyUpdateControlFrontier;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_HomeEntrance_Advertisement_Image_Widget_OnAnimationFinished fina
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HomeEntrance_Advertisement_Image_Widget_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_HomeEntrance_Advertisement_Image_Widget_OnAnimationFinished");
-static_assert(sizeof(PyWidget_HomeEntrance_Advertisement_Image_Widget_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_HomeEntrance_Advertisement_Image_Widget_OnAnimationFinished");
-static_assert(offsetof(PyWidget_HomeEntrance_Advertisement_Image_Widget_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_HomeEntrance_Advertisement_Image_Widget_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HomeEntrance_Advertisement_Image_Widget_OnAnimationFinished;
 
 }
 

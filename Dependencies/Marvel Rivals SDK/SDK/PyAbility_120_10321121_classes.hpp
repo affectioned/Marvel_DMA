@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyAbility_120_10321121.PyBuffAbility_120_10321121
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyBuffAbility_120_10321121 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         DoubleShootRatio;                                  // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DoubleShootDelay;                                  // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ProjectileID;                                      // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DoubleShootRatio;                                  // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DoubleShootDelay;                                  // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ProjectileID;                                      // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -31,18 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10321121">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10321121")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10321121")
 	}
 	static class UPyBuffAbility_120_10321121* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10321121>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10321121) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10321121");
-static_assert(sizeof(UPyBuffAbility_120_10321121) == 0x001380, "Wrong size on UPyBuffAbility_120_10321121");
-static_assert(offsetof(UPyBuffAbility_120_10321121, DoubleShootRatio) == 0x001370, "Member 'UPyBuffAbility_120_10321121::DoubleShootRatio' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10321121, DoubleShootDelay) == 0x001374, "Member 'UPyBuffAbility_120_10321121::DoubleShootDelay' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10321121, ProjectileID) == 0x001378, "Member 'UPyBuffAbility_120_10321121::ProjectileID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10321121;
 
 }
 

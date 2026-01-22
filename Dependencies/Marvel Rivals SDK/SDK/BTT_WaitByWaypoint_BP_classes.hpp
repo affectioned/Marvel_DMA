@@ -23,15 +23,18 @@ class UBTT_WaitByWaypoint_BP_C final : public UBTT_PyWaitByWaypoint
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTT_WaitByWaypoint_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTT_WaitByWaypoint_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_WaitByWaypoint_BP_C")
 	}
 	static class UBTT_WaitByWaypoint_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_WaitByWaypoint_BP_C>();
 	}
 };
-static_assert(alignof(UBTT_WaitByWaypoint_BP_C) == 0x000008, "Wrong alignment on UBTT_WaitByWaypoint_BP_C");
-static_assert(sizeof(UBTT_WaitByWaypoint_BP_C) == 0x0000C0, "Wrong size on UBTT_WaitByWaypoint_BP_C");
+DUMPER7_ASSERTS_UBTT_WaitByWaypoint_BP_C;
 
 }
 

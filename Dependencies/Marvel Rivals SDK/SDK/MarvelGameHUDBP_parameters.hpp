@@ -24,11 +24,7 @@ public:
 	class UMarvel3DWidgetManager*                 CallFunc_Get_ReturnValue;                          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelGameHUDBP_C_ExecuteUbergraph_MarvelGameHUDBP) == 0x000008, "Wrong alignment on MarvelGameHUDBP_C_ExecuteUbergraph_MarvelGameHUDBP");
-static_assert(sizeof(MarvelGameHUDBP_C_ExecuteUbergraph_MarvelGameHUDBP) == 0x000018, "Wrong size on MarvelGameHUDBP_C_ExecuteUbergraph_MarvelGameHUDBP");
-static_assert(offsetof(MarvelGameHUDBP_C_ExecuteUbergraph_MarvelGameHUDBP, EntryPoint) == 0x000000, "Member 'MarvelGameHUDBP_C_ExecuteUbergraph_MarvelGameHUDBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MarvelGameHUDBP_C_ExecuteUbergraph_MarvelGameHUDBP, CallFunc_Get_ReturnValue) == 0x000008, "Member 'MarvelGameHUDBP_C_ExecuteUbergraph_MarvelGameHUDBP::CallFunc_Get_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGameHUDBP_C_ExecuteUbergraph_MarvelGameHUDBP, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'MarvelGameHUDBP_C_ExecuteUbergraph_MarvelGameHUDBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelGameHUDBP_C_ExecuteUbergraph_MarvelGameHUDBP;
 
 }
 

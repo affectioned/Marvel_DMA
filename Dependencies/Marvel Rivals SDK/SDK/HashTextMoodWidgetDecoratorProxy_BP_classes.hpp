@@ -23,15 +23,18 @@ class UHashTextMoodWidgetDecoratorProxy_BP_C final : public UPyHashTextMoodWidge
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HashTextMoodWidgetDecoratorProxy_BP_C">();
+		BP_STATIC_CLASS_IMPL("HashTextMoodWidgetDecoratorProxy_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HashTextMoodWidgetDecoratorProxy_BP_C")
 	}
 	static class UHashTextMoodWidgetDecoratorProxy_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHashTextMoodWidgetDecoratorProxy_BP_C>();
 	}
 };
-static_assert(alignof(UHashTextMoodWidgetDecoratorProxy_BP_C) == 0x000008, "Wrong alignment on UHashTextMoodWidgetDecoratorProxy_BP_C");
-static_assert(sizeof(UHashTextMoodWidgetDecoratorProxy_BP_C) == 0x000088, "Wrong size on UHashTextMoodWidgetDecoratorProxy_BP_C");
+DUMPER7_ASSERTS_UHashTextMoodWidgetDecoratorProxy_BP_C;
 
 }
 

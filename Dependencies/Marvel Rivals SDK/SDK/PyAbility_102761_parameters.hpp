@@ -24,10 +24,7 @@ public:
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<struct FHitResult>                     ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyEffectiveComponent_10276101_K2_OnPreApplyContainer) == 0x000008, "Wrong alignment on PyEffectiveComponent_10276101_K2_OnPreApplyContainer");
-static_assert(sizeof(PyEffectiveComponent_10276101_K2_OnPreApplyContainer) == 0x000020, "Wrong size on PyEffectiveComponent_10276101_K2_OnPreApplyContainer");
-static_assert(offsetof(PyEffectiveComponent_10276101_K2_OnPreApplyContainer, HitResults) == 0x000000, "Member 'PyEffectiveComponent_10276101_K2_OnPreApplyContainer::HitResults' has a wrong offset!");
-static_assert(offsetof(PyEffectiveComponent_10276101_K2_OnPreApplyContainer, ReturnValue) == 0x000010, "Member 'PyEffectiveComponent_10276101_K2_OnPreApplyContainer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectiveComponent_10276101_K2_OnPreApplyContainer;
 
 }
 

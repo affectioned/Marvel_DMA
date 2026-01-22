@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_LeagueRoom_ID.WBP_LeagueRoom_ID_C
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UWBP_LeagueRoom_ID_C final : public UPyWidgetNavigationBarRoomID
 {
 public:
-	class UMarvelButton*                          Btn_Copy_RoomID;                                   // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Icon_Copy;                                         // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBox_CopyIcon;                                 // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_RoomID;                                       // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Copy_RoomID;                                   // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Icon_Copy;                                         // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox_CopyIcon;                                 // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_RoomID;                                       // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_LeagueRoom_ID_C">();
+		BP_STATIC_CLASS_IMPL("WBP_LeagueRoom_ID_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_LeagueRoom_ID_C")
 	}
 	static class UWBP_LeagueRoom_ID_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_LeagueRoom_ID_C>();
 	}
 };
-static_assert(alignof(UWBP_LeagueRoom_ID_C) == 0x000008, "Wrong alignment on UWBP_LeagueRoom_ID_C");
-static_assert(sizeof(UWBP_LeagueRoom_ID_C) == 0x0005E0, "Wrong size on UWBP_LeagueRoom_ID_C");
-static_assert(offsetof(UWBP_LeagueRoom_ID_C, Btn_Copy_RoomID) == 0x0005C0, "Member 'UWBP_LeagueRoom_ID_C::Btn_Copy_RoomID' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueRoom_ID_C, Icon_Copy) == 0x0005C8, "Member 'UWBP_LeagueRoom_ID_C::Icon_Copy' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueRoom_ID_C, ScaleBox_CopyIcon) == 0x0005D0, "Member 'UWBP_LeagueRoom_ID_C::ScaleBox_CopyIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueRoom_ID_C, Text_RoomID) == 0x0005D8, "Member 'UWBP_LeagueRoom_ID_C::Text_RoomID' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_LeagueRoom_ID_C;
 
 }
 

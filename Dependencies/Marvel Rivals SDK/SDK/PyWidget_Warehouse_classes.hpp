@@ -18,42 +18,41 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Warehouse.PyWidget_WarehouseItem_ItemData
-// 0x0020 (0x0068 - 0x0048)
+// 0x0020 (0x0090 - 0x0070)
 class UPyWidget_WarehouseItem_ItemData final : public UPyWidget_CommonItem_ItemData
 {
 public:
-	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ItemIndex;                                         // 0x0048(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ItemUID;                                           // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AquireTime;                                        // 0x0060(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ItemIndex;                                         // 0x0070(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ItemUID;                                           // 0x0078(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AquireTime;                                        // 0x0088(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_WarehouseItem_ItemData">();
+		STATIC_CLASS_IMPL("PyWidget_WarehouseItem_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_WarehouseItem_ItemData")
 	}
 	static class UPyWidget_WarehouseItem_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_WarehouseItem_ItemData>();
 	}
 };
-static_assert(alignof(UPyWidget_WarehouseItem_ItemData) == 0x000008, "Wrong alignment on UPyWidget_WarehouseItem_ItemData");
-static_assert(sizeof(UPyWidget_WarehouseItem_ItemData) == 0x000068, "Wrong size on UPyWidget_WarehouseItem_ItemData");
-static_assert(offsetof(UPyWidget_WarehouseItem_ItemData, ItemIndex) == 0x000048, "Member 'UPyWidget_WarehouseItem_ItemData::ItemIndex' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WarehouseItem_ItemData, ItemUID) == 0x000050, "Member 'UPyWidget_WarehouseItem_ItemData::ItemUID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WarehouseItem_ItemData, AquireTime) == 0x000060, "Member 'UPyWidget_WarehouseItem_ItemData::AquireTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_WarehouseItem_ItemData;
 
 // PythonClass PyWidget_Warehouse.PyWidget_WarehousePanelV3
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UPyWidget_WarehousePanelV3 final : public UPyWidget_MallChildPanel
 {
 public:
-	bool                                          Visible;                                           // 0x05F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5F9[0x3];                                      // 0x05F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         WareHouseMaxStack;                                 // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UPyWidget_WarehouseItem_ItemData*> ActualItemList;                                  // 0x0600(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<class UPyWidget_WarehouseItem_ItemData*> ViewItemList;                                    // 0x0610(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	bool                                          Visible;                                           // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_601[0x3];                                      // 0x0601(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         WareHouseMaxStack;                                 // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UPyWidget_WarehouseItem_ItemData*> ActualItemList;                                  // 0x0608(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<class UPyWidget_WarehouseItem_ItemData*> ViewItemList;                                    // 0x0618(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -64,19 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_WarehousePanelV3">();
+		STATIC_CLASS_IMPL("PyWidget_WarehousePanelV3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_WarehousePanelV3")
 	}
 	static class UPyWidget_WarehousePanelV3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_WarehousePanelV3>();
 	}
 };
-static_assert(alignof(UPyWidget_WarehousePanelV3) == 0x000008, "Wrong alignment on UPyWidget_WarehousePanelV3");
-static_assert(sizeof(UPyWidget_WarehousePanelV3) == 0x000620, "Wrong size on UPyWidget_WarehousePanelV3");
-static_assert(offsetof(UPyWidget_WarehousePanelV3, Visible) == 0x0005F8, "Member 'UPyWidget_WarehousePanelV3::Visible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WarehousePanelV3, WareHouseMaxStack) == 0x0005FC, "Member 'UPyWidget_WarehousePanelV3::WareHouseMaxStack' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WarehousePanelV3, ActualItemList) == 0x000600, "Member 'UPyWidget_WarehousePanelV3::ActualItemList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WarehousePanelV3, ViewItemList) == 0x000610, "Member 'UPyWidget_WarehousePanelV3::ViewItemList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_WarehousePanelV3;
 
 }
 

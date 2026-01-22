@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySequenceTrigger">();
+		STATIC_CLASS_IMPL("PySequenceTrigger")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySequenceTrigger")
 	}
 	static class APySequenceTrigger* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySequenceTrigger>();
 	}
 };
-static_assert(alignof(APySequenceTrigger) == 0x000010, "Wrong alignment on APySequenceTrigger");
-static_assert(sizeof(APySequenceTrigger) == 0x0006F0, "Wrong size on APySequenceTrigger");
-static_assert(offsetof(APySequenceTrigger, SpaceVehicle) == 0x0006E0, "Member 'APySequenceTrigger::SpaceVehicle' has a wrong offset!");
-static_assert(offsetof(APySequenceTrigger, LSActor) == 0x0006E8, "Member 'APySequenceTrigger::LSActor' has a wrong offset!");
+DUMPER7_ASSERTS_APySequenceTrigger;
 
 }
 

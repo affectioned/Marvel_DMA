@@ -18,34 +18,38 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CollaborativeAbility_InfoTips_V2.WBP_CollaborativeAbility_InfoTips_V2_C
-// 0x00B0 (0x0690 - 0x05E0)
+// 0x00D0 (0x06C0 - 0x05F0)
 class UWBP_CollaborativeAbility_InfoTips_V2_C final : public UPyWidget_SynergyAbilityTips_Popups
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Anim_FadeIn_Lose_Sub;                              // 0x05E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_FadeIn_Lose_Main;                             // 0x05F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_MainHero_Frame;                                // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_TipsBg;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_TipsBg_Activate;                               // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_TipsBg_Lose;                                   // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx1;                                           // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx1_1;                                         // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx1_2;                                         // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx2;                                           // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx2_1;                                         // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx_Glow;                                       // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CollaborativeAbility_TipsHeroHead_Sub_C* WBP_SubHero1;                                // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CollaborativeAbility_TipsHeroHead_Sub_C* WBP_SubHero2;                                // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CollaborativeAbility_TipsHeroHead_Sub_C* WBP_SubHero3;                                // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          Is_AbilityActivate;                                // 0x0660(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_661[0x7];                                      // 0x0661(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Bg_Fail;                                           // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             BG_Activate;                                       // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          Is_MainHeroSelect;                                 // 0x0678(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_679[0x7];                                      // 0x0679(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             NoSelect;                                          // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Selected;                                          // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Anim_FadeIn_Lose_Sub;                              // 0x05F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_FadeIn_Lose_Main;                             // 0x0600(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_MainHero_Frame;                                // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       Img_MainHero_Head;                                 // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_TipsBg;                                        // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_TipsBg_Activate;                               // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_TipsBg_Lose;                                   // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx1;                                           // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx1_1;                                         // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx1_2;                                         // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx2;                                           // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx2_1;                                         // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx_Glow;                                       // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CollaborativeAbility_TipsHeroHead_Main_C* WBP_MainHero1;                              // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CollaborativeAbility_TipsHeroHead_Main_C* WBP_MainHero2;                              // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CollaborativeAbility_TipsHeroHead_Main_C* WBP_MainHero3;                              // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CollaborativeAbility_TipsHeroHead_Sub_C* WBP_SubHero1;                                // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CollaborativeAbility_TipsHeroHead_Sub_C* WBP_SubHero2;                                // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CollaborativeAbility_TipsHeroHead_Sub_C* WBP_SubHero3;                                // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          Is_AbilityActivate;                                // 0x0690(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_691[0x7];                                      // 0x0691(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Bg_Fail;                                           // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             BG_Activate;                                       // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          Is_MainHeroSelect;                                 // 0x06A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_6A9[0x7];                                      // 0x06A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             NoSelect;                                          // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Selected;                                          // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -54,37 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CollaborativeAbility_InfoTips_V2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CollaborativeAbility_InfoTips_V2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CollaborativeAbility_InfoTips_V2_C")
 	}
 	static class UWBP_CollaborativeAbility_InfoTips_V2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CollaborativeAbility_InfoTips_V2_C>();
 	}
 };
-static_assert(alignof(UWBP_CollaborativeAbility_InfoTips_V2_C) == 0x000008, "Wrong alignment on UWBP_CollaborativeAbility_InfoTips_V2_C");
-static_assert(sizeof(UWBP_CollaborativeAbility_InfoTips_V2_C) == 0x000690, "Wrong size on UWBP_CollaborativeAbility_InfoTips_V2_C");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, UberGraphFrame) == 0x0005E0, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Anim_FadeIn_Lose_Sub) == 0x0005E8, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Anim_FadeIn_Lose_Sub' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Anim_FadeIn_Lose_Main) == 0x0005F0, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Anim_FadeIn_Lose_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Img_MainHero_Frame) == 0x0005F8, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Img_MainHero_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Img_TipsBg) == 0x000600, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Img_TipsBg' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Img_TipsBg_Activate) == 0x000608, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Img_TipsBg_Activate' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Img_TipsBg_Lose) == 0x000610, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Img_TipsBg_Lose' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Img_Vx1) == 0x000618, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Img_Vx1' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Img_Vx1_1) == 0x000620, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Img_Vx1_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Img_Vx1_2) == 0x000628, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Img_Vx1_2' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Img_Vx2) == 0x000630, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Img_Vx2' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Img_Vx2_1) == 0x000638, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Img_Vx2_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Img_Vx_Glow) == 0x000640, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Img_Vx_Glow' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, WBP_SubHero1) == 0x000648, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::WBP_SubHero1' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, WBP_SubHero2) == 0x000650, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::WBP_SubHero2' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, WBP_SubHero3) == 0x000658, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::WBP_SubHero3' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Is_AbilityActivate) == 0x000660, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Is_AbilityActivate' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Bg_Fail) == 0x000668, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Bg_Fail' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, BG_Activate) == 0x000670, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::BG_Activate' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Is_MainHeroSelect) == 0x000678, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Is_MainHeroSelect' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, NoSelect) == 0x000680, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::NoSelect' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_InfoTips_V2_C, Selected) == 0x000688, "Member 'UWBP_CollaborativeAbility_InfoTips_V2_C::Selected' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CollaborativeAbility_InfoTips_V2_C;
 
 }
 

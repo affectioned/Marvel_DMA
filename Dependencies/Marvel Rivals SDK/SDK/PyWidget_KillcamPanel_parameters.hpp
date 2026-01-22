@@ -23,9 +23,7 @@ struct PyWidget_KillcamPanel_MarvelSetVisible final
 public:
 	bool                                          bVisible_0;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_KillcamPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_KillcamPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_KillcamPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_KillcamPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_KillcamPanel_MarvelSetVisible, bVisible_0) == 0x000000, "Member 'PyWidget_KillcamPanel_MarvelSetVisible::bVisible_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_KillcamPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_KillcamPanel.PyWidget_KillcamPanel.OnReceiveInputAction
 // 0x0010 (0x0010 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	class FName                                   ActionName;                                        // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInputEvent                                   EventType;                                         // 0x000C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_KillcamPanel_OnReceiveInputAction) == 0x000004, "Wrong alignment on PyWidget_KillcamPanel_OnReceiveInputAction");
-static_assert(sizeof(PyWidget_KillcamPanel_OnReceiveInputAction) == 0x000010, "Wrong size on PyWidget_KillcamPanel_OnReceiveInputAction");
-static_assert(offsetof(PyWidget_KillcamPanel_OnReceiveInputAction, ActionName) == 0x000000, "Member 'PyWidget_KillcamPanel_OnReceiveInputAction::ActionName' has a wrong offset!");
-static_assert(offsetof(PyWidget_KillcamPanel_OnReceiveInputAction, EventType) == 0x00000C, "Member 'PyWidget_KillcamPanel_OnReceiveInputAction::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_KillcamPanel_OnReceiveInputAction;
 
 // PythonFunction PyWidget_KillcamPanel.PyWidget_KillcamPanel.OnLocalPlayerRespawnStart
 // 0x0004 (0x0004 - 0x0000)
@@ -47,9 +42,7 @@ struct PyWidget_KillcamPanel_OnLocalPlayerRespawnStart final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_KillcamPanel_OnLocalPlayerRespawnStart) == 0x000004, "Wrong alignment on PyWidget_KillcamPanel_OnLocalPlayerRespawnStart");
-static_assert(sizeof(PyWidget_KillcamPanel_OnLocalPlayerRespawnStart) == 0x000004, "Wrong size on PyWidget_KillcamPanel_OnLocalPlayerRespawnStart");
-static_assert(offsetof(PyWidget_KillcamPanel_OnLocalPlayerRespawnStart, Time) == 0x000000, "Member 'PyWidget_KillcamPanel_OnLocalPlayerRespawnStart::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_KillcamPanel_OnLocalPlayerRespawnStart;
 
 // PythonFunction PyWidget_KillcamPanel.PyWidget_KillcamPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -58,9 +51,7 @@ struct PyWidget_KillcamPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_KillcamPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_KillcamPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_KillcamPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_KillcamPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_KillcamPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_KillcamPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_KillcamPanel_OnAnimationFinished;
 
 }
 

@@ -42,19 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelAudioAdminBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelAudioAdminBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAudioAdminBP_C")
 	}
 	static class UMarvelAudioAdminBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAudioAdminBP_C>();
 	}
 };
-static_assert(alignof(UMarvelAudioAdminBP_C) == 0x000008, "Wrong alignment on UMarvelAudioAdminBP_C");
-static_assert(sizeof(UMarvelAudioAdminBP_C) == 0x000208, "Wrong size on UMarvelAudioAdminBP_C");
-static_assert(offsetof(UMarvelAudioAdminBP_C, UberGraphFrame) == 0x000158, "Member 'UMarvelAudioAdminBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMarvelAudioAdminBP_C, AudioEmitterWCs) == 0x000160, "Member 'UMarvelAudioAdminBP_C::AudioEmitterWCs' has a wrong offset!");
-static_assert(offsetof(UMarvelAudioAdminBP_C, AnimEmitterBP) == 0x0001B0, "Member 'UMarvelAudioAdminBP_C::AnimEmitterBP' has a wrong offset!");
-static_assert(offsetof(UMarvelAudioAdminBP_C, AnimEmitterWCs) == 0x0001B8, "Member 'UMarvelAudioAdminBP_C::AnimEmitterWCs' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelAudioAdminBP_C;
 
 }
 

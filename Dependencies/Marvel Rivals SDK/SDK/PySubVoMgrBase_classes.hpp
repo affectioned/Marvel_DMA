@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySubVoMgrBase">();
+		STATIC_CLASS_IMPL("PySubVoMgrBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySubVoMgrBase")
 	}
 	static class UPySubVoMgrBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySubVoMgrBase>();
 	}
 };
-static_assert(alignof(UPySubVoMgrBase) == 0x000008, "Wrong alignment on UPySubVoMgrBase");
-static_assert(sizeof(UPySubVoMgrBase) == 0x000108, "Wrong size on UPySubVoMgrBase");
+DUMPER7_ASSERTS_UPySubVoMgrBase;
 
 }
 

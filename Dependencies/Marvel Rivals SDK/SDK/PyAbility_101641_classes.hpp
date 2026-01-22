@@ -29,25 +29,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101641">();
+		STATIC_CLASS_IMPL("PyConfig_101641")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101641")
 	}
 	static class UPyConfig_101641* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101641>();
 	}
 };
-static_assert(alignof(UPyConfig_101641) == 0x000008, "Wrong alignment on UPyConfig_101641");
-static_assert(sizeof(UPyConfig_101641) == 0x0000B0, "Wrong size on UPyConfig_101641");
-static_assert(offsetof(UPyConfig_101641, StealthBuffID) == 0x000098, "Member 'UPyConfig_101641::StealthBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101641, PhantomBuffID) == 0x00009C, "Member 'UPyConfig_101641::PhantomBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101641, StopCameraInterpTag) == 0x0000A0, "Member 'UPyConfig_101641::StopCameraInterpTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101641;
 
 // PythonClass PyAbility_101641.PyAbility_101641
-// 0x0008 (0x29F8 - 0x29F0)
+// 0x0008 (0x2A48 - 0x2A40)
 class UPyAbility_101641 : public UMarvelGameplayAbility
 {
 public:
-	class UAbilityTask_NetworkSyncPoint*          NetSyncTask;                                       // 0x29F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAbilityTask_NetworkSyncPoint*          NetSyncTask;                                       // 0x2A40(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -62,16 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101641">();
+		STATIC_CLASS_IMPL("PyAbility_101641")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101641")
 	}
 	static class UPyAbility_101641* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101641>();
 	}
 };
-static_assert(alignof(UPyAbility_101641) == 0x000008, "Wrong alignment on UPyAbility_101641");
-static_assert(sizeof(UPyAbility_101641) == 0x0029F8, "Wrong size on UPyAbility_101641");
-static_assert(offsetof(UPyAbility_101641, NetSyncTask) == 0x0029F0, "Member 'UPyAbility_101641::NetSyncTask' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_101641;
 
 }
 

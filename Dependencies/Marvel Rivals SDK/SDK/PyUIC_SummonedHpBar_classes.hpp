@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // PythonClass PyUIC_SummonedHpBar.PyUIC_Summoned_HpBar
-// 0x0128 (0x0230 - 0x0108)
+// 0x0178 (0x0280 - 0x0108)
 class UPyUIC_Summoned_HpBar : public UActorComponent
 {
 public:
 	TSubclassOf<class UPyWidget_SummonedHpBar>    HPBarClass_V7;                                     // 0x0108(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FWidgetStyle_HealthBar_BattlePanel     HpBarStyle;                                        // 0x0110(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FMarvelGameplayTagRequirements         VisibleCharacterTagRequirements;                   // 0x0140(0x00D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	bool                                          KeepVisibleWithEmptyHealth;                        // 0x0210(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            Widget_HpBar;                                      // 0x0218(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnWidgetCreated;                                   // 0x0220(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FMarvelGameplayTagRequirements         VisibleCharacterTagRequirements;                   // 0x0140(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	bool                                          KeepVisibleWithEmptyHealth;                        // 0x0260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            Widget_HpBar;                                      // 0x0268(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnWidgetCreated;                                   // 0x0270(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_Summoned_HpBar">();
+		STATIC_CLASS_IMPL("PyUIC_Summoned_HpBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_Summoned_HpBar")
 	}
 	static class UPyUIC_Summoned_HpBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_Summoned_HpBar>();
 	}
 };
-static_assert(alignof(UPyUIC_Summoned_HpBar) == 0x000008, "Wrong alignment on UPyUIC_Summoned_HpBar");
-static_assert(sizeof(UPyUIC_Summoned_HpBar) == 0x000230, "Wrong size on UPyUIC_Summoned_HpBar");
-static_assert(offsetof(UPyUIC_Summoned_HpBar, HPBarClass_V7) == 0x000108, "Member 'UPyUIC_Summoned_HpBar::HPBarClass_V7' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Summoned_HpBar, HpBarStyle) == 0x000110, "Member 'UPyUIC_Summoned_HpBar::HpBarStyle' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Summoned_HpBar, VisibleCharacterTagRequirements) == 0x000140, "Member 'UPyUIC_Summoned_HpBar::VisibleCharacterTagRequirements' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Summoned_HpBar, KeepVisibleWithEmptyHealth) == 0x000210, "Member 'UPyUIC_Summoned_HpBar::KeepVisibleWithEmptyHealth' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Summoned_HpBar, Widget_HpBar) == 0x000218, "Member 'UPyUIC_Summoned_HpBar::Widget_HpBar' has a wrong offset!");
-static_assert(offsetof(UPyUIC_Summoned_HpBar, OnWidgetCreated) == 0x000220, "Member 'UPyUIC_Summoned_HpBar::OnWidgetCreated' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIC_Summoned_HpBar;
 
 }
 

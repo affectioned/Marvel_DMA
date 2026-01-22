@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTokyoH01Aircraft">();
+		STATIC_CLASS_IMPL("PyTokyoH01Aircraft")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTokyoH01Aircraft")
 	}
 	static class APyTokyoH01Aircraft* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyTokyoH01Aircraft>();
 	}
 };
-static_assert(alignof(APyTokyoH01Aircraft) == 0x000010, "Wrong alignment on APyTokyoH01Aircraft");
-static_assert(sizeof(APyTokyoH01Aircraft) == 0x000730, "Wrong size on APyTokyoH01Aircraft");
-static_assert(offsetof(APyTokyoH01Aircraft, ReplicateState) == 0x000710, "Member 'APyTokyoH01Aircraft::ReplicateState' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01Aircraft, ExplodeEffect) == 0x000718, "Member 'APyTokyoH01Aircraft::ExplodeEffect' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01Aircraft, TriggerProgress) == 0x000720, "Member 'APyTokyoH01Aircraft::TriggerProgress' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01Aircraft, ExplodeAudio) == 0x000728, "Member 'APyTokyoH01Aircraft::ExplodeAudio' has a wrong offset!");
+DUMPER7_ASSERTS_APyTokyoH01Aircraft;
 
 // PythonClass PyTokyoH01Aircraft.PyTokyoH01AircraftAnimInstance
 // 0x0010 (0x0460 - 0x0450)
@@ -63,18 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTokyoH01AircraftAnimInstance">();
+		STATIC_CLASS_IMPL("PyTokyoH01AircraftAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTokyoH01AircraftAnimInstance")
 	}
 	static class UPyTokyoH01AircraftAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTokyoH01AircraftAnimInstance>();
 	}
 };
-static_assert(alignof(UPyTokyoH01AircraftAnimInstance) == 0x000010, "Wrong alignment on UPyTokyoH01AircraftAnimInstance");
-static_assert(sizeof(UPyTokyoH01AircraftAnimInstance) == 0x000460, "Wrong size on UPyTokyoH01AircraftAnimInstance");
-static_assert(offsetof(UPyTokyoH01AircraftAnimInstance, bFly) == 0x000450, "Member 'UPyTokyoH01AircraftAnimInstance::bFly' has a wrong offset!");
-static_assert(offsetof(UPyTokyoH01AircraftAnimInstance, bIdle) == 0x000451, "Member 'UPyTokyoH01AircraftAnimInstance::bIdle' has a wrong offset!");
-static_assert(offsetof(UPyTokyoH01AircraftAnimInstance, bDead) == 0x000452, "Member 'UPyTokyoH01AircraftAnimInstance::bDead' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTokyoH01AircraftAnimInstance;
 
 }
 

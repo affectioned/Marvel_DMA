@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyCooldownByTime">();
+		STATIC_CLASS_IMPL("BTD_PyCooldownByTime")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyCooldownByTime")
 	}
 	static class UBTD_PyCooldownByTime* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyCooldownByTime>();
 	}
 };
-static_assert(alignof(UBTD_PyCooldownByTime) == 0x000008, "Wrong alignment on UBTD_PyCooldownByTime");
-static_assert(sizeof(UBTD_PyCooldownByTime) == 0x000118, "Wrong size on UBTD_PyCooldownByTime");
-static_assert(offsetof(UBTD_PyCooldownByTime, InActiveDuration) == 0x0000B8, "Member 'UBTD_PyCooldownByTime::InActiveDuration' has a wrong offset!");
-static_assert(offsetof(UBTD_PyCooldownByTime, InCooldownDuration) == 0x0000E8, "Member 'UBTD_PyCooldownByTime::InCooldownDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyCooldownByTime;
 
 }
 

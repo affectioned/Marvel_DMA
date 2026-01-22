@@ -23,9 +23,7 @@ struct PyReticleManager_SetCommonReticle final
 public:
 	class UUserWidget*                            InReticle;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyReticleManager_SetCommonReticle) == 0x000008, "Wrong alignment on PyReticleManager_SetCommonReticle");
-static_assert(sizeof(PyReticleManager_SetCommonReticle) == 0x000008, "Wrong size on PyReticleManager_SetCommonReticle");
-static_assert(offsetof(PyReticleManager_SetCommonReticle, InReticle) == 0x000000, "Member 'PyReticleManager_SetCommonReticle::InReticle' has a wrong offset!");
+DUMPER7_ASSERTS_PyReticleManager_SetCommonReticle;
 
 // PythonFunction PyWidget_CommonReticle.PyReticleManager.SetSpecialReticle
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyReticleManager_SetSpecialReticle final
 public:
 	class UUserWidget*                            InReticle;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyReticleManager_SetSpecialReticle) == 0x000008, "Wrong alignment on PyReticleManager_SetSpecialReticle");
-static_assert(sizeof(PyReticleManager_SetSpecialReticle) == 0x000008, "Wrong size on PyReticleManager_SetSpecialReticle");
-static_assert(offsetof(PyReticleManager_SetSpecialReticle, InReticle) == 0x000000, "Member 'PyReticleManager_SetSpecialReticle::InReticle' has a wrong offset!");
+DUMPER7_ASSERTS_PyReticleManager_SetSpecialReticle;
 
 // PythonFunction PyWidget_CommonReticle.PyReticleManager.UpdateViewCharacterNextFrame
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +41,7 @@ struct PyReticleManager_UpdateViewCharacterNextFrame final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyReticleManager_UpdateViewCharacterNextFrame) == 0x000008, "Wrong alignment on PyReticleManager_UpdateViewCharacterNextFrame");
-static_assert(sizeof(PyReticleManager_UpdateViewCharacterNextFrame) == 0x000008, "Wrong size on PyReticleManager_UpdateViewCharacterNextFrame");
-static_assert(offsetof(PyReticleManager_UpdateViewCharacterNextFrame, InActor) == 0x000000, "Member 'PyReticleManager_UpdateViewCharacterNextFrame::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyReticleManager_UpdateViewCharacterNextFrame;
 
 // PythonFunction PyWidget_CommonReticle.PyReticleManager.OverwriteReticleStyleByUserSetting
 // 0x01C8 (0x01C8 - 0x0000)
@@ -57,10 +51,7 @@ public:
 	struct FReticleStyle                          InReticleStyle;                                    // 0x0000(0x00E4)(Parm, NoDestructor)
 	struct FReticleStyle                          ReturnValue;                                       // 0x00E4(0x00E4)(Parm, OutParm, ReturnParm, NoDestructor)
 };
-static_assert(alignof(PyReticleManager_OverwriteReticleStyleByUserSetting) == 0x000004, "Wrong alignment on PyReticleManager_OverwriteReticleStyleByUserSetting");
-static_assert(sizeof(PyReticleManager_OverwriteReticleStyleByUserSetting) == 0x0001C8, "Wrong size on PyReticleManager_OverwriteReticleStyleByUserSetting");
-static_assert(offsetof(PyReticleManager_OverwriteReticleStyleByUserSetting, InReticleStyle) == 0x000000, "Member 'PyReticleManager_OverwriteReticleStyleByUserSetting::InReticleStyle' has a wrong offset!");
-static_assert(offsetof(PyReticleManager_OverwriteReticleStyleByUserSetting, ReturnValue) == 0x0000E4, "Member 'PyReticleManager_OverwriteReticleStyleByUserSetting::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyReticleManager_OverwriteReticleStyleByUserSetting;
 
 // PythonFunction PyWidget_CommonReticle.PyReticleManager.OnShapeChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -69,9 +60,7 @@ struct PyReticleManager_OnShapeChanged final
 public:
 	int32                                         ShapeID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyReticleManager_OnShapeChanged) == 0x000004, "Wrong alignment on PyReticleManager_OnShapeChanged");
-static_assert(sizeof(PyReticleManager_OnShapeChanged) == 0x000004, "Wrong size on PyReticleManager_OnShapeChanged");
-static_assert(offsetof(PyReticleManager_OnShapeChanged, ShapeID) == 0x000000, "Member 'PyReticleManager_OnShapeChanged::ShapeID' has a wrong offset!");
+DUMPER7_ASSERTS_PyReticleManager_OnShapeChanged;
 
 // PythonFunction PyWidget_CommonReticle.PyWidget_CommonReticle.SetSpread
 // 0x000C (0x000C - 0x0000)
@@ -82,11 +71,7 @@ public:
 	float                                         InSpread;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         InRadius;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonReticle_SetSpread) == 0x000004, "Wrong alignment on PyWidget_CommonReticle_SetSpread");
-static_assert(sizeof(PyWidget_CommonReticle_SetSpread) == 0x00000C, "Wrong size on PyWidget_CommonReticle_SetSpread");
-static_assert(offsetof(PyWidget_CommonReticle_SetSpread, InDistance) == 0x000000, "Member 'PyWidget_CommonReticle_SetSpread::InDistance' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonReticle_SetSpread, InSpread) == 0x000004, "Member 'PyWidget_CommonReticle_SetSpread::InSpread' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonReticle_SetSpread, InRadius) == 0x000008, "Member 'PyWidget_CommonReticle_SetSpread::InRadius' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonReticle_SetSpread;
 
 // PythonFunction PyWidget_CommonReticle.PyWidget_CommonReticle.SetAccuType
 // 0x0001 (0x0001 - 0x0000)
@@ -95,9 +80,7 @@ struct PyWidget_CommonReticle_SetAccuType final
 public:
 	ECommonReticleType                            InType;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonReticle_SetAccuType) == 0x000001, "Wrong alignment on PyWidget_CommonReticle_SetAccuType");
-static_assert(sizeof(PyWidget_CommonReticle_SetAccuType) == 0x000001, "Wrong size on PyWidget_CommonReticle_SetAccuType");
-static_assert(offsetof(PyWidget_CommonReticle_SetAccuType, InType) == 0x000000, "Member 'PyWidget_CommonReticle_SetAccuType::InType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonReticle_SetAccuType;
 
 // PythonFunction PyWidget_CommonReticle.PyWidget_CommonReticle.SetAccumulateType
 // 0x0001 (0x0001 - 0x0000)
@@ -106,9 +89,7 @@ struct PyWidget_CommonReticle_SetAccumulateType final
 public:
 	ECommonReticleType                            InType;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonReticle_SetAccumulateType) == 0x000001, "Wrong alignment on PyWidget_CommonReticle_SetAccumulateType");
-static_assert(sizeof(PyWidget_CommonReticle_SetAccumulateType) == 0x000001, "Wrong size on PyWidget_CommonReticle_SetAccumulateType");
-static_assert(offsetof(PyWidget_CommonReticle_SetAccumulateType, InType) == 0x000000, "Member 'PyWidget_CommonReticle_SetAccumulateType::InType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonReticle_SetAccumulateType;
 
 // PythonFunction PyWidget_CommonReticle.PyWidget_CommonReticle.SetAccumulatingPercent
 // 0x0010 (0x0010 - 0x0000)
@@ -121,12 +102,7 @@ public:
 	float                                         Speed;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsShrinkAccumulate;                                // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonReticle_SetAccumulatingPercent) == 0x000004, "Wrong alignment on PyWidget_CommonReticle_SetAccumulatingPercent");
-static_assert(sizeof(PyWidget_CommonReticle_SetAccumulatingPercent) == 0x000010, "Wrong size on PyWidget_CommonReticle_SetAccumulatingPercent");
-static_assert(offsetof(PyWidget_CommonReticle_SetAccumulatingPercent, IsAccumulating) == 0x000000, "Member 'PyWidget_CommonReticle_SetAccumulatingPercent::IsAccumulating' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonReticle_SetAccumulatingPercent, InCurPercent) == 0x000004, "Member 'PyWidget_CommonReticle_SetAccumulatingPercent::InCurPercent' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonReticle_SetAccumulatingPercent, Speed) == 0x000008, "Member 'PyWidget_CommonReticle_SetAccumulatingPercent::Speed' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonReticle_SetAccumulatingPercent, IsShrinkAccumulate) == 0x00000C, "Member 'PyWidget_CommonReticle_SetAccumulatingPercent::IsShrinkAccumulate' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonReticle_SetAccumulatingPercent;
 
 // PythonFunction PyWidget_CommonReticle.PyWidget_CommonReticle.OnHitTarget
 // 0x0028 (0x0028 - 0x0000)
@@ -137,11 +113,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonReticle_OnHitTarget) == 0x000008, "Wrong alignment on PyWidget_CommonReticle_OnHitTarget");
-static_assert(sizeof(PyWidget_CommonReticle_OnHitTarget) == 0x000028, "Wrong size on PyWidget_CommonReticle_OnHitTarget");
-static_assert(offsetof(PyWidget_CommonReticle_OnHitTarget, InSourceAvatar) == 0x000000, "Member 'PyWidget_CommonReticle_OnHitTarget::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonReticle_OnHitTarget, InTargetAvatar) == 0x000008, "Member 'PyWidget_CommonReticle_OnHitTarget::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonReticle_OnHitTarget, ParameterHandle) == 0x000010, "Member 'PyWidget_CommonReticle_OnHitTarget::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonReticle_OnHitTarget;
 
 }
 

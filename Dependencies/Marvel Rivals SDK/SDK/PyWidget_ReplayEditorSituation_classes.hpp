@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ReplayEditorSituation.PyWidget_ReplayEditorSituation
-// 0x0070 (0x04C8 - 0x0458)
+// 0x0070 (0x04A8 - 0x0438)
 class UPyWidget_ReplayEditorSituation final : public UMarvelSimpleUserWidget
 {
 public:
-	struct FLinearColor                           IconColorSelfAlly;                                 // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           IconColorAlly;                                     // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            FontColorSelfAlly;                                 // 0x0478(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            FontColorSelfEnemy;                                // 0x048C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            FontColorAlly;                                     // 0x04A0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            FontColorEnemy;                                    // 0x04B4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           IconColorSelfAlly;                                 // 0x0438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           IconColorAlly;                                     // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            FontColorSelfAlly;                                 // 0x0458(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            FontColorSelfEnemy;                                // 0x046C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            FontColorAlly;                                     // 0x0480(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            FontColorEnemy;                                    // 0x0494(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -36,21 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReplayEditorSituation">();
+		STATIC_CLASS_IMPL("PyWidget_ReplayEditorSituation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReplayEditorSituation")
 	}
 	static class UPyWidget_ReplayEditorSituation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReplayEditorSituation>();
 	}
 };
-static_assert(alignof(UPyWidget_ReplayEditorSituation) == 0x000008, "Wrong alignment on UPyWidget_ReplayEditorSituation");
-static_assert(sizeof(UPyWidget_ReplayEditorSituation) == 0x0004C8, "Wrong size on UPyWidget_ReplayEditorSituation");
-static_assert(offsetof(UPyWidget_ReplayEditorSituation, IconColorSelfAlly) == 0x000458, "Member 'UPyWidget_ReplayEditorSituation::IconColorSelfAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplayEditorSituation, IconColorAlly) == 0x000468, "Member 'UPyWidget_ReplayEditorSituation::IconColorAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplayEditorSituation, FontColorSelfAlly) == 0x000478, "Member 'UPyWidget_ReplayEditorSituation::FontColorSelfAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplayEditorSituation, FontColorSelfEnemy) == 0x00048C, "Member 'UPyWidget_ReplayEditorSituation::FontColorSelfEnemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplayEditorSituation, FontColorAlly) == 0x0004A0, "Member 'UPyWidget_ReplayEditorSituation::FontColorAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplayEditorSituation, FontColorEnemy) == 0x0004B4, "Member 'UPyWidget_ReplayEditorSituation::FontColorEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ReplayEditorSituation;
 
 }
 

@@ -10,23 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "PyAbility_201_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "InputCore_structs.hpp"
-#include "GameplayTags_structs.hpp"
+#include "PyAbility_201_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_201.PyAbility_201
-// 0x0020 (0x2A68 - 0x2A48)
+// 0x0020 (0x2AB8 - 0x2A98)
 class UPyAbility_201 : public UAbility_201
 {
 public:
-	TMulticastInlineDelegate<void(ESignalInputState state)> OnStateChange;                           // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 InComm)>  OnClickShortcutDelegate;                           // 0x2A58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(PyAbility_201::ESignalInputState state)> OnStateChange;            // 0x2A98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 InComm)>  OnClickShortcutDelegate;                           // 0x2AA8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -42,71 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_201">();
+		STATIC_CLASS_IMPL("PyAbility_201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_201")
 	}
 	static class UPyAbility_201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_201>();
 	}
 };
-static_assert(alignof(UPyAbility_201) == 0x000008, "Wrong alignment on UPyAbility_201");
-static_assert(sizeof(UPyAbility_201) == 0x002A68, "Wrong size on UPyAbility_201");
-static_assert(offsetof(UPyAbility_201, OnStateChange) == 0x002A48, "Member 'UPyAbility_201::OnStateChange' has a wrong offset!");
-static_assert(offsetof(UPyAbility_201, OnClickShortcutDelegate) == 0x002A58, "Member 'UPyAbility_201::OnClickShortcutDelegate' has a wrong offset!");
-
-// PythonClass PyAbility_201.PyUIController_201
-// 0x0108 (0x1018 - 0x0F10)
-class UPyUIController_201 : public UUIC_Ability
-{
-public:
-	int32                                         MinResponseDistanceSquare;                         // 0x0F10(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F14[0x4];                                      // 0x0F14(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimaryDataAsset*                      SignalDataAsset;                                   // 0x0F18(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   GamepadRightThumbstick;                            // 0x0F20(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ChaosSignalTag;                                    // 0x0F40(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           SceneSignalTag;                                    // 0x0F4C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  PayloadTags;                                       // 0x0F58(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           WinterFestivalCommonTag;                           // 0x0FC0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           WinterFestivalAttachTag;                           // 0x0FCC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           WinterFestivalDefendTag;                           // 0x0FD8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           HurtTeammateTag;                                   // 0x0FE4(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           EnemyCharacterTag;                                 // 0x0FF0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           EnemySummonedTag;                                  // 0x0FFC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           TeammateSummonedTag;                               // 0x1008(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
-	void Destruct();
-	void OnTagUpdate(const struct FGameplayTag& Tag, bool Exist);
-	void HandleAbilityBlock(bool IsBlocked);
-	void ListenAbilityActivateFailed(bool IsListen);
-	void OnAbilityFailed(class UMarvelGameplayAbility* ability, const struct FGameplayTagContainer& reason);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_201">();
-	}
-	static class UPyUIController_201* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_201>();
-	}
-};
-static_assert(alignof(UPyUIController_201) == 0x000008, "Wrong alignment on UPyUIController_201");
-static_assert(sizeof(UPyUIController_201) == 0x001018, "Wrong size on UPyUIController_201");
-static_assert(offsetof(UPyUIController_201, MinResponseDistanceSquare) == 0x000F10, "Member 'UPyUIController_201::MinResponseDistanceSquare' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, SignalDataAsset) == 0x000F18, "Member 'UPyUIController_201::SignalDataAsset' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, GamepadRightThumbstick) == 0x000F20, "Member 'UPyUIController_201::GamepadRightThumbstick' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, ChaosSignalTag) == 0x000F40, "Member 'UPyUIController_201::ChaosSignalTag' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, SceneSignalTag) == 0x000F4C, "Member 'UPyUIController_201::SceneSignalTag' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, PayloadTags) == 0x000F58, "Member 'UPyUIController_201::PayloadTags' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, WinterFestivalCommonTag) == 0x000FC0, "Member 'UPyUIController_201::WinterFestivalCommonTag' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, WinterFestivalAttachTag) == 0x000FCC, "Member 'UPyUIController_201::WinterFestivalAttachTag' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, WinterFestivalDefendTag) == 0x000FD8, "Member 'UPyUIController_201::WinterFestivalDefendTag' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, HurtTeammateTag) == 0x000FE4, "Member 'UPyUIController_201::HurtTeammateTag' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, EnemyCharacterTag) == 0x000FF0, "Member 'UPyUIController_201::EnemyCharacterTag' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, EnemySummonedTag) == 0x000FFC, "Member 'UPyUIController_201::EnemySummonedTag' has a wrong offset!");
-static_assert(offsetof(UPyUIController_201, TeammateSummonedTag) == 0x001008, "Member 'UPyUIController_201::TeammateSummonedTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_201;
 
 }
 

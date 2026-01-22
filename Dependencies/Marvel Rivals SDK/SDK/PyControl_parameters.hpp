@@ -28,11 +28,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_Base_WhileActive) == 0x000008, "Wrong alignment on PyCue_Level_Base_WhileActive");
-static_assert(sizeof(PyCue_Level_Base_WhileActive) == 0x0001E0, "Wrong size on PyCue_Level_Base_WhileActive");
-static_assert(offsetof(PyCue_Level_Base_WhileActive, ControlActor) == 0x000000, "Member 'PyCue_Level_Base_WhileActive::ControlActor' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_Base_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Level_Base_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_Base_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Level_Base_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_Base_WhileActive;
 
 // PythonFunction PyControl.PyCue_Level_Base.OnRemoveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -42,10 +38,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Level_Base_OnRemoveFX) == 0x000008, "Wrong alignment on PyCue_Level_Base_OnRemoveFX");
-static_assert(sizeof(PyCue_Level_Base_OnRemoveFX) == 0x0001D8, "Wrong size on PyCue_Level_Base_OnRemoveFX");
-static_assert(offsetof(PyCue_Level_Base_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCue_Level_Base_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_Base_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCue_Level_Base_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_Base_OnRemoveFX;
 
 // PythonFunction PyControl.PyCue_Level_Base.OnControlOwnerChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -55,10 +48,7 @@ public:
 	class AActor*                                 ControlPoint;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                OwnerSide;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_Base_OnControlOwnerChanged) == 0x000008, "Wrong alignment on PyCue_Level_Base_OnControlOwnerChanged");
-static_assert(sizeof(PyCue_Level_Base_OnControlOwnerChanged) == 0x000010, "Wrong size on PyCue_Level_Base_OnControlOwnerChanged");
-static_assert(offsetof(PyCue_Level_Base_OnControlOwnerChanged, ControlPoint) == 0x000000, "Member 'PyCue_Level_Base_OnControlOwnerChanged::ControlPoint' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_Base_OnControlOwnerChanged, OwnerSide) == 0x000008, "Member 'PyCue_Level_Base_OnControlOwnerChanged::OwnerSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_Base_OnControlOwnerChanged;
 
 // PythonFunction PyControl.PyCue_Level_100001.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -69,11 +59,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_100001_WhileActive) == 0x000008, "Wrong alignment on PyCue_Level_100001_WhileActive");
-static_assert(sizeof(PyCue_Level_100001_WhileActive) == 0x0001E0, "Wrong size on PyCue_Level_100001_WhileActive");
-static_assert(offsetof(PyCue_Level_100001_WhileActive, ControlActor) == 0x000000, "Member 'PyCue_Level_100001_WhileActive::ControlActor' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_100001_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Level_100001_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_100001_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Level_100001_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_100001_WhileActive;
 
 // PythonFunction PyControl.PyCue_Level_100001.OnControlOwnerChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -83,10 +69,7 @@ public:
 	class AActor*                                 ControlPoint;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                OwnerSide;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_100001_OnControlOwnerChanged) == 0x000008, "Wrong alignment on PyCue_Level_100001_OnControlOwnerChanged");
-static_assert(sizeof(PyCue_Level_100001_OnControlOwnerChanged) == 0x000010, "Wrong size on PyCue_Level_100001_OnControlOwnerChanged");
-static_assert(offsetof(PyCue_Level_100001_OnControlOwnerChanged, ControlPoint) == 0x000000, "Member 'PyCue_Level_100001_OnControlOwnerChanged::ControlPoint' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_100001_OnControlOwnerChanged, OwnerSide) == 0x000008, "Member 'PyCue_Level_100001_OnControlOwnerChanged::OwnerSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_100001_OnControlOwnerChanged;
 
 // PythonFunction PyControl.PyControl.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -95,9 +78,7 @@ struct PyControl_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControl_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyControl_ReceiveEndPlay");
-static_assert(sizeof(PyControl_ReceiveEndPlay) == 0x000001, "Wrong size on PyControl_ReceiveEndPlay");
-static_assert(offsetof(PyControl_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyControl_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyControl_ReceiveEndPlay;
 
 // PythonFunction PyControl.PyControl.S_on_player_exit_camp
 // 0x0008 (0x0008 - 0x0000)
@@ -106,9 +87,7 @@ struct PyControl_S_on_player_exit_camp final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControl_S_on_player_exit_camp) == 0x000008, "Wrong alignment on PyControl_S_on_player_exit_camp");
-static_assert(sizeof(PyControl_S_on_player_exit_camp) == 0x000008, "Wrong size on PyControl_S_on_player_exit_camp");
-static_assert(offsetof(PyControl_S_on_player_exit_camp, Char) == 0x000000, "Member 'PyControl_S_on_player_exit_camp::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyControl_S_on_player_exit_camp;
 
 // PythonFunction PyControl.PyControl.BSetOccupySpeed
 // 0x0004 (0x0004 - 0x0000)
@@ -117,9 +96,7 @@ struct PyControl_BSetOccupySpeed final
 public:
 	float                                         speed;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControl_BSetOccupySpeed) == 0x000004, "Wrong alignment on PyControl_BSetOccupySpeed");
-static_assert(sizeof(PyControl_BSetOccupySpeed) == 0x000004, "Wrong size on PyControl_BSetOccupySpeed");
-static_assert(offsetof(PyControl_BSetOccupySpeed, speed) == 0x000000, "Member 'PyControl_BSetOccupySpeed::speed' has a wrong offset!");
+DUMPER7_ASSERTS_PyControl_BSetOccupySpeed;
 
 // PythonFunction PyControl.PyControl.BroadCastOccupied
 // 0x0002 (0x0002 - 0x0000)
@@ -129,10 +106,7 @@ public:
 	EBattleSide                                   BattleSide;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsFirstChange;                                     // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControl_BroadCastOccupied) == 0x000001, "Wrong alignment on PyControl_BroadCastOccupied");
-static_assert(sizeof(PyControl_BroadCastOccupied) == 0x000002, "Wrong size on PyControl_BroadCastOccupied");
-static_assert(offsetof(PyControl_BroadCastOccupied, BattleSide) == 0x000000, "Member 'PyControl_BroadCastOccupied::BattleSide' has a wrong offset!");
-static_assert(offsetof(PyControl_BroadCastOccupied, IsFirstChange) == 0x000001, "Member 'PyControl_BroadCastOccupied::IsFirstChange' has a wrong offset!");
+DUMPER7_ASSERTS_PyControl_BroadCastOccupied;
 
 // PythonFunction PyControl.PyControl.GetOccupyProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -141,9 +115,7 @@ struct PyControl_GetOccupyProgress final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControl_GetOccupyProgress) == 0x000004, "Wrong alignment on PyControl_GetOccupyProgress");
-static_assert(sizeof(PyControl_GetOccupyProgress) == 0x000004, "Wrong size on PyControl_GetOccupyProgress");
-static_assert(offsetof(PyControl_GetOccupyProgress, ReturnValue) == 0x000000, "Member 'PyControl_GetOccupyProgress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyControl_GetOccupyProgress;
 
 // PythonFunction PyControl.PyControl.GetOwnerSide
 // 0x0001 (0x0001 - 0x0000)
@@ -152,9 +124,7 @@ struct PyControl_GetOwnerSide final
 public:
 	EOwnershipType                                ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControl_GetOwnerSide) == 0x000001, "Wrong alignment on PyControl_GetOwnerSide");
-static_assert(sizeof(PyControl_GetOwnerSide) == 0x000001, "Wrong size on PyControl_GetOwnerSide");
-static_assert(offsetof(PyControl_GetOwnerSide, ReturnValue) == 0x000000, "Member 'PyControl_GetOwnerSide::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyControl_GetOwnerSide;
 
 // PythonFunction PyControl.PyControl.GetVictoryProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -163,9 +133,7 @@ struct PyControl_GetVictoryProgress final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControl_GetVictoryProgress) == 0x000004, "Wrong alignment on PyControl_GetVictoryProgress");
-static_assert(sizeof(PyControl_GetVictoryProgress) == 0x000004, "Wrong size on PyControl_GetVictoryProgress");
-static_assert(offsetof(PyControl_GetVictoryProgress, ReturnValue) == 0x000000, "Member 'PyControl_GetVictoryProgress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyControl_GetVictoryProgress;
 
 // PythonFunction PyControl.PyCue_Level_ControlPointV2.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -174,9 +142,7 @@ struct PyCue_Level_ControlPointV2_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_ControlPointV2_ReceiveTick) == 0x000004, "Wrong alignment on PyCue_Level_ControlPointV2_ReceiveTick");
-static_assert(sizeof(PyCue_Level_ControlPointV2_ReceiveTick) == 0x000004, "Wrong size on PyCue_Level_ControlPointV2_ReceiveTick");
-static_assert(offsetof(PyCue_Level_ControlPointV2_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyCue_Level_ControlPointV2_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_ControlPointV2_ReceiveTick;
 
 // PythonFunction PyControl.PyCue_Level_ControlPointV2.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -187,11 +153,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_ControlPointV2_WhileActive) == 0x000008, "Wrong alignment on PyCue_Level_ControlPointV2_WhileActive");
-static_assert(sizeof(PyCue_Level_ControlPointV2_WhileActive) == 0x0001E0, "Wrong size on PyCue_Level_ControlPointV2_WhileActive");
-static_assert(offsetof(PyCue_Level_ControlPointV2_WhileActive, ControlActor) == 0x000000, "Member 'PyCue_Level_ControlPointV2_WhileActive::ControlActor' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_ControlPointV2_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Level_ControlPointV2_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_ControlPointV2_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Level_ControlPointV2_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_ControlPointV2_WhileActive;
 
 // PythonFunction PyControl.PyCue_Level_ControlPointV2.OnControlOwnerChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -201,10 +163,7 @@ public:
 	class AActor*                                 ControlPoint;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                OwnerSide;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_ControlPointV2_OnControlOwnerChanged) == 0x000008, "Wrong alignment on PyCue_Level_ControlPointV2_OnControlOwnerChanged");
-static_assert(sizeof(PyCue_Level_ControlPointV2_OnControlOwnerChanged) == 0x000010, "Wrong size on PyCue_Level_ControlPointV2_OnControlOwnerChanged");
-static_assert(offsetof(PyCue_Level_ControlPointV2_OnControlOwnerChanged, ControlPoint) == 0x000000, "Member 'PyCue_Level_ControlPointV2_OnControlOwnerChanged::ControlPoint' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_ControlPointV2_OnControlOwnerChanged, OwnerSide) == 0x000008, "Member 'PyCue_Level_ControlPointV2_OnControlOwnerChanged::OwnerSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_ControlPointV2_OnControlOwnerChanged;
 
 }
 

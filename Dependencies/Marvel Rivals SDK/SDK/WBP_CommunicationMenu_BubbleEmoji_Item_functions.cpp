@@ -37,26 +37,6 @@ void UWBP_CommunicationMenu_BubbleEmoji_Item_C::OnListItemObjectSet(class UObjec
 }
 
 
-// Function WBP_CommunicationMenu_BubbleEmoji_Item.WBP_CommunicationMenu_BubbleEmoji_Item_C.ExecuteUbergraph_WBP_CommunicationMenu_BubbleEmoji_Item
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CommunicationMenu_BubbleEmoji_Item_C::ExecuteUbergraph_WBP_CommunicationMenu_BubbleEmoji_Item(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommunicationMenu_BubbleEmoji_Item_C", "ExecuteUbergraph_WBP_CommunicationMenu_BubbleEmoji_Item");
-
-	Params::WBP_CommunicationMenu_BubbleEmoji_Item_C_ExecuteUbergraph_WBP_CommunicationMenu_BubbleEmoji_Item Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_CommunicationMenu_BubbleEmoji_Item.WBP_CommunicationMenu_BubbleEmoji_Item_C.BP_OnItemSelectionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -108,6 +88,26 @@ void UWBP_CommunicationMenu_BubbleEmoji_Item_C::BP_OnEntryReleased()
 		Func = Class->GetFunction("WBP_CommunicationMenu_BubbleEmoji_Item_C", "BP_OnEntryReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CommunicationMenu_BubbleEmoji_Item.WBP_CommunicationMenu_BubbleEmoji_Item_C.ExecuteUbergraph_WBP_CommunicationMenu_BubbleEmoji_Item
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CommunicationMenu_BubbleEmoji_Item_C::ExecuteUbergraph_WBP_CommunicationMenu_BubbleEmoji_Item(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommunicationMenu_BubbleEmoji_Item_C", "ExecuteUbergraph_WBP_CommunicationMenu_BubbleEmoji_Item");
+
+	Params::WBP_CommunicationMenu_BubbleEmoji_Item_C_ExecuteUbergraph_WBP_CommunicationMenu_BubbleEmoji_Item Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

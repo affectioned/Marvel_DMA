@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyHawkeyeCharacter.PyHawkeyeCharacter
-// 0x0000 (0x22D0 - 0x22D0)
+// 0x0000 (0x23E0 - 0x23E0)
 class APyHawkeyeCharacter : public AHawkeyeCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHawkeyeCharacter">();
+		STATIC_CLASS_IMPL("PyHawkeyeCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHawkeyeCharacter")
 	}
 	static class APyHawkeyeCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHawkeyeCharacter>();
 	}
 };
-static_assert(alignof(APyHawkeyeCharacter) == 0x000010, "Wrong alignment on APyHawkeyeCharacter");
-static_assert(sizeof(APyHawkeyeCharacter) == 0x0022D0, "Wrong size on APyHawkeyeCharacter");
+DUMPER7_ASSERTS_APyHawkeyeCharacter;
 
 }
 

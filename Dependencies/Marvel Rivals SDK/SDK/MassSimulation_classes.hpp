@@ -32,43 +32,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSimulationSettings">();
+		STATIC_CLASS_IMPL("MassSimulationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSimulationSettings")
 	}
 	static class UMassSimulationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSimulationSettings>();
 	}
 };
-static_assert(alignof(UMassSimulationSettings) == 0x000008, "Wrong alignment on UMassSimulationSettings");
-static_assert(sizeof(UMassSimulationSettings) == 0x000050, "Wrong size on UMassSimulationSettings");
-static_assert(offsetof(UMassSimulationSettings, DesiredActorSpawningTimeSlicePerTick) == 0x000030, "Member 'UMassSimulationSettings::DesiredActorSpawningTimeSlicePerTick' has a wrong offset!");
-static_assert(offsetof(UMassSimulationSettings, DesiredActorDestructionTimeSlicePerTick) == 0x000038, "Member 'UMassSimulationSettings::DesiredActorDestructionTimeSlicePerTick' has a wrong offset!");
-static_assert(offsetof(UMassSimulationSettings, DesiredEntityCompactionTimeSlicePerTick) == 0x000040, "Member 'UMassSimulationSettings::DesiredEntityCompactionTimeSlicePerTick' has a wrong offset!");
-static_assert(offsetof(UMassSimulationSettings, DesiredActorFailedSpawningRetryTimeInterval) == 0x000048, "Member 'UMassSimulationSettings::DesiredActorFailedSpawningRetryTimeInterval' has a wrong offset!");
-static_assert(offsetof(UMassSimulationSettings, DesiredActorFailedSpawningRetryMoveDistance) == 0x00004C, "Member 'UMassSimulationSettings::DesiredActorFailedSpawningRetryMoveDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UMassSimulationSettings;
 
 // Class MassSimulation.MassSimulationSubsystem
-// 0x04A8 (0x04E0 - 0x0038)
+// 0x04A8 (0x04E8 - 0x0040)
 class UMassSimulationSubsystem final : public UWorldSubsystem
 {
 public:
-	uint8                                         Pad_38[0x490];                                     // 0x0038(0x0490)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMassRuntimePipeline                   RuntimePipeline;                                   // 0x04C8(0x0010)(Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_4D8[0x8];                                      // 0x04D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x490];                                     // 0x0040(0x0490)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMassRuntimePipeline                   RuntimePipeline;                                   // 0x04D0(0x0010)(Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_4E0[0x8];                                      // 0x04E0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSimulationSubsystem">();
+		STATIC_CLASS_IMPL("MassSimulationSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSimulationSubsystem")
 	}
 	static class UMassSimulationSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSimulationSubsystem>();
 	}
 };
-static_assert(alignof(UMassSimulationSubsystem) == 0x000008, "Wrong alignment on UMassSimulationSubsystem");
-static_assert(sizeof(UMassSimulationSubsystem) == 0x0004E0, "Wrong size on UMassSimulationSubsystem");
-static_assert(offsetof(UMassSimulationSubsystem, RuntimePipeline) == 0x0004C8, "Member 'UMassSimulationSubsystem::RuntimePipeline' has a wrong offset!");
+DUMPER7_ASSERTS_UMassSimulationSubsystem;
 
 }
 

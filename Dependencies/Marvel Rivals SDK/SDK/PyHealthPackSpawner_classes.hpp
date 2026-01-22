@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -56,26 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHealthPackSpawner">();
+		STATIC_CLASS_IMPL("PyHealthPackSpawner")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHealthPackSpawner")
 	}
 	static class APyHealthPackSpawner* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHealthPackSpawner>();
 	}
 };
-static_assert(alignof(APyHealthPackSpawner) == 0x000010, "Wrong alignment on APyHealthPackSpawner");
-static_assert(sizeof(APyHealthPackSpawner) == 0x0007C0, "Wrong size on APyHealthPackSpawner");
-static_assert(offsetof(APyHealthPackSpawner, HealthPackReady) == 0x0006E0, "Member 'APyHealthPackSpawner::HealthPackReady' has a wrong offset!");
-static_assert(offsetof(APyHealthPackSpawner, HealthPackCooldownTimer) == 0x0006E8, "Member 'APyHealthPackSpawner::HealthPackCooldownTimer' has a wrong offset!");
-static_assert(offsetof(APyHealthPackSpawner, SpawnSoundEvent) == 0x000760, "Member 'APyHealthPackSpawner::SpawnSoundEvent' has a wrong offset!");
-static_assert(offsetof(APyHealthPackSpawner, HealthpackEvent) == 0x000768, "Member 'APyHealthPackSpawner::HealthpackEvent' has a wrong offset!");
-static_assert(offsetof(APyHealthPackSpawner, SpawnSoundRange) == 0x000770, "Member 'APyHealthPackSpawner::SpawnSoundRange' has a wrong offset!");
-static_assert(offsetof(APyHealthPackSpawner, LoopSoundRange) == 0x000774, "Member 'APyHealthPackSpawner::LoopSoundRange' has a wrong offset!");
-static_assert(offsetof(APyHealthPackSpawner, RequireTags) == 0x000778, "Member 'APyHealthPackSpawner::RequireTags' has a wrong offset!");
-static_assert(offsetof(APyHealthPackSpawner, IgnoreTags) == 0x000788, "Member 'APyHealthPackSpawner::IgnoreTags' has a wrong offset!");
-static_assert(offsetof(APyHealthPackSpawner, ExtraBuffList) == 0x000798, "Member 'APyHealthPackSpawner::ExtraBuffList' has a wrong offset!");
-static_assert(offsetof(APyHealthPackSpawner, PercentBuffId) == 0x0007A8, "Member 'APyHealthPackSpawner::PercentBuffId' has a wrong offset!");
-static_assert(offsetof(APyHealthPackSpawner, OnHealthPackReadyChanged) == 0x0007B0, "Member 'APyHealthPackSpawner::OnHealthPackReadyChanged' has a wrong offset!");
+DUMPER7_ASSERTS_APyHealthPackSpawner;
 
 // PythonClass PyHealthPackSpawner.PyWidget_HealthPackCooldown
 // 0x0000 (0x0870 - 0x0870)
@@ -90,18 +82,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HealthPackCooldown">();
+		STATIC_CLASS_IMPL("PyWidget_HealthPackCooldown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HealthPackCooldown")
 	}
 	static class UPyWidget_HealthPackCooldown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HealthPackCooldown>();
 	}
 };
-static_assert(alignof(UPyWidget_HealthPackCooldown) == 0x000010, "Wrong alignment on UPyWidget_HealthPackCooldown");
-static_assert(sizeof(UPyWidget_HealthPackCooldown) == 0x000870, "Wrong size on UPyWidget_HealthPackCooldown");
+DUMPER7_ASSERTS_UPyWidget_HealthPackCooldown;
 
 // PythonClass PyHealthPackSpawner.PyBuffAbility_20000018
-// 0x0000 (0x1370 - 0x1370)
+// 0x0000 (0x1388 - 0x1388)
 class UPyBuffAbility_20000018 final : public UMarvelEffectGameplayAbility
 {
 public:
@@ -112,15 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_20000018">();
+		STATIC_CLASS_IMPL("PyBuffAbility_20000018")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_20000018")
 	}
 	static class UPyBuffAbility_20000018* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_20000018>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_20000018) == 0x000008, "Wrong alignment on UPyBuffAbility_20000018");
-static_assert(sizeof(UPyBuffAbility_20000018) == 0x001370, "Wrong size on UPyBuffAbility_20000018");
+DUMPER7_ASSERTS_UPyBuffAbility_20000018;
 
 }
 

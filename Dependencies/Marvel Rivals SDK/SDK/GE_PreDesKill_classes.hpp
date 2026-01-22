@@ -23,15 +23,18 @@ class UGE_PreDesKill_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_PreDesKill_C">();
+		BP_STATIC_CLASS_IMPL("GE_PreDesKill_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_PreDesKill_C")
 	}
 	static class UGE_PreDesKill_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_PreDesKill_C>();
 	}
 };
-static_assert(alignof(UGE_PreDesKill_C) == 0x000008, "Wrong alignment on UGE_PreDesKill_C");
-static_assert(sizeof(UGE_PreDesKill_C) == 0x001418, "Wrong size on UGE_PreDesKill_C");
+DUMPER7_ASSERTS_UGE_PreDesKill_C;
 
 }
 

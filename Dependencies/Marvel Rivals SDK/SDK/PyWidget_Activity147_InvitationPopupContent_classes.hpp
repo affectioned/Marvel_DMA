@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "Marvel_structs.hpp"
 #include "PyWidget_SecondaryChildBase_classes.hpp"
 
 
@@ -17,9 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity147_InvitationPopupContent.PyWidget_Activity147_InvitationPopupContent
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Activity147_InvitationPopupContent final : public UPyWidget_SecondaryChildBase
 {
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuideTipsStyle>                PasteAction;                                       // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
 public:
 	void OnInitialized();
 	void Construct();
@@ -28,15 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_InvitationPopupContent">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_InvitationPopupContent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_InvitationPopupContent")
 	}
 	static class UPyWidget_Activity147_InvitationPopupContent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_InvitationPopupContent>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_InvitationPopupContent) == 0x000008, "Wrong alignment on UPyWidget_Activity147_InvitationPopupContent");
-static_assert(sizeof(UPyWidget_Activity147_InvitationPopupContent) == 0x0005C0, "Wrong size on UPyWidget_Activity147_InvitationPopupContent");
+DUMPER7_ASSERTS_UPyWidget_Activity147_InvitationPopupContent;
 
 }
 

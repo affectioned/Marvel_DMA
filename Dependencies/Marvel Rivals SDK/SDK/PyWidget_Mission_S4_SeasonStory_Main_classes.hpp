@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mission_S4_SeasonStory_Main.PyWidget_Mission_S4_SeasonStory_Main
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Mission_S4_SeasonStory_Main final : public UPyMarvelUserWidget
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_S4_SeasonStory_Main">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_S4_SeasonStory_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_S4_SeasonStory_Main")
 	}
 	static class UPyWidget_Mission_S4_SeasonStory_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_S4_SeasonStory_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_S4_SeasonStory_Main) == 0x000008, "Wrong alignment on UPyWidget_Mission_S4_SeasonStory_Main");
-static_assert(sizeof(UPyWidget_Mission_S4_SeasonStory_Main) == 0x0005C0, "Wrong size on UPyWidget_Mission_S4_SeasonStory_Main");
+DUMPER7_ASSERTS_UPyWidget_Mission_S4_SeasonStory_Main;
 
 }
 

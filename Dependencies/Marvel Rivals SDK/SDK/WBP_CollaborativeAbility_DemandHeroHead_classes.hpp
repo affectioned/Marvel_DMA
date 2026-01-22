@@ -17,35 +17,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CollaborativeAbility_DemandHeroHead.WBP_CollaborativeAbility_DemandHeroHead_C
-// 0x0030 (0x0608 - 0x05D8)
+// 0x0038 (0x0618 - 0x05E0)
 class UWBP_CollaborativeAbility_DemandHeroHead_C final : public UPyWidget_BondDemandHeroHead
 {
 public:
-	class UWBP_Common_HeroHead_Spuare_C*          HeroHead;                                          // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Duty;                                          // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Hero_Bg;                                       // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Hero_Frame;                                    // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Duty;                                      // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_HeroHead;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_HeroHead_Spuare_C*          HeroHead;                                          // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Duty;                                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Hero_Bg;                                       // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Hero_Frame;                                    // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Duty;                                      // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_HeroHead;                                  // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_HeroRoleIcon_C*             WBP_Common_HeroRoleIcon;                           // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CollaborativeAbility_DemandHeroHead_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CollaborativeAbility_DemandHeroHead_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CollaborativeAbility_DemandHeroHead_C")
 	}
 	static class UWBP_CollaborativeAbility_DemandHeroHead_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CollaborativeAbility_DemandHeroHead_C>();
 	}
 };
-static_assert(alignof(UWBP_CollaborativeAbility_DemandHeroHead_C) == 0x000008, "Wrong alignment on UWBP_CollaborativeAbility_DemandHeroHead_C");
-static_assert(sizeof(UWBP_CollaborativeAbility_DemandHeroHead_C) == 0x000608, "Wrong size on UWBP_CollaborativeAbility_DemandHeroHead_C");
-static_assert(offsetof(UWBP_CollaborativeAbility_DemandHeroHead_C, HeroHead) == 0x0005D8, "Member 'UWBP_CollaborativeAbility_DemandHeroHead_C::HeroHead' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_DemandHeroHead_C, Img_Duty) == 0x0005E0, "Member 'UWBP_CollaborativeAbility_DemandHeroHead_C::Img_Duty' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_DemandHeroHead_C, Img_Hero_Bg) == 0x0005E8, "Member 'UWBP_CollaborativeAbility_DemandHeroHead_C::Img_Hero_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_DemandHeroHead_C, Img_Hero_Frame) == 0x0005F0, "Member 'UWBP_CollaborativeAbility_DemandHeroHead_C::Img_Hero_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_DemandHeroHead_C, Overlay_Duty) == 0x0005F8, "Member 'UWBP_CollaborativeAbility_DemandHeroHead_C::Overlay_Duty' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_DemandHeroHead_C, Overlay_HeroHead) == 0x000600, "Member 'UWBP_CollaborativeAbility_DemandHeroHead_C::Overlay_HeroHead' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CollaborativeAbility_DemandHeroHead_C;
 
 }
 

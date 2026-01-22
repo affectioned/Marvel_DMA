@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySimpleLevelCheckActor">();
+		STATIC_CLASS_IMPL("PySimpleLevelCheckActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySimpleLevelCheckActor")
 	}
 	static class APySimpleLevelCheckActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySimpleLevelCheckActor>();
 	}
 };
-static_assert(alignof(APySimpleLevelCheckActor) == 0x000010, "Wrong alignment on APySimpleLevelCheckActor");
-static_assert(sizeof(APySimpleLevelCheckActor) == 0x000730, "Wrong size on APySimpleLevelCheckActor");
+DUMPER7_ASSERTS_APySimpleLevelCheckActor;
 
 }
 

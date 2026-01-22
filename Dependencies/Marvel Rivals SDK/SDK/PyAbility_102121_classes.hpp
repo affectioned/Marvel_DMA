@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "Hero_1021_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Hero_1021_structs.hpp"
 
 
 namespace SDK
@@ -28,19 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102121">();
+		STATIC_CLASS_IMPL("PyConfig_102121")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102121")
 	}
 	static class UPyConfig_102121* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102121>();
 	}
 };
-static_assert(alignof(UPyConfig_102121) == 0x000008, "Wrong alignment on UPyConfig_102121");
-static_assert(sizeof(UPyConfig_102121) == 0x000100, "Wrong size on UPyConfig_102121");
-static_assert(offsetof(UPyConfig_102121, BlockTags) == 0x000098, "Member 'UPyConfig_102121::BlockTags' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102121;
 
 // PythonClass PyAbility_102121.PyAbility_102121
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_102121 : public UMarvelGameplayAbility
 {
 public:
@@ -63,15 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102121">();
+		STATIC_CLASS_IMPL("PyAbility_102121")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102121")
 	}
 	static class UPyAbility_102121* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102121>();
 	}
 };
-static_assert(alignof(UPyAbility_102121) == 0x000008, "Wrong alignment on UPyAbility_102121");
-static_assert(sizeof(UPyAbility_102121) == 0x0029F0, "Wrong size on UPyAbility_102121");
+DUMPER7_ASSERTS_UPyAbility_102121;
 
 }
 

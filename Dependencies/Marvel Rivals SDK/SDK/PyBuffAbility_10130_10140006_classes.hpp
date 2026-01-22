@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10140006.PyBuffAbility_10130_10140006
-// 0x0018 (0x1A48 - 0x1A30)
+// 0x0018 (0x1A60 - 0x1A48)
 class UPyBuffAbility_10130_10140006 : public UBuffAbility_CommonCardEffect
 {
 public:
-	int32                                         TargetAbilityID;                                   // 0x1A30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AmmoNum;                                           // 0x1A34(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StackAddMaxTLSpeed;                                // 0x1A38(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseMaxTLSpeed;                                    // 0x1A3C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxTLSpeed;                                        // 0x1A40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TargetAbilityID;                                   // 0x1A48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AmmoNum;                                           // 0x1A4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StackAddMaxTLSpeed;                                // 0x1A50(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseMaxTLSpeed;                                    // 0x1A54(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxTLSpeed;                                        // 0x1A58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10140006">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10140006")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10140006")
 	}
 	static class UPyBuffAbility_10130_10140006* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10140006>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10140006) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10140006");
-static_assert(sizeof(UPyBuffAbility_10130_10140006) == 0x001A48, "Wrong size on UPyBuffAbility_10130_10140006");
-static_assert(offsetof(UPyBuffAbility_10130_10140006, TargetAbilityID) == 0x001A30, "Member 'UPyBuffAbility_10130_10140006::TargetAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10140006, AmmoNum) == 0x001A34, "Member 'UPyBuffAbility_10130_10140006::AmmoNum' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10140006, StackAddMaxTLSpeed) == 0x001A38, "Member 'UPyBuffAbility_10130_10140006::StackAddMaxTLSpeed' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10140006, BaseMaxTLSpeed) == 0x001A3C, "Member 'UPyBuffAbility_10130_10140006::BaseMaxTLSpeed' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10140006, MaxTLSpeed) == 0x001A40, "Member 'UPyBuffAbility_10130_10140006::MaxTLSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10140006;
 
 }
 

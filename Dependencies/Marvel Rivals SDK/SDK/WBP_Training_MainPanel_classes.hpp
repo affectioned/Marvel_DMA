@@ -17,34 +17,32 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Training_MainPanel.WBP_Training_MainPanel_C
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UWBP_Training_MainPanel_C final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Train_CountDown_C*                 WBP_Train_CountDown;                               // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Training_ActionTips_C*             WBP_Training_ActionTips;                           // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Training_Score_C*                  WBP_Training_Score;                                // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Training_TaskPanel_C*              WBP_Training_TaskPanel;                            // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Training_Tips_V2_C*                WBP_Training_Tips;                                 // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Train_CountDown_C*                 WBP_Train_CountDown;                               // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Training_ActionTips_C*             WBP_Training_ActionTips;                           // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Training_Score_C*                  WBP_Training_Score;                                // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Training_TaskPanel_C*              WBP_Training_TaskPanel;                            // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Training_Tips_V2_C*                WBP_Training_Tips;                                 // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Training_MainPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Training_MainPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Training_MainPanel_C")
 	}
 	static class UWBP_Training_MainPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Training_MainPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_Training_MainPanel_C) == 0x000008, "Wrong alignment on UWBP_Training_MainPanel_C");
-static_assert(sizeof(UWBP_Training_MainPanel_C) == 0x0005E8, "Wrong size on UWBP_Training_MainPanel_C");
-static_assert(offsetof(UWBP_Training_MainPanel_C, WBP_Train_CountDown) == 0x0005C0, "Member 'UWBP_Training_MainPanel_C::WBP_Train_CountDown' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_MainPanel_C, WBP_Training_ActionTips) == 0x0005C8, "Member 'UWBP_Training_MainPanel_C::WBP_Training_ActionTips' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_MainPanel_C, WBP_Training_Score) == 0x0005D0, "Member 'UWBP_Training_MainPanel_C::WBP_Training_Score' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_MainPanel_C, WBP_Training_TaskPanel) == 0x0005D8, "Member 'UWBP_Training_MainPanel_C::WBP_Training_TaskPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_MainPanel_C, WBP_Training_Tips) == 0x0005E0, "Member 'UWBP_Training_MainPanel_C::WBP_Training_Tips' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Training_MainPanel_C;
 
 }
 

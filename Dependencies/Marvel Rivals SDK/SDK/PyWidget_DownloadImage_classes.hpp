@@ -32,20 +32,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRichTextWidgetConfig_DownloadImage">();
+		STATIC_CLASS_IMPL("PyRichTextWidgetConfig_DownloadImage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRichTextWidgetConfig_DownloadImage")
 	}
 	static class UPyRichTextWidgetConfig_DownloadImage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRichTextWidgetConfig_DownloadImage>();
 	}
 };
-static_assert(alignof(UPyRichTextWidgetConfig_DownloadImage) == 0x000008, "Wrong alignment on UPyRichTextWidgetConfig_DownloadImage");
-static_assert(sizeof(UPyRichTextWidgetConfig_DownloadImage) == 0x000040, "Wrong size on UPyRichTextWidgetConfig_DownloadImage");
-static_assert(offsetof(UPyRichTextWidgetConfig_DownloadImage, WidgetWidth) == 0x000030, "Member 'UPyRichTextWidgetConfig_DownloadImage::WidgetWidth' has a wrong offset!");
-static_assert(offsetof(UPyRichTextWidgetConfig_DownloadImage, HyperlinkImageSet) == 0x000038, "Member 'UPyRichTextWidgetConfig_DownloadImage::HyperlinkImageSet' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRichTextWidgetConfig_DownloadImage;
 
 // PythonClass PyWidget_DownloadImage.PyWidget_DownloadImage
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_DownloadImage final : public UPyMarvelUserWidget
 {
 public:
@@ -54,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DownloadImage">();
+		STATIC_CLASS_IMPL("PyWidget_DownloadImage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DownloadImage")
 	}
 	static class UPyWidget_DownloadImage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DownloadImage>();
 	}
 };
-static_assert(alignof(UPyWidget_DownloadImage) == 0x000008, "Wrong alignment on UPyWidget_DownloadImage");
-static_assert(sizeof(UPyWidget_DownloadImage) == 0x0005C0, "Wrong size on UPyWidget_DownloadImage");
+DUMPER7_ASSERTS_UPyWidget_DownloadImage;
 
 }
 

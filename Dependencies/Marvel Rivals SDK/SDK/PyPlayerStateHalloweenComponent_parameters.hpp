@@ -24,9 +24,7 @@ struct PyPlayerStateHalloweenComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyPlayerStateHalloweenComponent_ReceiveEndPlay");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyPlayerStateHalloweenComponent_ReceiveEndPlay");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_ReceiveEndPlay;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.AddGoldAmount
 // 0x0004 (0x0004 - 0x0000)
@@ -35,9 +33,7 @@ struct PyPlayerStateHalloweenComponent_AddGoldAmount final
 public:
 	float                                         Points;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_AddGoldAmount) == 0x000004, "Wrong alignment on PyPlayerStateHalloweenComponent_AddGoldAmount");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_AddGoldAmount) == 0x000004, "Wrong size on PyPlayerStateHalloweenComponent_AddGoldAmount");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_AddGoldAmount, Points) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_AddGoldAmount::Points' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_AddGoldAmount;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.SubStorePoints
 // 0x0004 (0x0004 - 0x0000)
@@ -46,9 +42,7 @@ struct PyPlayerStateHalloweenComponent_SubStorePoints final
 public:
 	int32                                         Points;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_SubStorePoints) == 0x000004, "Wrong alignment on PyPlayerStateHalloweenComponent_SubStorePoints");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_SubStorePoints) == 0x000004, "Wrong size on PyPlayerStateHalloweenComponent_SubStorePoints");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_SubStorePoints, Points) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_SubStorePoints::Points' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_SubStorePoints;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.SetGoldEfficiencyRatio
 // 0x0004 (0x0004 - 0x0000)
@@ -57,9 +51,7 @@ struct PyPlayerStateHalloweenComponent_SetGoldEfficiencyRatio final
 public:
 	float                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_SetGoldEfficiencyRatio) == 0x000004, "Wrong alignment on PyPlayerStateHalloweenComponent_SetGoldEfficiencyRatio");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_SetGoldEfficiencyRatio) == 0x000004, "Wrong size on PyPlayerStateHalloweenComponent_SetGoldEfficiencyRatio");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_SetGoldEfficiencyRatio, Ratio) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_SetGoldEfficiencyRatio::Ratio' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_SetGoldEfficiencyRatio;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.ServerReceiveBuyCard
 // 0x0008 (0x0008 - 0x0000)
@@ -69,10 +61,7 @@ public:
 	int32                                         CardID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Index_0;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_ServerReceiveBuyCard) == 0x000004, "Wrong alignment on PyPlayerStateHalloweenComponent_ServerReceiveBuyCard");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_ServerReceiveBuyCard) == 0x000008, "Wrong size on PyPlayerStateHalloweenComponent_ServerReceiveBuyCard");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ServerReceiveBuyCard, CardID) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_ServerReceiveBuyCard::CardID' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ServerReceiveBuyCard, Index_0) == 0x000004, "Member 'PyPlayerStateHalloweenComponent_ServerReceiveBuyCard::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_ServerReceiveBuyCard;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.ServerReceiveRefreshStore
 // 0x0001 (0x0001 - 0x0000)
@@ -81,9 +70,7 @@ struct PyPlayerStateHalloweenComponent_ServerReceiveRefreshStore final
 public:
 	bool                                          HasCost;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_ServerReceiveRefreshStore) == 0x000001, "Wrong alignment on PyPlayerStateHalloweenComponent_ServerReceiveRefreshStore");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_ServerReceiveRefreshStore) == 0x000001, "Wrong size on PyPlayerStateHalloweenComponent_ServerReceiveRefreshStore");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ServerReceiveRefreshStore, HasCost) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_ServerReceiveRefreshStore::HasCost' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_ServerReceiveRefreshStore;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.TeleportToActor
 // 0x0018 (0x0018 - 0x0000)
@@ -93,10 +80,7 @@ public:
 	class FString                                 ActorName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         IgnoreDistance;                                    // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_TeleportToActor) == 0x000008, "Wrong alignment on PyPlayerStateHalloweenComponent_TeleportToActor");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_TeleportToActor) == 0x000018, "Wrong size on PyPlayerStateHalloweenComponent_TeleportToActor");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_TeleportToActor, ActorName) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_TeleportToActor::ActorName' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_TeleportToActor, IgnoreDistance) == 0x000010, "Member 'PyPlayerStateHalloweenComponent_TeleportToActor::IgnoreDistance' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_TeleportToActor;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.TriggerOutside
 // 0x0018 (0x0018 - 0x0000)
@@ -106,10 +90,7 @@ public:
 	class FString                                 TeleportArea;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         TeleportDelayTime;                                 // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_TriggerOutside) == 0x000008, "Wrong alignment on PyPlayerStateHalloweenComponent_TriggerOutside");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_TriggerOutside) == 0x000018, "Wrong size on PyPlayerStateHalloweenComponent_TriggerOutside");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_TriggerOutside, TeleportArea) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_TriggerOutside::TeleportArea' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_TriggerOutside, TeleportDelayTime) == 0x000010, "Member 'PyPlayerStateHalloweenComponent_TriggerOutside::TeleportDelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_TriggerOutside;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.ShowLightTips
 // 0x0020 (0x0020 - 0x0000)
@@ -119,10 +100,7 @@ public:
 	class FText                                   Content;                                           // 0x0000(0x0018)(Parm)
 	float                                         Time;                                              // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_ShowLightTips) == 0x000008, "Wrong alignment on PyPlayerStateHalloweenComponent_ShowLightTips");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_ShowLightTips) == 0x000020, "Wrong size on PyPlayerStateHalloweenComponent_ShowLightTips");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ShowLightTips, Content) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_ShowLightTips::Content' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ShowLightTips, Time) == 0x000018, "Member 'PyPlayerStateHalloweenComponent_ShowLightTips::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_ShowLightTips;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.ShowCenterTips
 // 0x0020 (0x0020 - 0x0000)
@@ -134,12 +112,7 @@ public:
 	bool                                          HasStyle;                                          // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EWaveType                                     StyleType;                                         // 0x001D(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_ShowCenterTips) == 0x000008, "Wrong alignment on PyPlayerStateHalloweenComponent_ShowCenterTips");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_ShowCenterTips) == 0x000020, "Wrong size on PyPlayerStateHalloweenComponent_ShowCenterTips");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ShowCenterTips, Content) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_ShowCenterTips::Content' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ShowCenterTips, Time) == 0x000018, "Member 'PyPlayerStateHalloweenComponent_ShowCenterTips::Time' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ShowCenterTips, HasStyle) == 0x00001C, "Member 'PyPlayerStateHalloweenComponent_ShowCenterTips::HasStyle' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ShowCenterTips, StyleType) == 0x00001D, "Member 'PyPlayerStateHalloweenComponent_ShowCenterTips::StyleType' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_ShowCenterTips;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.ServerReceiveSkipLottery
 // 0x0010 (0x0010 - 0x0000)
@@ -148,9 +121,7 @@ struct PyPlayerStateHalloweenComponent_ServerReceiveSkipLottery final
 public:
 	class FString                                 UniqueID;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_ServerReceiveSkipLottery) == 0x000008, "Wrong alignment on PyPlayerStateHalloweenComponent_ServerReceiveSkipLottery");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_ServerReceiveSkipLottery) == 0x000010, "Wrong size on PyPlayerStateHalloweenComponent_ServerReceiveSkipLottery");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ServerReceiveSkipLottery, UniqueID) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_ServerReceiveSkipLottery::UniqueID' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_ServerReceiveSkipLottery;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.ClientReceiveExtractImageCard
 // 0x0040 (0x0040 - 0x0000)
@@ -165,13 +136,7 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 UniqueID;                                          // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard) == 0x000008, "Wrong alignment on PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard) == 0x000040, "Wrong size on PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard, Pool) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard::Pool' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard, CardID) == 0x000010, "Member 'PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard::CardID' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard, SubCardIDs) == 0x000018, "Member 'PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard::SubCardIDs' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard, PrePower) == 0x000028, "Member 'PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard::PrePower' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard, UniqueID) == 0x000030, "Member 'PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard::UniqueID' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_ClientReceiveExtractImageCard;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.ClientReceiveWaveReward
 // 0x0040 (0x0040 - 0x0000)
@@ -186,24 +151,7 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 UniqueID;                                          // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_ClientReceiveWaveReward) == 0x000008, "Wrong alignment on PyPlayerStateHalloweenComponent_ClientReceiveWaveReward");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_ClientReceiveWaveReward) == 0x000040, "Wrong size on PyPlayerStateHalloweenComponent_ClientReceiveWaveReward");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ClientReceiveWaveReward, Pool) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_ClientReceiveWaveReward::Pool' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ClientReceiveWaveReward, CardID) == 0x000010, "Member 'PyPlayerStateHalloweenComponent_ClientReceiveWaveReward::CardID' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ClientReceiveWaveReward, SubCardIDs) == 0x000018, "Member 'PyPlayerStateHalloweenComponent_ClientReceiveWaveReward::SubCardIDs' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ClientReceiveWaveReward, PrePower) == 0x000028, "Member 'PyPlayerStateHalloweenComponent_ClientReceiveWaveReward::PrePower' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_ClientReceiveWaveReward, UniqueID) == 0x000030, "Member 'PyPlayerStateHalloweenComponent_ClientReceiveWaveReward::UniqueID' has a wrong offset!");
-
-// PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.OnAbilityFinished
-// 0x0008 (0x0008 - 0x0000)
-struct PyPlayerStateHalloweenComponent_OnAbilityFinished final
-{
-public:
-	class AActor*                                 char_0;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyPlayerStateHalloweenComponent_OnAbilityFinished) == 0x000008, "Wrong alignment on PyPlayerStateHalloweenComponent_OnAbilityFinished");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_OnAbilityFinished) == 0x000008, "Wrong size on PyPlayerStateHalloweenComponent_OnAbilityFinished");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_OnAbilityFinished, char_0) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_OnAbilityFinished::char_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_ClientReceiveWaveReward;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.CMDGetEffect
 // 0x0004 (0x0004 - 0x0000)
@@ -212,9 +160,7 @@ struct PyPlayerStateHalloweenComponent_CMDGetEffect final
 public:
 	int32                                         EffectID;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_CMDGetEffect) == 0x000004, "Wrong alignment on PyPlayerStateHalloweenComponent_CMDGetEffect");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_CMDGetEffect) == 0x000004, "Wrong size on PyPlayerStateHalloweenComponent_CMDGetEffect");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_CMDGetEffect, EffectID) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_CMDGetEffect::EffectID' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_CMDGetEffect;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.CMDApplyEffectWithLevel
 // 0x0008 (0x0008 - 0x0000)
@@ -224,10 +170,7 @@ public:
 	int32                                         EffectID;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Level;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_CMDApplyEffectWithLevel) == 0x000004, "Wrong alignment on PyPlayerStateHalloweenComponent_CMDApplyEffectWithLevel");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_CMDApplyEffectWithLevel) == 0x000008, "Wrong size on PyPlayerStateHalloweenComponent_CMDApplyEffectWithLevel");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_CMDApplyEffectWithLevel, EffectID) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_CMDApplyEffectWithLevel::EffectID' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_CMDApplyEffectWithLevel, Level) == 0x000004, "Member 'PyPlayerStateHalloweenComponent_CMDApplyEffectWithLevel::Level' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_CMDApplyEffectWithLevel;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.CMDGetCard
 // 0x0004 (0x0004 - 0x0000)
@@ -236,9 +179,7 @@ struct PyPlayerStateHalloweenComponent_CMDGetCard final
 public:
 	int32                                         CardID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_CMDGetCard) == 0x000004, "Wrong alignment on PyPlayerStateHalloweenComponent_CMDGetCard");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_CMDGetCard) == 0x000004, "Wrong size on PyPlayerStateHalloweenComponent_CMDGetCard");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_CMDGetCard, CardID) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_CMDGetCard::CardID' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_CMDGetCard;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.CMDGetAllBuildCards
 // 0x0004 (0x0004 - 0x0000)
@@ -247,9 +188,7 @@ struct PyPlayerStateHalloweenComponent_CMDGetAllBuildCards final
 public:
 	int32                                         BuildId;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_CMDGetAllBuildCards) == 0x000004, "Wrong alignment on PyPlayerStateHalloweenComponent_CMDGetAllBuildCards");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_CMDGetAllBuildCards) == 0x000004, "Wrong size on PyPlayerStateHalloweenComponent_CMDGetAllBuildCards");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_CMDGetAllBuildCards, BuildId) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_CMDGetAllBuildCards::BuildId' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_CMDGetAllBuildCards;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.CMDGetAllBuildEffects
 // 0x0004 (0x0004 - 0x0000)
@@ -258,9 +197,7 @@ struct PyPlayerStateHalloweenComponent_CMDGetAllBuildEffects final
 public:
 	int32                                         BuildId;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_CMDGetAllBuildEffects) == 0x000004, "Wrong alignment on PyPlayerStateHalloweenComponent_CMDGetAllBuildEffects");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_CMDGetAllBuildEffects) == 0x000004, "Wrong size on PyPlayerStateHalloweenComponent_CMDGetAllBuildEffects");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_CMDGetAllBuildEffects, BuildId) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_CMDGetAllBuildEffects::BuildId' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_CMDGetAllBuildEffects;
 
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.CMDGetBuildCards
 // 0x0010 (0x0010 - 0x0000)
@@ -269,9 +206,7 @@ struct PyPlayerStateHalloweenComponent_CMDGetBuildCards final
 public:
 	TArray<int32>                                 CardIDs;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyPlayerStateHalloweenComponent_CMDGetBuildCards) == 0x000008, "Wrong alignment on PyPlayerStateHalloweenComponent_CMDGetBuildCards");
-static_assert(sizeof(PyPlayerStateHalloweenComponent_CMDGetBuildCards) == 0x000010, "Wrong size on PyPlayerStateHalloweenComponent_CMDGetBuildCards");
-static_assert(offsetof(PyPlayerStateHalloweenComponent_CMDGetBuildCards, CardIDs) == 0x000000, "Member 'PyPlayerStateHalloweenComponent_CMDGetBuildCards::CardIDs' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHalloweenComponent_CMDGetBuildCards;
 
 }
 

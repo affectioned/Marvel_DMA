@@ -24,10 +24,7 @@ public:
 	class FName                                   ActionName;                                        // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInputEvent                                   EventType;                                         // 0x000C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_ActionTips_OnReceiveInputAction) == 0x000004, "Wrong alignment on PyWidget_Common_ActionTips_OnReceiveInputAction");
-static_assert(sizeof(PyWidget_Common_ActionTips_OnReceiveInputAction) == 0x000010, "Wrong size on PyWidget_Common_ActionTips_OnReceiveInputAction");
-static_assert(offsetof(PyWidget_Common_ActionTips_OnReceiveInputAction, ActionName) == 0x000000, "Member 'PyWidget_Common_ActionTips_OnReceiveInputAction::ActionName' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_ActionTips_OnReceiveInputAction, EventType) == 0x00000C, "Member 'PyWidget_Common_ActionTips_OnReceiveInputAction::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_ActionTips_OnReceiveInputAction;
 
 }
 

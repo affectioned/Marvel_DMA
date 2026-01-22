@@ -17,37 +17,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_Bg.WBP_Common_Bg_C
-// 0x0038 (0x05C0 - 0x0588)
+// 0x0038 (0x05C8 - 0x0590)
 class UWBP_Common_Bg_C final : public UPyWidget_Common_Bg
 {
 public:
-	class UWidgetAnimation*                       Anim_Normal;                                       // 0x0588(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelCanvasPanel*                     CanvasPanel_VX;                                    // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelCanvasPanel*                     CanvasPanel_VX1;                                   // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Common_Bg_Loop;                                // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Common_Narrow_Bg;                              // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Common_Narrow_Bg_Out;                          // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Com_Bg;                                    // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Normal;                                       // 0x0590(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelCanvasPanel*                     CanvasPanel_VX;                                    // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelCanvasPanel*                     CanvasPanel_VX1;                                   // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Common_Bg_Loop;                                // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Common_Narrow_Bg;                              // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Common_Narrow_Bg_Out;                          // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Com_Bg;                                    // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_Bg_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_Bg_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_Bg_C")
 	}
 	static class UWBP_Common_Bg_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_Bg_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_Bg_C) == 0x000008, "Wrong alignment on UWBP_Common_Bg_C");
-static_assert(sizeof(UWBP_Common_Bg_C) == 0x0005C0, "Wrong size on UWBP_Common_Bg_C");
-static_assert(offsetof(UWBP_Common_Bg_C, Anim_Normal) == 0x000588, "Member 'UWBP_Common_Bg_C::Anim_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Bg_C, CanvasPanel_VX) == 0x000590, "Member 'UWBP_Common_Bg_C::CanvasPanel_VX' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Bg_C, CanvasPanel_VX1) == 0x000598, "Member 'UWBP_Common_Bg_C::CanvasPanel_VX1' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Bg_C, Img_Common_Bg_Loop) == 0x0005A0, "Member 'UWBP_Common_Bg_C::Img_Common_Bg_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Bg_C, Img_Common_Narrow_Bg) == 0x0005A8, "Member 'UWBP_Common_Bg_C::Img_Common_Narrow_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Bg_C, Img_Common_Narrow_Bg_Out) == 0x0005B0, "Member 'UWBP_Common_Bg_C::Img_Common_Narrow_Bg_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Bg_C, Overlay_Com_Bg) == 0x0005B8, "Member 'UWBP_Common_Bg_C::Overlay_Com_Bg' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_Bg_C;
 
 }
 

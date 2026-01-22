@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_MoonKnight_10302101.Weapon_MoonKnight_10302101_C
-// 0x0000 (0x0CB0 - 0x0CB0)
+// 0x0000 (0x0CC0 - 0x0CC0)
 class AWeapon_MoonKnight_10302101_C final : public AShootingWeapon
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Weapon_MoonKnight_10302101_C">();
+		BP_STATIC_CLASS_IMPL("Weapon_MoonKnight_10302101_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Weapon_MoonKnight_10302101_C")
 	}
 	static class AWeapon_MoonKnight_10302101_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeapon_MoonKnight_10302101_C>();
 	}
 };
-static_assert(alignof(AWeapon_MoonKnight_10302101_C) == 0x000010, "Wrong alignment on AWeapon_MoonKnight_10302101_C");
-static_assert(sizeof(AWeapon_MoonKnight_10302101_C) == 0x000CB0, "Wrong size on AWeapon_MoonKnight_10302101_C");
+DUMPER7_ASSERTS_AWeapon_MoonKnight_10302101_C;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_Rank_RewardContent_MarvelSetVisible final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Rank_RewardContent_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Rank_RewardContent_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Rank_RewardContent_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Rank_RewardContent_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Rank_RewardContent_MarvelSetVisible, visible) == 0x000000, "Member 'PyWidget_Rank_RewardContent_MarvelSetVisible::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Rank_RewardContent_MarvelSetVisible;
 
 // PythonFunction PyWidget_Rank_RewardContent.PyWidget_Rank_RewardContent.on_try_srcoll_when_next_focusable_child_change
 // 0x0018 (0x0018 - 0x0000)
@@ -36,12 +34,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UButton*                                ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change) == 0x000008, "Wrong alignment on PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change");
-static_assert(sizeof(PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change) == 0x000018, "Wrong size on PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change");
-static_assert(offsetof(PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change, ChildIndex) == 0x000000, "Member 'PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change::ChildIndex' has a wrong offset!");
-static_assert(offsetof(PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change, FocusedChildDirection) == 0x000004, "Member 'PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change::FocusedChildDirection' has a wrong offset!");
-static_assert(offsetof(PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change, NumItemsLine) == 0x000008, "Member 'PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change::NumItemsLine' has a wrong offset!");
-static_assert(offsetof(PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change, ReturnValue) == 0x000010, "Member 'PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Rank_RewardContent_on_try_srcoll_when_next_focusable_child_change;
 
 // PythonFunction PyWidget_Rank_RewardContent.WBP_Rank_RuleContent.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -50,9 +43,7 @@ struct WBP_Rank_RuleContent_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Rank_RuleContent_MarvelSetVisible) == 0x000001, "Wrong alignment on WBP_Rank_RuleContent_MarvelSetVisible");
-static_assert(sizeof(WBP_Rank_RuleContent_MarvelSetVisible) == 0x000001, "Wrong size on WBP_Rank_RuleContent_MarvelSetVisible");
-static_assert(offsetof(WBP_Rank_RuleContent_MarvelSetVisible, Visible) == 0x000000, "Member 'WBP_Rank_RuleContent_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Rank_RuleContent_MarvelSetVisible;
 
 }
 

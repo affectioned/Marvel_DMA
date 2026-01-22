@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_10424111.PyEffectAbility_120_10424111
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyEffectAbility_120_10424111 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         MaxSummonedNum;                                    // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SummonedHeath;                                     // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ModifiedSpawnSpideInterval;                        // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxSummonedNum;                                    // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SummonedHeath;                                     // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ModifiedSpawnSpideInterval;                        // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10424111">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10424111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10424111")
 	}
 	static class UPyEffectAbility_120_10424111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_120_10424111>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_120_10424111) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10424111");
-static_assert(sizeof(UPyEffectAbility_120_10424111) == 0x001380, "Wrong size on UPyEffectAbility_120_10424111");
-static_assert(offsetof(UPyEffectAbility_120_10424111, MaxSummonedNum) == 0x001370, "Member 'UPyEffectAbility_120_10424111::MaxSummonedNum' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10424111, SummonedHeath) == 0x001374, "Member 'UPyEffectAbility_120_10424111::SummonedHeath' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10424111, ModifiedSpawnSpideInterval) == 0x001378, "Member 'UPyEffectAbility_120_10424111::ModifiedSpawnSpideInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10424111;
 
 }
 

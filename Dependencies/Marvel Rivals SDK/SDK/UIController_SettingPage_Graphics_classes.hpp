@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_SettingPage_Graphics">();
+		STATIC_CLASS_IMPL("PyUIController_SettingPage_Graphics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_SettingPage_Graphics")
 	}
 	static class UPyUIController_SettingPage_Graphics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_SettingPage_Graphics>();
 	}
 };
-static_assert(alignof(UPyUIController_SettingPage_Graphics) == 0x000008, "Wrong alignment on UPyUIController_SettingPage_Graphics");
-static_assert(sizeof(UPyUIController_SettingPage_Graphics) == 0x000030, "Wrong size on UPyUIController_SettingPage_Graphics");
+DUMPER7_ASSERTS_UPyUIController_SettingPage_Graphics;
 
 }
 

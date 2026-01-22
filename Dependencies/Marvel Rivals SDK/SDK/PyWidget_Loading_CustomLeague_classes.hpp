@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
 #include "PyWidget_Loading_Game_classes.hpp"
+#include "InputCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Loading_CustomLeague.PyWidget_Loading_CustomLeague
-// 0x0048 (0x07D8 - 0x0790)
+// 0x0048 (0x07E0 - 0x0798)
 class UPyWidget_Loading_CustomLeague final : public UPyWidget_Loading_Game
 {
 public:
-	int32                                         Show_Clan_Info_Time;                               // 0x0790(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_794[0x4];                                      // 0x0794(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   AnonymousModeKey;                                  // 0x0798(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   ReplayAnonymousModeKey;                            // 0x07B8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Show_Clan_Info_Time;                               // 0x0798(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_79C[0x4];                                      // 0x079C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   AnonymousModeKey;                                  // 0x07A0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   ReplayAnonymousModeKey;                            // 0x07C0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Loading_CustomLeague">();
+		STATIC_CLASS_IMPL("PyWidget_Loading_CustomLeague")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Loading_CustomLeague")
 	}
 	static class UPyWidget_Loading_CustomLeague* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Loading_CustomLeague>();
 	}
 };
-static_assert(alignof(UPyWidget_Loading_CustomLeague) == 0x000008, "Wrong alignment on UPyWidget_Loading_CustomLeague");
-static_assert(sizeof(UPyWidget_Loading_CustomLeague) == 0x0007D8, "Wrong size on UPyWidget_Loading_CustomLeague");
-static_assert(offsetof(UPyWidget_Loading_CustomLeague, Show_Clan_Info_Time) == 0x000790, "Member 'UPyWidget_Loading_CustomLeague::Show_Clan_Info_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Loading_CustomLeague, AnonymousModeKey) == 0x000798, "Member 'UPyWidget_Loading_CustomLeague::AnonymousModeKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Loading_CustomLeague, ReplayAnonymousModeKey) == 0x0007B8, "Member 'UPyWidget_Loading_CustomLeague::ReplayAnonymousModeKey' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Loading_CustomLeague;
 
 }
 

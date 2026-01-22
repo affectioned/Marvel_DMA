@@ -20,90 +20,94 @@ namespace SDK
 {
 
 // PythonClass PyMarvelPlayerState.PyMarvelPlayerState
-// 0x03A0 (0x1240 - 0x0EA0)
+// 0x03D0 (0x12D0 - 0x0F00)
 class APyMarvelPlayerState : public AMarvelPlayerState
 {
 public:
-	int32                                         PreviewHeroID;                                     // 0x0EA0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         EquipSkinID;                                       // 0x0EA4(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<int32>                                 BondSuggestionHeroIDList;                          // 0x0EA8(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          IsInBirthbase;                                     // 0x0EB8(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsInBornFightArea;                                 // 0x0EB9(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EBA[0x2];                                      // 0x0EBA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         BadgeValue;                                        // 0x0EBC(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsScoreBoard;                                      // 0x0EC0(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EC1[0x7];                                      // 0x0EC1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPyPlayerStateConnectComponent*         ConnectComp;                                       // 0x0EC8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyPlayerStateGameBehaviorComponent*    GameBehaviorComp;                                  // 0x0ED0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HeroRoleLimit;                                     // 0x0ED8(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TrainAIReliveTime;                                 // 0x0EDC(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FReplicateTimer                        RespawnReplicateTimer;                             // 0x0EE0(0x0078)(BlueprintVisible, Net, NativeAccessSpecifierPublic)
-	bool                                          IsWoodPile;                                        // 0x0F58(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F59[0x3];                                      // 0x0F59(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MultiKillCount;                                    // 0x0F5C(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         KillingSpreeCount;                                 // 0x0F60(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SurvivalKillCount;                                 // 0x0F64(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HalloweenTotalDamage;                              // 0x0F68(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RecordUID;                                         // 0x0F6C(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         State;                                             // 0x0F70(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F74[0x4];                                      // 0x0F74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         ActiveEmoji;                                       // 0x0F78(0x0010)(BlueprintVisible, Net, NativeAccessSpecifierPublic)
-	int32                                         SelectingBanpickHeroID;                            // 0x0F88(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BanPickHeroID;                                     // 0x0F8C(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SuggestBanPickHeroID;                              // 0x0F90(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsCaptain;                                         // 0x0F94(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsCoach;                                           // 0x0F95(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsFirstPosOnCustomGame;                            // 0x0F96(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EHeroRole                                     SuggestHeroRole;                                   // 0x0F97(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          AgreeSurrender;                                    // 0x0F98(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          HasInactive;                                       // 0x0F99(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F9A[0x6];                                      // 0x0F9A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ReticleSetting;                                    // 0x0FA0(0x0010)(BlueprintVisible, Net, ZeroConstructor, RepNotify, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FHeroInputSetting>              HeroInputSettings;                                 // 0x0FB0(0x0010)(BlueprintVisible, Net, RepNotify, NativeAccessSpecifierPublic)
-	bool                                          IsCheckSelectable;                                 // 0x0FC0(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FC1[0x7];                                      // 0x0FC1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 SelectHeroIDs;                                     // 0x0FC8(0x0010)(BlueprintVisible, Net, RepNotify, NativeAccessSpecifierPublic)
-	TArray<int32>                                 MultiSelectModeHeroIDs;                            // 0x0FD8(0x0010)(BlueprintVisible, Net, RepNotify, NativeAccessSpecifierPublic)
-	bool                                          HasConfirmOnMultiSelectMode;                       // 0x0FE8(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FE9[0x3];                                      // 0x0FE9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         BattleChessGroupID;                                // 0x0FEC(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 hero_id)> OnPreviewHeroIDChangeDispatcher;                   // 0x0FF0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 skin_id)> OnEquipSkinIDChangeDispatcher;                     // 0x1000(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<int32>& hero_id_list)> OnBondSuggestionHeroIDListChangeDispatcher; // 0x1010(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 SuggestBanPickHeroID)> OnSuggestBanPickHeroIDChangeDispatcher; // 0x1020(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EHeroRole SuggestHeroRole)> OnSuggestRoleChangeDispatcher;         // 0x1030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* Ps, bool IsInBirthbase)> OnIsInBirthbaseChangeDispatcher; // 0x1040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool is_score)> OnScoreBoardChangeDispatcher;                      // 0x1050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float Delay)>   OnResetDelayRespawnDispatcher;                     // 0x1060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnRespawnTimerUpdateDispatcher;                    // 0x1070(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* Ps, int32 RecordUID)> OnRecordUIDChangeDispatcher; // 0x1080(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PS)> OnSpawnCharacter;                   // 0x1090(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 KillingSpreeCount, class AMarvelPlayerState* PS)> OnKillingSpreeCountChangedDispatcher; // 0x10A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 SurvivalKillCount)> OnSurvivalKillCountChangedDispatcher;    // 0x10B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 SourceHeroId)> OnUpdateConsecutiveKillDispatcher;            // 0x10C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 SourceHeroId)> OnSettleConsecutiveKillDispatcher;            // 0x10D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* ps, bool is_inactive, int32 inactive_type)> OnReportClientInactiveDispatcher; // 0x10E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* ps)> OnReportClientAlreadyInactivedDispatcher; // 0x10F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* ps, int32 behavior)> OnGameBehaviorReportDispatcher; // 0x1100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* ps, bool has_inactive)> OnPlayerHasInactiveChangeDispatcher; // 0x1110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 BanPickHeroID)> OnBanPickHeroIDChangeDispatcher;             // 0x1120(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 HeroID)>  OnBanPickSelectingHeroIDChanged;                   // 0x1130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsCaptain)> OnIsCaptainChangeDispatcher;                      // 0x1140(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsCoach)>  OnIsCoachChangeDispatcher;                         // 0x1150(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<uint8>& Data)> OnUpdateTaskDataDispatcher;            // 0x1160(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 achieve_type, int32 val)> OnSpecialAchieveCompleteDispatcher; // 0x1170(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnReticleSettingChangedDispatcher;                 // 0x1180(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnControlSettingChangedDispatcher;                 // 0x1190(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool Checked)>  OnIsCheckSelectableHeroIDChanged;                  // 0x11A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<int32>& HeroIDs)> OnSelectableHeroIDsChanged;         // 0x11B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<int32>& hero_id_list)> OnMultiSelectModeHeroIDsChange; // 0x11C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool has_confirm)> OnHasConfirmOnMultiSelectModeChange;            // 0x11D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UActorComponent* actor_component)> OnPlayerStateBattleChessComponentInit; // 0x11E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UActorComponent* actor_component)> OnPlayerStateHalloweenComponentInit; // 0x11F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 BattleChessGroupID)> OnBattleChessGroupIDChanged;            // 0x1200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 UID, const class FString& EmojiID, const class FString& EmojiParams)> OnPlayerEmitEmoji; // 0x1210(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayerEmitEmojiFrequent;                         // 0x1220(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float damage)>  OnHalloweenTotalDamageChangeDispatcher;            // 0x1230(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         PreviewHeroID;                                     // 0x0F00(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         EquipSkinID;                                       // 0x0F04(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 BondSuggestionHeroIDList;                          // 0x0F08(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsInBirthbase;                                     // 0x0F18(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsInBornFightArea;                                 // 0x0F19(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F1A[0x2];                                      // 0x0F1A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BadgeValue;                                        // 0x0F1C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsScoreBoard;                                      // 0x0F20(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F21[0x7];                                      // 0x0F21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPyPlayerStateConnectComponent*         ConnectComp;                                       // 0x0F28(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyPlayerStateGameBehaviorComponent*    GameBehaviorComp;                                  // 0x0F30(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HeroRoleLimit;                                     // 0x0F38(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TrainAIReliveTime;                                 // 0x0F3C(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FReplicateTimer                        RespawnReplicateTimer;                             // 0x0F40(0x0078)(BlueprintVisible, Net, NativeAccessSpecifierPublic)
+	bool                                          IsWoodPile;                                        // 0x0FB8(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsRematch;                                         // 0x0FB9(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_FBA[0x2];                                      // 0x0FBA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MultiKillCount;                                    // 0x0FBC(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         KillingSpreeCount;                                 // 0x0FC0(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SurvivalKillCount;                                 // 0x0FC4(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HalloweenTotalDamage;                              // 0x0FC8(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RecordUID;                                         // 0x0FCC(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         State;                                             // 0x0FD0(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_FD4[0x4];                                      // 0x0FD4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         ActiveEmoji;                                       // 0x0FD8(0x0010)(BlueprintVisible, Net, NativeAccessSpecifierPublic)
+	int32                                         SelectingBanpickHeroID;                            // 0x0FE8(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BanPickHeroID;                                     // 0x0FEC(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SuggestBanPickHeroID;                              // 0x0FF0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsCaptain;                                         // 0x0FF4(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsCoach;                                           // 0x0FF5(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsFirstPosOnCustomGame;                            // 0x0FF6(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EHeroRole                                     SuggestHeroRole;                                   // 0x0FF7(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          AgreeSurrender;                                    // 0x0FF8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          HasInactive;                                       // 0x0FF9(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_FFA[0x6];                                      // 0x0FFA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ReticleSetting;                                    // 0x1000(0x0010)(BlueprintVisible, Net, ZeroConstructor, RepNotify, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FHeroInputSetting>              HeroInputSettings;                                 // 0x1010(0x0010)(BlueprintVisible, Net, RepNotify, NativeAccessSpecifierPublic)
+	bool                                          IsCheckSelectable;                                 // 0x1020(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1021[0x7];                                     // 0x1021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 SelectHeroIDs;                                     // 0x1028(0x0010)(BlueprintVisible, Net, RepNotify, NativeAccessSpecifierPublic)
+	TArray<int32>                                 MultiSelectModeHeroIDs;                            // 0x1038(0x0010)(BlueprintVisible, Net, RepNotify, NativeAccessSpecifierPublic)
+	bool                                          HasConfirmOnMultiSelectMode;                       // 0x1048(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1049[0x3];                                     // 0x1049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BattleChessGroupID;                                // 0x104C(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 hero_id)> OnPreviewHeroIDChangeDispatcher;                   // 0x1050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 skin_id)> OnEquipSkinIDChangeDispatcher;                     // 0x1060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<int32>& hero_id_list, int32 bond_group_id)> OnBondSuggestionHeroIDListChangeDispatcher; // 0x1070(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 SuggestBanPickHeroID)> OnSuggestBanPickHeroIDChangeDispatcher; // 0x1080(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EHeroRole SuggestHeroRole)> OnSuggestRoleChangeDispatcher;         // 0x1090(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* Ps, bool IsInBirthbase)> OnIsInBirthbaseChangeDispatcher; // 0x10A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool is_score)> OnScoreBoardChangeDispatcher;                      // 0x10B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Delay)>   OnResetDelayRespawnDispatcher;                     // 0x10C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnRespawnTimerUpdateDispatcher;                    // 0x10D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* Ps, int32 RecordUID)> OnRecordUIDChangeDispatcher; // 0x10E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PS)> OnSpawnCharacter;                   // 0x10F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 KillingSpreeCount, class AMarvelPlayerState* PS)> OnKillingSpreeCountChangedDispatcher; // 0x1100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 SurvivalKillCount)> OnSurvivalKillCountChangedDispatcher;    // 0x1110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 SourceHeroId)> OnUpdateConsecutiveKillDispatcher;            // 0x1120(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 SourceHeroId)> OnSettleConsecutiveKillDispatcher;            // 0x1130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* ps, bool is_inactive, int32 inactive_type)> OnReportClientInactiveDispatcher; // 0x1140(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* ps)> OnReportClientAlreadyInactivedDispatcher; // 0x1150(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* ps, int32 behavior)> OnGameBehaviorReportDispatcher; // 0x1160(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* ps, bool has_inactive)> OnPlayerHasInactiveChangeDispatcher; // 0x1170(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 BanPickHeroID)> OnBanPickHeroIDChangeDispatcher;             // 0x1180(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 HeroID)>  OnBanPickSelectingHeroIDChanged;                   // 0x1190(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsCaptain)> OnIsCaptainChangeDispatcher;                      // 0x11A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsCoach)>  OnIsCoachChangeDispatcher;                         // 0x11B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<uint8>& Data)> OnUpdateTaskDataDispatcher;            // 0x11C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 achieve_type, int32 val)> OnSpecialAchieveCompleteDispatcher; // 0x11D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnReticleSettingChangedDispatcher;                 // 0x11E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnControlSettingChangedDispatcher;                 // 0x11F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool Checked)>  OnIsCheckSelectableHeroIDChanged;                  // 0x1200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<int32>& HeroIDs)> OnSelectableHeroIDsChanged;         // 0x1210(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<int32>& hero_id_list)> OnMultiSelectModeHeroIDsChange; // 0x1220(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool has_confirm)> OnHasConfirmOnMultiSelectModeChange;            // 0x1230(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UActorComponent* actor_component)> OnPlayerStateBattleChessComponentInit; // 0x1240(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UActorComponent* Comp)> OnPlayerStateComponentBegunPlayForBindingProxy; // 0x1250(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UActorComponent* actor_component)> OnPlayerStateHalloweenComponentInit; // 0x1260(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UActorComponent* actor_component)> OnPlayerStateDuelComponentInit; // 0x1270(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UActorComponent* actor_component)> OnPlayerStateDuelComponentDestroy; // 0x1280(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 BattleChessGroupID)> OnBattleChessGroupIDChanged;            // 0x1290(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 UID, const class FString& EmojiID, const class FString& EmojiParams)> OnPlayerEmitEmoji; // 0x12A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayerEmitEmojiFrequent;                         // 0x12B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float damage)>  OnHalloweenTotalDamageChangeDispatcher;            // 0x12C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -121,8 +125,8 @@ public:
 	void ServerChangePreviewID(int32 hero_id);
 	void ServerChangeWinterFestivalRole(int32 Role_0);
 	void ServerChangeEquipSkinID(int32 skin_id);
-	void ServerChangeBondSuggestionHeroIDList(const TArray<int32>& hero_id_list);
-	void NetMulticast_BondSuggestionHeroIDList(const TArray<int32>& hero_id_list);
+	void ServerChangeBondSuggestionHeroIDList(const TArray<int32>& hero_id_list, int32 BondGroupID);
+	void NetMulticast_BondSuggestionHeroIDList(const TArray<int32>& hero_id_list, int32 BondGroupID);
 	void ReqUpvoteOther(int32 player_uid);
 	void SetOnlineStatus(EOnlineStatus InStatus);
 	void SetRespawnTime(float respawn_time);
@@ -144,11 +148,11 @@ public:
 	void OnRep_SurvivalKillCount();
 	void SrvSelectingBanpickHeroID(int32 hero_id);
 	void OnRep_SelectBanpickHeroID();
-	void ServerChangeBanPickHeroID(int32 hero_id);
+	void ServerChangeBanPickHeroID(int32 hero_id, int32 group_id);
 	void OnRep_BanPickHeroID();
 	void ServerChangeBanPickSuggestionHeroID(int32 hero_id);
 	void OnRep_SuggestBanPickHeroID();
-	void ServerChangeSuggestionRole(EHeroRole HeroRole);
+	void ServerChangeSuggestionRole(EHeroRole HeroRole_0);
 	void OnRep_SuggestHeroRole();
 	void OnRep_IsCaptain();
 	void OnRep_IsCoach();
@@ -178,92 +182,25 @@ public:
 	void ServerPlayerEmitEmoji(int32 HeroID, const class FString& EmojiID);
 	void NetMulticast_PlayerEmitEmoji(int32 UID_0, const class FString& EmojiID, const class FString& EmojiParams);
 	void Client_PlayerEmitEmojiFrequent();
+	void MultiCastChangeBattleSide(EBattleSide battle_side);
+
+	int32 GetRecordUID() const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelPlayerState">();
+		STATIC_CLASS_IMPL("PyMarvelPlayerState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelPlayerState")
 	}
 	static class APyMarvelPlayerState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelPlayerState>();
 	}
 };
-static_assert(alignof(APyMarvelPlayerState) == 0x000010, "Wrong alignment on APyMarvelPlayerState");
-static_assert(sizeof(APyMarvelPlayerState) == 0x001240, "Wrong size on APyMarvelPlayerState");
-static_assert(offsetof(APyMarvelPlayerState, PreviewHeroID) == 0x000EA0, "Member 'APyMarvelPlayerState::PreviewHeroID' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, EquipSkinID) == 0x000EA4, "Member 'APyMarvelPlayerState::EquipSkinID' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, BondSuggestionHeroIDList) == 0x000EA8, "Member 'APyMarvelPlayerState::BondSuggestionHeroIDList' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, IsInBirthbase) == 0x000EB8, "Member 'APyMarvelPlayerState::IsInBirthbase' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, IsInBornFightArea) == 0x000EB9, "Member 'APyMarvelPlayerState::IsInBornFightArea' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, BadgeValue) == 0x000EBC, "Member 'APyMarvelPlayerState::BadgeValue' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, IsScoreBoard) == 0x000EC0, "Member 'APyMarvelPlayerState::IsScoreBoard' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, ConnectComp) == 0x000EC8, "Member 'APyMarvelPlayerState::ConnectComp' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, GameBehaviorComp) == 0x000ED0, "Member 'APyMarvelPlayerState::GameBehaviorComp' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, HeroRoleLimit) == 0x000ED8, "Member 'APyMarvelPlayerState::HeroRoleLimit' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, TrainAIReliveTime) == 0x000EDC, "Member 'APyMarvelPlayerState::TrainAIReliveTime' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, RespawnReplicateTimer) == 0x000EE0, "Member 'APyMarvelPlayerState::RespawnReplicateTimer' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, IsWoodPile) == 0x000F58, "Member 'APyMarvelPlayerState::IsWoodPile' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, MultiKillCount) == 0x000F5C, "Member 'APyMarvelPlayerState::MultiKillCount' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, KillingSpreeCount) == 0x000F60, "Member 'APyMarvelPlayerState::KillingSpreeCount' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, SurvivalKillCount) == 0x000F64, "Member 'APyMarvelPlayerState::SurvivalKillCount' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, HalloweenTotalDamage) == 0x000F68, "Member 'APyMarvelPlayerState::HalloweenTotalDamage' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, RecordUID) == 0x000F6C, "Member 'APyMarvelPlayerState::RecordUID' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, State) == 0x000F70, "Member 'APyMarvelPlayerState::State' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, ActiveEmoji) == 0x000F78, "Member 'APyMarvelPlayerState::ActiveEmoji' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, SelectingBanpickHeroID) == 0x000F88, "Member 'APyMarvelPlayerState::SelectingBanpickHeroID' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, BanPickHeroID) == 0x000F8C, "Member 'APyMarvelPlayerState::BanPickHeroID' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, SuggestBanPickHeroID) == 0x000F90, "Member 'APyMarvelPlayerState::SuggestBanPickHeroID' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, IsCaptain) == 0x000F94, "Member 'APyMarvelPlayerState::IsCaptain' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, IsCoach) == 0x000F95, "Member 'APyMarvelPlayerState::IsCoach' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, IsFirstPosOnCustomGame) == 0x000F96, "Member 'APyMarvelPlayerState::IsFirstPosOnCustomGame' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, SuggestHeroRole) == 0x000F97, "Member 'APyMarvelPlayerState::SuggestHeroRole' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, AgreeSurrender) == 0x000F98, "Member 'APyMarvelPlayerState::AgreeSurrender' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, HasInactive) == 0x000F99, "Member 'APyMarvelPlayerState::HasInactive' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, ReticleSetting) == 0x000FA0, "Member 'APyMarvelPlayerState::ReticleSetting' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, HeroInputSettings) == 0x000FB0, "Member 'APyMarvelPlayerState::HeroInputSettings' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, IsCheckSelectable) == 0x000FC0, "Member 'APyMarvelPlayerState::IsCheckSelectable' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, SelectHeroIDs) == 0x000FC8, "Member 'APyMarvelPlayerState::SelectHeroIDs' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, MultiSelectModeHeroIDs) == 0x000FD8, "Member 'APyMarvelPlayerState::MultiSelectModeHeroIDs' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, HasConfirmOnMultiSelectMode) == 0x000FE8, "Member 'APyMarvelPlayerState::HasConfirmOnMultiSelectMode' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, BattleChessGroupID) == 0x000FEC, "Member 'APyMarvelPlayerState::BattleChessGroupID' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnPreviewHeroIDChangeDispatcher) == 0x000FF0, "Member 'APyMarvelPlayerState::OnPreviewHeroIDChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnEquipSkinIDChangeDispatcher) == 0x001000, "Member 'APyMarvelPlayerState::OnEquipSkinIDChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnBondSuggestionHeroIDListChangeDispatcher) == 0x001010, "Member 'APyMarvelPlayerState::OnBondSuggestionHeroIDListChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnSuggestBanPickHeroIDChangeDispatcher) == 0x001020, "Member 'APyMarvelPlayerState::OnSuggestBanPickHeroIDChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnSuggestRoleChangeDispatcher) == 0x001030, "Member 'APyMarvelPlayerState::OnSuggestRoleChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnIsInBirthbaseChangeDispatcher) == 0x001040, "Member 'APyMarvelPlayerState::OnIsInBirthbaseChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnScoreBoardChangeDispatcher) == 0x001050, "Member 'APyMarvelPlayerState::OnScoreBoardChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnResetDelayRespawnDispatcher) == 0x001060, "Member 'APyMarvelPlayerState::OnResetDelayRespawnDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnRespawnTimerUpdateDispatcher) == 0x001070, "Member 'APyMarvelPlayerState::OnRespawnTimerUpdateDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnRecordUIDChangeDispatcher) == 0x001080, "Member 'APyMarvelPlayerState::OnRecordUIDChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnSpawnCharacter) == 0x001090, "Member 'APyMarvelPlayerState::OnSpawnCharacter' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnKillingSpreeCountChangedDispatcher) == 0x0010A0, "Member 'APyMarvelPlayerState::OnKillingSpreeCountChangedDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnSurvivalKillCountChangedDispatcher) == 0x0010B0, "Member 'APyMarvelPlayerState::OnSurvivalKillCountChangedDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnUpdateConsecutiveKillDispatcher) == 0x0010C0, "Member 'APyMarvelPlayerState::OnUpdateConsecutiveKillDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnSettleConsecutiveKillDispatcher) == 0x0010D0, "Member 'APyMarvelPlayerState::OnSettleConsecutiveKillDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnReportClientInactiveDispatcher) == 0x0010E0, "Member 'APyMarvelPlayerState::OnReportClientInactiveDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnReportClientAlreadyInactivedDispatcher) == 0x0010F0, "Member 'APyMarvelPlayerState::OnReportClientAlreadyInactivedDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnGameBehaviorReportDispatcher) == 0x001100, "Member 'APyMarvelPlayerState::OnGameBehaviorReportDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnPlayerHasInactiveChangeDispatcher) == 0x001110, "Member 'APyMarvelPlayerState::OnPlayerHasInactiveChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnBanPickHeroIDChangeDispatcher) == 0x001120, "Member 'APyMarvelPlayerState::OnBanPickHeroIDChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnBanPickSelectingHeroIDChanged) == 0x001130, "Member 'APyMarvelPlayerState::OnBanPickSelectingHeroIDChanged' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnIsCaptainChangeDispatcher) == 0x001140, "Member 'APyMarvelPlayerState::OnIsCaptainChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnIsCoachChangeDispatcher) == 0x001150, "Member 'APyMarvelPlayerState::OnIsCoachChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnUpdateTaskDataDispatcher) == 0x001160, "Member 'APyMarvelPlayerState::OnUpdateTaskDataDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnSpecialAchieveCompleteDispatcher) == 0x001170, "Member 'APyMarvelPlayerState::OnSpecialAchieveCompleteDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnReticleSettingChangedDispatcher) == 0x001180, "Member 'APyMarvelPlayerState::OnReticleSettingChangedDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnControlSettingChangedDispatcher) == 0x001190, "Member 'APyMarvelPlayerState::OnControlSettingChangedDispatcher' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnIsCheckSelectableHeroIDChanged) == 0x0011A0, "Member 'APyMarvelPlayerState::OnIsCheckSelectableHeroIDChanged' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnSelectableHeroIDsChanged) == 0x0011B0, "Member 'APyMarvelPlayerState::OnSelectableHeroIDsChanged' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnMultiSelectModeHeroIDsChange) == 0x0011C0, "Member 'APyMarvelPlayerState::OnMultiSelectModeHeroIDsChange' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnHasConfirmOnMultiSelectModeChange) == 0x0011D0, "Member 'APyMarvelPlayerState::OnHasConfirmOnMultiSelectModeChange' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnPlayerStateBattleChessComponentInit) == 0x0011E0, "Member 'APyMarvelPlayerState::OnPlayerStateBattleChessComponentInit' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnPlayerStateHalloweenComponentInit) == 0x0011F0, "Member 'APyMarvelPlayerState::OnPlayerStateHalloweenComponentInit' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnBattleChessGroupIDChanged) == 0x001200, "Member 'APyMarvelPlayerState::OnBattleChessGroupIDChanged' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnPlayerEmitEmoji) == 0x001210, "Member 'APyMarvelPlayerState::OnPlayerEmitEmoji' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnPlayerEmitEmojiFrequent) == 0x001220, "Member 'APyMarvelPlayerState::OnPlayerEmitEmojiFrequent' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerState, OnHalloweenTotalDamageChangeDispatcher) == 0x001230, "Member 'APyMarvelPlayerState::OnHalloweenTotalDamageChangeDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelPlayerState;
 
 }
 

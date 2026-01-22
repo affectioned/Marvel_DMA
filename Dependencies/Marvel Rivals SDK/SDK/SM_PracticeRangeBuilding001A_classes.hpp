@@ -29,18 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_PracticeRangeBuilding001A_C">();
+		BP_STATIC_CLASS_IMPL("SM_PracticeRangeBuilding001A_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_PracticeRangeBuilding001A_C")
 	}
 	static class ASM_PracticeRangeBuilding001A_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_PracticeRangeBuilding001A_C>();
 	}
 };
-static_assert(alignof(ASM_PracticeRangeBuilding001A_C) == 0x000010, "Wrong alignment on ASM_PracticeRangeBuilding001A_C");
-static_assert(sizeof(ASM_PracticeRangeBuilding001A_C) == 0x000700, "Wrong size on ASM_PracticeRangeBuilding001A_C");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_C, SM_PracticeRangeBuilding001Ac) == 0x0006E0, "Member 'ASM_PracticeRangeBuilding001A_C::SM_PracticeRangeBuilding001Ac' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_C, SM_PracticeRangeBuilding001Ab) == 0x0006E8, "Member 'ASM_PracticeRangeBuilding001A_C::SM_PracticeRangeBuilding001Ab' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_C, SM_PracticeRangeBuilding001A) == 0x0006F0, "Member 'ASM_PracticeRangeBuilding001A_C::SM_PracticeRangeBuilding001A' has a wrong offset!");
+DUMPER7_ASSERTS_ASM_PracticeRangeBuilding001A_C;
 
 }
 

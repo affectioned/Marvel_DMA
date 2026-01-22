@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallDetail.PyWidget_MallDetail_ConfirmBtn
-// 0x0000 (0x06A0 - 0x06A0)
+// 0x0000 (0x06A8 - 0x06A8)
 class UPyWidget_MallDetail_ConfirmBtn : public UPyWidget_Common_SecondaryConfirm_Button
 {
 public:
@@ -31,26 +31,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallDetail_ConfirmBtn">();
+		STATIC_CLASS_IMPL("PyWidget_MallDetail_ConfirmBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallDetail_ConfirmBtn")
 	}
 	static class UPyWidget_MallDetail_ConfirmBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallDetail_ConfirmBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_MallDetail_ConfirmBtn) == 0x000008, "Wrong alignment on UPyWidget_MallDetail_ConfirmBtn");
-static_assert(sizeof(UPyWidget_MallDetail_ConfirmBtn) == 0x0006A0, "Wrong size on UPyWidget_MallDetail_ConfirmBtn");
+DUMPER7_ASSERTS_UPyWidget_MallDetail_ConfirmBtn;
 
 // PythonClass PyWidget_MallDetail.PyWidget_MallDetail_Item
-// 0x0040 (0x0600 - 0x05C0)
+// 0x0040 (0x0608 - 0x05C8)
 class UPyWidget_MallDetail_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 ItemIndex)> OnClickPrice;                                    // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ItemIndex)> OnHoveredPrice;                                  // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ItemIndex)> OnUnHoveredPrice;                                // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ItemIndex)> OnItemClicked;                                   // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 ItemIndex)> OnClickPrice;                                    // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ItemIndex)> OnHoveredPrice;                                  // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ItemIndex)> OnUnHoveredPrice;                                // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ItemIndex)> OnItemClicked;                                   // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -59,49 +62,51 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallDetail_Item">();
+		STATIC_CLASS_IMPL("PyWidget_MallDetail_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallDetail_Item")
 	}
 	static class UPyWidget_MallDetail_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallDetail_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_MallDetail_Item) == 0x000008, "Wrong alignment on UPyWidget_MallDetail_Item");
-static_assert(sizeof(UPyWidget_MallDetail_Item) == 0x000600, "Wrong size on UPyWidget_MallDetail_Item");
-static_assert(offsetof(UPyWidget_MallDetail_Item, OnClickPrice) == 0x0005C0, "Member 'UPyWidget_MallDetail_Item::OnClickPrice' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail_Item, OnHoveredPrice) == 0x0005D0, "Member 'UPyWidget_MallDetail_Item::OnHoveredPrice' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail_Item, OnUnHoveredPrice) == 0x0005E0, "Member 'UPyWidget_MallDetail_Item::OnUnHoveredPrice' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail_Item, OnItemClicked) == 0x0005F0, "Member 'UPyWidget_MallDetail_Item::OnItemClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallDetail_Item;
 
 // PythonClass PyWidget_MallDetail.PyWidget_MallDetail
-// 0x02F8 (0x08F0 - 0x05F8)
+// 0x0378 (0x0978 - 0x0600)
 class UPyWidget_MallDetail final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                AppreciationTipsStyle;                             // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ShowMenuStyle;                                     // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SkipStyle;                                         // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                BackStyle;                                         // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        SourceGuideStyle;                                  // 0x0638(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_MallDetail_Item>  DetailItemClass;                                   // 0x0758(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_MallDetail_ConfirmBtn> DetailConfirmClass;                           // 0x0760(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EItemQualityType, class UTexture2D*>     QualityIcons;                                      // 0x0768(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TitleAndNameLightColor;                            // 0x07B8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TypeLightColor;                                    // 0x07CC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DescLightColor;                                    // 0x07E0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SourceLightColor;                                  // 0x07F4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	bool                                          ConfirmKeyPromptVisible;                           // 0x0808(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_809[0x7];                                      // 0x0809(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          ConfirmHotKey;                                     // 0x0810(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          CancelKeyPromptVisible;                            // 0x0868(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_869[0x7];                                      // 0x0869(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          CancelHotKey;                                      // 0x0870(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnChangeItem;                              // 0x08C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_SourceGuide;                               // 0x08D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_HoverDesc;                                 // 0x08D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CustomSkinBoxHeight_High;                          // 0x08E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CustomSkinBoxHeight_Low;                           // 0x08E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxHeight_WrapBoxCustomSkin;                       // 0x08E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                AppreciationTipsStyle;                             // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShowMenuStyle;                                     // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipStyle;                                         // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                BackStyle;                                         // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        SourceGuideStyle;                                  // 0x0640(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_MallDetail_Item>  DetailItemClass;                                   // 0x0760(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_MallDetail_ConfirmBtn> DetailConfirmClass;                           // 0x0768(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EItemQualityType, class UTexture2D*>     QualityIcons;                                      // 0x0770(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TitleAndNameLightColor;                            // 0x07C0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TypeLightColor;                                    // 0x07D4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DescLightColor;                                    // 0x07E8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SourceLightColor;                                  // 0x07FC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BuyTipsColor_ReachLimit;                           // 0x0810(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BuyTipsColor_Normal;                               // 0x0824(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	bool                                          ConfirmKeyPromptVisible;                           // 0x0838(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_839[0x7];                                      // 0x0839(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          ConfirmHotKey;                                     // 0x0840(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          CancelKeyPromptVisible;                            // 0x0898(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_899[0x7];                                      // 0x0899(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          CancelHotKey;                                      // 0x08A0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnChangeItem;                              // 0x08F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUIActionData                          BuyBtnHotKey;                                      // 0x0900(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_SourceGuide;                               // 0x0958(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_HoverDesc;                                 // 0x0960(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CustomSkinBoxHeight_High;                          // 0x0968(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CustomSkinBoxHeight_Low;                           // 0x096C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxHeight_WrapBoxCustomSkin;                       // 0x0970(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -114,37 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallDetail">();
+		STATIC_CLASS_IMPL("PyWidget_MallDetail")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallDetail")
 	}
 	static class UPyWidget_MallDetail* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallDetail>();
 	}
 };
-static_assert(alignof(UPyWidget_MallDetail) == 0x000008, "Wrong alignment on UPyWidget_MallDetail");
-static_assert(sizeof(UPyWidget_MallDetail) == 0x0008F0, "Wrong size on UPyWidget_MallDetail");
-static_assert(offsetof(UPyWidget_MallDetail, AppreciationTipsStyle) == 0x0005F8, "Member 'UPyWidget_MallDetail::AppreciationTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, ShowMenuStyle) == 0x000608, "Member 'UPyWidget_MallDetail::ShowMenuStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, SkipStyle) == 0x000618, "Member 'UPyWidget_MallDetail::SkipStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, BackStyle) == 0x000628, "Member 'UPyWidget_MallDetail::BackStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, SourceGuideStyle) == 0x000638, "Member 'UPyWidget_MallDetail::SourceGuideStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, DetailItemClass) == 0x000758, "Member 'UPyWidget_MallDetail::DetailItemClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, DetailConfirmClass) == 0x000760, "Member 'UPyWidget_MallDetail::DetailConfirmClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, QualityIcons) == 0x000768, "Member 'UPyWidget_MallDetail::QualityIcons' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, TitleAndNameLightColor) == 0x0007B8, "Member 'UPyWidget_MallDetail::TitleAndNameLightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, TypeLightColor) == 0x0007CC, "Member 'UPyWidget_MallDetail::TypeLightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, DescLightColor) == 0x0007E0, "Member 'UPyWidget_MallDetail::DescLightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, SourceLightColor) == 0x0007F4, "Member 'UPyWidget_MallDetail::SourceLightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, ConfirmKeyPromptVisible) == 0x000808, "Member 'UPyWidget_MallDetail::ConfirmKeyPromptVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, ConfirmHotKey) == 0x000810, "Member 'UPyWidget_MallDetail::ConfirmHotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, CancelKeyPromptVisible) == 0x000868, "Member 'UPyWidget_MallDetail::CancelKeyPromptVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, CancelHotKey) == 0x000870, "Member 'UPyWidget_MallDetail::CancelHotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, AkEvent_OnChangeItem) == 0x0008C8, "Member 'UPyWidget_MallDetail::AkEvent_OnChangeItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, AKEvent_SourceGuide) == 0x0008D0, "Member 'UPyWidget_MallDetail::AKEvent_SourceGuide' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, AKEvent_HoverDesc) == 0x0008D8, "Member 'UPyWidget_MallDetail::AKEvent_HoverDesc' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, CustomSkinBoxHeight_High) == 0x0008E0, "Member 'UPyWidget_MallDetail::CustomSkinBoxHeight_High' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, CustomSkinBoxHeight_Low) == 0x0008E4, "Member 'UPyWidget_MallDetail::CustomSkinBoxHeight_Low' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallDetail, MaxHeight_WrapBoxCustomSkin) == 0x0008E8, "Member 'UPyWidget_MallDetail::MaxHeight_WrapBoxCustomSkin' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallDetail;
 
 }
 

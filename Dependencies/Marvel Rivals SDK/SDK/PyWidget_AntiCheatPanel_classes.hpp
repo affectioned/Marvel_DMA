@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_AntiCheatPanel.PyWidget_AntiCheatPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_AntiCheatPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AntiCheatPanel">();
+		STATIC_CLASS_IMPL("PyWidget_AntiCheatPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AntiCheatPanel")
 	}
 	static class UPyWidget_AntiCheatPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AntiCheatPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_AntiCheatPanel) == 0x000008, "Wrong alignment on UPyWidget_AntiCheatPanel");
-static_assert(sizeof(UPyWidget_AntiCheatPanel) == 0x0005F8, "Wrong size on UPyWidget_AntiCheatPanel");
+DUMPER7_ASSERTS_UPyWidget_AntiCheatPanel;
 
 }
 

@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CustomLeague_MapRulePanel.PyWidget_CustomLeague_MapRulePanel
-// 0x0020 (0x0618 - 0x05F8)
+// 0x0020 (0x0620 - 0x0600)
 class UPyWidget_CustomLeague_MapRulePanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UPyWidget_CustomLeague_MapCard> MapCardBP;                                     // 0x05F8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanIcon_Clash;                                    // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanIcon_MRC;                                      // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanIcon_Custom;                                   // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_CustomLeague_MapCard> MapCardBP;                                     // 0x0600(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanIcon_Clash;                                    // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanIcon_MRC;                                      // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanIcon_Custom;                                   // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomLeague_MapRulePanel">();
+		STATIC_CLASS_IMPL("PyWidget_CustomLeague_MapRulePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomLeague_MapRulePanel")
 	}
 	static class UPyWidget_CustomLeague_MapRulePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomLeague_MapRulePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomLeague_MapRulePanel) == 0x000008, "Wrong alignment on UPyWidget_CustomLeague_MapRulePanel");
-static_assert(sizeof(UPyWidget_CustomLeague_MapRulePanel) == 0x000618, "Wrong size on UPyWidget_CustomLeague_MapRulePanel");
-static_assert(offsetof(UPyWidget_CustomLeague_MapRulePanel, MapCardBP) == 0x0005F8, "Member 'UPyWidget_CustomLeague_MapRulePanel::MapCardBP' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomLeague_MapRulePanel, ClanIcon_Clash) == 0x000600, "Member 'UPyWidget_CustomLeague_MapRulePanel::ClanIcon_Clash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomLeague_MapRulePanel, ClanIcon_MRC) == 0x000608, "Member 'UPyWidget_CustomLeague_MapRulePanel::ClanIcon_MRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomLeague_MapRulePanel, ClanIcon_Custom) == 0x000610, "Member 'UPyWidget_CustomLeague_MapRulePanel::ClanIcon_Custom' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CustomLeague_MapRulePanel;
 
 }
 

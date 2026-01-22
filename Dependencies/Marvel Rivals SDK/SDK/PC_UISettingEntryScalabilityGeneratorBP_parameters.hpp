@@ -46,31 +46,7 @@ public:
 	int32                                         CallFunc_GetShadowQuality_ReturnValue;             // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetViewDistanceQuality_ReturnValue;       // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen) == 0x000008, "Wrong alignment on PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen");
-static_assert(sizeof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen) == 0x000108, "Wrong size on PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, Object) == 0x000000, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::Object' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, SettingKey) == 0x000008, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::SettingKey' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, Options) == 0x000018, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::Options' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, ReturnValue) == 0x000068, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, Temp_int_Variable) == 0x0000B8, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_Map_Remove_ReturnValue) == 0x0000BC, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_Map_Remove_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, K2Node_MakeArray_Array) == 0x0000C0, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_Array_Identical_ReturnValue) == 0x0000D0, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_Array_Identical_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_Array_Identical_ReturnValue_1) == 0x0000D1, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_Array_Identical_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_Array_Identical_ReturnValue_2) == 0x0000D2, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_Array_Identical_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_Array_Identical_ReturnValue_3) == 0x0000D3, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_Array_Identical_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_BooleanOR_ReturnValue) == 0x0000D4, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_BooleanOR_ReturnValue_1) == 0x0000D5, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_GetGameUserSettings_ReturnValue) == 0x0000D8, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_BooleanOR_ReturnValue_2) == 0x0000E0, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_GetReflectionQuality_ReturnValue) == 0x0000E4, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_GetReflectionQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_GetFoliageQuality_ReturnValue) == 0x0000E8, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_GetFoliageQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_GetPostProcessingQuality_ReturnValue) == 0x0000EC, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_GetPostProcessingQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_GetVisualEffectQuality_ReturnValue) == 0x0000F0, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_GetVisualEffectQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_GetTextureQuality_ReturnValue) == 0x0000F4, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_GetTextureQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_GetGlobalIlluminationQuality_ReturnValue) == 0x0000F8, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_GetGlobalIlluminationQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_GetShadowQuality_ReturnValue) == 0x0000FC, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_GetShadowQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen, CallFunc_GetViewDistanceQuality_ReturnValue) == 0x000100, "Member 'PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen::CallFunc_GetViewDistanceQuality_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PC_UISettingEntryScalabilityGeneratorBP_C_BP_Gen;
 
 }
 

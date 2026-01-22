@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoner_10547102_BP.Summoner_10547102_BP_C
-// 0x0010 (0x0B50 - 0x0B40)
+// 0x0010 (0x0B70 - 0x0B60)
 class ASummoner_10547102_BP_C final : public AMarvelSummonerBase
 {
 public:
-	class USummonedMovement_10547102*             SummonedMovement_10547102;                         // 0x0B40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedMovement_10547102*             SummonedMovement_10547102;                         // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoner_10547102_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoner_10547102_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoner_10547102_BP_C")
 	}
 	static class ASummoner_10547102_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoner_10547102_BP_C>();
 	}
 };
-static_assert(alignof(ASummoner_10547102_BP_C) == 0x000010, "Wrong alignment on ASummoner_10547102_BP_C");
-static_assert(sizeof(ASummoner_10547102_BP_C) == 0x000B50, "Wrong size on ASummoner_10547102_BP_C");
-static_assert(offsetof(ASummoner_10547102_BP_C, SummonedMovement_10547102) == 0x000B40, "Member 'ASummoner_10547102_BP_C::SummonedMovement_10547102' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoner_10547102_BP_C;
 
 }
 

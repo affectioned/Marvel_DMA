@@ -46,23 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AudioEmitterLine_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AudioEmitterLine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AudioEmitterLine_C")
 	}
 	static class UWBP_AudioEmitterLine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AudioEmitterLine_C>();
 	}
 };
-static_assert(alignof(UWBP_AudioEmitterLine_C) == 0x000008, "Wrong alignment on UWBP_AudioEmitterLine_C");
-static_assert(sizeof(UWBP_AudioEmitterLine_C) == 0x0003F8, "Wrong size on UWBP_AudioEmitterLine_C");
-static_assert(offsetof(UWBP_AudioEmitterLine_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_AudioEmitterLine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitterLine_C, AnimShow) == 0x0003C0, "Member 'UWBP_AudioEmitterLine_C::AnimShow' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitterLine_C, EventName) == 0x0003C8, "Member 'UWBP_AudioEmitterLine_C::EventName' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitterLine_C, MarvelHorizontalBox_125) == 0x0003D0, "Member 'UWBP_AudioEmitterLine_C::MarvelHorizontalBox_125' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitterLine_C, AkComp) == 0x0003D8, "Member 'UWBP_AudioEmitterLine_C::AkComp' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitterLine_C, AkEvent) == 0x0003E0, "Member 'UWBP_AudioEmitterLine_C::AkEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitterLine_C, Playing) == 0x0003E8, "Member 'UWBP_AudioEmitterLine_C::Playing' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitterLine_C, PostTime) == 0x0003F0, "Member 'UWBP_AudioEmitterLine_C::PostTime' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AudioEmitterLine_C;
 
 }
 

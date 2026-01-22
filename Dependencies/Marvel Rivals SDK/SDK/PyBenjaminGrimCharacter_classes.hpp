@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // PythonClass PyBenjaminGrimCharacter.PyBenjaminGrimChildActor
-// 0x0030 (0x0E50 - 0x0E20)
+// 0x0030 (0x0E60 - 0x0E30)
 class APyBenjaminGrimChildActor final : public AMarvelCharacterChildActor
 {
 public:
-	uint8                                         Pad_E18[0x8];                                      // 0x0E18(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           DashStateTag;                                      // 0x0E20(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           RushStateTag;                                      // 0x0E2C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           FootStepTag;                                       // 0x0E38(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E28[0x8];                                      // 0x0E28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           DashStateTag;                                      // 0x0E30(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           RushStateTag;                                      // 0x0E3C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           FootStepTag;                                       // 0x0E48(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBenjaminGrimChildActor">();
+		STATIC_CLASS_IMPL("PyBenjaminGrimChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBenjaminGrimChildActor")
 	}
 	static class APyBenjaminGrimChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBenjaminGrimChildActor>();
 	}
 };
-static_assert(alignof(APyBenjaminGrimChildActor) == 0x000010, "Wrong alignment on APyBenjaminGrimChildActor");
-static_assert(sizeof(APyBenjaminGrimChildActor) == 0x000E50, "Wrong size on APyBenjaminGrimChildActor");
-static_assert(offsetof(APyBenjaminGrimChildActor, DashStateTag) == 0x000E20, "Member 'APyBenjaminGrimChildActor::DashStateTag' has a wrong offset!");
-static_assert(offsetof(APyBenjaminGrimChildActor, RushStateTag) == 0x000E2C, "Member 'APyBenjaminGrimChildActor::RushStateTag' has a wrong offset!");
-static_assert(offsetof(APyBenjaminGrimChildActor, FootStepTag) == 0x000E38, "Member 'APyBenjaminGrimChildActor::FootStepTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyBenjaminGrimChildActor;
 
 // PythonClass PyBenjaminGrimCharacter.PyBenjaminGrimAnimInstance
 // 0x0000 (0x0B50 - 0x0B50)
@@ -59,15 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBenjaminGrimAnimInstance">();
+		STATIC_CLASS_IMPL("PyBenjaminGrimAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBenjaminGrimAnimInstance")
 	}
 	static class UPyBenjaminGrimAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBenjaminGrimAnimInstance>();
 	}
 };
-static_assert(alignof(UPyBenjaminGrimAnimInstance) == 0x000010, "Wrong alignment on UPyBenjaminGrimAnimInstance");
-static_assert(sizeof(UPyBenjaminGrimAnimInstance) == 0x000B50, "Wrong size on UPyBenjaminGrimAnimInstance");
+DUMPER7_ASSERTS_UPyBenjaminGrimAnimInstance;
 
 }
 

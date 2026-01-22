@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DestructibleActor">();
+		STATIC_CLASS_IMPL("DestructibleActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DestructibleActor")
 	}
 	static class ADestructibleActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADestructibleActor>();
 	}
 };
-static_assert(alignof(ADestructibleActor) == 0x000010, "Wrong alignment on ADestructibleActor");
-static_assert(sizeof(ADestructibleActor) == 0x0006F0, "Wrong size on ADestructibleActor");
-static_assert(offsetof(ADestructibleActor, DestructibleComponent) == 0x0006D8, "Member 'ADestructibleActor::DestructibleComponent' has a wrong offset!");
-static_assert(offsetof(ADestructibleActor, OnActorFracture) == 0x0006E0, "Member 'ADestructibleActor::OnActorFracture' has a wrong offset!");
+DUMPER7_ASSERTS_ADestructibleActor;
 
 // Class ApexDestruction.DestructibleComponent
 // 0x00A0 (0x0D30 - 0x0C90)
@@ -66,19 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DestructibleComponent">();
+		STATIC_CLASS_IMPL("DestructibleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DestructibleComponent")
 	}
 	static class UDestructibleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDestructibleComponent>();
 	}
 };
-static_assert(alignof(UDestructibleComponent) == 0x000010, "Wrong alignment on UDestructibleComponent");
-static_assert(sizeof(UDestructibleComponent) == 0x000D30, "Wrong size on UDestructibleComponent");
-static_assert(offsetof(UDestructibleComponent, FractureEffects) == 0x000C98, "Member 'UDestructibleComponent::FractureEffects' has a wrong offset!");
-static_assert(offsetof(UDestructibleComponent, bEnableHardSleeping) == 0x000CA8, "Member 'UDestructibleComponent::bEnableHardSleeping' has a wrong offset!");
-static_assert(offsetof(UDestructibleComponent, LargeChunkThreshold) == 0x000CAC, "Member 'UDestructibleComponent::LargeChunkThreshold' has a wrong offset!");
-static_assert(offsetof(UDestructibleComponent, OnComponentFracture) == 0x000CB0, "Member 'UDestructibleComponent::OnComponentFracture' has a wrong offset!");
+DUMPER7_ASSERTS_UDestructibleComponent;
 
 // Class ApexDestruction.DestructibleFractureSettings
 // 0x0088 (0x00B8 - 0x0030)
@@ -99,22 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DestructibleFractureSettings">();
+		STATIC_CLASS_IMPL("DestructibleFractureSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DestructibleFractureSettings")
 	}
 	static class UDestructibleFractureSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDestructibleFractureSettings>();
 	}
 };
-static_assert(alignof(UDestructibleFractureSettings) == 0x000008, "Wrong alignment on UDestructibleFractureSettings");
-static_assert(sizeof(UDestructibleFractureSettings) == 0x0000B8, "Wrong size on UDestructibleFractureSettings");
-static_assert(offsetof(UDestructibleFractureSettings, CellSiteCount) == 0x000030, "Member 'UDestructibleFractureSettings::CellSiteCount' has a wrong offset!");
-static_assert(offsetof(UDestructibleFractureSettings, FractureMaterialDesc) == 0x000038, "Member 'UDestructibleFractureSettings::FractureMaterialDesc' has a wrong offset!");
-static_assert(offsetof(UDestructibleFractureSettings, RandomSeed) == 0x000078, "Member 'UDestructibleFractureSettings::RandomSeed' has a wrong offset!");
-static_assert(offsetof(UDestructibleFractureSettings, VoronoiSites) == 0x000080, "Member 'UDestructibleFractureSettings::VoronoiSites' has a wrong offset!");
-static_assert(offsetof(UDestructibleFractureSettings, OriginalSubmeshCount) == 0x000090, "Member 'UDestructibleFractureSettings::OriginalSubmeshCount' has a wrong offset!");
-static_assert(offsetof(UDestructibleFractureSettings, Materials) == 0x000098, "Member 'UDestructibleFractureSettings::Materials' has a wrong offset!");
-static_assert(offsetof(UDestructibleFractureSettings, ChunkParameters) == 0x0000A8, "Member 'UDestructibleFractureSettings::ChunkParameters' has a wrong offset!");
+DUMPER7_ASSERTS_UDestructibleFractureSettings;
 
 // Class ApexDestruction.DestructibleMesh
 // 0x00B8 (0x05B8 - 0x0500)
@@ -127,17 +123,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DestructibleMesh">();
+		STATIC_CLASS_IMPL("DestructibleMesh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DestructibleMesh")
 	}
 	static class UDestructibleMesh* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDestructibleMesh>();
 	}
 };
-static_assert(alignof(UDestructibleMesh) == 0x000008, "Wrong alignment on UDestructibleMesh");
-static_assert(sizeof(UDestructibleMesh) == 0x0005B8, "Wrong size on UDestructibleMesh");
-static_assert(offsetof(UDestructibleMesh, DefaultDestructibleParameters) == 0x000500, "Member 'UDestructibleMesh::DefaultDestructibleParameters' has a wrong offset!");
-static_assert(offsetof(UDestructibleMesh, FractureEffects) == 0x0005A8, "Member 'UDestructibleMesh::FractureEffects' has a wrong offset!");
+DUMPER7_ASSERTS_UDestructibleMesh;
 
 }
 

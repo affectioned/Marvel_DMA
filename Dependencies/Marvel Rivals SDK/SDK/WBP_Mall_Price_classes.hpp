@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Mall_Price.WBP_Mall_Price_C
-// 0x0030 (0x0870 - 0x0840)
+// 0x0030 (0x0880 - 0x0850)
 class UWBP_Mall_Price_C final : public UPyWidget_MallPrice
 {
 public:
-	class UMarvelImage*                           Img_Old_Price;                                     // 0x0840(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Price_Icon;                                    // 0x0848(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Old_Price;                                 // 0x0850(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Old_Price;                                    // 0x0858(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Price_Number;                                 // 0x0860(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Old_Price;                                     // 0x0850(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Price_Icon;                                    // 0x0858(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Old_Price;                                 // 0x0860(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Old_Price;                                    // 0x0868(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Price_Number;                                 // 0x0870(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Mall_Price_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Mall_Price_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Mall_Price_C")
 	}
 	static class UWBP_Mall_Price_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Mall_Price_C>();
 	}
 };
-static_assert(alignof(UWBP_Mall_Price_C) == 0x000010, "Wrong alignment on UWBP_Mall_Price_C");
-static_assert(sizeof(UWBP_Mall_Price_C) == 0x000870, "Wrong size on UWBP_Mall_Price_C");
-static_assert(offsetof(UWBP_Mall_Price_C, Img_Old_Price) == 0x000840, "Member 'UWBP_Mall_Price_C::Img_Old_Price' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Price_C, Img_Price_Icon) == 0x000848, "Member 'UWBP_Mall_Price_C::Img_Price_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Price_C, Overlay_Old_Price) == 0x000850, "Member 'UWBP_Mall_Price_C::Overlay_Old_Price' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Price_C, Text_Old_Price) == 0x000858, "Member 'UWBP_Mall_Price_C::Text_Old_Price' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Price_C, Text_Price_Number) == 0x000860, "Member 'UWBP_Mall_Price_C::Text_Price_Number' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Mall_Price_C;
 
 }
 

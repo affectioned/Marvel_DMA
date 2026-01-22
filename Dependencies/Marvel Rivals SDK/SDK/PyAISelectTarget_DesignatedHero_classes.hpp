@@ -29,17 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_DesignatedHero">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_DesignatedHero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_DesignatedHero")
 	}
 	static class UPyAISelectTarget_DesignatedHero* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_DesignatedHero>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_DesignatedHero) == 0x000008, "Wrong alignment on UPyAISelectTarget_DesignatedHero");
-static_assert(sizeof(UPyAISelectTarget_DesignatedHero) == 0x000078, "Wrong size on UPyAISelectTarget_DesignatedHero");
-static_assert(offsetof(UPyAISelectTarget_DesignatedHero, CharacterSide) == 0x000070, "Member 'UPyAISelectTarget_DesignatedHero::CharacterSide' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_DesignatedHero, HeroID) == 0x000074, "Member 'UPyAISelectTarget_DesignatedHero::HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_DesignatedHero;
 
 }
 

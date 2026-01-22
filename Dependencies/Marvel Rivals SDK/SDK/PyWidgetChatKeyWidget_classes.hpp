@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidgetChatKeyWidget">();
+		STATIC_CLASS_IMPL("PyWidgetChatKeyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidgetChatKeyWidget")
 	}
 	static class UPyWidgetChatKeyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidgetChatKeyWidget>();
 	}
 };
-static_assert(alignof(UPyWidgetChatKeyWidget) == 0x000008, "Wrong alignment on UPyWidgetChatKeyWidget");
-static_assert(sizeof(UPyWidgetChatKeyWidget) == 0x0003B8, "Wrong size on UPyWidgetChatKeyWidget");
+DUMPER7_ASSERTS_UPyWidgetChatKeyWidget;
 
 }
 

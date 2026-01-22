@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Arrow_Dec.WBP_Arrow_Dec_C
-// 0x0030 (0x0598 - 0x0568)
+// 0x0030 (0x05A0 - 0x0570)
 class UWBP_Arrow_Dec_C final : public UMarvelUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0568(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMarvelImage*                           Img_Arrow;                                         // 0x0570(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Arrow_Glow;                                    // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg;                                            // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Arrow;                                     // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	double                                        箭头范围;                                          // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0570(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMarvelImage*                           Img_Arrow;                                         // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Arrow_Glow;                                    // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg;                                            // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Arrow;                                     // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	double                                        箭头范围;                                          // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void Construct();
@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Arrow_Dec_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Arrow_Dec_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Arrow_Dec_C")
 	}
 	static class UWBP_Arrow_Dec_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Arrow_Dec_C>();
 	}
 };
-static_assert(alignof(UWBP_Arrow_Dec_C) == 0x000008, "Wrong alignment on UWBP_Arrow_Dec_C");
-static_assert(sizeof(UWBP_Arrow_Dec_C) == 0x000598, "Wrong size on UWBP_Arrow_Dec_C");
-static_assert(offsetof(UWBP_Arrow_Dec_C, UberGraphFrame) == 0x000568, "Member 'UWBP_Arrow_Dec_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Arrow_Dec_C, Img_Arrow) == 0x000570, "Member 'UWBP_Arrow_Dec_C::Img_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Arrow_Dec_C, Img_Arrow_Glow) == 0x000578, "Member 'UWBP_Arrow_Dec_C::Img_Arrow_Glow' has a wrong offset!");
-static_assert(offsetof(UWBP_Arrow_Dec_C, Img_Bg) == 0x000580, "Member 'UWBP_Arrow_Dec_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Arrow_Dec_C, SizeBox_Arrow) == 0x000588, "Member 'UWBP_Arrow_Dec_C::SizeBox_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Arrow_Dec_C, 箭头范围) == 0x000590, "Member 'UWBP_Arrow_Dec_C::箭头范围' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Arrow_Dec_C;
 
 }
 

@@ -31,16 +31,7 @@ public:
 	float                                         ChangeTime_0;                                      // 0x0070(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         UpdateInterval_0;                                  // 0x0074(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize) == 0x000008, "Wrong alignment on PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize");
-static_assert(sizeof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize) == 0x000078, "Wrong size on PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize");
-static_assert(offsetof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize, ProcessController) == 0x000000, "Member 'PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize::ProcessController' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize, ActorClassPath) == 0x000008, "Member 'PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize::ActorClassPath' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize, NewComponentName) == 0x000030, "Member 'PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize::NewComponentName' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize, ParameterName_0) == 0x000040, "Member 'PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize::ParameterName_0' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize, StartValue_0) == 0x000050, "Member 'PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize::StartValue_0' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize, EndValue_0) == 0x000060, "Member 'PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize::EndValue_0' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize, ChangeTime_0) == 0x000070, "Member 'PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize::ChangeTime_0' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize, UpdateInterval_0) == 0x000074, "Member 'PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize::UpdateInterval_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeNiagaraColorComponent_NiagaraColorComponentInitialize;
 
 // PythonFunction PyLevelNodeNiagaraColorComponent.PyLevelNodeNiagaraColorComponent.NiagaraColorComponentStart
 // 0x0018 (0x0018 - 0x0000)
@@ -50,10 +41,7 @@ public:
 	class AActor*                                 ProcessController;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 ComponentName;                                     // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentStart) == 0x000008, "Wrong alignment on PyLevelNodeNiagaraColorComponent_NiagaraColorComponentStart");
-static_assert(sizeof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentStart) == 0x000018, "Wrong size on PyLevelNodeNiagaraColorComponent_NiagaraColorComponentStart");
-static_assert(offsetof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentStart, ProcessController) == 0x000000, "Member 'PyLevelNodeNiagaraColorComponent_NiagaraColorComponentStart::ProcessController' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeNiagaraColorComponent_NiagaraColorComponentStart, ComponentName) == 0x000008, "Member 'PyLevelNodeNiagaraColorComponent_NiagaraColorComponentStart::ComponentName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeNiagaraColorComponent_NiagaraColorComponentStart;
 
 // PythonFunction PyLevelNodeNiagaraColorComponent.PyLevelNodeNiagaraColorComponent.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -62,9 +50,7 @@ struct PyLevelNodeNiagaraColorComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeNiagaraColorComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelNodeNiagaraColorComponent_ReceiveEndPlay");
-static_assert(sizeof(PyLevelNodeNiagaraColorComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelNodeNiagaraColorComponent_ReceiveEndPlay");
-static_assert(offsetof(PyLevelNodeNiagaraColorComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelNodeNiagaraColorComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeNiagaraColorComponent_ReceiveEndPlay;
 
 }
 

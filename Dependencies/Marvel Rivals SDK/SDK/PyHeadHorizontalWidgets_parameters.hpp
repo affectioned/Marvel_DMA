@@ -23,9 +23,7 @@ struct PyWidgetExtension_HeadHorizontalWidgetAgent_OnVisibilityChanged final
 public:
 	ESlateVisibility                              SlateVisibility;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidgetExtension_HeadHorizontalWidgetAgent_OnVisibilityChanged) == 0x000001, "Wrong alignment on PyWidgetExtension_HeadHorizontalWidgetAgent_OnVisibilityChanged");
-static_assert(sizeof(PyWidgetExtension_HeadHorizontalWidgetAgent_OnVisibilityChanged) == 0x000001, "Wrong size on PyWidgetExtension_HeadHorizontalWidgetAgent_OnVisibilityChanged");
-static_assert(offsetof(PyWidgetExtension_HeadHorizontalWidgetAgent_OnVisibilityChanged, SlateVisibility) == 0x000000, "Member 'PyWidgetExtension_HeadHorizontalWidgetAgent_OnVisibilityChanged::SlateVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidgetExtension_HeadHorizontalWidgetAgent_OnVisibilityChanged;
 
 }
 

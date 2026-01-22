@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CharacterArrow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CharacterArrow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CharacterArrow_C")
 	}
 	static class UWBP_CharacterArrow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CharacterArrow_C>();
 	}
 };
-static_assert(alignof(UWBP_CharacterArrow_C) == 0x000010, "Wrong alignment on UWBP_CharacterArrow_C");
-static_assert(sizeof(UWBP_CharacterArrow_C) == 0x0008B0, "Wrong size on UWBP_CharacterArrow_C");
-static_assert(offsetof(UWBP_CharacterArrow_C, UberGraphFrame) == 0x0008A0, "Member 'UWBP_CharacterArrow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterArrow_C, ImageArrow) == 0x0008A8, "Member 'UWBP_CharacterArrow_C::ImageArrow' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CharacterArrow_C;
 
 }
 

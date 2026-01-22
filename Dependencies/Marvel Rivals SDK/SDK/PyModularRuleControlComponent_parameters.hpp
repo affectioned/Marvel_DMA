@@ -24,9 +24,7 @@ struct PyModularRuleControlComponent_SOvertimeSetstate final
 public:
 	EOvertimeState                                state;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleControlComponent_SOvertimeSetstate) == 0x000001, "Wrong alignment on PyModularRuleControlComponent_SOvertimeSetstate");
-static_assert(sizeof(PyModularRuleControlComponent_SOvertimeSetstate) == 0x000001, "Wrong size on PyModularRuleControlComponent_SOvertimeSetstate");
-static_assert(offsetof(PyModularRuleControlComponent_SOvertimeSetstate, state) == 0x000000, "Member 'PyModularRuleControlComponent_SOvertimeSetstate::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleControlComponent_SOvertimeSetstate;
 
 // PythonFunction PyModularRuleControlComponent.PyModularRuleControlComponent.GetCampByName
 // 0x0018 (0x0018 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	class FString                                 CampName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class AActor*                                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleControlComponent_GetCampByName) == 0x000008, "Wrong alignment on PyModularRuleControlComponent_GetCampByName");
-static_assert(sizeof(PyModularRuleControlComponent_GetCampByName) == 0x000018, "Wrong size on PyModularRuleControlComponent_GetCampByName");
-static_assert(offsetof(PyModularRuleControlComponent_GetCampByName, CampName) == 0x000000, "Member 'PyModularRuleControlComponent_GetCampByName::CampName' has a wrong offset!");
-static_assert(offsetof(PyModularRuleControlComponent_GetCampByName, ReturnValue) == 0x000010, "Member 'PyModularRuleControlComponent_GetCampByName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleControlComponent_GetCampByName;
 
 // PythonFunction PyModularRuleControlComponent.PyModularRuleControlComponent.RuleEnd
 // 0x0010 (0x0010 - 0x0000)
@@ -49,10 +44,7 @@ public:
 	class UPyModularRuleComponent*                RuleComponent;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EBattleSide                                   WinnerSide;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleControlComponent_RuleEnd) == 0x000008, "Wrong alignment on PyModularRuleControlComponent_RuleEnd");
-static_assert(sizeof(PyModularRuleControlComponent_RuleEnd) == 0x000010, "Wrong size on PyModularRuleControlComponent_RuleEnd");
-static_assert(offsetof(PyModularRuleControlComponent_RuleEnd, RuleComponent) == 0x000000, "Member 'PyModularRuleControlComponent_RuleEnd::RuleComponent' has a wrong offset!");
-static_assert(offsetof(PyModularRuleControlComponent_RuleEnd, WinnerSide) == 0x000008, "Member 'PyModularRuleControlComponent_RuleEnd::WinnerSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleControlComponent_RuleEnd;
 
 // PythonFunction PyModularRuleControlComponent.PyModularRuleControlComponent.GameOver
 // 0x0001 (0x0001 - 0x0000)
@@ -61,9 +53,7 @@ struct PyModularRuleControlComponent_GameOver final
 public:
 	EBattleSide                                   WinnerSide;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleControlComponent_GameOver) == 0x000001, "Wrong alignment on PyModularRuleControlComponent_GameOver");
-static_assert(sizeof(PyModularRuleControlComponent_GameOver) == 0x000001, "Wrong size on PyModularRuleControlComponent_GameOver");
-static_assert(offsetof(PyModularRuleControlComponent_GameOver, WinnerSide) == 0x000000, "Member 'PyModularRuleControlComponent_GameOver::WinnerSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleControlComponent_GameOver;
 
 // PythonFunction PyModularRuleControlComponent.PyModularRuleControlComponent.RuleActivating
 // 0x0008 (0x0008 - 0x0000)
@@ -72,9 +62,7 @@ struct PyModularRuleControlComponent_RuleActivating final
 public:
 	class UPyModularRuleComponent*                RuleComponent;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleControlComponent_RuleActivating) == 0x000008, "Wrong alignment on PyModularRuleControlComponent_RuleActivating");
-static_assert(sizeof(PyModularRuleControlComponent_RuleActivating) == 0x000008, "Wrong size on PyModularRuleControlComponent_RuleActivating");
-static_assert(offsetof(PyModularRuleControlComponent_RuleActivating, RuleComponent) == 0x000000, "Member 'PyModularRuleControlComponent_RuleActivating::RuleComponent' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleControlComponent_RuleActivating;
 
 }
 

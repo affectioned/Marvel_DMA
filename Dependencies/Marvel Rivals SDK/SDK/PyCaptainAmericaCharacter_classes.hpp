@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyCaptainAmericaCharacter.PyCaptainAmericaCharacter
-// 0x0000 (0x21D0 - 0x21D0)
+// 0x0000 (0x22E0 - 0x22E0)
 class APyCaptainAmericaCharacter : public ACaptainAmericaCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCaptainAmericaCharacter">();
+		STATIC_CLASS_IMPL("PyCaptainAmericaCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCaptainAmericaCharacter")
 	}
 	static class APyCaptainAmericaCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCaptainAmericaCharacter>();
 	}
 };
-static_assert(alignof(APyCaptainAmericaCharacter) == 0x000010, "Wrong alignment on APyCaptainAmericaCharacter");
-static_assert(sizeof(APyCaptainAmericaCharacter) == 0x0021D0, "Wrong size on APyCaptainAmericaCharacter");
+DUMPER7_ASSERTS_APyCaptainAmericaCharacter;
 
 }
 

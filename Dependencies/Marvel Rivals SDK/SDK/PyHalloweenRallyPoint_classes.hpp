@@ -39,20 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenRallyPoint">();
+		STATIC_CLASS_IMPL("PyHalloweenRallyPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenRallyPoint")
 	}
 	static class APyHalloweenRallyPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenRallyPoint>();
 	}
 };
-static_assert(alignof(APyHalloweenRallyPoint) == 0x000010, "Wrong alignment on APyHalloweenRallyPoint");
-static_assert(sizeof(APyHalloweenRallyPoint) == 0x000700, "Wrong size on APyHalloweenRallyPoint");
-static_assert(offsetof(APyHalloweenRallyPoint, RallyState) == 0x0006E0, "Member 'APyHalloweenRallyPoint::RallyState' has a wrong offset!");
-static_assert(offsetof(APyHalloweenRallyPoint, Index_0) == 0x0006E4, "Member 'APyHalloweenRallyPoint::Index_0' has a wrong offset!");
-static_assert(offsetof(APyHalloweenRallyPoint, PrepareTime) == 0x0006E8, "Member 'APyHalloweenRallyPoint::PrepareTime' has a wrong offset!");
-static_assert(offsetof(APyHalloweenRallyPoint, FadeOutCurve) == 0x0006F0, "Member 'APyHalloweenRallyPoint::FadeOutCurve' has a wrong offset!");
-static_assert(offsetof(APyHalloweenRallyPoint, PreventTime) == 0x0006F8, "Member 'APyHalloweenRallyPoint::PreventTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenRallyPoint;
 
 }
 

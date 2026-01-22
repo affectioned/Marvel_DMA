@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Ps_NavigationRightArea.PyWidget_Ps_NavigationRightArea
-// 0x0120 (0x0718 - 0x05F8)
+// 0x0120 (0x0720 - 0x0600)
 class UPyWidget_Ps_NavigationRightArea : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FGuideTipsStyle                        ReturnGuideTips;                                   // 0x05F8(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        ReturnGuideTips;                                   // 0x0600(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,33 +32,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Ps_NavigationRightArea">();
+		STATIC_CLASS_IMPL("PyWidget_Ps_NavigationRightArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Ps_NavigationRightArea")
 	}
 	static class UPyWidget_Ps_NavigationRightArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Ps_NavigationRightArea>();
 	}
 };
-static_assert(alignof(UPyWidget_Ps_NavigationRightArea) == 0x000008, "Wrong alignment on UPyWidget_Ps_NavigationRightArea");
-static_assert(sizeof(UPyWidget_Ps_NavigationRightArea) == 0x000718, "Wrong size on UPyWidget_Ps_NavigationRightArea");
-static_assert(offsetof(UPyWidget_Ps_NavigationRightArea, ReturnGuideTips) == 0x0005F8, "Member 'UPyWidget_Ps_NavigationRightArea::ReturnGuideTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Ps_NavigationRightArea;
 
 // PythonClass PyWidget_Ps_NavigationRightArea.PyWidget_Ps_Common_NavigationRightArea
-// 0x0000 (0x0718 - 0x0718)
+// 0x0000 (0x0720 - 0x0720)
 class UPyWidget_Ps_Common_NavigationRightArea : public UPyWidget_Ps_NavigationRightArea
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Ps_Common_NavigationRightArea">();
+		STATIC_CLASS_IMPL("PyWidget_Ps_Common_NavigationRightArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Ps_Common_NavigationRightArea")
 	}
 	static class UPyWidget_Ps_Common_NavigationRightArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Ps_Common_NavigationRightArea>();
 	}
 };
-static_assert(alignof(UPyWidget_Ps_Common_NavigationRightArea) == 0x000008, "Wrong alignment on UPyWidget_Ps_Common_NavigationRightArea");
-static_assert(sizeof(UPyWidget_Ps_Common_NavigationRightArea) == 0x000718, "Wrong size on UPyWidget_Ps_Common_NavigationRightArea");
+DUMPER7_ASSERTS_UPyWidget_Ps_Common_NavigationRightArea;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -38,22 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelViewCheckComponent">();
+		STATIC_CLASS_IMPL("PyLevelViewCheckComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelViewCheckComponent")
 	}
 	static class UPyLevelViewCheckComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelViewCheckComponent>();
 	}
 };
-static_assert(alignof(UPyLevelViewCheckComponent) == 0x000010, "Wrong alignment on UPyLevelViewCheckComponent");
-static_assert(sizeof(UPyLevelViewCheckComponent) == 0x000370, "Wrong size on UPyLevelViewCheckComponent");
-static_assert(offsetof(UPyLevelViewCheckComponent, BasicVoice) == 0x000340, "Member 'UPyLevelViewCheckComponent::BasicVoice' has a wrong offset!");
-static_assert(offsetof(UPyLevelViewCheckComponent, DialogKey) == 0x000350, "Member 'UPyLevelViewCheckComponent::DialogKey' has a wrong offset!");
-static_assert(offsetof(UPyLevelViewCheckComponent, CheckDuration) == 0x000360, "Member 'UPyLevelViewCheckComponent::CheckDuration' has a wrong offset!");
-static_assert(offsetof(UPyLevelViewCheckComponent, CoolDown) == 0x000364, "Member 'UPyLevelViewCheckComponent::CoolDown' has a wrong offset!");
-static_assert(offsetof(UPyLevelViewCheckComponent, UseViewCheck) == 0x000368, "Member 'UPyLevelViewCheckComponent::UseViewCheck' has a wrong offset!");
-static_assert(offsetof(UPyLevelViewCheckComponent, UseRangeCheck) == 0x000369, "Member 'UPyLevelViewCheckComponent::UseRangeCheck' has a wrong offset!");
-static_assert(offsetof(UPyLevelViewCheckComponent, RangeCheckRadius) == 0x00036C, "Member 'UPyLevelViewCheckComponent::RangeCheckRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelViewCheckComponent;
 
 }
 

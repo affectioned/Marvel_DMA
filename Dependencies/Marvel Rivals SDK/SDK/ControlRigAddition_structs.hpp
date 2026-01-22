@@ -37,10 +37,7 @@ public:
 	float                                         Ratio;                                             // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0xC];                                       // 0x0024(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRigUnit_FitChainToCurveMarvel_Rotation) == 0x000010, "Wrong alignment on FRigUnit_FitChainToCurveMarvel_Rotation");
-static_assert(sizeof(FRigUnit_FitChainToCurveMarvel_Rotation) == 0x000030, "Wrong size on FRigUnit_FitChainToCurveMarvel_Rotation");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_Rotation, Rotation) == 0x000000, "Member 'FRigUnit_FitChainToCurveMarvel_Rotation::Rotation' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_Rotation, Ratio) == 0x000020, "Member 'FRigUnit_FitChainToCurveMarvel_Rotation::Ratio' has a wrong offset!");
+DUMPER7_ASSERTS_FRigUnit_FitChainToCurveMarvel_Rotation;
 
 // ScriptStruct ControlRigAddition.RigUnit_FitChainToCurveMarvel_DebugSettings
 // 0x0090 (0x0090 - 0x0000)
@@ -55,13 +52,7 @@ public:
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             WorldOffset;                                       // 0x0030(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRigUnit_FitChainToCurveMarvel_DebugSettings) == 0x000010, "Wrong alignment on FRigUnit_FitChainToCurveMarvel_DebugSettings");
-static_assert(sizeof(FRigUnit_FitChainToCurveMarvel_DebugSettings) == 0x000090, "Wrong size on FRigUnit_FitChainToCurveMarvel_DebugSettings");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_DebugSettings, bEnabled) == 0x000000, "Member 'FRigUnit_FitChainToCurveMarvel_DebugSettings::bEnabled' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_DebugSettings, Scale) == 0x000004, "Member 'FRigUnit_FitChainToCurveMarvel_DebugSettings::Scale' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_DebugSettings, CurveColor) == 0x000008, "Member 'FRigUnit_FitChainToCurveMarvel_DebugSettings::CurveColor' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_DebugSettings, SegmentsColor) == 0x000018, "Member 'FRigUnit_FitChainToCurveMarvel_DebugSettings::SegmentsColor' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_DebugSettings, WorldOffset) == 0x000030, "Member 'FRigUnit_FitChainToCurveMarvel_DebugSettings::WorldOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FRigUnit_FitChainToCurveMarvel_DebugSettings;
 
 // ScriptStruct ControlRigAddition.RigUnit_FitChainToCurveMarvel_WorkData
 // 0x0098 (0x0098 - 0x0000)
@@ -80,18 +71,7 @@ public:
 	TArray<float>                                 ItemRotationT;                                     // 0x0078(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FTransform>                     ItemLocalTransforms;                               // 0x0088(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRigUnit_FitChainToCurveMarvel_WorkData) == 0x000008, "Wrong alignment on FRigUnit_FitChainToCurveMarvel_WorkData");
-static_assert(sizeof(FRigUnit_FitChainToCurveMarvel_WorkData) == 0x000098, "Wrong size on FRigUnit_FitChainToCurveMarvel_WorkData");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_WorkData, ChainLength) == 0x000000, "Member 'FRigUnit_FitChainToCurveMarvel_WorkData::ChainLength' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_WorkData, ItemPositions) == 0x000008, "Member 'FRigUnit_FitChainToCurveMarvel_WorkData::ItemPositions' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_WorkData, ItemSegments) == 0x000018, "Member 'FRigUnit_FitChainToCurveMarvel_WorkData::ItemSegments' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_WorkData, CurvePositions) == 0x000028, "Member 'FRigUnit_FitChainToCurveMarvel_WorkData::CurvePositions' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_WorkData, CurveSegments) == 0x000038, "Member 'FRigUnit_FitChainToCurveMarvel_WorkData::CurveSegments' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_WorkData, CachedItems) == 0x000048, "Member 'FRigUnit_FitChainToCurveMarvel_WorkData::CachedItems' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_WorkData, ItemRotationA) == 0x000058, "Member 'FRigUnit_FitChainToCurveMarvel_WorkData::ItemRotationA' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_WorkData, ItemRotationB) == 0x000068, "Member 'FRigUnit_FitChainToCurveMarvel_WorkData::ItemRotationB' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_WorkData, ItemRotationT) == 0x000078, "Member 'FRigUnit_FitChainToCurveMarvel_WorkData::ItemRotationT' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvel_WorkData, ItemLocalTransforms) == 0x000088, "Member 'FRigUnit_FitChainToCurveMarvel_WorkData::ItemLocalTransforms' has a wrong offset!");
+DUMPER7_ASSERTS_FRigUnit_FitChainToCurveMarvel_WorkData;
 
 // ScriptStruct ControlRigAddition.RigUnit_FitChainToCurveMarvelPerItem
 // 0x0220 (0x0390 - 0x0170)
@@ -118,23 +98,7 @@ public:
 	struct FRigUnit_FitChainToCurveMarvel_WorkData WorkData;                                         // 0x02F0(0x0098)(Transient, NativeAccessSpecifierPublic)
 	uint8                                         Pad_388[0x8];                                      // 0x0388(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRigUnit_FitChainToCurveMarvelPerItem) == 0x000010, "Wrong alignment on FRigUnit_FitChainToCurveMarvelPerItem");
-static_assert(sizeof(FRigUnit_FitChainToCurveMarvelPerItem) == 0x000390, "Wrong size on FRigUnit_FitChainToCurveMarvelPerItem");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, Items) == 0x000170, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::Items' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, Bezier) == 0x000180, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::Bezier' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, Alignment) == 0x0001E0, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::Alignment' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, Minimum) == 0x0001E4, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::Minimum' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, Maximum) == 0x0001E8, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::Maximum' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, SamplingPrecision) == 0x0001EC, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::SamplingPrecision' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, PrimaryAxis) == 0x0001F0, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::PrimaryAxis' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, SecondaryAxis) == 0x000208, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::SecondaryAxis' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, PoleVectorPosition) == 0x000220, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::PoleVectorPosition' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, Rotations) == 0x000238, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::Rotations' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, RotationEaseType) == 0x000248, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::RotationEaseType' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, Weight) == 0x00024C, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::Weight' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, bPropagateToChildren) == 0x000250, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::bPropagateToChildren' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, DebugSettings) == 0x000260, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::DebugSettings' has a wrong offset!");
-static_assert(offsetof(FRigUnit_FitChainToCurveMarvelPerItem, WorkData) == 0x0002F0, "Member 'FRigUnit_FitChainToCurveMarvelPerItem::WorkData' has a wrong offset!");
+DUMPER7_ASSERTS_FRigUnit_FitChainToCurveMarvelPerItem;
 
 }
 

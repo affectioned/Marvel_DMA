@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10449016.PyBuffAbility_10130_10445192
-// 0x0020 (0x1A50 - 0x1A30)
+// 0x0020 (0x1A68 - 0x1A48)
 class UPyBuffAbility_10130_10445192 : public UBuffAbility_CommonCardEffect
 {
 public:
-	TArray<int32>                                 AvaliableScopeIdList;                              // 0x1A30(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         FistSpawnInterval;                                 // 0x1A40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FistSpawnDistance;                                 // 0x1A44(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FistProjectileID;                                  // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 AvaliableScopeIdList;                              // 0x1A48(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         FistSpawnInterval;                                 // 0x1A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FistSpawnDistance;                                 // 0x1A5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FistProjectileID;                                  // 0x1A60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10445192">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10445192")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10445192")
 	}
 	static class UPyBuffAbility_10130_10445192* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10445192>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10445192) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10445192");
-static_assert(sizeof(UPyBuffAbility_10130_10445192) == 0x001A50, "Wrong size on UPyBuffAbility_10130_10445192");
-static_assert(offsetof(UPyBuffAbility_10130_10445192, AvaliableScopeIdList) == 0x001A30, "Member 'UPyBuffAbility_10130_10445192::AvaliableScopeIdList' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10445192, FistSpawnInterval) == 0x001A40, "Member 'UPyBuffAbility_10130_10445192::FistSpawnInterval' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10445192, FistSpawnDistance) == 0x001A44, "Member 'UPyBuffAbility_10130_10445192::FistSpawnDistance' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10445192, FistProjectileID) == 0x001A48, "Member 'UPyBuffAbility_10130_10445192::FistProjectileID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10445192;
 
 }
 

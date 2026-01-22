@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "PyLevel1399_003_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "PyLevel1399_003_structs.hpp"
-#include "Engine_structs.hpp"
 #include "DeclarativeUnreal_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -58,36 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevel1399_003">();
+		STATIC_CLASS_IMPL("PyLevel1399_003")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevel1399_003")
 	}
 	static class APyLevel1399_003* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevel1399_003>();
 	}
 };
-static_assert(alignof(APyLevel1399_003) == 0x000010, "Wrong alignment on APyLevel1399_003");
-static_assert(sizeof(APyLevel1399_003) == 0x000810, "Wrong size on APyLevel1399_003");
-static_assert(offsetof(APyLevel1399_003, CDTimeSeconds) == 0x000730, "Member 'APyLevel1399_003::CDTimeSeconds' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, AbleState) == 0x000734, "Member 'APyLevel1399_003::AbleState' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, IndicatorText) == 0x000738, "Member 'APyLevel1399_003::IndicatorText' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, PuzzleDoneLSA) == 0x000750, "Member 'APyLevel1399_003::PuzzleDoneLSA' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, PiecesResetLSA) == 0x000758, "Member 'APyLevel1399_003::PiecesResetLSA' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, PiecesPositionResetDelaySeconds) == 0x000760, "Member 'APyLevel1399_003::PiecesPositionResetDelaySeconds' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, PiecesAliveResetDelaySeconds) == 0x000764, "Member 'APyLevel1399_003::PiecesAliveResetDelaySeconds' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, AudioEventRecover) == 0x000768, "Member 'APyLevel1399_003::AudioEventRecover' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, AudioEventPuzzleDone) == 0x000770, "Member 'APyLevel1399_003::AudioEventPuzzleDone' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, SFXPuzzleDonePlatforms) == 0x000778, "Member 'APyLevel1399_003::SFXPuzzleDonePlatforms' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, BoardLayoutID) == 0x000788, "Member 'APyLevel1399_003::BoardLayoutID' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, EditorSpecificLayoutID) == 0x00078C, "Member 'APyLevel1399_003::EditorSpecificLayoutID' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, DisabledDestructionActors) == 0x000790, "Member 'APyLevel1399_003::DisabledDestructionActors' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, BoardLayouts) == 0x0007A0, "Member 'APyLevel1399_003::BoardLayouts' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, BoardActor) == 0x0007B0, "Member 'APyLevel1399_003::BoardActor' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, AlignCoord00) == 0x0007B8, "Member 'APyLevel1399_003::AlignCoord00' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, SquareSize) == 0x0007C8, "Member 'APyLevel1399_003::SquareSize' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, HandActor) == 0x0007D8, "Member 'APyLevel1399_003::HandActor' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, PuzzleDonePlatform) == 0x0007E0, "Member 'APyLevel1399_003::PuzzleDonePlatform' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, HittableAreas) == 0x0007E8, "Member 'APyLevel1399_003::HittableAreas' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_003, ViewTargetWatcher) == 0x0007F8, "Member 'APyLevel1399_003::ViewTargetWatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevel1399_003;
 
 }
 

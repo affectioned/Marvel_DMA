@@ -39,20 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCooperateBarrierCtrl">();
+		STATIC_CLASS_IMPL("PyCooperateBarrierCtrl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCooperateBarrierCtrl")
 	}
 	static class APyCooperateBarrierCtrl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCooperateBarrierCtrl>();
 	}
 };
-static_assert(alignof(APyCooperateBarrierCtrl) == 0x000010, "Wrong alignment on APyCooperateBarrierCtrl");
-static_assert(sizeof(APyCooperateBarrierCtrl) == 0x000710, "Wrong size on APyCooperateBarrierCtrl");
-static_assert(offsetof(APyCooperateBarrierCtrl, State) == 0x0006E0, "Member 'APyCooperateBarrierCtrl::State' has a wrong offset!");
-static_assert(offsetof(APyCooperateBarrierCtrl, FocusComputer) == 0x0006E8, "Member 'APyCooperateBarrierCtrl::FocusComputer' has a wrong offset!");
-static_assert(offsetof(APyCooperateBarrierCtrl, BondID) == 0x0006F0, "Member 'APyCooperateBarrierCtrl::BondID' has a wrong offset!");
-static_assert(offsetof(APyCooperateBarrierCtrl, HeroID) == 0x0006F4, "Member 'APyCooperateBarrierCtrl::HeroID' has a wrong offset!");
-static_assert(offsetof(APyCooperateBarrierCtrl, Barriers) == 0x0006F8, "Member 'APyCooperateBarrierCtrl::Barriers' has a wrong offset!");
+DUMPER7_ASSERTS_APyCooperateBarrierCtrl;
 
 }
 

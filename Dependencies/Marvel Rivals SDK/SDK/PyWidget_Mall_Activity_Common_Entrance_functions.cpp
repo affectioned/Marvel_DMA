@@ -36,26 +36,39 @@ void UPyWidget_Mall_Activity_Common_Entrance::OnInitialized()
 }
 
 
-// PythonFunction PyWidget_Mall_Activity_Common_Entrance.PyWidget_Mall_Activity_Common_Entrance.OnCascadingVisibleChanged
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsCascadingVisible                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// PythonFunction PyWidget_Mall_Activity_Common_Entrance.PyWidget_Mall_Activity_Common_Entrance.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_Mall_Activity_Common_Entrance::OnCascadingVisibleChanged(bool bIsCascadingVisible)
+void UPyWidget_Mall_Activity_Common_Entrance::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Mall_Activity_Common_Entrance", "OnCascadingVisibleChanged");
-
-	Params::PyWidget_Mall_Activity_Common_Entrance_OnCascadingVisibleChanged Parms{};
-
-	Parms.bIsCascadingVisible = bIsCascadingVisible;
+		Func = Class->GetFunction("PyWidget_Mall_Activity_Common_Entrance", "Construct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Mall_Activity_Common_Entrance.PyWidget_Mall_Activity_Common_Entrance.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Mall_Activity_Common_Entrance::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Mall_Activity_Common_Entrance", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

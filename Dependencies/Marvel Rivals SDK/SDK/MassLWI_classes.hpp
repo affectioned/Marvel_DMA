@@ -21,26 +21,28 @@ namespace SDK
 {
 
 // Class MassLWI.MassLWIClientActorSpawnerSubsystem
-// 0x0058 (0x0148 - 0x00F0)
+// 0x0058 (0x0150 - 0x00F8)
 class UMassLWIClientActorSpawnerSubsystem final : public UMassActorSpawnerSubsystem
 {
 public:
-	uint8                                         Pad_F0[0x8];                                       // 0x00F0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<TSubclassOf<class AActor>, struct FMassStoredActorsContainer> PendingActors;                // 0x00F8(0x0050)(Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_F8[0x8];                                       // 0x00F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<TSubclassOf<class AActor>, struct FMassStoredActorsContainer> PendingActors;                // 0x0100(0x0050)(Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLWIClientActorSpawnerSubsystem">();
+		STATIC_CLASS_IMPL("MassLWIClientActorSpawnerSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLWIClientActorSpawnerSubsystem")
 	}
 	static class UMassLWIClientActorSpawnerSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassLWIClientActorSpawnerSubsystem>();
 	}
 };
-static_assert(alignof(UMassLWIClientActorSpawnerSubsystem) == 0x000008, "Wrong alignment on UMassLWIClientActorSpawnerSubsystem");
-static_assert(sizeof(UMassLWIClientActorSpawnerSubsystem) == 0x000148, "Wrong size on UMassLWIClientActorSpawnerSubsystem");
-static_assert(offsetof(UMassLWIClientActorSpawnerSubsystem, PendingActors) == 0x0000F8, "Member 'UMassLWIClientActorSpawnerSubsystem::PendingActors' has a wrong offset!");
+DUMPER7_ASSERTS_UMassLWIClientActorSpawnerSubsystem;
 
 // Class MassLWI.MassLWIConfigActor
 // 0x0080 (0x0760 - 0x06E0)
@@ -54,34 +56,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLWIConfigActor">();
+		STATIC_CLASS_IMPL("MassLWIConfigActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLWIConfigActor")
 	}
 	static class AMassLWIConfigActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMassLWIConfigActor>();
 	}
 };
-static_assert(alignof(AMassLWIConfigActor) == 0x000010, "Wrong alignment on AMassLWIConfigActor");
-static_assert(sizeof(AMassLWIConfigActor) == 0x000760, "Wrong size on AMassLWIConfigActor");
-static_assert(offsetof(AMassLWIConfigActor, DefaultConfig) == 0x0006D8, "Member 'AMassLWIConfigActor::DefaultConfig' has a wrong offset!");
-static_assert(offsetof(AMassLWIConfigActor, PerClassConfigs) == 0x000708, "Member 'AMassLWIConfigActor::PerClassConfigs' has a wrong offset!");
+DUMPER7_ASSERTS_AMassLWIConfigActor;
 
 // Class MassLWI.MassLWIRepresentationSubsystem
-// 0x0000 (0x00D0 - 0x00D0)
+// 0x0000 (0x00D8 - 0x00D8)
 class UMassLWIRepresentationSubsystem final : public UMassRepresentationSubsystem
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLWIRepresentationSubsystem">();
+		STATIC_CLASS_IMPL("MassLWIRepresentationSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLWIRepresentationSubsystem")
 	}
 	static class UMassLWIRepresentationSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassLWIRepresentationSubsystem>();
 	}
 };
-static_assert(alignof(UMassLWIRepresentationSubsystem) == 0x000008, "Wrong alignment on UMassLWIRepresentationSubsystem");
-static_assert(sizeof(UMassLWIRepresentationSubsystem) == 0x0000D0, "Wrong size on UMassLWIRepresentationSubsystem");
+DUMPER7_ASSERTS_UMassLWIRepresentationSubsystem;
 
 // Class MassLWI.MassLWIStaticMeshManager
 // 0x0050 (0x0850 - 0x0800)
@@ -93,15 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLWIStaticMeshManager">();
+		STATIC_CLASS_IMPL("MassLWIStaticMeshManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLWIStaticMeshManager")
 	}
 	static class AMassLWIStaticMeshManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMassLWIStaticMeshManager>();
 	}
 };
-static_assert(alignof(AMassLWIStaticMeshManager) == 0x000010, "Wrong alignment on AMassLWIStaticMeshManager");
-static_assert(sizeof(AMassLWIStaticMeshManager) == 0x000850, "Wrong size on AMassLWIStaticMeshManager");
+DUMPER7_ASSERTS_AMassLWIStaticMeshManager;
 
 // Class MassLWI.MassLWIVisualizationTrait
 // 0x0000 (0x0160 - 0x0160)
@@ -110,43 +119,46 @@ class UMassLWIVisualizationTrait final : public UMassStationaryVisualizationTrai
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLWIVisualizationTrait">();
+		STATIC_CLASS_IMPL("MassLWIVisualizationTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLWIVisualizationTrait")
 	}
 	static class UMassLWIVisualizationTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassLWIVisualizationTrait>();
 	}
 };
-static_assert(alignof(UMassLWIVisualizationTrait) == 0x000010, "Wrong alignment on UMassLWIVisualizationTrait");
-static_assert(sizeof(UMassLWIVisualizationTrait) == 0x000160, "Wrong size on UMassLWIVisualizationTrait");
+DUMPER7_ASSERTS_UMassLWIVisualizationTrait;
 
 // Class MassLWI.MassLWISubsystem
-// 0x00B8 (0x00F0 - 0x0038)
+// 0x00B8 (0x00F8 - 0x0040)
 class UMassLWISubsystem final : public UWorldSubsystem
 {
 public:
-	TArray<class AMassLWIStaticMeshManager*>      RegisteredManagers;                                // 0x0038(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_48[0x10];                                      // 0x0048(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMassEntityConfig                      DefaultConfig;                                     // 0x0058(0x0030)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_88[0x50];                                      // 0x0088(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMassLWIClientActorSpawnerSubsystem*    LWISpawnerSubsystem;                               // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E0[0x10];                                      // 0x00E0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<class AMassLWIStaticMeshManager*>      RegisteredManagers;                                // 0x0040(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	uint8                                         Pad_50[0x10];                                      // 0x0050(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMassEntityConfig                      DefaultConfig;                                     // 0x0060(0x0030)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_90[0x50];                                      // 0x0090(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMassLWIClientActorSpawnerSubsystem*    LWISpawnerSubsystem;                               // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_E8[0x10];                                      // 0x00E8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLWISubsystem">();
+		STATIC_CLASS_IMPL("MassLWISubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLWISubsystem")
 	}
 	static class UMassLWISubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassLWISubsystem>();
 	}
 };
-static_assert(alignof(UMassLWISubsystem) == 0x000008, "Wrong alignment on UMassLWISubsystem");
-static_assert(sizeof(UMassLWISubsystem) == 0x0000F0, "Wrong size on UMassLWISubsystem");
-static_assert(offsetof(UMassLWISubsystem, RegisteredManagers) == 0x000038, "Member 'UMassLWISubsystem::RegisteredManagers' has a wrong offset!");
-static_assert(offsetof(UMassLWISubsystem, DefaultConfig) == 0x000058, "Member 'UMassLWISubsystem::DefaultConfig' has a wrong offset!");
-static_assert(offsetof(UMassLWISubsystem, LWISpawnerSubsystem) == 0x0000D8, "Member 'UMassLWISubsystem::LWISpawnerSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_UMassLWISubsystem;
 
 }
 

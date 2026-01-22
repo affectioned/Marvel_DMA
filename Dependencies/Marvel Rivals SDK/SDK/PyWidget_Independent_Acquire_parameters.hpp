@@ -21,9 +21,7 @@ struct PyWidget_Independent_Acquire_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Independent_Acquire_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Independent_Acquire_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Independent_Acquire_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Independent_Acquire_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Independent_Acquire_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Independent_Acquire_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Independent_Acquire_MarvelSetVisible;
 
 // PythonFunction PyWidget_Independent_Acquire.PyWidget_Independent_Acquire.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Independent_Acquire_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Independent_Acquire_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Independent_Acquire_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Independent_Acquire_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Independent_Acquire_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Independent_Acquire_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Independent_Acquire_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Independent_Acquire_OnAnimationFinished;
 
 // PythonFunction PyWidget_Independent_Acquire.PyWidget_Gallery_Acquire.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Gallery_Acquire_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Gallery_Acquire_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Gallery_Acquire_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Gallery_Acquire_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Gallery_Acquire_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Gallery_Acquire_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Gallery_Acquire_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Gallery_Acquire_MarvelSetVisible;
 
 }
 

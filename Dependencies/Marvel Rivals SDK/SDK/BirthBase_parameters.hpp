@@ -23,9 +23,7 @@ struct BirthBase_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BirthBase_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BirthBase_C_ReceiveEndPlay");
-static_assert(sizeof(BirthBase_C_ReceiveEndPlay) == 0x000001, "Wrong size on BirthBase_C_ReceiveEndPlay");
-static_assert(offsetof(BirthBase_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BirthBase_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_BirthBase_C_ReceiveEndPlay;
 
 // Function BirthBase.BirthBase_C.ExecuteUbergraph_BirthBase
 // 0x0008 (0x0008 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BirthBase_C_ExecuteUbergraph_BirthBase) == 0x000004, "Wrong alignment on BirthBase_C_ExecuteUbergraph_BirthBase");
-static_assert(sizeof(BirthBase_C_ExecuteUbergraph_BirthBase) == 0x000008, "Wrong size on BirthBase_C_ExecuteUbergraph_BirthBase");
-static_assert(offsetof(BirthBase_C_ExecuteUbergraph_BirthBase, EntryPoint) == 0x000000, "Member 'BirthBase_C_ExecuteUbergraph_BirthBase::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BirthBase_C_ExecuteUbergraph_BirthBase, K2Node_Event_EndPlayReason) == 0x000004, "Member 'BirthBase_C_ExecuteUbergraph_BirthBase::K2Node_Event_EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_BirthBase_C_ExecuteUbergraph_BirthBase;
 
 }
 

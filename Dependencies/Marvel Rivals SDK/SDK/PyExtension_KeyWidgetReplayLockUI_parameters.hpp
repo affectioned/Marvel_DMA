@@ -21,9 +21,7 @@ struct PyExtension_KeyWidgetReplayLockUI_GetLockTypeName final
 public:
 	class FName                                   ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_KeyWidgetReplayLockUI_GetLockTypeName) == 0x000004, "Wrong alignment on PyExtension_KeyWidgetReplayLockUI_GetLockTypeName");
-static_assert(sizeof(PyExtension_KeyWidgetReplayLockUI_GetLockTypeName) == 0x00000C, "Wrong size on PyExtension_KeyWidgetReplayLockUI_GetLockTypeName");
-static_assert(offsetof(PyExtension_KeyWidgetReplayLockUI_GetLockTypeName, ReturnValue) == 0x000000, "Member 'PyExtension_KeyWidgetReplayLockUI_GetLockTypeName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_KeyWidgetReplayLockUI_GetLockTypeName;
 
 }
 

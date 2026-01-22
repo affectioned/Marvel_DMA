@@ -21,9 +21,7 @@ struct PyWidget_Activity147_RewardItem_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity147_RewardItem_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Activity147_RewardItem_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Activity147_RewardItem_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Activity147_RewardItem_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Activity147_RewardItem_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Activity147_RewardItem_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity147_RewardItem_OnAnimationFinished;
 
 // PythonFunction PyWidget_Activity147_Main.PyWidget_Activity147_Main.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Activity147_Main_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity147_Main_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Activity147_Main_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Activity147_Main_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Activity147_Main_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Activity147_Main_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Activity147_Main_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity147_Main_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Activity147_Main.PyWidget_Activity147_Main.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Activity147_Main_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity147_Main_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Activity147_Main_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Activity147_Main_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Activity147_Main_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Activity147_Main_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Activity147_Main_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity147_Main_OnAnimationFinished;
 
 // PythonFunction PyWidget_Activity147_Main.PyWidget_Activity147_Main.PlayAnimUnlock
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_Activity147_Main_PlayAnimUnlock final
 public:
 	int32                                         idx;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity147_Main_PlayAnimUnlock) == 0x000004, "Wrong alignment on PyWidget_Activity147_Main_PlayAnimUnlock");
-static_assert(sizeof(PyWidget_Activity147_Main_PlayAnimUnlock) == 0x000004, "Wrong size on PyWidget_Activity147_Main_PlayAnimUnlock");
-static_assert(offsetof(PyWidget_Activity147_Main_PlayAnimUnlock, idx) == 0x000000, "Member 'PyWidget_Activity147_Main_PlayAnimUnlock::idx' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity147_Main_PlayAnimUnlock;
 
 // PythonFunction PyWidget_Activity147_Main.PyWidget_Activity147_Main.PlayAnimFinish
 // 0x0004 (0x0004 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_Activity147_Main_PlayAnimFinish final
 public:
 	int32                                         idx;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity147_Main_PlayAnimFinish) == 0x000004, "Wrong alignment on PyWidget_Activity147_Main_PlayAnimFinish");
-static_assert(sizeof(PyWidget_Activity147_Main_PlayAnimFinish) == 0x000004, "Wrong size on PyWidget_Activity147_Main_PlayAnimFinish");
-static_assert(offsetof(PyWidget_Activity147_Main_PlayAnimFinish, idx) == 0x000000, "Member 'PyWidget_Activity147_Main_PlayAnimFinish::idx' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity147_Main_PlayAnimFinish;
 
 // PythonFunction PyWidget_Activity147_Main.PyWidget_Activity147_Main.PlayAnimProgressTips
 // 0x0004 (0x0004 - 0x0000)
@@ -76,9 +66,7 @@ struct PyWidget_Activity147_Main_PlayAnimProgressTips final
 public:
 	int32                                         idx;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity147_Main_PlayAnimProgressTips) == 0x000004, "Wrong alignment on PyWidget_Activity147_Main_PlayAnimProgressTips");
-static_assert(sizeof(PyWidget_Activity147_Main_PlayAnimProgressTips) == 0x000004, "Wrong size on PyWidget_Activity147_Main_PlayAnimProgressTips");
-static_assert(offsetof(PyWidget_Activity147_Main_PlayAnimProgressTips, idx) == 0x000000, "Member 'PyWidget_Activity147_Main_PlayAnimProgressTips::idx' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity147_Main_PlayAnimProgressTips;
 
 }
 

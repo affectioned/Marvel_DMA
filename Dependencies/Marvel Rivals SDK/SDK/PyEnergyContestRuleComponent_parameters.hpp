@@ -24,9 +24,7 @@ struct PyEnergyContestRuleComponent_ActivationNow final
 public:
 	class APyMineControl*                         mine_obj;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_ActivationNow) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_ActivationNow");
-static_assert(sizeof(PyEnergyContestRuleComponent_ActivationNow) == 0x000008, "Wrong size on PyEnergyContestRuleComponent_ActivationNow");
-static_assert(offsetof(PyEnergyContestRuleComponent_ActivationNow, mine_obj) == 0x000000, "Member 'PyEnergyContestRuleComponent_ActivationNow::mine_obj' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_ActivationNow;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.ActivationMine
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyEnergyContestRuleComponent_ActivationMine final
 public:
 	class APyMineControl*                         mine_obj;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_ActivationMine) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_ActivationMine");
-static_assert(sizeof(PyEnergyContestRuleComponent_ActivationMine) == 0x000008, "Wrong size on PyEnergyContestRuleComponent_ActivationMine");
-static_assert(offsetof(PyEnergyContestRuleComponent_ActivationMine, mine_obj) == 0x000000, "Member 'PyEnergyContestRuleComponent_ActivationMine::mine_obj' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_ActivationMine;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.DeactivationMine
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	class APyMineControl*                         mine_obj;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          is_game_over;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_DeactivationMine) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_DeactivationMine");
-static_assert(sizeof(PyEnergyContestRuleComponent_DeactivationMine) == 0x000010, "Wrong size on PyEnergyContestRuleComponent_DeactivationMine");
-static_assert(offsetof(PyEnergyContestRuleComponent_DeactivationMine, mine_obj) == 0x000000, "Member 'PyEnergyContestRuleComponent_DeactivationMine::mine_obj' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_DeactivationMine, is_game_over) == 0x000008, "Member 'PyEnergyContestRuleComponent_DeactivationMine::is_game_over' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_DeactivationMine;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.SwitchToAssociatedBirthBasePlayerStart
 // 0x0018 (0x0018 - 0x0000)
@@ -60,10 +53,7 @@ public:
 	class APyMineControl*                         mine_obj;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 mine_name;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_SwitchToAssociatedBirthBasePlayerStart) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_SwitchToAssociatedBirthBasePlayerStart");
-static_assert(sizeof(PyEnergyContestRuleComponent_SwitchToAssociatedBirthBasePlayerStart) == 0x000018, "Wrong size on PyEnergyContestRuleComponent_SwitchToAssociatedBirthBasePlayerStart");
-static_assert(offsetof(PyEnergyContestRuleComponent_SwitchToAssociatedBirthBasePlayerStart, mine_obj) == 0x000000, "Member 'PyEnergyContestRuleComponent_SwitchToAssociatedBirthBasePlayerStart::mine_obj' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_SwitchToAssociatedBirthBasePlayerStart, mine_name) == 0x000008, "Member 'PyEnergyContestRuleComponent_SwitchToAssociatedBirthBasePlayerStart::mine_name' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_SwitchToAssociatedBirthBasePlayerStart;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.GetShuffledMineOrder
 // 0x0010 (0x0010 - 0x0000)
@@ -73,10 +63,7 @@ public:
 	class APyMineControl*                         MineObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_GetShuffledMineOrder) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_GetShuffledMineOrder");
-static_assert(sizeof(PyEnergyContestRuleComponent_GetShuffledMineOrder) == 0x000010, "Wrong size on PyEnergyContestRuleComponent_GetShuffledMineOrder");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetShuffledMineOrder, MineObject) == 0x000000, "Member 'PyEnergyContestRuleComponent_GetShuffledMineOrder::MineObject' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetShuffledMineOrder, ReturnValue) == 0x000008, "Member 'PyEnergyContestRuleComponent_GetShuffledMineOrder::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_GetShuffledMineOrder;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.GetNextShuffledOrderMine
 // 0x0010 (0x0010 - 0x0000)
@@ -86,10 +73,7 @@ public:
 	class APyMineControl*                         MineObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APyMineControl*                         ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_GetNextShuffledOrderMine) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_GetNextShuffledOrderMine");
-static_assert(sizeof(PyEnergyContestRuleComponent_GetNextShuffledOrderMine) == 0x000010, "Wrong size on PyEnergyContestRuleComponent_GetNextShuffledOrderMine");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetNextShuffledOrderMine, MineObject) == 0x000000, "Member 'PyEnergyContestRuleComponent_GetNextShuffledOrderMine::MineObject' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetNextShuffledOrderMine, ReturnValue) == 0x000008, "Member 'PyEnergyContestRuleComponent_GetNextShuffledOrderMine::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_GetNextShuffledOrderMine;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.GetCurActiveMine
 // 0x0008 (0x0008 - 0x0000)
@@ -98,9 +82,7 @@ struct PyEnergyContestRuleComponent_GetCurActiveMine final
 public:
 	class APyMineControl*                         ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_GetCurActiveMine) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_GetCurActiveMine");
-static_assert(sizeof(PyEnergyContestRuleComponent_GetCurActiveMine) == 0x000008, "Wrong size on PyEnergyContestRuleComponent_GetCurActiveMine");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetCurActiveMine, ReturnValue) == 0x000000, "Member 'PyEnergyContestRuleComponent_GetCurActiveMine::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_GetCurActiveMine;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.GetNextActiveMine
 // 0x0008 (0x0008 - 0x0000)
@@ -109,9 +91,7 @@ struct PyEnergyContestRuleComponent_GetNextActiveMine final
 public:
 	class APyMineControl*                         ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_GetNextActiveMine) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_GetNextActiveMine");
-static_assert(sizeof(PyEnergyContestRuleComponent_GetNextActiveMine) == 0x000008, "Wrong size on PyEnergyContestRuleComponent_GetNextActiveMine");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetNextActiveMine, ReturnValue) == 0x000000, "Member 'PyEnergyContestRuleComponent_GetNextActiveMine::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_GetNextActiveMine;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.GetCurMatchState
 // 0x0001 (0x0001 - 0x0000)
@@ -120,9 +100,7 @@ struct PyEnergyContestRuleComponent_GetCurMatchState final
 public:
 	EMatchState                                   ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_GetCurMatchState) == 0x000001, "Wrong alignment on PyEnergyContestRuleComponent_GetCurMatchState");
-static_assert(sizeof(PyEnergyContestRuleComponent_GetCurMatchState) == 0x000001, "Wrong size on PyEnergyContestRuleComponent_GetCurMatchState");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetCurMatchState, ReturnValue) == 0x000000, "Member 'PyEnergyContestRuleComponent_GetCurMatchState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_GetCurMatchState;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.GetMineByOrder
 // 0x0010 (0x0010 - 0x0000)
@@ -133,10 +111,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APyMineControl*                         ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_GetMineByOrder) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_GetMineByOrder");
-static_assert(sizeof(PyEnergyContestRuleComponent_GetMineByOrder) == 0x000010, "Wrong size on PyEnergyContestRuleComponent_GetMineByOrder");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetMineByOrder, order) == 0x000000, "Member 'PyEnergyContestRuleComponent_GetMineByOrder::order' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetMineByOrder, ReturnValue) == 0x000008, "Member 'PyEnergyContestRuleComponent_GetMineByOrder::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_GetMineByOrder;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.GetShuffledMineByOrder
 // 0x0010 (0x0010 - 0x0000)
@@ -147,10 +122,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APyMineControl*                         ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_GetShuffledMineByOrder) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_GetShuffledMineByOrder");
-static_assert(sizeof(PyEnergyContestRuleComponent_GetShuffledMineByOrder) == 0x000010, "Wrong size on PyEnergyContestRuleComponent_GetShuffledMineByOrder");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetShuffledMineByOrder, Order) == 0x000000, "Member 'PyEnergyContestRuleComponent_GetShuffledMineByOrder::Order' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetShuffledMineByOrder, ReturnValue) == 0x000008, "Member 'PyEnergyContestRuleComponent_GetShuffledMineByOrder::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_GetShuffledMineByOrder;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.IsInLastPointActivedStage
 // 0x0001 (0x0001 - 0x0000)
@@ -159,9 +131,7 @@ struct PyEnergyContestRuleComponent_IsInLastPointActivedStage final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_IsInLastPointActivedStage) == 0x000001, "Wrong alignment on PyEnergyContestRuleComponent_IsInLastPointActivedStage");
-static_assert(sizeof(PyEnergyContestRuleComponent_IsInLastPointActivedStage) == 0x000001, "Wrong size on PyEnergyContestRuleComponent_IsInLastPointActivedStage");
-static_assert(offsetof(PyEnergyContestRuleComponent_IsInLastPointActivedStage, ReturnValue) == 0x000000, "Member 'PyEnergyContestRuleComponent_IsInLastPointActivedStage::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_IsInLastPointActivedStage;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.IsMineActived
 // 0x0010 (0x0010 - 0x0000)
@@ -171,10 +141,7 @@ public:
 	class APyMineControl*                         mine_obj;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_IsMineActived) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_IsMineActived");
-static_assert(sizeof(PyEnergyContestRuleComponent_IsMineActived) == 0x000010, "Wrong size on PyEnergyContestRuleComponent_IsMineActived");
-static_assert(offsetof(PyEnergyContestRuleComponent_IsMineActived, mine_obj) == 0x000000, "Member 'PyEnergyContestRuleComponent_IsMineActived::mine_obj' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_IsMineActived, ReturnValue) == 0x000008, "Member 'PyEnergyContestRuleComponent_IsMineActived::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_IsMineActived;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.GetCurAllActivedMines
 // 0x0010 (0x0010 - 0x0000)
@@ -183,9 +150,7 @@ struct PyEnergyContestRuleComponent_GetCurAllActivedMines final
 public:
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_GetCurAllActivedMines) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_GetCurAllActivedMines");
-static_assert(sizeof(PyEnergyContestRuleComponent_GetCurAllActivedMines) == 0x000010, "Wrong size on PyEnergyContestRuleComponent_GetCurAllActivedMines");
-static_assert(offsetof(PyEnergyContestRuleComponent_GetCurAllActivedMines, ReturnValue) == 0x000000, "Member 'PyEnergyContestRuleComponent_GetCurAllActivedMines::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_GetCurAllActivedMines;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.DeactivateCurActivedMines
 // 0x0001 (0x0001 - 0x0000)
@@ -194,9 +159,7 @@ struct PyEnergyContestRuleComponent_DeactivateCurActivedMines final
 public:
 	bool                                          is_game_over;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_DeactivateCurActivedMines) == 0x000001, "Wrong alignment on PyEnergyContestRuleComponent_DeactivateCurActivedMines");
-static_assert(sizeof(PyEnergyContestRuleComponent_DeactivateCurActivedMines) == 0x000001, "Wrong size on PyEnergyContestRuleComponent_DeactivateCurActivedMines");
-static_assert(offsetof(PyEnergyContestRuleComponent_DeactivateCurActivedMines, is_game_over) == 0x000000, "Member 'PyEnergyContestRuleComponent_DeactivateCurActivedMines::is_game_over' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_DeactivateCurActivedMines;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.EnterOvertime
 // 0x0018 (0x0018 - 0x0000)
@@ -208,12 +171,7 @@ public:
 	float                                         speed_no_attack;                                   // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         speed_with_attack;                                 // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_EnterOvertime) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_EnterOvertime");
-static_assert(sizeof(PyEnergyContestRuleComponent_EnterOvertime) == 0x000018, "Wrong size on PyEnergyContestRuleComponent_EnterOvertime");
-static_assert(offsetof(PyEnergyContestRuleComponent_EnterOvertime, mine_obj) == 0x000000, "Member 'PyEnergyContestRuleComponent_EnterOvertime::mine_obj' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_EnterOvertime, overtime_length) == 0x000008, "Member 'PyEnergyContestRuleComponent_EnterOvertime::overtime_length' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_EnterOvertime, speed_no_attack) == 0x00000C, "Member 'PyEnergyContestRuleComponent_EnterOvertime::speed_no_attack' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_EnterOvertime, speed_with_attack) == 0x000010, "Member 'PyEnergyContestRuleComponent_EnterOvertime::speed_with_attack' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_EnterOvertime;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.ExitOvertime
 // 0x0008 (0x0008 - 0x0000)
@@ -222,9 +180,7 @@ struct PyEnergyContestRuleComponent_ExitOvertime final
 public:
 	class APyMineControl*                         mine_obj;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_ExitOvertime) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_ExitOvertime");
-static_assert(sizeof(PyEnergyContestRuleComponent_ExitOvertime) == 0x000008, "Wrong size on PyEnergyContestRuleComponent_ExitOvertime");
-static_assert(offsetof(PyEnergyContestRuleComponent_ExitOvertime, mine_obj) == 0x000000, "Member 'PyEnergyContestRuleComponent_ExitOvertime::mine_obj' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_ExitOvertime;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.ShowGuidingLine
 // 0x0028 (0x0028 - 0x0000)
@@ -235,11 +191,7 @@ public:
 	class FString                                 ToName;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          bHideOthers;                                       // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_ShowGuidingLine) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_ShowGuidingLine");
-static_assert(sizeof(PyEnergyContestRuleComponent_ShowGuidingLine) == 0x000028, "Wrong size on PyEnergyContestRuleComponent_ShowGuidingLine");
-static_assert(offsetof(PyEnergyContestRuleComponent_ShowGuidingLine, FromName) == 0x000000, "Member 'PyEnergyContestRuleComponent_ShowGuidingLine::FromName' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_ShowGuidingLine, ToName) == 0x000010, "Member 'PyEnergyContestRuleComponent_ShowGuidingLine::ToName' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_ShowGuidingLine, bHideOthers) == 0x000020, "Member 'PyEnergyContestRuleComponent_ShowGuidingLine::bHideOthers' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_ShowGuidingLine;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.HideGuidingLine
 // 0x0020 (0x0020 - 0x0000)
@@ -249,10 +201,7 @@ public:
 	class FString                                 FromName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 ToName;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_HideGuidingLine) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_HideGuidingLine");
-static_assert(sizeof(PyEnergyContestRuleComponent_HideGuidingLine) == 0x000020, "Wrong size on PyEnergyContestRuleComponent_HideGuidingLine");
-static_assert(offsetof(PyEnergyContestRuleComponent_HideGuidingLine, FromName) == 0x000000, "Member 'PyEnergyContestRuleComponent_HideGuidingLine::FromName' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_HideGuidingLine, ToName) == 0x000010, "Member 'PyEnergyContestRuleComponent_HideGuidingLine::ToName' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_HideGuidingLine;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.ShowGuidingLineFromBirthBase
 // 0x0018 (0x0018 - 0x0000)
@@ -262,10 +211,7 @@ public:
 	class FString                                 ToName;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          bHideOthers;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_ShowGuidingLineFromBirthBase) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_ShowGuidingLineFromBirthBase");
-static_assert(sizeof(PyEnergyContestRuleComponent_ShowGuidingLineFromBirthBase) == 0x000018, "Wrong size on PyEnergyContestRuleComponent_ShowGuidingLineFromBirthBase");
-static_assert(offsetof(PyEnergyContestRuleComponent_ShowGuidingLineFromBirthBase, ToName) == 0x000000, "Member 'PyEnergyContestRuleComponent_ShowGuidingLineFromBirthBase::ToName' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_ShowGuidingLineFromBirthBase, bHideOthers) == 0x000010, "Member 'PyEnergyContestRuleComponent_ShowGuidingLineFromBirthBase::bHideOthers' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_ShowGuidingLineFromBirthBase;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.HideGuidingLineFromBirthBase
 // 0x0010 (0x0010 - 0x0000)
@@ -274,9 +220,7 @@ struct PyEnergyContestRuleComponent_HideGuidingLineFromBirthBase final
 public:
 	class FString                                 ToName;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_HideGuidingLineFromBirthBase) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_HideGuidingLineFromBirthBase");
-static_assert(sizeof(PyEnergyContestRuleComponent_HideGuidingLineFromBirthBase) == 0x000010, "Wrong size on PyEnergyContestRuleComponent_HideGuidingLineFromBirthBase");
-static_assert(offsetof(PyEnergyContestRuleComponent_HideGuidingLineFromBirthBase, ToName) == 0x000000, "Member 'PyEnergyContestRuleComponent_HideGuidingLineFromBirthBase::ToName' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_HideGuidingLineFromBirthBase;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.S_InitRuleConfig
 // 0x0018 (0x0018 - 0x0000)
@@ -285,9 +229,7 @@ struct PyEnergyContestRuleComponent_S_InitRuleConfig final
 public:
 	struct FMarvelLevelEnergyContestRuleConfig    RuleConfig;                                        // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_S_InitRuleConfig) == 0x000004, "Wrong alignment on PyEnergyContestRuleComponent_S_InitRuleConfig");
-static_assert(sizeof(PyEnergyContestRuleComponent_S_InitRuleConfig) == 0x000018, "Wrong size on PyEnergyContestRuleComponent_S_InitRuleConfig");
-static_assert(offsetof(PyEnergyContestRuleComponent_S_InitRuleConfig, RuleConfig) == 0x000000, "Member 'PyEnergyContestRuleComponent_S_InitRuleConfig::RuleConfig' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_S_InitRuleConfig;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.SetSettleScorePaused
 // 0x0001 (0x0001 - 0x0000)
@@ -296,9 +238,7 @@ struct PyEnergyContestRuleComponent_SetSettleScorePaused final
 public:
 	bool                                          SettleScorePaused_0;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_SetSettleScorePaused) == 0x000001, "Wrong alignment on PyEnergyContestRuleComponent_SetSettleScorePaused");
-static_assert(sizeof(PyEnergyContestRuleComponent_SetSettleScorePaused) == 0x000001, "Wrong size on PyEnergyContestRuleComponent_SetSettleScorePaused");
-static_assert(offsetof(PyEnergyContestRuleComponent_SetSettleScorePaused, SettleScorePaused_0) == 0x000000, "Member 'PyEnergyContestRuleComponent_SetSettleScorePaused::SettleScorePaused_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_SetSettleScorePaused;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.MineEnergyFirstLowerThanRatio
 // 0x0010 (0x0010 - 0x0000)
@@ -308,10 +248,7 @@ public:
 	class APyMineControl*                         Mine;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         Ratio;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_MineEnergyFirstLowerThanRatio) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_MineEnergyFirstLowerThanRatio");
-static_assert(sizeof(PyEnergyContestRuleComponent_MineEnergyFirstLowerThanRatio) == 0x000010, "Wrong size on PyEnergyContestRuleComponent_MineEnergyFirstLowerThanRatio");
-static_assert(offsetof(PyEnergyContestRuleComponent_MineEnergyFirstLowerThanRatio, Mine) == 0x000000, "Member 'PyEnergyContestRuleComponent_MineEnergyFirstLowerThanRatio::Mine' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_MineEnergyFirstLowerThanRatio, Ratio) == 0x000008, "Member 'PyEnergyContestRuleComponent_MineEnergyFirstLowerThanRatio::Ratio' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_MineEnergyFirstLowerThanRatio;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.MineEnergyFirstLowerThanScalar
 // 0x0010 (0x0010 - 0x0000)
@@ -321,10 +258,7 @@ public:
 	class APyMineControl*                         Mine;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         Scalar;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_MineEnergyFirstLowerThanScalar) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_MineEnergyFirstLowerThanScalar");
-static_assert(sizeof(PyEnergyContestRuleComponent_MineEnergyFirstLowerThanScalar) == 0x000010, "Wrong size on PyEnergyContestRuleComponent_MineEnergyFirstLowerThanScalar");
-static_assert(offsetof(PyEnergyContestRuleComponent_MineEnergyFirstLowerThanScalar, Mine) == 0x000000, "Member 'PyEnergyContestRuleComponent_MineEnergyFirstLowerThanScalar::Mine' has a wrong offset!");
-static_assert(offsetof(PyEnergyContestRuleComponent_MineEnergyFirstLowerThanScalar, Scalar) == 0x000008, "Member 'PyEnergyContestRuleComponent_MineEnergyFirstLowerThanScalar::Scalar' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_MineEnergyFirstLowerThanScalar;
 
 // PythonFunction PyEnergyContestRuleComponent.PyEnergyContestRuleComponent.EnergyMulticastPreHintMineTips
 // 0x0008 (0x0008 - 0x0000)
@@ -333,9 +267,7 @@ struct PyEnergyContestRuleComponent_EnergyMulticastPreHintMineTips final
 public:
 	class APyMineControl*                         NextMine;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestRuleComponent_EnergyMulticastPreHintMineTips) == 0x000008, "Wrong alignment on PyEnergyContestRuleComponent_EnergyMulticastPreHintMineTips");
-static_assert(sizeof(PyEnergyContestRuleComponent_EnergyMulticastPreHintMineTips) == 0x000008, "Wrong size on PyEnergyContestRuleComponent_EnergyMulticastPreHintMineTips");
-static_assert(offsetof(PyEnergyContestRuleComponent_EnergyMulticastPreHintMineTips, NextMine) == 0x000000, "Member 'PyEnergyContestRuleComponent_EnergyMulticastPreHintMineTips::NextMine' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestRuleComponent_EnergyMulticastPreHintMineTips;
 
 }
 

@@ -17,55 +17,42 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Ability_WeaponUnit_V7.WBP_Ability_WeaponUnit_V7_C
-// 0x0080 (0x0640 - 0x05C0)
+// 0x0080 (0x0648 - 0x05C8)
 class UWBP_Ability_WeaponUnit_V7_C final : public UPyWidget_WeaponIcon
 {
 public:
-	class UWidgetAnimation*                       Anim_Faction;                                      // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       AnimStates_WeaponMode;                             // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_FoldWeapon;                                   // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Sign_Normal;                                  // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Ability_WeaponAmmoUnit_C*          Ammo;                                              // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_WeaponAmmoBuffDuration_C*          AmmoDuration;                                      // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Sign_Normal;                                   // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Sign_NormalShadow;                             // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Weapon;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                Key;                                               // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPyBattleScaleBox*                      ScaleBox_WeaponAmmo;                               // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPyBattleScaleBox*                      ScaleBox_WeaponIocn;                               // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPyBattleScaleBox*                      ScaleBox_WeaponSign;                               // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Weapon;                                    // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Slot_AbilityHUD;                                   // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          是否使用图标;                                      // 0x0638(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Faction;                                      // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       AnimStates_WeaponMode;                             // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_FoldWeapon;                                   // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Sign_Normal;                                  // 0x05E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Ability_WeaponAmmoUnit_C*          Ammo;                                              // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WeaponAmmoBuffDuration_C*          AmmoDuration;                                      // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Sign_Normal;                                   // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Sign_NormalShadow;                             // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Weapon;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                Key;                                               // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPyBattleScaleBox*                      ScaleBox_WeaponAmmo;                               // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPyBattleScaleBox*                      ScaleBox_WeaponIocn;                               // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPyBattleScaleBox*                      ScaleBox_WeaponSign;                               // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Weapon;                                    // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Slot_AbilityHUD;                                   // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          是否使用图标;                                      // 0x0640(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Ability_WeaponUnit_V7_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Ability_WeaponUnit_V7_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Ability_WeaponUnit_V7_C")
 	}
 	static class UWBP_Ability_WeaponUnit_V7_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Ability_WeaponUnit_V7_C>();
 	}
 };
-static_assert(alignof(UWBP_Ability_WeaponUnit_V7_C) == 0x000008, "Wrong alignment on UWBP_Ability_WeaponUnit_V7_C");
-static_assert(sizeof(UWBP_Ability_WeaponUnit_V7_C) == 0x000640, "Wrong size on UWBP_Ability_WeaponUnit_V7_C");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, Anim_Faction) == 0x0005C0, "Member 'UWBP_Ability_WeaponUnit_V7_C::Anim_Faction' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, AnimStates_WeaponMode) == 0x0005C8, "Member 'UWBP_Ability_WeaponUnit_V7_C::AnimStates_WeaponMode' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, Anim_FoldWeapon) == 0x0005D0, "Member 'UWBP_Ability_WeaponUnit_V7_C::Anim_FoldWeapon' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, Anim_Sign_Normal) == 0x0005D8, "Member 'UWBP_Ability_WeaponUnit_V7_C::Anim_Sign_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, Ammo) == 0x0005E0, "Member 'UWBP_Ability_WeaponUnit_V7_C::Ammo' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, AmmoDuration) == 0x0005E8, "Member 'UWBP_Ability_WeaponUnit_V7_C::AmmoDuration' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, Img_Sign_Normal) == 0x0005F0, "Member 'UWBP_Ability_WeaponUnit_V7_C::Img_Sign_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, Img_Sign_NormalShadow) == 0x0005F8, "Member 'UWBP_Ability_WeaponUnit_V7_C::Img_Sign_NormalShadow' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, Img_Weapon) == 0x000600, "Member 'UWBP_Ability_WeaponUnit_V7_C::Img_Weapon' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, Key) == 0x000608, "Member 'UWBP_Ability_WeaponUnit_V7_C::Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, ScaleBox_WeaponAmmo) == 0x000610, "Member 'UWBP_Ability_WeaponUnit_V7_C::ScaleBox_WeaponAmmo' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, ScaleBox_WeaponIocn) == 0x000618, "Member 'UWBP_Ability_WeaponUnit_V7_C::ScaleBox_WeaponIocn' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, ScaleBox_WeaponSign) == 0x000620, "Member 'UWBP_Ability_WeaponUnit_V7_C::ScaleBox_WeaponSign' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, SizeBox_Weapon) == 0x000628, "Member 'UWBP_Ability_WeaponUnit_V7_C::SizeBox_Weapon' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, Slot_AbilityHUD) == 0x000630, "Member 'UWBP_Ability_WeaponUnit_V7_C::Slot_AbilityHUD' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponUnit_V7_C, 是否使用图标) == 0x000638, "Member 'UWBP_Ability_WeaponUnit_V7_C::是否使用图标' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Ability_WeaponUnit_V7_C;
 
 }
 

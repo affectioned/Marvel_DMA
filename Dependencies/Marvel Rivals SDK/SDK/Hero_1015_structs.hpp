@@ -80,10 +80,7 @@ public:
 	float                                         RotateX;                                           // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RotateXSpeed;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FComboConfig_101521) == 0x000004, "Wrong alignment on FComboConfig_101521");
-static_assert(sizeof(FComboConfig_101521) == 0x000008, "Wrong size on FComboConfig_101521");
-static_assert(offsetof(FComboConfig_101521, RotateX) == 0x000000, "Member 'FComboConfig_101521::RotateX' has a wrong offset!");
-static_assert(offsetof(FComboConfig_101521, RotateXSpeed) == 0x000004, "Member 'FComboConfig_101521::RotateXSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_FComboConfig_101521;
 
 // ScriptStruct Hero_1015.SocketParameter_101541
 // 0x001C (0x001C - 0x0000)
@@ -94,11 +91,7 @@ public:
 	class FName                                   FxParameter;                                       // 0x000C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SocketIndex;                                       // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSocketParameter_101541) == 0x000004, "Wrong alignment on FSocketParameter_101541");
-static_assert(sizeof(FSocketParameter_101541) == 0x00001C, "Wrong size on FSocketParameter_101541");
-static_assert(offsetof(FSocketParameter_101541, SocketName) == 0x000000, "Member 'FSocketParameter_101541::SocketName' has a wrong offset!");
-static_assert(offsetof(FSocketParameter_101541, FxParameter) == 0x00000C, "Member 'FSocketParameter_101541::FxParameter' has a wrong offset!");
-static_assert(offsetof(FSocketParameter_101541, SocketIndex) == 0x000018, "Member 'FSocketParameter_101541::SocketIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FSocketParameter_101541;
 
 // ScriptStruct Hero_1015.NiagaraSocketParam_101541
 // 0x0018 (0x0018 - 0x0000)
@@ -108,10 +101,7 @@ public:
 	class UNiagaraSystem*                         NiagaraSystem;                                     // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSocketParameter_101541>        SocketParameters;                                  // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNiagaraSocketParam_101541) == 0x000008, "Wrong alignment on FNiagaraSocketParam_101541");
-static_assert(sizeof(FNiagaraSocketParam_101541) == 0x000018, "Wrong size on FNiagaraSocketParam_101541");
-static_assert(offsetof(FNiagaraSocketParam_101541, NiagaraSystem) == 0x000000, "Member 'FNiagaraSocketParam_101541::NiagaraSystem' has a wrong offset!");
-static_assert(offsetof(FNiagaraSocketParam_101541, SocketParameters) == 0x000008, "Member 'FNiagaraSocketParam_101541::SocketParameters' has a wrong offset!");
+DUMPER7_ASSERTS_FNiagaraSocketParam_101541;
 
 // ScriptStruct Hero_1015.StormMoveConfig
 // 0x0020 (0x0020 - 0x0000)
@@ -127,24 +117,14 @@ public:
 	float                                         BrakingDecelerationFalling;                        // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         GravityScale;                                      // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FStormMoveConfig) == 0x000004, "Wrong alignment on FStormMoveConfig");
-static_assert(sizeof(FStormMoveConfig) == 0x000020, "Wrong size on FStormMoveConfig");
-static_assert(offsetof(FStormMoveConfig, MaxWalkSpeed) == 0x000000, "Member 'FStormMoveConfig::MaxWalkSpeed' has a wrong offset!");
-static_assert(offsetof(FStormMoveConfig, MaxAccelerationWalking) == 0x000004, "Member 'FStormMoveConfig::MaxAccelerationWalking' has a wrong offset!");
-static_assert(offsetof(FStormMoveConfig, BrakingDecelerationWalking) == 0x000008, "Member 'FStormMoveConfig::BrakingDecelerationWalking' has a wrong offset!");
-static_assert(offsetof(FStormMoveConfig, MaxFlySpeed) == 0x00000C, "Member 'FStormMoveConfig::MaxFlySpeed' has a wrong offset!");
-static_assert(offsetof(FStormMoveConfig, MaxAccelerationFlying) == 0x000010, "Member 'FStormMoveConfig::MaxAccelerationFlying' has a wrong offset!");
-static_assert(offsetof(FStormMoveConfig, BrakingDecelerationFlying) == 0x000014, "Member 'FStormMoveConfig::BrakingDecelerationFlying' has a wrong offset!");
-static_assert(offsetof(FStormMoveConfig, BrakingDecelerationFalling) == 0x000018, "Member 'FStormMoveConfig::BrakingDecelerationFalling' has a wrong offset!");
-static_assert(offsetof(FStormMoveConfig, GravityScale) == 0x00001C, "Member 'FStormMoveConfig::GravityScale' has a wrong offset!");
+DUMPER7_ASSERTS_FStormMoveConfig;
 
 // ScriptStruct Hero_1015.DevouredCharactersData_Storm
 // 0x0000 (0x0060 - 0x0060)
-struct FDevouredCharactersData_Storm final : public FDevouredCharactersData_Base
+struct FDevouredCharactersData_Storm : public FDevouredCharactersData_Base
 {
 };
-static_assert(alignof(FDevouredCharactersData_Storm) == 0x000008, "Wrong alignment on FDevouredCharactersData_Storm");
-static_assert(sizeof(FDevouredCharactersData_Storm) == 0x000060, "Wrong size on FDevouredCharactersData_Storm");
+DUMPER7_ASSERTS_FDevouredCharactersData_Storm;
 
 // ScriptStruct Hero_1015.MontageSettings_101582
 // 0x0008 (0x0008 - 0x0000)
@@ -154,10 +134,7 @@ public:
 	float                                         Height;                                            // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Scale;                                             // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMontageSettings_101582) == 0x000004, "Wrong alignment on FMontageSettings_101582");
-static_assert(sizeof(FMontageSettings_101582) == 0x000008, "Wrong size on FMontageSettings_101582");
-static_assert(offsetof(FMontageSettings_101582, Height) == 0x000000, "Member 'FMontageSettings_101582::Height' has a wrong offset!");
-static_assert(offsetof(FMontageSettings_101582, Scale) == 0x000004, "Member 'FMontageSettings_101582::Scale' has a wrong offset!");
+DUMPER7_ASSERTS_FMontageSettings_101582;
 
 // ScriptStruct Hero_1015.MaterialIndexParams
 // 0x0050 (0x0050 - 0x0000)
@@ -166,9 +143,7 @@ struct FMaterialIndexParams final
 public:
 	TMap<class FName, float>                      MaterialParamDict;                                 // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialIndexParams) == 0x000008, "Wrong alignment on FMaterialIndexParams");
-static_assert(sizeof(FMaterialIndexParams) == 0x000050, "Wrong size on FMaterialIndexParams");
-static_assert(offsetof(FMaterialIndexParams, MaterialParamDict) == 0x000000, "Member 'FMaterialIndexParams::MaterialParamDict' has a wrong offset!");
+DUMPER7_ASSERTS_FMaterialIndexParams;
 
 // ScriptStruct Hero_1015.MaterialAbilityParams
 // 0x0050 (0x0050 - 0x0000)
@@ -177,9 +152,7 @@ struct FMaterialAbilityParams final
 public:
 	TMap<int32, struct FMaterialIndexParams>      MaterialIndexParams;                               // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialAbilityParams) == 0x000008, "Wrong alignment on FMaterialAbilityParams");
-static_assert(sizeof(FMaterialAbilityParams) == 0x000050, "Wrong size on FMaterialAbilityParams");
-static_assert(offsetof(FMaterialAbilityParams, MaterialIndexParams) == 0x000000, "Member 'FMaterialAbilityParams::MaterialIndexParams' has a wrong offset!");
+DUMPER7_ASSERTS_FMaterialAbilityParams;
 
 // ScriptStruct Hero_1015.MaterialAbilityWithTagParams
 // 0x0050 (0x0050 - 0x0000)
@@ -188,9 +161,7 @@ struct FMaterialAbilityWithTagParams final
 public:
 	TMap<struct FMaterialTag, struct FMaterialIndexParams> MaterialIndexParams;                      // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialAbilityWithTagParams) == 0x000008, "Wrong alignment on FMaterialAbilityWithTagParams");
-static_assert(sizeof(FMaterialAbilityWithTagParams) == 0x000050, "Wrong size on FMaterialAbilityWithTagParams");
-static_assert(offsetof(FMaterialAbilityWithTagParams, MaterialIndexParams) == 0x000000, "Member 'FMaterialAbilityWithTagParams::MaterialIndexParams' has a wrong offset!");
+DUMPER7_ASSERTS_FMaterialAbilityWithTagParams;
 
 // ScriptStruct Hero_1015.StormDynamicSectionMaterials
 // 0x0050 (0x0050 - 0x0000)
@@ -199,9 +170,7 @@ struct FStormDynamicSectionMaterials final
 public:
 	TMap<int32, class UMaterialInstanceDynamic*>  SectionMaterials;                                  // 0x0000(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FStormDynamicSectionMaterials) == 0x000008, "Wrong alignment on FStormDynamicSectionMaterials");
-static_assert(sizeof(FStormDynamicSectionMaterials) == 0x000050, "Wrong size on FStormDynamicSectionMaterials");
-static_assert(offsetof(FStormDynamicSectionMaterials, SectionMaterials) == 0x000000, "Member 'FStormDynamicSectionMaterials::SectionMaterials' has a wrong offset!");
+DUMPER7_ASSERTS_FStormDynamicSectionMaterials;
 
 // ScriptStruct Hero_1015.StormMaterialSlotParams
 // 0x0014 (0x0014 - 0x0000)
@@ -212,11 +181,7 @@ public:
 	class FName                                   ParamName;                                         // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ParamValue;                                        // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FStormMaterialSlotParams) == 0x000004, "Wrong alignment on FStormMaterialSlotParams");
-static_assert(sizeof(FStormMaterialSlotParams) == 0x000014, "Wrong size on FStormMaterialSlotParams");
-static_assert(offsetof(FStormMaterialSlotParams, SlotIdx) == 0x000000, "Member 'FStormMaterialSlotParams::SlotIdx' has a wrong offset!");
-static_assert(offsetof(FStormMaterialSlotParams, ParamName) == 0x000004, "Member 'FStormMaterialSlotParams::ParamName' has a wrong offset!");
-static_assert(offsetof(FStormMaterialSlotParams, ParamValue) == 0x000010, "Member 'FStormMaterialSlotParams::ParamValue' has a wrong offset!");
+DUMPER7_ASSERTS_FStormMaterialSlotParams;
 
 // ScriptStruct Hero_1015.StormMaterialSlotParamsArray
 // 0x0010 (0x0010 - 0x0000)
@@ -225,9 +190,7 @@ struct FStormMaterialSlotParamsArray final
 public:
 	TArray<struct FStormMaterialSlotParams>       MaterialSlotParams;                                // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FStormMaterialSlotParamsArray) == 0x000008, "Wrong alignment on FStormMaterialSlotParamsArray");
-static_assert(sizeof(FStormMaterialSlotParamsArray) == 0x000010, "Wrong size on FStormMaterialSlotParamsArray");
-static_assert(offsetof(FStormMaterialSlotParamsArray, MaterialSlotParams) == 0x000000, "Member 'FStormMaterialSlotParamsArray::MaterialSlotParams' has a wrong offset!");
+DUMPER7_ASSERTS_FStormMaterialSlotParamsArray;
 
 }
 

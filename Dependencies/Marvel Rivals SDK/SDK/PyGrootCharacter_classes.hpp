@@ -17,17 +17,21 @@ namespace SDK
 {
 
 // PythonClass PyGrootCharacter.PyGrootCharacter
-// 0x0010 (0x21D0 - 0x21C0)
+// 0x0010 (0x22E0 - 0x22D0)
 #pragma pack(push, 0x1)
 class alignas(0x10) APyGrootCharacter : public AGrootCharacter
 {
 public:
-	bool                                          IsBeAttached;                                      // 0x21C0(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsBeAttached;                                      // 0x22D0(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGrootCharacter">();
+		STATIC_CLASS_IMPL("PyGrootCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGrootCharacter")
 	}
 	static class APyGrootCharacter* GetDefaultObj()
 	{
@@ -35,9 +39,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyGrootCharacter) == 0x000010, "Wrong alignment on APyGrootCharacter");
-static_assert(sizeof(APyGrootCharacter) == 0x0021D0, "Wrong size on APyGrootCharacter");
-static_assert(offsetof(APyGrootCharacter, IsBeAttached) == 0x0021C0, "Member 'APyGrootCharacter::IsBeAttached' has a wrong offset!");
+DUMPER7_ASSERTS_APyGrootCharacter;
 
 }
 

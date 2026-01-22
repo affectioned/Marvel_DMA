@@ -47,25 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimNotifyState_TimedNiagaraEffect">();
+		STATIC_CLASS_IMPL("AnimNotifyState_TimedNiagaraEffect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotifyState_TimedNiagaraEffect")
 	}
 	static class UAnimNotifyState_TimedNiagaraEffect* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotifyState_TimedNiagaraEffect>();
 	}
 };
-static_assert(alignof(UAnimNotifyState_TimedNiagaraEffect) == 0x000008, "Wrong alignment on UAnimNotifyState_TimedNiagaraEffect");
-static_assert(sizeof(UAnimNotifyState_TimedNiagaraEffect) == 0x000148, "Wrong size on UAnimNotifyState_TimedNiagaraEffect");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffect, Template) == 0x000038, "Member 'UAnimNotifyState_TimedNiagaraEffect::Template' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffect, SocketName) == 0x000068, "Member 'UAnimNotifyState_TimedNiagaraEffect::SocketName' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffect, LocationOffset) == 0x000078, "Member 'UAnimNotifyState_TimedNiagaraEffect::LocationOffset' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffect, RotationOffset) == 0x000090, "Member 'UAnimNotifyState_TimedNiagaraEffect::RotationOffset' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffect, Scale3D) == 0x0000A8, "Member 'UAnimNotifyState_TimedNiagaraEffect::Scale3D' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffect, bDestroyAtEnd) == 0x0000C0, "Member 'UAnimNotifyState_TimedNiagaraEffect::bDestroyAtEnd' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffect, ComponentTimeScale) == 0x0000C4, "Member 'UAnimNotifyState_TimedNiagaraEffect::ComponentTimeScale' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffect, ComponentTags) == 0x0000C8, "Member 'UAnimNotifyState_TimedNiagaraEffect::ComponentTags' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffect, TranslucencySortPriority) == 0x0000DC, "Member 'UAnimNotifyState_TimedNiagaraEffect::TranslucencySortPriority' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffect, TranslucencySortDistanceOffset) == 0x0000E4, "Member 'UAnimNotifyState_TimedNiagaraEffect::TranslucencySortDistanceOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimNotifyState_TimedNiagaraEffect;
 
 // Class NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffectAdvanced
 // 0x0070 (0x01B8 - 0x0148)
@@ -84,18 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimNotifyState_TimedNiagaraEffectAdvanced">();
+		STATIC_CLASS_IMPL("AnimNotifyState_TimedNiagaraEffectAdvanced")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotifyState_TimedNiagaraEffectAdvanced")
 	}
 	static class UAnimNotifyState_TimedNiagaraEffectAdvanced* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotifyState_TimedNiagaraEffectAdvanced>();
 	}
 };
-static_assert(alignof(UAnimNotifyState_TimedNiagaraEffectAdvanced) == 0x000008, "Wrong alignment on UAnimNotifyState_TimedNiagaraEffectAdvanced");
-static_assert(sizeof(UAnimNotifyState_TimedNiagaraEffectAdvanced) == 0x0001B8, "Wrong size on UAnimNotifyState_TimedNiagaraEffectAdvanced");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffectAdvanced, bEnableNormalizedNotifyProgress) == 0x000148, "Member 'UAnimNotifyState_TimedNiagaraEffectAdvanced::bEnableNormalizedNotifyProgress' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffectAdvanced, NotifyProgressUserParameter) == 0x00014C, "Member 'UAnimNotifyState_TimedNiagaraEffectAdvanced::NotifyProgressUserParameter' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffectAdvanced, AnimCurves) == 0x000158, "Member 'UAnimNotifyState_TimedNiagaraEffectAdvanced::AnimCurves' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimNotifyState_TimedNiagaraEffectAdvanced;
 
 // Class NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffectWithSpeed
 // 0x0010 (0x0158 - 0x0148)
@@ -108,16 +101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimNotifyState_TimedNiagaraEffectWithSpeed">();
+		STATIC_CLASS_IMPL("AnimNotifyState_TimedNiagaraEffectWithSpeed")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotifyState_TimedNiagaraEffectWithSpeed")
 	}
 	static class UAnimNotifyState_TimedNiagaraEffectWithSpeed* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotifyState_TimedNiagaraEffectWithSpeed>();
 	}
 };
-static_assert(alignof(UAnimNotifyState_TimedNiagaraEffectWithSpeed) == 0x000008, "Wrong alignment on UAnimNotifyState_TimedNiagaraEffectWithSpeed");
-static_assert(sizeof(UAnimNotifyState_TimedNiagaraEffectWithSpeed) == 0x000158, "Wrong size on UAnimNotifyState_TimedNiagaraEffectWithSpeed");
-static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffectWithSpeed, SpeedCurve) == 0x000148, "Member 'UAnimNotifyState_TimedNiagaraEffectWithSpeed::SpeedCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimNotifyState_TimedNiagaraEffectWithSpeed;
 
 // Class NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect
 // 0x0220 (0x0260 - 0x0040)
@@ -158,7 +153,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimNotify_PlayNiagaraEffect">();
+		STATIC_CLASS_IMPL("AnimNotify_PlayNiagaraEffect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_PlayNiagaraEffect")
 	}
 	static class UAnimNotify_PlayNiagaraEffect* GetDefaultObj()
 	{
@@ -166,25 +165,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UAnimNotify_PlayNiagaraEffect) == 0x000010, "Wrong alignment on UAnimNotify_PlayNiagaraEffect");
-static_assert(sizeof(UAnimNotify_PlayNiagaraEffect) == 0x000260, "Wrong size on UAnimNotify_PlayNiagaraEffect");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, Template) == 0x000040, "Member 'UAnimNotify_PlayNiagaraEffect::Template' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, bUseCombineEffect) == 0x000070, "Member 'UAnimNotify_PlayNiagaraEffect::bUseCombineEffect' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, TemplateCombineEffect) == 0x000078, "Member 'UAnimNotify_PlayNiagaraEffect::TemplateCombineEffect' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, LocationOffset) == 0x0000A8, "Member 'UAnimNotify_PlayNiagaraEffect::LocationOffset' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, RotationOffset) == 0x0000C0, "Member 'UAnimNotify_PlayNiagaraEffect::RotationOffset' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, Scale) == 0x0000D8, "Member 'UAnimNotify_PlayNiagaraEffect::Scale' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, bAbsoluteScale) == 0x0000F0, "Member 'UAnimNotify_PlayNiagaraEffect::bAbsoluteScale' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, bDeactivateOnMontageEnded) == 0x000130, "Member 'UAnimNotify_PlayNiagaraEffect::bDeactivateOnMontageEnded' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, SocketName) == 0x000138, "Member 'UAnimNotify_PlayNiagaraEffect::SocketName' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, EffectLastTime) == 0x000144, "Member 'UAnimNotify_PlayNiagaraEffect::EffectLastTime' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, ComponentTimeScale) == 0x000148, "Member 'UAnimNotify_PlayNiagaraEffect::ComponentTimeScale' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, FloatUserParameterValues) == 0x000150, "Member 'UAnimNotify_PlayNiagaraEffect::FloatUserParameterValues' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, VectorUserParameterValues) == 0x0001A0, "Member 'UAnimNotify_PlayNiagaraEffect::VectorUserParameterValues' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, ColorUserParameterValues) == 0x0001F0, "Member 'UAnimNotify_PlayNiagaraEffect::ColorUserParameterValues' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, CustomStencilValue) == 0x000244, "Member 'UAnimNotify_PlayNiagaraEffect::CustomStencilValue' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, TranslucencySortPriority) == 0x00024C, "Member 'UAnimNotify_PlayNiagaraEffect::TranslucencySortPriority' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayNiagaraEffect, TranslucencySortDistanceOffset) == 0x000254, "Member 'UAnimNotify_PlayNiagaraEffect::TranslucencySortDistanceOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimNotify_PlayNiagaraEffect;
 
 }
 

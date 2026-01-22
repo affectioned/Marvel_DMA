@@ -36,6 +36,25 @@ void UPyPlayerState2201Component::ReceiveBeginPlay()
 }
 
 
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.C_CloseAOIInPhotoMode
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
+
+void UPyPlayerState2201Component::C_CloseAOIInPhotoMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "C_CloseAOIInPhotoMode");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.C_CloseAOI
 // (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
 
@@ -89,6 +108,589 @@ void UPyPlayerState2201Component::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 	Params::PyPlayerState2201Component_ReceiveEndPlay Parms{};
 
 	Parms.EndPlayReason = EndPlayReason;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.S_on_pym_sandwich_refresh_timesup
+// (Native, Public, BlueprintCallable)
+
+void UPyPlayerState2201Component::S_on_pym_sandwich_refresh_timesup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "S_on_pym_sandwich_refresh_timesup");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.OnRep_PymActiveTimestamp
+// (Native, Public, BlueprintCallable)
+
+void UPyPlayerState2201Component::OnRep_PymActiveTimestamp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "OnRep_PymActiveTimestamp");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.OnRep_PymRatio
+// (Native, Public, BlueprintCallable)
+
+void UPyPlayerState2201Component::OnRep_PymRatio()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "OnRep_PymRatio");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.OnRep_PymSandwichState
+// (Native, Public, BlueprintCallable)
+
+void UPyPlayerState2201Component::OnRep_PymSandwichState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "OnRep_PymSandwichState");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.OnRep_PymBuffState
+// (Native, Public, BlueprintCallable)
+
+void UPyPlayerState2201Component::OnRep_PymBuffState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "OnRep_PymBuffState");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.OnRep_M2201DuelProcessState
+// (Native, Public, BlueprintCallable)
+
+void UPyPlayerState2201Component::OnRep_M2201DuelProcessState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "OnRep_M2201DuelProcessState");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.OnRep_Initiator
+// (Native, Public, BlueprintCallable)
+
+void UPyPlayerState2201Component::OnRep_Initiator()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "OnRep_Initiator");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_ShowPymTips
+// (Net, NetReliable, Native, Public, NetClient, BlueprintCallable)
+// Parameters:
+// int32                                   TipsType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::Client_ShowPymTips(int32 TipsType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Client_ShowPymTips");
+
+	Params::PyPlayerState2201Component_Client_ShowPymTips Parms{};
+
+	Parms.TipsType = TipsType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Server_RemoveScaleBuff
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
+
+void UPyPlayerState2201Component::Server_RemoveScaleBuff()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Server_RemoveScaleBuff");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.SyncDuelSetting
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
+// Parameters:
+// EDuelType                               duel_type                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    duel_setting                                           (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::SyncDuelSetting(EDuelType duel_type, const class FString& duel_setting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "SyncDuelSetting");
+
+	Params::PyPlayerState2201Component_SyncDuelSetting Parms{};
+
+	Parms.duel_type = duel_type;
+	Parms.duel_setting = std::move(duel_setting);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.StartDuel
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
+// Parameters:
+// EDuelType                               duel_type                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::StartDuel(EDuelType duel_type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "StartDuel");
+
+	Params::PyPlayerState2201Component_StartDuel Parms{};
+
+	Parms.duel_type = duel_type;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.StartDuelWithSetting
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
+// Parameters:
+// EDuelType                               duel_type                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    duel_setting                                           (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::StartDuelWithSetting(EDuelType duel_type, const class FString& duel_setting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "StartDuelWithSetting");
+
+	Params::PyPlayerState2201Component_StartDuelWithSetting Parms{};
+
+	Parms.duel_type = duel_type;
+	Parms.duel_setting = std::move(duel_setting);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.NotifyDuelSettingIndex
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
+// Parameters:
+// EDuelType                               duel_type                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::NotifyDuelSettingIndex(EDuelType duel_type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "NotifyDuelSettingIndex");
+
+	Params::PyPlayerState2201Component_NotifyDuelSettingIndex Parms{};
+
+	Parms.duel_type = duel_type;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.S_waiting_end_callback
+// (Native, Public, BlueprintCallable)
+
+void UPyPlayerState2201Component::S_waiting_end_callback()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "S_waiting_end_callback");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.InitDuelSetting
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
+// Parameters:
+// const class FString&                    content                                                (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::InitDuelSetting(const class FString& content)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "InitDuelSetting");
+
+	Params::PyPlayerState2201Component_InitDuelSetting Parms{};
+
+	Parms.content = std::move(content);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Server_InviteToDuel
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
+// Parameters:
+// int32                                   self_player_uid                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   target_player_uid                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    invitation_msg                                         (Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    is_public                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::Server_InviteToDuel(int32 self_player_uid, int32 target_player_uid, const class FString& invitation_msg, bool is_public)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Server_InviteToDuel");
+
+	Params::PyPlayerState2201Component_Server_InviteToDuel Parms{};
+
+	Parms.self_player_uid = self_player_uid;
+	Parms.target_player_uid = target_player_uid;
+	Parms.invitation_msg = std::move(invitation_msg);
+	Parms.is_public = is_public;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Server_ProcessDuelInvition
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
+// Parameters:
+// int32                                   initiator_uid                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   receiver_uid                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    is_public                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::Server_ProcessDuelInvition(int32 initiator_uid, int32 receiver_uid, bool is_public)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Server_ProcessDuelInvition");
+
+	Params::PyPlayerState2201Component_Server_ProcessDuelInvition Parms{};
+
+	Parms.initiator_uid = initiator_uid;
+	Parms.receiver_uid = receiver_uid;
+	Parms.is_public = is_public;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Server_CancelDuel
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
+// Parameters:
+// int32                                   duel_queue_index                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::Server_CancelDuel(int32 duel_queue_index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Server_CancelDuel");
+
+	Params::PyPlayerState2201Component_Server_CancelDuel Parms{};
+
+	Parms.duel_queue_index = duel_queue_index;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_UpdateInvitedUidTimestampDict
+// (Net, NetReliable, Native, Public, NetClient, BlueprintCallable)
+// Parameters:
+// int32                                   invited_uid                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   timestamp                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::Client_UpdateInvitedUidTimestampDict(int32 invited_uid, float timestamp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Client_UpdateInvitedUidTimestampDict");
+
+	Params::PyPlayerState2201Component_Client_UpdateInvitedUidTimestampDict Parms{};
+
+	Parms.invited_uid = invited_uid;
+	Parms.timestamp = timestamp;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_ClearInvitedUidTimestampDict
+// (Net, NetReliable, Native, Public, NetClient, BlueprintCallable)
+
+void UPyPlayerState2201Component::Client_ClearInvitedUidTimestampDict()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Client_ClearInvitedUidTimestampDict");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_OnInvitedToDuel
+// (Net, NetReliable, Native, Public, NetClient, BlueprintCallable)
+// Parameters:
+// int32                                   initiator_uid                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   receiver_uid                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    invitation_msg                                         (Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    is_public                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::Client_OnInvitedToDuel(int32 initiator_uid, int32 receiver_uid, const class FString& invitation_msg, bool is_public)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Client_OnInvitedToDuel");
+
+	Params::PyPlayerState2201Component_Client_OnInvitedToDuel Parms{};
+
+	Parms.initiator_uid = initiator_uid;
+	Parms.receiver_uid = receiver_uid;
+	Parms.invitation_msg = std::move(invitation_msg);
+	Parms.is_public = is_public;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_NotifyDuelLoading
+// (Net, NetReliable, Native, Public, NetClient, BlueprintCallable)
+// Parameters:
+// float                                   ShowTime                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::Client_NotifyDuelLoading(float ShowTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Client_NotifyDuelLoading");
+
+	Params::PyPlayerState2201Component_Client_NotifyDuelLoading Parms{};
+
+	Parms.ShowTime = ShowTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_NotifyDuelCloseLoading
+// (Net, NetReliable, Native, Public, NetClient, BlueprintCallable)
+
+void UPyPlayerState2201Component::Client_NotifyDuelCloseLoading()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Client_NotifyDuelCloseLoading");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_NotifyDuelInvitationFail
+// (Net, NetReliable, Native, Public, NetClient, BlueprintCallable)
+// Parameters:
+// const class FString&                    key_str                                                (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::Client_NotifyDuelInvitationFail(const class FString& key_str)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Client_NotifyDuelInvitationFail");
+
+	Params::PyPlayerState2201Component_Client_NotifyDuelInvitationFail Parms{};
+
+	Parms.key_str = std::move(key_str);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPlayerState2201Component.PyPlayerState2201Component.Client_NotifyDuelInvitationSucceed
+// (Net, NetReliable, Native, Public, NetClient, BlueprintCallable)
+// Parameters:
+// const class FString&                    key_str                                                (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    player_name                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyPlayerState2201Component::Client_NotifyDuelInvitationSucceed(const class FString& key_str, const class FString& player_name)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerState2201Component", "Client_NotifyDuelInvitationSucceed");
+
+	Params::PyPlayerState2201Component_Client_NotifyDuelInvitationSucceed Parms{};
+
+	Parms.key_str = std::move(key_str);
+	Parms.player_name = std::move(player_name);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

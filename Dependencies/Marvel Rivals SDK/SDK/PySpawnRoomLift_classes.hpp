@@ -57,31 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpawnRoomLift">();
+		STATIC_CLASS_IMPL("PySpawnRoomLift")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpawnRoomLift")
 	}
 	static class APySpawnRoomLift* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySpawnRoomLift>();
 	}
 };
-static_assert(alignof(APySpawnRoomLift) == 0x000010, "Wrong alignment on APySpawnRoomLift");
-static_assert(sizeof(APySpawnRoomLift) == 0x0007A0, "Wrong size on APySpawnRoomLift");
-static_assert(offsetof(APySpawnRoomLift, DissolveCurve) == 0x000730, "Member 'APySpawnRoomLift::DissolveCurve' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, InitValue_Dissolve) == 0x000738, "Member 'APySpawnRoomLift::InitValue_Dissolve' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, EndValue_Dissolve) == 0x00073C, "Member 'APySpawnRoomLift::EndValue_Dissolve' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, UnderGroundCircleStrengthCurve) == 0x000740, "Member 'APySpawnRoomLift::UnderGroundCircleStrengthCurve' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, InitValue_UnderGroundCircleStrength) == 0x000748, "Member 'APySpawnRoomLift::InitValue_UnderGroundCircleStrength' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, EndValue_UnderGroundCircleStrength) == 0x00074C, "Member 'APySpawnRoomLift::EndValue_UnderGroundCircleStrength' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, MID_EnergyBarrier) == 0x000750, "Member 'APySpawnRoomLift::MID_EnergyBarrier' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, EnergyBlockDoorPositionCurve) == 0x000758, "Member 'APySpawnRoomLift::EnergyBlockDoorPositionCurve' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, InitValue_EnergyBlockDoorPosition) == 0x000760, "Member 'APySpawnRoomLift::InitValue_EnergyBlockDoorPosition' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, EndValue_EnergyBlockDoorPosition) == 0x000764, "Member 'APySpawnRoomLift::EndValue_EnergyBlockDoorPosition' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, RepCurrentTime) == 0x000768, "Member 'APySpawnRoomLift::RepCurrentTime' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, EndTime) == 0x00076C, "Member 'APySpawnRoomLift::EndTime' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, PlayingState) == 0x000770, "Member 'APySpawnRoomLift::PlayingState' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, BlockFlyingBuffID) == 0x000774, "Member 'APySpawnRoomLift::BlockFlyingBuffID' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, IsLocChanged) == 0x000778, "Member 'APySpawnRoomLift::IsLocChanged' has a wrong offset!");
-static_assert(offsetof(APySpawnRoomLift, PlayerStartLoc) == 0x000780, "Member 'APySpawnRoomLift::PlayerStartLoc' has a wrong offset!");
+DUMPER7_ASSERTS_APySpawnRoomLift;
 
 }
 

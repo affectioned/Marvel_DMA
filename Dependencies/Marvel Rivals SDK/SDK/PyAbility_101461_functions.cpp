@@ -17,44 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyAbility_101461.PyUIController_101461.OnInit
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_101461::OnInit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_101461", "OnInit");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_101461.PyUIController_101461.OnDestruct
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_101461::OnDestruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_101461", "OnDestruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_101461.PySummoner_101461.K2_OnBeginAgentTask
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -656,6 +618,33 @@ bool APyCue_SummonerLoop_10146101::OnRemove(class AActor* MyTarget, const struct
 }
 
 
+// PythonFunction PyAbility_101461.PyCue_SummonerLoop_10146101.OnWeaponSpawned
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class AShootingWeapon*                  Weapon                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FMarvelEquipmentTable&     WeaponInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APyCue_SummonerLoop_10146101::OnWeaponSpawned(class AShootingWeapon* Weapon, const struct FMarvelEquipmentTable& WeaponInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_SummonerLoop_10146101", "OnWeaponSpawned");
+
+	Params::PyCue_SummonerLoop_10146101_OnWeaponSpawned Parms{};
+
+	Parms.Weapon = Weapon;
+	Parms.WeaponInfo = std::move(WeaponInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyAbility_101461.PyCue_SummonerLoop_10146101.OnAmmoChanged
 // (Native, Public, BlueprintCallable)
 
@@ -1021,6 +1010,44 @@ void UPyCue_Projectile_HitImpact_10146101::OnNiagaraSpawned(class UNiagaraCompon
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_101461.PyUIController_101461.OnInit
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyUIController_101461::OnInit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_101461", "OnInit");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_101461.PyUIController_101461.OnDestruct
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyUIController_101461::OnDestruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_101461", "OnDestruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

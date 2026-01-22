@@ -26,19 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104851">();
+		STATIC_CLASS_IMPL("PyConfig_104851")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104851")
 	}
 	static class UPyConfig_104851* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104851>();
 	}
 };
-static_assert(alignof(UPyConfig_104851) == 0x000008, "Wrong alignment on UPyConfig_104851");
-static_assert(sizeof(UPyConfig_104851) == 0x0000A0, "Wrong size on UPyConfig_104851");
-static_assert(offsetof(UPyConfig_104851, ShownUpBuffID) == 0x000098, "Member 'UPyConfig_104851::ShownUpBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104851;
 
 // PythonClass PyAbility_104851.PyAbility_104851
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_104851 : public UMarvelGameplayAbility
 {
 public:
@@ -54,23 +56,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104851">();
+		STATIC_CLASS_IMPL("PyAbility_104851")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104851")
 	}
 	static class UPyAbility_104851* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104851>();
 	}
 };
-static_assert(alignof(UPyAbility_104851) == 0x000008, "Wrong alignment on UPyAbility_104851");
-static_assert(sizeof(UPyAbility_104851) == 0x0029F0, "Wrong size on UPyAbility_104851");
+DUMPER7_ASSERTS_UPyAbility_104851;
 
 // PythonClass PyAbility_104851.PyCue_Buff_10485101
-// 0x0010 (0x1840 - 0x1830)
+// 0x0010 (0x18F0 - 0x18E0)
 class APyCue_Buff_10485101 final : public ACueNotify_Stealth
 {
 public:
-	class FName                                   EnemyMaterialParamName;                            // 0x1830(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FadeoutAudioID;                                    // 0x183C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   EnemyMaterialParamName;                            // 0x18E0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FadeoutAudioID;                                    // 0x18EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_UpdateTeamVisualEffect(const struct FTeamVisual& NewTeamVisual);
@@ -83,17 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10485101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10485101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10485101")
 	}
 	static class APyCue_Buff_10485101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10485101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10485101) == 0x000010, "Wrong alignment on APyCue_Buff_10485101");
-static_assert(sizeof(APyCue_Buff_10485101) == 0x001840, "Wrong size on APyCue_Buff_10485101");
-static_assert(offsetof(APyCue_Buff_10485101, EnemyMaterialParamName) == 0x001830, "Member 'APyCue_Buff_10485101::EnemyMaterialParamName' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10485101, FadeoutAudioID) == 0x00183C, "Member 'APyCue_Buff_10485101::FadeoutAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10485101;
 
 }
 

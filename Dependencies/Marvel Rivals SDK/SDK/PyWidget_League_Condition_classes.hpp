@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_Condition.PyWidget_League_Condition
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0048 (0x0610 - 0x05C8)
 class UPyWidget_League_Condition final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            FontColorNormal;                                   // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            FontColorDone;                                     // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnHovered;                                         // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnUnhovered;                                       // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            FontColorNormal;                                   // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            FontColorDone;                                     // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnHovered;                                         // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnUnhovered;                                       // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_Condition">();
+		STATIC_CLASS_IMPL("PyWidget_League_Condition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_Condition")
 	}
 	static class UPyWidget_League_Condition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_Condition>();
 	}
 };
-static_assert(alignof(UPyWidget_League_Condition) == 0x000008, "Wrong alignment on UPyWidget_League_Condition");
-static_assert(sizeof(UPyWidget_League_Condition) == 0x000608, "Wrong size on UPyWidget_League_Condition");
-static_assert(offsetof(UPyWidget_League_Condition, FontColorNormal) == 0x0005BC, "Member 'UPyWidget_League_Condition::FontColorNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Condition, FontColorDone) == 0x0005D0, "Member 'UPyWidget_League_Condition::FontColorDone' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Condition, OnHovered) == 0x0005E8, "Member 'UPyWidget_League_Condition::OnHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Condition, OnUnhovered) == 0x0005F8, "Member 'UPyWidget_League_Condition::OnUnhovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_Condition;
 
 }
 

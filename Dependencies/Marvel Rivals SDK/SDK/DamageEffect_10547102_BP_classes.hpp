@@ -23,15 +23,18 @@ class UDamageEffect_10547102_BP_C final : public UMarvelGameplayEffectDamage_105
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DamageEffect_10547102_BP_C">();
+		BP_STATIC_CLASS_IMPL("DamageEffect_10547102_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageEffect_10547102_BP_C")
 	}
 	static class UDamageEffect_10547102_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageEffect_10547102_BP_C>();
 	}
 };
-static_assert(alignof(UDamageEffect_10547102_BP_C) == 0x000008, "Wrong alignment on UDamageEffect_10547102_BP_C");
-static_assert(sizeof(UDamageEffect_10547102_BP_C) == 0x001780, "Wrong size on UDamageEffect_10547102_BP_C");
+DUMPER7_ASSERTS_UDamageEffect_10547102_BP_C;
 
 }
 

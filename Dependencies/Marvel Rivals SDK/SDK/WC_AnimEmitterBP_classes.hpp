@@ -23,15 +23,18 @@ class UWC_AnimEmitterBP_C final : public UWidgetComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WC_AnimEmitterBP_C">();
+		BP_STATIC_CLASS_IMPL("WC_AnimEmitterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_AnimEmitterBP_C")
 	}
 	static class UWC_AnimEmitterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_AnimEmitterBP_C>();
 	}
 };
-static_assert(alignof(UWC_AnimEmitterBP_C) == 0x000010, "Wrong alignment on UWC_AnimEmitterBP_C");
-static_assert(sizeof(UWC_AnimEmitterBP_C) == 0x000A00, "Wrong size on UWC_AnimEmitterBP_C");
+DUMPER7_ASSERTS_UWC_AnimEmitterBP_C;
 
 }
 

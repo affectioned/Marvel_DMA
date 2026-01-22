@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRVTVComponent">();
+		STATIC_CLASS_IMPL("PyRVTVComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRVTVComponent")
 	}
 	static class UPyRVTVComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRVTVComponent>();
 	}
 };
-static_assert(alignof(UPyRVTVComponent) == 0x000008, "Wrong alignment on UPyRVTVComponent");
-static_assert(sizeof(UPyRVTVComponent) == 0x000108, "Wrong size on UPyRVTVComponent");
+DUMPER7_ASSERTS_UPyRVTVComponent;
 
 }
 

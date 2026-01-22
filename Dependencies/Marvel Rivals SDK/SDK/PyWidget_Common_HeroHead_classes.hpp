@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "python_enums_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "python_enums_structs.hpp"
 #include "MarvelWidgets_classes.hpp"
 #include "UMG_classes.hpp"
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_HeroHead.PyWidget_Common_BaseHeroHead
-// 0x0090 (0x0448 - 0x03B8)
+// 0x00E0 (0x0498 - 0x03B8)
 class UPyWidget_Common_BaseHeroHead : public UUserWidget
 {
 public:
@@ -28,23 +28,33 @@ public:
 	int32                                         SkinID;                                            // 0x03BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ShapeID;                                           // 0x03C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C4[0x4];                                      // 0x03C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Img_Mask;                                          // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Texture_Scale;                                     // 0x03D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3D4[0x4];                                      // 0x03D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Texture_Offset;                                    // 0x03D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Preview_Scale;                                     // 0x03E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AvatarID;                                          // 0x03C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EHeroHeadType                                 HeroHeadType;                                      // 0x03D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3D9[0x7];                                      // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Img_Mask;                                          // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Texture_Scale;                                     // 0x03E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3EC[0x4];                                      // 0x03EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Preview_Offset;                                    // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             EmptyBg_Img;                                       // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EmptyBg_Color;                                     // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bQuestionReverse;                                  // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_419[0x3];                                      // 0x0419(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Empty_Scale;                                       // 0x041C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Empty_Offset;                                      // 0x0420(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EHeroHeadType                                 HeroHeadType;                                      // 0x0430(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bClearImgDataOnEmptyTarget;                        // 0x0431(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_432[0x6];                                      // 0x0432(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UTexture2D* Picture)> OnPictureLoadCompleted;                // 0x0438(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FVector2D                              Texture_Offset;                                    // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Preview_Scale;                                     // 0x0400(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Preview_Offset;                                    // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bClearImgDataOnEmptyTarget;                        // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseBasicShapeHeroHead;                            // 0x0419(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_41A[0x6];                                      // 0x041A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             EmptyBg_Img;                                       // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EmptyBg_Color;                                     // 0x0428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bQuestionReverse;                                  // 0x0438(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_439[0x3];                                      // 0x0439(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Empty_Scale;                                       // 0x043C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Empty_Offset;                                      // 0x0440(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNamedSlot*                             Slot_Role;                                         // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNamedSlot*                             Slot_Dynamic_Vx;                                   // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UScaleBox*                              ScaleBox_Dynaimc;                                  // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USizeBox*                               SizeBox_Main;                                      // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Main;                                      // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaskImage*                             ImgMaskContent;                                    // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaskImage*                             EmptyMaskContent;                                  // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UTexture2D* Picture)> OnPictureLoadCompleted;                // 0x0488(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,39 +66,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_BaseHeroHead">();
+		STATIC_CLASS_IMPL("PyWidget_Common_BaseHeroHead")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_BaseHeroHead")
 	}
 	static class UPyWidget_Common_BaseHeroHead* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_BaseHeroHead>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_BaseHeroHead) == 0x000008, "Wrong alignment on UPyWidget_Common_BaseHeroHead");
-static_assert(sizeof(UPyWidget_Common_BaseHeroHead) == 0x000448, "Wrong size on UPyWidget_Common_BaseHeroHead");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, HeroID) == 0x0003B8, "Member 'UPyWidget_Common_BaseHeroHead::HeroID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, SkinID) == 0x0003BC, "Member 'UPyWidget_Common_BaseHeroHead::SkinID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, ShapeID) == 0x0003C0, "Member 'UPyWidget_Common_BaseHeroHead::ShapeID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, Img_Mask) == 0x0003C8, "Member 'UPyWidget_Common_BaseHeroHead::Img_Mask' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, Texture_Scale) == 0x0003D0, "Member 'UPyWidget_Common_BaseHeroHead::Texture_Scale' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, Texture_Offset) == 0x0003D8, "Member 'UPyWidget_Common_BaseHeroHead::Texture_Offset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, Preview_Scale) == 0x0003E8, "Member 'UPyWidget_Common_BaseHeroHead::Preview_Scale' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, Preview_Offset) == 0x0003F0, "Member 'UPyWidget_Common_BaseHeroHead::Preview_Offset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, EmptyBg_Img) == 0x000400, "Member 'UPyWidget_Common_BaseHeroHead::EmptyBg_Img' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, EmptyBg_Color) == 0x000408, "Member 'UPyWidget_Common_BaseHeroHead::EmptyBg_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, bQuestionReverse) == 0x000418, "Member 'UPyWidget_Common_BaseHeroHead::bQuestionReverse' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, Empty_Scale) == 0x00041C, "Member 'UPyWidget_Common_BaseHeroHead::Empty_Scale' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, Empty_Offset) == 0x000420, "Member 'UPyWidget_Common_BaseHeroHead::Empty_Offset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, HeroHeadType) == 0x000430, "Member 'UPyWidget_Common_BaseHeroHead::HeroHeadType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, bClearImgDataOnEmptyTarget) == 0x000431, "Member 'UPyWidget_Common_BaseHeroHead::bClearImgDataOnEmptyTarget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BaseHeroHead, OnPictureLoadCompleted) == 0x000438, "Member 'UPyWidget_Common_BaseHeroHead::OnPictureLoadCompleted' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_BaseHeroHead;
 
 // PythonClass PyWidget_Common_HeroHead.PyWidget_Common_HeroHeadSpuare
-// 0x0018 (0x0460 - 0x0448)
+// 0x0018 (0x04B0 - 0x0498)
 class UPyWidget_Common_HeroHeadSpuare : public UPyWidget_Common_BaseHeroHead
 {
 public:
-	struct FVector2D                              HeroHeadSize;                                      // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowGrayMask;                                    // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              HeroHeadSize;                                      // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowGrayMask;                                    // 0x04A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetIsShowGrayMask(bool value);
@@ -96,17 +93,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_HeroHeadSpuare">();
+		STATIC_CLASS_IMPL("PyWidget_Common_HeroHeadSpuare")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_HeroHeadSpuare")
 	}
 	static class UPyWidget_Common_HeroHeadSpuare* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_HeroHeadSpuare>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_HeroHeadSpuare) == 0x000008, "Wrong alignment on UPyWidget_Common_HeroHeadSpuare");
-static_assert(sizeof(UPyWidget_Common_HeroHeadSpuare) == 0x000460, "Wrong size on UPyWidget_Common_HeroHeadSpuare");
-static_assert(offsetof(UPyWidget_Common_HeroHeadSpuare, HeroHeadSize) == 0x000448, "Member 'UPyWidget_Common_HeroHeadSpuare::HeroHeadSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_HeroHeadSpuare, IsShowGrayMask) == 0x000458, "Member 'UPyWidget_Common_HeroHeadSpuare::IsShowGrayMask' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_HeroHeadSpuare;
 
 // PythonClass PyWidget_Common_HeroHead.PyHeroMaskImage
 // 0x0000 (0x04B0 - 0x04B0)
@@ -115,36 +113,41 @@ class UPyHeroMaskImage : public UMaskImage
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHeroMaskImage">();
+		STATIC_CLASS_IMPL("PyHeroMaskImage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHeroMaskImage")
 	}
 	static class UPyHeroMaskImage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHeroMaskImage>();
 	}
 };
-static_assert(alignof(UPyHeroMaskImage) == 0x000010, "Wrong alignment on UPyHeroMaskImage");
-static_assert(sizeof(UPyHeroMaskImage) == 0x0004B0, "Wrong size on UPyHeroMaskImage");
+DUMPER7_ASSERTS_UPyHeroMaskImage;
 
 // PythonClass PyWidget_Common_HeroHead.PyWidget_Common_HeroHead_BigSpuare
-// 0x0010 (0x0458 - 0x0448)
+// 0x0010 (0x04A8 - 0x0498)
 class UPyWidget_Common_HeroHead_BigSpuare : public UPyWidget_Common_BaseHeroHead
 {
 public:
-	struct FVector2D                              HeroHeadSize;                                      // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              HeroHeadSize;                                      // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_HeroHead_BigSpuare">();
+		STATIC_CLASS_IMPL("PyWidget_Common_HeroHead_BigSpuare")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_HeroHead_BigSpuare")
 	}
 	static class UPyWidget_Common_HeroHead_BigSpuare* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_HeroHead_BigSpuare>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_HeroHead_BigSpuare) == 0x000008, "Wrong alignment on UPyWidget_Common_HeroHead_BigSpuare");
-static_assert(sizeof(UPyWidget_Common_HeroHead_BigSpuare) == 0x000458, "Wrong size on UPyWidget_Common_HeroHead_BigSpuare");
-static_assert(offsetof(UPyWidget_Common_HeroHead_BigSpuare, HeroHeadSize) == 0x000448, "Member 'UPyWidget_Common_HeroHead_BigSpuare::HeroHeadSize' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_HeroHead_BigSpuare;
 
 // PythonClass PyWidget_Common_HeroHead.PyWidget_MaskHeroHead
 // 0x0020 (0x04D0 - 0x04B0)
@@ -165,78 +168,88 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MaskHeroHead">();
+		STATIC_CLASS_IMPL("PyWidget_MaskHeroHead")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MaskHeroHead")
 	}
 	static class UPyWidget_MaskHeroHead* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MaskHeroHead>();
 	}
 };
-static_assert(alignof(UPyWidget_MaskHeroHead) == 0x000010, "Wrong alignment on UPyWidget_MaskHeroHead");
-static_assert(sizeof(UPyWidget_MaskHeroHead) == 0x0004D0, "Wrong size on UPyWidget_MaskHeroHead");
-static_assert(offsetof(UPyWidget_MaskHeroHead, OnMaskLoadCompleted) == 0x0004B0, "Member 'UPyWidget_MaskHeroHead::OnMaskLoadCompleted' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskHeroHead, OnPictureLoadCompleted) == 0x0004C0, "Member 'UPyWidget_MaskHeroHead::OnPictureLoadCompleted' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MaskHeroHead;
 
 // PythonClass PyWidget_Common_HeroHead.PyWidget_Common_HeroHeadTransverse
-// 0x0020 (0x0468 - 0x0448)
+// 0x0038 (0x04D0 - 0x0498)
 class UPyWidget_Common_HeroHeadTransverse : public UPyWidget_Common_BaseHeroHead
 {
 public:
-	struct FVector2D                              HeroHeadSize;                                      // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              HeroHeadMaskSize;                                  // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              HeroHeadSize;                                      // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              HeroHeadMaskSize;                                  // 0x04A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Preview_Dynamic_Scale;                             // 0x04B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4BC[0x4];                                      // 0x04BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Preview_Dynamic_Offset;                            // 0x04C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_HeroHeadTransverse">();
+		STATIC_CLASS_IMPL("PyWidget_Common_HeroHeadTransverse")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_HeroHeadTransverse")
 	}
 	static class UPyWidget_Common_HeroHeadTransverse* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_HeroHeadTransverse>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_HeroHeadTransverse) == 0x000008, "Wrong alignment on UPyWidget_Common_HeroHeadTransverse");
-static_assert(sizeof(UPyWidget_Common_HeroHeadTransverse) == 0x000468, "Wrong size on UPyWidget_Common_HeroHeadTransverse");
-static_assert(offsetof(UPyWidget_Common_HeroHeadTransverse, HeroHeadSize) == 0x000448, "Member 'UPyWidget_Common_HeroHeadTransverse::HeroHeadSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_HeroHeadTransverse, HeroHeadMaskSize) == 0x000458, "Member 'UPyWidget_Common_HeroHeadTransverse::HeroHeadMaskSize' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_HeroHeadTransverse;
 
 // PythonClass PyWidget_Common_HeroHead.PyWidget_Common_HeroPortrait
-// 0x0010 (0x0458 - 0x0448)
+// 0x0010 (0x04A8 - 0x0498)
 class UPyWidget_Common_HeroPortrait : public UPyWidget_Common_BaseHeroHead
 {
 public:
-	struct FVector2D                              HeroPortraitSize;                                  // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              HeroPortraitSize;                                  // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_HeroPortrait">();
+		STATIC_CLASS_IMPL("PyWidget_Common_HeroPortrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_HeroPortrait")
 	}
 	static class UPyWidget_Common_HeroPortrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_HeroPortrait>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_HeroPortrait) == 0x000008, "Wrong alignment on UPyWidget_Common_HeroPortrait");
-static_assert(sizeof(UPyWidget_Common_HeroPortrait) == 0x000458, "Wrong size on UPyWidget_Common_HeroPortrait");
-static_assert(offsetof(UPyWidget_Common_HeroPortrait, HeroPortraitSize) == 0x000448, "Member 'UPyWidget_Common_HeroPortrait::HeroPortraitSize' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_HeroPortrait;
 
 // PythonClass PyWidget_Common_HeroHead.PyWidget_Common_HeroBigPortrait
-// 0x0000 (0x0458 - 0x0458)
+// 0x0000 (0x04A8 - 0x04A8)
 class UPyWidget_Common_HeroBigPortrait : public UPyWidget_Common_HeroPortrait
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_HeroBigPortrait">();
+		STATIC_CLASS_IMPL("PyWidget_Common_HeroBigPortrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_HeroBigPortrait")
 	}
 	static class UPyWidget_Common_HeroBigPortrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_HeroBigPortrait>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_HeroBigPortrait) == 0x000008, "Wrong alignment on UPyWidget_Common_HeroBigPortrait");
-static_assert(sizeof(UPyWidget_Common_HeroBigPortrait) == 0x000458, "Wrong size on UPyWidget_Common_HeroBigPortrait");
+DUMPER7_ASSERTS_UPyWidget_Common_HeroBigPortrait;
 
 }
 

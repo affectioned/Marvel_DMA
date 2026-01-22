@@ -23,9 +23,7 @@ struct PyWidget_Performance_SuggestionItem_SetSuggestionData final
 public:
 	class UObject*                                ItemObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Performance_SuggestionItem_SetSuggestionData) == 0x000008, "Wrong alignment on PyWidget_Performance_SuggestionItem_SetSuggestionData");
-static_assert(sizeof(PyWidget_Performance_SuggestionItem_SetSuggestionData) == 0x000008, "Wrong size on PyWidget_Performance_SuggestionItem_SetSuggestionData");
-static_assert(offsetof(PyWidget_Performance_SuggestionItem_SetSuggestionData, ItemObject) == 0x000000, "Member 'PyWidget_Performance_SuggestionItem_SetSuggestionData::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Performance_SuggestionItem_SetSuggestionData;
 
 // PythonFunction PyWidget_Performance_Suggestion_Group.PyWidget_Performance_Suggestion_Group.navigation_to_next_content
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Performance_Suggestion_Group_navigation_to_next_content) == 0x000008, "Wrong alignment on PyWidget_Performance_Suggestion_Group_navigation_to_next_content");
-static_assert(sizeof(PyWidget_Performance_Suggestion_Group_navigation_to_next_content) == 0x000010, "Wrong size on PyWidget_Performance_Suggestion_Group_navigation_to_next_content");
-static_assert(offsetof(PyWidget_Performance_Suggestion_Group_navigation_to_next_content, NavType) == 0x000000, "Member 'PyWidget_Performance_Suggestion_Group_navigation_to_next_content::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Performance_Suggestion_Group_navigation_to_next_content, ReturnValue) == 0x000008, "Member 'PyWidget_Performance_Suggestion_Group_navigation_to_next_content::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Performance_Suggestion_Group_navigation_to_next_content;
 
 }
 

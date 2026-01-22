@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PySelectTarget_Perform">();
+		STATIC_CLASS_IMPL("BTS_PySelectTarget_Perform")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PySelectTarget_Perform")
 	}
 	static class UBTS_PySelectTarget_Perform* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PySelectTarget_Perform>();
 	}
 };
-static_assert(alignof(UBTS_PySelectTarget_Perform) == 0x000008, "Wrong alignment on UBTS_PySelectTarget_Perform");
-static_assert(sizeof(UBTS_PySelectTarget_Perform) == 0x000168, "Wrong size on UBTS_PySelectTarget_Perform");
-static_assert(offsetof(UBTS_PySelectTarget_Perform, InEnemyTargetHeroID) == 0x0000A8, "Member 'UBTS_PySelectTarget_Perform::InEnemyTargetHeroID' has a wrong offset!");
-static_assert(offsetof(UBTS_PySelectTarget_Perform, InAllyTargetHeroID) == 0x0000D8, "Member 'UBTS_PySelectTarget_Perform::InAllyTargetHeroID' has a wrong offset!");
-static_assert(offsetof(UBTS_PySelectTarget_Perform, OutEnemyTarget) == 0x000108, "Member 'UBTS_PySelectTarget_Perform::OutEnemyTarget' has a wrong offset!");
-static_assert(offsetof(UBTS_PySelectTarget_Perform, OutAllyTarget) == 0x000138, "Member 'UBTS_PySelectTarget_Perform::OutAllyTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PySelectTarget_Perform;
 
 }
 

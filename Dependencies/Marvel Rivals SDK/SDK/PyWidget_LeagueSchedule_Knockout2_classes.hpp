@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_LeagueSchedule_Common_classes.hpp"
 #include "python_enums_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
+#include "PyWidget_LeagueSchedule_Common_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_LeagueSchedule_Knockout2.PyWidget_LeagueSchedule_Knockout2Final
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_LeagueSchedule_Knockout2Final final : public UPyWidget_LeagueSchedule_ContentBase
 {
 public:
@@ -31,30 +31,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueSchedule_Knockout2Final">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueSchedule_Knockout2Final")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueSchedule_Knockout2Final")
 	}
 	static class UPyWidget_LeagueSchedule_Knockout2Final* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueSchedule_Knockout2Final>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueSchedule_Knockout2Final) == 0x000008, "Wrong alignment on UPyWidget_LeagueSchedule_Knockout2Final");
-static_assert(sizeof(UPyWidget_LeagueSchedule_Knockout2Final) == 0x0005C0, "Wrong size on UPyWidget_LeagueSchedule_Knockout2Final");
+DUMPER7_ASSERTS_UPyWidget_LeagueSchedule_Knockout2Final;
 
 // PythonClass PyWidget_LeagueSchedule_Knockout2.PyWidget_LeagueSchedule_Knockout2Group
-// 0x0080 (0x0640 - 0x05C0)
+// 0x0080 (0x0648 - 0x05C8)
 class UPyWidget_LeagueSchedule_Knockout2Group final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Color_Win;                                         // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color_Lose;                                        // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color_Eliminated;                                  // 0x05DC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Text_Win;                                          // 0x05F0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Text_Lose;                                         // 0x0608(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Text_Eliminated;                                   // 0x0620(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	ELeagueKnockout2Group                         GroupType;                                         // 0x0638(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Color_Win;                                         // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Lose;                                        // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Eliminated;                                  // 0x05E4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5F4[0x4];                                      // 0x05F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Text_Win;                                          // 0x05F8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Text_Lose;                                         // 0x0610(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Text_Eliminated;                                   // 0x0628(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	ELeagueKnockout2Group                         GroupType;                                         // 0x0640(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -63,25 +66,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueSchedule_Knockout2Group">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueSchedule_Knockout2Group")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueSchedule_Knockout2Group")
 	}
 	static class UPyWidget_LeagueSchedule_Knockout2Group* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueSchedule_Knockout2Group>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueSchedule_Knockout2Group) == 0x000008, "Wrong alignment on UPyWidget_LeagueSchedule_Knockout2Group");
-static_assert(sizeof(UPyWidget_LeagueSchedule_Knockout2Group) == 0x000640, "Wrong size on UPyWidget_LeagueSchedule_Knockout2Group");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Knockout2Group, Color_Win) == 0x0005BC, "Member 'UPyWidget_LeagueSchedule_Knockout2Group::Color_Win' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Knockout2Group, Color_Lose) == 0x0005CC, "Member 'UPyWidget_LeagueSchedule_Knockout2Group::Color_Lose' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Knockout2Group, Color_Eliminated) == 0x0005DC, "Member 'UPyWidget_LeagueSchedule_Knockout2Group::Color_Eliminated' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Knockout2Group, Text_Win) == 0x0005F0, "Member 'UPyWidget_LeagueSchedule_Knockout2Group::Text_Win' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Knockout2Group, Text_Lose) == 0x000608, "Member 'UPyWidget_LeagueSchedule_Knockout2Group::Text_Lose' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Knockout2Group, Text_Eliminated) == 0x000620, "Member 'UPyWidget_LeagueSchedule_Knockout2Group::Text_Eliminated' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Knockout2Group, GroupType) == 0x000638, "Member 'UPyWidget_LeagueSchedule_Knockout2Group::GroupType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueSchedule_Knockout2Group;
 
 // PythonClass PyWidget_LeagueSchedule_Knockout2.PyWidget_LeagueSchedule_Knockout2Normal
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_LeagueSchedule_Knockout2Normal final : public UPyWidget_LeagueSchedule_ContentBase
 {
 public:
@@ -91,15 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueSchedule_Knockout2Normal">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueSchedule_Knockout2Normal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueSchedule_Knockout2Normal")
 	}
 	static class UPyWidget_LeagueSchedule_Knockout2Normal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueSchedule_Knockout2Normal>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueSchedule_Knockout2Normal) == 0x000008, "Wrong alignment on UPyWidget_LeagueSchedule_Knockout2Normal");
-static_assert(sizeof(UPyWidget_LeagueSchedule_Knockout2Normal) == 0x0005C0, "Wrong size on UPyWidget_LeagueSchedule_Knockout2Normal");
+DUMPER7_ASSERTS_UPyWidget_LeagueSchedule_Knockout2Normal;
 
 }
 

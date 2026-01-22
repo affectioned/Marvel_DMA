@@ -44,20 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWC_Widget_Camp">();
+		STATIC_CLASS_IMPL("PyWC_Widget_Camp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWC_Widget_Camp")
 	}
 	static class UPyWC_Widget_Camp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWC_Widget_Camp>();
 	}
 };
-static_assert(alignof(UPyWC_Widget_Camp) == 0x000010, "Wrong alignment on UPyWC_Widget_Camp");
-static_assert(sizeof(UPyWC_Widget_Camp) == 0x000890, "Wrong size on UPyWC_Widget_Camp");
-static_assert(offsetof(UPyWC_Widget_Camp, ArrowVisibility) == 0x000870, "Member 'UPyWC_Widget_Camp::ArrowVisibility' has a wrong offset!");
-static_assert(offsetof(UPyWC_Widget_Camp, CanBeSeenDirectly) == 0x000871, "Member 'UPyWC_Widget_Camp::CanBeSeenDirectly' has a wrong offset!");
-static_assert(offsetof(UPyWC_Widget_Camp, IsCloseToPlayer) == 0x000872, "Member 'UPyWC_Widget_Camp::IsCloseToPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWC_Widget_Camp, IsAttack) == 0x000873, "Member 'UPyWC_Widget_Camp::IsAttack' has a wrong offset!");
-static_assert(offsetof(UPyWC_Widget_Camp, OnWidgetVisibleChanged) == 0x000878, "Member 'UPyWC_Widget_Camp::OnWidgetVisibleChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWC_Widget_Camp;
 
 }
 

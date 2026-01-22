@@ -19,20 +19,20 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BreakIce_AwardItem.PyWidget_BreakIce_AwardItem_Base
-// 0x0090 (0x0650 - 0x05C0)
+// 0x0090 (0x0658 - 0x05C8)
 class UPyWidget_BreakIce_AwardItem_Base : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_CoinBg;                                        // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_CoinBg_Hover;                                  // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BreakIceCoinName_Color;                            // 0x05F0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalName_Color;                                  // 0x0604(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CountColor_Gain;                                   // 0x0618(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CountColor_Normal;                                 // 0x062C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index)>   OnClicked;                                         // 0x0640(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_CoinBg;                                        // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_CoinBg_Hover;                                  // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BreakIceCoinName_Color;                            // 0x05F8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalName_Color;                                  // 0x060C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CountColor_Gain;                                   // 0x0620(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CountColor_Normal;                                 // 0x0634(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index)>   OnClicked;                                         // 0x0648(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -43,58 +43,58 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BreakIce_AwardItem_Base">();
+		STATIC_CLASS_IMPL("PyWidget_BreakIce_AwardItem_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BreakIce_AwardItem_Base")
 	}
 	static class UPyWidget_BreakIce_AwardItem_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BreakIce_AwardItem_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_BreakIce_AwardItem_Base) == 0x000008, "Wrong alignment on UPyWidget_BreakIce_AwardItem_Base");
-static_assert(sizeof(UPyWidget_BreakIce_AwardItem_Base) == 0x000650, "Wrong size on UPyWidget_BreakIce_AwardItem_Base");
-static_assert(offsetof(UPyWidget_BreakIce_AwardItem_Base, Image_OffsetUV_Skin) == 0x0005C0, "Member 'UPyWidget_BreakIce_AwardItem_Base::Image_OffsetUV_Skin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BreakIce_AwardItem_Base, Image_OffsetUV_Normal) == 0x0005D0, "Member 'UPyWidget_BreakIce_AwardItem_Base::Image_OffsetUV_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BreakIce_AwardItem_Base, Img_CoinBg) == 0x0005E0, "Member 'UPyWidget_BreakIce_AwardItem_Base::Img_CoinBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BreakIce_AwardItem_Base, Img_CoinBg_Hover) == 0x0005E8, "Member 'UPyWidget_BreakIce_AwardItem_Base::Img_CoinBg_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BreakIce_AwardItem_Base, BreakIceCoinName_Color) == 0x0005F0, "Member 'UPyWidget_BreakIce_AwardItem_Base::BreakIceCoinName_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BreakIce_AwardItem_Base, NormalName_Color) == 0x000604, "Member 'UPyWidget_BreakIce_AwardItem_Base::NormalName_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BreakIce_AwardItem_Base, CountColor_Gain) == 0x000618, "Member 'UPyWidget_BreakIce_AwardItem_Base::CountColor_Gain' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BreakIce_AwardItem_Base, CountColor_Normal) == 0x00062C, "Member 'UPyWidget_BreakIce_AwardItem_Base::CountColor_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BreakIce_AwardItem_Base, OnClicked) == 0x000640, "Member 'UPyWidget_BreakIce_AwardItem_Base::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BreakIce_AwardItem_Base;
 
 // PythonClass PyWidget_BreakIce_AwardItem.PyWidget_BreakIce_AwardItem_TaskAward
-// 0x0000 (0x0650 - 0x0650)
+// 0x0000 (0x0658 - 0x0658)
 class UPyWidget_BreakIce_AwardItem_TaskAward final : public UPyWidget_BreakIce_AwardItem_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BreakIce_AwardItem_TaskAward">();
+		STATIC_CLASS_IMPL("PyWidget_BreakIce_AwardItem_TaskAward")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BreakIce_AwardItem_TaskAward")
 	}
 	static class UPyWidget_BreakIce_AwardItem_TaskAward* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BreakIce_AwardItem_TaskAward>();
 	}
 };
-static_assert(alignof(UPyWidget_BreakIce_AwardItem_TaskAward) == 0x000008, "Wrong alignment on UPyWidget_BreakIce_AwardItem_TaskAward");
-static_assert(sizeof(UPyWidget_BreakIce_AwardItem_TaskAward) == 0x000650, "Wrong size on UPyWidget_BreakIce_AwardItem_TaskAward");
+DUMPER7_ASSERTS_UPyWidget_BreakIce_AwardItem_TaskAward;
 
 // PythonClass PyWidget_BreakIce_AwardItem.PyWidget_BreakIce_AwardItem_GiftAward
-// 0x0000 (0x0650 - 0x0650)
+// 0x0000 (0x0658 - 0x0658)
 class UPyWidget_BreakIce_AwardItem_GiftAward final : public UPyWidget_BreakIce_AwardItem_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BreakIce_AwardItem_GiftAward">();
+		STATIC_CLASS_IMPL("PyWidget_BreakIce_AwardItem_GiftAward")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BreakIce_AwardItem_GiftAward")
 	}
 	static class UPyWidget_BreakIce_AwardItem_GiftAward* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BreakIce_AwardItem_GiftAward>();
 	}
 };
-static_assert(alignof(UPyWidget_BreakIce_AwardItem_GiftAward) == 0x000008, "Wrong alignment on UPyWidget_BreakIce_AwardItem_GiftAward");
-static_assert(sizeof(UPyWidget_BreakIce_AwardItem_GiftAward) == 0x000650, "Wrong size on UPyWidget_BreakIce_AwardItem_GiftAward");
+DUMPER7_ASSERTS_UPyWidget_BreakIce_AwardItem_GiftAward;
 
 }
 

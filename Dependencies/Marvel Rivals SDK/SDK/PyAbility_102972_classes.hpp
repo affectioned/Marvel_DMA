@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102972.PyKnockUp_102972
-// 0x0008 (0x2040 - 0x2038)
+// 0x0008 (0x2390 - 0x2388)
 class UPyKnockUp_102972 : public UMarvelKnockUpAbility
 {
 public:
-	int32                                         NoPawnColliBuff;                                   // 0x2038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NoPawnColliBuff;                                   // 0x2388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnKnockUped(class AMarvelBaseCharacter* Owner, class AActor* Causer);
@@ -32,19 +32,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKnockUp_102972">();
+		STATIC_CLASS_IMPL("PyKnockUp_102972")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKnockUp_102972")
 	}
 	static class UPyKnockUp_102972* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyKnockUp_102972>();
 	}
 };
-static_assert(alignof(UPyKnockUp_102972) == 0x000008, "Wrong alignment on UPyKnockUp_102972");
-static_assert(sizeof(UPyKnockUp_102972) == 0x002040, "Wrong size on UPyKnockUp_102972");
-static_assert(offsetof(UPyKnockUp_102972, NoPawnColliBuff) == 0x002038, "Member 'UPyKnockUp_102972::NoPawnColliBuff' has a wrong offset!");
+DUMPER7_ASSERTS_UPyKnockUp_102972;
 
 // PythonClass PyAbility_102972.PyAbility_102972
-// 0x0000 (0x2A20 - 0x2A20)
+// 0x0000 (0x2A70 - 0x2A70)
 class UPyAbility_102972 : public UAbility_102972
 {
 public:
@@ -58,24 +60,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102972">();
+		STATIC_CLASS_IMPL("PyAbility_102972")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102972")
 	}
 	static class UPyAbility_102972* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102972>();
 	}
 };
-static_assert(alignof(UPyAbility_102972) == 0x000008, "Wrong alignment on UPyAbility_102972");
-static_assert(sizeof(UPyAbility_102972) == 0x002A20, "Wrong size on UPyAbility_102972");
+DUMPER7_ASSERTS_UPyAbility_102972;
 
 // PythonClass PyAbility_102972.PyCue_Buff_10297201
-// 0x0030 (0x1670 - 0x1640)
+// 0x0030 (0x1720 - 0x16F0)
 class APyCue_Buff_10297201 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                StartOffsetLoc;                                    // 0x1640(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               StartOffsetRot;                                    // 0x1658(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                StartOffsetLoc;                                    // 0x16F0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               StartOffsetRot;                                    // 0x1708(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -83,17 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10297201">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10297201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10297201")
 	}
 	static class APyCue_Buff_10297201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10297201>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10297201) == 0x000010, "Wrong alignment on APyCue_Buff_10297201");
-static_assert(sizeof(APyCue_Buff_10297201) == 0x001670, "Wrong size on APyCue_Buff_10297201");
-static_assert(offsetof(APyCue_Buff_10297201, StartOffsetLoc) == 0x001640, "Member 'APyCue_Buff_10297201::StartOffsetLoc' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10297201, StartOffsetRot) == 0x001658, "Member 'APyCue_Buff_10297201::StartOffsetRot' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10297201;
 
 }
 

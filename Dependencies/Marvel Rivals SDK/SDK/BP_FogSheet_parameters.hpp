@@ -65,47 +65,7 @@ public:
 	float                                         CallFunc_MakeColor_G_ImplicitCast;                 // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeColor_R_ImplicitCast;                 // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FogSheet_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_FogSheet_C_UserConstructionScript");
-static_assert(sizeof(BP_FogSheet_C_UserConstructionScript) == 0x000170, "Wrong size on BP_FogSheet_C_UserConstructionScript");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_Conv_BoolToDouble_ReturnValue) == 0x000000, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_Conv_BoolToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_Conv_BoolToDouble_ReturnValue_1) == 0x000008, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_Conv_BoolToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, Temp_struct_Variable) == 0x000010, "Member 'BP_FogSheet_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000070, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x000078, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_BreakVector_X) == 0x000080, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_BreakVector_Y) == 0x000088, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_BreakVector_Z) == 0x000090, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000098, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_BreakColor_R) == 0x0000B0, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_BreakColor_G) == 0x0000B4, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_BreakColor_B) == 0x0000B8, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_BreakColor_A) == 0x0000BC, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x0000C0, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SelectObject_ReturnValue) == 0x0000C8, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SelectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x0000D0, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SelectObject_ReturnValue_1) == 0x0000D8, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SelectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x0000E0, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, K2Node_DynamicCast_As____) == 0x0000E8, "Member 'BP_FogSheet_C_UserConstructionScript::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, K2Node_DynamicCast_bSuccess) == 0x0000F0, "Member 'BP_FogSheet_C_UserConstructionScript::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_MakeColor_ReturnValue) == 0x0000F4, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000108, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000110, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x000114, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_2) == 0x000118, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_3) == 0x00011C, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_4) == 0x000120, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_5) == 0x000124, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_6) == 0x000128, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_6' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_7) == 0x00012C, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_7' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_8) == 0x000130, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_8' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_9) == 0x000134, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_9' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_10) == 0x000138, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_10' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x000140, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1) == 0x000148, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_A_ImplicitCast_2) == 0x000150, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_A_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_MakeColor_B_ImplicitCast) == 0x000158, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_MakeColor_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_MakeColor_G_ImplicitCast) == 0x00015C, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_MakeColor_G_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_UserConstructionScript, CallFunc_MakeColor_R_ImplicitCast) == 0x000160, "Member 'BP_FogSheet_C_UserConstructionScript::CallFunc_MakeColor_R_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_FogSheet_C_UserConstructionScript;
 
 // Function BP_FogSheet.BP_FogSheet_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -114,9 +74,7 @@ struct BP_FogSheet_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FogSheet_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_FogSheet_C_ReceiveTick");
-static_assert(sizeof(BP_FogSheet_C_ReceiveTick) == 0x000004, "Wrong size on BP_FogSheet_C_ReceiveTick");
-static_assert(offsetof(BP_FogSheet_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_FogSheet_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_FogSheet_C_ReceiveTick;
 
 // Function BP_FogSheet.BP_FogSheet_C.ExecuteUbergraph_BP_FogSheet
 // 0x00A8 (0x00A8 - 0x0000)
@@ -148,30 +106,7 @@ public:
 	float                                         CallFunc_MakeColor_G_ImplicitCast;                 // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeColor_R_ImplicitCast;                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet) == 0x000008, "Wrong alignment on BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet");
-static_assert(sizeof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet) == 0x0000A8, "Wrong size on BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, EntryPoint) == 0x000000, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_BreakColor_R) == 0x000030, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_BreakColor_G) == 0x000034, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_BreakColor_B) == 0x000038, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_BreakColor_A) == 0x00003C, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000040, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000048, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000050, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_MakeColor_ReturnValue) == 0x000058, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_IsServer_ReturnValue) == 0x000068, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_IsValid_ReturnValue) == 0x000069, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000070, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000078, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x000080, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1) == 0x000088, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_Multiply_DoubleDouble_A_ImplicitCast_2) == 0x000090, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_Multiply_DoubleDouble_A_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_MakeColor_B_ImplicitCast) == 0x000098, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_MakeColor_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_MakeColor_G_ImplicitCast) == 0x00009C, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_MakeColor_G_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet, CallFunc_MakeColor_R_ImplicitCast) == 0x0000A0, "Member 'BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet::CallFunc_MakeColor_R_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_FogSheet_C_ExecuteUbergraph_BP_FogSheet;
 
 }
 

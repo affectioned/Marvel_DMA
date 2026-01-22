@@ -17,67 +17,48 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_Trigger_DeadZone.WBP_Setting_Trigger_DeadZone_C
-// 0x00B0 (0x0670 - 0x05C0)
+// 0x00B0 (0x0678 - 0x05C8)
 class UWBP_Setting_Trigger_DeadZone_C final : public UPyWidget_GamepadTriggerDeadZoneWidget
 {
 public:
-	class UWidgetAnimation*                       Anim_Right_Progress;                               // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Left_Progress;                                // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UProgressBar*                           Bar_Left_DeadZone;                                 // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           Bar_Left_DeadZone_Gray;                            // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           Bar_Right_DeadZone;                                // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           Bar_Right_DeadZone_Gray;                           // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Ps;                                            // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Ps4;                                           // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Ps4_Left;                                      // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Ps4_Right;                                     // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Ps_Left;                                       // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Ps_Right;                                      // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Xbox;                                          // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Xbox_Left;                                     // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Xbox_Right;                                    // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Left_Line;                                 // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Ps;                                        // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Ps4;                                       // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Right_Line;                                // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Xbox;                                      // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                WBP_Key_Left;                                      // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                WBP_Key_Right;                                     // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Right_Progress;                               // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Left_Progress;                                // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UProgressBar*                           Bar_Left_DeadZone;                                 // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           Bar_Left_DeadZone_Gray;                            // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           Bar_Right_DeadZone;                                // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           Bar_Right_DeadZone_Gray;                           // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Ps;                                            // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Ps4;                                           // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Ps4_Left;                                      // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Ps4_Right;                                     // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Ps_Left;                                       // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Ps_Right;                                      // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Xbox;                                          // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Xbox_Left;                                     // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Xbox_Right;                                    // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Left_Line;                                 // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Ps;                                        // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Ps4;                                       // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Right_Line;                                // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Xbox;                                      // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                WBP_Key_Left;                                      // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                WBP_Key_Right;                                     // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Trigger_DeadZone_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Trigger_DeadZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Trigger_DeadZone_C")
 	}
 	static class UWBP_Setting_Trigger_DeadZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Trigger_DeadZone_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Trigger_DeadZone_C) == 0x000008, "Wrong alignment on UWBP_Setting_Trigger_DeadZone_C");
-static_assert(sizeof(UWBP_Setting_Trigger_DeadZone_C) == 0x000670, "Wrong size on UWBP_Setting_Trigger_DeadZone_C");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Anim_Right_Progress) == 0x0005C0, "Member 'UWBP_Setting_Trigger_DeadZone_C::Anim_Right_Progress' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Anim_Left_Progress) == 0x0005C8, "Member 'UWBP_Setting_Trigger_DeadZone_C::Anim_Left_Progress' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Bar_Left_DeadZone) == 0x0005D0, "Member 'UWBP_Setting_Trigger_DeadZone_C::Bar_Left_DeadZone' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Bar_Left_DeadZone_Gray) == 0x0005D8, "Member 'UWBP_Setting_Trigger_DeadZone_C::Bar_Left_DeadZone_Gray' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Bar_Right_DeadZone) == 0x0005E0, "Member 'UWBP_Setting_Trigger_DeadZone_C::Bar_Right_DeadZone' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Bar_Right_DeadZone_Gray) == 0x0005E8, "Member 'UWBP_Setting_Trigger_DeadZone_C::Bar_Right_DeadZone_Gray' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Img_Ps) == 0x0005F0, "Member 'UWBP_Setting_Trigger_DeadZone_C::Img_Ps' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Img_Ps4) == 0x0005F8, "Member 'UWBP_Setting_Trigger_DeadZone_C::Img_Ps4' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Img_Ps4_Left) == 0x000600, "Member 'UWBP_Setting_Trigger_DeadZone_C::Img_Ps4_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Img_Ps4_Right) == 0x000608, "Member 'UWBP_Setting_Trigger_DeadZone_C::Img_Ps4_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Img_Ps_Left) == 0x000610, "Member 'UWBP_Setting_Trigger_DeadZone_C::Img_Ps_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Img_Ps_Right) == 0x000618, "Member 'UWBP_Setting_Trigger_DeadZone_C::Img_Ps_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Img_Xbox) == 0x000620, "Member 'UWBP_Setting_Trigger_DeadZone_C::Img_Xbox' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Img_Xbox_Left) == 0x000628, "Member 'UWBP_Setting_Trigger_DeadZone_C::Img_Xbox_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Img_Xbox_Right) == 0x000630, "Member 'UWBP_Setting_Trigger_DeadZone_C::Img_Xbox_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Overlay_Left_Line) == 0x000638, "Member 'UWBP_Setting_Trigger_DeadZone_C::Overlay_Left_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Overlay_Ps) == 0x000640, "Member 'UWBP_Setting_Trigger_DeadZone_C::Overlay_Ps' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Overlay_Ps4) == 0x000648, "Member 'UWBP_Setting_Trigger_DeadZone_C::Overlay_Ps4' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Overlay_Right_Line) == 0x000650, "Member 'UWBP_Setting_Trigger_DeadZone_C::Overlay_Right_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, Overlay_Xbox) == 0x000658, "Member 'UWBP_Setting_Trigger_DeadZone_C::Overlay_Xbox' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, WBP_Key_Left) == 0x000660, "Member 'UWBP_Setting_Trigger_DeadZone_C::WBP_Key_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Trigger_DeadZone_C, WBP_Key_Right) == 0x000668, "Member 'UWBP_Setting_Trigger_DeadZone_C::WBP_Key_Right' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Trigger_DeadZone_C;
 
 }
 

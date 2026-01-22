@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10130_104724.PySummoned_10130_10472401
-// 0x0000 (0x0B60 - 0x0B60)
+// 0x0000 (0x0B80 - 0x0B80)
 class APySummoned_10130_10472401 : public ASummoned_10130_10472401
 {
 public:
@@ -28,18 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10130_10472401">();
+		STATIC_CLASS_IMPL("PySummoned_10130_10472401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10130_10472401")
 	}
 	static class APySummoned_10130_10472401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_10130_10472401>();
 	}
 };
-static_assert(alignof(APySummoned_10130_10472401) == 0x000010, "Wrong alignment on APySummoned_10130_10472401");
-static_assert(sizeof(APySummoned_10130_10472401) == 0x000B60, "Wrong size on APySummoned_10130_10472401");
+DUMPER7_ASSERTS_APySummoned_10130_10472401;
 
 // PythonClass PyAbility_10130_104724.PyAbility_10130_104724
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_10130_104724 : public UAbility_10130_104724
 {
 public:
@@ -50,24 +53,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_10130_104724">();
+		STATIC_CLASS_IMPL("PyAbility_10130_104724")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_10130_104724")
 	}
 	static class UPyAbility_10130_104724* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_10130_104724>();
 	}
 };
-static_assert(alignof(UPyAbility_10130_104724) == 0x000008, "Wrong alignment on UPyAbility_10130_104724");
-static_assert(sizeof(UPyAbility_10130_104724) == 0x0029F8, "Wrong size on UPyAbility_10130_104724");
+DUMPER7_ASSERTS_UPyAbility_10130_104724;
 
 // PythonClass PyAbility_10130_104724.PyProjectile_10130_10472401
-// 0x0010 (0x3BA0 - 0x3B90)
+// 0x0010 (0x3EB0 - 0x3EA0)
 class APyProjectile_10130_10472401 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	uint8                                         Pad_3B88[0x8];                                     // 0x3B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SpawnCostValue;                                    // 0x3B90(0x0004)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD1_3_EffectID;                                    // 0x3B94(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SpawnCostValue;                                    // 0x3EA0(0x0004)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD1_3_EffectID;                                    // 0x3EA4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnInitializeData();
@@ -76,24 +82,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10130_10472401">();
+		STATIC_CLASS_IMPL("PyProjectile_10130_10472401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10130_10472401")
 	}
 	static class APyProjectile_10130_10472401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10130_10472401>();
 	}
 };
-static_assert(alignof(APyProjectile_10130_10472401) == 0x000010, "Wrong alignment on APyProjectile_10130_10472401");
-static_assert(sizeof(APyProjectile_10130_10472401) == 0x003BA0, "Wrong size on APyProjectile_10130_10472401");
-static_assert(offsetof(APyProjectile_10130_10472401, SpawnCostValue) == 0x003B90, "Member 'APyProjectile_10130_10472401::SpawnCostValue' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10130_10472401, BD1_3_EffectID) == 0x003B94, "Member 'APyProjectile_10130_10472401::BD1_3_EffectID' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_10130_10472401;
 
 // PythonClass PyAbility_10130_104724.PyScope_10130_10472401
-// 0x0010 (0x1AB0 - 0x1AA0)
+// 0x0010 (0x1B80 - 0x1B70)
 class APyScope_10130_10472401 final : public AMarvelAbilityTargetActor_Scope
 {
 public:
-	int32                                         SpawnCostValue;                                    // 0x1AA0(0x0004)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B68[0x8];                                     // 0x1B68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SpawnCostValue;                                    // 0x1B70(0x0004)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnInitializeData();
@@ -101,25 +109,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10130_10472401">();
+		STATIC_CLASS_IMPL("PyScope_10130_10472401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10130_10472401")
 	}
 	static class APyScope_10130_10472401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10130_10472401>();
 	}
 };
-static_assert(alignof(APyScope_10130_10472401) == 0x000010, "Wrong alignment on APyScope_10130_10472401");
-static_assert(sizeof(APyScope_10130_10472401) == 0x001AB0, "Wrong size on APyScope_10130_10472401");
-static_assert(offsetof(APyScope_10130_10472401, SpawnCostValue) == 0x001AA0, "Member 'APyScope_10130_10472401::SpawnCostValue' has a wrong offset!");
+DUMPER7_ASSERTS_APyScope_10130_10472401;
 
 // PythonClass PyAbility_10130_104724.PyEffectiveComponent_10130_10472401
-// 0x0010 (0x1C80 - 0x1C70)
+// 0x0010 (0x2050 - 0x2040)
 class UPyEffectiveComponent_10130_10472401 : public UMarvelAgentEffectiveComponent
 {
 public:
-	uint8                                         Pad_1C68[0x8];                                     // 0x1C68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         OneTimeDamage;                                     // 0x1C70(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD1_3_EffectID;                                    // 0x1C74(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OneTimeDamage;                                     // 0x2040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD1_3_EffectID;                                    // 0x2044(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_Initialize();
@@ -128,17 +137,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10130_10472401">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10130_10472401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10130_10472401")
 	}
 	static class UPyEffectiveComponent_10130_10472401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10130_10472401>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10130_10472401) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10130_10472401");
-static_assert(sizeof(UPyEffectiveComponent_10130_10472401) == 0x001C80, "Wrong size on UPyEffectiveComponent_10130_10472401");
-static_assert(offsetof(UPyEffectiveComponent_10130_10472401, OneTimeDamage) == 0x001C70, "Member 'UPyEffectiveComponent_10130_10472401::OneTimeDamage' has a wrong offset!");
-static_assert(offsetof(UPyEffectiveComponent_10130_10472401, BD1_3_EffectID) == 0x001C74, "Member 'UPyEffectiveComponent_10130_10472401::BD1_3_EffectID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10130_10472401;
 
 }
 

@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGraphAbilityFuncNodes">();
+		STATIC_CLASS_IMPL("PyGraphAbilityFuncNodes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGraphAbilityFuncNodes")
 	}
 	static class UPyGraphAbilityFuncNodes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyGraphAbilityFuncNodes>();
 	}
 };
-static_assert(alignof(UPyGraphAbilityFuncNodes) == 0x000008, "Wrong alignment on UPyGraphAbilityFuncNodes");
-static_assert(sizeof(UPyGraphAbilityFuncNodes) == 0x000030, "Wrong size on UPyGraphAbilityFuncNodes");
+DUMPER7_ASSERTS_UPyGraphAbilityFuncNodes;
 
 // PythonClass PyGraphAbilityFuncNodes.PyGraphAbilityFuncNodes_Ability
 // 0x0000 (0x0030 - 0x0030)
@@ -47,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGraphAbilityFuncNodes_Ability">();
+		STATIC_CLASS_IMPL("PyGraphAbilityFuncNodes_Ability")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGraphAbilityFuncNodes_Ability")
 	}
 	static class UPyGraphAbilityFuncNodes_Ability* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyGraphAbilityFuncNodes_Ability>();
 	}
 };
-static_assert(alignof(UPyGraphAbilityFuncNodes_Ability) == 0x000008, "Wrong alignment on UPyGraphAbilityFuncNodes_Ability");
-static_assert(sizeof(UPyGraphAbilityFuncNodes_Ability) == 0x000030, "Wrong size on UPyGraphAbilityFuncNodes_Ability");
+DUMPER7_ASSERTS_UPyGraphAbilityFuncNodes_Ability;
 
 // PythonClass PyGraphAbilityFuncNodes.PyGraphAbilityFuncNodes_AbilityTarget
 // 0x0000 (0x0030 - 0x0030)
@@ -68,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGraphAbilityFuncNodes_AbilityTarget">();
+		STATIC_CLASS_IMPL("PyGraphAbilityFuncNodes_AbilityTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGraphAbilityFuncNodes_AbilityTarget")
 	}
 	static class UPyGraphAbilityFuncNodes_AbilityTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyGraphAbilityFuncNodes_AbilityTarget>();
 	}
 };
-static_assert(alignof(UPyGraphAbilityFuncNodes_AbilityTarget) == 0x000008, "Wrong alignment on UPyGraphAbilityFuncNodes_AbilityTarget");
-static_assert(sizeof(UPyGraphAbilityFuncNodes_AbilityTarget) == 0x000030, "Wrong size on UPyGraphAbilityFuncNodes_AbilityTarget");
+DUMPER7_ASSERTS_UPyGraphAbilityFuncNodes_AbilityTarget;
 
 }
 

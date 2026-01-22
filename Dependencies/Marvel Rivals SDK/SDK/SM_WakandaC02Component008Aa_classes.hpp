@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_WakandaC02Component008Aa_C">();
+		BP_STATIC_CLASS_IMPL("SM_WakandaC02Component008Aa_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_WakandaC02Component008Aa_C")
 	}
 	static class ASM_WakandaC02Component008Aa_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_WakandaC02Component008Aa_C>();
 	}
 };
-static_assert(alignof(ASM_WakandaC02Component008Aa_C) == 0x000010, "Wrong alignment on ASM_WakandaC02Component008Aa_C");
-static_assert(sizeof(ASM_WakandaC02Component008Aa_C) == 0x000700, "Wrong size on ASM_WakandaC02Component008Aa_C");
-static_assert(offsetof(ASM_WakandaC02Component008Aa_C, SM_WakandaC02Component008Aa) == 0x0006E0, "Member 'ASM_WakandaC02Component008Aa_C::SM_WakandaC02Component008Aa' has a wrong offset!");
-static_assert(offsetof(ASM_WakandaC02Component008Aa_C, Main_Part) == 0x0006E8, "Member 'ASM_WakandaC02Component008Aa_C::Main_Part' has a wrong offset!");
-static_assert(offsetof(ASM_WakandaC02Component008Aa_C, DefaultSceneRoot) == 0x0006F0, "Member 'ASM_WakandaC02Component008Aa_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ASM_WakandaC02Component008Aa_C;
 
 }
 

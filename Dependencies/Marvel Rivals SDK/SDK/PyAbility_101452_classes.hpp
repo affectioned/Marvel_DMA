@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101452.PyAbility_101452
-// 0x0000 (0x42A0 - 0x42A0)
+// 0x0000 (0x4650 - 0x4650)
 class UPyAbility_101452 : public UAbility_101452
 {
 public:
@@ -43,18 +43,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101452">();
+		STATIC_CLASS_IMPL("PyAbility_101452")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101452")
 	}
 	static class UPyAbility_101452* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101452>();
 	}
 };
-static_assert(alignof(UPyAbility_101452) == 0x000010, "Wrong alignment on UPyAbility_101452");
-static_assert(sizeof(UPyAbility_101452) == 0x0042A0, "Wrong size on UPyAbility_101452");
+DUMPER7_ASSERTS_UPyAbility_101452;
 
 // PythonClass PyAbility_101452.PySummonedComp_10145201
-// 0x0000 (0x0DB0 - 0x0DB0)
+// 0x0000 (0x0E08 - 0x0E08)
 class UPySummonedComp_10145201 final : public UMarvelSummonedComponent
 {
 public:
@@ -64,23 +67,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10145201">();
+		STATIC_CLASS_IMPL("PySummonedComp_10145201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10145201")
 	}
 	static class UPySummonedComp_10145201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10145201>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10145201) == 0x000008, "Wrong alignment on UPySummonedComp_10145201");
-static_assert(sizeof(UPySummonedComp_10145201) == 0x000DB0, "Wrong size on UPySummonedComp_10145201");
+DUMPER7_ASSERTS_UPySummonedComp_10145201;
 
 // PythonClass PyAbility_101452.PySummoned_10145201
-// 0x0020 (0x0BA0 - 0x0B80)
+// 0x0020 (0x0BC0 - 0x0BA0)
 class APySummoned_10145201 : public ASummoned_10145201
 {
 public:
-	TArray<class AActor*>                         SweepIgnoreActors;                                 // 0x0B80(0x0010)(NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSlideStateChanged;                               // 0x0B90(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TArray<class AActor*>                         SweepIgnoreActors;                                 // 0x0BA0(0x0010)(NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSlideStateChanged;                               // 0x0BB0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -92,20 +98,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10145201">();
+		STATIC_CLASS_IMPL("PySummoned_10145201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10145201")
 	}
 	static class APySummoned_10145201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_10145201>();
 	}
 };
-static_assert(alignof(APySummoned_10145201) == 0x000010, "Wrong alignment on APySummoned_10145201");
-static_assert(sizeof(APySummoned_10145201) == 0x000BA0, "Wrong size on APySummoned_10145201");
-static_assert(offsetof(APySummoned_10145201, SweepIgnoreActors) == 0x000B80, "Member 'APySummoned_10145201::SweepIgnoreActors' has a wrong offset!");
-static_assert(offsetof(APySummoned_10145201, OnSlideStateChanged) == 0x000B90, "Member 'APySummoned_10145201::OnSlideStateChanged' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_10145201;
 
 // PythonClass PyAbility_101452.PySummoned_Cue_10145201_Loop
-// 0x0000 (0x1200 - 0x1200)
+// 0x0000 (0x1260 - 0x1260)
 class APySummoned_Cue_10145201_Loop final : public AMarvelCueNotify_Summoned
 {
 public:
@@ -117,15 +124,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_Cue_10145201_Loop">();
+		STATIC_CLASS_IMPL("PySummoned_Cue_10145201_Loop")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_Cue_10145201_Loop")
 	}
 	static class APySummoned_Cue_10145201_Loop* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_Cue_10145201_Loop>();
 	}
 };
-static_assert(alignof(APySummoned_Cue_10145201_Loop) == 0x000010, "Wrong alignment on APySummoned_Cue_10145201_Loop");
-static_assert(sizeof(APySummoned_Cue_10145201_Loop) == 0x001200, "Wrong size on APySummoned_Cue_10145201_Loop");
+DUMPER7_ASSERTS_APySummoned_Cue_10145201_Loop;
 
 }
 

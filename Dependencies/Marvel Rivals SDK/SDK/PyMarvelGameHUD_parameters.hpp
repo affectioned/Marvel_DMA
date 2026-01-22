@@ -23,9 +23,7 @@ struct PyMarvelGameHUD_ReceiveEndPlay final
 public:
 	EEndPlayReason                                Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameHUD_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMarvelGameHUD_ReceiveEndPlay");
-static_assert(sizeof(PyMarvelGameHUD_ReceiveEndPlay) == 0x000001, "Wrong size on PyMarvelGameHUD_ReceiveEndPlay");
-static_assert(offsetof(PyMarvelGameHUD_ReceiveEndPlay, Reason) == 0x000000, "Member 'PyMarvelGameHUD_ReceiveEndPlay::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameHUD_ReceiveEndPlay;
 
 // PythonFunction PyMarvelGameHUD.PyMarvelGameHUD.ShowTransitionPanel
 // 0x0008 (0x0008 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	float                                         TransTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         BlackTime;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameHUD_ShowTransitionPanel) == 0x000004, "Wrong alignment on PyMarvelGameHUD_ShowTransitionPanel");
-static_assert(sizeof(PyMarvelGameHUD_ShowTransitionPanel) == 0x000008, "Wrong size on PyMarvelGameHUD_ShowTransitionPanel");
-static_assert(offsetof(PyMarvelGameHUD_ShowTransitionPanel, TransTime) == 0x000000, "Member 'PyMarvelGameHUD_ShowTransitionPanel::TransTime' has a wrong offset!");
-static_assert(offsetof(PyMarvelGameHUD_ShowTransitionPanel, BlackTime) == 0x000004, "Member 'PyMarvelGameHUD_ShowTransitionPanel::BlackTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameHUD_ShowTransitionPanel;
 
 // PythonFunction PyMarvelGameHUD.PyMarvelGameHUD.GetBattleHud
 // 0x0008 (0x0008 - 0x0000)
@@ -47,9 +42,7 @@ struct PyMarvelGameHUD_GetBattleHud final
 public:
 	class UPyBattlePanel*                         ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameHUD_GetBattleHud) == 0x000008, "Wrong alignment on PyMarvelGameHUD_GetBattleHud");
-static_assert(sizeof(PyMarvelGameHUD_GetBattleHud) == 0x000008, "Wrong size on PyMarvelGameHUD_GetBattleHud");
-static_assert(offsetof(PyMarvelGameHUD_GetBattleHud, ReturnValue) == 0x000000, "Member 'PyMarvelGameHUD_GetBattleHud::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameHUD_GetBattleHud;
 
 }
 

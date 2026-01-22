@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectHero_DutyRing.PyWidget_SelectHero_DutyRing
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_SelectHero_DutyRing : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectHero_DutyRing">();
+		STATIC_CLASS_IMPL("PyWidget_SelectHero_DutyRing")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectHero_DutyRing")
 	}
 	static class UPyWidget_SelectHero_DutyRing* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectHero_DutyRing>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectHero_DutyRing) == 0x000008, "Wrong alignment on UPyWidget_SelectHero_DutyRing");
-static_assert(sizeof(UPyWidget_SelectHero_DutyRing) == 0x0005C0, "Wrong size on UPyWidget_SelectHero_DutyRing");
+DUMPER7_ASSERTS_UPyWidget_SelectHero_DutyRing;
 
 }
 

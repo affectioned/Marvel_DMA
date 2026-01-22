@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyFillColorPoint">();
+		STATIC_CLASS_IMPL("PyFillColorPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyFillColorPoint")
 	}
 	static class APyFillColorPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyFillColorPoint>();
 	}
 };
-static_assert(alignof(APyFillColorPoint) == 0x000010, "Wrong alignment on APyFillColorPoint");
-static_assert(sizeof(APyFillColorPoint) == 0x0006E0, "Wrong size on APyFillColorPoint");
+DUMPER7_ASSERTS_APyFillColorPoint;
 
 }
 

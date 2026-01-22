@@ -26,11 +26,7 @@ public:
 	struct FVector                                ViewLocationXY;                                    // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ViewDirectionXY;                                   // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSignificanceUpdateContext) == 0x000008, "Wrong alignment on FSignificanceUpdateContext");
-static_assert(sizeof(FSignificanceUpdateContext) == 0x000038, "Wrong size on FSignificanceUpdateContext");
-static_assert(offsetof(FSignificanceUpdateContext, FOV) == 0x000000, "Member 'FSignificanceUpdateContext::FOV' has a wrong offset!");
-static_assert(offsetof(FSignificanceUpdateContext, ViewLocationXY) == 0x000008, "Member 'FSignificanceUpdateContext::ViewLocationXY' has a wrong offset!");
-static_assert(offsetof(FSignificanceUpdateContext, ViewDirectionXY) == 0x000020, "Member 'FSignificanceUpdateContext::ViewDirectionXY' has a wrong offset!");
+DUMPER7_ASSERTS_FSignificanceUpdateContext;
 
 }
 

@@ -12,41 +12,13 @@
 
 #include "Hero_1027_structs.hpp"
 #include "Hero_1027_classes.hpp"
-#include "Marvel_classes.hpp"
 
 
 namespace SDK
 {
 
-// PythonClass PyAbility_102741.PyUIController_102741
-// 0x0000 (0x0F10 - 0x0F10)
-class UPyUIController_102741 final : public UUIC_Ability
-{
-public:
-	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
-	void OnInit();
-	void OnSummonedChange(class AActor* InActor, bool bIsAdd);
-	void OnWallActivateStateChange(bool bNewState);
-	void OnWallAttackStart(bool bAttackFront);
-	void Destruct();
-	void OnWallActivateStateChangeForWidgetUpdate(bool bActivate);
-	void OnWallAttackStartForWidgetUpdate();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_102741">();
-	}
-	static class UPyUIController_102741* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_102741>();
-	}
-};
-static_assert(alignof(UPyUIController_102741) == 0x000008, "Wrong alignment on UPyUIController_102741");
-static_assert(sizeof(UPyUIController_102741) == 0x000F10, "Wrong size on UPyUIController_102741");
-
 // PythonClass PyAbility_102741.PyAbility_102741
-// 0x0000 (0x2A58 - 0x2A58)
+// 0x0000 (0x2AA8 - 0x2AA8)
 class UPyAbility_102741 : public UAbility_102741
 {
 public:
@@ -72,15 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102741">();
+		STATIC_CLASS_IMPL("PyAbility_102741")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102741")
 	}
 	static class UPyAbility_102741* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102741>();
 	}
 };
-static_assert(alignof(UPyAbility_102741) == 0x000008, "Wrong alignment on UPyAbility_102741");
-static_assert(sizeof(UPyAbility_102741) == 0x002A58, "Wrong size on UPyAbility_102741");
+DUMPER7_ASSERTS_UPyAbility_102741;
 
 }
 

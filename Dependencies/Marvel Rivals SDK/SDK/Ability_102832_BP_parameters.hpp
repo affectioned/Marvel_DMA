@@ -34,21 +34,7 @@ public:
 	class UGATask_WaitBuffEvent*                  CallFunc_WaitBuffEvent_ReturnValue;                // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP) == 0x000008, "Wrong alignment on Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP");
-static_assert(sizeof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP) == 0x000060, "Wrong size on Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, EntryPoint) == 0x000000, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, K2Node_CustomEvent_InputReleaseDelegate__DelegateSignature_TimeHeld) == 0x000004, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::K2Node_CustomEvent_InputReleaseDelegate__DelegateSignature_TimeHeld' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, Temp_real_Variable) == 0x00001C, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::Temp_real_Variable' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, CallFunc_WaitInputRelease_ReturnValue) == 0x000020, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::CallFunc_WaitInputRelease_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, K2Node_CreateDelegate_OutputDelegate_1) == 0x00002C, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, K2Node_CustomEvent_OnBuffUpdateDelegate__DelegateSignature_NewStackCount) == 0x000040, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::K2Node_CustomEvent_OnBuffUpdateDelegate__DelegateSignature_NewStackCount' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, K2Node_CustomEvent_OnBuffUpdateDelegate__DelegateSignature_OldStackCount) == 0x000044, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::K2Node_CustomEvent_OnBuffUpdateDelegate__DelegateSignature_OldStackCount' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, Temp_int_Variable) == 0x000048, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, Temp_int_Variable_1) == 0x00004C, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, CallFunc_WaitBuffEvent_ReturnValue) == 0x000050, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::CallFunc_WaitBuffEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP, CallFunc_IsValid_ReturnValue_1) == 0x000058, "Member 'Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_102832_BP_C_ExecuteUbergraph_Ability_102832_BP;
 
 // Function Ability_102832_BP.Ability_102832_BP_C.OnRelease_925D13004572F14449E0AFA10871792E
 // 0x0004 (0x0004 - 0x0000)
@@ -57,9 +43,7 @@ struct Ability_102832_BP_C_OnRelease_925D13004572F14449E0AFA10871792E final
 public:
 	float                                         InputReleaseDelegate__DelegateSignature_TimeHeld;  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_102832_BP_C_OnRelease_925D13004572F14449E0AFA10871792E) == 0x000004, "Wrong alignment on Ability_102832_BP_C_OnRelease_925D13004572F14449E0AFA10871792E");
-static_assert(sizeof(Ability_102832_BP_C_OnRelease_925D13004572F14449E0AFA10871792E) == 0x000004, "Wrong size on Ability_102832_BP_C_OnRelease_925D13004572F14449E0AFA10871792E");
-static_assert(offsetof(Ability_102832_BP_C_OnRelease_925D13004572F14449E0AFA10871792E, InputReleaseDelegate__DelegateSignature_TimeHeld) == 0x000000, "Member 'Ability_102832_BP_C_OnRelease_925D13004572F14449E0AFA10871792E::InputReleaseDelegate__DelegateSignature_TimeHeld' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_102832_BP_C_OnRelease_925D13004572F14449E0AFA10871792E;
 
 // Function Ability_102832_BP.Ability_102832_BP_C.OnRemoved_43FE87D545A2183B8EC2459398B5BDC7
 // 0x0008 (0x0008 - 0x0000)
@@ -69,10 +53,7 @@ public:
 	int32                                         OnBuffUpdateDelegate__DelegateSignature_NewStackCount; // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OnBuffUpdateDelegate__DelegateSignature_OldStackCount; // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_102832_BP_C_OnRemoved_43FE87D545A2183B8EC2459398B5BDC7) == 0x000004, "Wrong alignment on Ability_102832_BP_C_OnRemoved_43FE87D545A2183B8EC2459398B5BDC7");
-static_assert(sizeof(Ability_102832_BP_C_OnRemoved_43FE87D545A2183B8EC2459398B5BDC7) == 0x000008, "Wrong size on Ability_102832_BP_C_OnRemoved_43FE87D545A2183B8EC2459398B5BDC7");
-static_assert(offsetof(Ability_102832_BP_C_OnRemoved_43FE87D545A2183B8EC2459398B5BDC7, OnBuffUpdateDelegate__DelegateSignature_NewStackCount) == 0x000000, "Member 'Ability_102832_BP_C_OnRemoved_43FE87D545A2183B8EC2459398B5BDC7::OnBuffUpdateDelegate__DelegateSignature_NewStackCount' has a wrong offset!");
-static_assert(offsetof(Ability_102832_BP_C_OnRemoved_43FE87D545A2183B8EC2459398B5BDC7, OnBuffUpdateDelegate__DelegateSignature_OldStackCount) == 0x000004, "Member 'Ability_102832_BP_C_OnRemoved_43FE87D545A2183B8EC2459398B5BDC7::OnBuffUpdateDelegate__DelegateSignature_OldStackCount' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_102832_BP_C_OnRemoved_43FE87D545A2183B8EC2459398B5BDC7;
 
 }
 

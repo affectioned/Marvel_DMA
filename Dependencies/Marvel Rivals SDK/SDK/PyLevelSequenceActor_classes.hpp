@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "PyLevelSequenceActor_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "PyLevelSequenceActor_structs.hpp"
 
 
 namespace SDK
@@ -72,7 +72,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSequenceActor">();
+		STATIC_CLASS_IMPL("PyLevelSequenceActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSequenceActor")
 	}
 	static class APyLevelSequenceActor* GetDefaultObj()
 	{
@@ -80,24 +84,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyLevelSequenceActor) == 0x000010, "Wrong alignment on APyLevelSequenceActor");
-static_assert(sizeof(APyLevelSequenceActor) == 0x000780, "Wrong size on APyLevelSequenceActor");
-static_assert(offsetof(APyLevelSequenceActor, CurrentTime) == 0x0006E0, "Member 'APyLevelSequenceActor::CurrentTime' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, CurrentPlayDirection) == 0x0006E4, "Member 'APyLevelSequenceActor::CurrentPlayDirection' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, Sequence) == 0x0006E8, "Member 'APyLevelSequenceActor::Sequence' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, SequenceActorCls) == 0x0006F0, "Member 'APyLevelSequenceActor::SequenceActorCls' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, CacheSqCls) == 0x000718, "Member 'APyLevelSequenceActor::CacheSqCls' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, SequenceInstance) == 0x000720, "Member 'APyLevelSequenceActor::SequenceInstance' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, AutoPlay) == 0x000728, "Member 'APyLevelSequenceActor::AutoPlay' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, bPlayReverse) == 0x000729, "Member 'APyLevelSequenceActor::bPlayReverse' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, bPlayLooping) == 0x00072A, "Member 'APyLevelSequenceActor::bPlayLooping' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, PlayRate) == 0x00072C, "Member 'APyLevelSequenceActor::PlayRate' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, bRankReset) == 0x000730, "Member 'APyLevelSequenceActor::bRankReset' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, IsCameraLS) == 0x000731, "Member 'APyLevelSequenceActor::IsCameraLS' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, OnPlayFinished) == 0x000738, "Member 'APyLevelSequenceActor::OnPlayFinished' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, OnServerSequencePlayFinished) == 0x000748, "Member 'APyLevelSequenceActor::OnServerSequencePlayFinished' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, OnSequencePlayerSetup) == 0x000758, "Member 'APyLevelSequenceActor::OnSequencePlayerSetup' has a wrong offset!");
-static_assert(offsetof(APyLevelSequenceActor, OnLoaded) == 0x000768, "Member 'APyLevelSequenceActor::OnLoaded' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSequenceActor;
 
 }
 

@@ -23,15 +23,18 @@ class UAISelectTarget_10384101_AttackTarget_BP_C final : public UAISelectTarget_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_10384101_AttackTarget_BP_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_10384101_AttackTarget_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_10384101_AttackTarget_BP_C")
 	}
 	static class UAISelectTarget_10384101_AttackTarget_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_10384101_AttackTarget_BP_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_10384101_AttackTarget_BP_C) == 0x000008, "Wrong alignment on UAISelectTarget_10384101_AttackTarget_BP_C");
-static_assert(sizeof(UAISelectTarget_10384101_AttackTarget_BP_C) == 0x000070, "Wrong size on UAISelectTarget_10384101_AttackTarget_BP_C");
+DUMPER7_ASSERTS_UAISelectTarget_10384101_AttackTarget_BP_C;
 
 }
 

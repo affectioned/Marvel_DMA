@@ -24,18 +24,21 @@ class UEntry_LCMN_ClanSelect_ClanCard final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Entry_LCMN_ClanSelect_ClanCard">();
+		STATIC_CLASS_IMPL("Entry_LCMN_ClanSelect_ClanCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Entry_LCMN_ClanSelect_ClanCard")
 	}
 	static class UEntry_LCMN_ClanSelect_ClanCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEntry_LCMN_ClanSelect_ClanCard>();
 	}
 };
-static_assert(alignof(UEntry_LCMN_ClanSelect_ClanCard) == 0x000008, "Wrong alignment on UEntry_LCMN_ClanSelect_ClanCard");
-static_assert(sizeof(UEntry_LCMN_ClanSelect_ClanCard) == 0x000030, "Wrong size on UEntry_LCMN_ClanSelect_ClanCard");
+DUMPER7_ASSERTS_UEntry_LCMN_ClanSelect_ClanCard;
 
 // PythonClass PyWidget_LCMN_ClanSelect_ClanCard.PyWidget_LCMN_ClanSelect_ClanCard
-// 0x0000 (0x05F0 - 0x05F0)
+// 0x0000 (0x05F8 - 0x05F8)
 class UPyWidget_LCMN_ClanSelect_ClanCard final : public UPyMarvelListEntryWidget
 {
 public:
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LCMN_ClanSelect_ClanCard">();
+		STATIC_CLASS_IMPL("PyWidget_LCMN_ClanSelect_ClanCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LCMN_ClanSelect_ClanCard")
 	}
 	static class UPyWidget_LCMN_ClanSelect_ClanCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LCMN_ClanSelect_ClanCard>();
 	}
 };
-static_assert(alignof(UPyWidget_LCMN_ClanSelect_ClanCard) == 0x000008, "Wrong alignment on UPyWidget_LCMN_ClanSelect_ClanCard");
-static_assert(sizeof(UPyWidget_LCMN_ClanSelect_ClanCard) == 0x0005F0, "Wrong size on UPyWidget_LCMN_ClanSelect_ClanCard");
+DUMPER7_ASSERTS_UPyWidget_LCMN_ClanSelect_ClanCard;
 
 }
 

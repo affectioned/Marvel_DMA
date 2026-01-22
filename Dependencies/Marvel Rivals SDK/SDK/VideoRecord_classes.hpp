@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingVideoRecordParam">();
+		STATIC_CLASS_IMPL("UISettingVideoRecordParam")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingVideoRecordParam")
 	}
 	static class UUISettingVideoRecordParam* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingVideoRecordParam>();
 	}
 };
-static_assert(alignof(UUISettingVideoRecordParam) == 0x000008, "Wrong alignment on UUISettingVideoRecordParam");
-static_assert(sizeof(UUISettingVideoRecordParam) == 0x000030, "Wrong size on UUISettingVideoRecordParam");
+DUMPER7_ASSERTS_UUISettingVideoRecordParam;
 
 // PythonClass VideoRecord.UISettingVideoRecordOpenPath
 // 0x0000 (0x0030 - 0x0030)
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingVideoRecordOpenPath">();
+		STATIC_CLASS_IMPL("UISettingVideoRecordOpenPath")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingVideoRecordOpenPath")
 	}
 	static class UUISettingVideoRecordOpenPath* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingVideoRecordOpenPath>();
 	}
 };
-static_assert(alignof(UUISettingVideoRecordOpenPath) == 0x000008, "Wrong alignment on UUISettingVideoRecordOpenPath");
-static_assert(sizeof(UUISettingVideoRecordOpenPath) == 0x000030, "Wrong size on UUISettingVideoRecordOpenPath");
+DUMPER7_ASSERTS_UUISettingVideoRecordOpenPath;
 
 // PythonClass VideoRecord.UISettingVideoRecordChangePath
 // 0x0000 (0x0030 - 0x0030)
@@ -67,15 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingVideoRecordChangePath">();
+		STATIC_CLASS_IMPL("UISettingVideoRecordChangePath")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingVideoRecordChangePath")
 	}
 	static class UUISettingVideoRecordChangePath* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingVideoRecordChangePath>();
 	}
 };
-static_assert(alignof(UUISettingVideoRecordChangePath) == 0x000008, "Wrong alignment on UUISettingVideoRecordChangePath");
-static_assert(sizeof(UUISettingVideoRecordChangePath) == 0x000030, "Wrong size on UUISettingVideoRecordChangePath");
+DUMPER7_ASSERTS_UUISettingVideoRecordChangePath;
 
 }
 

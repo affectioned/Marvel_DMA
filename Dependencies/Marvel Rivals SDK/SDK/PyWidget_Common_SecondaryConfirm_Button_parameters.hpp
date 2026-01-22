@@ -21,9 +21,7 @@ struct PyWidget_Common_Confirm_Button_SetBtnIsEnabled final
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Confirm_Button_SetBtnIsEnabled) == 0x000001, "Wrong alignment on PyWidget_Common_Confirm_Button_SetBtnIsEnabled");
-static_assert(sizeof(PyWidget_Common_Confirm_Button_SetBtnIsEnabled) == 0x000001, "Wrong size on PyWidget_Common_Confirm_Button_SetBtnIsEnabled");
-static_assert(offsetof(PyWidget_Common_Confirm_Button_SetBtnIsEnabled, Enabled) == 0x000000, "Member 'PyWidget_Common_Confirm_Button_SetBtnIsEnabled::Enabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Confirm_Button_SetBtnIsEnabled;
 
 }
 

@@ -36,15 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DeviceFunctionLibrary">();
+		STATIC_CLASS_IMPL("DeviceFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeviceFunctionLibrary")
 	}
 	static class UDeviceFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDeviceFunctionLibrary>();
 	}
 };
-static_assert(alignof(UDeviceFunctionLibrary) == 0x000008, "Wrong alignment on UDeviceFunctionLibrary");
-static_assert(sizeof(UDeviceFunctionLibrary) == 0x000030, "Wrong size on UDeviceFunctionLibrary");
+DUMPER7_ASSERTS_UDeviceFunctionLibrary;
 
 }
 

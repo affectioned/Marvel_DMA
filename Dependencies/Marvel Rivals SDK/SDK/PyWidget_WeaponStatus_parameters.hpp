@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            InWidget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatusPanel_AddWeaponWidget) == 0x000008, "Wrong alignment on PyWidget_WeaponStatusPanel_AddWeaponWidget");
-static_assert(sizeof(PyWidget_WeaponStatusPanel_AddWeaponWidget) == 0x000010, "Wrong size on PyWidget_WeaponStatusPanel_AddWeaponWidget");
-static_assert(offsetof(PyWidget_WeaponStatusPanel_AddWeaponWidget, InPriority) == 0x000000, "Member 'PyWidget_WeaponStatusPanel_AddWeaponWidget::InPriority' has a wrong offset!");
-static_assert(offsetof(PyWidget_WeaponStatusPanel_AddWeaponWidget, InWidget) == 0x000008, "Member 'PyWidget_WeaponStatusPanel_AddWeaponWidget::InWidget' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatusPanel_AddWeaponWidget;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatusPanel.RemoveWeaponWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -37,9 +34,7 @@ struct PyWidget_WeaponStatusPanel_RemoveWeaponWidget final
 public:
 	class UPyWidget_WeaponStatus*                 InWidget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatusPanel_RemoveWeaponWidget) == 0x000008, "Wrong alignment on PyWidget_WeaponStatusPanel_RemoveWeaponWidget");
-static_assert(sizeof(PyWidget_WeaponStatusPanel_RemoveWeaponWidget) == 0x000008, "Wrong size on PyWidget_WeaponStatusPanel_RemoveWeaponWidget");
-static_assert(offsetof(PyWidget_WeaponStatusPanel_RemoveWeaponWidget, InWidget) == 0x000000, "Member 'PyWidget_WeaponStatusPanel_RemoveWeaponWidget::InWidget' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatusPanel_RemoveWeaponWidget;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatusPanel.SetMode
 // 0x0001 (0x0001 - 0x0000)
@@ -48,9 +43,7 @@ struct PyWidget_WeaponStatusPanel_SetMode final
 public:
 	EHeroWeaponUIType                             InMode;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatusPanel_SetMode) == 0x000001, "Wrong alignment on PyWidget_WeaponStatusPanel_SetMode");
-static_assert(sizeof(PyWidget_WeaponStatusPanel_SetMode) == 0x000001, "Wrong size on PyWidget_WeaponStatusPanel_SetMode");
-static_assert(offsetof(PyWidget_WeaponStatusPanel_SetMode, InMode) == 0x000000, "Member 'PyWidget_WeaponStatusPanel_SetMode::InMode' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatusPanel_SetMode;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponAmmo.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -59,9 +52,7 @@ struct PyWidget_WeaponAmmo_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponAmmo_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_WeaponAmmo_PreConstruct");
-static_assert(sizeof(PyWidget_WeaponAmmo_PreConstruct) == 0x000001, "Wrong size on PyWidget_WeaponAmmo_PreConstruct");
-static_assert(offsetof(PyWidget_WeaponAmmo_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_WeaponAmmo_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponAmmo_PreConstruct;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponAmmo.SetAmmoMax
 // 0x0004 (0x0004 - 0x0000)
@@ -70,9 +61,7 @@ struct PyWidget_WeaponAmmo_SetAmmoMax final
 public:
 	int32                                         AmmoMax_0;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponAmmo_SetAmmoMax) == 0x000004, "Wrong alignment on PyWidget_WeaponAmmo_SetAmmoMax");
-static_assert(sizeof(PyWidget_WeaponAmmo_SetAmmoMax) == 0x000004, "Wrong size on PyWidget_WeaponAmmo_SetAmmoMax");
-static_assert(offsetof(PyWidget_WeaponAmmo_SetAmmoMax, AmmoMax_0) == 0x000000, "Member 'PyWidget_WeaponAmmo_SetAmmoMax::AmmoMax_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponAmmo_SetAmmoMax;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponAmmo.SetAmmoCurrent
 // 0x0004 (0x0004 - 0x0000)
@@ -81,9 +70,7 @@ struct PyWidget_WeaponAmmo_SetAmmoCurrent final
 public:
 	int32                                         AmmoCurrent_0;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponAmmo_SetAmmoCurrent) == 0x000004, "Wrong alignment on PyWidget_WeaponAmmo_SetAmmoCurrent");
-static_assert(sizeof(PyWidget_WeaponAmmo_SetAmmoCurrent) == 0x000004, "Wrong size on PyWidget_WeaponAmmo_SetAmmoCurrent");
-static_assert(offsetof(PyWidget_WeaponAmmo_SetAmmoCurrent, AmmoCurrent_0) == 0x000000, "Member 'PyWidget_WeaponAmmo_SetAmmoCurrent::AmmoCurrent_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponAmmo_SetAmmoCurrent;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponAmmo.SetIsInfinite
 // 0x0001 (0x0001 - 0x0000)
@@ -92,9 +79,7 @@ struct PyWidget_WeaponAmmo_SetIsInfinite final
 public:
 	bool                                          IsInfinite_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponAmmo_SetIsInfinite) == 0x000001, "Wrong alignment on PyWidget_WeaponAmmo_SetIsInfinite");
-static_assert(sizeof(PyWidget_WeaponAmmo_SetIsInfinite) == 0x000001, "Wrong size on PyWidget_WeaponAmmo_SetIsInfinite");
-static_assert(offsetof(PyWidget_WeaponAmmo_SetIsInfinite, IsInfinite_0) == 0x000000, "Member 'PyWidget_WeaponAmmo_SetIsInfinite::IsInfinite_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponAmmo_SetIsInfinite;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponAmmo.SetShowAmmoMax
 // 0x0001 (0x0001 - 0x0000)
@@ -103,9 +88,7 @@ struct PyWidget_WeaponAmmo_SetShowAmmoMax final
 public:
 	bool                                          ShowAmmoMax_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponAmmo_SetShowAmmoMax) == 0x000001, "Wrong alignment on PyWidget_WeaponAmmo_SetShowAmmoMax");
-static_assert(sizeof(PyWidget_WeaponAmmo_SetShowAmmoMax) == 0x000001, "Wrong size on PyWidget_WeaponAmmo_SetShowAmmoMax");
-static_assert(offsetof(PyWidget_WeaponAmmo_SetShowAmmoMax, ShowAmmoMax_0) == 0x000000, "Member 'PyWidget_WeaponAmmo_SetShowAmmoMax::ShowAmmoMax_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponAmmo_SetShowAmmoMax;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.SetAmmoCur
 // 0x0004 (0x0004 - 0x0000)
@@ -114,9 +97,7 @@ struct PyWidget_WeaponStatus_SetAmmoCur final
 public:
 	int32                                         InAmmoCur;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatus_SetAmmoCur) == 0x000004, "Wrong alignment on PyWidget_WeaponStatus_SetAmmoCur");
-static_assert(sizeof(PyWidget_WeaponStatus_SetAmmoCur) == 0x000004, "Wrong size on PyWidget_WeaponStatus_SetAmmoCur");
-static_assert(offsetof(PyWidget_WeaponStatus_SetAmmoCur, InAmmoCur) == 0x000000, "Member 'PyWidget_WeaponStatus_SetAmmoCur::InAmmoCur' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_SetAmmoCur;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.SetAmmoMax
 // 0x0004 (0x0004 - 0x0000)
@@ -125,9 +106,7 @@ struct PyWidget_WeaponStatus_SetAmmoMax final
 public:
 	int32                                         InAmmoMax;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatus_SetAmmoMax) == 0x000004, "Wrong alignment on PyWidget_WeaponStatus_SetAmmoMax");
-static_assert(sizeof(PyWidget_WeaponStatus_SetAmmoMax) == 0x000004, "Wrong size on PyWidget_WeaponStatus_SetAmmoMax");
-static_assert(offsetof(PyWidget_WeaponStatus_SetAmmoMax, InAmmoMax) == 0x000000, "Member 'PyWidget_WeaponStatus_SetAmmoMax::InAmmoMax' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_SetAmmoMax;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.SetEquiping
 // 0x0001 (0x0001 - 0x0000)
@@ -136,9 +115,7 @@ struct PyWidget_WeaponStatus_SetEquiping final
 public:
 	bool                                          bInEquiping;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatus_SetEquiping) == 0x000001, "Wrong alignment on PyWidget_WeaponStatus_SetEquiping");
-static_assert(sizeof(PyWidget_WeaponStatus_SetEquiping) == 0x000001, "Wrong size on PyWidget_WeaponStatus_SetEquiping");
-static_assert(offsetof(PyWidget_WeaponStatus_SetEquiping, bInEquiping) == 0x000000, "Member 'PyWidget_WeaponStatus_SetEquiping::bInEquiping' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_SetEquiping;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.SetUsable
 // 0x0001 (0x0001 - 0x0000)
@@ -147,9 +124,7 @@ struct PyWidget_WeaponStatus_SetUsable final
 public:
 	bool                                          bInUsable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatus_SetUsable) == 0x000001, "Wrong alignment on PyWidget_WeaponStatus_SetUsable");
-static_assert(sizeof(PyWidget_WeaponStatus_SetUsable) == 0x000001, "Wrong size on PyWidget_WeaponStatus_SetUsable");
-static_assert(offsetof(PyWidget_WeaponStatus_SetUsable, bInUsable) == 0x000000, "Member 'PyWidget_WeaponStatus_SetUsable::bInUsable' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_SetUsable;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.SetWeaponIcon
 // 0x0008 (0x0008 - 0x0000)
@@ -158,9 +133,7 @@ struct PyWidget_WeaponStatus_SetWeaponIcon final
 public:
 	class UTexture2D*                             WeaponIcon;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatus_SetWeaponIcon) == 0x000008, "Wrong alignment on PyWidget_WeaponStatus_SetWeaponIcon");
-static_assert(sizeof(PyWidget_WeaponStatus_SetWeaponIcon) == 0x000008, "Wrong size on PyWidget_WeaponStatus_SetWeaponIcon");
-static_assert(offsetof(PyWidget_WeaponStatus_SetWeaponIcon, WeaponIcon) == 0x000000, "Member 'PyWidget_WeaponStatus_SetWeaponIcon::WeaponIcon' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_SetWeaponIcon;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.SetWeaponIconFromSoftObject
 // 0x0030 (0x0030 - 0x0000)
@@ -169,9 +142,7 @@ struct PyWidget_WeaponStatus_SetWeaponIconFromSoftObject final
 public:
 	TSoftObjectPtr<class UTexture2D>              WeaponIcon;                                        // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatus_SetWeaponIconFromSoftObject) == 0x000008, "Wrong alignment on PyWidget_WeaponStatus_SetWeaponIconFromSoftObject");
-static_assert(sizeof(PyWidget_WeaponStatus_SetWeaponIconFromSoftObject) == 0x000030, "Wrong size on PyWidget_WeaponStatus_SetWeaponIconFromSoftObject");
-static_assert(offsetof(PyWidget_WeaponStatus_SetWeaponIconFromSoftObject, WeaponIcon) == 0x000000, "Member 'PyWidget_WeaponStatus_SetWeaponIconFromSoftObject::WeaponIcon' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_SetWeaponIconFromSoftObject;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.OnIconLoaded
 // 0x0008 (0x0008 - 0x0000)
@@ -180,9 +151,7 @@ struct PyWidget_WeaponStatus_OnIconLoaded final
 public:
 	class UObject*                                Icon;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatus_OnIconLoaded) == 0x000008, "Wrong alignment on PyWidget_WeaponStatus_OnIconLoaded");
-static_assert(sizeof(PyWidget_WeaponStatus_OnIconLoaded) == 0x000008, "Wrong size on PyWidget_WeaponStatus_OnIconLoaded");
-static_assert(offsetof(PyWidget_WeaponStatus_OnIconLoaded, Icon) == 0x000000, "Member 'PyWidget_WeaponStatus_OnIconLoaded::Icon' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_OnIconLoaded;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.SetAbility
 // 0x0008 (0x0008 - 0x0000)
@@ -191,9 +160,7 @@ struct PyWidget_WeaponStatus_SetAbility final
 public:
 	class UMarvelGameplayAbility*                 InAbility;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatus_SetAbility) == 0x000008, "Wrong alignment on PyWidget_WeaponStatus_SetAbility");
-static_assert(sizeof(PyWidget_WeaponStatus_SetAbility) == 0x000008, "Wrong size on PyWidget_WeaponStatus_SetAbility");
-static_assert(offsetof(PyWidget_WeaponStatus_SetAbility, InAbility) == 0x000000, "Member 'PyWidget_WeaponStatus_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_SetAbility;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.SetInfinite
 // 0x0001 (0x0001 - 0x0000)
@@ -202,9 +169,7 @@ struct PyWidget_WeaponStatus_SetInfinite final
 public:
 	bool                                          bInInfinite;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatus_SetInfinite) == 0x000001, "Wrong alignment on PyWidget_WeaponStatus_SetInfinite");
-static_assert(sizeof(PyWidget_WeaponStatus_SetInfinite) == 0x000001, "Wrong size on PyWidget_WeaponStatus_SetInfinite");
-static_assert(offsetof(PyWidget_WeaponStatus_SetInfinite, bInInfinite) == 0x000000, "Member 'PyWidget_WeaponStatus_SetInfinite::bInInfinite' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_SetInfinite;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.SetIsPrimary
 // 0x0001 (0x0001 - 0x0000)
@@ -213,9 +178,7 @@ struct PyWidget_WeaponStatus_SetIsPrimary final
 public:
 	bool                                          bInPrimary;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatus_SetIsPrimary) == 0x000001, "Wrong alignment on PyWidget_WeaponStatus_SetIsPrimary");
-static_assert(sizeof(PyWidget_WeaponStatus_SetIsPrimary) == 0x000001, "Wrong size on PyWidget_WeaponStatus_SetIsPrimary");
-static_assert(offsetof(PyWidget_WeaponStatus_SetIsPrimary, bInPrimary) == 0x000000, "Member 'PyWidget_WeaponStatus_SetIsPrimary::bInPrimary' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_SetIsPrimary;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.SetEquipAction
 // 0x000C (0x000C - 0x0000)
@@ -224,9 +187,7 @@ struct PyWidget_WeaponStatus_SetEquipAction final
 public:
 	class FName                                   InEquipAction;                                     // 0x0000(0x000C)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_WeaponStatus_SetEquipAction) == 0x000004, "Wrong alignment on PyWidget_WeaponStatus_SetEquipAction");
-static_assert(sizeof(PyWidget_WeaponStatus_SetEquipAction) == 0x00000C, "Wrong size on PyWidget_WeaponStatus_SetEquipAction");
-static_assert(offsetof(PyWidget_WeaponStatus_SetEquipAction, InEquipAction) == 0x000000, "Member 'PyWidget_WeaponStatus_SetEquipAction::InEquipAction' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_SetEquipAction;
 
 // PythonFunction PyWidget_WeaponStatus.PyWidget_WeaponStatus.SetWeaponAction
 // 0x0058 (0x0058 - 0x0000)
@@ -235,9 +196,7 @@ struct PyWidget_WeaponStatus_SetWeaponAction final
 public:
 	struct FUIActionData                          InWeapinAction;                                    // 0x0000(0x0058)(Parm)
 };
-static_assert(alignof(PyWidget_WeaponStatus_SetWeaponAction) == 0x000008, "Wrong alignment on PyWidget_WeaponStatus_SetWeaponAction");
-static_assert(sizeof(PyWidget_WeaponStatus_SetWeaponAction) == 0x000058, "Wrong size on PyWidget_WeaponStatus_SetWeaponAction");
-static_assert(offsetof(PyWidget_WeaponStatus_SetWeaponAction, InWeapinAction) == 0x000000, "Member 'PyWidget_WeaponStatus_SetWeaponAction::InWeapinAction' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_WeaponStatus_SetWeaponAction;
 
 }
 

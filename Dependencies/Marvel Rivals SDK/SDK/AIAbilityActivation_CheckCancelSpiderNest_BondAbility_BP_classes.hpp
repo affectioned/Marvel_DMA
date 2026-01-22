@@ -23,15 +23,18 @@ class UAIAbilityActivation_CheckCancelSpiderNest_BondAbility_BP_C final : public
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_CheckCancelSpiderNest_BondAbility_BP_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_CheckCancelSpiderNest_BondAbility_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_CheckCancelSpiderNest_BondAbility_BP_C")
 	}
 	static class UAIAbilityActivation_CheckCancelSpiderNest_BondAbility_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_CheckCancelSpiderNest_BondAbility_BP_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_CheckCancelSpiderNest_BondAbility_BP_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_CheckCancelSpiderNest_BondAbility_BP_C");
-static_assert(sizeof(UAIAbilityActivation_CheckCancelSpiderNest_BondAbility_BP_C) == 0x000068, "Wrong size on UAIAbilityActivation_CheckCancelSpiderNest_BondAbility_BP_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_CheckCancelSpiderNest_BondAbility_BP_C;
 
 }
 

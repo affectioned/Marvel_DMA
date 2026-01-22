@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
-#include "AeroLocomotionV2_structs.hpp"
 #include "AnimationPro_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
+#include "AeroLocomotionV2_structs.hpp"
 #include "Marvel_classes.hpp"
 
 
@@ -290,284 +290,24 @@ public:
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0xA4D0(0x0038)()
 
 public:
-	void AnimGraph(const struct FPoseLink& InGroundMotionPose, struct FPoseLink* AnimGraph_0);
 	void ExecuteUbergraph_AeroLocomotionV2(int32 EntryPoint);
+	void AnimGraph(const struct FPoseLink& InGroundMotionPose, struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AeroLocomotionV2_C">();
+		BP_STATIC_CLASS_IMPL("AeroLocomotionV2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AeroLocomotionV2_C")
 	}
 	static class UAeroLocomotionV2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAeroLocomotionV2_C>();
 	}
 };
-static_assert(alignof(UAeroLocomotionV2_C) == 0x000010, "Wrong alignment on UAeroLocomotionV2_C");
-static_assert(sizeof(UAeroLocomotionV2_C) == 0x00A510, "Wrong size on UAeroLocomotionV2_C");
-static_assert(offsetof(UAeroLocomotionV2_C, UberGraphFrame) == 0x000FE0, "Member 'UAeroLocomotionV2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, __AnimBlueprintMutables) == 0x000FE8, "Member 'UAeroLocomotionV2_C::__AnimBlueprintMutables' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimBlueprintExtension_PropertyAccess) == 0x001070, "Member 'UAeroLocomotionV2_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimBlueprintExtension_Base) == 0x001078, "Member 'UAeroLocomotionV2_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_SaveCachedPose_10) == 0x001080, "Member 'UAeroLocomotionV2_C::AnimGraphNode_SaveCachedPose_10' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_SaveCachedPose_9) == 0x001120, "Member 'UAeroLocomotionV2_C::AnimGraphNode_SaveCachedPose_9' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_SaveCachedPose_8) == 0x0011C0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_SaveCachedPose_8' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_27) == 0x001260, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_27' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_63) == 0x001390, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_63' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_14) == 0x0013C8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_14' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_SaveCachedPose_7) == 0x001668, "Member 'UAeroLocomotionV2_C::AnimGraphNode_SaveCachedPose_7' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_SaveCachedPose_6) == 0x001708, "Member 'UAeroLocomotionV2_C::AnimGraphNode_SaveCachedPose_6' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_SaveCachedPose_5) == 0x0017A8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_SaveCachedPose_5' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_80) == 0x001848, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_80' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_79) == 0x001888, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_79' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_78) == 0x0018C8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_78' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_26) == 0x001908, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_26' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_62) == 0x001A38, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_62' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_25) == 0x001A70, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_25' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_61) == 0x001BA0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_61' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_24) == 0x001BD8, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_24' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_60) == 0x001D08, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_60' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_59) == 0x001D40, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_59' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_13) == 0x001D78, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_13' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_SaveCachedPose_4) == 0x002018, "Member 'UAeroLocomotionV2_C::AnimGraphNode_SaveCachedPose_4' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_23) == 0x0020B8, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_23' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_LinkedInputPose) == 0x0021E8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_LinkedInputPose' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_SaveCachedPose_3) == 0x0022D8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_SaveCachedPose_3' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_SaveCachedPose_2) == 0x002378, "Member 'UAeroLocomotionV2_C::AnimGraphNode_SaveCachedPose_2' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_77) == 0x002418, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_77' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_76) == 0x002458, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_76' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_75) == 0x002498, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_75' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_22) == 0x0024D8, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_22' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_58) == 0x002608, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_58' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_21) == 0x002640, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_21' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_57) == 0x002770, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_57' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_20) == 0x0027A8, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_20' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_56) == 0x0028D8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_56' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_55) == 0x002910, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_55' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_12) == 0x002948, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_12' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_SaveCachedPose_1) == 0x002BE8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_SaveCachedPose_1' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_74) == 0x002C88, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_74' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_73) == 0x002CC8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_73' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_72) == 0x002D08, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_72' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_71) == 0x002D48, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_71' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_70) == 0x002D88, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_70' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_69) == 0x002DC8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_69' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_68) == 0x002E08, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_68' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_67) == 0x002E48, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_67' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_66) == 0x002E88, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_66' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_65) == 0x002EC8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_65' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_64) == 0x002F08, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_64' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_BlendSpacePlayer_1) == 0x002F48, "Member 'UAeroLocomotionV2_C::AnimGraphNode_BlendSpacePlayer_1' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_BlendListByBool_3) == 0x002FD8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_BlendListByBool_3' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_BlendSpacePlayer) == 0x003050, "Member 'UAeroLocomotionV2_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_54) == 0x0030E0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_54' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_19) == 0x003118, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_19' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_53) == 0x003248, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_53' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_18) == 0x003280, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_18' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_52) == 0x0033B0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_52' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_17) == 0x0033E8, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_17' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_51) == 0x003518, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_51' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_16) == 0x003550, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_16' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_50) == 0x003680, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_50' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_15) == 0x0036B8, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_15' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_49) == 0x0037E8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_49' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_63) == 0x003820, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_63' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_62) == 0x003860, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_62' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_48) == 0x0038A0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_48' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_17) == 0x0038D8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_17' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_47) == 0x003920, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_47' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_61) == 0x003958, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_61' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_60) == 0x003998, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_60' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_59) == 0x0039D8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_59' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_58) == 0x003A18, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_58' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_57) == 0x003A58, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_57' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_56) == 0x003A98, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_56' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_55) == 0x003AD8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_55' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_54) == 0x003B18, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_54' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_53) == 0x003B58, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_53' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_52) == 0x003B98, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_52' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_51) == 0x003BD8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_51' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_50) == 0x003C18, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_50' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_14) == 0x003C58, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_14' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_46) == 0x003D88, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_46' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_45) == 0x003DC0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_45' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_49) == 0x003DF8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_49' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_48) == 0x003E38, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_48' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_47) == 0x003E78, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_47' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_46) == 0x003EB8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_46' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_45) == 0x003EF8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_45' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_16) == 0x003F38, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_16' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_44) == 0x003F80, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_44' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_15) == 0x003FB8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_15' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_43) == 0x004000, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_43' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_13) == 0x004038, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_13' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_14) == 0x004168, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_14' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_ApplyAdditive_9) == 0x0041B0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_ApplyAdditive_9' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_42) == 0x004298, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_42' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_12) == 0x0042D0, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_12' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_13) == 0x004400, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_13' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_ApplyAdditive_8) == 0x004448, "Member 'UAeroLocomotionV2_C::AnimGraphNode_ApplyAdditive_8' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_41) == 0x004530, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_41' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_11) == 0x004568, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_11' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_40) == 0x004808, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_40' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_12) == 0x004840, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_12' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_39) == 0x004888, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_39' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_10) == 0x0048C0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_10' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_38) == 0x004B60, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_38' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_17) == 0x004B98, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_17' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_16) == 0x004C38, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_16' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TwoWayBlend_5) == 0x004CD8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TwoWayBlend_5' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_11) == 0x004DB8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_11' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_ApplyAdditive_7) == 0x004E00, "Member 'UAeroLocomotionV2_C::AnimGraphNode_ApplyAdditive_7' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_37) == 0x004EE8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_37' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_15) == 0x004F20, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_15' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_14) == 0x004FC0, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_14' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TwoWayBlend_4) == 0x005060, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TwoWayBlend_4' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_10) == 0x005140, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_10' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_ApplyAdditive_6) == 0x005188, "Member 'UAeroLocomotionV2_C::AnimGraphNode_ApplyAdditive_6' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_36) == 0x005270, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_36' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_13) == 0x0052A8, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_13' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_9) == 0x005348, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_9' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_ApplyAdditive_5) == 0x005390, "Member 'UAeroLocomotionV2_C::AnimGraphNode_ApplyAdditive_5' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_35) == 0x005478, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_35' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_9) == 0x0054B0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_9' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_34) == 0x005750, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_34' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_8) == 0x005788, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_8' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_33) == 0x005A28, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_33' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_44) == 0x005A60, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_44' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_43) == 0x005AA0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_43' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_42) == 0x005AE0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_42' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_41) == 0x005B20, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_41' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_40) == 0x005B60, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_40' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_39) == 0x005BA0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_39' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_38) == 0x005BE0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_38' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_37) == 0x005C20, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_37' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_36) == 0x005C60, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_36' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_35) == 0x005CA0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_35' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_34) == 0x005CE0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_34' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_33) == 0x005D20, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_33' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_32) == 0x005D60, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_32' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_31) == 0x005DA0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_31' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_30) == 0x005DE0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_30' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_29) == 0x005E20, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_29' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_28) == 0x005E60, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_28' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_11) == 0x005EA0, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_11' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_32) == 0x005FD0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_32' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_10) == 0x006008, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_10' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_12) == 0x006138, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_12' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_11) == 0x0061D8, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_11' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_ApplyAdditive_4) == 0x006278, "Member 'UAeroLocomotionV2_C::AnimGraphNode_ApplyAdditive_4' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_BlendListByBool_2) == 0x006360, "Member 'UAeroLocomotionV2_C::AnimGraphNode_BlendListByBool_2' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_31) == 0x0063D8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_31' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_27) == 0x006410, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_27' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_9) == 0x006450, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_9' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_10) == 0x006580, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_10' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_9) == 0x006620, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_9' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_ApplyAdditive_3) == 0x0066C0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_ApplyAdditive_3' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_BlendListByBool_1) == 0x0067A8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_BlendListByBool_1' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_30) == 0x006820, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_30' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_8) == 0x006858, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_8' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_8) == 0x006988, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_8' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_7) == 0x006A28, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_7' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_BlendListByBool) == 0x006AC8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_BlendListByBool' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_ApplyAdditive_2) == 0x006B40, "Member 'UAeroLocomotionV2_C::AnimGraphNode_ApplyAdditive_2' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_29) == 0x006C28, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_29' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_26) == 0x006C60, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_26' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_25) == 0x006CA0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_25' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_24) == 0x006CE0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_24' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_23) == 0x006D20, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_23' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_22) == 0x006D60, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_22' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_21) == 0x006DA0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_21' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_20) == 0x006DE0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_20' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_19) == 0x006E20, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_19' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_18) == 0x006E60, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_18' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_17) == 0x006EA0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_17' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_16) == 0x006EE0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_16' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_15) == 0x006F20, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_15' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_28) == 0x006F60, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_28' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_6) == 0x006F98, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_6' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_8) == 0x007038, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_8' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TwoWayBlend_3) == 0x007080, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TwoWayBlend_3' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_27) == 0x007160, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_27' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_5) == 0x007198, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_5' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_7) == 0x007238, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_7' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TwoWayBlend_2) == 0x007280, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TwoWayBlend_2' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_26) == 0x007360, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_26' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_7) == 0x007398, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_7' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_25) == 0x007638, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_25' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_14) == 0x007670, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_14' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_13) == 0x0076B0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_13' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_24) == 0x0076F0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_24' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_4) == 0x007728, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_4' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_6) == 0x0077C8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_6' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TwoWayBlend_1) == 0x007810, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TwoWayBlend_1' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_23) == 0x0078F0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_23' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_3) == 0x007928, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_3' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_5) == 0x0079C8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_5' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TwoWayBlend) == 0x007A10, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TwoWayBlend' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_22) == 0x007AF0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_22' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_6) == 0x007B28, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_6' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_21) == 0x007DC8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_21' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_4) == 0x007E00, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_4' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_20) == 0x007E48, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_20' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_3) == 0x007E80, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_3' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_19) == 0x007EC8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_19' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_7) == 0x007F00, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_7' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_2) == 0x008030, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_2' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_ApplyAdditive_1) == 0x008078, "Member 'UAeroLocomotionV2_C::AnimGraphNode_ApplyAdditive_1' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_18) == 0x008160, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_18' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_6) == 0x008198, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_6' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose_1) == 0x0082C8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose_1' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_ApplyAdditive) == 0x008310, "Member 'UAeroLocomotionV2_C::AnimGraphNode_ApplyAdditive' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_17) == 0x0083F8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_17' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_5) == 0x008430, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_5' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_16) == 0x0086D0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_16' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_UseCachedPose) == 0x008708, "Member 'UAeroLocomotionV2_C::AnimGraphNode_UseCachedPose' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_15) == 0x008750, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_15' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_4) == 0x008788, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_4' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_14) == 0x008A28, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_14' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_12) == 0x008A60, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_12' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_11) == 0x008AA0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_11' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_10) == 0x008AE0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_10' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_13) == 0x008B20, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_13' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_5) == 0x008B58, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_5' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_12) == 0x008C88, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_12' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_4) == 0x008CC0, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_4' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_11) == 0x008DF0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_11' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_3) == 0x008E28, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_3' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_10) == 0x0090C8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_10' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_9) == 0x009100, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_9' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_8) == 0x009140, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_8' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_7) == 0x009180, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_7' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_9) == 0x0091C0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_9' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_3) == 0x0091F8, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_3' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_8) == 0x009328, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_8' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_2) == 0x009360, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_2' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_7) == 0x009490, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_7' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_2) == 0x0094C8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_2' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_6) == 0x009768, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_6' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_5) == 0x0097A0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_5' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine_1) == 0x0097D8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine_1' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend_1) == 0x009A78, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend_1' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_SaveCachedPose) == 0x009BA8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_SaveCachedPose' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_6) == 0x009C48, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_6' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_5) == 0x009C88, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_5' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_4) == 0x009CC8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_4' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_3) == 0x009D08, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_2) == 0x009D48, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult_1) == 0x009D88, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_TransitionResult) == 0x009DC8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_4) == 0x009E08, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_4' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_2) == 0x009E40, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_2' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_3) == 0x009EE0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend_1) == 0x009F18, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend_1' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_2) == 0x009FB8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_BlendSpacePlayerWithBlend) == 0x009FF0, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_BlendSpacePlayerWithBlend' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult_1) == 0x00A120, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, MarvelAnimGraphNode_SequencePlayerWithBlend) == 0x00A158, "Member 'UAeroLocomotionV2_C::MarvelAnimGraphNode_SequencePlayerWithBlend' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateResult) == 0x00A1F8, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_StateMachine) == 0x00A230, "Member 'UAeroLocomotionV2_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UAeroLocomotionV2_C, AnimGraphNode_Root) == 0x00A4D0, "Member 'UAeroLocomotionV2_C::AnimGraphNode_Root' has a wrong offset!");
+DUMPER7_ASSERTS_UAeroLocomotionV2_C;
 
 }
 

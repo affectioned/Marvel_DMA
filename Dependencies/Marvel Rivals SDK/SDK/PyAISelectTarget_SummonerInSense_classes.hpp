@@ -28,17 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_SummonerInSense">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_SummonerInSense")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_SummonerInSense")
 	}
 	static class UPyAISelectTarget_SummonerInSense* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_SummonerInSense>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_SummonerInSense) == 0x000008, "Wrong alignment on UPyAISelectTarget_SummonerInSense");
-static_assert(sizeof(UPyAISelectTarget_SummonerInSense) == 0x000078, "Wrong size on UPyAISelectTarget_SummonerInSense");
-static_assert(offsetof(UPyAISelectTarget_SummonerInSense, SummonedID) == 0x000070, "Member 'UPyAISelectTarget_SummonerInSense::SummonedID' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_SummonerInSense, Camp) == 0x000074, "Member 'UPyAISelectTarget_SummonerInSense::Camp' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_SummonerInSense;
 
 }
 

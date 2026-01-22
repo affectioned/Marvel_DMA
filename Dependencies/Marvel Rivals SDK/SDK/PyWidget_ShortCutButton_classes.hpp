@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 #include "PyWidget_Button_classes.hpp"
 
@@ -20,21 +20,20 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ShortCutButton.PyWidget_ShortCutButton
-// 0x0300 (0x08C0 - 0x05C0)
+// 0x02F8 (0x08C0 - 0x05C8)
 class UPyWidget_ShortCutButton final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   BtnName;                                           // 0x05C0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	bool                                          IsTwoBtn;                                          // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEnabled;                                         // 0x05D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5DA[0x6];                                      // 0x05DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FButtonSounds                          Sound;                                             // 0x05E0(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FUIActionData                          HotKey_Left;                                       // 0x05F8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUIActionData                          HotKey_Right;                                      // 0x0650(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FMargin                                DefTexMargin;                                      // 0x06A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FMargin                                TowTexMargin;                                      // 0x06B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6C8[0x8];                                      // 0x06C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   BtnName;                                           // 0x05C8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	bool                                          IsTwoBtn;                                          // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEnabled;                                         // 0x05E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E2[0x6];                                      // 0x05E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FButtonSounds                          Sound;                                             // 0x05E8(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FUIActionData                          HotKey_Left;                                       // 0x0600(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUIActionData                          HotKey_Right;                                      // 0x0658(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMargin                                DefTexMargin;                                      // 0x06B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FMargin                                TowTexMargin;                                      // 0x06C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            IconBrush_Left;                                    // 0x06D0(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            IconBrush_Right;                                   // 0x07A0(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
 	float                                         RenderAngle_Left;                                  // 0x0870(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -61,50 +60,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ShortCutButton">();
+		STATIC_CLASS_IMPL("PyWidget_ShortCutButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ShortCutButton")
 	}
 	static class UPyWidget_ShortCutButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ShortCutButton>();
 	}
 };
-static_assert(alignof(UPyWidget_ShortCutButton) == 0x000010, "Wrong alignment on UPyWidget_ShortCutButton");
-static_assert(sizeof(UPyWidget_ShortCutButton) == 0x0008C0, "Wrong size on UPyWidget_ShortCutButton");
-static_assert(offsetof(UPyWidget_ShortCutButton, BtnName) == 0x0005C0, "Member 'UPyWidget_ShortCutButton::BtnName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, IsTwoBtn) == 0x0005D8, "Member 'UPyWidget_ShortCutButton::IsTwoBtn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, IsEnabled) == 0x0005D9, "Member 'UPyWidget_ShortCutButton::IsEnabled' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, Sound) == 0x0005E0, "Member 'UPyWidget_ShortCutButton::Sound' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, HotKey_Left) == 0x0005F8, "Member 'UPyWidget_ShortCutButton::HotKey_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, HotKey_Right) == 0x000650, "Member 'UPyWidget_ShortCutButton::HotKey_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, DefTexMargin) == 0x0006A8, "Member 'UPyWidget_ShortCutButton::DefTexMargin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, TowTexMargin) == 0x0006B8, "Member 'UPyWidget_ShortCutButton::TowTexMargin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, IconBrush_Left) == 0x0006D0, "Member 'UPyWidget_ShortCutButton::IconBrush_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, IconBrush_Right) == 0x0007A0, "Member 'UPyWidget_ShortCutButton::IconBrush_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, RenderAngle_Left) == 0x000870, "Member 'UPyWidget_ShortCutButton::RenderAngle_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, RenderAngle_Right) == 0x000874, "Member 'UPyWidget_ShortCutButton::RenderAngle_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, Left_Btn_Width_Override) == 0x000878, "Member 'UPyWidget_ShortCutButton::Left_Btn_Width_Override' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, Left_Btn_Height_Override) == 0x00087C, "Member 'UPyWidget_ShortCutButton::Left_Btn_Height_Override' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, Right_Btn_Width_Override) == 0x000880, "Member 'UPyWidget_ShortCutButton::Right_Btn_Width_Override' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, Right_Btn_Height_Override) == 0x000884, "Member 'UPyWidget_ShortCutButton::Right_Btn_Height_Override' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, OnClicked) == 0x000888, "Member 'UPyWidget_ShortCutButton::OnClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, OnLeftBtnClicked) == 0x000898, "Member 'UPyWidget_ShortCutButton::OnLeftBtnClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutButton, OnRightBtnClicked) == 0x0008A8, "Member 'UPyWidget_ShortCutButton::OnRightBtnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ShortCutButton;
 
 // PythonClass PyWidget_ShortCutButton.PyWidget_ShortCutInfoButton
-// 0x0108 (0x0830 - 0x0728)
+// 0x0100 (0x0880 - 0x0780)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_ShortCutInfoButton : public UPyWidget_Button
 {
 public:
-	uint8                                         Pad_728[0x8];                                      // 0x0728(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            ImageIconBrush;                                    // 0x0730(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	bool                                          IsRightBtn;                                        // 0x0800(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_801[0x3];                                      // 0x0801(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RenderAngle;                                       // 0x0804(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             KeyBtnNormal;                                      // 0x0808(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             KeyBtnPress;                                       // 0x0810(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             KeyBtnHover;                                       // 0x0818(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             KeyBtnDisable;                                     // 0x0820(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ImageIconBrush;                                    // 0x0780(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	bool                                          IsRightBtn;                                        // 0x0850(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_851[0x3];                                      // 0x0851(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RenderAngle;                                       // 0x0854(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             KeyBtnNormal;                                      // 0x0858(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             KeyBtnPress;                                       // 0x0860(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             KeyBtnHover;                                       // 0x0868(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             KeyBtnDisable;                                     // 0x0870(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -116,7 +98,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ShortCutInfoButton">();
+		STATIC_CLASS_IMPL("PyWidget_ShortCutInfoButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ShortCutInfoButton")
 	}
 	static class UPyWidget_ShortCutInfoButton* GetDefaultObj()
 	{
@@ -124,15 +110,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_ShortCutInfoButton) == 0x000010, "Wrong alignment on UPyWidget_ShortCutInfoButton");
-static_assert(sizeof(UPyWidget_ShortCutInfoButton) == 0x000830, "Wrong size on UPyWidget_ShortCutInfoButton");
-static_assert(offsetof(UPyWidget_ShortCutInfoButton, ImageIconBrush) == 0x000730, "Member 'UPyWidget_ShortCutInfoButton::ImageIconBrush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutInfoButton, IsRightBtn) == 0x000800, "Member 'UPyWidget_ShortCutInfoButton::IsRightBtn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutInfoButton, RenderAngle) == 0x000804, "Member 'UPyWidget_ShortCutInfoButton::RenderAngle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutInfoButton, KeyBtnNormal) == 0x000808, "Member 'UPyWidget_ShortCutInfoButton::KeyBtnNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutInfoButton, KeyBtnPress) == 0x000810, "Member 'UPyWidget_ShortCutInfoButton::KeyBtnPress' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutInfoButton, KeyBtnHover) == 0x000818, "Member 'UPyWidget_ShortCutInfoButton::KeyBtnHover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShortCutInfoButton, KeyBtnDisable) == 0x000820, "Member 'UPyWidget_ShortCutInfoButton::KeyBtnDisable' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ShortCutInfoButton;
 
 }
 

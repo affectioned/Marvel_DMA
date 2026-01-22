@@ -35,8 +35,7 @@ struct alignas(0x08) FSPCRCollider final
 public:
 	uint8                                         Pad_0[0xA8];                                       // 0x0000(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSPCRCollider) == 0x000008, "Wrong alignment on FSPCRCollider");
-static_assert(sizeof(FSPCRCollider) == 0x0000A8, "Wrong size on FSPCRCollider");
+DUMPER7_ASSERTS_FSPCRCollider;
 
 // ScriptStruct SPCRJointDynamics.SPCRJointPair
 // 0x0028 (0x0028 - 0x0000)
@@ -46,10 +45,7 @@ public:
 	struct FBoneReference                         RootBone;                                          // 0x0000(0x0014)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FBoneReference                         EndBone;                                           // 0x0014(0x0014)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSPCRJointPair) == 0x000004, "Wrong alignment on FSPCRJointPair");
-static_assert(sizeof(FSPCRJointPair) == 0x000028, "Wrong size on FSPCRJointPair");
-static_assert(offsetof(FSPCRJointPair, RootBone) == 0x000000, "Member 'FSPCRJointPair::RootBone' has a wrong offset!");
-static_assert(offsetof(FSPCRJointPair, EndBone) == 0x000014, "Member 'FSPCRJointPair::EndBone' has a wrong offset!");
+DUMPER7_ASSERTS_FSPCRJointPair;
 
 // ScriptStruct SPCRJointDynamics.SPCRCurve
 // 0x0010 (0x0010 - 0x0000)
@@ -60,10 +56,7 @@ public:
 	float                                         Power;                                             // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSPCRCurve) == 0x000008, "Wrong alignment on FSPCRCurve");
-static_assert(sizeof(FSPCRCurve) == 0x000010, "Wrong size on FSPCRCurve");
-static_assert(offsetof(FSPCRCurve, Curve) == 0x000000, "Member 'FSPCRCurve::Curve' has a wrong offset!");
-static_assert(offsetof(FSPCRCurve, Power) == 0x000008, "Member 'FSPCRCurve::Power' has a wrong offset!");
+DUMPER7_ASSERTS_FSPCRCurve;
 
 // ScriptStruct SPCRJointDynamics.SPCRCurveZero
 // 0x0010 (0x0010 - 0x0000)
@@ -74,10 +67,7 @@ public:
 	float                                         Power;                                             // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSPCRCurveZero) == 0x000008, "Wrong alignment on FSPCRCurveZero");
-static_assert(sizeof(FSPCRCurveZero) == 0x000010, "Wrong size on FSPCRCurveZero");
-static_assert(offsetof(FSPCRCurveZero, Curve) == 0x000000, "Member 'FSPCRCurveZero::Curve' has a wrong offset!");
-static_assert(offsetof(FSPCRCurveZero, Power) == 0x000008, "Member 'FSPCRCurveZero::Power' has a wrong offset!");
+DUMPER7_ASSERTS_FSPCRCurveZero;
 
 // ScriptStruct SPCRJointDynamics.SPCRJointDynamicsBody
 // 0x00E0 (0x00E0 - 0x0000)
@@ -97,16 +87,7 @@ public:
 	ESurfaceColliderType                          SurfaceColliderType;                               // 0x00D0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D1[0xF];                                       // 0x00D1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSPCRJointDynamicsBody) == 0x000010, "Wrong alignment on FSPCRJointDynamicsBody");
-static_assert(sizeof(FSPCRJointDynamicsBody) == 0x0000E0, "Wrong size on FSPCRJointDynamicsBody");
-static_assert(offsetof(FSPCRJointDynamicsBody, TargetBone) == 0x000000, "Member 'FSPCRJointDynamicsBody::TargetBone' has a wrong offset!");
-static_assert(offsetof(FSPCRJointDynamicsBody, Transform) == 0x000020, "Member 'FSPCRJointDynamicsBody::Transform' has a wrong offset!");
-static_assert(offsetof(FSPCRJointDynamicsBody, Height) == 0x000080, "Member 'FSPCRJointDynamicsBody::Height' has a wrong offset!");
-static_assert(offsetof(FSPCRJointDynamicsBody, Radius) == 0x000084, "Member 'FSPCRJointDynamicsBody::Radius' has a wrong offset!");
-static_assert(offsetof(FSPCRJointDynamicsBody, Friction) == 0x000088, "Member 'FSPCRJointDynamicsBody::Friction' has a wrong offset!");
-static_assert(offsetof(FSPCRJointDynamicsBody, Location) == 0x000090, "Member 'FSPCRJointDynamicsBody::Location' has a wrong offset!");
-static_assert(offsetof(FSPCRJointDynamicsBody, Rotation) == 0x0000B0, "Member 'FSPCRJointDynamicsBody::Rotation' has a wrong offset!");
-static_assert(offsetof(FSPCRJointDynamicsBody, SurfaceColliderType) == 0x0000D0, "Member 'FSPCRJointDynamicsBody::SurfaceColliderType' has a wrong offset!");
+DUMPER7_ASSERTS_FSPCRJointDynamicsBody;
 
 // ScriptStruct SPCRJointDynamics.AnimNode_SPCRJointDynamics
 // 0x0258 (0x0340 - 0x00E8)
@@ -177,59 +158,7 @@ public:
 	bool                                          bDebugDrawSurfaceCollision;                        // 0x02BB(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2BC[0x84];                                     // 0x02BC(0x0084)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_SPCRJointDynamics) == 0x000008, "Wrong alignment on FAnimNode_SPCRJointDynamics");
-static_assert(sizeof(FAnimNode_SPCRJointDynamics) == 0x000340, "Wrong size on FAnimNode_SPCRJointDynamics");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, JointPairs) == 0x0000E8, "Member 'FAnimNode_SPCRJointDynamics::JointPairs' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, VirtualBoneLength) == 0x0000F8, "Member 'FAnimNode_SPCRJointDynamics::VirtualBoneLength' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, FixedPointIndex) == 0x0000FC, "Member 'FAnimNode_SPCRJointDynamics::FixedPointIndex' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Structural_Vertical_StepCount) == 0x000100, "Member 'FAnimNode_SPCRJointDynamics::Structural_Vertical_StepCount' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bJointLoop) == 0x000104, "Member 'FAnimNode_SPCRJointDynamics::bJointLoop' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bStructural_Vertical) == 0x000105, "Member 'FAnimNode_SPCRJointDynamics::bStructural_Vertical' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bStructural_Vertical_Collision) == 0x000106, "Member 'FAnimNode_SPCRJointDynamics::bStructural_Vertical_Collision' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Structural_Vertical_Shrink) == 0x000108, "Member 'FAnimNode_SPCRJointDynamics::Structural_Vertical_Shrink' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Structural_Vertical_Stretch) == 0x000118, "Member 'FAnimNode_SPCRJointDynamics::Structural_Vertical_Stretch' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bStructural_Horizontal) == 0x000128, "Member 'FAnimNode_SPCRJointDynamics::bStructural_Horizontal' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bStructural_Horizontal_Collision) == 0x000129, "Member 'FAnimNode_SPCRJointDynamics::bStructural_Horizontal_Collision' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Structural_Horizontal_Shrink) == 0x000130, "Member 'FAnimNode_SPCRJointDynamics::Structural_Horizontal_Shrink' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Structural_Horizontal_Stretch) == 0x000140, "Member 'FAnimNode_SPCRJointDynamics::Structural_Horizontal_Stretch' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bShear) == 0x000150, "Member 'FAnimNode_SPCRJointDynamics::bShear' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bShear_Collision) == 0x000151, "Member 'FAnimNode_SPCRJointDynamics::bShear_Collision' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Shear_Shrink) == 0x000158, "Member 'FAnimNode_SPCRJointDynamics::Shear_Shrink' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Shear_Stretch) == 0x000168, "Member 'FAnimNode_SPCRJointDynamics::Shear_Stretch' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bBending_Vertical) == 0x000178, "Member 'FAnimNode_SPCRJointDynamics::bBending_Vertical' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Bending_Vertical_Shrink) == 0x000180, "Member 'FAnimNode_SPCRJointDynamics::Bending_Vertical_Shrink' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Bending_Vertical_Stretch) == 0x000190, "Member 'FAnimNode_SPCRJointDynamics::Bending_Vertical_Stretch' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bBending_Horizontal) == 0x0001A0, "Member 'FAnimNode_SPCRJointDynamics::bBending_Horizontal' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Bending_Horizontal_Shrink) == 0x0001A8, "Member 'FAnimNode_SPCRJointDynamics::Bending_Horizontal_Shrink' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Bending_Horizontal_Stretch) == 0x0001B8, "Member 'FAnimNode_SPCRJointDynamics::Bending_Horizontal_Stretch' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, MaxIterations) == 0x0001C8, "Member 'FAnimNode_SPCRJointDynamics::MaxIterations' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, CollisionSubInterations) == 0x0001CC, "Member 'FAnimNode_SPCRJointDynamics::CollisionSubInterations' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, CollisionLOD) == 0x0001D0, "Member 'FAnimNode_SPCRJointDynamics::CollisionLOD' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bForceLengthLimit) == 0x0001D4, "Member 'FAnimNode_SPCRJointDynamics::bForceLengthLimit' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Resistance) == 0x0001D8, "Member 'FAnimNode_SPCRJointDynamics::Resistance' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Hardness) == 0x0001E8, "Member 'FAnimNode_SPCRJointDynamics::Hardness' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Gravity) == 0x0001F8, "Member 'FAnimNode_SPCRJointDynamics::Gravity' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, GravityCurve) == 0x000210, "Member 'FAnimNode_SPCRJointDynamics::GravityCurve' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bUseDrag) == 0x000220, "Member 'FAnimNode_SPCRJointDynamics::bUseDrag' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, DragCoefficient) == 0x000224, "Member 'FAnimNode_SPCRJointDynamics::DragCoefficient' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, DragCurve) == 0x000228, "Member 'FAnimNode_SPCRJointDynamics::DragCurve' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bUseLift) == 0x000238, "Member 'FAnimNode_SPCRJointDynamics::bUseLift' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, LiftCoefficient) == 0x00023C, "Member 'FAnimNode_SPCRJointDynamics::LiftCoefficient' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, LiftCurve) == 0x000240, "Member 'FAnimNode_SPCRJointDynamics::LiftCurve' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, WindForce) == 0x000250, "Member 'FAnimNode_SPCRJointDynamics::WindForce' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, WindForceSpeed) == 0x000268, "Member 'FAnimNode_SPCRJointDynamics::WindForceSpeed' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bUseSurfaceCollision) == 0x00026C, "Member 'FAnimNode_SPCRJointDynamics::bUseSurfaceCollision' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, WriteID) == 0x000270, "Member 'FAnimNode_SPCRJointDynamics::WriteID' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, ReadID) == 0x000278, "Member 'FAnimNode_SPCRJointDynamics::ReadID' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, Bodies) == 0x000288, "Member 'FAnimNode_SPCRJointDynamics::Bodies' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, jointDynamicsComponent) == 0x000298, "Member 'FAnimNode_SPCRJointDynamics::jointDynamicsComponent' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bLimitAngle) == 0x0002A0, "Member 'FAnimNode_SPCRJointDynamics::bLimitAngle' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, AngleLimitInDegree) == 0x0002A4, "Member 'FAnimNode_SPCRJointDynamics::AngleLimitInDegree' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, LimitCurve) == 0x0002A8, "Member 'FAnimNode_SPCRJointDynamics::LimitCurve' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bLimitFromRoot) == 0x0002B8, "Member 'FAnimNode_SPCRJointDynamics::bLimitFromRoot' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bDebugDrawConstraints) == 0x0002B9, "Member 'FAnimNode_SPCRJointDynamics::bDebugDrawConstraints' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bDebugDrawColliders) == 0x0002BA, "Member 'FAnimNode_SPCRJointDynamics::bDebugDrawColliders' has a wrong offset!");
-static_assert(offsetof(FAnimNode_SPCRJointDynamics, bDebugDrawSurfaceCollision) == 0x0002BB, "Member 'FAnimNode_SPCRJointDynamics::bDebugDrawSurfaceCollision' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_SPCRJointDynamics;
 
 }
 

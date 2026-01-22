@@ -23,9 +23,7 @@ struct PyKlyntarEC01PlunderContainer_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKlyntarEC01PlunderContainer_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyKlyntarEC01PlunderContainer_ReceiveEndPlay");
-static_assert(sizeof(PyKlyntarEC01PlunderContainer_ReceiveEndPlay) == 0x000001, "Wrong size on PyKlyntarEC01PlunderContainer_ReceiveEndPlay");
-static_assert(offsetof(PyKlyntarEC01PlunderContainer_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyKlyntarEC01PlunderContainer_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyKlyntarEC01PlunderContainer_ReceiveEndPlay;
 
 }
 

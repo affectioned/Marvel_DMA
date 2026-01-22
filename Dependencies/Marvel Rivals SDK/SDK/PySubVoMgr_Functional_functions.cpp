@@ -39,10 +39,11 @@ void UPySubVoMgr_Functional::OnSystemKillVoEnd()
 // PythonFunction PySubVoMgr_Functional.PySubVoMgr_Functional.OnSystemVoiceEnd
 // (Native, Public, BlueprintCallable)
 // Parameters:
+// int32                                   VoiceID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const class FString&                    VoiceTag                                               (Parm, ZeroConstructor, HasGetValueTypeHash)
 // const class FString&                    NextVoiceTag                                           (Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UPySubVoMgr_Functional::OnSystemVoiceEnd(const class FString& VoiceTag, const class FString& NextVoiceTag)
+void UPySubVoMgr_Functional::OnSystemVoiceEnd(int32 VoiceID, const class FString& VoiceTag, const class FString& NextVoiceTag)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,6 +52,7 @@ void UPySubVoMgr_Functional::OnSystemVoiceEnd(const class FString& VoiceTag, con
 
 	Params::PySubVoMgr_Functional_OnSystemVoiceEnd Parms{};
 
+	Parms.VoiceID = VoiceID;
 	Parms.VoiceTag = std::move(VoiceTag);
 	Parms.NextVoiceTag = std::move(NextVoiceTag);
 

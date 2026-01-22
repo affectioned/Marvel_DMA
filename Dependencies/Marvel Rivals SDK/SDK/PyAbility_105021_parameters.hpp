@@ -24,9 +24,7 @@ struct PyAbility_105021_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105021_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105021_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105021_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105021_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105021_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105021_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105021_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105021.PyAbility_105021.OnPressSpace
 // 0x0004 (0x0004 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAbility_105021_OnPressSpace final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105021_OnPressSpace) == 0x000004, "Wrong alignment on PyAbility_105021_OnPressSpace");
-static_assert(sizeof(PyAbility_105021_OnPressSpace) == 0x000004, "Wrong size on PyAbility_105021_OnPressSpace");
-static_assert(offsetof(PyAbility_105021_OnPressSpace, TimeWaited) == 0x000000, "Member 'PyAbility_105021_OnPressSpace::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105021_OnPressSpace;
 
 // PythonFunction PyAbility_105021.PyAbility_105021.OnDashFinish
 // 0x0001 (0x0001 - 0x0000)
@@ -46,9 +42,7 @@ struct PyAbility_105021_OnDashFinish final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105021_OnDashFinish) == 0x000001, "Wrong alignment on PyAbility_105021_OnDashFinish");
-static_assert(sizeof(PyAbility_105021_OnDashFinish) == 0x000001, "Wrong size on PyAbility_105021_OnDashFinish");
-static_assert(offsetof(PyAbility_105021_OnDashFinish, Reason) == 0x000000, "Member 'PyAbility_105021_OnDashFinish::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105021_OnDashFinish;
 
 // PythonFunction PyAbility_105021.PyCue_Ability_Instant_10502101.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -58,10 +52,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Instant_10502101_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_Ability_Instant_10502101_OnExecuteFX");
-static_assert(sizeof(PyCue_Ability_Instant_10502101_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_Ability_Instant_10502101_OnExecuteFX");
-static_assert(offsetof(PyCue_Ability_Instant_10502101_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_Ability_Instant_10502101_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Instant_10502101_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_Ability_Instant_10502101_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Instant_10502101_OnExecuteFX;
 
 }
 

@@ -21,9 +21,7 @@ struct PyAbility_101781_NativeOnMontageBlendOut final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101781_NativeOnMontageBlendOut) == 0x000008, "Wrong alignment on PyAbility_101781_NativeOnMontageBlendOut");
-static_assert(sizeof(PyAbility_101781_NativeOnMontageBlendOut) == 0x000010, "Wrong size on PyAbility_101781_NativeOnMontageBlendOut");
-static_assert(offsetof(PyAbility_101781_NativeOnMontageBlendOut, Tag) == 0x000000, "Member 'PyAbility_101781_NativeOnMontageBlendOut::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101781_NativeOnMontageBlendOut;
 
 }
 

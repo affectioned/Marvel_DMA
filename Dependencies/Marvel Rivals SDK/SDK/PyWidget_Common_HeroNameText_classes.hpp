@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_HeroNameText.PyWidget_Common_HeroNameText
-// 0x0360 (0x0920 - 0x05C0)
+// 0x0368 (0x0930 - 0x05C8)
 class UPyWidget_Common_HeroNameText : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         HeroID;                                            // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ShapeID;                                           // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AndSignPersent;                                    // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOverrideDefaultStyle;                             // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C9[0x7];                                      // 0x05C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTextBlockStyle                        DefaultTextStyleOverride;                          // 0x05D0(0x0350)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         HeroID;                                            // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShapeID;                                           // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AndSignPersent;                                    // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOverrideDefaultStyle;                             // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D1[0xF];                                      // 0x05D1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTextBlockStyle                        DefaultTextStyleOverride;                          // 0x05E0(0x0350)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_HeroNameText">();
+		STATIC_CLASS_IMPL("PyWidget_Common_HeroNameText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_HeroNameText")
 	}
 	static class UPyWidget_Common_HeroNameText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_HeroNameText>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_HeroNameText) == 0x000010, "Wrong alignment on UPyWidget_Common_HeroNameText");
-static_assert(sizeof(UPyWidget_Common_HeroNameText) == 0x000920, "Wrong size on UPyWidget_Common_HeroNameText");
-static_assert(offsetof(UPyWidget_Common_HeroNameText, HeroID) == 0x0005BC, "Member 'UPyWidget_Common_HeroNameText::HeroID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_HeroNameText, ShapeID) == 0x0005C0, "Member 'UPyWidget_Common_HeroNameText::ShapeID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_HeroNameText, AndSignPersent) == 0x0005C4, "Member 'UPyWidget_Common_HeroNameText::AndSignPersent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_HeroNameText, bOverrideDefaultStyle) == 0x0005C8, "Member 'UPyWidget_Common_HeroNameText::bOverrideDefaultStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_HeroNameText, DefaultTextStyleOverride) == 0x0005D0, "Member 'UPyWidget_Common_HeroNameText::DefaultTextStyleOverride' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_HeroNameText;
 
 }
 

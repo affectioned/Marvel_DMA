@@ -35,10 +35,7 @@ public:
 	class UNiagaraSystem*                         HitAllyEffect;                                     // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UNiagaraSystem*                         HitOtherEffect;                                    // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCue_NiagaraAsset_Hit_10313101) == 0x000008, "Wrong alignment on FCue_NiagaraAsset_Hit_10313101");
-static_assert(sizeof(FCue_NiagaraAsset_Hit_10313101) == 0x000018, "Wrong size on FCue_NiagaraAsset_Hit_10313101");
-static_assert(offsetof(FCue_NiagaraAsset_Hit_10313101, HitAllyEffect) == 0x000008, "Member 'FCue_NiagaraAsset_Hit_10313101::HitAllyEffect' has a wrong offset!");
-static_assert(offsetof(FCue_NiagaraAsset_Hit_10313101, HitOtherEffect) == 0x000010, "Member 'FCue_NiagaraAsset_Hit_10313101::HitOtherEffect' has a wrong offset!");
+DUMPER7_ASSERTS_FCue_NiagaraAsset_Hit_10313101;
 
 // ScriptStruct Hero_1031.SpecialSocockInfo_103195
 // 0x0050 (0x0050 - 0x0000)
@@ -47,9 +44,7 @@ struct FSpecialSocockInfo_103195 final
 public:
 	TMap<struct FGameplayTag, class FName>        StateToSocketMap;                                  // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSpecialSocockInfo_103195) == 0x000008, "Wrong alignment on FSpecialSocockInfo_103195");
-static_assert(sizeof(FSpecialSocockInfo_103195) == 0x000050, "Wrong size on FSpecialSocockInfo_103195");
-static_assert(offsetof(FSpecialSocockInfo_103195, StateToSocketMap) == 0x000000, "Member 'FSpecialSocockInfo_103195::StateToSocketMap' has a wrong offset!");
+DUMPER7_ASSERTS_FSpecialSocockInfo_103195;
 
 }
 

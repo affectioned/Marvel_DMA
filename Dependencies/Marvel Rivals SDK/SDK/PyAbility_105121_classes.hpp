@@ -19,32 +19,32 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105121.PyConfig_105121
-// 0x0C40 (0x0CD8 - 0x0098)
+// 0x0F60 (0x0FF8 - 0x0098)
 class UPyConfig_105121 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashContext;                                       // 0x0098(0x0BC8)(Edit, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  BlockDashTag;                                      // 0x0C60(0x0068)(Edit, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           TimeLineDashEventTag;                              // 0x0CC8(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashContext;                                       // 0x0098(0x0EE8)(Edit, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  BlockDashTag;                                      // 0x0F80(0x0068)(Edit, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           TimeLineDashEventTag;                              // 0x0FE8(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105121">();
+		STATIC_CLASS_IMPL("PyConfig_105121")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105121")
 	}
 	static class UPyConfig_105121* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105121>();
 	}
 };
-static_assert(alignof(UPyConfig_105121) == 0x000008, "Wrong alignment on UPyConfig_105121");
-static_assert(sizeof(UPyConfig_105121) == 0x000CD8, "Wrong size on UPyConfig_105121");
-static_assert(offsetof(UPyConfig_105121, DashContext) == 0x000098, "Member 'UPyConfig_105121::DashContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105121, BlockDashTag) == 0x000C60, "Member 'UPyConfig_105121::BlockDashTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105121, TimeLineDashEventTag) == 0x000CC8, "Member 'UPyConfig_105121::TimeLineDashEventTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105121;
 
 // PythonClass PyAbility_105121.PyAbility_105121
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_105121 : public UAbility_108
 {
 public:
@@ -54,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105121">();
+		STATIC_CLASS_IMPL("PyAbility_105121")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105121")
 	}
 	static class UPyAbility_105121* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105121>();
 	}
 };
-static_assert(alignof(UPyAbility_105121) == 0x000008, "Wrong alignment on UPyAbility_105121");
-static_assert(sizeof(UPyAbility_105121) == 0x0029F8, "Wrong size on UPyAbility_105121");
+DUMPER7_ASSERTS_UPyAbility_105121;
 
 }
 

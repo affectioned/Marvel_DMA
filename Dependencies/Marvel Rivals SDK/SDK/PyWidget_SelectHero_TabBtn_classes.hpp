@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "python_enums_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "python_enums_structs.hpp"
 #include "PyWidget_Button_classes.hpp"
 
 
@@ -19,25 +19,25 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectHero_TabBtn.PyWidget_SelectHero_TabBtn
-// 0x0070 (0x0798 - 0x0728)
+// 0x0070 (0x07F0 - 0x0780)
 class UPyWidget_SelectHero_TabBtn : public UPyWidget_Button
 {
 public:
-	class UTexture2D*                             AllDutyIcon;                                       // 0x0728(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             TankIcon;                                          // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             DamageIcon;                                        // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SupportIcon;                                       // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             NoPreferredIcon;                                   // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             PreferredIcon;                                     // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESelectHeroTabBtnType                         RoleId;                                            // 0x0758(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_759[0x3];                                      // 0x0759(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         IconAngle;                                         // 0x075C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSelected;                                        // 0x0760(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPressed;                                         // 0x0761(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_762[0x2];                                      // 0x0762(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           NormalColor;                                       // 0x0764(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           HoverColor;                                        // 0x0774(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           SelectingColor;                                    // 0x0784(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             AllDutyIcon;                                       // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             TankIcon;                                          // 0x0788(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DamageIcon;                                        // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SupportIcon;                                       // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             NoPreferredIcon;                                   // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             PreferredIcon;                                     // 0x07A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESelectHeroTabBtnType                         RoleId;                                            // 0x07B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7B1[0x3];                                      // 0x07B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         IconAngle;                                         // 0x07B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSelected;                                        // 0x07B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPressed;                                         // 0x07B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7BA[0x2];                                      // 0x07BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           NormalColor;                                       // 0x07BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           HoverColor;                                        // 0x07CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           SelectingColor;                                    // 0x07DC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -50,28 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectHero_TabBtn">();
+		STATIC_CLASS_IMPL("PyWidget_SelectHero_TabBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectHero_TabBtn")
 	}
 	static class UPyWidget_SelectHero_TabBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectHero_TabBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectHero_TabBtn) == 0x000008, "Wrong alignment on UPyWidget_SelectHero_TabBtn");
-static_assert(sizeof(UPyWidget_SelectHero_TabBtn) == 0x000798, "Wrong size on UPyWidget_SelectHero_TabBtn");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, AllDutyIcon) == 0x000728, "Member 'UPyWidget_SelectHero_TabBtn::AllDutyIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, TankIcon) == 0x000730, "Member 'UPyWidget_SelectHero_TabBtn::TankIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, DamageIcon) == 0x000738, "Member 'UPyWidget_SelectHero_TabBtn::DamageIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, SupportIcon) == 0x000740, "Member 'UPyWidget_SelectHero_TabBtn::SupportIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, NoPreferredIcon) == 0x000748, "Member 'UPyWidget_SelectHero_TabBtn::NoPreferredIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, PreferredIcon) == 0x000750, "Member 'UPyWidget_SelectHero_TabBtn::PreferredIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, RoleId) == 0x000758, "Member 'UPyWidget_SelectHero_TabBtn::RoleId' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, IconAngle) == 0x00075C, "Member 'UPyWidget_SelectHero_TabBtn::IconAngle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, IsSelected) == 0x000760, "Member 'UPyWidget_SelectHero_TabBtn::IsSelected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, IsPressed) == 0x000761, "Member 'UPyWidget_SelectHero_TabBtn::IsPressed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, NormalColor) == 0x000764, "Member 'UPyWidget_SelectHero_TabBtn::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, HoverColor) == 0x000774, "Member 'UPyWidget_SelectHero_TabBtn::HoverColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_TabBtn, SelectingColor) == 0x000784, "Member 'UPyWidget_SelectHero_TabBtn::SelectingColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectHero_TabBtn;
 
 }
 

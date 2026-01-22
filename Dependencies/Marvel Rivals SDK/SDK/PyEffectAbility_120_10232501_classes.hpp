@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyEffectAbility_120_10232501.PyEffectAbility_120_10232501
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyEffectAbility_120_10232501 final : public UMarvelEffectGameplayAbility
 {
 public:
-	TArray<int32>                                 DamageScopeIDs;                                    // 0x1370(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<int32>                                 DamageScopeIDs;                                    // 0x1388(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10232501">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10232501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10232501")
 	}
 	static class UPyEffectAbility_120_10232501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_120_10232501>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_120_10232501) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10232501");
-static_assert(sizeof(UPyEffectAbility_120_10232501) == 0x001380, "Wrong size on UPyEffectAbility_120_10232501");
-static_assert(offsetof(UPyEffectAbility_120_10232501, DamageScopeIDs) == 0x001370, "Member 'UPyEffectAbility_120_10232501::DamageScopeIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10232501;
 
 }
 

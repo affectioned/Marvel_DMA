@@ -24,23 +24,26 @@ class UClanHonorData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClanHonorData">();
+		STATIC_CLASS_IMPL("ClanHonorData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClanHonorData")
 	}
 	static class UClanHonorData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClanHonorData>();
 	}
 };
-static_assert(alignof(UClanHonorData) == 0x000008, "Wrong alignment on UClanHonorData");
-static_assert(sizeof(UClanHonorData) == 0x000030, "Wrong size on UClanHonorData");
+DUMPER7_ASSERTS_UClanHonorData;
 
 // PythonClass PyWidget_Clan_LeagueHistory.PyWidget_Clan_LeagueHistory
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_Clan_LeagueHistory final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UTexture2D*                             ImgNoFilter;                                       // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgFilter;                                         // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgNoFilter;                                       // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgFilter;                                         // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -51,17 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_LeagueHistory">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_LeagueHistory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_LeagueHistory")
 	}
 	static class UPyWidget_Clan_LeagueHistory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_LeagueHistory>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_LeagueHistory) == 0x000008, "Wrong alignment on UPyWidget_Clan_LeagueHistory");
-static_assert(sizeof(UPyWidget_Clan_LeagueHistory) == 0x000608, "Wrong size on UPyWidget_Clan_LeagueHistory");
-static_assert(offsetof(UPyWidget_Clan_LeagueHistory, ImgNoFilter) == 0x0005F8, "Member 'UPyWidget_Clan_LeagueHistory::ImgNoFilter' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_LeagueHistory, ImgFilter) == 0x000600, "Member 'UPyWidget_Clan_LeagueHistory::ImgFilter' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Clan_LeagueHistory;
 
 }
 

@@ -21,9 +21,7 @@ struct PyLevelSummoned_20040101_OnPlayerEnetered final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20040101_OnPlayerEnetered) == 0x000008, "Wrong alignment on PyLevelSummoned_20040101_OnPlayerEnetered");
-static_assert(sizeof(PyLevelSummoned_20040101_OnPlayerEnetered) == 0x000008, "Wrong size on PyLevelSummoned_20040101_OnPlayerEnetered");
-static_assert(offsetof(PyLevelSummoned_20040101_OnPlayerEnetered, actor) == 0x000000, "Member 'PyLevelSummoned_20040101_OnPlayerEnetered::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20040101_OnPlayerEnetered;
 
 // PythonFunction PyLevelSummoned_20040101.PyLevelSummoned_20040101.OnPlayerExited
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyLevelSummoned_20040101_OnPlayerExited final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20040101_OnPlayerExited) == 0x000008, "Wrong alignment on PyLevelSummoned_20040101_OnPlayerExited");
-static_assert(sizeof(PyLevelSummoned_20040101_OnPlayerExited) == 0x000008, "Wrong size on PyLevelSummoned_20040101_OnPlayerExited");
-static_assert(offsetof(PyLevelSummoned_20040101_OnPlayerExited, actor) == 0x000000, "Member 'PyLevelSummoned_20040101_OnPlayerExited::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20040101_OnPlayerExited;
 
 }
 

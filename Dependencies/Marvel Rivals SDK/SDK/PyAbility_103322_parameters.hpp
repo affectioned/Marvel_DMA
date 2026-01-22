@@ -24,9 +24,7 @@ struct PyAbility_103322_Base_OnActivateFailed final
 public:
 	struct FGameplayTagContainer                  FailReason;                                        // 0x0000(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_103322_Base_OnActivateFailed) == 0x000008, "Wrong alignment on PyAbility_103322_Base_OnActivateFailed");
-static_assert(sizeof(PyAbility_103322_Base_OnActivateFailed) == 0x000068, "Wrong size on PyAbility_103322_Base_OnActivateFailed");
-static_assert(offsetof(PyAbility_103322_Base_OnActivateFailed, FailReason) == 0x000000, "Member 'PyAbility_103322_Base_OnActivateFailed::FailReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103322_Base_OnActivateFailed;
 
 // PythonFunction PyAbility_103322.PyAbility_103322_Base.K2_OnClientActivateAbilityRejected
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAbility_103322_Base_K2_OnClientActivateAbilityRejected final
 public:
 	bool                                          bIsCurrentActivation;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103322_Base_K2_OnClientActivateAbilityRejected) == 0x000001, "Wrong alignment on PyAbility_103322_Base_K2_OnClientActivateAbilityRejected");
-static_assert(sizeof(PyAbility_103322_Base_K2_OnClientActivateAbilityRejected) == 0x000001, "Wrong size on PyAbility_103322_Base_K2_OnClientActivateAbilityRejected");
-static_assert(offsetof(PyAbility_103322_Base_K2_OnClientActivateAbilityRejected, bIsCurrentActivation) == 0x000000, "Member 'PyAbility_103322_Base_K2_OnClientActivateAbilityRejected::bIsCurrentActivation' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103322_Base_K2_OnClientActivateAbilityRejected;
 
 // PythonFunction PyAbility_103322.PyAbility_103322_Base.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -46,9 +42,7 @@ struct PyAbility_103322_Base_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103322_Base_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_103322_Base_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_103322_Base_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_103322_Base_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_103322_Base_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_103322_Base_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103322_Base_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_103322.PyAbility_103322_Base.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +51,7 @@ struct PyAbility_103322_Base_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103322_Base_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_103322_Base_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_103322_Base_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_103322_Base_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_103322_Base_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_103322_Base_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103322_Base_K2_OnEndAbility;
 
 // PythonFunction PyAbility_103322.PyAbility_103322_Base.K2_CanActivateAbility
 // 0x00D0 (0x00D0 - 0x0000)
@@ -72,12 +64,7 @@ public:
 	struct FGameplayTagContainer                  tag_container;                                     // 0x0060(0x0068)(Parm, OutParm)
 	bool                                          ReturnValue;                                       // 0x00C8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103322_Base_K2_CanActivateAbility) == 0x000008, "Wrong alignment on PyAbility_103322_Base_K2_CanActivateAbility");
-static_assert(sizeof(PyAbility_103322_Base_K2_CanActivateAbility) == 0x0000D0, "Wrong size on PyAbility_103322_Base_K2_CanActivateAbility");
-static_assert(offsetof(PyAbility_103322_Base_K2_CanActivateAbility, ActorInfo) == 0x000000, "Member 'PyAbility_103322_Base_K2_CanActivateAbility::ActorInfo' has a wrong offset!");
-static_assert(offsetof(PyAbility_103322_Base_K2_CanActivateAbility, Handle) == 0x000058, "Member 'PyAbility_103322_Base_K2_CanActivateAbility::Handle' has a wrong offset!");
-static_assert(offsetof(PyAbility_103322_Base_K2_CanActivateAbility, tag_container) == 0x000060, "Member 'PyAbility_103322_Base_K2_CanActivateAbility::tag_container' has a wrong offset!");
-static_assert(offsetof(PyAbility_103322_Base_K2_CanActivateAbility, ReturnValue) == 0x0000C8, "Member 'PyAbility_103322_Base_K2_CanActivateAbility::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103322_Base_K2_CanActivateAbility;
 
 }
 

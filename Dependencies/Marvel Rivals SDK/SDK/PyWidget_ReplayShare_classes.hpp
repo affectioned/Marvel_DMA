@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ReplayShare.PyWidget_ReplayShare
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ReplayShare final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReplayShare">();
+		STATIC_CLASS_IMPL("PyWidget_ReplayShare")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReplayShare")
 	}
 	static class UPyWidget_ReplayShare* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReplayShare>();
 	}
 };
-static_assert(alignof(UPyWidget_ReplayShare) == 0x000008, "Wrong alignment on UPyWidget_ReplayShare");
-static_assert(sizeof(UPyWidget_ReplayShare) == 0x0005C0, "Wrong size on UPyWidget_ReplayShare");
+DUMPER7_ASSERTS_UPyWidget_ReplayShare;
 
 }
 

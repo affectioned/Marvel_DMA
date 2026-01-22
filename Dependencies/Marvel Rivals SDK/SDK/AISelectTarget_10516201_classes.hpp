@@ -23,15 +23,18 @@ class UAISelectTarget_10516201_C final : public UAISelectTargetLogic_BaseAddOffs
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_10516201_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_10516201_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_10516201_C")
 	}
 	static class UAISelectTarget_10516201_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_10516201_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_10516201_C) == 0x000008, "Wrong alignment on UAISelectTarget_10516201_C");
-static_assert(sizeof(UAISelectTarget_10516201_C) == 0x000078, "Wrong size on UAISelectTarget_10516201_C");
+DUMPER7_ASSERTS_UAISelectTarget_10516201_C;
 
 }
 

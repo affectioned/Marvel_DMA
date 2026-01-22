@@ -21,9 +21,7 @@ struct PyWidget_PageList_SegmentedScrollbar_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PageList_SegmentedScrollbar_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_PageList_SegmentedScrollbar_PreConstruct");
-static_assert(sizeof(PyWidget_PageList_SegmentedScrollbar_PreConstruct) == 0x000001, "Wrong size on PyWidget_PageList_SegmentedScrollbar_PreConstruct");
-static_assert(offsetof(PyWidget_PageList_SegmentedScrollbar_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_PageList_SegmentedScrollbar_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PageList_SegmentedScrollbar_PreConstruct;
 
 // PythonFunction PyWidget_PageList_SegmentedScrollbar.PyWidget_PageList_SegmentedScrollbar.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_PageList_SegmentedScrollbar_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PageList_SegmentedScrollbar_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_PageList_SegmentedScrollbar_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_PageList_SegmentedScrollbar_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_PageList_SegmentedScrollbar_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_PageList_SegmentedScrollbar_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_PageList_SegmentedScrollbar_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PageList_SegmentedScrollbar_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_PageList_SegmentedScrollbar.PyWidget_PageList_SegmentedScrollbar.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_PageList_SegmentedScrollbar_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PageList_SegmentedScrollbar_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_PageList_SegmentedScrollbar_MarvelSetVisible");
-static_assert(sizeof(PyWidget_PageList_SegmentedScrollbar_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_PageList_SegmentedScrollbar_MarvelSetVisible");
-static_assert(offsetof(PyWidget_PageList_SegmentedScrollbar_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_PageList_SegmentedScrollbar_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PageList_SegmentedScrollbar_MarvelSetVisible;
 
 }
 

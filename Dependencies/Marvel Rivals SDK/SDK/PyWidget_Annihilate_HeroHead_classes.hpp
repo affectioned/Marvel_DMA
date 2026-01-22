@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Annihilate_HeroHead.PyWidget_Annihilate_HeroHead
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Annihilate_HeroHead final : public UPyMarvelUserWidget
 {
 public:
@@ -29,22 +29,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Annihilate_HeroHead">();
+		STATIC_CLASS_IMPL("PyWidget_Annihilate_HeroHead")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Annihilate_HeroHead")
 	}
 	static class UPyWidget_Annihilate_HeroHead* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Annihilate_HeroHead>();
 	}
 };
-static_assert(alignof(UPyWidget_Annihilate_HeroHead) == 0x000008, "Wrong alignment on UPyWidget_Annihilate_HeroHead");
-static_assert(sizeof(UPyWidget_Annihilate_HeroHead) == 0x0005C0, "Wrong size on UPyWidget_Annihilate_HeroHead");
+DUMPER7_ASSERTS_UPyWidget_Annihilate_HeroHead;
 
 // PythonClass PyWidget_Annihilate_HeroHead.PyWidget_Annihilate_SkillState
-// 0x0010 (0x0580 - 0x0570)
+// 0x0010 (0x0588 - 0x0578)
 class UPyWidget_Annihilate_SkillState final : public UWidget_UltimateAbility
 {
 public:
-	TArray<struct FLinearColor>                   BlueColor_list;                                    // 0x0570(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   BlueColor_list;                                    // 0x0578(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,16 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Annihilate_SkillState">();
+		STATIC_CLASS_IMPL("PyWidget_Annihilate_SkillState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Annihilate_SkillState")
 	}
 	static class UPyWidget_Annihilate_SkillState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Annihilate_SkillState>();
 	}
 };
-static_assert(alignof(UPyWidget_Annihilate_SkillState) == 0x000008, "Wrong alignment on UPyWidget_Annihilate_SkillState");
-static_assert(sizeof(UPyWidget_Annihilate_SkillState) == 0x000580, "Wrong size on UPyWidget_Annihilate_SkillState");
-static_assert(offsetof(UPyWidget_Annihilate_SkillState, BlueColor_list) == 0x000570, "Member 'UPyWidget_Annihilate_SkillState::BlueColor_list' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Annihilate_SkillState;
 
 }
 

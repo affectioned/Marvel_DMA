@@ -34,20 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_SettingPage_Gamepad">();
+		STATIC_CLASS_IMPL("PyUIController_SettingPage_Gamepad")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_SettingPage_Gamepad")
 	}
 	static class UPyUIController_SettingPage_Gamepad* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_SettingPage_Gamepad>();
 	}
 };
-static_assert(alignof(UPyUIController_SettingPage_Gamepad) == 0x000008, "Wrong alignment on UPyUIController_SettingPage_Gamepad");
-static_assert(sizeof(UPyUIController_SettingPage_Gamepad) == 0x000070, "Wrong size on UPyUIController_SettingPage_Gamepad");
-static_assert(offsetof(UPyUIController_SettingPage_Gamepad, RichInlineImageWidth) == 0x000030, "Member 'UPyUIController_SettingPage_Gamepad::RichInlineImageWidth' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_Gamepad, RichInlineImageHeight) == 0x000034, "Member 'UPyUIController_SettingPage_Gamepad::RichInlineImageHeight' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_Gamepad, RichInlineImageScale) == 0x000038, "Member 'UPyUIController_SettingPage_Gamepad::RichInlineImageScale' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_Gamepad, Special_1022_Name) == 0x000040, "Member 'UPyUIController_SettingPage_Gamepad::Special_1022_Name' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_Gamepad, Special_1036_Name) == 0x000058, "Member 'UPyUIController_SettingPage_Gamepad::Special_1036_Name' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_SettingPage_Gamepad;
 
 }
 

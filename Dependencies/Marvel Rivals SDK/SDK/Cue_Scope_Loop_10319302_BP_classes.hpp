@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Scope_Loop_10319302_BP.Cue_Scope_Loop_10319302_BP_C
-// 0x0010 (0x10F0 - 0x10E0)
+// 0x0010 (0x1100 - 0x10F0)
 class ACue_Scope_Loop_10319302_BP_C final : public AMarvelCueNotify_Scope
 {
 public:
-	class UNiagaraComponent*                      Niagara;                                           // 0x10E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Niagara;                                           // 0x10F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Scope_Loop_10319302_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Scope_Loop_10319302_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Scope_Loop_10319302_BP_C")
 	}
 	static class ACue_Scope_Loop_10319302_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Scope_Loop_10319302_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Scope_Loop_10319302_BP_C) == 0x000010, "Wrong alignment on ACue_Scope_Loop_10319302_BP_C");
-static_assert(sizeof(ACue_Scope_Loop_10319302_BP_C) == 0x0010F0, "Wrong size on ACue_Scope_Loop_10319302_BP_C");
-static_assert(offsetof(ACue_Scope_Loop_10319302_BP_C, Niagara) == 0x0010E0, "Member 'ACue_Scope_Loop_10319302_BP_C::Niagara' has a wrong offset!");
+DUMPER7_ASSERTS_ACue_Scope_Loop_10319302_BP_C;
 
 }
 

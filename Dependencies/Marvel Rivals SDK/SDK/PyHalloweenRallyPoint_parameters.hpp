@@ -21,9 +21,7 @@ struct PyHalloweenRallyPoint_OnPlayerEnetered final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenRallyPoint_OnPlayerEnetered) == 0x000008, "Wrong alignment on PyHalloweenRallyPoint_OnPlayerEnetered");
-static_assert(sizeof(PyHalloweenRallyPoint_OnPlayerEnetered) == 0x000008, "Wrong size on PyHalloweenRallyPoint_OnPlayerEnetered");
-static_assert(offsetof(PyHalloweenRallyPoint_OnPlayerEnetered, actor) == 0x000000, "Member 'PyHalloweenRallyPoint_OnPlayerEnetered::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenRallyPoint_OnPlayerEnetered;
 
 // PythonFunction PyHalloweenRallyPoint.PyHalloweenRallyPoint.OnPlayerExited
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyHalloweenRallyPoint_OnPlayerExited final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenRallyPoint_OnPlayerExited) == 0x000008, "Wrong alignment on PyHalloweenRallyPoint_OnPlayerExited");
-static_assert(sizeof(PyHalloweenRallyPoint_OnPlayerExited) == 0x000008, "Wrong size on PyHalloweenRallyPoint_OnPlayerExited");
-static_assert(offsetof(PyHalloweenRallyPoint_OnPlayerExited, actor) == 0x000000, "Member 'PyHalloweenRallyPoint_OnPlayerExited::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenRallyPoint_OnPlayerExited;
 
 // PythonFunction PyHalloweenRallyPoint.PyHalloweenRallyPoint.SetState
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +39,7 @@ struct PyHalloweenRallyPoint_SetState final
 public:
 	int32                                         NewState;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenRallyPoint_SetState) == 0x000004, "Wrong alignment on PyHalloweenRallyPoint_SetState");
-static_assert(sizeof(PyHalloweenRallyPoint_SetState) == 0x000004, "Wrong size on PyHalloweenRallyPoint_SetState");
-static_assert(offsetof(PyHalloweenRallyPoint_SetState, NewState) == 0x000000, "Member 'PyHalloweenRallyPoint_SetState::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenRallyPoint_SetState;
 
 }
 

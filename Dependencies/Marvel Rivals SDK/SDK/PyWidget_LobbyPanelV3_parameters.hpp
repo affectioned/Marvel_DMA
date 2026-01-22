@@ -26,11 +26,7 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_LobbyPanelV3_OnPreviewMouseButtonDown) == 0x000008, "Wrong alignment on PyWidget_LobbyPanelV3_OnPreviewMouseButtonDown");
-static_assert(sizeof(PyWidget_LobbyPanelV3_OnPreviewMouseButtonDown) == 0x000178, "Wrong size on PyWidget_LobbyPanelV3_OnPreviewMouseButtonDown");
-static_assert(offsetof(PyWidget_LobbyPanelV3_OnPreviewMouseButtonDown, MyGeometry) == 0x000000, "Member 'PyWidget_LobbyPanelV3_OnPreviewMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_LobbyPanelV3_OnPreviewMouseButtonDown, MouseEvent) == 0x000038, "Member 'PyWidget_LobbyPanelV3_OnPreviewMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(PyWidget_LobbyPanelV3_OnPreviewMouseButtonDown, ReturnValue) == 0x0000B8, "Member 'PyWidget_LobbyPanelV3_OnPreviewMouseButtonDown::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LobbyPanelV3_OnPreviewMouseButtonDown;
 
 // PythonFunction PyWidget_LobbyPanelV3.PyWidget_LobbyPanelV3.ShouldEnableInput
 // 0x0001 (0x0001 - 0x0000)
@@ -39,9 +35,7 @@ struct PyWidget_LobbyPanelV3_ShouldEnableInput final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LobbyPanelV3_ShouldEnableInput) == 0x000001, "Wrong alignment on PyWidget_LobbyPanelV3_ShouldEnableInput");
-static_assert(sizeof(PyWidget_LobbyPanelV3_ShouldEnableInput) == 0x000001, "Wrong size on PyWidget_LobbyPanelV3_ShouldEnableInput");
-static_assert(offsetof(PyWidget_LobbyPanelV3_ShouldEnableInput, ReturnValue) == 0x000000, "Member 'PyWidget_LobbyPanelV3_ShouldEnableInput::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LobbyPanelV3_ShouldEnableInput;
 
 }
 

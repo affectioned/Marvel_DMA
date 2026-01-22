@@ -18,25 +18,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_103387_BP.Ability_103387_BP_C
-// 0x0010 (0x2AF0 - 0x2AE0)
+// 0x0010 (0x2B40 - 0x2B30)
 class UAbility_103387_BP_C final : public UPyAbility_103384
 {
 public:
-	TArray<struct FHitResult>                     Hit_Results;                                       // 0x2AE0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<struct FHitResult>                     Hit_Results;                                       // 0x2B30(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_103387_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_103387_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_103387_BP_C")
 	}
 	static class UAbility_103387_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_103387_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_103387_BP_C) == 0x000008, "Wrong alignment on UAbility_103387_BP_C");
-static_assert(sizeof(UAbility_103387_BP_C) == 0x002AF0, "Wrong size on UAbility_103387_BP_C");
-static_assert(offsetof(UAbility_103387_BP_C, Hit_Results) == 0x002AE0, "Member 'UAbility_103387_BP_C::Hit_Results' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_103387_BP_C;
 
 }
 

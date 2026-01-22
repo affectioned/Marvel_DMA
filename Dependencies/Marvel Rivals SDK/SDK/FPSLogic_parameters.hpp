@@ -21,9 +21,7 @@ struct UISettingEntryMaxFPSCustomBaseHandler_Setter final
 public:
 	float                                         value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSCustomBaseHandler_Setter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSCustomBaseHandler_Setter");
-static_assert(sizeof(UISettingEntryMaxFPSCustomBaseHandler_Setter) == 0x000004, "Wrong size on UISettingEntryMaxFPSCustomBaseHandler_Setter");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_Setter, value) == 0x000000, "Member 'UISettingEntryMaxFPSCustomBaseHandler_Setter::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSCustomBaseHandler_Setter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSCustomBaseHandler.Getter
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct UISettingEntryMaxFPSCustomBaseHandler_Getter final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSCustomBaseHandler_Getter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSCustomBaseHandler_Getter");
-static_assert(sizeof(UISettingEntryMaxFPSCustomBaseHandler_Getter) == 0x000004, "Wrong size on UISettingEntryMaxFPSCustomBaseHandler_Getter");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_Getter, ReturnValue) == 0x000000, "Member 'UISettingEntryMaxFPSCustomBaseHandler_Getter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSCustomBaseHandler_Getter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSCustomBaseHandler.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -47,13 +43,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply");
-static_assert(sizeof(UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSCustomBaseHandler_BP_OnApply;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSCustomBaseHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -66,13 +56,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSCustomBaseHandler_BP_GetCurrentValue;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSCustomBaseHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -85,57 +69,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
-
-// PythonFunction FPSLogic.UISettingEntryMaxFPSLobbyCustomHandler.Setter
-// 0x0004 (0x0004 - 0x0000)
-struct UISettingEntryMaxFPSLobbyCustomHandler_Setter final
-{
-public:
-	float                                         value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(UISettingEntryMaxFPSLobbyCustomHandler_Setter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSLobbyCustomHandler_Setter");
-static_assert(sizeof(UISettingEntryMaxFPSLobbyCustomHandler_Setter) == 0x000004, "Wrong size on UISettingEntryMaxFPSLobbyCustomHandler_Setter");
-static_assert(offsetof(UISettingEntryMaxFPSLobbyCustomHandler_Setter, value) == 0x000000, "Member 'UISettingEntryMaxFPSLobbyCustomHandler_Setter::value' has a wrong offset!");
-
-// PythonFunction FPSLogic.UISettingEntryMaxFPSLobbyCustomHandler.Getter
-// 0x0004 (0x0004 - 0x0000)
-struct UISettingEntryMaxFPSLobbyCustomHandler_Getter final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(UISettingEntryMaxFPSLobbyCustomHandler_Getter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSLobbyCustomHandler_Getter");
-static_assert(sizeof(UISettingEntryMaxFPSLobbyCustomHandler_Getter) == 0x000004, "Wrong size on UISettingEntryMaxFPSLobbyCustomHandler_Getter");
-static_assert(offsetof(UISettingEntryMaxFPSLobbyCustomHandler_Getter, ReturnValue) == 0x000000, "Member 'UISettingEntryMaxFPSLobbyCustomHandler_Getter::ReturnValue' has a wrong offset!");
-
-// PythonFunction FPSLogic.UISettingEntryMaxFPSCustomHandler.Setter
-// 0x0004 (0x0004 - 0x0000)
-struct UISettingEntryMaxFPSCustomHandler_Setter final
-{
-public:
-	float                                         value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(UISettingEntryMaxFPSCustomHandler_Setter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSCustomHandler_Setter");
-static_assert(sizeof(UISettingEntryMaxFPSCustomHandler_Setter) == 0x000004, "Wrong size on UISettingEntryMaxFPSCustomHandler_Setter");
-static_assert(offsetof(UISettingEntryMaxFPSCustomHandler_Setter, value) == 0x000000, "Member 'UISettingEntryMaxFPSCustomHandler_Setter::value' has a wrong offset!");
-
-// PythonFunction FPSLogic.UISettingEntryMaxFPSCustomHandler.Getter
-// 0x0004 (0x0004 - 0x0000)
-struct UISettingEntryMaxFPSCustomHandler_Getter final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(UISettingEntryMaxFPSCustomHandler_Getter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSCustomHandler_Getter");
-static_assert(sizeof(UISettingEntryMaxFPSCustomHandler_Getter) == 0x000004, "Wrong size on UISettingEntryMaxFPSCustomHandler_Getter");
-static_assert(offsetof(UISettingEntryMaxFPSCustomHandler_Getter, ReturnValue) == 0x000000, "Member 'UISettingEntryMaxFPSCustomHandler_Getter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSCustomBaseHandler_BP_GetDefaultValue;
 
 // PythonFunction FPSLogic.UISettingEntryFPSLimitHandler.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -148,13 +82,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryFPSLimitHandler_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryFPSLimitHandler_BP_OnApply");
-static_assert(sizeof(UISettingEntryFPSLimitHandler_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryFPSLimitHandler_BP_OnApply");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryFPSLimitHandler_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryFPSLimitHandler_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryFPSLimitHandler_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryFPSLimitHandler_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryFPSLimitHandler_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryFPSLimitHandler_BP_OnApply;
 
 // PythonFunction FPSLogic.UISettingEntryFPSLimitHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -167,13 +95,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryFPSLimitHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryFPSLimitHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryFPSLimitHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryFPSLimitHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryFPSLimitHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryFPSLimitHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryFPSLimitHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryFPSLimitHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryFPSLimitHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryFPSLimitHandler_BP_GetCurrentValue;
 
 // PythonFunction FPSLogic.UISettingEntryFPSLimitHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -189,15 +111,25 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryFPSLimitHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryFPSLimitHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryFPSLimitHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryFPSLimitHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryFPSLimitHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryFPSLimitHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryFPSLimitHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryFPSLimitHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryFPSLimitHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryFPSLimitHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFPSLimitHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryFPSLimitHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryFPSLimitHandler_BP_OnChanged;
+
+// PythonFunction FPSLogic.UISettingEntryMaxFPSLobbyCustomHandler.Setter
+// 0x0004 (0x0004 - 0x0000)
+struct UISettingEntryMaxFPSLobbyCustomHandler_Setter final
+{
+public:
+	float                                         value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_UISettingEntryMaxFPSLobbyCustomHandler_Setter;
+
+// PythonFunction FPSLogic.UISettingEntryMaxFPSLobbyCustomHandler.Getter
+// 0x0004 (0x0004 - 0x0000)
+struct UISettingEntryMaxFPSLobbyCustomHandler_Getter final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_UISettingEntryMaxFPSLobbyCustomHandler_Getter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSBaseHandler.Setter
 // 0x0004 (0x0004 - 0x0000)
@@ -206,9 +138,7 @@ struct UISettingEntryMaxFPSBaseHandler_Setter final
 public:
 	float                                         value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSBaseHandler_Setter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSBaseHandler_Setter");
-static_assert(sizeof(UISettingEntryMaxFPSBaseHandler_Setter) == 0x000004, "Wrong size on UISettingEntryMaxFPSBaseHandler_Setter");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_Setter, value) == 0x000000, "Member 'UISettingEntryMaxFPSBaseHandler_Setter::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSBaseHandler_Setter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSBaseHandler.Getter
 // 0x0004 (0x0004 - 0x0000)
@@ -217,9 +147,7 @@ struct UISettingEntryMaxFPSBaseHandler_Getter final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSBaseHandler_Getter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSBaseHandler_Getter");
-static_assert(sizeof(UISettingEntryMaxFPSBaseHandler_Getter) == 0x000004, "Wrong size on UISettingEntryMaxFPSBaseHandler_Getter");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_Getter, ReturnValue) == 0x000000, "Member 'UISettingEntryMaxFPSBaseHandler_Getter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSBaseHandler_Getter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSBaseHandler.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -232,13 +160,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSBaseHandler_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryMaxFPSBaseHandler_BP_OnApply");
-static_assert(sizeof(UISettingEntryMaxFPSBaseHandler_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryMaxFPSBaseHandler_BP_OnApply");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSBaseHandler_BP_OnApply;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSBaseHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -251,13 +173,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSBaseHandler_BP_GetCurrentValue;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSBaseHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -270,13 +186,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSBaseHandler_BP_GetDefaultValue;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSBaseHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -292,15 +202,25 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryMaxFPSBaseHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryMaxFPSBaseHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryMaxFPSBaseHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryMaxFPSBaseHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMaxFPSBaseHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryMaxFPSBaseHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSBaseHandler_BP_OnChanged;
+
+// PythonFunction FPSLogic.UISettingEntryMaxFPSCustomHandler.Setter
+// 0x0004 (0x0004 - 0x0000)
+struct UISettingEntryMaxFPSCustomHandler_Setter final
+{
+public:
+	float                                         value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_UISettingEntryMaxFPSCustomHandler_Setter;
+
+// PythonFunction FPSLogic.UISettingEntryMaxFPSCustomHandler.Getter
+// 0x0004 (0x0004 - 0x0000)
+struct UISettingEntryMaxFPSCustomHandler_Getter final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_UISettingEntryMaxFPSCustomHandler_Getter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSBackgroundHandler.Setter
 // 0x0004 (0x0004 - 0x0000)
@@ -309,9 +229,7 @@ struct UISettingEntryMaxFPSBackgroundHandler_Setter final
 public:
 	float                                         value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSBackgroundHandler_Setter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSBackgroundHandler_Setter");
-static_assert(sizeof(UISettingEntryMaxFPSBackgroundHandler_Setter) == 0x000004, "Wrong size on UISettingEntryMaxFPSBackgroundHandler_Setter");
-static_assert(offsetof(UISettingEntryMaxFPSBackgroundHandler_Setter, value) == 0x000000, "Member 'UISettingEntryMaxFPSBackgroundHandler_Setter::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSBackgroundHandler_Setter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSBackgroundHandler.Getter
 // 0x0004 (0x0004 - 0x0000)
@@ -320,9 +238,7 @@ struct UISettingEntryMaxFPSBackgroundHandler_Getter final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSBackgroundHandler_Getter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSBackgroundHandler_Getter");
-static_assert(sizeof(UISettingEntryMaxFPSBackgroundHandler_Getter) == 0x000004, "Wrong size on UISettingEntryMaxFPSBackgroundHandler_Getter");
-static_assert(offsetof(UISettingEntryMaxFPSBackgroundHandler_Getter, ReturnValue) == 0x000000, "Member 'UISettingEntryMaxFPSBackgroundHandler_Getter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSBackgroundHandler_Getter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSLobbyHandler.Setter
 // 0x0004 (0x0004 - 0x0000)
@@ -331,9 +247,7 @@ struct UISettingEntryMaxFPSLobbyHandler_Setter final
 public:
 	float                                         value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSLobbyHandler_Setter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSLobbyHandler_Setter");
-static_assert(sizeof(UISettingEntryMaxFPSLobbyHandler_Setter) == 0x000004, "Wrong size on UISettingEntryMaxFPSLobbyHandler_Setter");
-static_assert(offsetof(UISettingEntryMaxFPSLobbyHandler_Setter, value) == 0x000000, "Member 'UISettingEntryMaxFPSLobbyHandler_Setter::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSLobbyHandler_Setter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSLobbyHandler.Getter
 // 0x0004 (0x0004 - 0x0000)
@@ -342,9 +256,7 @@ struct UISettingEntryMaxFPSLobbyHandler_Getter final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSLobbyHandler_Getter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSLobbyHandler_Getter");
-static_assert(sizeof(UISettingEntryMaxFPSLobbyHandler_Getter) == 0x000004, "Wrong size on UISettingEntryMaxFPSLobbyHandler_Getter");
-static_assert(offsetof(UISettingEntryMaxFPSLobbyHandler_Getter, ReturnValue) == 0x000000, "Member 'UISettingEntryMaxFPSLobbyHandler_Getter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSLobbyHandler_Getter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSHandler.Setter
 // 0x0004 (0x0004 - 0x0000)
@@ -353,9 +265,7 @@ struct UISettingEntryMaxFPSHandler_Setter final
 public:
 	float                                         value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSHandler_Setter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSHandler_Setter");
-static_assert(sizeof(UISettingEntryMaxFPSHandler_Setter) == 0x000004, "Wrong size on UISettingEntryMaxFPSHandler_Setter");
-static_assert(offsetof(UISettingEntryMaxFPSHandler_Setter, value) == 0x000000, "Member 'UISettingEntryMaxFPSHandler_Setter::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSHandler_Setter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSHandler.Getter
 // 0x0004 (0x0004 - 0x0000)
@@ -364,9 +274,7 @@ struct UISettingEntryMaxFPSHandler_Getter final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSHandler_Getter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSHandler_Getter");
-static_assert(sizeof(UISettingEntryMaxFPSHandler_Getter) == 0x000004, "Wrong size on UISettingEntryMaxFPSHandler_Getter");
-static_assert(offsetof(UISettingEntryMaxFPSHandler_Getter, ReturnValue) == 0x000000, "Member 'UISettingEntryMaxFPSHandler_Getter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSHandler_Getter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSBackgroundCustomHandler.Setter
 // 0x0004 (0x0004 - 0x0000)
@@ -375,9 +283,7 @@ struct UISettingEntryMaxFPSBackgroundCustomHandler_Setter final
 public:
 	float                                         value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSBackgroundCustomHandler_Setter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSBackgroundCustomHandler_Setter");
-static_assert(sizeof(UISettingEntryMaxFPSBackgroundCustomHandler_Setter) == 0x000004, "Wrong size on UISettingEntryMaxFPSBackgroundCustomHandler_Setter");
-static_assert(offsetof(UISettingEntryMaxFPSBackgroundCustomHandler_Setter, value) == 0x000000, "Member 'UISettingEntryMaxFPSBackgroundCustomHandler_Setter::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSBackgroundCustomHandler_Setter;
 
 // PythonFunction FPSLogic.UISettingEntryMaxFPSBackgroundCustomHandler.Getter
 // 0x0004 (0x0004 - 0x0000)
@@ -386,9 +292,7 @@ struct UISettingEntryMaxFPSBackgroundCustomHandler_Getter final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMaxFPSBackgroundCustomHandler_Getter) == 0x000004, "Wrong alignment on UISettingEntryMaxFPSBackgroundCustomHandler_Getter");
-static_assert(sizeof(UISettingEntryMaxFPSBackgroundCustomHandler_Getter) == 0x000004, "Wrong size on UISettingEntryMaxFPSBackgroundCustomHandler_Getter");
-static_assert(offsetof(UISettingEntryMaxFPSBackgroundCustomHandler_Getter, ReturnValue) == 0x000000, "Member 'UISettingEntryMaxFPSBackgroundCustomHandler_Getter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMaxFPSBackgroundCustomHandler_Getter;
 
 // PythonFunction FPSLogic.UISettingEntryShowFPSSwitchHandler.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -401,13 +305,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryShowFPSSwitchHandler_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryShowFPSSwitchHandler_BP_OnApply");
-static_assert(sizeof(UISettingEntryShowFPSSwitchHandler_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryShowFPSSwitchHandler_BP_OnApply");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryShowFPSSwitchHandler_BP_OnApply;
 
 // PythonFunction FPSLogic.UISettingEntryShowFPSSwitchHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -423,15 +321,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryShowFPSSwitchHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryShowFPSSwitchHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryShowFPSSwitchHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryShowFPSSwitchHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShowFPSSwitchHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryShowFPSSwitchHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryShowFPSSwitchHandler_BP_OnChanged;
 
 }
 

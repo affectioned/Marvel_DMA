@@ -26,11 +26,7 @@ public:
 	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10310105_OnApplyTreat) == 0x000008, "Wrong alignment on PyBuffAbility_120_10310105_OnApplyTreat");
-static_assert(sizeof(PyBuffAbility_120_10310105_OnApplyTreat) == 0x000028, "Wrong size on PyBuffAbility_120_10310105_OnApplyTreat");
-static_assert(offsetof(PyBuffAbility_120_10310105_OnApplyTreat, InCauser) == 0x000000, "Member 'PyBuffAbility_120_10310105_OnApplyTreat::InCauser' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10310105_OnApplyTreat, TargetActor) == 0x000008, "Member 'PyBuffAbility_120_10310105_OnApplyTreat::TargetActor' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10310105_OnApplyTreat, ModifierHandle) == 0x000010, "Member 'PyBuffAbility_120_10310105_OnApplyTreat::ModifierHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10310105_OnApplyTreat;
 
 // PythonFunction PyBuffAbility_120_103101.PyNotTreatShiled_120_10310507.GetOverflowConvRate
 // 0x0004 (0x0004 - 0x0000)
@@ -39,9 +35,7 @@ struct PyNotTreatShiled_120_10310507_GetOverflowConvRate final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNotTreatShiled_120_10310507_GetOverflowConvRate) == 0x000004, "Wrong alignment on PyNotTreatShiled_120_10310507_GetOverflowConvRate");
-static_assert(sizeof(PyNotTreatShiled_120_10310507_GetOverflowConvRate) == 0x000004, "Wrong size on PyNotTreatShiled_120_10310507_GetOverflowConvRate");
-static_assert(offsetof(PyNotTreatShiled_120_10310507_GetOverflowConvRate, ReturnValue) == 0x000000, "Member 'PyNotTreatShiled_120_10310507_GetOverflowConvRate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyNotTreatShiled_120_10310507_GetOverflowConvRate;
 
 // PythonFunction PyBuffAbility_120_103101.PyBuffAbility_120_10310108.OnGameplayEffectStackChange
 // 0x0010 (0x0010 - 0x0000)
@@ -52,11 +46,7 @@ public:
 	int32                                         NewCount;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OldCount;                                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10310108_OnGameplayEffectStackChange) == 0x000004, "Wrong alignment on PyBuffAbility_120_10310108_OnGameplayEffectStackChange");
-static_assert(sizeof(PyBuffAbility_120_10310108_OnGameplayEffectStackChange) == 0x000010, "Wrong size on PyBuffAbility_120_10310108_OnGameplayEffectStackChange");
-static_assert(offsetof(PyBuffAbility_120_10310108_OnGameplayEffectStackChange, Handle) == 0x000000, "Member 'PyBuffAbility_120_10310108_OnGameplayEffectStackChange::Handle' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10310108_OnGameplayEffectStackChange, NewCount) == 0x000008, "Member 'PyBuffAbility_120_10310108_OnGameplayEffectStackChange::NewCount' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10310108_OnGameplayEffectStackChange, OldCount) == 0x00000C, "Member 'PyBuffAbility_120_10310108_OnGameplayEffectStackChange::OldCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10310108_OnGameplayEffectStackChange;
 
 }
 

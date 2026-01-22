@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_Regulations.PyWidget_Secondary_Regulations
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Secondary_Regulations final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MinDesiredHeight_Content;                          // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxDesiredHeight_Content;                          // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C4[0x4];                                      // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                RichText_Class;                                    // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MinDesiredHeight_Content;                          // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxDesiredHeight_Content;                          // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                RichText_Class;                                    // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,26 +33,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_Regulations">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_Regulations")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_Regulations")
 	}
 	static class UPyWidget_Secondary_Regulations* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_Regulations>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_Regulations) == 0x000008, "Wrong alignment on UPyWidget_Secondary_Regulations");
-static_assert(sizeof(UPyWidget_Secondary_Regulations) == 0x0005D0, "Wrong size on UPyWidget_Secondary_Regulations");
-static_assert(offsetof(UPyWidget_Secondary_Regulations, MinDesiredHeight_Content) == 0x0005BC, "Member 'UPyWidget_Secondary_Regulations::MinDesiredHeight_Content' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_Regulations, MaxDesiredHeight_Content) == 0x0005C0, "Member 'UPyWidget_Secondary_Regulations::MaxDesiredHeight_Content' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_Regulations, RichText_Class) == 0x0005C8, "Member 'UPyWidget_Secondary_Regulations::RichText_Class' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_Regulations;
 
 // PythonClass PyWidget_Secondary_Regulations.PyWidget_Regulations_Item
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Regulations_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UDataTable*                             LinkUrlDataTable;                                  // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDataTable*                             LinkUrlDataTable;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -61,16 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Regulations_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Regulations_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Regulations_Item")
 	}
 	static class UPyWidget_Regulations_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Regulations_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Regulations_Item) == 0x000008, "Wrong alignment on UPyWidget_Regulations_Item");
-static_assert(sizeof(UPyWidget_Regulations_Item) == 0x0005C8, "Wrong size on UPyWidget_Regulations_Item");
-static_assert(offsetof(UPyWidget_Regulations_Item, LinkUrlDataTable) == 0x0005C0, "Member 'UPyWidget_Regulations_Item::LinkUrlDataTable' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Regulations_Item;
 
 }
 

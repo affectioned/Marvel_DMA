@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAccessibilityManager">();
+		STATIC_CLASS_IMPL("PyAccessibilityManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAccessibilityManager")
 	}
 	static class UPyAccessibilityManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAccessibilityManager>();
 	}
 };
-static_assert(alignof(UPyAccessibilityManager) == 0x000008, "Wrong alignment on UPyAccessibilityManager");
-static_assert(sizeof(UPyAccessibilityManager) == 0x000038, "Wrong size on UPyAccessibilityManager");
+DUMPER7_ASSERTS_UPyAccessibilityManager;
 
 }
 

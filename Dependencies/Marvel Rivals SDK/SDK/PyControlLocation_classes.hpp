@@ -23,15 +23,18 @@ class APyControlLocation final : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyControlLocation">();
+		STATIC_CLASS_IMPL("PyControlLocation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyControlLocation")
 	}
 	static class APyControlLocation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyControlLocation>();
 	}
 };
-static_assert(alignof(APyControlLocation) == 0x000010, "Wrong alignment on APyControlLocation");
-static_assert(sizeof(APyControlLocation) == 0x0006E0, "Wrong size on APyControlLocation");
+DUMPER7_ASSERTS_APyControlLocation;
 
 }
 

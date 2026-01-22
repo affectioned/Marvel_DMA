@@ -34,22 +34,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BattleChessFunctionLibrary">();
+		STATIC_CLASS_IMPL("BattleChessFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattleChessFunctionLibrary")
 	}
 	static class UBattleChessFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattleChessFunctionLibrary>();
 	}
 };
-static_assert(alignof(UBattleChessFunctionLibrary) == 0x000008, "Wrong alignment on UBattleChessFunctionLibrary");
-static_assert(sizeof(UBattleChessFunctionLibrary) == 0x000030, "Wrong size on UBattleChessFunctionLibrary");
+DUMPER7_ASSERTS_UBattleChessFunctionLibrary;
 
 // Class Activity_10120.BuffAbility_CommonChess
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UBuffAbility_CommonChess : public UMarvelEffectGameplayAbility
 {
 public:
-	TSubclassOf<class UMarvelGameplayEffectTemplate> TreatEffectTemplate;                            // 0x1370(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UMarvelGameplayEffectTemplate> TreatEffectTemplate;                            // 0x1388(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static int32 GetNumOfRoles(class AActor* InSource);
@@ -61,52 +64,53 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_CommonChess">();
+		STATIC_CLASS_IMPL("BuffAbility_CommonChess")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_CommonChess")
 	}
 	static class UBuffAbility_CommonChess* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_CommonChess>();
 	}
 };
-static_assert(alignof(UBuffAbility_CommonChess) == 0x000008, "Wrong alignment on UBuffAbility_CommonChess");
-static_assert(sizeof(UBuffAbility_CommonChess) == 0x001378, "Wrong size on UBuffAbility_CommonChess");
-static_assert(offsetof(UBuffAbility_CommonChess, TreatEffectTemplate) == 0x001370, "Member 'UBuffAbility_CommonChess::TreatEffectTemplate' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_CommonChess;
 
 // Class Activity_10120.LevelDamageSourceAbility_Periodic
-// 0x0018 (0x1388 - 0x1370)
+// 0x0018 (0x13A0 - 0x1388)
 class ULevelDamageSourceAbility_Periodic final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         BuffID;                                            // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BuffInterval;                                      // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BuffDuration;                                      // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAffectedByRoleNum;                                // 0x137C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_137D[0xB];                                     // 0x137D(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         BuffID;                                            // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BuffInterval;                                      // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BuffDuration;                                      // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAffectedByRoleNum;                                // 0x1394(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1395[0xB];                                     // 0x1395(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelDamageSourceAbility_Periodic">();
+		STATIC_CLASS_IMPL("LevelDamageSourceAbility_Periodic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelDamageSourceAbility_Periodic")
 	}
 	static class ULevelDamageSourceAbility_Periodic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelDamageSourceAbility_Periodic>();
 	}
 };
-static_assert(alignof(ULevelDamageSourceAbility_Periodic) == 0x000008, "Wrong alignment on ULevelDamageSourceAbility_Periodic");
-static_assert(sizeof(ULevelDamageSourceAbility_Periodic) == 0x001388, "Wrong size on ULevelDamageSourceAbility_Periodic");
-static_assert(offsetof(ULevelDamageSourceAbility_Periodic, BuffID) == 0x001370, "Member 'ULevelDamageSourceAbility_Periodic::BuffID' has a wrong offset!");
-static_assert(offsetof(ULevelDamageSourceAbility_Periodic, BuffInterval) == 0x001374, "Member 'ULevelDamageSourceAbility_Periodic::BuffInterval' has a wrong offset!");
-static_assert(offsetof(ULevelDamageSourceAbility_Periodic, BuffDuration) == 0x001378, "Member 'ULevelDamageSourceAbility_Periodic::BuffDuration' has a wrong offset!");
-static_assert(offsetof(ULevelDamageSourceAbility_Periodic, bAffectedByRoleNum) == 0x00137C, "Member 'ULevelDamageSourceAbility_Periodic::bAffectedByRoleNum' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelDamageSourceAbility_Periodic;
 
 // Class Activity_10120.LevelDamageSourceAbility_LastKill
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class ULevelDamageSourceAbility_LastKill final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         BuffID;                                            // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1374[0x4];                                     // 0x1374(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         BuffID;                                            // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138C[0x4];                                     // 0x138C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnPlayerKilled(const struct FAttributeModifierParameter& Param);
@@ -114,16 +118,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelDamageSourceAbility_LastKill">();
+		STATIC_CLASS_IMPL("LevelDamageSourceAbility_LastKill")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelDamageSourceAbility_LastKill")
 	}
 	static class ULevelDamageSourceAbility_LastKill* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelDamageSourceAbility_LastKill>();
 	}
 };
-static_assert(alignof(ULevelDamageSourceAbility_LastKill) == 0x000008, "Wrong alignment on ULevelDamageSourceAbility_LastKill");
-static_assert(sizeof(ULevelDamageSourceAbility_LastKill) == 0x001378, "Wrong size on ULevelDamageSourceAbility_LastKill");
-static_assert(offsetof(ULevelDamageSourceAbility_LastKill, BuffID) == 0x001370, "Member 'ULevelDamageSourceAbility_LastKill::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelDamageSourceAbility_LastKill;
 
 // Class Activity_10120.MarvelEnergyPercentageEffect
 // 0x0000 (0x1438 - 0x1438)
@@ -132,15 +138,18 @@ class UMarvelEnergyPercentageEffect : public UMarvelGameplayEffectTemplate
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelEnergyPercentageEffect">();
+		STATIC_CLASS_IMPL("MarvelEnergyPercentageEffect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelEnergyPercentageEffect")
 	}
 	static class UMarvelEnergyPercentageEffect* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelEnergyPercentageEffect>();
 	}
 };
-static_assert(alignof(UMarvelEnergyPercentageEffect) == 0x000008, "Wrong alignment on UMarvelEnergyPercentageEffect");
-static_assert(sizeof(UMarvelEnergyPercentageEffect) == 0x001438, "Wrong size on UMarvelEnergyPercentageEffect");
+DUMPER7_ASSERTS_UMarvelEnergyPercentageEffect;
 
 // Class Activity_10120.MarvelEnergyPercentageExecution
 // 0x0000 (0x0048 - 0x0048)
@@ -149,25 +158,28 @@ class UMarvelEnergyPercentageExecution final : public UMarvelBaseEffectExecution
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelEnergyPercentageExecution">();
+		STATIC_CLASS_IMPL("MarvelEnergyPercentageExecution")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelEnergyPercentageExecution")
 	}
 	static class UMarvelEnergyPercentageExecution* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelEnergyPercentageExecution>();
 	}
 };
-static_assert(alignof(UMarvelEnergyPercentageExecution) == 0x000008, "Wrong alignment on UMarvelEnergyPercentageExecution");
-static_assert(sizeof(UMarvelEnergyPercentageExecution) == 0x000048, "Wrong size on UMarvelEnergyPercentageExecution");
+DUMPER7_ASSERTS_UMarvelEnergyPercentageExecution;
 
 // Class Activity_10120.LevelResurrectionAbility
-// 0x0020 (0x1430 - 0x1410)
+// 0x0020 (0x1448 - 0x1428)
 class ULevelResurrectionAbility final : public UMarvelBaseResurrectionAbility
 {
 public:
-	uint8                                         Pad_1410[0x14];                                    // 0x1410(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HealthRatio;                                       // 0x1424(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bRoleBasedHealth;                                  // 0x1428(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1429[0x7];                                     // 0x1429(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1428[0x14];                                    // 0x1428(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HealthRatio;                                       // 0x143C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bRoleBasedHealth;                                  // 0x1440(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1441[0x7];                                     // 0x1441(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool TryResurrectCharacter(class AActor* InActor);
@@ -175,29 +187,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelResurrectionAbility">();
+		STATIC_CLASS_IMPL("LevelResurrectionAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelResurrectionAbility")
 	}
 	static class ULevelResurrectionAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelResurrectionAbility>();
 	}
 };
-static_assert(alignof(ULevelResurrectionAbility) == 0x000008, "Wrong alignment on ULevelResurrectionAbility");
-static_assert(sizeof(ULevelResurrectionAbility) == 0x001430, "Wrong size on ULevelResurrectionAbility");
-static_assert(offsetof(ULevelResurrectionAbility, HealthRatio) == 0x001424, "Member 'ULevelResurrectionAbility::HealthRatio' has a wrong offset!");
-static_assert(offsetof(ULevelResurrectionAbility, bRoleBasedHealth) == 0x001428, "Member 'ULevelResurrectionAbility::bRoleBasedHealth' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelResurrectionAbility;
 
 // Class Activity_10120.LevelSustainedDamageAndHealingAbility
-// 0x0018 (0x1390 - 0x1378)
+// 0x0018 (0x13A8 - 0x1390)
 class ULevelSustainedDamageAndHealingAbility : public UBuffAbility_CommonChess
 {
 public:
-	float                                         DamageValue;                                       // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TreatValue;                                        // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EffectInterval;                                    // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsDamageEffect;                                   // 0x1384(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAffectedByRoleNum;                                // 0x1385(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1386[0xA];                                     // 0x1386(0x000A)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         DamageValue;                                       // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TreatValue;                                        // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EffectInterval;                                    // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsDamageEffect;                                   // 0x139C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAffectedByRoleNum;                                // 0x139D(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_139E[0xA];                                     // 0x139E(0x000A)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	TArray<class AMarvelBaseCharacter*> GetAllyCharacterList(class AMarvelBaseCharacter* OwnerCharacter) const;
@@ -206,29 +219,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelSustainedDamageAndHealingAbility">();
+		STATIC_CLASS_IMPL("LevelSustainedDamageAndHealingAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelSustainedDamageAndHealingAbility")
 	}
 	static class ULevelSustainedDamageAndHealingAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelSustainedDamageAndHealingAbility>();
 	}
 };
-static_assert(alignof(ULevelSustainedDamageAndHealingAbility) == 0x000008, "Wrong alignment on ULevelSustainedDamageAndHealingAbility");
-static_assert(sizeof(ULevelSustainedDamageAndHealingAbility) == 0x001390, "Wrong size on ULevelSustainedDamageAndHealingAbility");
-static_assert(offsetof(ULevelSustainedDamageAndHealingAbility, DamageValue) == 0x001378, "Member 'ULevelSustainedDamageAndHealingAbility::DamageValue' has a wrong offset!");
-static_assert(offsetof(ULevelSustainedDamageAndHealingAbility, TreatValue) == 0x00137C, "Member 'ULevelSustainedDamageAndHealingAbility::TreatValue' has a wrong offset!");
-static_assert(offsetof(ULevelSustainedDamageAndHealingAbility, EffectInterval) == 0x001380, "Member 'ULevelSustainedDamageAndHealingAbility::EffectInterval' has a wrong offset!");
-static_assert(offsetof(ULevelSustainedDamageAndHealingAbility, bIsDamageEffect) == 0x001384, "Member 'ULevelSustainedDamageAndHealingAbility::bIsDamageEffect' has a wrong offset!");
-static_assert(offsetof(ULevelSustainedDamageAndHealingAbility, bAffectedByRoleNum) == 0x001385, "Member 'ULevelSustainedDamageAndHealingAbility::bAffectedByRoleNum' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelSustainedDamageAndHealingAbility;
 
 // Class Activity_10120.LevelTeamBuffAbility
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class ULevelTeamBuffAbility : public UMarvelEffectGameplayAbility
 {
 public:
-	ETeamRelation                                 TeamRelation;                                      // 0x1370(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1371[0x3];                                     // 0x1371(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         BuffID;                                            // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETeamRelation                                 TeamRelation;                                      // 0x1388(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1389[0x3];                                     // 0x1389(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BuffID;                                            // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnCharacterPossess(class AMarvelPlayerState* PlayerState, class AMarvelBaseCharacter* Character);
@@ -237,25 +248,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelTeamBuffAbility">();
+		STATIC_CLASS_IMPL("LevelTeamBuffAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelTeamBuffAbility")
 	}
 	static class ULevelTeamBuffAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelTeamBuffAbility>();
 	}
 };
-static_assert(alignof(ULevelTeamBuffAbility) == 0x000008, "Wrong alignment on ULevelTeamBuffAbility");
-static_assert(sizeof(ULevelTeamBuffAbility) == 0x001378, "Wrong size on ULevelTeamBuffAbility");
-static_assert(offsetof(ULevelTeamBuffAbility, TeamRelation) == 0x001370, "Member 'ULevelTeamBuffAbility::TeamRelation' has a wrong offset!");
-static_assert(offsetof(ULevelTeamBuffAbility, BuffID) == 0x001374, "Member 'ULevelTeamBuffAbility::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelTeamBuffAbility;
 
 // Class Activity_10120.LevelTreatOverflowConvAbility
-// 0x0008 (0x1480 - 0x1478)
+// 0x0008 (0x1498 - 0x1490)
 class ULevelTreatOverflowConvAbility final : public UMarvelTreatOverflowConvAbility
 {
 public:
-	int32                                         SourceBuffID;                                      // 0x1478(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_147C[0x4];                                     // 0x147C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         SourceBuffID;                                      // 0x1490(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1494[0x4];                                     // 0x1494(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnBuffRemovedFromTarget(const struct FActiveGameplayEffect& RemovedEffect, bool bPrematureRemoval);
@@ -263,25 +275,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelTreatOverflowConvAbility">();
+		STATIC_CLASS_IMPL("LevelTreatOverflowConvAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelTreatOverflowConvAbility")
 	}
 	static class ULevelTreatOverflowConvAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelTreatOverflowConvAbility>();
 	}
 };
-static_assert(alignof(ULevelTreatOverflowConvAbility) == 0x000008, "Wrong alignment on ULevelTreatOverflowConvAbility");
-static_assert(sizeof(ULevelTreatOverflowConvAbility) == 0x001480, "Wrong size on ULevelTreatOverflowConvAbility");
-static_assert(offsetof(ULevelTreatOverflowConvAbility, SourceBuffID) == 0x001478, "Member 'ULevelTreatOverflowConvAbility::SourceBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelTreatOverflowConvAbility;
 
 // Class Activity_10120.BuffAbility_DamageToDamage
-// 0x0010 (0x1388 - 0x1378)
+// 0x0010 (0x13A0 - 0x1390)
 class UBuffAbility_DamageToDamage final : public UBuffAbility_CommonChess
 {
 public:
-	float                                         TakeDamageThreshold;                               // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ApplyDamageValue;                                  // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1380[0x8];                                     // 0x1380(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         TakeDamageThreshold;                               // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ApplyDamageValue;                                  // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1398[0x8];                                     // 0x1398(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnTakeDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle);
@@ -289,27 +303,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_DamageToDamage">();
+		STATIC_CLASS_IMPL("BuffAbility_DamageToDamage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_DamageToDamage")
 	}
 	static class UBuffAbility_DamageToDamage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_DamageToDamage>();
 	}
 };
-static_assert(alignof(UBuffAbility_DamageToDamage) == 0x000008, "Wrong alignment on UBuffAbility_DamageToDamage");
-static_assert(sizeof(UBuffAbility_DamageToDamage) == 0x001388, "Wrong size on UBuffAbility_DamageToDamage");
-static_assert(offsetof(UBuffAbility_DamageToDamage, TakeDamageThreshold) == 0x001378, "Member 'UBuffAbility_DamageToDamage::TakeDamageThreshold' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_DamageToDamage, ApplyDamageValue) == 0x00137C, "Member 'UBuffAbility_DamageToDamage::ApplyDamageValue' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_DamageToDamage;
 
 // Class Activity_10120.BuffAbility_DamageBoostLastKill
-// 0x0010 (0x1388 - 0x1378)
+// 0x0010 (0x13A0 - 0x1390)
 class UBuffAbility_DamageBoostLastKill final : public UBuffAbility_CommonChess
 {
 public:
-	int32                                         RequireRole;                                       // 0x1378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         BuffID;                                            // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bAffectedByRoleNum;                                // 0x1380(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1381[0x7];                                     // 0x1381(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         RequireRole;                                       // 0x1390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         BuffID;                                            // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bAffectedByRoleNum;                                // 0x1398(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1399[0x7];                                     // 0x1399(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnPlayerKilled(const struct FAttributeModifierParameter& Param);
@@ -317,18 +332,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_DamageBoostLastKill">();
+		STATIC_CLASS_IMPL("BuffAbility_DamageBoostLastKill")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_DamageBoostLastKill")
 	}
 	static class UBuffAbility_DamageBoostLastKill* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_DamageBoostLastKill>();
 	}
 };
-static_assert(alignof(UBuffAbility_DamageBoostLastKill) == 0x000008, "Wrong alignment on UBuffAbility_DamageBoostLastKill");
-static_assert(sizeof(UBuffAbility_DamageBoostLastKill) == 0x001388, "Wrong size on UBuffAbility_DamageBoostLastKill");
-static_assert(offsetof(UBuffAbility_DamageBoostLastKill, RequireRole) == 0x001378, "Member 'UBuffAbility_DamageBoostLastKill::RequireRole' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_DamageBoostLastKill, BuffID) == 0x00137C, "Member 'UBuffAbility_DamageBoostLastKill::BuffID' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_DamageBoostLastKill, bAffectedByRoleNum) == 0x001380, "Member 'UBuffAbility_DamageBoostLastKill::bAffectedByRoleNum' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_DamageBoostLastKill;
 
 // Class Activity_10120.RoleBasedSourceEffectChanceGameplayEffectComponent
 // 0x0008 (0x0040 - 0x0038)
@@ -341,74 +356,78 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RoleBasedSourceEffectChanceGameplayEffectComponent">();
+		STATIC_CLASS_IMPL("RoleBasedSourceEffectChanceGameplayEffectComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RoleBasedSourceEffectChanceGameplayEffectComponent")
 	}
 	static class URoleBasedSourceEffectChanceGameplayEffectComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URoleBasedSourceEffectChanceGameplayEffectComponent>();
 	}
 };
-static_assert(alignof(URoleBasedSourceEffectChanceGameplayEffectComponent) == 0x000008, "Wrong alignment on URoleBasedSourceEffectChanceGameplayEffectComponent");
-static_assert(sizeof(URoleBasedSourceEffectChanceGameplayEffectComponent) == 0x000040, "Wrong size on URoleBasedSourceEffectChanceGameplayEffectComponent");
-static_assert(offsetof(URoleBasedSourceEffectChanceGameplayEffectComponent, bIncreasePossibilityBasedRole) == 0x000038, "Member 'URoleBasedSourceEffectChanceGameplayEffectComponent::bIncreasePossibilityBasedRole' has a wrong offset!");
+DUMPER7_ASSERTS_URoleBasedSourceEffectChanceGameplayEffectComponent;
 
 // Class Activity_10120.BuffAbility_PeriodicDamage
-// 0x0010 (0x1388 - 0x1378)
+// 0x0010 (0x13A0 - 0x1390)
 class UBuffAbility_PeriodicDamage final : public UBuffAbility_CommonChess
 {
 public:
-	float                                         DamageValue;                                       // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAffectedByRoleNum;                                // 0x137C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_137D[0xB];                                     // 0x137D(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         DamageValue;                                       // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAffectedByRoleNum;                                // 0x1394(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1395[0xB];                                     // 0x1395(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_PeriodicDamage">();
+		STATIC_CLASS_IMPL("BuffAbility_PeriodicDamage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_PeriodicDamage")
 	}
 	static class UBuffAbility_PeriodicDamage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_PeriodicDamage>();
 	}
 };
-static_assert(alignof(UBuffAbility_PeriodicDamage) == 0x000008, "Wrong alignment on UBuffAbility_PeriodicDamage");
-static_assert(sizeof(UBuffAbility_PeriodicDamage) == 0x001388, "Wrong size on UBuffAbility_PeriodicDamage");
-static_assert(offsetof(UBuffAbility_PeriodicDamage, DamageValue) == 0x001378, "Member 'UBuffAbility_PeriodicDamage::DamageValue' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_PeriodicDamage, bAffectedByRoleNum) == 0x00137C, "Member 'UBuffAbility_PeriodicDamage::bAffectedByRoleNum' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_PeriodicDamage;
 
 // Class Activity_10120.BuffAbility_PeriodicTreat
-// 0x0010 (0x1388 - 0x1378)
+// 0x0010 (0x13A0 - 0x1390)
 class UBuffAbility_PeriodicTreat final : public UBuffAbility_CommonChess
 {
 public:
-	float                                         TreatValue;                                        // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAffectedByRoleNum;                                // 0x137C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_137D[0xB];                                     // 0x137D(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         TreatValue;                                        // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAffectedByRoleNum;                                // 0x1394(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1395[0xB];                                     // 0x1395(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_PeriodicTreat">();
+		STATIC_CLASS_IMPL("BuffAbility_PeriodicTreat")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_PeriodicTreat")
 	}
 	static class UBuffAbility_PeriodicTreat* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_PeriodicTreat>();
 	}
 };
-static_assert(alignof(UBuffAbility_PeriodicTreat) == 0x000008, "Wrong alignment on UBuffAbility_PeriodicTreat");
-static_assert(sizeof(UBuffAbility_PeriodicTreat) == 0x001388, "Wrong size on UBuffAbility_PeriodicTreat");
-static_assert(offsetof(UBuffAbility_PeriodicTreat, TreatValue) == 0x001378, "Member 'UBuffAbility_PeriodicTreat::TreatValue' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_PeriodicTreat, bAffectedByRoleNum) == 0x00137C, "Member 'UBuffAbility_PeriodicTreat::bAffectedByRoleNum' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_PeriodicTreat;
 
 // Class Activity_10120.BuffAbility_TreatToDamage
-// 0x0018 (0x1390 - 0x1378)
+// 0x0018 (0x13A8 - 0x1390)
 class UBuffAbility_TreatToDamage final : public UBuffAbility_CommonChess
 {
 public:
-	float                                         TreatThreshold;                                    // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DamageValue;                                       // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x1380(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1388[0x8];                                     // 0x1388(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         TreatThreshold;                                    // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DamageValue;                                       // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x1398(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_13A0[0x8];                                     // 0x13A0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnApplyTreat(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle);
@@ -416,62 +435,59 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_TreatToDamage">();
+		STATIC_CLASS_IMPL("BuffAbility_TreatToDamage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_TreatToDamage")
 	}
 	static class UBuffAbility_TreatToDamage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_TreatToDamage>();
 	}
 };
-static_assert(alignof(UBuffAbility_TreatToDamage) == 0x000008, "Wrong alignment on UBuffAbility_TreatToDamage");
-static_assert(sizeof(UBuffAbility_TreatToDamage) == 0x001390, "Wrong size on UBuffAbility_TreatToDamage");
-static_assert(offsetof(UBuffAbility_TreatToDamage, TreatThreshold) == 0x001378, "Member 'UBuffAbility_TreatToDamage::TreatThreshold' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_TreatToDamage, DamageValue) == 0x00137C, "Member 'UBuffAbility_TreatToDamage::DamageValue' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_TreatToDamage, AbilitySystemComponent) == 0x001380, "Member 'UBuffAbility_TreatToDamage::AbilitySystemComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_TreatToDamage;
 
 // Class Activity_10120.BuffAbility_DelaySettlement
-// 0x0060 (0x13D8 - 0x1378)
+// 0x0060 (0x13F0 - 0x1390)
 class UBuffAbility_DelaySettlement final : public UBuffAbility_CommonChess
 {
 public:
-	float                                         HealthThreshold;                                   // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         SettlementDelay;                                   // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         HealNegationBuffID;                                // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1384[0x4];                                     // 0x1384(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x1388(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1390[0x8];                                     // 0x1390(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UMarvelGameplayEffectTemplate> InvincibleEffect;                               // 0x1398(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UMarvelGameplayEffectTemplate> HealNegationEffect;                             // 0x13A0(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_13A8[0x30];                                    // 0x13A8(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         HealthThreshold;                                   // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         SettlementDelay;                                   // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         HealNegationBuffID;                                // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_139C[0x4];                                     // 0x139C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x13A0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_13A8[0x8];                                     // 0x13A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UMarvelGameplayEffectTemplate> InvincibleEffect;                               // 0x13B0(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UMarvelGameplayEffectTemplate> HealNegationEffect;                             // 0x13B8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_13C0[0x30];                                    // 0x13C0(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_DelaySettlement">();
+		STATIC_CLASS_IMPL("BuffAbility_DelaySettlement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_DelaySettlement")
 	}
 	static class UBuffAbility_DelaySettlement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_DelaySettlement>();
 	}
 };
-static_assert(alignof(UBuffAbility_DelaySettlement) == 0x000008, "Wrong alignment on UBuffAbility_DelaySettlement");
-static_assert(sizeof(UBuffAbility_DelaySettlement) == 0x0013D8, "Wrong size on UBuffAbility_DelaySettlement");
-static_assert(offsetof(UBuffAbility_DelaySettlement, HealthThreshold) == 0x001378, "Member 'UBuffAbility_DelaySettlement::HealthThreshold' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_DelaySettlement, SettlementDelay) == 0x00137C, "Member 'UBuffAbility_DelaySettlement::SettlementDelay' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_DelaySettlement, HealNegationBuffID) == 0x001380, "Member 'UBuffAbility_DelaySettlement::HealNegationBuffID' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_DelaySettlement, AbilitySystemComponent) == 0x001388, "Member 'UBuffAbility_DelaySettlement::AbilitySystemComponent' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_DelaySettlement, InvincibleEffect) == 0x001398, "Member 'UBuffAbility_DelaySettlement::InvincibleEffect' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_DelaySettlement, HealNegationEffect) == 0x0013A0, "Member 'UBuffAbility_DelaySettlement::HealNegationEffect' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_DelaySettlement;
 
 // Class Activity_10120.BuffAbility_EnergyReturn
-// 0x0010 (0x1388 - 0x1378)
+// 0x0010 (0x13A0 - 0x1390)
 class UBuffAbility_EnergyReturn final : public UBuffAbility_CommonChess
 {
 public:
-	float                                         EnergyReturnValue;                                 // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAffectedByRoleNum;                                // 0x137C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_137D[0x3];                                     // 0x137D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x1380(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnergyReturnValue;                                 // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAffectedByRoleNum;                                // 0x1394(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1395[0x3];                                     // 0x1395(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x1398(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnAbilityEnd(int32 AbilityID);
@@ -479,27 +495,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_EnergyReturn">();
+		STATIC_CLASS_IMPL("BuffAbility_EnergyReturn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_EnergyReturn")
 	}
 	static class UBuffAbility_EnergyReturn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_EnergyReturn>();
 	}
 };
-static_assert(alignof(UBuffAbility_EnergyReturn) == 0x000008, "Wrong alignment on UBuffAbility_EnergyReturn");
-static_assert(sizeof(UBuffAbility_EnergyReturn) == 0x001388, "Wrong size on UBuffAbility_EnergyReturn");
-static_assert(offsetof(UBuffAbility_EnergyReturn, EnergyReturnValue) == 0x001378, "Member 'UBuffAbility_EnergyReturn::EnergyReturnValue' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_EnergyReturn, bAffectedByRoleNum) == 0x00137C, "Member 'UBuffAbility_EnergyReturn::bAffectedByRoleNum' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_EnergyReturn, AbilitySystemComponent) == 0x001380, "Member 'UBuffAbility_EnergyReturn::AbilitySystemComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_EnergyReturn;
 
 // Class Activity_10120.BuffAbility_LastKill_AddHealth
-// 0x0010 (0x1388 - 0x1378)
+// 0x0010 (0x13A0 - 0x1390)
 class UBuffAbility_LastKill_AddHealth final : public UBuffAbility_CommonChess
 {
 public:
-	float                                         Health;                                            // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_137C[0x4];                                     // 0x137C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x1380(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         Health;                                            // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1394[0x4];                                     // 0x1394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x1398(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	void OnKillOther(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle);
@@ -507,17 +523,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_LastKill_AddHealth">();
+		STATIC_CLASS_IMPL("BuffAbility_LastKill_AddHealth")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_LastKill_AddHealth")
 	}
 	static class UBuffAbility_LastKill_AddHealth* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_LastKill_AddHealth>();
 	}
 };
-static_assert(alignof(UBuffAbility_LastKill_AddHealth) == 0x000008, "Wrong alignment on UBuffAbility_LastKill_AddHealth");
-static_assert(sizeof(UBuffAbility_LastKill_AddHealth) == 0x001388, "Wrong size on UBuffAbility_LastKill_AddHealth");
-static_assert(offsetof(UBuffAbility_LastKill_AddHealth, Health) == 0x001378, "Member 'UBuffAbility_LastKill_AddHealth::Health' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_LastKill_AddHealth, AbilitySystemComponent) == 0x001380, "Member 'UBuffAbility_LastKill_AddHealth::AbilitySystemComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_LastKill_AddHealth;
 
 // Class Activity_10120.AbilityAdditionalEffect_Base
 // 0x0000 (0x0030 - 0x0030)
@@ -529,15 +546,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityAdditionalEffect_Base">();
+		STATIC_CLASS_IMPL("AbilityAdditionalEffect_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityAdditionalEffect_Base")
 	}
 	static class UAbilityAdditionalEffect_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityAdditionalEffect_Base>();
 	}
 };
-static_assert(alignof(UAbilityAdditionalEffect_Base) == 0x000008, "Wrong alignment on UAbilityAdditionalEffect_Base");
-static_assert(sizeof(UAbilityAdditionalEffect_Base) == 0x000030, "Wrong size on UAbilityAdditionalEffect_Base");
+DUMPER7_ASSERTS_UAbilityAdditionalEffect_Base;
 
 // Class Activity_10120.AbilityAdditionalEffect_PercentDamage
 // 0x0008 (0x0038 - 0x0030)
@@ -550,16 +570,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityAdditionalEffect_PercentDamage">();
+		STATIC_CLASS_IMPL("AbilityAdditionalEffect_PercentDamage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityAdditionalEffect_PercentDamage")
 	}
 	static class UAbilityAdditionalEffect_PercentDamage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityAdditionalEffect_PercentDamage>();
 	}
 };
-static_assert(alignof(UAbilityAdditionalEffect_PercentDamage) == 0x000008, "Wrong alignment on UAbilityAdditionalEffect_PercentDamage");
-static_assert(sizeof(UAbilityAdditionalEffect_PercentDamage) == 0x000038, "Wrong size on UAbilityAdditionalEffect_PercentDamage");
-static_assert(offsetof(UAbilityAdditionalEffect_PercentDamage, PercentDamageRadio) == 0x000030, "Member 'UAbilityAdditionalEffect_PercentDamage::PercentDamageRadio' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityAdditionalEffect_PercentDamage;
 
 // Class Activity_10120.AbilityAdditionalEffect_ApplyBuffs
 // 0x0038 (0x0068 - 0x0030)
@@ -577,21 +599,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityAdditionalEffect_ApplyBuffs">();
+		STATIC_CLASS_IMPL("AbilityAdditionalEffect_ApplyBuffs")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityAdditionalEffect_ApplyBuffs")
 	}
 	static class UAbilityAdditionalEffect_ApplyBuffs* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityAdditionalEffect_ApplyBuffs>();
 	}
 };
-static_assert(alignof(UAbilityAdditionalEffect_ApplyBuffs) == 0x000008, "Wrong alignment on UAbilityAdditionalEffect_ApplyBuffs");
-static_assert(sizeof(UAbilityAdditionalEffect_ApplyBuffs) == 0x000068, "Wrong size on UAbilityAdditionalEffect_ApplyBuffs");
-static_assert(offsetof(UAbilityAdditionalEffect_ApplyBuffs, Buffs_AppliedToSource) == 0x000030, "Member 'UAbilityAdditionalEffect_ApplyBuffs::Buffs_AppliedToSource' has a wrong offset!");
-static_assert(offsetof(UAbilityAdditionalEffect_ApplyBuffs, Buffs_AppliedToTarget) == 0x000040, "Member 'UAbilityAdditionalEffect_ApplyBuffs::Buffs_AppliedToTarget' has a wrong offset!");
-static_assert(offsetof(UAbilityAdditionalEffect_ApplyBuffs, Buffs_AppliedToTeammate) == 0x000050, "Member 'UAbilityAdditionalEffect_ApplyBuffs::Buffs_AppliedToTeammate' has a wrong offset!");
-static_assert(offsetof(UAbilityAdditionalEffect_ApplyBuffs, bRemoveBuff) == 0x000060, "Member 'UAbilityAdditionalEffect_ApplyBuffs::bRemoveBuff' has a wrong offset!");
-static_assert(offsetof(UAbilityAdditionalEffect_ApplyBuffs, bOverrideValueBaseOnStackCount) == 0x000061, "Member 'UAbilityAdditionalEffect_ApplyBuffs::bOverrideValueBaseOnStackCount' has a wrong offset!");
-static_assert(offsetof(UAbilityAdditionalEffect_ApplyBuffs, bOverrideStackBaseOnStackCount) == 0x000062, "Member 'UAbilityAdditionalEffect_ApplyBuffs::bOverrideStackBaseOnStackCount' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityAdditionalEffect_ApplyBuffs;
 
 // Class Activity_10120.AbilityAdditionalTrigger_Base
 // 0x0008 (0x0038 - 0x0030)
@@ -607,16 +626,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityAdditionalTrigger_Base">();
+		STATIC_CLASS_IMPL("AbilityAdditionalTrigger_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityAdditionalTrigger_Base")
 	}
 	static class UAbilityAdditionalTrigger_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityAdditionalTrigger_Base>();
 	}
 };
-static_assert(alignof(UAbilityAdditionalTrigger_Base) == 0x000008, "Wrong alignment on UAbilityAdditionalTrigger_Base");
-static_assert(sizeof(UAbilityAdditionalTrigger_Base) == 0x000038, "Wrong size on UAbilityAdditionalTrigger_Base");
-static_assert(offsetof(UAbilityAdditionalTrigger_Base, AbilityRef) == 0x000030, "Member 'UAbilityAdditionalTrigger_Base::AbilityRef' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityAdditionalTrigger_Base;
 
 // Class Activity_10120.AbilityAdditionalTrigger_Hurt
 // 0x0008 (0x0040 - 0x0038)
@@ -632,24 +653,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityAdditionalTrigger_Hurt">();
+		STATIC_CLASS_IMPL("AbilityAdditionalTrigger_Hurt")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityAdditionalTrigger_Hurt")
 	}
 	static class UAbilityAdditionalTrigger_Hurt* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityAdditionalTrigger_Hurt>();
 	}
 };
-static_assert(alignof(UAbilityAdditionalTrigger_Hurt) == 0x000008, "Wrong alignment on UAbilityAdditionalTrigger_Hurt");
-static_assert(sizeof(UAbilityAdditionalTrigger_Hurt) == 0x000040, "Wrong size on UAbilityAdditionalTrigger_Hurt");
-static_assert(offsetof(UAbilityAdditionalTrigger_Hurt, HurtValue) == 0x000038, "Member 'UAbilityAdditionalTrigger_Hurt::HurtValue' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityAdditionalTrigger_Hurt;
 
 // Class Activity_10120.BuffAbility_AbilityAdditionalEffect
-// 0x0018 (0x1390 - 0x1378)
+// 0x0018 (0x13A8 - 0x1390)
 class UBuffAbility_AbilityAdditionalEffect : public UBuffAbility_CommonChess
 {
 public:
-	TArray<struct FAbilityAdditionalEffect>       AdditionalEffects;                                 // 0x1378(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x1388(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<struct FAbilityAdditionalEffect>       AdditionalEffects;                                 // 0x1390(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x13A0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void OnAbilityActivate(int32 AbilityID);
@@ -660,30 +683,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_AbilityAdditionalEffect">();
+		STATIC_CLASS_IMPL("BuffAbility_AbilityAdditionalEffect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_AbilityAdditionalEffect")
 	}
 	static class UBuffAbility_AbilityAdditionalEffect* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_AbilityAdditionalEffect>();
 	}
 };
-static_assert(alignof(UBuffAbility_AbilityAdditionalEffect) == 0x000008, "Wrong alignment on UBuffAbility_AbilityAdditionalEffect");
-static_assert(sizeof(UBuffAbility_AbilityAdditionalEffect) == 0x001390, "Wrong size on UBuffAbility_AbilityAdditionalEffect");
-static_assert(offsetof(UBuffAbility_AbilityAdditionalEffect, AdditionalEffects) == 0x001378, "Member 'UBuffAbility_AbilityAdditionalEffect::AdditionalEffects' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_AbilityAdditionalEffect, AbilitySystemComponent) == 0x001388, "Member 'UBuffAbility_AbilityAdditionalEffect::AbilitySystemComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_AbilityAdditionalEffect;
 
 // Class Activity_10120.BuffAbility_ChanceCostEnergy
-// 0x0048 (0x13C0 - 0x1378)
+// 0x0048 (0x13D8 - 0x1390)
 class UBuffAbility_ChanceCostEnergy final : public UBuffAbility_CommonChess
 {
 public:
-	uint8                                         Pad_1378[0x8];                                     // 0x1378(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UGameplayEffect>            EnergyRecoverEffect;                               // 0x1380(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ChanceNotCostEnergy;                               // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bAffectedByRoleNum;                                // 0x138C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_138D[0x3];                                     // 0x138D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelAbilitySystemCom*                AbilitySystemComponent;                            // 0x1390(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1398[0x28];                                    // 0x1398(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1390[0x8];                                     // 0x1390(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UGameplayEffect>            EnergyRecoverEffect;                               // 0x1398(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ChanceNotCostEnergy;                               // 0x13A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bAffectedByRoleNum;                                // 0x13A4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_13A5[0x3];                                     // 0x13A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelAbilitySystemCom*                AbilitySystemComponent;                            // 0x13A8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_13B0[0x28];                                    // 0x13B0(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnAbilityEnd(int32 AbilityID);
@@ -692,19 +716,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_ChanceCostEnergy">();
+		STATIC_CLASS_IMPL("BuffAbility_ChanceCostEnergy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_ChanceCostEnergy")
 	}
 	static class UBuffAbility_ChanceCostEnergy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_ChanceCostEnergy>();
 	}
 };
-static_assert(alignof(UBuffAbility_ChanceCostEnergy) == 0x000008, "Wrong alignment on UBuffAbility_ChanceCostEnergy");
-static_assert(sizeof(UBuffAbility_ChanceCostEnergy) == 0x0013C0, "Wrong size on UBuffAbility_ChanceCostEnergy");
-static_assert(offsetof(UBuffAbility_ChanceCostEnergy, EnergyRecoverEffect) == 0x001380, "Member 'UBuffAbility_ChanceCostEnergy::EnergyRecoverEffect' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ChanceCostEnergy, ChanceNotCostEnergy) == 0x001388, "Member 'UBuffAbility_ChanceCostEnergy::ChanceNotCostEnergy' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ChanceCostEnergy, bAffectedByRoleNum) == 0x00138C, "Member 'UBuffAbility_ChanceCostEnergy::bAffectedByRoleNum' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ChanceCostEnergy, AbilitySystemComponent) == 0x001390, "Member 'UBuffAbility_ChanceCostEnergy::AbilitySystemComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_ChanceCostEnergy;
 
 // Class Activity_10120.ChanceToApplyEnergyCostComponent
 // 0x0000 (0x0068 - 0x0068)
@@ -713,15 +736,18 @@ class UChanceToApplyEnergyCostComponent final : public UChanceToApplyGameplayEff
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChanceToApplyEnergyCostComponent">();
+		STATIC_CLASS_IMPL("ChanceToApplyEnergyCostComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChanceToApplyEnergyCostComponent")
 	}
 	static class UChanceToApplyEnergyCostComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChanceToApplyEnergyCostComponent>();
 	}
 };
-static_assert(alignof(UChanceToApplyEnergyCostComponent) == 0x000008, "Wrong alignment on UChanceToApplyEnergyCostComponent");
-static_assert(sizeof(UChanceToApplyEnergyCostComponent) == 0x000068, "Wrong size on UChanceToApplyEnergyCostComponent");
+DUMPER7_ASSERTS_UChanceToApplyEnergyCostComponent;
 
 // Class Activity_10120.AbilityConditional_Base
 // 0x0018 (0x0048 - 0x0030)
@@ -738,16 +764,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityConditional_Base">();
+		STATIC_CLASS_IMPL("AbilityConditional_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityConditional_Base")
 	}
 	static class UAbilityConditional_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityConditional_Base>();
 	}
 };
-static_assert(alignof(UAbilityConditional_Base) == 0x000008, "Wrong alignment on UAbilityConditional_Base");
-static_assert(sizeof(UAbilityConditional_Base) == 0x000048, "Wrong size on UAbilityConditional_Base");
-static_assert(offsetof(UAbilityConditional_Base, Index_0) == 0x000030, "Member 'UAbilityConditional_Base::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityConditional_Base;
 
 // Class Activity_10120.AbilityConditional_CharacterAttributeChange
 // 0x00A8 (0x00F0 - 0x0048)
@@ -771,32 +799,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityConditional_CharacterAttributeChange">();
+		STATIC_CLASS_IMPL("AbilityConditional_CharacterAttributeChange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityConditional_CharacterAttributeChange")
 	}
 	static class UAbilityConditional_CharacterAttributeChange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityConditional_CharacterAttributeChange>();
 	}
 };
-static_assert(alignof(UAbilityConditional_CharacterAttributeChange) == 0x000008, "Wrong alignment on UAbilityConditional_CharacterAttributeChange");
-static_assert(sizeof(UAbilityConditional_CharacterAttributeChange) == 0x0000F0, "Wrong size on UAbilityConditional_CharacterAttributeChange");
-static_assert(offsetof(UAbilityConditional_CharacterAttributeChange, Attribute) == 0x000048, "Member 'UAbilityConditional_CharacterAttributeChange::Attribute' has a wrong offset!");
-static_assert(offsetof(UAbilityConditional_CharacterAttributeChange, MaxAttribute) == 0x000088, "Member 'UAbilityConditional_CharacterAttributeChange::MaxAttribute' has a wrong offset!");
-static_assert(offsetof(UAbilityConditional_CharacterAttributeChange, AttributePercent) == 0x0000C8, "Member 'UAbilityConditional_CharacterAttributeChange::AttributePercent' has a wrong offset!");
-static_assert(offsetof(UAbilityConditional_CharacterAttributeChange, AttributeValue) == 0x0000CC, "Member 'UAbilityConditional_CharacterAttributeChange::AttributeValue' has a wrong offset!");
-static_assert(offsetof(UAbilityConditional_CharacterAttributeChange, IsNearDeath) == 0x0000D0, "Member 'UAbilityConditional_CharacterAttributeChange::IsNearDeath' has a wrong offset!");
-static_assert(offsetof(UAbilityConditional_CharacterAttributeChange, IsGreaterThan) == 0x0000D1, "Member 'UAbilityConditional_CharacterAttributeChange::IsGreaterThan' has a wrong offset!");
-static_assert(offsetof(UAbilityConditional_CharacterAttributeChange, IsLessThan) == 0x0000D2, "Member 'UAbilityConditional_CharacterAttributeChange::IsLessThan' has a wrong offset!");
-static_assert(offsetof(UAbilityConditional_CharacterAttributeChange, IsEqual) == 0x0000D3, "Member 'UAbilityConditional_CharacterAttributeChange::IsEqual' has a wrong offset!");
-static_assert(offsetof(UAbilityConditional_CharacterAttributeChange, ASC) == 0x0000E8, "Member 'UAbilityConditional_CharacterAttributeChange::ASC' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityConditional_CharacterAttributeChange;
 
 // Class Activity_10120.BuffAbility_TargetConditionalApplyEffect
-// 0x0018 (0x1390 - 0x1378)
+// 0x0018 (0x13A8 - 0x1390)
 class UBuffAbility_TargetConditionalApplyEffect final : public UBuffAbility_CommonChess
 {
 public:
-	TArray<struct FTargetConditionalApplyEffect>  ApplyEffects;                                      // 0x1378(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x1388(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<struct FTargetConditionalApplyEffect>  ApplyEffects;                                      // 0x1390(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x13A0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void OnConditionPass(int32 Index_0);
@@ -804,29 +826,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_TargetConditionalApplyEffect">();
+		STATIC_CLASS_IMPL("BuffAbility_TargetConditionalApplyEffect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_TargetConditionalApplyEffect")
 	}
 	static class UBuffAbility_TargetConditionalApplyEffect* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_TargetConditionalApplyEffect>();
 	}
 };
-static_assert(alignof(UBuffAbility_TargetConditionalApplyEffect) == 0x000008, "Wrong alignment on UBuffAbility_TargetConditionalApplyEffect");
-static_assert(sizeof(UBuffAbility_TargetConditionalApplyEffect) == 0x001390, "Wrong size on UBuffAbility_TargetConditionalApplyEffect");
-static_assert(offsetof(UBuffAbility_TargetConditionalApplyEffect, ApplyEffects) == 0x001378, "Member 'UBuffAbility_TargetConditionalApplyEffect::ApplyEffects' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_TargetConditionalApplyEffect, AbilitySystemComponent) == 0x001388, "Member 'UBuffAbility_TargetConditionalApplyEffect::AbilitySystemComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_TargetConditionalApplyEffect;
 
 // Class Activity_10120.BuffAbility_ValuePercentEnd
-// 0x0080 (0x13F8 - 0x1378)
+// 0x0080 (0x1410 - 0x1390)
 class UBuffAbility_ValuePercentEnd final : public UBuffAbility_CommonChess
 {
 public:
-	EDamageOrTreat                                ValueType;                                         // 0x1378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ValuePercent;                                      // 0x137C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  ValueTags;                                         // 0x1380(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          bAffectedByRoleNum;                                // 0x13E8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13E9[0x7];                                     // 0x13E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x13F0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EDamageOrTreat                                ValueType;                                         // 0x1390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ValuePercent;                                      // 0x1394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  ValueTags;                                         // 0x1398(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          bAffectedByRoleNum;                                // 0x1400(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1401[0x7];                                     // 0x1401(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelBaseAbilitySystemComponent*      AbilitySystemComponent;                            // 0x1408(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	bool OnModifyValue(const struct FGameplayEffectSpec& Spec, float* InOutValue, const class UAbilitySystemComponent* SourceASC, const class UAbilitySystemComponent* TargetASC) const;
@@ -834,57 +857,61 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_ValuePercentEnd">();
+		STATIC_CLASS_IMPL("BuffAbility_ValuePercentEnd")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_ValuePercentEnd")
 	}
 	static class UBuffAbility_ValuePercentEnd* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_ValuePercentEnd>();
 	}
 };
-static_assert(alignof(UBuffAbility_ValuePercentEnd) == 0x000008, "Wrong alignment on UBuffAbility_ValuePercentEnd");
-static_assert(sizeof(UBuffAbility_ValuePercentEnd) == 0x0013F8, "Wrong size on UBuffAbility_ValuePercentEnd");
-static_assert(offsetof(UBuffAbility_ValuePercentEnd, ValueType) == 0x001378, "Member 'UBuffAbility_ValuePercentEnd::ValueType' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ValuePercentEnd, ValuePercent) == 0x00137C, "Member 'UBuffAbility_ValuePercentEnd::ValuePercent' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ValuePercentEnd, ValueTags) == 0x001380, "Member 'UBuffAbility_ValuePercentEnd::ValueTags' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ValuePercentEnd, bAffectedByRoleNum) == 0x0013E8, "Member 'UBuffAbility_ValuePercentEnd::bAffectedByRoleNum' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ValuePercentEnd, AbilitySystemComponent) == 0x0013F0, "Member 'UBuffAbility_ValuePercentEnd::AbilitySystemComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_ValuePercentEnd;
 
 // Class Activity_10120.TraceComponent_10232201_120
-// 0x0000 (0x22D0 - 0x22D0)
+// 0x0000 (0x26C0 - 0x26C0)
 class UTraceComponent_10232201_120 final : public UTraceComponent_10232201
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TraceComponent_10232201_120">();
+		STATIC_CLASS_IMPL("TraceComponent_10232201_120")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TraceComponent_10232201_120")
 	}
 	static class UTraceComponent_10232201_120* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTraceComponent_10232201_120>();
 	}
 };
-static_assert(alignof(UTraceComponent_10232201_120) == 0x000010, "Wrong alignment on UTraceComponent_10232201_120");
-static_assert(sizeof(UTraceComponent_10232201_120) == 0x0022D0, "Wrong size on UTraceComponent_10232201_120");
+DUMPER7_ASSERTS_UTraceComponent_10232201_120;
 
 // Class Activity_10120.MarvelSelfResurrectionAbility_RoleBased
-// 0x0000 (0x1438 - 0x1438)
+// 0x0000 (0x1450 - 0x1450)
 class UMarvelSelfResurrectionAbility_RoleBased final : public UMarvelSelfResurrectionAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelSelfResurrectionAbility_RoleBased">();
+		STATIC_CLASS_IMPL("MarvelSelfResurrectionAbility_RoleBased")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelSelfResurrectionAbility_RoleBased")
 	}
 	static class UMarvelSelfResurrectionAbility_RoleBased* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelSelfResurrectionAbility_RoleBased>();
 	}
 };
-static_assert(alignof(UMarvelSelfResurrectionAbility_RoleBased) == 0x000008, "Wrong alignment on UMarvelSelfResurrectionAbility_RoleBased");
-static_assert(sizeof(UMarvelSelfResurrectionAbility_RoleBased) == 0x001438, "Wrong size on UMarvelSelfResurrectionAbility_RoleBased");
+DUMPER7_ASSERTS_UMarvelSelfResurrectionAbility_RoleBased;
 
 // Class Activity_10120.MarvelSourceTreatOverflowConvAbility_10120
-// 0x0000 (0x1480 - 0x1480)
+// 0x0000 (0x1498 - 0x1498)
 class UMarvelSourceTreatOverflowConvAbility_10120 final : public UMarvelSourceTreatOverflowConvAbility
 {
 public:
@@ -893,35 +920,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelSourceTreatOverflowConvAbility_10120">();
+		STATIC_CLASS_IMPL("MarvelSourceTreatOverflowConvAbility_10120")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelSourceTreatOverflowConvAbility_10120")
 	}
 	static class UMarvelSourceTreatOverflowConvAbility_10120* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelSourceTreatOverflowConvAbility_10120>();
 	}
 };
-static_assert(alignof(UMarvelSourceTreatOverflowConvAbility_10120) == 0x000008, "Wrong alignment on UMarvelSourceTreatOverflowConvAbility_10120");
-static_assert(sizeof(UMarvelSourceTreatOverflowConvAbility_10120) == 0x001480, "Wrong size on UMarvelSourceTreatOverflowConvAbility_10120");
+DUMPER7_ASSERTS_UMarvelSourceTreatOverflowConvAbility_10120;
 
 // Class Activity_10120.MarvelDamageToTreatAbility_10120
-// 0x0010 (0x13A0 - 0x1390)
+// 0x0010 (0x13B8 - 0x13A8)
 class UMarvelDamageToTreatAbility_10120 final : public UMarvelDamageToTreatAbility
 {
 public:
-	uint8                                         Pad_1390[0x10];                                    // 0x1390(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13A8[0x10];                                    // 0x13A8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelDamageToTreatAbility_10120">();
+		STATIC_CLASS_IMPL("MarvelDamageToTreatAbility_10120")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelDamageToTreatAbility_10120")
 	}
 	static class UMarvelDamageToTreatAbility_10120* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelDamageToTreatAbility_10120>();
 	}
 };
-static_assert(alignof(UMarvelDamageToTreatAbility_10120) == 0x000008, "Wrong alignment on UMarvelDamageToTreatAbility_10120");
-static_assert(sizeof(UMarvelDamageToTreatAbility_10120) == 0x0013A0, "Wrong size on UMarvelDamageToTreatAbility_10120");
+DUMPER7_ASSERTS_UMarvelDamageToTreatAbility_10120;
 
 // Class Activity_10120.MarvelDamageExecutionCalculation_10120
 // 0x0000 (0x00D0 - 0x00D0)
@@ -930,15 +963,18 @@ class UMarvelDamageExecutionCalculation_10120 final : public UMarvelDamageExecut
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelDamageExecutionCalculation_10120">();
+		STATIC_CLASS_IMPL("MarvelDamageExecutionCalculation_10120")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelDamageExecutionCalculation_10120")
 	}
 	static class UMarvelDamageExecutionCalculation_10120* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelDamageExecutionCalculation_10120>();
 	}
 };
-static_assert(alignof(UMarvelDamageExecutionCalculation_10120) == 0x000008, "Wrong alignment on UMarvelDamageExecutionCalculation_10120");
-static_assert(sizeof(UMarvelDamageExecutionCalculation_10120) == 0x0000D0, "Wrong size on UMarvelDamageExecutionCalculation_10120");
+DUMPER7_ASSERTS_UMarvelDamageExecutionCalculation_10120;
 
 // Class Activity_10120.MarvelGameplayEffectTemplate_Damage_10120
 // 0x0000 (0x1438 - 0x1438)
@@ -947,15 +983,18 @@ class UMarvelGameplayEffectTemplate_Damage_10120 : public UMarvelGameplayEffectT
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelGameplayEffectTemplate_Damage_10120">();
+		STATIC_CLASS_IMPL("MarvelGameplayEffectTemplate_Damage_10120")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelGameplayEffectTemplate_Damage_10120")
 	}
 	static class UMarvelGameplayEffectTemplate_Damage_10120* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelGameplayEffectTemplate_Damage_10120>();
 	}
 };
-static_assert(alignof(UMarvelGameplayEffectTemplate_Damage_10120) == 0x000008, "Wrong alignment on UMarvelGameplayEffectTemplate_Damage_10120");
-static_assert(sizeof(UMarvelGameplayEffectTemplate_Damage_10120) == 0x001438, "Wrong size on UMarvelGameplayEffectTemplate_Damage_10120");
+DUMPER7_ASSERTS_UMarvelGameplayEffectTemplate_Damage_10120;
 
 }
 

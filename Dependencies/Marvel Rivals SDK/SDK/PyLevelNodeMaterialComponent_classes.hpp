@@ -47,29 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelNodeMaterialComponent">();
+		STATIC_CLASS_IMPL("PyLevelNodeMaterialComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelNodeMaterialComponent")
 	}
 	static class UPyLevelNodeMaterialComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelNodeMaterialComponent>();
 	}
 };
-static_assert(alignof(UPyLevelNodeMaterialComponent) == 0x000008, "Wrong alignment on UPyLevelNodeMaterialComponent");
-static_assert(sizeof(UPyLevelNodeMaterialComponent) == 0x000208, "Wrong size on UPyLevelNodeMaterialComponent");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, ReplicateState) == 0x000108, "Member 'UPyLevelNodeMaterialComponent::ReplicateState' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, Material) == 0x000110, "Member 'UPyLevelNodeMaterialComponent::Material' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, DynamicMaterial) == 0x000118, "Member 'UPyLevelNodeMaterialComponent::DynamicMaterial' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, MeshActorName) == 0x000120, "Member 'UPyLevelNodeMaterialComponent::MeshActorName' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, ParameterName) == 0x000130, "Member 'UPyLevelNodeMaterialComponent::ParameterName' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, FloatParameter) == 0x000140, "Member 'UPyLevelNodeMaterialComponent::FloatParameter' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, FloatStartValue) == 0x000144, "Member 'UPyLevelNodeMaterialComponent::FloatStartValue' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, FloatEndValue) == 0x000148, "Member 'UPyLevelNodeMaterialComponent::FloatEndValue' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, ChangeTime) == 0x00014C, "Member 'UPyLevelNodeMaterialComponent::ChangeTime' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, UpdateInterval) == 0x000150, "Member 'UPyLevelNodeMaterialComponent::UpdateInterval' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, bMultiMat) == 0x000154, "Member 'UPyLevelNodeMaterialComponent::bMultiMat' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, MaterialEffectIndex) == 0x000158, "Member 'UPyLevelNodeMaterialComponent::MaterialEffectIndex' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, Materials) == 0x000168, "Member 'UPyLevelNodeMaterialComponent::Materials' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeMaterialComponent, DynamicMaterials) == 0x0001B8, "Member 'UPyLevelNodeMaterialComponent::DynamicMaterials' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelNodeMaterialComponent;
 
 }
 

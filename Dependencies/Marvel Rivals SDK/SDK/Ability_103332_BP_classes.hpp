@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "PyAbility_103332_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Marvel_structs.hpp"
 
 
@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_103332_BP.Ability_103332_BP_C
-// 0x17E8 (0x42C0 - 0x2AD8)
+// 0x1B98 (0x46C0 - 0x2B28)
 class UAbility_103332_BP_C final : public UPyAbility_103332
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2AD8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FSelectTaskParam                       选取参数;                                          // 0x2AE0(0x17C0)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class UGATask_WaitInput*                      等待选中目标输入Task;                              // 0x42A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UGASpecTask_SelectTarget*               目标选取task;                                      // 0x42A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	float                                         选取敌人的时间区间;                                // 0x42B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2B28(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FSelectTaskParam                       选取参数;                                          // 0x2B30(0x1B70)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class UGATask_WaitInput*                      等待选中目标输入Task;                              // 0x46A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UGASpecTask_SelectTarget*               目标选取task;                                      // 0x46A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         选取敌人的时间区间;                                // 0x46B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AE_OnAbilityInitialized();
@@ -40,20 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_103332_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_103332_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_103332_BP_C")
 	}
 	static class UAbility_103332_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_103332_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_103332_BP_C) == 0x000010, "Wrong alignment on UAbility_103332_BP_C");
-static_assert(sizeof(UAbility_103332_BP_C) == 0x0042C0, "Wrong size on UAbility_103332_BP_C");
-static_assert(offsetof(UAbility_103332_BP_C, UberGraphFrame) == 0x002AD8, "Member 'UAbility_103332_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAbility_103332_BP_C, 选取参数) == 0x002AE0, "Member 'UAbility_103332_BP_C::选取参数' has a wrong offset!");
-static_assert(offsetof(UAbility_103332_BP_C, 等待选中目标输入Task) == 0x0042A0, "Member 'UAbility_103332_BP_C::等待选中目标输入Task' has a wrong offset!");
-static_assert(offsetof(UAbility_103332_BP_C, 目标选取task) == 0x0042A8, "Member 'UAbility_103332_BP_C::目标选取task' has a wrong offset!");
-static_assert(offsetof(UAbility_103332_BP_C, 选取敌人的时间区间) == 0x0042B0, "Member 'UAbility_103332_BP_C::选取敌人的时间区间' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_103332_BP_C;
 
 }
 

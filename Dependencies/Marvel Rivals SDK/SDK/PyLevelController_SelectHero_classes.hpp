@@ -46,7 +46,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_SelectHero">();
+		STATIC_CLASS_IMPL("PyLevelController_SelectHero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_SelectHero")
 	}
 	static class APyLevelController_SelectHero* GetDefaultObj()
 	{
@@ -54,17 +58,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyLevelController_SelectHero) == 0x000010, "Wrong alignment on APyLevelController_SelectHero");
-static_assert(sizeof(APyLevelController_SelectHero) == 0x000810, "Wrong size on APyLevelController_SelectHero");
-static_assert(offsetof(APyLevelController_SelectHero, StartLevelSequencePlayStyle) == 0x0006E0, "Member 'APyLevelController_SelectHero::StartLevelSequencePlayStyle' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero, EndLevelSequencePlayStyle) == 0x000760, "Member 'APyLevelController_SelectHero::EndLevelSequencePlayStyle' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero, DefaultEndLevelSequencePlayAudioEventType) == 0x0007E0, "Member 'APyLevelController_SelectHero::DefaultEndLevelSequencePlayAudioEventType' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero, DefaultEndLevelSequencePlayAudioEvent) == 0x0007E8, "Member 'APyLevelController_SelectHero::DefaultEndLevelSequencePlayAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero, ActorTagForCameraBlending) == 0x0007F0, "Member 'APyLevelController_SelectHero::ActorTagForCameraBlending' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero, EnableDefaultCameraBlending) == 0x0007FC, "Member 'APyLevelController_SelectHero::EnableDefaultCameraBlending' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero, CameraBlending_BlendTime) == 0x000800, "Member 'APyLevelController_SelectHero::CameraBlending_BlendTime' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero, CameraBlending_BlendFunc) == 0x000804, "Member 'APyLevelController_SelectHero::CameraBlending_BlendFunc' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero, CameraBlending_BlendExp) == 0x000808, "Member 'APyLevelController_SelectHero::CameraBlending_BlendExp' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_SelectHero;
 
 }
 

@@ -18,20 +18,20 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Training_ScoreItem.WBP_Training_ScoreItem_C
-// 0x0050 (0x0638 - 0x05E8)
+// 0x0050 (0x0640 - 0x05F0)
 class UWBP_Training_ScoreItem_C final : public UPyWidget_Training_Scoreboard_Unit
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMarvelImage*                           Img_Icon_1;                                        // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Icon_2;                                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Icon_3;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Content_1;                                    // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Content_2;                                    // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Content_3;                                    // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Type_1;                                       // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Type_2;                                       // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Type_3;                                       // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMarvelImage*                           Img_Icon_1;                                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Icon_2;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Icon_3;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Content_1;                                    // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Content_2;                                    // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Content_3;                                    // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Type_1;                                       // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Type_2;                                       // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Type_3;                                       // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -40,25 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Training_ScoreItem_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Training_ScoreItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Training_ScoreItem_C")
 	}
 	static class UWBP_Training_ScoreItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Training_ScoreItem_C>();
 	}
 };
-static_assert(alignof(UWBP_Training_ScoreItem_C) == 0x000008, "Wrong alignment on UWBP_Training_ScoreItem_C");
-static_assert(sizeof(UWBP_Training_ScoreItem_C) == 0x000638, "Wrong size on UWBP_Training_ScoreItem_C");
-static_assert(offsetof(UWBP_Training_ScoreItem_C, UberGraphFrame) == 0x0005E8, "Member 'UWBP_Training_ScoreItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ScoreItem_C, Img_Icon_1) == 0x0005F0, "Member 'UWBP_Training_ScoreItem_C::Img_Icon_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ScoreItem_C, Img_Icon_2) == 0x0005F8, "Member 'UWBP_Training_ScoreItem_C::Img_Icon_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ScoreItem_C, Img_Icon_3) == 0x000600, "Member 'UWBP_Training_ScoreItem_C::Img_Icon_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ScoreItem_C, Text_Content_1) == 0x000608, "Member 'UWBP_Training_ScoreItem_C::Text_Content_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ScoreItem_C, Text_Content_2) == 0x000610, "Member 'UWBP_Training_ScoreItem_C::Text_Content_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ScoreItem_C, Text_Content_3) == 0x000618, "Member 'UWBP_Training_ScoreItem_C::Text_Content_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ScoreItem_C, Text_Type_1) == 0x000620, "Member 'UWBP_Training_ScoreItem_C::Text_Type_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ScoreItem_C, Text_Type_2) == 0x000628, "Member 'UWBP_Training_ScoreItem_C::Text_Type_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ScoreItem_C, Text_Type_3) == 0x000630, "Member 'UWBP_Training_ScoreItem_C::Text_Type_3' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Training_ScoreItem_C;
 
 }
 

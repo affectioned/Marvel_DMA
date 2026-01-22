@@ -23,20 +23,16 @@ struct PyEffectAbility_GravityChange_103342_ReceiveTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEffectAbility_GravityChange_103342_ReceiveTick) == 0x000004, "Wrong alignment on PyEffectAbility_GravityChange_103342_ReceiveTick");
-static_assert(sizeof(PyEffectAbility_GravityChange_103342_ReceiveTick) == 0x000004, "Wrong size on PyEffectAbility_GravityChange_103342_ReceiveTick");
-static_assert(offsetof(PyEffectAbility_GravityChange_103342_ReceiveTick, DeltaTime) == 0x000000, "Member 'PyEffectAbility_GravityChange_103342_ReceiveTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_GravityChange_103342_ReceiveTick;
 
 // PythonFunction PyAbility_103342.PyEffectAbility_GravityChange_103342.OnLanded
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyEffectAbility_GravityChange_103342_OnLanded final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             Hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyEffectAbility_GravityChange_103342_OnLanded) == 0x000008, "Wrong alignment on PyEffectAbility_GravityChange_103342_OnLanded");
-static_assert(sizeof(PyEffectAbility_GravityChange_103342_OnLanded) == 0x0001F0, "Wrong size on PyEffectAbility_GravityChange_103342_OnLanded");
-static_assert(offsetof(PyEffectAbility_GravityChange_103342_OnLanded, Hit) == 0x000000, "Member 'PyEffectAbility_GravityChange_103342_OnLanded::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_GravityChange_103342_OnLanded;
 
 // PythonFunction PyAbility_103342.PyEffectAbility_GravityChange_103342.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyEffectAbility_GravityChange_103342_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEffectAbility_GravityChange_103342_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyEffectAbility_GravityChange_103342_K2_OnEndAbility");
-static_assert(sizeof(PyEffectAbility_GravityChange_103342_K2_OnEndAbility) == 0x000001, "Wrong size on PyEffectAbility_GravityChange_103342_K2_OnEndAbility");
-static_assert(offsetof(PyEffectAbility_GravityChange_103342_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyEffectAbility_GravityChange_103342_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_GravityChange_103342_K2_OnEndAbility;
 
 }
 

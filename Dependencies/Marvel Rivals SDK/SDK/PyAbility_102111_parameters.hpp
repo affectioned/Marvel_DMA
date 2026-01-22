@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_102111_SetAbility) == 0x000008, "Wrong alignment on PyUIController_102111_SetAbility");
-static_assert(sizeof(PyUIController_102111_SetAbility) == 0x000010, "Wrong size on PyUIController_102111_SetAbility");
-static_assert(offsetof(PyUIController_102111_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_102111_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_102111_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_102111_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_102111_SetAbility;
 
 // PythonFunction PyAbility_102111.PyUIController_102111.OnBowTagChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -38,10 +35,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          TagExist;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_102111_OnBowTagChanged) == 0x000004, "Wrong alignment on PyUIController_102111_OnBowTagChanged");
-static_assert(sizeof(PyUIController_102111_OnBowTagChanged) == 0x000010, "Wrong size on PyUIController_102111_OnBowTagChanged");
-static_assert(offsetof(PyUIController_102111_OnBowTagChanged, Tag) == 0x000000, "Member 'PyUIController_102111_OnBowTagChanged::Tag' has a wrong offset!");
-static_assert(offsetof(PyUIController_102111_OnBowTagChanged, TagExist) == 0x00000C, "Member 'PyUIController_102111_OnBowTagChanged::TagExist' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_102111_OnBowTagChanged;
 
 // PythonFunction PyAbility_102111.PyUIController_102111.OnFullPercent
 // 0x0001 (0x0001 - 0x0000)
@@ -50,9 +44,7 @@ struct PyUIController_102111_OnFullPercent final
 public:
 	bool                                          IsFull;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_102111_OnFullPercent) == 0x000001, "Wrong alignment on PyUIController_102111_OnFullPercent");
-static_assert(sizeof(PyUIController_102111_OnFullPercent) == 0x000001, "Wrong size on PyUIController_102111_OnFullPercent");
-static_assert(offsetof(PyUIController_102111_OnFullPercent, IsFull) == 0x000000, "Member 'PyUIController_102111_OnFullPercent::IsFull' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_102111_OnFullPercent;
 
 }
 

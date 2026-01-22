@@ -683,7 +683,7 @@ void UAbility_104921::OnOwnerAbilityActivated(class UGameplayAbility* InAbility)
 // (Final, Native, Protected, HasOutParams)
 // Parameters:
 // class UGameplayAbility*                 InAbility                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 // const TArray<struct FHitResult>&        InHitResults                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
 void UAbility_104921::OnOwnerAbilityHit(class UGameplayAbility* InAbility, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& InHitResults)
@@ -1105,6 +1105,463 @@ void ACue_Ability_Loop_10495101::OnWolverineStateChange(ERushState_104951 InStat
 	Params::Cue_Ability_Loop_10495101_OnWolverineStateChange Parms{};
 
 	Parms.InState = InState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.BindCameraToRideCharacter
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// class AMarvelBaseCharacter*             RideCharacter                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bBind                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::BindCameraToRideCharacter(class AMarvelBaseCharacter* RideCharacter, bool bBind)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "BindCameraToRideCharacter");
+
+	Params::Ability_104991_BindCameraToRideCharacter Parms{};
+
+	Parms.RideCharacter = RideCharacter;
+	Parms.bBind = bBind;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.BindDettachDelegates
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// class AActor*                           InHulk                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::BindDettachDelegates(class AActor* InHulk)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "BindDettachDelegates");
+
+	Params::Ability_104991_BindDettachDelegates Parms{};
+
+	Parms.InHulk = InHulk;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.BindOwnerCapsuleAttachParentChildDetachDelegate
+// (Final, Native, Protected)
+// Parameters:
+// bool                                    bBind                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::BindOwnerCapsuleAttachParentChildDetachDelegate(bool bBind)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "BindOwnerCapsuleAttachParentChildDetachDelegate");
+
+	Params::Ability_104991_BindOwnerCapsuleAttachParentChildDetachDelegate Parms{};
+
+	Parms.bBind = bBind;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.MarkOnHulk
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// bool                                    bOnGroot                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::MarkOnHulk(bool bOnGroot)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "MarkOnHulk");
+
+	Params::Ability_104991_MarkOnHulk Parms{};
+
+	Parms.bOnGroot = bOnGroot;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.OnHulkDeath
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::OnHulkDeath(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "OnHulkDeath");
+
+	Params::Ability_104991_OnHulkDeath Parms{};
+
+	Parms.InSourceAvatar = InSourceAvatar;
+	Parms.InTargetAvatar = InTargetAvatar;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.OnHulkRepToSimulatedRole
+// (Event, Protected, BlueprintEvent)
+
+void UAbility_104991::OnHulkRepToSimulatedRole()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "OnHulkRepToSimulatedRole");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Hero_1049.Ability_104991.OnHulkTagUpdated
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bTagExists                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::OnHulkTagUpdated(const struct FGameplayTag& TagUpdated, bool bTagExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "OnHulkTagUpdated");
+
+	Params::Ability_104991_OnHulkTagUpdated Parms{};
+
+	Parms.TagUpdated = std::move(TagUpdated);
+	Parms.bTagExists = bTagExists;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.OnOwnerCapsuleAttachParentChildDetach
+// (Final, Native, Protected)
+// Parameters:
+// class USceneComponent*                  SourceComponent                                        (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class USceneComponent*                  ChildComponent                                         (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::OnOwnerCapsuleAttachParentChildDetach(class USceneComponent* SourceComponent, class USceneComponent* ChildComponent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "OnOwnerCapsuleAttachParentChildDetach");
+
+	Params::Ability_104991_OnOwnerCapsuleAttachParentChildDetach Parms{};
+
+	Parms.SourceComponent = SourceComponent;
+	Parms.ChildComponent = ChildComponent;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.OnRep_CurrentState
+// (Final, Native, Protected)
+
+void UAbility_104991::OnRep_CurrentState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "OnRep_CurrentState");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.OnRep_Hulk
+// (Final, Native, Protected)
+
+void UAbility_104991::OnRep_Hulk()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "OnRep_Hulk");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.OnWolverineDeath
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::OnWolverineDeath(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "OnWolverineDeath");
+
+	Params::Ability_104991_OnWolverineDeath Parms{};
+
+	Parms.InSourceAvatar = InSourceAvatar;
+	Parms.InTargetAvatar = InTargetAvatar;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.OnWolverineTagUpdated
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bTagExists                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::OnWolverineTagUpdated(const struct FGameplayTag& TagUpdated, bool bTagExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "OnWolverineTagUpdated");
+
+	Params::Ability_104991_OnWolverineTagUpdated Parms{};
+
+	Parms.TagUpdated = std::move(TagUpdated);
+	Parms.bTagExists = bTagExists;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.OnWolverineTakeDamage
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::OnWolverineTakeDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "OnWolverineTakeDamage");
+
+	Params::Ability_104991_OnWolverineTakeDamage Parms{};
+
+	Parms.InSourceAvatar = InSourceAvatar;
+	Parms.InTargetAvatar = InTargetAvatar;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.Python_AttachToHulk
+// (Event, Protected, BlueprintEvent)
+
+void UAbility_104991::Python_AttachToHulk()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "Python_AttachToHulk");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Hero_1049.Ability_104991.Python_DetachFromHulk
+// (Event, Protected, BlueprintEvent)
+
+void UAbility_104991::Python_DetachFromHulk()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "Python_DetachFromHulk");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Hero_1049.Ability_104991.Python_FailedFlyingToHulk
+// (Event, Protected, BlueprintEvent)
+
+void UAbility_104991::Python_FailedFlyingToHulk()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "Python_FailedFlyingToHulk");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Hero_1049.Ability_104991.Python_StartFlyingToHulk
+// (Event, Protected, BlueprintEvent)
+
+void UAbility_104991::Python_StartFlyingToHulk()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "Python_StartFlyingToHulk");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Hero_1049.Ability_104991.SetSpringArmIgnore
+// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Parameters:
+// class AMarvelBaseCharacter*             InHulk                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AMarvelBaseCharacter*             OwnChar                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bIgnore                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::SetSpringArmIgnore(class AMarvelBaseCharacter* InHulk, class AMarvelBaseCharacter* OwnChar, bool bIgnore)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "SetSpringArmIgnore");
+
+	Params::Ability_104991_SetSpringArmIgnore Parms{};
+
+	Parms.InHulk = InHulk;
+	Parms.OwnChar = OwnChar;
+	Parms.bIgnore = bIgnore;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.SetSynergyState
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// EWolverineSynergyState                  InState                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::SetSynergyState(EWolverineSynergyState InState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "SetSynergyState");
+
+	Params::Ability_104991_SetSynergyState Parms{};
+
+	Parms.InState = InState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Ability_104991.UnBindDettachDelegates
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// class AActor*                           InHulk                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104991::UnBindDettachDelegates(class AActor* InHulk)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104991", "UnBindDettachDelegates");
+
+	Params::Ability_104991_UnBindDettachDelegates Parms{};
+
+	Parms.InHulk = InHulk;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1836,665 +2293,6 @@ void ACue_Buff_10498105::UpdatePoseMesh(float DeltaSeconds)
 }
 
 
-// Function Hero_1049.MarvelCueNotify_Ability_10498101.OnAbilityStatusChanged
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-// EAbilityStatus_104981                   InStatus                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelCueNotify_Ability_10498101::OnAbilityStatusChanged(EAbilityStatus_104981 InStatus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelCueNotify_Ability_10498101", "OnAbilityStatusChanged");
-
-	Params::MarvelCueNotify_Ability_10498101_OnAbilityStatusChanged Parms{};
-
-	Parms.InStatus = InStatus;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.MarvelCueNotify_Ability_10498101.OnOwnedTagUpdate
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bTagExists                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelCueNotify_Ability_10498101::OnOwnedTagUpdate(const struct FGameplayTag& TagUpdated, bool bTagExists)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelCueNotify_Ability_10498101", "OnOwnedTagUpdate");
-
-	Params::MarvelCueNotify_Ability_10498101_OnOwnedTagUpdate Parms{};
-
-	Parms.TagUpdated = std::move(TagUpdated);
-	Parms.bTagExists = bTagExists;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.BindCameraToRideCharacter
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// class AMarvelBaseCharacter*             RideCharacter                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bBind                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::BindCameraToRideCharacter(class AMarvelBaseCharacter* RideCharacter, bool bBind)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "BindCameraToRideCharacter");
-
-	Params::Ability_104991_BindCameraToRideCharacter Parms{};
-
-	Parms.RideCharacter = RideCharacter;
-	Parms.bBind = bBind;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.BindDettachDelegates
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// class AActor*                           InHulk                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::BindDettachDelegates(class AActor* InHulk)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "BindDettachDelegates");
-
-	Params::Ability_104991_BindDettachDelegates Parms{};
-
-	Parms.InHulk = InHulk;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.BindOwnerCapsuleAttachParentChildDetachDelegate
-// (Final, Native, Protected)
-// Parameters:
-// bool                                    bBind                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::BindOwnerCapsuleAttachParentChildDetachDelegate(bool bBind)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "BindOwnerCapsuleAttachParentChildDetachDelegate");
-
-	Params::Ability_104991_BindOwnerCapsuleAttachParentChildDetachDelegate Parms{};
-
-	Parms.bBind = bBind;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.MarkOnHulk
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// bool                                    bOnGroot                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::MarkOnHulk(bool bOnGroot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "MarkOnHulk");
-
-	Params::Ability_104991_MarkOnHulk Parms{};
-
-	Parms.bOnGroot = bOnGroot;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.OnHulkDeath
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::OnHulkDeath(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "OnHulkDeath");
-
-	Params::Ability_104991_OnHulkDeath Parms{};
-
-	Parms.InSourceAvatar = InSourceAvatar;
-	Parms.InTargetAvatar = InTargetAvatar;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.OnHulkRepToSimulatedRole
-// (Event, Protected, BlueprintEvent)
-
-void UAbility_104991::OnHulkRepToSimulatedRole()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "OnHulkRepToSimulatedRole");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Hero_1049.Ability_104991.OnHulkTagUpdated
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bTagExists                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::OnHulkTagUpdated(const struct FGameplayTag& TagUpdated, bool bTagExists)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "OnHulkTagUpdated");
-
-	Params::Ability_104991_OnHulkTagUpdated Parms{};
-
-	Parms.TagUpdated = std::move(TagUpdated);
-	Parms.bTagExists = bTagExists;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.OnOwnerCapsuleAttachParentChildDetach
-// (Final, Native, Protected)
-// Parameters:
-// class USceneComponent*                  SourceComponent                                        (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class USceneComponent*                  ChildComponent                                         (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::OnOwnerCapsuleAttachParentChildDetach(class USceneComponent* SourceComponent, class USceneComponent* ChildComponent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "OnOwnerCapsuleAttachParentChildDetach");
-
-	Params::Ability_104991_OnOwnerCapsuleAttachParentChildDetach Parms{};
-
-	Parms.SourceComponent = SourceComponent;
-	Parms.ChildComponent = ChildComponent;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.OnRep_CurrentState
-// (Final, Native, Protected)
-
-void UAbility_104991::OnRep_CurrentState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "OnRep_CurrentState");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.OnRep_Hulk
-// (Final, Native, Protected)
-
-void UAbility_104991::OnRep_Hulk()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "OnRep_Hulk");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.OnWolverineDeath
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::OnWolverineDeath(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "OnWolverineDeath");
-
-	Params::Ability_104991_OnWolverineDeath Parms{};
-
-	Parms.InSourceAvatar = InSourceAvatar;
-	Parms.InTargetAvatar = InTargetAvatar;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.OnWolverineTagUpdated
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bTagExists                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::OnWolverineTagUpdated(const struct FGameplayTag& TagUpdated, bool bTagExists)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "OnWolverineTagUpdated");
-
-	Params::Ability_104991_OnWolverineTagUpdated Parms{};
-
-	Parms.TagUpdated = std::move(TagUpdated);
-	Parms.bTagExists = bTagExists;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.OnWolverineTakeDamage
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::OnWolverineTakeDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "OnWolverineTakeDamage");
-
-	Params::Ability_104991_OnWolverineTakeDamage Parms{};
-
-	Parms.InSourceAvatar = InSourceAvatar;
-	Parms.InTargetAvatar = InTargetAvatar;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.Python_AttachToHulk
-// (Event, Protected, BlueprintEvent)
-
-void UAbility_104991::Python_AttachToHulk()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "Python_AttachToHulk");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Hero_1049.Ability_104991.Python_DetachFromHulk
-// (Event, Protected, BlueprintEvent)
-
-void UAbility_104991::Python_DetachFromHulk()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "Python_DetachFromHulk");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Hero_1049.Ability_104991.Python_FailedFlyingToHulk
-// (Event, Protected, BlueprintEvent)
-
-void UAbility_104991::Python_FailedFlyingToHulk()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "Python_FailedFlyingToHulk");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Hero_1049.Ability_104991.Python_StartFlyingToHulk
-// (Event, Protected, BlueprintEvent)
-
-void UAbility_104991::Python_StartFlyingToHulk()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "Python_StartFlyingToHulk");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Hero_1049.Ability_104991.SetSpringArmIgnore
-// (Net, NetReliable, Native, Event, NetMulticast, Protected)
-// Parameters:
-// class AMarvelBaseCharacter*             InHulk                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AMarvelBaseCharacter*             OwnChar                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bIgnore                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::SetSpringArmIgnore(class AMarvelBaseCharacter* InHulk, class AMarvelBaseCharacter* OwnChar, bool bIgnore)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "SetSpringArmIgnore");
-
-	Params::Ability_104991_SetSpringArmIgnore Parms{};
-
-	Parms.InHulk = InHulk;
-	Parms.OwnChar = OwnChar;
-	Parms.bIgnore = bIgnore;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.SetSynergyState
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// EWolverineSynergyState                  InState                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::SetSynergyState(EWolverineSynergyState InState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "SetSynergyState");
-
-	Params::Ability_104991_SetSynergyState Parms{};
-
-	Parms.InState = InState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Ability_104991.UnBindDettachDelegates
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// class AActor*                           InHulk                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_104991::UnBindDettachDelegates(class AActor* InHulk)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104991", "UnBindDettachDelegates");
-
-	Params::Ability_104991_UnBindDettachDelegates Parms{};
-
-	Parms.InHulk = InHulk;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Cue_Ability_Loop_10499101.OnCoopStateChange
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-// EWolverineSynergyState                  InState                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ACue_Ability_Loop_10499101::OnCoopStateChange(EWolverineSynergyState InState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Ability_Loop_10499101", "OnCoopStateChange");
-
-	Params::Cue_Ability_Loop_10499101_OnCoopStateChange Parms{};
-
-	Parms.InState = InState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.Cue_Ability_Loop_10499101.PlayAttachInstantFX
-// (Final, Native, Protected)
-
-void ACue_Ability_Loop_10499101::PlayAttachInstantFX()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Ability_Loop_10499101", "PlayAttachInstantFX");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.MarvelDrainLifeEffectAbility.OnOwnerApplyDamage
-// (Final, Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelDrainLifeEffectAbility::OnOwnerApplyDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelDrainLifeEffectAbility", "OnOwnerApplyDamage");
-
-	Params::MarvelDrainLifeEffectAbility_OnOwnerApplyDamage Parms{};
-
-	Parms.InSourceAvatar = InSourceAvatar;
-	Parms.InTargetAvatar = InTargetAvatar;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.BuffCue_10499401.OnOwnedTagUpdate
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bTagExists                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ABuffCue_10499401::OnOwnedTagUpdate(const struct FGameplayTag& TagUpdated, bool bTagExists)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuffCue_10499401", "OnOwnedTagUpdate");
-
-	Params::BuffCue_10499401_OnOwnedTagUpdate Parms{};
-
-	Parms.TagUpdated = std::move(TagUpdated);
-	Parms.bTagExists = bTagExists;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.WolverineAnimInstance.OnMouseRightStateChanged
-// (Final, Native, Protected)
-// Parameters:
-// ERushState_104951                       CurrentState                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWolverineAnimInstance::OnMouseRightStateChanged(ERushState_104951 CurrentState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WolverineAnimInstance", "OnMouseRightStateChanged");
-
-	Params::WolverineAnimInstance_OnMouseRightStateChanged Parms{};
-
-	Parms.CurrentState = CurrentState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1049.WolverineAnimInstance.OnShiftStateChanged
-// (Final, Native, Protected)
-// Parameters:
-// int32                                   InState                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWolverineAnimInstance::OnShiftStateChanged(int32 InState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WolverineAnimInstance", "OnShiftStateChanged");
-
-	Params::WolverineAnimInstance_OnShiftStateChanged Parms{};
-
-	Parms.InState = InState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Hero_1049.WolverineCharacter.CanResurrectSelfExternal
 // (Final, Native, Public, HasOutParams)
 // Parameters:
@@ -2612,6 +2410,208 @@ bool AWolverineCharacter::IsWolverineAngerFull() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1049.MarvelCueNotify_Ability_10498101.OnAbilityStatusChanged
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+// EAbilityStatus_104981                   InStatus                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelCueNotify_Ability_10498101::OnAbilityStatusChanged(EAbilityStatus_104981 InStatus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelCueNotify_Ability_10498101", "OnAbilityStatusChanged");
+
+	Params::MarvelCueNotify_Ability_10498101_OnAbilityStatusChanged Parms{};
+
+	Parms.InStatus = InStatus;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.MarvelCueNotify_Ability_10498101.OnOwnedTagUpdate
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bTagExists                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelCueNotify_Ability_10498101::OnOwnedTagUpdate(const struct FGameplayTag& TagUpdated, bool bTagExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelCueNotify_Ability_10498101", "OnOwnedTagUpdate");
+
+	Params::MarvelCueNotify_Ability_10498101_OnOwnedTagUpdate Parms{};
+
+	Parms.TagUpdated = std::move(TagUpdated);
+	Parms.bTagExists = bTagExists;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Cue_Scope_Start_10498101.OnSpawnedInstantNiagara
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UNiagaraComponent*                InNSComponent                                          (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class AActor*                     MyTarget                                               (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void UCue_Scope_Start_10498101::OnSpawnedInstantNiagara(class UNiagaraComponent* InNSComponent, const class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_Scope_Start_10498101", "OnSpawnedInstantNiagara");
+
+	Params::Cue_Scope_Start_10498101_OnSpawnedInstantNiagara Parms{};
+
+	Parms.InNSComponent = InNSComponent;
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Cue_Ability_Loop_10499101.OnCoopStateChange
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+// EWolverineSynergyState                  InState                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ACue_Ability_Loop_10499101::OnCoopStateChange(EWolverineSynergyState InState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_Ability_Loop_10499101", "OnCoopStateChange");
+
+	Params::Cue_Ability_Loop_10499101_OnCoopStateChange Parms{};
+
+	Parms.InState = InState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.Cue_Ability_Loop_10499101.PlayAttachInstantFX
+// (Final, Native, Protected)
+
+void ACue_Ability_Loop_10499101::PlayAttachInstantFX()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_Ability_Loop_10499101", "PlayAttachInstantFX");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.BuffCue_10499401.OnOwnedTagUpdate
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bTagExists                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ABuffCue_10499401::OnOwnedTagUpdate(const struct FGameplayTag& TagUpdated, bool bTagExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BuffCue_10499401", "OnOwnedTagUpdate");
+
+	Params::BuffCue_10499401_OnOwnedTagUpdate Parms{};
+
+	Parms.TagUpdated = std::move(TagUpdated);
+	Parms.bTagExists = bTagExists;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.WolverineAnimInstance.OnMouseRightStateChanged
+// (Final, Native, Protected)
+// Parameters:
+// ERushState_104951                       CurrentState                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWolverineAnimInstance::OnMouseRightStateChanged(ERushState_104951 CurrentState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WolverineAnimInstance", "OnMouseRightStateChanged");
+
+	Params::WolverineAnimInstance_OnMouseRightStateChanged Parms{};
+
+	Parms.CurrentState = CurrentState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1049.WolverineAnimInstance.OnShiftStateChanged
+// (Final, Native, Protected)
+// Parameters:
+// int32                                   InState                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWolverineAnimInstance::OnShiftStateChanged(int32 InState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WolverineAnimInstance", "OnShiftStateChanged");
+
+	Params::WolverineAnimInstance_OnShiftStateChanged Parms{};
+
+	Parms.InState = InState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 

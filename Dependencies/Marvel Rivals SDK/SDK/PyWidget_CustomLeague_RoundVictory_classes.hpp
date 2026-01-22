@@ -18,28 +18,29 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CustomLeague_RoundVictory.PyWidget_CustomLeague_RoundVictory
-// 0x00D0 (0x0690 - 0x05C0)
+// 0x00D0 (0x0698 - 0x05C8)
 class UPyWidget_CustomLeague_RoundVictory final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateFontInfo                         ClanNameFontEnemy;                                 // 0x05C0(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         ClanNameFontAlly;                                  // 0x0628(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateFontInfo                         ClanNameFontEnemy;                                 // 0x05C8(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         ClanNameFontAlly;                                  // 0x0630(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomLeague_RoundVictory">();
+		STATIC_CLASS_IMPL("PyWidget_CustomLeague_RoundVictory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomLeague_RoundVictory")
 	}
 	static class UPyWidget_CustomLeague_RoundVictory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomLeague_RoundVictory>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomLeague_RoundVictory) == 0x000008, "Wrong alignment on UPyWidget_CustomLeague_RoundVictory");
-static_assert(sizeof(UPyWidget_CustomLeague_RoundVictory) == 0x000690, "Wrong size on UPyWidget_CustomLeague_RoundVictory");
-static_assert(offsetof(UPyWidget_CustomLeague_RoundVictory, ClanNameFontEnemy) == 0x0005C0, "Member 'UPyWidget_CustomLeague_RoundVictory::ClanNameFontEnemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomLeague_RoundVictory, ClanNameFontAlly) == 0x000628, "Member 'UPyWidget_CustomLeague_RoundVictory::ClanNameFontAlly' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CustomLeague_RoundVictory;
 
 }
 

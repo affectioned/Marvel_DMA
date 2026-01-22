@@ -21,9 +21,7 @@ struct PyWidget_Mood_MainPanel_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mood_MainPanel_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Mood_MainPanel_OnVisibleChanged");
-static_assert(sizeof(PyWidget_Mood_MainPanel_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_Mood_MainPanel_OnVisibleChanged");
-static_assert(offsetof(PyWidget_Mood_MainPanel_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Mood_MainPanel_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mood_MainPanel_OnVisibleChanged;
 
 }
 

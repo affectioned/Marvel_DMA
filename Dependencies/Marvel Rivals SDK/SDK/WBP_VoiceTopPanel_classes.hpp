@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_VoiceTopPanel.WBP_VoiceTopPanel_C
-// 0x0018 (0x05E8 - 0x05D0)
+// 0x0018 (0x05F0 - 0x05D8)
 class UWBP_VoiceTopPanel_C final : public UPyWidget_VoiceTopPanel
 {
 public:
-	class ULazyWidget*                            Lazy_BattleKeyTips;                                // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelVerticalBox*                     VBox_ChatPanel;                                    // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelVerticalBox*                     VerticalBox_Voice;                                 // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_BattleKeyTips;                                // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     VBox_ChatPanel;                                    // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     VerticalBox_Voice;                                 // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_VoiceTopPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_VoiceTopPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_VoiceTopPanel_C")
 	}
 	static class UWBP_VoiceTopPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_VoiceTopPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_VoiceTopPanel_C) == 0x000008, "Wrong alignment on UWBP_VoiceTopPanel_C");
-static_assert(sizeof(UWBP_VoiceTopPanel_C) == 0x0005E8, "Wrong size on UWBP_VoiceTopPanel_C");
-static_assert(offsetof(UWBP_VoiceTopPanel_C, Lazy_BattleKeyTips) == 0x0005D0, "Member 'UWBP_VoiceTopPanel_C::Lazy_BattleKeyTips' has a wrong offset!");
-static_assert(offsetof(UWBP_VoiceTopPanel_C, VBox_ChatPanel) == 0x0005D8, "Member 'UWBP_VoiceTopPanel_C::VBox_ChatPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_VoiceTopPanel_C, VerticalBox_Voice) == 0x0005E0, "Member 'UWBP_VoiceTopPanel_C::VerticalBox_Voice' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_VoiceTopPanel_C;
 
 }
 

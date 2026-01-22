@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_CardList.PyWidget_Halloween_CardList
-// 0x0038 (0x0630 - 0x05F8)
+// 0x0038 (0x0638 - 0x0600)
 class UPyWidget_Halloween_CardList final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                CardWidget;                                        // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShowPanelUV;                                       // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           GamepadL2;                                         // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamepadR2;                                         // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamepadTab;                                        // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEventSwitchHero;                                 // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEventSwitchTab;                                  // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                CardWidget;                                        // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShowPanelUV;                                       // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           GamepadL2;                                         // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamepadR2;                                         // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamepadTab;                                        // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEventSwitchHero;                                 // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEventSwitchTab;                                  // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,22 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_CardList">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_CardList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_CardList")
 	}
 	static class UPyWidget_Halloween_CardList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_CardList>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_CardList) == 0x000008, "Wrong alignment on UPyWidget_Halloween_CardList");
-static_assert(sizeof(UPyWidget_Halloween_CardList) == 0x000630, "Wrong size on UPyWidget_Halloween_CardList");
-static_assert(offsetof(UPyWidget_Halloween_CardList, CardWidget) == 0x0005F8, "Member 'UPyWidget_Halloween_CardList::CardWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardList, ShowPanelUV) == 0x000600, "Member 'UPyWidget_Halloween_CardList::ShowPanelUV' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardList, GamepadL2) == 0x000608, "Member 'UPyWidget_Halloween_CardList::GamepadL2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardList, GamepadR2) == 0x000610, "Member 'UPyWidget_Halloween_CardList::GamepadR2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardList, GamepadTab) == 0x000618, "Member 'UPyWidget_Halloween_CardList::GamepadTab' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardList, AKEventSwitchHero) == 0x000620, "Member 'UPyWidget_Halloween_CardList::AKEventSwitchHero' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardList, AKEventSwitchTab) == 0x000628, "Member 'UPyWidget_Halloween_CardList::AKEventSwitchTab' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_CardList;
 
 }
 

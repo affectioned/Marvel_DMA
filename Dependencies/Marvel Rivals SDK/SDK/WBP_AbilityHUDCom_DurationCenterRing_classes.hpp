@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilityHUDCom_DurationCenterRing.WBP_AbilityHUDCom_DurationCenterRing_C
-// 0x0020 (0x1C40 - 0x1C20)
+// 0x0020 (0x1CE8 - 0x1CC8)
 class UWBP_AbilityHUDCom_DurationCenterRing_C final : public UWidget_AbilityDuration
 {
 public:
-	class UCanvasPanel*                           Canvas_Root;                                       // 0x1C20(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_ProgBg;                                        // 0x1C28(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Mat_Prog;                                          // 0x1C30(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Tip;                                          // 0x1C38(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Canvas_Root;                                       // 0x1CC8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_ProgBg;                                        // 0x1CD0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Mat_Prog;                                          // 0x1CD8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Tip;                                          // 0x1CE0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityHUDCom_DurationCenterRing_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityHUDCom_DurationCenterRing_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityHUDCom_DurationCenterRing_C")
 	}
 	static class UWBP_AbilityHUDCom_DurationCenterRing_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityHUDCom_DurationCenterRing_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityHUDCom_DurationCenterRing_C) == 0x000008, "Wrong alignment on UWBP_AbilityHUDCom_DurationCenterRing_C");
-static_assert(sizeof(UWBP_AbilityHUDCom_DurationCenterRing_C) == 0x001C40, "Wrong size on UWBP_AbilityHUDCom_DurationCenterRing_C");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationCenterRing_C, Canvas_Root) == 0x001C20, "Member 'UWBP_AbilityHUDCom_DurationCenterRing_C::Canvas_Root' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationCenterRing_C, Img_ProgBg) == 0x001C28, "Member 'UWBP_AbilityHUDCom_DurationCenterRing_C::Img_ProgBg' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationCenterRing_C, Mat_Prog) == 0x001C30, "Member 'UWBP_AbilityHUDCom_DurationCenterRing_C::Mat_Prog' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationCenterRing_C, Text_Tip) == 0x001C38, "Member 'UWBP_AbilityHUDCom_DurationCenterRing_C::Text_Tip' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityHUDCom_DurationCenterRing_C;
 
 }
 

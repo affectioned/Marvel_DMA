@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenMonsterAttackLine">();
+		STATIC_CLASS_IMPL("PyHalloweenMonsterAttackLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenMonsterAttackLine")
 	}
 	static class APyHalloweenMonsterAttackLine* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenMonsterAttackLine>();
 	}
 };
-static_assert(alignof(APyHalloweenMonsterAttackLine) == 0x000010, "Wrong alignment on APyHalloweenMonsterAttackLine");
-static_assert(sizeof(APyHalloweenMonsterAttackLine) == 0x000700, "Wrong size on APyHalloweenMonsterAttackLine");
-static_assert(offsetof(APyHalloweenMonsterAttackLine, State) == 0x0006F2, "Member 'APyHalloweenMonsterAttackLine::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenMonsterAttackLine;
 
 }
 

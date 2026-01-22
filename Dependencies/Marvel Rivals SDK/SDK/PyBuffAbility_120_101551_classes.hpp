@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_101551.PyBuffAbility_120_10155190
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyBuffAbility_120_10155190 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         ScopeID;                                           // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DeltaTracePeriodPerStack;                          // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinTracePeriod;                                    // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DeltaTracePeriodPerStack;                          // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinTracePeriod;                                    // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10155190">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10155190")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10155190")
 	}
 	static class UPyBuffAbility_120_10155190* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10155190>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10155190) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10155190");
-static_assert(sizeof(UPyBuffAbility_120_10155190) == 0x001380, "Wrong size on UPyBuffAbility_120_10155190");
-static_assert(offsetof(UPyBuffAbility_120_10155190, ScopeID) == 0x001370, "Member 'UPyBuffAbility_120_10155190::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10155190, DeltaTracePeriodPerStack) == 0x001374, "Member 'UPyBuffAbility_120_10155190::DeltaTracePeriodPerStack' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10155190, MinTracePeriod) == 0x001378, "Member 'UPyBuffAbility_120_10155190::MinTracePeriod' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10155190;
 
 }
 

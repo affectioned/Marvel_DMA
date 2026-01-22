@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelAudioAdmin">();
+		STATIC_CLASS_IMPL("PyMarvelAudioAdmin")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelAudioAdmin")
 	}
 	static class UPyMarvelAudioAdmin* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelAudioAdmin>();
 	}
 };
-static_assert(alignof(UPyMarvelAudioAdmin) == 0x000008, "Wrong alignment on UPyMarvelAudioAdmin");
-static_assert(sizeof(UPyMarvelAudioAdmin) == 0x000158, "Wrong size on UPyMarvelAudioAdmin");
-static_assert(offsetof(UPyMarvelAudioAdmin, OutputDeviceChangeInfo) == 0x000140, "Member 'UPyMarvelAudioAdmin::OutputDeviceChangeInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMarvelAudioAdmin;
 
 }
 

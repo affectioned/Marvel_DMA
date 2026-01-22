@@ -23,15 +23,18 @@ class UWBP_CombatSituation_HeroUnit_C final : public UPyWidget_CombatSituation_H
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CombatSituation_HeroUnit_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CombatSituation_HeroUnit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CombatSituation_HeroUnit_C")
 	}
 	static class UWBP_CombatSituation_HeroUnit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CombatSituation_HeroUnit_C>();
 	}
 };
-static_assert(alignof(UWBP_CombatSituation_HeroUnit_C) == 0x000010, "Wrong alignment on UWBP_CombatSituation_HeroUnit_C");
-static_assert(sizeof(UWBP_CombatSituation_HeroUnit_C) == 0x0004C0, "Wrong size on UWBP_CombatSituation_HeroUnit_C");
+DUMPER7_ASSERTS_UWBP_CombatSituation_HeroUnit_C;
 
 }
 

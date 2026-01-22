@@ -23,15 +23,18 @@ class UCameraShake_103911_Hit03_C final : public ULegacyCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CameraShake_103911_Hit03_C">();
+		BP_STATIC_CLASS_IMPL("CameraShake_103911_Hit03_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraShake_103911_Hit03_C")
 	}
 	static class UCameraShake_103911_Hit03_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraShake_103911_Hit03_C>();
 	}
 };
-static_assert(alignof(UCameraShake_103911_Hit03_C) == 0x000010, "Wrong alignment on UCameraShake_103911_Hit03_C");
-static_assert(sizeof(UCameraShake_103911_Hit03_C) == 0x0002B0, "Wrong size on UCameraShake_103911_Hit03_C");
+DUMPER7_ASSERTS_UCameraShake_103911_Hit03_C;
 
 }
 

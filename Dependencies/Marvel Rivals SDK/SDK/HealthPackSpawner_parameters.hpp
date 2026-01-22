@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function HealthPackSpawner.HealthPackSpawner_C.ExecuteUbergraph_HealthPackSpawner
-// 0x0468 (0x0468 - 0x0000)
+// 0x0498 (0x0498 - 0x0000)
 struct HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner final
 {
 public:
@@ -28,29 +28,16 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0048(0x01F0)(ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0239(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23A[0x6];                                      // 0x023A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0240(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0258(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult_1;     // 0x0270(0x01F0)(ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorLocation_ReturnValue_1;        // 0x0460(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0048(0x0208)(ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_252[0x6];                                      // 0x0252(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0258(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0270(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult_1;     // 0x0288(0x0208)(ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorLocation_ReturnValue_1;        // 0x0490(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner) == 0x000008, "Wrong alignment on HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner");
-static_assert(sizeof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner) == 0x000468, "Wrong size on HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, EntryPoint) == 0x000000, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, CallFunc_IsValid_ReturnValue) == 0x00002C, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000030, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x000048, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, CallFunc_K2_SetActorLocation_ReturnValue) == 0x000238, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, CallFunc_IsValid_ReturnValue_1) == 0x000239, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000240, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000258, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, CallFunc_K2_SetActorLocation_SweepHitResult_1) == 0x000270, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::CallFunc_K2_SetActorLocation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner, CallFunc_K2_SetActorLocation_ReturnValue_1) == 0x000460, "Member 'HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner::CallFunc_K2_SetActorLocation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_HealthPackSpawner_C_ExecuteUbergraph_HealthPackSpawner;
 
 }
 

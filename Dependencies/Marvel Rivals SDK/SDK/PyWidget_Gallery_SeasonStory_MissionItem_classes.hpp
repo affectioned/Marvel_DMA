@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Gallery_SeasonStory_MissionItem.PyWidget_Gallery_SeasonStory_MissionItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Gallery_SeasonStory_MissionItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MissionId;                                         // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MissionId;                                         // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Gallery_SeasonStory_MissionItem">();
+		STATIC_CLASS_IMPL("PyWidget_Gallery_SeasonStory_MissionItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Gallery_SeasonStory_MissionItem")
 	}
 	static class UPyWidget_Gallery_SeasonStory_MissionItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Gallery_SeasonStory_MissionItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Gallery_SeasonStory_MissionItem) == 0x000008, "Wrong alignment on UPyWidget_Gallery_SeasonStory_MissionItem");
-static_assert(sizeof(UPyWidget_Gallery_SeasonStory_MissionItem) == 0x0005C0, "Wrong size on UPyWidget_Gallery_SeasonStory_MissionItem");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_MissionItem, MissionId) == 0x0005BC, "Member 'UPyWidget_Gallery_SeasonStory_MissionItem::MissionId' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Gallery_SeasonStory_MissionItem;
 
 }
 

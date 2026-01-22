@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10130_402401.PyCue_Projectile_Loop_40240101
-// 0x0050 (0x1180 - 0x1130)
+// 0x0050 (0x1190 - 0x1140)
 class APyCue_Projectile_Loop_40240101 final : public AMarvelCueNotify_Projectile
 {
 public:
-	uint8                                         Pad_1128[0x8];                                     // 0x1128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, struct FRotator>                  ComboRotation;                                     // 0x1130(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1138[0x8];                                     // 0x1138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, struct FRotator>                  ComboRotation;                                     // 0x1140(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	bool OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -31,26 +31,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_40240101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_40240101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_40240101")
 	}
 	static class APyCue_Projectile_Loop_40240101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_40240101>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_40240101) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_40240101");
-static_assert(sizeof(APyCue_Projectile_Loop_40240101) == 0x001180, "Wrong size on APyCue_Projectile_Loop_40240101");
-static_assert(offsetof(APyCue_Projectile_Loop_40240101, ComboRotation) == 0x001130, "Member 'APyCue_Projectile_Loop_40240101::ComboRotation' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_40240101;
 
 // PythonClass PyAbility_10130_402401.PyCue_Projectile_HitImpact_40240101
-// 0x0028 (0x05F0 - 0x05C8)
+// 0x0028 (0x0610 - 0x05E8)
 class UPyCue_Projectile_HitImpact_40240101 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	int32                                         ComboAbilityID;                                    // 0x05C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x05CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<float>                                 DecalAngles;                                       // 0x05D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<struct FRotator>                       FxRotations;                                       // 0x05E0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         ComboAbilityID;                                    // 0x05E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x05EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<float>                                 DecalAngles;                                       // 0x05F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<struct FRotator>                       FxRotations;                                       // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void AdjustNiagaraRotation(class UNiagaraComponent* InFXComponent, class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -60,19 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_HitImpact_40240101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_HitImpact_40240101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_HitImpact_40240101")
 	}
 	static class UPyCue_Projectile_HitImpact_40240101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Projectile_HitImpact_40240101>();
 	}
 };
-static_assert(alignof(UPyCue_Projectile_HitImpact_40240101) == 0x000008, "Wrong alignment on UPyCue_Projectile_HitImpact_40240101");
-static_assert(sizeof(UPyCue_Projectile_HitImpact_40240101) == 0x0005F0, "Wrong size on UPyCue_Projectile_HitImpact_40240101");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_40240101, ComboAbilityID) == 0x0005C8, "Member 'UPyCue_Projectile_HitImpact_40240101::ComboAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_40240101, ScopeID) == 0x0005CC, "Member 'UPyCue_Projectile_HitImpact_40240101::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_40240101, DecalAngles) == 0x0005D0, "Member 'UPyCue_Projectile_HitImpact_40240101::DecalAngles' has a wrong offset!");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_40240101, FxRotations) == 0x0005E0, "Member 'UPyCue_Projectile_HitImpact_40240101::FxRotations' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Projectile_HitImpact_40240101;
 
 }
 

@@ -17,19 +17,19 @@ namespace SDK
 {
 
 // PythonClass PyRootWidget.PyRootWidget
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyRootWidget : public UPyMarvelUserWidget
 {
 public:
-	bool                                          EnableAdaptUI;                                     // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x5];                                      // 0x05BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           GamepadToggleGMPanelAction;                        // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamepadToggleConsoleAction;                        // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialParameterCollection*           MPC_Background;                                    // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            Curve_BackgroundOffset;                            // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOverlay*                               Overlay_Frame;                                     // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelCanvasPanel*                     Panel_Bg;                                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelCanvasPanel*                     Panel_Default3DUI;                                 // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableAdaptUI;                                     // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x5];                                      // 0x05C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           GamepadToggleGMPanelAction;                        // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamepadToggleConsoleAction;                        // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialParameterCollection*           MPC_Background;                                    // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            Curve_BackgroundOffset;                            // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOverlay*                               Overlay_Frame;                                     // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     Panel_Bg;                                          // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     Panel_Default3DUI;                                 // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,23 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRootWidget">();
+		STATIC_CLASS_IMPL("PyRootWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRootWidget")
 	}
 	static class UPyRootWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRootWidget>();
 	}
 };
-static_assert(alignof(UPyRootWidget) == 0x000008, "Wrong alignment on UPyRootWidget");
-static_assert(sizeof(UPyRootWidget) == 0x0005F8, "Wrong size on UPyRootWidget");
-static_assert(offsetof(UPyRootWidget, EnableAdaptUI) == 0x0005BA, "Member 'UPyRootWidget::EnableAdaptUI' has a wrong offset!");
-static_assert(offsetof(UPyRootWidget, GamepadToggleGMPanelAction) == 0x0005C0, "Member 'UPyRootWidget::GamepadToggleGMPanelAction' has a wrong offset!");
-static_assert(offsetof(UPyRootWidget, GamepadToggleConsoleAction) == 0x0005C8, "Member 'UPyRootWidget::GamepadToggleConsoleAction' has a wrong offset!");
-static_assert(offsetof(UPyRootWidget, MPC_Background) == 0x0005D0, "Member 'UPyRootWidget::MPC_Background' has a wrong offset!");
-static_assert(offsetof(UPyRootWidget, Curve_BackgroundOffset) == 0x0005D8, "Member 'UPyRootWidget::Curve_BackgroundOffset' has a wrong offset!");
-static_assert(offsetof(UPyRootWidget, Overlay_Frame) == 0x0005E0, "Member 'UPyRootWidget::Overlay_Frame' has a wrong offset!");
-static_assert(offsetof(UPyRootWidget, Panel_Bg) == 0x0005E8, "Member 'UPyRootWidget::Panel_Bg' has a wrong offset!");
-static_assert(offsetof(UPyRootWidget, Panel_Default3DUI) == 0x0005F0, "Member 'UPyRootWidget::Panel_Default3DUI' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRootWidget;
 
 }
 

@@ -18,31 +18,30 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mall_Bundle_Emo.PyWidget_Mall_Bundle_Emo
-// 0x0040 (0x0628 - 0x05E8)
+// 0x0040 (0x0630 - 0x05F0)
 class UPyWidget_Mall_Bundle_Emo : public UPyWidget_Mall_Bundle
 {
 public:
-	struct FSlateColor                            ItemPictureColor_Unhovered;                        // 0x05E4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ItemPictureColor_Hovered;                          // 0x05F8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Default_BG_Color;                                  // 0x060C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UTexture2D*                             DefaultBackground;                                 // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ItemPictureColor_Unhovered;                        // 0x05EC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ItemPictureColor_Hovered;                          // 0x0600(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Default_BG_Color;                                  // 0x0614(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DefaultBackground;                                 // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_Bundle_Emo">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_Bundle_Emo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Bundle_Emo")
 	}
 	static class UPyWidget_Mall_Bundle_Emo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall_Bundle_Emo>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall_Bundle_Emo) == 0x000008, "Wrong alignment on UPyWidget_Mall_Bundle_Emo");
-static_assert(sizeof(UPyWidget_Mall_Bundle_Emo) == 0x000628, "Wrong size on UPyWidget_Mall_Bundle_Emo");
-static_assert(offsetof(UPyWidget_Mall_Bundle_Emo, ItemPictureColor_Unhovered) == 0x0005E4, "Member 'UPyWidget_Mall_Bundle_Emo::ItemPictureColor_Unhovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mall_Bundle_Emo, ItemPictureColor_Hovered) == 0x0005F8, "Member 'UPyWidget_Mall_Bundle_Emo::ItemPictureColor_Hovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mall_Bundle_Emo, Default_BG_Color) == 0x00060C, "Member 'UPyWidget_Mall_Bundle_Emo::Default_BG_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mall_Bundle_Emo, DefaultBackground) == 0x000620, "Member 'UPyWidget_Mall_Bundle_Emo::DefaultBackground' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mall_Bundle_Emo;
 
 }
 

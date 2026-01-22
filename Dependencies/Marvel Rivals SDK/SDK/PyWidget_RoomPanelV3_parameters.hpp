@@ -23,9 +23,7 @@ struct PyWidget_RoomPanel_V4_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_RoomPanel_V4_PreConstruct");
-static_assert(sizeof(PyWidget_RoomPanel_V4_PreConstruct) == 0x000001, "Wrong size on PyWidget_RoomPanel_V4_PreConstruct");
-static_assert(offsetof(PyWidget_RoomPanel_V4_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_RoomPanel_V4_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_PreConstruct;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.node_btn_down_navigation_rule_custom
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_node_btn_down_navigation_rule_custom) == 0x000008, "Wrong alignment on PyWidget_RoomPanel_V4_node_btn_down_navigation_rule_custom");
-static_assert(sizeof(PyWidget_RoomPanel_V4_node_btn_down_navigation_rule_custom) == 0x000010, "Wrong size on PyWidget_RoomPanel_V4_node_btn_down_navigation_rule_custom");
-static_assert(offsetof(PyWidget_RoomPanel_V4_node_btn_down_navigation_rule_custom, NavType) == 0x000000, "Member 'PyWidget_RoomPanel_V4_node_btn_down_navigation_rule_custom::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_RoomPanel_V4_node_btn_down_navigation_rule_custom, ReturnValue) == 0x000008, "Member 'PyWidget_RoomPanel_V4_node_btn_down_navigation_rule_custom::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_node_btn_down_navigation_rule_custom;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.spectator_scroll_up_navigation_rule_custom
 // 0x0010 (0x0010 - 0x0000)
@@ -50,10 +45,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_spectator_scroll_up_navigation_rule_custom) == 0x000008, "Wrong alignment on PyWidget_RoomPanel_V4_spectator_scroll_up_navigation_rule_custom");
-static_assert(sizeof(PyWidget_RoomPanel_V4_spectator_scroll_up_navigation_rule_custom) == 0x000010, "Wrong size on PyWidget_RoomPanel_V4_spectator_scroll_up_navigation_rule_custom");
-static_assert(offsetof(PyWidget_RoomPanel_V4_spectator_scroll_up_navigation_rule_custom, NavType) == 0x000000, "Member 'PyWidget_RoomPanel_V4_spectator_scroll_up_navigation_rule_custom::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_RoomPanel_V4_spectator_scroll_up_navigation_rule_custom, ReturnValue) == 0x000008, "Member 'PyWidget_RoomPanel_V4_spectator_scroll_up_navigation_rule_custom::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_spectator_scroll_up_navigation_rule_custom;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.SetTeamName
 // 0x0030 (0x0030 - 0x0000)
@@ -63,10 +55,7 @@ public:
 	class FText                                   Team_1_Name_0;                                     // 0x0000(0x0018)(Parm)
 	class FText                                   Team_2_Name_0;                                     // 0x0018(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_SetTeamName) == 0x000008, "Wrong alignment on PyWidget_RoomPanel_V4_SetTeamName");
-static_assert(sizeof(PyWidget_RoomPanel_V4_SetTeamName) == 0x000030, "Wrong size on PyWidget_RoomPanel_V4_SetTeamName");
-static_assert(offsetof(PyWidget_RoomPanel_V4_SetTeamName, Team_1_Name_0) == 0x000000, "Member 'PyWidget_RoomPanel_V4_SetTeamName::Team_1_Name_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_RoomPanel_V4_SetTeamName, Team_2_Name_0) == 0x000018, "Member 'PyWidget_RoomPanel_V4_SetTeamName::Team_2_Name_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_SetTeamName;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.SetIsObserver
 // 0x0001 (0x0001 - 0x0000)
@@ -75,9 +64,7 @@ struct PyWidget_RoomPanel_V4_SetIsObserver final
 public:
 	bool                                          IsObserver;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_SetIsObserver) == 0x000001, "Wrong alignment on PyWidget_RoomPanel_V4_SetIsObserver");
-static_assert(sizeof(PyWidget_RoomPanel_V4_SetIsObserver) == 0x000001, "Wrong size on PyWidget_RoomPanel_V4_SetIsObserver");
-static_assert(offsetof(PyWidget_RoomPanel_V4_SetIsObserver, IsObserver) == 0x000000, "Member 'PyWidget_RoomPanel_V4_SetIsObserver::IsObserver' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_SetIsObserver;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.SetIsOwner
 // 0x0001 (0x0001 - 0x0000)
@@ -86,9 +73,7 @@ struct PyWidget_RoomPanel_V4_SetIsOwner final
 public:
 	bool                                          IsOwner;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_SetIsOwner) == 0x000001, "Wrong alignment on PyWidget_RoomPanel_V4_SetIsOwner");
-static_assert(sizeof(PyWidget_RoomPanel_V4_SetIsOwner) == 0x000001, "Wrong size on PyWidget_RoomPanel_V4_SetIsOwner");
-static_assert(offsetof(PyWidget_RoomPanel_V4_SetIsOwner, IsOwner) == 0x000000, "Member 'PyWidget_RoomPanel_V4_SetIsOwner::IsOwner' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_SetIsOwner;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.SetMemberOwner
 // 0x0001 (0x0001 - 0x0000)
@@ -97,9 +82,7 @@ struct PyWidget_RoomPanel_V4_SetMemberOwner final
 public:
 	bool                                          IsOwner;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_SetMemberOwner) == 0x000001, "Wrong alignment on PyWidget_RoomPanel_V4_SetMemberOwner");
-static_assert(sizeof(PyWidget_RoomPanel_V4_SetMemberOwner) == 0x000001, "Wrong size on PyWidget_RoomPanel_V4_SetMemberOwner");
-static_assert(offsetof(PyWidget_RoomPanel_V4_SetMemberOwner, IsOwner) == 0x000000, "Member 'PyWidget_RoomPanel_V4_SetMemberOwner::IsOwner' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_SetMemberOwner;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.SetStartType
 // 0x0001 (0x0001 - 0x0000)
@@ -108,9 +91,7 @@ struct PyWidget_RoomPanel_V4_SetStartType final
 public:
 	bool                                          IsOwner;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_SetStartType) == 0x000001, "Wrong alignment on PyWidget_RoomPanel_V4_SetStartType");
-static_assert(sizeof(PyWidget_RoomPanel_V4_SetStartType) == 0x000001, "Wrong size on PyWidget_RoomPanel_V4_SetStartType");
-static_assert(offsetof(PyWidget_RoomPanel_V4_SetStartType, IsOwner) == 0x000000, "Member 'PyWidget_RoomPanel_V4_SetStartType::IsOwner' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_SetStartType;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.SetHotKeyAIVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -119,9 +100,7 @@ struct PyWidget_RoomPanel_V4_SetHotKeyAIVisible final
 public:
 	bool                                          IsOwner;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_SetHotKeyAIVisible) == 0x000001, "Wrong alignment on PyWidget_RoomPanel_V4_SetHotKeyAIVisible");
-static_assert(sizeof(PyWidget_RoomPanel_V4_SetHotKeyAIVisible) == 0x000001, "Wrong size on PyWidget_RoomPanel_V4_SetHotKeyAIVisible");
-static_assert(offsetof(PyWidget_RoomPanel_V4_SetHotKeyAIVisible, IsOwner) == 0x000000, "Member 'PyWidget_RoomPanel_V4_SetHotKeyAIVisible::IsOwner' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_SetHotKeyAIVisible;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.SetAdjustTeamVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -130,9 +109,7 @@ struct PyWidget_RoomPanel_V4_SetAdjustTeamVisible final
 public:
 	bool                                          IsOwner;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_SetAdjustTeamVisible) == 0x000001, "Wrong alignment on PyWidget_RoomPanel_V4_SetAdjustTeamVisible");
-static_assert(sizeof(PyWidget_RoomPanel_V4_SetAdjustTeamVisible) == 0x000001, "Wrong size on PyWidget_RoomPanel_V4_SetAdjustTeamVisible");
-static_assert(offsetof(PyWidget_RoomPanel_V4_SetAdjustTeamVisible, IsOwner) == 0x000000, "Member 'PyWidget_RoomPanel_V4_SetAdjustTeamVisible::IsOwner' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_SetAdjustTeamVisible;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.SetAdjustTeamEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -141,9 +118,7 @@ struct PyWidget_RoomPanel_V4_SetAdjustTeamEnabled final
 public:
 	bool                                          IsEnabled;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_SetAdjustTeamEnabled) == 0x000001, "Wrong alignment on PyWidget_RoomPanel_V4_SetAdjustTeamEnabled");
-static_assert(sizeof(PyWidget_RoomPanel_V4_SetAdjustTeamEnabled) == 0x000001, "Wrong size on PyWidget_RoomPanel_V4_SetAdjustTeamEnabled");
-static_assert(offsetof(PyWidget_RoomPanel_V4_SetAdjustTeamEnabled, IsEnabled) == 0x000000, "Member 'PyWidget_RoomPanel_V4_SetAdjustTeamEnabled::IsEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_SetAdjustTeamEnabled;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.SetRoomInfo
 // 0x0001 (0x0001 - 0x0000)
@@ -152,9 +127,7 @@ struct PyWidget_RoomPanel_V4_SetRoomInfo final
 public:
 	bool                                          IsOwner;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_SetRoomInfo) == 0x000001, "Wrong alignment on PyWidget_RoomPanel_V4_SetRoomInfo");
-static_assert(sizeof(PyWidget_RoomPanel_V4_SetRoomInfo) == 0x000001, "Wrong size on PyWidget_RoomPanel_V4_SetRoomInfo");
-static_assert(offsetof(PyWidget_RoomPanel_V4_SetRoomInfo, IsOwner) == 0x000000, "Member 'PyWidget_RoomPanel_V4_SetRoomInfo::IsOwner' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_SetRoomInfo;
 
 // PythonFunction PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -163,9 +136,7 @@ struct PyWidget_RoomPanel_V4_OnRemovedFromFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(Parm, NoDestructor)
 };
-static_assert(alignof(PyWidget_RoomPanel_V4_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on PyWidget_RoomPanel_V4_OnRemovedFromFocusPath");
-static_assert(sizeof(PyWidget_RoomPanel_V4_OnRemovedFromFocusPath) == 0x000008, "Wrong size on PyWidget_RoomPanel_V4_OnRemovedFromFocusPath");
-static_assert(offsetof(PyWidget_RoomPanel_V4_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'PyWidget_RoomPanel_V4_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPanel_V4_OnRemovedFromFocusPath;
 
 }
 

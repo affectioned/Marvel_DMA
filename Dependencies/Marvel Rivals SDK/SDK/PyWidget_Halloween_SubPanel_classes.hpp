@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_SubPanel.PyWidget_Halloween_SubPanelBase
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Halloween_SubPanelBase : public UPyWidget_ModuleMainPanel
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_SubPanelBase">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_SubPanelBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_SubPanelBase")
 	}
 	static class UPyWidget_Halloween_SubPanelBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_SubPanelBase>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_SubPanelBase) == 0x000008, "Wrong alignment on UPyWidget_Halloween_SubPanelBase");
-static_assert(sizeof(UPyWidget_Halloween_SubPanelBase) == 0x0005F8, "Wrong size on UPyWidget_Halloween_SubPanelBase");
+DUMPER7_ASSERTS_UPyWidget_Halloween_SubPanelBase;
 
 }
 

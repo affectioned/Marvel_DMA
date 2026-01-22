@@ -18,22 +18,22 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_NavigationBar_Info.PyWidget_Common_NavigationBar_InfoBase
-// 0x0070 (0x0630 - 0x05C0)
+// 0x0070 (0x0638 - 0x05C8)
 class UPyWidget_Common_NavigationBar_InfoBase : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                BtnClass;                                          // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              BtnPadding;                                        // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DefaultSelect;                                     // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5DC[0x4];                                      // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           NavLeftAction;                                     // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           NavRightAction;                                    // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnNavButtonClicked;                        // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnNavButtonHovered;                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index)>   OnNavClicked;                                      // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index)>   OnNavHovered;                                      // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnNavCreated;                                      // 0x0620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                BtnClass;                                          // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              BtnPadding;                                        // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DefaultSelect;                                     // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           NavLeftAction;                                     // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           NavRightAction;                                    // 0x05F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnNavButtonClicked;                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnNavButtonHovered;                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index)>   OnNavClicked;                                      // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index)>   OnNavHovered;                                      // 0x0618(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnNavCreated;                                      // 0x0628(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,49 +42,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_NavigationBar_InfoBase">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NavigationBar_InfoBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NavigationBar_InfoBase")
 	}
 	static class UPyWidget_Common_NavigationBar_InfoBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_NavigationBar_InfoBase>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_NavigationBar_InfoBase) == 0x000008, "Wrong alignment on UPyWidget_Common_NavigationBar_InfoBase");
-static_assert(sizeof(UPyWidget_Common_NavigationBar_InfoBase) == 0x000630, "Wrong size on UPyWidget_Common_NavigationBar_InfoBase");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_InfoBase, BtnClass) == 0x0005C0, "Member 'UPyWidget_Common_NavigationBar_InfoBase::BtnClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_InfoBase, BtnPadding) == 0x0005C8, "Member 'UPyWidget_Common_NavigationBar_InfoBase::BtnPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_InfoBase, DefaultSelect) == 0x0005D8, "Member 'UPyWidget_Common_NavigationBar_InfoBase::DefaultSelect' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_InfoBase, NavLeftAction) == 0x0005E0, "Member 'UPyWidget_Common_NavigationBar_InfoBase::NavLeftAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_InfoBase, NavRightAction) == 0x0005E8, "Member 'UPyWidget_Common_NavigationBar_InfoBase::NavRightAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_InfoBase, AkEvent_OnNavButtonClicked) == 0x0005F0, "Member 'UPyWidget_Common_NavigationBar_InfoBase::AkEvent_OnNavButtonClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_InfoBase, AkEvent_OnNavButtonHovered) == 0x0005F8, "Member 'UPyWidget_Common_NavigationBar_InfoBase::AkEvent_OnNavButtonHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_InfoBase, OnNavClicked) == 0x000600, "Member 'UPyWidget_Common_NavigationBar_InfoBase::OnNavClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_InfoBase, OnNavHovered) == 0x000610, "Member 'UPyWidget_Common_NavigationBar_InfoBase::OnNavHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_InfoBase, OnNavCreated) == 0x000620, "Member 'UPyWidget_Common_NavigationBar_InfoBase::OnNavCreated' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_NavigationBar_InfoBase;
 
 // PythonClass PyWidget_Common_NavigationBar_Info.PyWidget_Common_NavigationBar_FirstInfo
-// 0x0000 (0x0630 - 0x0630)
+// 0x0000 (0x0638 - 0x0638)
 class UPyWidget_Common_NavigationBar_FirstInfo : public UPyWidget_Common_NavigationBar_InfoBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_NavigationBar_FirstInfo">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NavigationBar_FirstInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NavigationBar_FirstInfo")
 	}
 	static class UPyWidget_Common_NavigationBar_FirstInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_NavigationBar_FirstInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_NavigationBar_FirstInfo) == 0x000008, "Wrong alignment on UPyWidget_Common_NavigationBar_FirstInfo");
-static_assert(sizeof(UPyWidget_Common_NavigationBar_FirstInfo) == 0x000630, "Wrong size on UPyWidget_Common_NavigationBar_FirstInfo");
+DUMPER7_ASSERTS_UPyWidget_Common_NavigationBar_FirstInfo;
 
 // PythonClass PyWidget_Common_NavigationBar_Info.PyWidget_Common_NavigationBar_SecondInfo
-// 0x0008 (0x0638 - 0x0630)
+// 0x0008 (0x0640 - 0x0638)
 class UPyWidget_Common_NavigationBar_SecondInfo : public UPyWidget_Common_NavigationBar_InfoBase
 {
 public:
-	bool                                          UseLightBG;                                        // 0x0630(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          UseLightBG;                                        // 0x0638(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -93,16 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_NavigationBar_SecondInfo">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NavigationBar_SecondInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NavigationBar_SecondInfo")
 	}
 	static class UPyWidget_Common_NavigationBar_SecondInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_NavigationBar_SecondInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_NavigationBar_SecondInfo) == 0x000008, "Wrong alignment on UPyWidget_Common_NavigationBar_SecondInfo");
-static_assert(sizeof(UPyWidget_Common_NavigationBar_SecondInfo) == 0x000638, "Wrong size on UPyWidget_Common_NavigationBar_SecondInfo");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_SecondInfo, UseLightBG) == 0x000630, "Member 'UPyWidget_Common_NavigationBar_SecondInfo::UseLightBG' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_NavigationBar_SecondInfo;
 
 }
 

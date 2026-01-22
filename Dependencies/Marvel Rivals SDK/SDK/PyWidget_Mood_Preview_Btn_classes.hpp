@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mood_Preview_Btn.PyWidget_Mood_Preview_Btn
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Mood_Preview_Btn final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   BtnText;                                           // 0x05C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   BtnText;                                           // 0x05C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mood_Preview_Btn">();
+		STATIC_CLASS_IMPL("PyWidget_Mood_Preview_Btn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mood_Preview_Btn")
 	}
 	static class UPyWidget_Mood_Preview_Btn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mood_Preview_Btn>();
 	}
 };
-static_assert(alignof(UPyWidget_Mood_Preview_Btn) == 0x000008, "Wrong alignment on UPyWidget_Mood_Preview_Btn");
-static_assert(sizeof(UPyWidget_Mood_Preview_Btn) == 0x0005D8, "Wrong size on UPyWidget_Mood_Preview_Btn");
-static_assert(offsetof(UPyWidget_Mood_Preview_Btn, BtnText) == 0x0005C0, "Member 'UPyWidget_Mood_Preview_Btn::BtnText' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mood_Preview_Btn;
 
 }
 

@@ -25,11 +25,7 @@ public:
 	struct FGameplayEffectSpecStackHandle         SpecHandleApplied;                                 // 0x0008(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FActiveGameplayEffectHandle            ActiveHandle;                                      // 0x0010(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UltronBotCharacter_OnApplyGameplayEffectCallback) == 0x000008, "Wrong alignment on UltronBotCharacter_OnApplyGameplayEffectCallback");
-static_assert(sizeof(UltronBotCharacter_OnApplyGameplayEffectCallback) == 0x000018, "Wrong size on UltronBotCharacter_OnApplyGameplayEffectCallback");
-static_assert(offsetof(UltronBotCharacter_OnApplyGameplayEffectCallback, Source) == 0x000000, "Member 'UltronBotCharacter_OnApplyGameplayEffectCallback::Source' has a wrong offset!");
-static_assert(offsetof(UltronBotCharacter_OnApplyGameplayEffectCallback, SpecHandleApplied) == 0x000008, "Member 'UltronBotCharacter_OnApplyGameplayEffectCallback::SpecHandleApplied' has a wrong offset!");
-static_assert(offsetof(UltronBotCharacter_OnApplyGameplayEffectCallback, ActiveHandle) == 0x000010, "Member 'UltronBotCharacter_OnApplyGameplayEffectCallback::ActiveHandle' has a wrong offset!");
+DUMPER7_ASSERTS_UltronBotCharacter_OnApplyGameplayEffectCallback;
 
 // Function Hero_4019.UltronBotCharacter.OnCustomDamageModify
 // 0x0A10 (0x0A10 - 0x0000)
@@ -44,13 +40,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0A08(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A09[0x7];                                      // 0x0A09(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UltronBotCharacter_OnCustomDamageModify) == 0x000008, "Wrong alignment on UltronBotCharacter_OnCustomDamageModify");
-static_assert(sizeof(UltronBotCharacter_OnCustomDamageModify) == 0x000A10, "Wrong size on UltronBotCharacter_OnCustomDamageModify");
-static_assert(offsetof(UltronBotCharacter_OnCustomDamageModify, Spec) == 0x000000, "Member 'UltronBotCharacter_OnCustomDamageModify::Spec' has a wrong offset!");
-static_assert(offsetof(UltronBotCharacter_OnCustomDamageModify, InOutDamge) == 0x0009F0, "Member 'UltronBotCharacter_OnCustomDamageModify::InOutDamge' has a wrong offset!");
-static_assert(offsetof(UltronBotCharacter_OnCustomDamageModify, SourceASC) == 0x0009F8, "Member 'UltronBotCharacter_OnCustomDamageModify::SourceASC' has a wrong offset!");
-static_assert(offsetof(UltronBotCharacter_OnCustomDamageModify, TargetASC) == 0x000A00, "Member 'UltronBotCharacter_OnCustomDamageModify::TargetASC' has a wrong offset!");
-static_assert(offsetof(UltronBotCharacter_OnCustomDamageModify, ReturnValue) == 0x000A08, "Member 'UltronBotCharacter_OnCustomDamageModify::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UltronBotCharacter_OnCustomDamageModify;
 
 }
 

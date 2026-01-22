@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelTeamState">();
+		STATIC_CLASS_IMPL("PyMarvelTeamState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelTeamState")
 	}
 	static class APyMarvelTeamState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelTeamState>();
 	}
 };
-static_assert(alignof(APyMarvelTeamState) == 0x000010, "Wrong alignment on APyMarvelTeamState");
-static_assert(sizeof(APyMarvelTeamState) == 0x0006F0, "Wrong size on APyMarvelTeamState");
-static_assert(offsetof(APyMarvelTeamState, VoteComp) == 0x0006E0, "Member 'APyMarvelTeamState::VoteComp' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelTeamState;
 
 }
 

@@ -18,6 +18,18 @@
 namespace SDK
 {
 
+// ScriptStruct Hero_1055.HeroSelectInfo
+// 0x0058 (0x0058 - 0x0000)
+struct FHeroSelectInfo final
+{
+public:
+	int32                                         HeroID;                                            // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllSkin;                                          // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TSet<int32>                                   SkinID;                                            // 0x0008(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FHeroSelectInfo;
+
 // ScriptStruct Hero_1055.StripeEffectHandle
 // 0x0030 (0x0030 - 0x0000)
 struct FStripeEffectHandle final
@@ -26,10 +38,7 @@ public:
 	struct FMeshOverlayMaterialHandle             OverlayMaterialHandle;                             // 0x0000(0x0028)(NativeAccessSpecifierPublic)
 	struct FStencilModifier_EnableCustomDepth     StencilModifier;                                   // 0x0028(0x0008)(NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FStripeEffectHandle) == 0x000008, "Wrong alignment on FStripeEffectHandle");
-static_assert(sizeof(FStripeEffectHandle) == 0x000030, "Wrong size on FStripeEffectHandle");
-static_assert(offsetof(FStripeEffectHandle, OverlayMaterialHandle) == 0x000000, "Member 'FStripeEffectHandle::OverlayMaterialHandle' has a wrong offset!");
-static_assert(offsetof(FStripeEffectHandle, StencilModifier) == 0x000028, "Member 'FStripeEffectHandle::StencilModifier' has a wrong offset!");
+DUMPER7_ASSERTS_FStripeEffectHandle;
 
 // ScriptStruct Hero_1055.CueTransInfo_10553101
 // 0x0010 (0x0018 - 0x0008)
@@ -38,9 +47,7 @@ struct FCueTransInfo_10553101 final : public FGameplayCue_TransformInfo_Base
 public:
 	TArray<struct FVector2D>                      AngleRanges;                                       // 0x0008(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FCueTransInfo_10553101) == 0x000008, "Wrong alignment on FCueTransInfo_10553101");
-static_assert(sizeof(FCueTransInfo_10553101) == 0x000018, "Wrong size on FCueTransInfo_10553101");
-static_assert(offsetof(FCueTransInfo_10553101, AngleRanges) == 0x000008, "Member 'FCueTransInfo_10553101::AngleRanges' has a wrong offset!");
+DUMPER7_ASSERTS_FCueTransInfo_10553101;
 
 // ScriptStruct Hero_1055.CueTransformInfo_HitNiagaraTransform_105561
 // 0x0028 (0x0030 - 0x0008)
@@ -51,10 +58,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                RelativeLocation;                                  // 0x0018(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FCueTransformInfo_HitNiagaraTransform_105561) == 0x000008, "Wrong alignment on FCueTransformInfo_HitNiagaraTransform_105561");
-static_assert(sizeof(FCueTransformInfo_HitNiagaraTransform_105561) == 0x000030, "Wrong size on FCueTransformInfo_HitNiagaraTransform_105561");
-static_assert(offsetof(FCueTransformInfo_HitNiagaraTransform_105561, SocketName) == 0x000008, "Member 'FCueTransformInfo_HitNiagaraTransform_105561::SocketName' has a wrong offset!");
-static_assert(offsetof(FCueTransformInfo_HitNiagaraTransform_105561, RelativeLocation) == 0x000018, "Member 'FCueTransformInfo_HitNiagaraTransform_105561::RelativeLocation' has a wrong offset!");
+DUMPER7_ASSERTS_FCueTransformInfo_HitNiagaraTransform_105561;
 
 // ScriptStruct Hero_1055.TickSampleRopeBone
 // 0x0008 (0x0038 - 0x0030)
@@ -63,24 +67,18 @@ struct FTickSampleRopeBone final : public FTickFunction
 public:
 	class ACue_Ability_10555101*                  Target;                                            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTickSampleRopeBone) == 0x000008, "Wrong alignment on FTickSampleRopeBone");
-static_assert(sizeof(FTickSampleRopeBone) == 0x000038, "Wrong size on FTickSampleRopeBone");
-static_assert(offsetof(FTickSampleRopeBone, Target) == 0x000030, "Member 'FTickSampleRopeBone::Target' has a wrong offset!");
+DUMPER7_ASSERTS_FTickSampleRopeBone;
 
 // ScriptStruct Hero_1055.CueTransformInfo_Scope_10555201
-// 0x1668 (0x1670 - 0x0008)
+// 0x19B8 (0x19C0 - 0x0008)
 struct FCueTransformInfo_Scope_10555201 final : public FGameplayCue_TransformInfo_Base
 {
 public:
 	float                                         LimitDistance;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LimitAngle;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x0010(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x0010(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCueTransformInfo_Scope_10555201) == 0x000010, "Wrong alignment on FCueTransformInfo_Scope_10555201");
-static_assert(sizeof(FCueTransformInfo_Scope_10555201) == 0x001670, "Wrong size on FCueTransformInfo_Scope_10555201");
-static_assert(offsetof(FCueTransformInfo_Scope_10555201, LimitDistance) == 0x000008, "Member 'FCueTransformInfo_Scope_10555201::LimitDistance' has a wrong offset!");
-static_assert(offsetof(FCueTransformInfo_Scope_10555201, LimitAngle) == 0x00000C, "Member 'FCueTransformInfo_Scope_10555201::LimitAngle' has a wrong offset!");
-static_assert(offsetof(FCueTransformInfo_Scope_10555201, TraceContext) == 0x000010, "Member 'FCueTransformInfo_Scope_10555201::TraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_FCueTransformInfo_Scope_10555201;
 
 }
 

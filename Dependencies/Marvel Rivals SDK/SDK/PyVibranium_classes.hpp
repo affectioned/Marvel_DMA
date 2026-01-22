@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyVibranium">();
+		STATIC_CLASS_IMPL("PyVibranium")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyVibranium")
 	}
 	static class APyVibranium* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyVibranium>();
 	}
 };
-static_assert(alignof(APyVibranium) == 0x000010, "Wrong alignment on APyVibranium");
-static_assert(sizeof(APyVibranium) == 0x000700, "Wrong size on APyVibranium");
-static_assert(offsetof(APyVibranium, RotateSpeed) == 0x0006E0, "Member 'APyVibranium::RotateSpeed' has a wrong offset!");
-static_assert(offsetof(APyVibranium, DefaultScene) == 0x0006E8, "Member 'APyVibranium::DefaultScene' has a wrong offset!");
-static_assert(offsetof(APyVibranium, RotationRoot) == 0x0006F0, "Member 'APyVibranium::RotationRoot' has a wrong offset!");
-static_assert(offsetof(APyVibranium, LevelOptimization) == 0x0006F8, "Member 'APyVibranium::LevelOptimization' has a wrong offset!");
+DUMPER7_ASSERTS_APyVibranium;
 
 }
 

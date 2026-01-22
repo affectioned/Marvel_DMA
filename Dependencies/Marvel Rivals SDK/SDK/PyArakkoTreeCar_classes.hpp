@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "MarvelLevel_structs.hpp"
 #include "PyPayloadV2_classes.hpp"
 #include "Marvel_structs.hpp"
 
@@ -42,21 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyArakkoTreeCar">();
+		STATIC_CLASS_IMPL("PyArakkoTreeCar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyArakkoTreeCar")
 	}
 	static class APyArakkoTreeCar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyArakkoTreeCar>();
 	}
 };
-static_assert(alignof(APyArakkoTreeCar) == 0x000010, "Wrong alignment on APyArakkoTreeCar");
-static_assert(sizeof(APyArakkoTreeCar) == 0x000BA0, "Wrong size on APyArakkoTreeCar");
-static_assert(offsetof(APyArakkoTreeCar, CleanAnimMontage) == 0x000B68, "Member 'APyArakkoTreeCar::CleanAnimMontage' has a wrong offset!");
-static_assert(offsetof(APyArakkoTreeCar, CleanAnimMontageBlendArgs) == 0x000B70, "Member 'APyArakkoTreeCar::CleanAnimMontageBlendArgs' has a wrong offset!");
-static_assert(offsetof(APyArakkoTreeCar, CleanAnimInfo) == 0x000B80, "Member 'APyArakkoTreeCar::CleanAnimInfo' has a wrong offset!");
-static_assert(offsetof(APyArakkoTreeCar, CleanAnimPlayRate) == 0x000B88, "Member 'APyArakkoTreeCar::CleanAnimPlayRate' has a wrong offset!");
-static_assert(offsetof(APyArakkoTreeCar, IntervalSecondsForUpdateMontage) == 0x000B8C, "Member 'APyArakkoTreeCar::IntervalSecondsForUpdateMontage' has a wrong offset!");
-static_assert(offsetof(APyArakkoTreeCar, CarElfSkelMeshCompTag) == 0x000B90, "Member 'APyArakkoTreeCar::CarElfSkelMeshCompTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyArakkoTreeCar;
 
 // PythonClass PyArakkoTreeCar.PyArakkoTreeCarElfAnimInstance
 // 0x0010 (0x0460 - 0x0450)
@@ -75,17 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyArakkoTreeCarElfAnimInstance">();
+		STATIC_CLASS_IMPL("PyArakkoTreeCarElfAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyArakkoTreeCarElfAnimInstance")
 	}
 	static class UPyArakkoTreeCarElfAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyArakkoTreeCarElfAnimInstance>();
 	}
 };
-static_assert(alignof(UPyArakkoTreeCarElfAnimInstance) == 0x000010, "Wrong alignment on UPyArakkoTreeCarElfAnimInstance");
-static_assert(sizeof(UPyArakkoTreeCarElfAnimInstance) == 0x000460, "Wrong size on UPyArakkoTreeCarElfAnimInstance");
-static_assert(offsetof(UPyArakkoTreeCarElfAnimInstance, MoveState) == 0x000450, "Member 'UPyArakkoTreeCarElfAnimInstance::MoveState' has a wrong offset!");
-static_assert(offsetof(UPyArakkoTreeCarElfAnimInstance, CleanAnimMontage) == 0x000458, "Member 'UPyArakkoTreeCarElfAnimInstance::CleanAnimMontage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyArakkoTreeCarElfAnimInstance;
 
 }
 

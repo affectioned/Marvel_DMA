@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LobbyCurrency.PyWidget_LobbyCurrency
-// 0x00A8 (0x0668 - 0x05C0)
+// 0x00A8 (0x0670 - 0x05C8)
 class UPyWidget_LobbyCurrency : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGuideTipsStyle>                LatticeHoverGuideTips;                             // 0x05C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                CoinHoverGuideTips;                                // 0x05D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_BattlePass_CurrencyText> NumWidget;                                  // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsNeedCurrencyListTips;                            // 0x05E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5E9[0x7];                                      // 0x05E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FString, class UMaterialInstance*> CurrencySweepMaterialList;                         // 0x05F0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Hovered_Text_Color;                                // 0x0640(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            UnHovered_Text_Color;                              // 0x0654(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuideTipsStyle>                LatticeHoverGuideTips;                             // 0x05C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                CoinHoverGuideTips;                                // 0x05D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_BattlePass_CurrencyText> NumWidget;                                  // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsNeedCurrencyListTips;                            // 0x05F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5F1[0x7];                                      // 0x05F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FString, class UMaterialInstance*> CurrencySweepMaterialList;                         // 0x05F8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Hovered_Text_Color;                                // 0x0648(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            UnHovered_Text_Color;                              // 0x065C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnCascadingVisibleChanged(bool Visible);
@@ -42,34 +42,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LobbyCurrency">();
+		STATIC_CLASS_IMPL("PyWidget_LobbyCurrency")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LobbyCurrency")
 	}
 	static class UPyWidget_LobbyCurrency* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LobbyCurrency>();
 	}
 };
-static_assert(alignof(UPyWidget_LobbyCurrency) == 0x000008, "Wrong alignment on UPyWidget_LobbyCurrency");
-static_assert(sizeof(UPyWidget_LobbyCurrency) == 0x000668, "Wrong size on UPyWidget_LobbyCurrency");
-static_assert(offsetof(UPyWidget_LobbyCurrency, LatticeHoverGuideTips) == 0x0005C0, "Member 'UPyWidget_LobbyCurrency::LatticeHoverGuideTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyCurrency, CoinHoverGuideTips) == 0x0005D0, "Member 'UPyWidget_LobbyCurrency::CoinHoverGuideTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyCurrency, NumWidget) == 0x0005E0, "Member 'UPyWidget_LobbyCurrency::NumWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyCurrency, IsNeedCurrencyListTips) == 0x0005E8, "Member 'UPyWidget_LobbyCurrency::IsNeedCurrencyListTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyCurrency, CurrencySweepMaterialList) == 0x0005F0, "Member 'UPyWidget_LobbyCurrency::CurrencySweepMaterialList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyCurrency, Hovered_Text_Color) == 0x000640, "Member 'UPyWidget_LobbyCurrency::Hovered_Text_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyCurrency, UnHovered_Text_Color) == 0x000654, "Member 'UPyWidget_LobbyCurrency::UnHovered_Text_Color' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LobbyCurrency;
 
 // PythonClass PyWidget_LobbyCurrency.PyWidget_Currency_Tips_Item
-// 0x0060 (0x0620 - 0x05C0)
+// 0x0060 (0x0628 - 0x05C8)
 class UPyWidget_Currency_Tips_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            Hovered_Text_Color;                                // 0x05BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            UnHovered_Text_Color;                              // 0x05D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TimeNormalColor;                                   // 0x05E4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TimeExpiringColor;                                 // 0x05F8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TimeExpiredColor;                                  // 0x060C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            Hovered_Text_Color;                                // 0x05C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            UnHovered_Text_Color;                              // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeNormalColor;                                   // 0x05EC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeExpiringColor;                                 // 0x0600(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeExpiredColor;                                  // 0x0614(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -77,28 +73,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Currency_Tips_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Currency_Tips_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Currency_Tips_Item")
 	}
 	static class UPyWidget_Currency_Tips_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Currency_Tips_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Currency_Tips_Item) == 0x000008, "Wrong alignment on UPyWidget_Currency_Tips_Item");
-static_assert(sizeof(UPyWidget_Currency_Tips_Item) == 0x000620, "Wrong size on UPyWidget_Currency_Tips_Item");
-static_assert(offsetof(UPyWidget_Currency_Tips_Item, Hovered_Text_Color) == 0x0005BC, "Member 'UPyWidget_Currency_Tips_Item::Hovered_Text_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Currency_Tips_Item, UnHovered_Text_Color) == 0x0005D0, "Member 'UPyWidget_Currency_Tips_Item::UnHovered_Text_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Currency_Tips_Item, TimeNormalColor) == 0x0005E4, "Member 'UPyWidget_Currency_Tips_Item::TimeNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Currency_Tips_Item, TimeExpiringColor) == 0x0005F8, "Member 'UPyWidget_Currency_Tips_Item::TimeExpiringColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Currency_Tips_Item, TimeExpiredColor) == 0x00060C, "Member 'UPyWidget_Currency_Tips_Item::TimeExpiredColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Currency_Tips_Item;
 
 // PythonClass PyWidget_LobbyCurrency.PyWidget_Currency_Tips
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Currency_Tips final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                Currency_Item;                                     // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                Currency_Item;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -106,16 +100,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Currency_Tips">();
+		STATIC_CLASS_IMPL("PyWidget_Currency_Tips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Currency_Tips")
 	}
 	static class UPyWidget_Currency_Tips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Currency_Tips>();
 	}
 };
-static_assert(alignof(UPyWidget_Currency_Tips) == 0x000008, "Wrong alignment on UPyWidget_Currency_Tips");
-static_assert(sizeof(UPyWidget_Currency_Tips) == 0x0005C8, "Wrong size on UPyWidget_Currency_Tips");
-static_assert(offsetof(UPyWidget_Currency_Tips, Currency_Item) == 0x0005C0, "Member 'UPyWidget_Currency_Tips::Currency_Item' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Currency_Tips;
 
 }
 

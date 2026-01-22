@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SkinCustomization_GroupContainer.PyWidget_SkinCustomization_GroupContainer
-// 0x0058 (0x0650 - 0x05F8)
+// 0x0058 (0x0658 - 0x0600)
 class UPyWidget_SkinCustomization_GroupContainer final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           GamePad_Esc;                                       // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedBuyBtn;                                        // 0x0600(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_601[0x7];                                      // 0x0601(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                GroupWidget;                                       // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& ItemID)> OnItemSelected;                      // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPriceClicked;                                    // 0x0620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGeometry& TargetGeometry)> OnRefreshPropConfirmPosition; // 0x0630(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnNeedScrollToBottom;                              // 0x0640(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamePad_Esc;                                       // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedBuyBtn;                                        // 0x0608(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_609[0x7];                                      // 0x0609(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                GroupWidget;                                       // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& ItemID)> OnItemSelected;                      // 0x0618(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPriceClicked;                                    // 0x0628(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGeometry& TargetGeometry)> OnRefreshPropConfirmPosition; // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnNeedScrollToBottom;                              // 0x0648(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SkinCustomization_GroupContainer">();
+		STATIC_CLASS_IMPL("PyWidget_SkinCustomization_GroupContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SkinCustomization_GroupContainer")
 	}
 	static class UPyWidget_SkinCustomization_GroupContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SkinCustomization_GroupContainer>();
 	}
 };
-static_assert(alignof(UPyWidget_SkinCustomization_GroupContainer) == 0x000008, "Wrong alignment on UPyWidget_SkinCustomization_GroupContainer");
-static_assert(sizeof(UPyWidget_SkinCustomization_GroupContainer) == 0x000650, "Wrong size on UPyWidget_SkinCustomization_GroupContainer");
-static_assert(offsetof(UPyWidget_SkinCustomization_GroupContainer, GamePad_Esc) == 0x0005F8, "Member 'UPyWidget_SkinCustomization_GroupContainer::GamePad_Esc' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SkinCustomization_GroupContainer, NeedBuyBtn) == 0x000600, "Member 'UPyWidget_SkinCustomization_GroupContainer::NeedBuyBtn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SkinCustomization_GroupContainer, GroupWidget) == 0x000608, "Member 'UPyWidget_SkinCustomization_GroupContainer::GroupWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SkinCustomization_GroupContainer, OnItemSelected) == 0x000610, "Member 'UPyWidget_SkinCustomization_GroupContainer::OnItemSelected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SkinCustomization_GroupContainer, OnPriceClicked) == 0x000620, "Member 'UPyWidget_SkinCustomization_GroupContainer::OnPriceClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SkinCustomization_GroupContainer, OnRefreshPropConfirmPosition) == 0x000630, "Member 'UPyWidget_SkinCustomization_GroupContainer::OnRefreshPropConfirmPosition' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SkinCustomization_GroupContainer, OnNeedScrollToBottom) == 0x000640, "Member 'UPyWidget_SkinCustomization_GroupContainer::OnNeedScrollToBottom' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SkinCustomization_GroupContainer;
 
 }
 

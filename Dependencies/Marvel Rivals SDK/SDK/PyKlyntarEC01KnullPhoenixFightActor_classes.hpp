@@ -63,44 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKlyntarEC01KnullPhoenixFightActor">();
+		STATIC_CLASS_IMPL("PyKlyntarEC01KnullPhoenixFightActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKlyntarEC01KnullPhoenixFightActor")
 	}
 	static class APyKlyntarEC01KnullPhoenixFightActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKlyntarEC01KnullPhoenixFightActor>();
 	}
 };
-static_assert(alignof(APyKlyntarEC01KnullPhoenixFightActor) == 0x000010, "Wrong alignment on APyKlyntarEC01KnullPhoenixFightActor");
-static_assert(sizeof(APyKlyntarEC01KnullPhoenixFightActor) == 0x000820, "Wrong size on APyKlyntarEC01KnullPhoenixFightActor");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, FireBall_Trajectory_01) == 0x000720, "Member 'APyKlyntarEC01KnullPhoenixFightActor::FireBall_Trajectory_01' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, FireBall_Trajectory_02) == 0x000728, "Member 'APyKlyntarEC01KnullPhoenixFightActor::FireBall_Trajectory_02' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, FireBall_Trajectory_03) == 0x000730, "Member 'APyKlyntarEC01KnullPhoenixFightActor::FireBall_Trajectory_03' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, FireBall_LifeSeconds_Base) == 0x000738, "Member 'APyKlyntarEC01KnullPhoenixFightActor::FireBall_LifeSeconds_Base' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, FireBall_LifeSeconds_Jitter) == 0x00073C, "Member 'APyKlyntarEC01KnullPhoenixFightActor::FireBall_LifeSeconds_Jitter' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, FireBall_Default_Speed) == 0x000740, "Member 'APyKlyntarEC01KnullPhoenixFightActor::FireBall_Default_Speed' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, FireBall_To_Spherical_Surface_Probability) == 0x000744, "Member 'APyKlyntarEC01KnullPhoenixFightActor::FireBall_To_Spherical_Surface_Probability' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Shield_Trajectory_01) == 0x000748, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Shield_Trajectory_01' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Shield_ExpansionTimeSeconds) == 0x000750, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Shield_ExpansionTimeSeconds' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Shield_ExpansionTimeSeconds_Jitter) == 0x000754, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Shield_ExpansionTimeSeconds_Jitter' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Shield_Size_Range) == 0x000758, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Shield_Size_Range' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Shield_LifeTimeSecondsAfterBoom) == 0x000768, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Shield_LifeTimeSecondsAfterBoom' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Shield_Root_SplineTag) == 0x00076C, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Shield_Root_SplineTag' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Shield_Root_Spherical_Surface_SplineTag) == 0x000778, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Shield_Root_Spherical_Surface_SplineTag' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Boom_01) == 0x000788, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Boom_01' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Boom_02) == 0x000790, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Boom_02' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Boom_03) == 0x000798, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Boom_03' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Boom_AudioEvent_01) == 0x0007A0, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Boom_AudioEvent_01' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Boom_WithShield_SplineTag) == 0x0007A8, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Boom_WithShield_SplineTag' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Boom_NoShield_SplineTag) == 0x0007B4, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Boom_NoShield_SplineTag' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Boom_On_Spherical_Surface_Pitch_Range) == 0x0007C0, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Boom_On_Spherical_Surface_Pitch_Range' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, AnimUpdateInterval) == 0x0007D8, "Member 'APyKlyntarEC01KnullPhoenixFightActor::AnimUpdateInterval' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, UseLevelOptimizedTick) == 0x0007DC, "Member 'APyKlyntarEC01KnullPhoenixFightActor::UseLevelOptimizedTick' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, EnableDebugDraws) == 0x0007DD, "Member 'APyKlyntarEC01KnullPhoenixFightActor::EnableDebugDraws' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Phoneix_Fly_SplineTag) == 0x0007E0, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Phoneix_Fly_SplineTag' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Phoneix_SKMeshTag) == 0x0007EC, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Phoneix_SKMeshTag' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Phoneix_MoveCompTag) == 0x0007F8, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Phoneix_MoveCompTag' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Phoneix_Roar_AudioEvent) == 0x000808, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Phoneix_Roar_AudioEvent' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01KnullPhoenixFightActor, Phoenix_Appearances_Smooth_TimeSeconds) == 0x000810, "Member 'APyKlyntarEC01KnullPhoenixFightActor::Phoenix_Appearances_Smooth_TimeSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_APyKlyntarEC01KnullPhoenixFightActor;
 
 }
 

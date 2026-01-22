@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TraceComponent_10555201_BP.TraceComponent_10555201_BP_C
-// 0x0010 (0x2220 - 0x2210)
+// 0x0010 (0x2610 - 0x2600)
 class UTraceComponent_10555201_BP_C final : public UTraceComponent_10555201
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2210(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2600(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_TraceComponent_10555201_BP(int32 EntryPoint);
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TraceComponent_10555201_BP_C">();
+		BP_STATIC_CLASS_IMPL("TraceComponent_10555201_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TraceComponent_10555201_BP_C")
 	}
 	static class UTraceComponent_10555201_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTraceComponent_10555201_BP_C>();
 	}
 };
-static_assert(alignof(UTraceComponent_10555201_BP_C) == 0x000010, "Wrong alignment on UTraceComponent_10555201_BP_C");
-static_assert(sizeof(UTraceComponent_10555201_BP_C) == 0x002220, "Wrong size on UTraceComponent_10555201_BP_C");
-static_assert(offsetof(UTraceComponent_10555201_BP_C, UberGraphFrame) == 0x002210, "Member 'UTraceComponent_10555201_BP_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UTraceComponent_10555201_BP_C;
 
 }
 

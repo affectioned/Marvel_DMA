@@ -23,15 +23,18 @@ class UAIAbilityActivation_LunaSnowSwitchState_C final : public UPyAIAbilityActi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_LunaSnowSwitchState_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_LunaSnowSwitchState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_LunaSnowSwitchState_C")
 	}
 	static class UAIAbilityActivation_LunaSnowSwitchState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_LunaSnowSwitchState_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_LunaSnowSwitchState_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_LunaSnowSwitchState_C");
-static_assert(sizeof(UAIAbilityActivation_LunaSnowSwitchState_C) == 0x000058, "Wrong size on UAIAbilityActivation_LunaSnowSwitchState_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_LunaSnowSwitchState_C;
 
 }
 

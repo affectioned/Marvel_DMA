@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAITeamManagerHelper">();
+		STATIC_CLASS_IMPL("PyAITeamManagerHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAITeamManagerHelper")
 	}
 	static class UPyAITeamManagerHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAITeamManagerHelper>();
 	}
 };
-static_assert(alignof(UPyAITeamManagerHelper) == 0x000008, "Wrong alignment on UPyAITeamManagerHelper");
-static_assert(sizeof(UPyAITeamManagerHelper) == 0x000030, "Wrong size on UPyAITeamManagerHelper");
+DUMPER7_ASSERTS_UPyAITeamManagerHelper;
 
 // PythonClass PyAITeamManager.PyAITeamManager
 // 0x0020 (0x0980 - 0x0960)
@@ -59,7 +62,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAITeamManager">();
+		STATIC_CLASS_IMPL("PyAITeamManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAITeamManager")
 	}
 	static class APyAITeamManager* GetDefaultObj()
 	{
@@ -67,11 +74,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyAITeamManager) == 0x000010, "Wrong alignment on APyAITeamManager");
-static_assert(sizeof(APyAITeamManager) == 0x000980, "Wrong size on APyAITeamManager");
-static_assert(offsetof(APyAITeamManager, TeamInfoUpdateInterval) == 0x000960, "Member 'APyAITeamManager::TeamInfoUpdateInterval' has a wrong offset!");
-static_assert(offsetof(APyAITeamManager, TeamDataClass) == 0x000968, "Member 'APyAITeamManager::TeamDataClass' has a wrong offset!");
-static_assert(offsetof(APyAITeamManager, TeamFormationMgr) == 0x000970, "Member 'APyAITeamManager::TeamFormationMgr' has a wrong offset!");
+DUMPER7_ASSERTS_APyAITeamManager;
 
 }
 

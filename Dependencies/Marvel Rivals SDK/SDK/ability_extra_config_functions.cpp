@@ -17,31 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction ability_extra_config.PyActivationExtraConfig_SubSkillConfig.GetConfigName
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
-
-class FString UPyActivationExtraConfig_SubSkillConfig::GetConfigName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyActivationExtraConfig_SubSkillConfig", "GetConfigName");
-
-	Params::PyActivationExtraConfig_SubSkillConfig_GetConfigName Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // PythonFunction ability_extra_config.PyActivationExtraConfig_ThroughEnemyConfig.InitExtraConfig
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -105,6 +80,31 @@ class FString UPyActivationExtraConfig_SkillTimeTriggerConfig::GetConfigName()
 		Func = Class->GetFunction("PyActivationExtraConfig_SkillTimeTriggerConfig", "GetConfigName");
 
 	Params::PyActivationExtraConfig_SkillTimeTriggerConfig_GetConfigName Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction ability_extra_config.PyActivationExtraConfig_SubSkillConfig.GetConfigName
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+
+class FString UPyActivationExtraConfig_SubSkillConfig::GetConfigName()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyActivationExtraConfig_SubSkillConfig", "GetConfigName");
+
+	Params::PyActivationExtraConfig_SubSkillConfig_GetConfigName Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

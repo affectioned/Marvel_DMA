@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyUpdateEscortState">();
+		STATIC_CLASS_IMPL("BTS_PyUpdateEscortState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyUpdateEscortState")
 	}
 	static class UBTS_PyUpdateEscortState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyUpdateEscortState>();
 	}
 };
-static_assert(alignof(UBTS_PyUpdateEscortState) == 0x000008, "Wrong alignment on UBTS_PyUpdateEscortState");
-static_assert(sizeof(UBTS_PyUpdateEscortState) == 0x0001D0, "Wrong size on UBTS_PyUpdateEscortState");
+DUMPER7_ASSERTS_UBTS_PyUpdateEscortState;
 
 }
 

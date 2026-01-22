@@ -24,9 +24,7 @@ struct PyHalloweenLootManager_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenLootManager_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyHalloweenLootManager_ReceiveEndPlay");
-static_assert(sizeof(PyHalloweenLootManager_ReceiveEndPlay) == 0x000001, "Wrong size on PyHalloweenLootManager_ReceiveEndPlay");
-static_assert(offsetof(PyHalloweenLootManager_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyHalloweenLootManager_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenLootManager_ReceiveEndPlay;
 
 // PythonFunction PyHalloweenLootManager.PyHalloweenLootManager.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -35,9 +33,7 @@ struct PyHalloweenLootManager_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenLootManager_ReceiveTick) == 0x000004, "Wrong alignment on PyHalloweenLootManager_ReceiveTick");
-static_assert(sizeof(PyHalloweenLootManager_ReceiveTick) == 0x000004, "Wrong size on PyHalloweenLootManager_ReceiveTick");
-static_assert(offsetof(PyHalloweenLootManager_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyHalloweenLootManager_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenLootManager_ReceiveTick;
 
 // PythonFunction PyHalloweenLootManager.PyHalloweenLootManager.K2_PreReplicatedRemove
 // 0x0050 (0x0050 - 0x0000)
@@ -48,10 +44,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRepMarvelLootMovement                 LootMovement;                                      // 0x0008(0x0048)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(PyHalloweenLootManager_K2_PreReplicatedRemove) == 0x000008, "Wrong alignment on PyHalloweenLootManager_K2_PreReplicatedRemove");
-static_assert(sizeof(PyHalloweenLootManager_K2_PreReplicatedRemove) == 0x000050, "Wrong size on PyHalloweenLootManager_K2_PreReplicatedRemove");
-static_assert(offsetof(PyHalloweenLootManager_K2_PreReplicatedRemove, LootID) == 0x000000, "Member 'PyHalloweenLootManager_K2_PreReplicatedRemove::LootID' has a wrong offset!");
-static_assert(offsetof(PyHalloweenLootManager_K2_PreReplicatedRemove, LootMovement) == 0x000008, "Member 'PyHalloweenLootManager_K2_PreReplicatedRemove::LootMovement' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenLootManager_K2_PreReplicatedRemove;
 
 // PythonFunction PyHalloweenLootManager.PyHalloweenLootManager.K2_PostReplicatedAdd
 // 0x0050 (0x0050 - 0x0000)
@@ -62,10 +55,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRepMarvelLootMovement                 LootMovement;                                      // 0x0008(0x0048)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(PyHalloweenLootManager_K2_PostReplicatedAdd) == 0x000008, "Wrong alignment on PyHalloweenLootManager_K2_PostReplicatedAdd");
-static_assert(sizeof(PyHalloweenLootManager_K2_PostReplicatedAdd) == 0x000050, "Wrong size on PyHalloweenLootManager_K2_PostReplicatedAdd");
-static_assert(offsetof(PyHalloweenLootManager_K2_PostReplicatedAdd, LootID) == 0x000000, "Member 'PyHalloweenLootManager_K2_PostReplicatedAdd::LootID' has a wrong offset!");
-static_assert(offsetof(PyHalloweenLootManager_K2_PostReplicatedAdd, LootMovement) == 0x000008, "Member 'PyHalloweenLootManager_K2_PostReplicatedAdd::LootMovement' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenLootManager_K2_PostReplicatedAdd;
 
 // PythonFunction PyHalloweenLootManager.PyHalloweenLootManager.K2_PostReplicatedChange
 // 0x0050 (0x0050 - 0x0000)
@@ -76,10 +66,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRepMarvelLootMovement                 LootMovement;                                      // 0x0008(0x0048)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(PyHalloweenLootManager_K2_PostReplicatedChange) == 0x000008, "Wrong alignment on PyHalloweenLootManager_K2_PostReplicatedChange");
-static_assert(sizeof(PyHalloweenLootManager_K2_PostReplicatedChange) == 0x000050, "Wrong size on PyHalloweenLootManager_K2_PostReplicatedChange");
-static_assert(offsetof(PyHalloweenLootManager_K2_PostReplicatedChange, LootID) == 0x000000, "Member 'PyHalloweenLootManager_K2_PostReplicatedChange::LootID' has a wrong offset!");
-static_assert(offsetof(PyHalloweenLootManager_K2_PostReplicatedChange, LootMovement) == 0x000008, "Member 'PyHalloweenLootManager_K2_PostReplicatedChange::LootMovement' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenLootManager_K2_PostReplicatedChange;
 
 }
 

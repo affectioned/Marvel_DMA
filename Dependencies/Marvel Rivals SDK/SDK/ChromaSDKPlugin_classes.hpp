@@ -308,15 +308,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChromaSDKPluginBPLibrary">();
+		STATIC_CLASS_IMPL("ChromaSDKPluginBPLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChromaSDKPluginBPLibrary")
 	}
 	static class UChromaSDKPluginBPLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChromaSDKPluginBPLibrary>();
 	}
 };
-static_assert(alignof(UChromaSDKPluginBPLibrary) == 0x000008, "Wrong alignment on UChromaSDKPluginBPLibrary");
-static_assert(sizeof(UChromaSDKPluginBPLibrary) == 0x000030, "Wrong size on UChromaSDKPluginBPLibrary");
+DUMPER7_ASSERTS_UChromaSDKPluginBPLibrary;
 
 // Class ChromaSDKPlugin.MarvelChromaLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -333,15 +336,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelChromaLibrary">();
+		STATIC_CLASS_IMPL("MarvelChromaLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelChromaLibrary")
 	}
 	static class UMarvelChromaLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelChromaLibrary>();
 	}
 };
-static_assert(alignof(UMarvelChromaLibrary) == 0x000008, "Wrong alignment on UMarvelChromaLibrary");
-static_assert(sizeof(UMarvelChromaLibrary) == 0x000030, "Wrong size on UMarvelChromaLibrary");
+DUMPER7_ASSERTS_UMarvelChromaLibrary;
 
 }
 

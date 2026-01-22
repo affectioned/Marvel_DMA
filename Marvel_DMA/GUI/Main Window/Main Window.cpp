@@ -230,7 +230,7 @@ bool MainWindow::PostFrame()
 	}
 
 	// Present
-	HRESULT hr = g_pSwapChain->Present(0, 0);   // Present with vsync
+	HRESULT hr = g_pSwapChain->Present(1, 0);   // Present with vsync
 
 	return true;
 }

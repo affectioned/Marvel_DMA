@@ -15,7 +15,7 @@ namespace SDK
 {
 
 // PythonEnum const_activity151.EGalactaAnimation
-// NumValues: 0x0008
+// NumValues: 0x0009
 enum class EGalactaAnimation : uint8
 {
 	Idle                                     = 0,
@@ -25,11 +25,12 @@ enum class EGalactaAnimation : uint8
 	OpeningRemarks                           = 4,
 	Personality1                             = 5,
 	Personality2                             = 6,
-	EGalactaAnimation_MAX                    = 7,
+	MakeHearth                               = 7,
+	EGalactaAnimation_MAX                    = 8,
 };
 
 // PythonEnum const_activity151.EGalactaCmdChat
-// NumValues: 0x000F
+// NumValues: 0x0010
 enum class EGalactaCmdChat : uint8
 {
 	Opening                                  = 0,
@@ -46,7 +47,8 @@ enum class EGalactaCmdChat : uint8
 	Activity148                              = 11,
 	Activity149                              = 12,
 	Activity150                              = 13,
-	EGalactaCmdChat_MAX                      = 14,
+	Heart                                    = 14,
+	EGalactaCmdChat_MAX                      = 15,
 };
 
 // PythonStruct const_activity151.ChatContent
@@ -58,11 +60,7 @@ public:
 	class UAkAudioEvent*                          chat_audio;                                        // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGalactaAnimation                             chat_animation;                                    // 0x0020(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChatContent) == 0x000008, "Wrong alignment on FChatContent");
-static_assert(sizeof(FChatContent) == 0x000028, "Wrong size on FChatContent");
-static_assert(offsetof(FChatContent, chat_text) == 0x000000, "Member 'FChatContent::chat_text' has a wrong offset!");
-static_assert(offsetof(FChatContent, chat_audio) == 0x000018, "Member 'FChatContent::chat_audio' has a wrong offset!");
-static_assert(offsetof(FChatContent, chat_animation) == 0x000020, "Member 'FChatContent::chat_animation' has a wrong offset!");
+DUMPER7_ASSERTS_FChatContent;
 
 }
 

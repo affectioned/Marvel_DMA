@@ -22,12 +22,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_AbilityStatus.PyWidget_AbilityStatus_Charge
-// 0x0028 (0x05A8 - 0x0580)
+// 0x0028 (0x05B0 - 0x0588)
 class UPyWidget_AbilityStatus_Charge : public UWidget_AbilityCharge
 {
 public:
-	struct FSlateColor                            TextColor_Charging;                                // 0x0580(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColor_Full;                                    // 0x0594(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Charging;                                // 0x0588(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Full;                                    // 0x059C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -37,17 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityStatus_Charge">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityStatus_Charge")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityStatus_Charge")
 	}
 	static class UPyWidget_AbilityStatus_Charge* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityStatus_Charge>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityStatus_Charge) == 0x000008, "Wrong alignment on UPyWidget_AbilityStatus_Charge");
-static_assert(sizeof(UPyWidget_AbilityStatus_Charge) == 0x0005A8, "Wrong size on UPyWidget_AbilityStatus_Charge");
-static_assert(offsetof(UPyWidget_AbilityStatus_Charge, TextColor_Charging) == 0x000580, "Member 'UPyWidget_AbilityStatus_Charge::TextColor_Charging' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Charge, TextColor_Full) == 0x000594, "Member 'UPyWidget_AbilityStatus_Charge::TextColor_Full' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AbilityStatus_Charge;
 
 // PythonClass PyWidget_AbilityStatus.PyWidget_AbilityRelationIcon
 // 0x0000 (0x03B8 - 0x03B8)
@@ -60,34 +61,37 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityRelationIcon">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityRelationIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityRelationIcon")
 	}
 	static class UPyWidget_AbilityRelationIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityRelationIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityRelationIcon) == 0x000008, "Wrong alignment on UPyWidget_AbilityRelationIcon");
-static_assert(sizeof(UPyWidget_AbilityRelationIcon) == 0x0003B8, "Wrong size on UPyWidget_AbilityRelationIcon");
+DUMPER7_ASSERTS_UPyWidget_AbilityRelationIcon;
 
 // PythonClass PyWidget_AbilityStatus.PyWidget_AbilityStatus_Normal
-// 0x0078 (0x07E8 - 0x0770)
+// 0x0078 (0x07F0 - 0x0778)
 class UPyWidget_AbilityStatus_Normal : public UWidget_AbilityStatus_Normal
 {
 public:
-	class UAkAudioEvent*                          Audio_CooldownEnd;                                 // 0x0770(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                Class_RelationIcon;                                // 0x0778(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableBondAbilityNormal;                           // 0x0780(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_781[0x3];                                      // 0x0781(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ColorProgressTop;                                  // 0x0784(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorProgressBottom;                               // 0x0794(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCustomColorPreview;                               // 0x07A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCustomColorPreview_Cooling;                       // 0x07A5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7A6[0x2];                                      // 0x07A6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CustomColorPreview_CoolingTotal;                   // 0x07A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CustomColorPreview_CoolingRemain;                  // 0x07AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UTexture2D>              CustomColorPreview_AbilityTexture;                 // 0x07B0(0x0030)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCustomColorPreview_Charge;                        // 0x07E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Audio_CooldownEnd;                                 // 0x0778(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                Class_RelationIcon;                                // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableBondAbilityNormal;                           // 0x0788(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_789[0x3];                                      // 0x0789(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           ColorProgressTop;                                  // 0x078C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorProgressBottom;                               // 0x079C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview;                               // 0x07AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview_Cooling;                       // 0x07AD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7AE[0x2];                                      // 0x07AE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CustomColorPreview_CoolingTotal;                   // 0x07B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CustomColorPreview_CoolingRemain;                  // 0x07B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTexture2D>              CustomColorPreview_AbilityTexture;                 // 0x07B8(0x0030)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview_Charge;                        // 0x07E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -114,26 +118,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityStatus_Normal">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityStatus_Normal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityStatus_Normal")
 	}
 	static class UPyWidget_AbilityStatus_Normal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityStatus_Normal>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityStatus_Normal) == 0x000008, "Wrong alignment on UPyWidget_AbilityStatus_Normal");
-static_assert(sizeof(UPyWidget_AbilityStatus_Normal) == 0x0007E8, "Wrong size on UPyWidget_AbilityStatus_Normal");
-static_assert(offsetof(UPyWidget_AbilityStatus_Normal, Audio_CooldownEnd) == 0x000770, "Member 'UPyWidget_AbilityStatus_Normal::Audio_CooldownEnd' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Normal, Class_RelationIcon) == 0x000778, "Member 'UPyWidget_AbilityStatus_Normal::Class_RelationIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Normal, EnableBondAbilityNormal) == 0x000780, "Member 'UPyWidget_AbilityStatus_Normal::EnableBondAbilityNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Normal, ColorProgressTop) == 0x000784, "Member 'UPyWidget_AbilityStatus_Normal::ColorProgressTop' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Normal, ColorProgressBottom) == 0x000794, "Member 'UPyWidget_AbilityStatus_Normal::ColorProgressBottom' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Normal, bCustomColorPreview) == 0x0007A4, "Member 'UPyWidget_AbilityStatus_Normal::bCustomColorPreview' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Normal, bCustomColorPreview_Cooling) == 0x0007A5, "Member 'UPyWidget_AbilityStatus_Normal::bCustomColorPreview_Cooling' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Normal, CustomColorPreview_CoolingTotal) == 0x0007A8, "Member 'UPyWidget_AbilityStatus_Normal::CustomColorPreview_CoolingTotal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Normal, CustomColorPreview_CoolingRemain) == 0x0007AC, "Member 'UPyWidget_AbilityStatus_Normal::CustomColorPreview_CoolingRemain' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Normal, CustomColorPreview_AbilityTexture) == 0x0007B0, "Member 'UPyWidget_AbilityStatus_Normal::CustomColorPreview_AbilityTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Normal, bCustomColorPreview_Charge) == 0x0007E0, "Member 'UPyWidget_AbilityStatus_Normal::bCustomColorPreview_Charge' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AbilityStatus_Normal;
 
 // PythonClass PyWidget_AbilityStatus.PyWidgetStyle_PhysicsAbilityStatus
 // 0x0010 (0x0048 - 0x0038)
@@ -145,19 +141,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidgetStyle_PhysicsAbilityStatus">();
+		STATIC_CLASS_IMPL("PyWidgetStyle_PhysicsAbilityStatus")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidgetStyle_PhysicsAbilityStatus")
 	}
 	static class UPyWidgetStyle_PhysicsAbilityStatus* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidgetStyle_PhysicsAbilityStatus>();
 	}
 };
-static_assert(alignof(UPyWidgetStyle_PhysicsAbilityStatus) == 0x000008, "Wrong alignment on UPyWidgetStyle_PhysicsAbilityStatus");
-static_assert(sizeof(UPyWidgetStyle_PhysicsAbilityStatus) == 0x000048, "Wrong size on UPyWidgetStyle_PhysicsAbilityStatus");
-static_assert(offsetof(UPyWidgetStyle_PhysicsAbilityStatus, IconColor_Ability_Disable) == 0x000038, "Member 'UPyWidgetStyle_PhysicsAbilityStatus::IconColor_Ability_Disable' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidgetStyle_PhysicsAbilityStatus;
 
 // PythonClass PyWidget_AbilityStatus.PyWidget_AbilityStatus_UltimateIcon
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_AbilityStatus_UltimateIcon final : public UMarvelUserWidget
 {
 public:
@@ -167,29 +165,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityStatus_UltimateIcon">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityStatus_UltimateIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityStatus_UltimateIcon")
 	}
 	static class UPyWidget_AbilityStatus_UltimateIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityStatus_UltimateIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityStatus_UltimateIcon) == 0x000008, "Wrong alignment on UPyWidget_AbilityStatus_UltimateIcon");
-static_assert(sizeof(UPyWidget_AbilityStatus_UltimateIcon) == 0x000568, "Wrong size on UPyWidget_AbilityStatus_UltimateIcon");
+DUMPER7_ASSERTS_UPyWidget_AbilityStatus_UltimateIcon;
 
 // PythonClass PyWidget_AbilityStatus.PyWidget_AbilityStatus_Ultimate
-// 0x0038 (0x0668 - 0x0630)
+// 0x0040 (0x0678 - 0x0638)
 class UPyWidget_AbilityStatus_Ultimate : public UWidget_AbilityStatus_Ultimate
 {
 public:
-	class UAkAudioEvent*                          Audio_Ready;                                       // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         KeyOpacity_Usable;                                 // 0x0638(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         KeyOpacity_Unusable;                               // 0x063C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorProgressTop;                                  // 0x0640(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorProgressBottom;                               // 0x0650(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCustomColorPreview;                               // 0x0660(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_661[0x3];                                      // 0x0661(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CustomColorPreview_EnergyPercent;                  // 0x0664(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Audio_Ready;                                       // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         KeyOpacity_Usable;                                 // 0x0640(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         KeyOpacity_Unusable;                               // 0x0644(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorProgressTop;                                  // 0x0648(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorProgressBottom;                               // 0x0658(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview;                               // 0x0668(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_669[0x3];                                      // 0x0669(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CustomColorPreview_EnergyPercent;                  // 0x066C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinCoolingTime;                                    // 0x0670(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -210,36 +212,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityStatus_Ultimate">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityStatus_Ultimate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityStatus_Ultimate")
 	}
 	static class UPyWidget_AbilityStatus_Ultimate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityStatus_Ultimate>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityStatus_Ultimate) == 0x000008, "Wrong alignment on UPyWidget_AbilityStatus_Ultimate");
-static_assert(sizeof(UPyWidget_AbilityStatus_Ultimate) == 0x000668, "Wrong size on UPyWidget_AbilityStatus_Ultimate");
-static_assert(offsetof(UPyWidget_AbilityStatus_Ultimate, Audio_Ready) == 0x000630, "Member 'UPyWidget_AbilityStatus_Ultimate::Audio_Ready' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Ultimate, KeyOpacity_Usable) == 0x000638, "Member 'UPyWidget_AbilityStatus_Ultimate::KeyOpacity_Usable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Ultimate, KeyOpacity_Unusable) == 0x00063C, "Member 'UPyWidget_AbilityStatus_Ultimate::KeyOpacity_Unusable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Ultimate, ColorProgressTop) == 0x000640, "Member 'UPyWidget_AbilityStatus_Ultimate::ColorProgressTop' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Ultimate, ColorProgressBottom) == 0x000650, "Member 'UPyWidget_AbilityStatus_Ultimate::ColorProgressBottom' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Ultimate, bCustomColorPreview) == 0x000660, "Member 'UPyWidget_AbilityStatus_Ultimate::bCustomColorPreview' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityStatus_Ultimate, CustomColorPreview_EnergyPercent) == 0x000664, "Member 'UPyWidget_AbilityStatus_Ultimate::CustomColorPreview_EnergyPercent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AbilityStatus_Ultimate;
 
 // PythonClass PyWidget_AbilityStatus.PyWidget_AbilityWeaponStatusPanel
-// 0x0068 (0x05D0 - 0x0568)
+// 0x0068 (0x05D8 - 0x0570)
 class UPyWidget_AbilityWeaponStatusPanel : public UMarvelUserWidget
 {
 public:
-	class UMarvelKeyUIAsset*                      KeyAsset;                                          // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                NormalAbilityMargin;                               // 0x0570(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                PhysicsAbilityMargin;                              // 0x0580(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FAnchors                               UltimateWidgetAnchors;                             // 0x0590(0x0020)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                UltimateWidgetOffsets;                             // 0x05B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         AnimAbsorbSpeed;                                   // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C4[0x4];                                      // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          Audio_Absorb;                                      // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelKeyUIAsset*                      KeyAsset;                                          // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                NormalAbilityMargin;                               // 0x0578(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                PhysicsAbilityMargin;                              // 0x0588(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAnchors                               UltimateWidgetAnchors;                             // 0x0598(0x0020)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                UltimateWidgetOffsets;                             // 0x05B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         AnimAbsorbSpeed;                                   // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          Audio_Absorb;                                      // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -256,22 +254,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityWeaponStatusPanel">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityWeaponStatusPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityWeaponStatusPanel")
 	}
 	static class UPyWidget_AbilityWeaponStatusPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityWeaponStatusPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityWeaponStatusPanel) == 0x000008, "Wrong alignment on UPyWidget_AbilityWeaponStatusPanel");
-static_assert(sizeof(UPyWidget_AbilityWeaponStatusPanel) == 0x0005D0, "Wrong size on UPyWidget_AbilityWeaponStatusPanel");
-static_assert(offsetof(UPyWidget_AbilityWeaponStatusPanel, KeyAsset) == 0x000568, "Member 'UPyWidget_AbilityWeaponStatusPanel::KeyAsset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityWeaponStatusPanel, NormalAbilityMargin) == 0x000570, "Member 'UPyWidget_AbilityWeaponStatusPanel::NormalAbilityMargin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityWeaponStatusPanel, PhysicsAbilityMargin) == 0x000580, "Member 'UPyWidget_AbilityWeaponStatusPanel::PhysicsAbilityMargin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityWeaponStatusPanel, UltimateWidgetAnchors) == 0x000590, "Member 'UPyWidget_AbilityWeaponStatusPanel::UltimateWidgetAnchors' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityWeaponStatusPanel, UltimateWidgetOffsets) == 0x0005B0, "Member 'UPyWidget_AbilityWeaponStatusPanel::UltimateWidgetOffsets' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityWeaponStatusPanel, AnimAbsorbSpeed) == 0x0005C0, "Member 'UPyWidget_AbilityWeaponStatusPanel::AnimAbsorbSpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityWeaponStatusPanel, Audio_Absorb) == 0x0005C8, "Member 'UPyWidget_AbilityWeaponStatusPanel::Audio_Absorb' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AbilityWeaponStatusPanel;
 
 }
 

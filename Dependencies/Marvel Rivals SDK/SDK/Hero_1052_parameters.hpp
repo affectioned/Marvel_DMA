@@ -24,9 +24,7 @@ struct Ability_105221_OnMoveForwardReceive final
 public:
 	float                                         ScaleValue;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_105221_OnMoveForwardReceive) == 0x000004, "Wrong alignment on Ability_105221_OnMoveForwardReceive");
-static_assert(sizeof(Ability_105221_OnMoveForwardReceive) == 0x000004, "Wrong size on Ability_105221_OnMoveForwardReceive");
-static_assert(offsetof(Ability_105221_OnMoveForwardReceive, ScaleValue) == 0x000000, "Member 'Ability_105221_OnMoveForwardReceive::ScaleValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105221_OnMoveForwardReceive;
 
 // Function Hero_1052.Ability_105221.OnMoveRightReceive
 // 0x0004 (0x0004 - 0x0000)
@@ -35,9 +33,7 @@ struct Ability_105221_OnMoveRightReceive final
 public:
 	float                                         ScaleValue;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_105221_OnMoveRightReceive) == 0x000004, "Wrong alignment on Ability_105221_OnMoveRightReceive");
-static_assert(sizeof(Ability_105221_OnMoveRightReceive) == 0x000004, "Wrong size on Ability_105221_OnMoveRightReceive");
-static_assert(offsetof(Ability_105221_OnMoveRightReceive, ScaleValue) == 0x000000, "Member 'Ability_105221_OnMoveRightReceive::ScaleValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105221_OnMoveRightReceive;
 
 // Function Hero_1052.Ability_105231.OnBlockedSucceed
 // 0x0004 (0x0004 - 0x0000)
@@ -46,9 +42,7 @@ struct Ability_105231_OnBlockedSucceed final
 public:
 	float                                         BlockValue;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_105231_OnBlockedSucceed) == 0x000004, "Wrong alignment on Ability_105231_OnBlockedSucceed");
-static_assert(sizeof(Ability_105231_OnBlockedSucceed) == 0x000004, "Wrong size on Ability_105231_OnBlockedSucceed");
-static_assert(offsetof(Ability_105231_OnBlockedSucceed, BlockValue) == 0x000000, "Member 'Ability_105231_OnBlockedSucceed::BlockValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105231_OnBlockedSucceed;
 
 // Function Hero_1052.Ability_105231.K2_OnImmunityBlockGameplayEffect
 // 0x0004 (0x0004 - 0x0000)
@@ -57,66 +51,49 @@ struct Ability_105231_K2_OnImmunityBlockGameplayEffect final
 public:
 	float                                         Magnitude;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_105231_K2_OnImmunityBlockGameplayEffect) == 0x000004, "Wrong alignment on Ability_105231_K2_OnImmunityBlockGameplayEffect");
-static_assert(sizeof(Ability_105231_K2_OnImmunityBlockGameplayEffect) == 0x000004, "Wrong size on Ability_105231_K2_OnImmunityBlockGameplayEffect");
-static_assert(offsetof(Ability_105231_K2_OnImmunityBlockGameplayEffect, Magnitude) == 0x000000, "Member 'Ability_105231_K2_OnImmunityBlockGameplayEffect::Magnitude' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105231_K2_OnImmunityBlockGameplayEffect;
 
 // Function Hero_1052.Ability_105232.CallServerPlayTimeline
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct Ability_105232_CallServerPlayTimeline final
 {
 public:
 	int32                                         TimelineIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             InHitResult;                                       // 0x0008(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	bool                                          BlockDash;                                         // 0x01F8(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ClientTargetLocation;                              // 0x0200(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHitResult                             InHitResult;                                       // 0x0008(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	bool                                          BlockDash;                                         // 0x0210(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ClientTargetLocation;                              // 0x0218(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_105232_CallServerPlayTimeline) == 0x000008, "Wrong alignment on Ability_105232_CallServerPlayTimeline");
-static_assert(sizeof(Ability_105232_CallServerPlayTimeline) == 0x000218, "Wrong size on Ability_105232_CallServerPlayTimeline");
-static_assert(offsetof(Ability_105232_CallServerPlayTimeline, TimelineIndex) == 0x000000, "Member 'Ability_105232_CallServerPlayTimeline::TimelineIndex' has a wrong offset!");
-static_assert(offsetof(Ability_105232_CallServerPlayTimeline, InHitResult) == 0x000008, "Member 'Ability_105232_CallServerPlayTimeline::InHitResult' has a wrong offset!");
-static_assert(offsetof(Ability_105232_CallServerPlayTimeline, BlockDash) == 0x0001F8, "Member 'Ability_105232_CallServerPlayTimeline::BlockDash' has a wrong offset!");
-static_assert(offsetof(Ability_105232_CallServerPlayTimeline, ClientTargetLocation) == 0x000200, "Member 'Ability_105232_CallServerPlayTimeline::ClientTargetLocation' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105232_CallServerPlayTimeline;
 
 // Function Hero_1052.Ability_105232.K2_OnPlayTimeline
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct Ability_105232_K2_OnPlayTimeline final
 {
 public:
 	int32                                         TimelineIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             InHitResult;                                       // 0x0008(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	bool                                          BlockDash;                                         // 0x01F8(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ClientTargetLocation;                              // 0x0200(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHitResult                             InHitResult;                                       // 0x0008(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	bool                                          BlockDash;                                         // 0x0210(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ClientTargetLocation;                              // 0x0218(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_105232_K2_OnPlayTimeline) == 0x000008, "Wrong alignment on Ability_105232_K2_OnPlayTimeline");
-static_assert(sizeof(Ability_105232_K2_OnPlayTimeline) == 0x000218, "Wrong size on Ability_105232_K2_OnPlayTimeline");
-static_assert(offsetof(Ability_105232_K2_OnPlayTimeline, TimelineIndex) == 0x000000, "Member 'Ability_105232_K2_OnPlayTimeline::TimelineIndex' has a wrong offset!");
-static_assert(offsetof(Ability_105232_K2_OnPlayTimeline, InHitResult) == 0x000008, "Member 'Ability_105232_K2_OnPlayTimeline::InHitResult' has a wrong offset!");
-static_assert(offsetof(Ability_105232_K2_OnPlayTimeline, BlockDash) == 0x0001F8, "Member 'Ability_105232_K2_OnPlayTimeline::BlockDash' has a wrong offset!");
-static_assert(offsetof(Ability_105232_K2_OnPlayTimeline, ClientTargetLocation) == 0x000200, "Member 'Ability_105232_K2_OnPlayTimeline::ClientTargetLocation' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105232_K2_OnPlayTimeline;
 
 // Function Hero_1052.Ability_105232.OnServerReceivePlayTimeline
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct Ability_105232_OnServerReceivePlayTimeline final
 {
 public:
 	int32                                         TimelineIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             InHitResult;                                       // 0x0008(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	bool                                          BlockDash;                                         // 0x01F8(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ClientTargetLocation;                              // 0x0200(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHitResult                             InHitResult;                                       // 0x0008(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	bool                                          BlockDash;                                         // 0x0210(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ClientTargetLocation;                              // 0x0218(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_105232_OnServerReceivePlayTimeline) == 0x000008, "Wrong alignment on Ability_105232_OnServerReceivePlayTimeline");
-static_assert(sizeof(Ability_105232_OnServerReceivePlayTimeline) == 0x000218, "Wrong size on Ability_105232_OnServerReceivePlayTimeline");
-static_assert(offsetof(Ability_105232_OnServerReceivePlayTimeline, TimelineIndex) == 0x000000, "Member 'Ability_105232_OnServerReceivePlayTimeline::TimelineIndex' has a wrong offset!");
-static_assert(offsetof(Ability_105232_OnServerReceivePlayTimeline, InHitResult) == 0x000008, "Member 'Ability_105232_OnServerReceivePlayTimeline::InHitResult' has a wrong offset!");
-static_assert(offsetof(Ability_105232_OnServerReceivePlayTimeline, BlockDash) == 0x0001F8, "Member 'Ability_105232_OnServerReceivePlayTimeline::BlockDash' has a wrong offset!");
-static_assert(offsetof(Ability_105232_OnServerReceivePlayTimeline, ClientTargetLocation) == 0x000200, "Member 'Ability_105232_OnServerReceivePlayTimeline::ClientTargetLocation' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105232_OnServerReceivePlayTimeline;
 
 // Function Hero_1052.LinLieCharacter.GetShareComboState
 // 0x0004 (0x0004 - 0x0000)
@@ -125,9 +102,7 @@ struct LinLieCharacter_GetShareComboState final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LinLieCharacter_GetShareComboState) == 0x000004, "Wrong alignment on LinLieCharacter_GetShareComboState");
-static_assert(sizeof(LinLieCharacter_GetShareComboState) == 0x000004, "Wrong size on LinLieCharacter_GetShareComboState");
-static_assert(offsetof(LinLieCharacter_GetShareComboState, ReturnValue) == 0x000000, "Member 'LinLieCharacter_GetShareComboState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LinLieCharacter_GetShareComboState;
 
 // Function Hero_1052.LinLieCharacter.SetJumpIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -136,9 +111,7 @@ struct LinLieCharacter_SetJumpIndex final
 public:
 	int32                                         NewIndex;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LinLieCharacter_SetJumpIndex) == 0x000004, "Wrong alignment on LinLieCharacter_SetJumpIndex");
-static_assert(sizeof(LinLieCharacter_SetJumpIndex) == 0x000004, "Wrong size on LinLieCharacter_SetJumpIndex");
-static_assert(offsetof(LinLieCharacter_SetJumpIndex, NewIndex) == 0x000000, "Member 'LinLieCharacter_SetJumpIndex::NewIndex' has a wrong offset!");
+DUMPER7_ASSERTS_LinLieCharacter_SetJumpIndex;
 
 // Function Hero_1052.LinLieCharacter.SetRunLeft
 // 0x0001 (0x0001 - 0x0000)
@@ -147,9 +120,7 @@ struct LinLieCharacter_SetRunLeft final
 public:
 	bool                                          NewState;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LinLieCharacter_SetRunLeft) == 0x000001, "Wrong alignment on LinLieCharacter_SetRunLeft");
-static_assert(sizeof(LinLieCharacter_SetRunLeft) == 0x000001, "Wrong size on LinLieCharacter_SetRunLeft");
-static_assert(offsetof(LinLieCharacter_SetRunLeft, NewState) == 0x000000, "Member 'LinLieCharacter_SetRunLeft::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_LinLieCharacter_SetRunLeft;
 
 // Function Hero_1052.LinLieCharacter.SetShareComboState
 // 0x000C (0x000C - 0x0000)
@@ -160,11 +131,7 @@ public:
 	int32                                         ComboSectionNum;                                   // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ComboTimeout;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LinLieCharacter_SetShareComboState) == 0x000004, "Wrong alignment on LinLieCharacter_SetShareComboState");
-static_assert(sizeof(LinLieCharacter_SetShareComboState) == 0x00000C, "Wrong size on LinLieCharacter_SetShareComboState");
-static_assert(offsetof(LinLieCharacter_SetShareComboState, NewState) == 0x000000, "Member 'LinLieCharacter_SetShareComboState::NewState' has a wrong offset!");
-static_assert(offsetof(LinLieCharacter_SetShareComboState, ComboSectionNum) == 0x000004, "Member 'LinLieCharacter_SetShareComboState::ComboSectionNum' has a wrong offset!");
-static_assert(offsetof(LinLieCharacter_SetShareComboState, ComboTimeout) == 0x000008, "Member 'LinLieCharacter_SetShareComboState::ComboTimeout' has a wrong offset!");
+DUMPER7_ASSERTS_LinLieCharacter_SetShareComboState;
 
 }
 

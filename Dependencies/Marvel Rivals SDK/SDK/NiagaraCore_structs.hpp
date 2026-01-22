@@ -33,10 +33,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                UnderlyingType;                                    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNiagaraVariableCommonReference) == 0x000008, "Wrong alignment on FNiagaraVariableCommonReference");
-static_assert(sizeof(FNiagaraVariableCommonReference) == 0x000018, "Wrong size on FNiagaraVariableCommonReference");
-static_assert(offsetof(FNiagaraVariableCommonReference, Name) == 0x000000, "Member 'FNiagaraVariableCommonReference::Name' has a wrong offset!");
-static_assert(offsetof(FNiagaraVariableCommonReference, UnderlyingType) == 0x000010, "Member 'FNiagaraVariableCommonReference::UnderlyingType' has a wrong offset!");
+DUMPER7_ASSERTS_FNiagaraVariableCommonReference;
 
 // ScriptStruct NiagaraCore.NiagaraCompileHash
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +42,7 @@ struct FNiagaraCompileHash final
 public:
 	TArray<uint8>                                 DataHash;                                          // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FNiagaraCompileHash) == 0x000008, "Wrong alignment on FNiagaraCompileHash");
-static_assert(sizeof(FNiagaraCompileHash) == 0x000010, "Wrong size on FNiagaraCompileHash");
-static_assert(offsetof(FNiagaraCompileHash, DataHash) == 0x000000, "Member 'FNiagaraCompileHash::DataHash' has a wrong offset!");
+DUMPER7_ASSERTS_FNiagaraCompileHash;
 
 }
 

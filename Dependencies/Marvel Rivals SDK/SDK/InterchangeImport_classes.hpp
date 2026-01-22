@@ -12,10 +12,10 @@
 
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "Engine_structs.hpp"
-#include "Engine_classes.hpp"
 #include "InterchangeCore_classes.hpp"
 #include "InterchangeImport_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -28,7 +28,11 @@ class IInterchangeAnimationPayloadInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeAnimationPayloadInterface">();
+		STATIC_CLASS_IMPL("InterchangeAnimationPayloadInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeAnimationPayloadInterface")
 	}
 	static class IInterchangeAnimationPayloadInterface* GetDefaultObj()
 	{
@@ -44,8 +48,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IInterchangeAnimationPayloadInterface) == 0x000001, "Wrong alignment on IInterchangeAnimationPayloadInterface");
-static_assert(sizeof(IInterchangeAnimationPayloadInterface) == 0x000001, "Wrong size on IInterchangeAnimationPayloadInterface");
+DUMPER7_ASSERTS_IInterchangeAnimationPayloadInterface;
 
 // Class InterchangeImport.InterchangeAnimationTrackSetFactory
 // 0x0008 (0x0040 - 0x0038)
@@ -57,15 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeAnimationTrackSetFactory">();
+		STATIC_CLASS_IMPL("InterchangeAnimationTrackSetFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeAnimationTrackSetFactory")
 	}
 	static class UInterchangeAnimationTrackSetFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeAnimationTrackSetFactory>();
 	}
 };
-static_assert(alignof(UInterchangeAnimationTrackSetFactory) == 0x000008, "Wrong alignment on UInterchangeAnimationTrackSetFactory");
-static_assert(sizeof(UInterchangeAnimationTrackSetFactory) == 0x000040, "Wrong size on UInterchangeAnimationTrackSetFactory");
+DUMPER7_ASSERTS_UInterchangeAnimationTrackSetFactory;
 
 // Class InterchangeImport.InterchangeBlockedTexturePayloadInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -74,7 +80,11 @@ class IInterchangeBlockedTexturePayloadInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeBlockedTexturePayloadInterface">();
+		STATIC_CLASS_IMPL("InterchangeBlockedTexturePayloadInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeBlockedTexturePayloadInterface")
 	}
 	static class IInterchangeBlockedTexturePayloadInterface* GetDefaultObj()
 	{
@@ -90,8 +100,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IInterchangeBlockedTexturePayloadInterface) == 0x000001, "Wrong alignment on IInterchangeBlockedTexturePayloadInterface");
-static_assert(sizeof(IInterchangeBlockedTexturePayloadInterface) == 0x000001, "Wrong size on IInterchangeBlockedTexturePayloadInterface");
+DUMPER7_ASSERTS_IInterchangeBlockedTexturePayloadInterface;
 
 // Class InterchangeImport.InterchangeActorFactory
 // 0x0000 (0x0038 - 0x0038)
@@ -100,15 +109,18 @@ class UInterchangeActorFactory : public UInterchangeFactoryBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeActorFactory">();
+		STATIC_CLASS_IMPL("InterchangeActorFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeActorFactory")
 	}
 	static class UInterchangeActorFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeActorFactory>();
 	}
 };
-static_assert(alignof(UInterchangeActorFactory) == 0x000008, "Wrong alignment on UInterchangeActorFactory");
-static_assert(sizeof(UInterchangeActorFactory) == 0x000038, "Wrong size on UInterchangeActorFactory");
+DUMPER7_ASSERTS_UInterchangeActorFactory;
 
 // Class InterchangeImport.InterchangeLightActorFactory
 // 0x0000 (0x0038 - 0x0038)
@@ -117,15 +129,18 @@ class UInterchangeLightActorFactory final : public UInterchangeActorFactory
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeLightActorFactory">();
+		STATIC_CLASS_IMPL("InterchangeLightActorFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeLightActorFactory")
 	}
 	static class UInterchangeLightActorFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeLightActorFactory>();
 	}
 };
-static_assert(alignof(UInterchangeLightActorFactory) == 0x000008, "Wrong alignment on UInterchangeLightActorFactory");
-static_assert(sizeof(UInterchangeLightActorFactory) == 0x000038, "Wrong size on UInterchangeLightActorFactory");
+DUMPER7_ASSERTS_UInterchangeLightActorFactory;
 
 // Class InterchangeImport.InterchangeMeshPayloadInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -134,7 +149,11 @@ class IInterchangeMeshPayloadInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMeshPayloadInterface">();
+		STATIC_CLASS_IMPL("InterchangeMeshPayloadInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMeshPayloadInterface")
 	}
 	static class IInterchangeMeshPayloadInterface* GetDefaultObj()
 	{
@@ -150,8 +169,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IInterchangeMeshPayloadInterface) == 0x000001, "Wrong alignment on IInterchangeMeshPayloadInterface");
-static_assert(sizeof(IInterchangeMeshPayloadInterface) == 0x000001, "Wrong size on IInterchangeMeshPayloadInterface");
+DUMPER7_ASSERTS_IInterchangeMeshPayloadInterface;
 
 // Class InterchangeImport.InterchangeSceneImportAssetFactory
 // 0x0000 (0x0038 - 0x0038)
@@ -160,15 +178,18 @@ class UInterchangeSceneImportAssetFactory final : public UInterchangeFactoryBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSceneImportAssetFactory">();
+		STATIC_CLASS_IMPL("InterchangeSceneImportAssetFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSceneImportAssetFactory")
 	}
 	static class UInterchangeSceneImportAssetFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSceneImportAssetFactory>();
 	}
 };
-static_assert(alignof(UInterchangeSceneImportAssetFactory) == 0x000008, "Wrong alignment on UInterchangeSceneImportAssetFactory");
-static_assert(sizeof(UInterchangeSceneImportAssetFactory) == 0x000038, "Wrong size on UInterchangeSceneImportAssetFactory");
+DUMPER7_ASSERTS_UInterchangeSceneImportAssetFactory;
 
 // Class InterchangeImport.InterchangeSceneVariantSetsFactory
 // 0x0008 (0x0040 - 0x0038)
@@ -180,15 +201,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSceneVariantSetsFactory">();
+		STATIC_CLASS_IMPL("InterchangeSceneVariantSetsFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSceneVariantSetsFactory")
 	}
 	static class UInterchangeSceneVariantSetsFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSceneVariantSetsFactory>();
 	}
 };
-static_assert(alignof(UInterchangeSceneVariantSetsFactory) == 0x000008, "Wrong alignment on UInterchangeSceneVariantSetsFactory");
-static_assert(sizeof(UInterchangeSceneVariantSetsFactory) == 0x000040, "Wrong size on UInterchangeSceneVariantSetsFactory");
+DUMPER7_ASSERTS_UInterchangeSceneVariantSetsFactory;
 
 // Class InterchangeImport.InterchangeSlicedTexturePayloadInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -197,7 +221,11 @@ class IInterchangeSlicedTexturePayloadInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSlicedTexturePayloadInterface">();
+		STATIC_CLASS_IMPL("InterchangeSlicedTexturePayloadInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSlicedTexturePayloadInterface")
 	}
 	static class IInterchangeSlicedTexturePayloadInterface* GetDefaultObj()
 	{
@@ -213,8 +241,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IInterchangeSlicedTexturePayloadInterface) == 0x000001, "Wrong alignment on IInterchangeSlicedTexturePayloadInterface");
-static_assert(sizeof(IInterchangeSlicedTexturePayloadInterface) == 0x000001, "Wrong size on IInterchangeSlicedTexturePayloadInterface");
+DUMPER7_ASSERTS_IInterchangeSlicedTexturePayloadInterface;
 
 // Class InterchangeImport.InterchangeTextureLightProfilePayloadInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -223,7 +250,11 @@ class IInterchangeTextureLightProfilePayloadInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeTextureLightProfilePayloadInterface">();
+		STATIC_CLASS_IMPL("InterchangeTextureLightProfilePayloadInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeTextureLightProfilePayloadInterface")
 	}
 	static class IInterchangeTextureLightProfilePayloadInterface* GetDefaultObj()
 	{
@@ -239,8 +270,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IInterchangeTextureLightProfilePayloadInterface) == 0x000001, "Wrong alignment on IInterchangeTextureLightProfilePayloadInterface");
-static_assert(sizeof(IInterchangeTextureLightProfilePayloadInterface) == 0x000001, "Wrong size on IInterchangeTextureLightProfilePayloadInterface");
+DUMPER7_ASSERTS_IInterchangeTextureLightProfilePayloadInterface;
 
 // Class InterchangeImport.InterchangeTexturePayloadInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -249,7 +279,11 @@ class IInterchangeTexturePayloadInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeTexturePayloadInterface">();
+		STATIC_CLASS_IMPL("InterchangeTexturePayloadInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeTexturePayloadInterface")
 	}
 	static class IInterchangeTexturePayloadInterface* GetDefaultObj()
 	{
@@ -265,8 +299,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IInterchangeTexturePayloadInterface) == 0x000001, "Wrong alignment on IInterchangeTexturePayloadInterface");
-static_assert(sizeof(IInterchangeTexturePayloadInterface) == 0x000001, "Wrong size on IInterchangeTexturePayloadInterface");
+DUMPER7_ASSERTS_IInterchangeTexturePayloadInterface;
 
 // Class InterchangeImport.InterchangeVariantSetPayloadInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -275,7 +308,11 @@ class IInterchangeVariantSetPayloadInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeVariantSetPayloadInterface">();
+		STATIC_CLASS_IMPL("InterchangeVariantSetPayloadInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeVariantSetPayloadInterface")
 	}
 	static class IInterchangeVariantSetPayloadInterface* GetDefaultObj()
 	{
@@ -291,8 +328,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IInterchangeVariantSetPayloadInterface) == 0x000001, "Wrong alignment on IInterchangeVariantSetPayloadInterface");
-static_assert(sizeof(IInterchangeVariantSetPayloadInterface) == 0x000001, "Wrong size on IInterchangeVariantSetPayloadInterface");
+DUMPER7_ASSERTS_IInterchangeVariantSetPayloadInterface;
 
 // Class InterchangeImport.MaterialExpressionMaterialXRamp4
 // 0x00F8 (0x01B0 - 0x00B8)
@@ -310,21 +346,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXRamp4">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXRamp4")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXRamp4")
 	}
 	static class UMaterialExpressionMaterialXRamp4* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXRamp4>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXRamp4) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXRamp4");
-static_assert(sizeof(UMaterialExpressionMaterialXRamp4) == 0x0001B0, "Wrong size on UMaterialExpressionMaterialXRamp4");
-static_assert(offsetof(UMaterialExpressionMaterialXRamp4, Coordinates) == 0x0000B8, "Member 'UMaterialExpressionMaterialXRamp4::Coordinates' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRamp4, A) == 0x0000E8, "Member 'UMaterialExpressionMaterialXRamp4::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRamp4, B) == 0x000118, "Member 'UMaterialExpressionMaterialXRamp4::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRamp4, C) == 0x000148, "Member 'UMaterialExpressionMaterialXRamp4::C' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRamp4, D) == 0x000178, "Member 'UMaterialExpressionMaterialXRamp4::D' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRamp4, ConstCoordinate) == 0x0001A8, "Member 'UMaterialExpressionMaterialXRamp4::ConstCoordinate' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXRamp4;
 
 // Class InterchangeImport.InterchangeAnimSequenceFactory
 // 0x0000 (0x0038 - 0x0038)
@@ -333,15 +366,18 @@ class UInterchangeAnimSequenceFactory final : public UInterchangeFactoryBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeAnimSequenceFactory">();
+		STATIC_CLASS_IMPL("InterchangeAnimSequenceFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeAnimSequenceFactory")
 	}
 	static class UInterchangeAnimSequenceFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeAnimSequenceFactory>();
 	}
 };
-static_assert(alignof(UInterchangeAnimSequenceFactory) == 0x000008, "Wrong alignment on UInterchangeAnimSequenceFactory");
-static_assert(sizeof(UInterchangeAnimSequenceFactory) == 0x000038, "Wrong size on UInterchangeAnimSequenceFactory");
+DUMPER7_ASSERTS_UInterchangeAnimSequenceFactory;
 
 // Class InterchangeImport.InterchangeFbxTranslator
 // 0x0020 (0x0060 - 0x0040)
@@ -353,15 +389,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeFbxTranslator">();
+		STATIC_CLASS_IMPL("InterchangeFbxTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeFbxTranslator")
 	}
 	static class UInterchangeFbxTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeFbxTranslator>();
 	}
 };
-static_assert(alignof(UInterchangeFbxTranslator) == 0x000008, "Wrong alignment on UInterchangeFbxTranslator");
-static_assert(sizeof(UInterchangeFbxTranslator) == 0x000060, "Wrong size on UInterchangeFbxTranslator");
+DUMPER7_ASSERTS_UInterchangeFbxTranslator;
 
 // Class InterchangeImport.InterchangeGLTFTranslator
 // 0x0240 (0x0280 - 0x0040)
@@ -373,15 +412,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeGLTFTranslator">();
+		STATIC_CLASS_IMPL("InterchangeGLTFTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeGLTFTranslator")
 	}
 	static class UInterchangeGLTFTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeGLTFTranslator>();
 	}
 };
-static_assert(alignof(UInterchangeGLTFTranslator) == 0x000008, "Wrong alignment on UInterchangeGLTFTranslator");
-static_assert(sizeof(UInterchangeGLTFTranslator) == 0x000280, "Wrong size on UInterchangeGLTFTranslator");
+DUMPER7_ASSERTS_UInterchangeGLTFTranslator;
 
 // Class InterchangeImport.InterchangeMaterialXTranslator
 // 0x0008 (0x0048 - 0x0040)
@@ -393,15 +435,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMaterialXTranslator">();
+		STATIC_CLASS_IMPL("InterchangeMaterialXTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMaterialXTranslator")
 	}
 	static class UInterchangeMaterialXTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMaterialXTranslator>();
 	}
 };
-static_assert(alignof(UInterchangeMaterialXTranslator) == 0x000008, "Wrong alignment on UInterchangeMaterialXTranslator");
-static_assert(sizeof(UInterchangeMaterialXTranslator) == 0x000048, "Wrong size on UInterchangeMaterialXTranslator");
+DUMPER7_ASSERTS_UInterchangeMaterialXTranslator;
 
 // Class InterchangeImport.MaterialExpressionMaterialXAppend3Vector
 // 0x0090 (0x0148 - 0x00B8)
@@ -415,18 +460,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXAppend3Vector">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXAppend3Vector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXAppend3Vector")
 	}
 	static class UMaterialExpressionMaterialXAppend3Vector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXAppend3Vector>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXAppend3Vector) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXAppend3Vector");
-static_assert(sizeof(UMaterialExpressionMaterialXAppend3Vector) == 0x000148, "Wrong size on UMaterialExpressionMaterialXAppend3Vector");
-static_assert(offsetof(UMaterialExpressionMaterialXAppend3Vector, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXAppend3Vector::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXAppend3Vector, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXAppend3Vector::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXAppend3Vector, C) == 0x000118, "Member 'UMaterialExpressionMaterialXAppend3Vector::C' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXAppend3Vector;
 
 // Class InterchangeImport.MaterialExpressionMaterialXAppend4Vector
 // 0x00C0 (0x0178 - 0x00B8)
@@ -441,19 +486,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXAppend4Vector">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXAppend4Vector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXAppend4Vector")
 	}
 	static class UMaterialExpressionMaterialXAppend4Vector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXAppend4Vector>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXAppend4Vector) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXAppend4Vector");
-static_assert(sizeof(UMaterialExpressionMaterialXAppend4Vector) == 0x000178, "Wrong size on UMaterialExpressionMaterialXAppend4Vector");
-static_assert(offsetof(UMaterialExpressionMaterialXAppend4Vector, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXAppend4Vector::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXAppend4Vector, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXAppend4Vector::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXAppend4Vector, C) == 0x000118, "Member 'UMaterialExpressionMaterialXAppend4Vector::C' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXAppend4Vector, D) == 0x000148, "Member 'UMaterialExpressionMaterialXAppend4Vector::D' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXAppend4Vector;
 
 // Class InterchangeImport.MaterialExpressionMaterialXBurn
 // 0x0098 (0x0150 - 0x00B8)
@@ -469,19 +513,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXBurn">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXBurn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXBurn")
 	}
 	static class UMaterialExpressionMaterialXBurn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXBurn>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXBurn) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXBurn");
-static_assert(sizeof(UMaterialExpressionMaterialXBurn) == 0x000150, "Wrong size on UMaterialExpressionMaterialXBurn");
-static_assert(offsetof(UMaterialExpressionMaterialXBurn, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXBurn::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXBurn, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXBurn::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXBurn, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXBurn::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXBurn, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXBurn::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXBurn;
 
 // Class InterchangeImport.MaterialExpressionMaterialXDifference
 // 0x0098 (0x0150 - 0x00B8)
@@ -497,19 +540,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXDifference">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXDifference")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXDifference")
 	}
 	static class UMaterialExpressionMaterialXDifference* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXDifference>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXDifference) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXDifference");
-static_assert(sizeof(UMaterialExpressionMaterialXDifference) == 0x000150, "Wrong size on UMaterialExpressionMaterialXDifference");
-static_assert(offsetof(UMaterialExpressionMaterialXDifference, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXDifference::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXDifference, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXDifference::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXDifference, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXDifference::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXDifference, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXDifference::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXDifference;
 
 // Class InterchangeImport.MaterialExpressionMaterialXDisjointOver
 // 0x0098 (0x0150 - 0x00B8)
@@ -525,19 +567,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXDisjointOver">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXDisjointOver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXDisjointOver")
 	}
 	static class UMaterialExpressionMaterialXDisjointOver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXDisjointOver>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXDisjointOver) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXDisjointOver");
-static_assert(sizeof(UMaterialExpressionMaterialXDisjointOver) == 0x000150, "Wrong size on UMaterialExpressionMaterialXDisjointOver");
-static_assert(offsetof(UMaterialExpressionMaterialXDisjointOver, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXDisjointOver::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXDisjointOver, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXDisjointOver::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXDisjointOver, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXDisjointOver::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXDisjointOver, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXDisjointOver::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXDisjointOver;
 
 // Class InterchangeImport.MaterialExpressionMaterialXDodge
 // 0x0098 (0x0150 - 0x00B8)
@@ -553,19 +594,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXDodge">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXDodge")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXDodge")
 	}
 	static class UMaterialExpressionMaterialXDodge* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXDodge>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXDodge) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXDodge");
-static_assert(sizeof(UMaterialExpressionMaterialXDodge) == 0x000150, "Wrong size on UMaterialExpressionMaterialXDodge");
-static_assert(offsetof(UMaterialExpressionMaterialXDodge, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXDodge::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXDodge, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXDodge::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXDodge, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXDodge::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXDodge, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXDodge::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXDodge;
 
 // Class InterchangeImport.MaterialExpressionMaterialXFractal3D
 // 0x0120 (0x01D8 - 0x00B8)
@@ -594,29 +634,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXFractal3D">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXFractal3D")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXFractal3D")
 	}
 	static class UMaterialExpressionMaterialXFractal3D* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXFractal3D>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXFractal3D) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXFractal3D");
-static_assert(sizeof(UMaterialExpressionMaterialXFractal3D) == 0x0001D8, "Wrong size on UMaterialExpressionMaterialXFractal3D");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, Position) == 0x0000B8, "Member 'UMaterialExpressionMaterialXFractal3D::Position' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, Amplitude) == 0x0000E8, "Member 'UMaterialExpressionMaterialXFractal3D::Amplitude' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, ConstAmplitude) == 0x000118, "Member 'UMaterialExpressionMaterialXFractal3D::ConstAmplitude' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, Octaves) == 0x000120, "Member 'UMaterialExpressionMaterialXFractal3D::Octaves' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, ConstOctaves) == 0x000150, "Member 'UMaterialExpressionMaterialXFractal3D::ConstOctaves' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, Lacunarity) == 0x000158, "Member 'UMaterialExpressionMaterialXFractal3D::Lacunarity' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, ConstLacunarity) == 0x000188, "Member 'UMaterialExpressionMaterialXFractal3D::ConstLacunarity' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, Diminish) == 0x000190, "Member 'UMaterialExpressionMaterialXFractal3D::Diminish' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, ConstDiminish) == 0x0001C0, "Member 'UMaterialExpressionMaterialXFractal3D::ConstDiminish' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, Scale) == 0x0001C4, "Member 'UMaterialExpressionMaterialXFractal3D::Scale' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, bTurbulence) == 0x0001C8, "Member 'UMaterialExpressionMaterialXFractal3D::bTurbulence' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, Levels) == 0x0001CC, "Member 'UMaterialExpressionMaterialXFractal3D::Levels' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, OutputMin) == 0x0001D0, "Member 'UMaterialExpressionMaterialXFractal3D::OutputMin' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXFractal3D, OutputMax) == 0x0001D4, "Member 'UMaterialExpressionMaterialXFractal3D::OutputMax' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXFractal3D;
 
 // Class InterchangeImport.MaterialExpressionMaterialXIn
 // 0x0098 (0x0150 - 0x00B8)
@@ -632,19 +661,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXIn">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXIn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXIn")
 	}
 	static class UMaterialExpressionMaterialXIn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXIn>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXIn) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXIn");
-static_assert(sizeof(UMaterialExpressionMaterialXIn) == 0x000150, "Wrong size on UMaterialExpressionMaterialXIn");
-static_assert(offsetof(UMaterialExpressionMaterialXIn, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXIn::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXIn, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXIn::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXIn, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXIn::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXIn, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXIn::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXIn;
 
 // Class InterchangeImport.MaterialExpressionMaterialXLuminance
 // 0x0048 (0x0100 - 0x00B8)
@@ -659,18 +687,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXLuminance">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXLuminance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXLuminance")
 	}
 	static class UMaterialExpressionMaterialXLuminance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXLuminance>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXLuminance) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXLuminance");
-static_assert(sizeof(UMaterialExpressionMaterialXLuminance) == 0x000100, "Wrong size on UMaterialExpressionMaterialXLuminance");
-static_assert(offsetof(UMaterialExpressionMaterialXLuminance, Input) == 0x0000B8, "Member 'UMaterialExpressionMaterialXLuminance::Input' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXLuminance, LuminanceFactors) == 0x0000E8, "Member 'UMaterialExpressionMaterialXLuminance::LuminanceFactors' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXLuminance, LuminanceMode) == 0x0000F8, "Member 'UMaterialExpressionMaterialXLuminance::LuminanceMode' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXLuminance;
 
 // Class InterchangeImport.MaterialExpressionMaterialXMask
 // 0x0098 (0x0150 - 0x00B8)
@@ -686,19 +714,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXMask">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXMask")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXMask")
 	}
 	static class UMaterialExpressionMaterialXMask* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXMask>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXMask) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXMask");
-static_assert(sizeof(UMaterialExpressionMaterialXMask) == 0x000150, "Wrong size on UMaterialExpressionMaterialXMask");
-static_assert(offsetof(UMaterialExpressionMaterialXMask, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXMask::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXMask, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXMask::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXMask, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXMask::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXMask, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXMask::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXMask;
 
 // Class InterchangeImport.MaterialExpressionMaterialXMatte
 // 0x0098 (0x0150 - 0x00B8)
@@ -714,19 +741,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXMatte">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXMatte")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXMatte")
 	}
 	static class UMaterialExpressionMaterialXMatte* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXMatte>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXMatte) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXMatte");
-static_assert(sizeof(UMaterialExpressionMaterialXMatte) == 0x000150, "Wrong size on UMaterialExpressionMaterialXMatte");
-static_assert(offsetof(UMaterialExpressionMaterialXMatte, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXMatte::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXMatte, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXMatte::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXMatte, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXMatte::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXMatte, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXMatte::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXMatte;
 
 // Class InterchangeImport.MaterialExpressionMaterialXMinus
 // 0x0098 (0x0150 - 0x00B8)
@@ -742,19 +768,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXMinus">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXMinus")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXMinus")
 	}
 	static class UMaterialExpressionMaterialXMinus* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXMinus>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXMinus) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXMinus");
-static_assert(sizeof(UMaterialExpressionMaterialXMinus) == 0x000150, "Wrong size on UMaterialExpressionMaterialXMinus");
-static_assert(offsetof(UMaterialExpressionMaterialXMinus, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXMinus::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXMinus, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXMinus::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXMinus, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXMinus::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXMinus, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXMinus::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXMinus;
 
 // Class InterchangeImport.MaterialExpressionMaterialXOut
 // 0x0098 (0x0150 - 0x00B8)
@@ -770,19 +795,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXOut">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXOut")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXOut")
 	}
 	static class UMaterialExpressionMaterialXOut* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXOut>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXOut) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXOut");
-static_assert(sizeof(UMaterialExpressionMaterialXOut) == 0x000150, "Wrong size on UMaterialExpressionMaterialXOut");
-static_assert(offsetof(UMaterialExpressionMaterialXOut, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXOut::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXOut, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXOut::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXOut, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXOut::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXOut, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXOut::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXOut;
 
 // Class InterchangeImport.MaterialExpressionMaterialXOver
 // 0x0098 (0x0150 - 0x00B8)
@@ -798,19 +822,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXOver">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXOver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXOver")
 	}
 	static class UMaterialExpressionMaterialXOver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXOver>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXOver) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXOver");
-static_assert(sizeof(UMaterialExpressionMaterialXOver) == 0x000150, "Wrong size on UMaterialExpressionMaterialXOver");
-static_assert(offsetof(UMaterialExpressionMaterialXOver, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXOver::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXOver, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXOver::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXOver, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXOver::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXOver, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXOver::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXOver;
 
 // Class InterchangeImport.MaterialExpressionMaterialXOverlay
 // 0x0098 (0x0150 - 0x00B8)
@@ -826,19 +849,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXOverlay">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXOverlay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXOverlay")
 	}
 	static class UMaterialExpressionMaterialXOverlay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXOverlay>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXOverlay) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXOverlay");
-static_assert(sizeof(UMaterialExpressionMaterialXOverlay) == 0x000150, "Wrong size on UMaterialExpressionMaterialXOverlay");
-static_assert(offsetof(UMaterialExpressionMaterialXOverlay, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXOverlay::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXOverlay, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXOverlay::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXOverlay, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXOverlay::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXOverlay, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXOverlay::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXOverlay;
 
 // Class InterchangeImport.MaterialExpressionMaterialXPlace2D
 // 0x00F8 (0x01B0 - 0x00B8)
@@ -857,22 +879,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXPlace2D">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXPlace2D")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXPlace2D")
 	}
 	static class UMaterialExpressionMaterialXPlace2D* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXPlace2D>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXPlace2D) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXPlace2D");
-static_assert(sizeof(UMaterialExpressionMaterialXPlace2D) == 0x0001B0, "Wrong size on UMaterialExpressionMaterialXPlace2D");
-static_assert(offsetof(UMaterialExpressionMaterialXPlace2D, Coordinates) == 0x0000B8, "Member 'UMaterialExpressionMaterialXPlace2D::Coordinates' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXPlace2D, Pivot) == 0x0000E8, "Member 'UMaterialExpressionMaterialXPlace2D::Pivot' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXPlace2D, Scale) == 0x000118, "Member 'UMaterialExpressionMaterialXPlace2D::Scale' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXPlace2D, Offset) == 0x000148, "Member 'UMaterialExpressionMaterialXPlace2D::Offset' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXPlace2D, RotationAngle) == 0x000178, "Member 'UMaterialExpressionMaterialXPlace2D::RotationAngle' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXPlace2D, ConstRotationAngle) == 0x0001A8, "Member 'UMaterialExpressionMaterialXPlace2D::ConstRotationAngle' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXPlace2D, ConstCoordinate) == 0x0001AC, "Member 'UMaterialExpressionMaterialXPlace2D::ConstCoordinate' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXPlace2D;
 
 // Class InterchangeImport.MaterialExpressionMaterialXPlus
 // 0x0098 (0x0150 - 0x00B8)
@@ -888,19 +906,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXPlus">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXPlus")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXPlus")
 	}
 	static class UMaterialExpressionMaterialXPlus* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXPlus>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXPlus) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXPlus");
-static_assert(sizeof(UMaterialExpressionMaterialXPlus) == 0x000150, "Wrong size on UMaterialExpressionMaterialXPlus");
-static_assert(offsetof(UMaterialExpressionMaterialXPlus, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXPlus::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXPlus, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXPlus::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXPlus, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXPlus::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXPlus, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXPlus::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXPlus;
 
 // Class InterchangeImport.MaterialExpressionMaterialXPremult
 // 0x0030 (0x00E8 - 0x00B8)
@@ -912,16 +929,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXPremult">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXPremult")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXPremult")
 	}
 	static class UMaterialExpressionMaterialXPremult* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXPremult>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXPremult) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXPremult");
-static_assert(sizeof(UMaterialExpressionMaterialXPremult) == 0x0000E8, "Wrong size on UMaterialExpressionMaterialXPremult");
-static_assert(offsetof(UMaterialExpressionMaterialXPremult, Input) == 0x0000B8, "Member 'UMaterialExpressionMaterialXPremult::Input' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXPremult;
 
 // Class InterchangeImport.MaterialExpressionMaterialXRampLeftRight
 // 0x0098 (0x0150 - 0x00B8)
@@ -937,19 +956,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXRampLeftRight">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXRampLeftRight")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXRampLeftRight")
 	}
 	static class UMaterialExpressionMaterialXRampLeftRight* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXRampLeftRight>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXRampLeftRight) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXRampLeftRight");
-static_assert(sizeof(UMaterialExpressionMaterialXRampLeftRight) == 0x000150, "Wrong size on UMaterialExpressionMaterialXRampLeftRight");
-static_assert(offsetof(UMaterialExpressionMaterialXRampLeftRight, Coordinates) == 0x0000B8, "Member 'UMaterialExpressionMaterialXRampLeftRight::Coordinates' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRampLeftRight, A) == 0x0000E8, "Member 'UMaterialExpressionMaterialXRampLeftRight::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRampLeftRight, B) == 0x000118, "Member 'UMaterialExpressionMaterialXRampLeftRight::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRampLeftRight, ConstCoordinate) == 0x000148, "Member 'UMaterialExpressionMaterialXRampLeftRight::ConstCoordinate' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXRampLeftRight;
 
 // Class InterchangeImport.MaterialExpressionMaterialXRampTopBottom
 // 0x0098 (0x0150 - 0x00B8)
@@ -965,19 +983,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXRampTopBottom">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXRampTopBottom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXRampTopBottom")
 	}
 	static class UMaterialExpressionMaterialXRampTopBottom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXRampTopBottom>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXRampTopBottom) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXRampTopBottom");
-static_assert(sizeof(UMaterialExpressionMaterialXRampTopBottom) == 0x000150, "Wrong size on UMaterialExpressionMaterialXRampTopBottom");
-static_assert(offsetof(UMaterialExpressionMaterialXRampTopBottom, Coordinates) == 0x0000B8, "Member 'UMaterialExpressionMaterialXRampTopBottom::Coordinates' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRampTopBottom, A) == 0x0000E8, "Member 'UMaterialExpressionMaterialXRampTopBottom::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRampTopBottom, B) == 0x000118, "Member 'UMaterialExpressionMaterialXRampTopBottom::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRampTopBottom, ConstCoordinate) == 0x000148, "Member 'UMaterialExpressionMaterialXRampTopBottom::ConstCoordinate' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXRampTopBottom;
 
 // Class InterchangeImport.MaterialExpressionMaterialXRemap
 // 0x0100 (0x01B8 - 0x00B8)
@@ -997,24 +1014,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXRemap">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXRemap")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXRemap")
 	}
 	static class UMaterialExpressionMaterialXRemap* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXRemap>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXRemap) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXRemap");
-static_assert(sizeof(UMaterialExpressionMaterialXRemap) == 0x0001B8, "Wrong size on UMaterialExpressionMaterialXRemap");
-static_assert(offsetof(UMaterialExpressionMaterialXRemap, Input) == 0x0000B8, "Member 'UMaterialExpressionMaterialXRemap::Input' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRemap, InputLow) == 0x0000E8, "Member 'UMaterialExpressionMaterialXRemap::InputLow' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRemap, InputHigh) == 0x000118, "Member 'UMaterialExpressionMaterialXRemap::InputHigh' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRemap, TargetLow) == 0x000148, "Member 'UMaterialExpressionMaterialXRemap::TargetLow' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRemap, TargetHigh) == 0x000178, "Member 'UMaterialExpressionMaterialXRemap::TargetHigh' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRemap, InputLowDefault) == 0x0001A8, "Member 'UMaterialExpressionMaterialXRemap::InputLowDefault' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRemap, InputHighDefault) == 0x0001AC, "Member 'UMaterialExpressionMaterialXRemap::InputHighDefault' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRemap, TargetLowDefault) == 0x0001B0, "Member 'UMaterialExpressionMaterialXRemap::TargetLowDefault' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRemap, TargetHighDefault) == 0x0001B4, "Member 'UMaterialExpressionMaterialXRemap::TargetHighDefault' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXRemap;
 
 // Class InterchangeImport.MaterialExpressionMaterialXRotate2D
 // 0x0068 (0x0120 - 0x00B8)
@@ -1029,18 +1040,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXRotate2D">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXRotate2D")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXRotate2D")
 	}
 	static class UMaterialExpressionMaterialXRotate2D* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXRotate2D>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXRotate2D) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXRotate2D");
-static_assert(sizeof(UMaterialExpressionMaterialXRotate2D) == 0x000120, "Wrong size on UMaterialExpressionMaterialXRotate2D");
-static_assert(offsetof(UMaterialExpressionMaterialXRotate2D, Input) == 0x0000B8, "Member 'UMaterialExpressionMaterialXRotate2D::Input' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRotate2D, RotationAngle) == 0x0000E8, "Member 'UMaterialExpressionMaterialXRotate2D::RotationAngle' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXRotate2D, ConstRotationAngle) == 0x000118, "Member 'UMaterialExpressionMaterialXRotate2D::ConstRotationAngle' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXRotate2D;
 
 // Class InterchangeImport.MaterialExpressionMaterialXScreen
 // 0x0098 (0x0150 - 0x00B8)
@@ -1056,19 +1067,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXScreen">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXScreen")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXScreen")
 	}
 	static class UMaterialExpressionMaterialXScreen* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXScreen>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXScreen) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXScreen");
-static_assert(sizeof(UMaterialExpressionMaterialXScreen) == 0x000150, "Wrong size on UMaterialExpressionMaterialXScreen");
-static_assert(offsetof(UMaterialExpressionMaterialXScreen, A) == 0x0000B8, "Member 'UMaterialExpressionMaterialXScreen::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXScreen, B) == 0x0000E8, "Member 'UMaterialExpressionMaterialXScreen::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXScreen, Alpha) == 0x000118, "Member 'UMaterialExpressionMaterialXScreen::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXScreen, ConstAlpha) == 0x000148, "Member 'UMaterialExpressionMaterialXScreen::ConstAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXScreen;
 
 // Class InterchangeImport.MaterialExpressionMaterialXSplitLeftRight
 // 0x00C8 (0x0180 - 0x00B8)
@@ -1086,21 +1096,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXSplitLeftRight">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXSplitLeftRight")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXSplitLeftRight")
 	}
 	static class UMaterialExpressionMaterialXSplitLeftRight* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXSplitLeftRight>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXSplitLeftRight) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXSplitLeftRight");
-static_assert(sizeof(UMaterialExpressionMaterialXSplitLeftRight) == 0x000180, "Wrong size on UMaterialExpressionMaterialXSplitLeftRight");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitLeftRight, Coordinates) == 0x0000B8, "Member 'UMaterialExpressionMaterialXSplitLeftRight::Coordinates' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitLeftRight, A) == 0x0000E8, "Member 'UMaterialExpressionMaterialXSplitLeftRight::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitLeftRight, B) == 0x000118, "Member 'UMaterialExpressionMaterialXSplitLeftRight::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitLeftRight, Center) == 0x000148, "Member 'UMaterialExpressionMaterialXSplitLeftRight::Center' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitLeftRight, ConstCenter) == 0x000178, "Member 'UMaterialExpressionMaterialXSplitLeftRight::ConstCenter' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitLeftRight, ConstCoordinate) == 0x00017C, "Member 'UMaterialExpressionMaterialXSplitLeftRight::ConstCoordinate' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXSplitLeftRight;
 
 // Class InterchangeImport.MaterialExpressionMaterialXSplitTopBottom
 // 0x00C8 (0x0180 - 0x00B8)
@@ -1118,21 +1125,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXSplitTopBottom">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXSplitTopBottom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXSplitTopBottom")
 	}
 	static class UMaterialExpressionMaterialXSplitTopBottom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXSplitTopBottom>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXSplitTopBottom) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXSplitTopBottom");
-static_assert(sizeof(UMaterialExpressionMaterialXSplitTopBottom) == 0x000180, "Wrong size on UMaterialExpressionMaterialXSplitTopBottom");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitTopBottom, Coordinates) == 0x0000B8, "Member 'UMaterialExpressionMaterialXSplitTopBottom::Coordinates' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitTopBottom, A) == 0x0000E8, "Member 'UMaterialExpressionMaterialXSplitTopBottom::A' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitTopBottom, B) == 0x000118, "Member 'UMaterialExpressionMaterialXSplitTopBottom::B' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitTopBottom, Center) == 0x000148, "Member 'UMaterialExpressionMaterialXSplitTopBottom::Center' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitTopBottom, ConstCenter) == 0x000178, "Member 'UMaterialExpressionMaterialXSplitTopBottom::ConstCenter' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXSplitTopBottom, ConstCoordinate) == 0x00017C, "Member 'UMaterialExpressionMaterialXSplitTopBottom::ConstCoordinate' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXSplitTopBottom;
 
 // Class InterchangeImport.MaterialExpressionMaterialXSwizzle
 // 0x0040 (0x00F8 - 0x00B8)
@@ -1145,17 +1149,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXSwizzle">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXSwizzle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXSwizzle")
 	}
 	static class UMaterialExpressionMaterialXSwizzle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXSwizzle>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXSwizzle) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXSwizzle");
-static_assert(sizeof(UMaterialExpressionMaterialXSwizzle) == 0x0000F8, "Wrong size on UMaterialExpressionMaterialXSwizzle");
-static_assert(offsetof(UMaterialExpressionMaterialXSwizzle, Input) == 0x0000B8, "Member 'UMaterialExpressionMaterialXSwizzle::Input' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXSwizzle, Channels) == 0x0000E8, "Member 'UMaterialExpressionMaterialXSwizzle::Channels' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXSwizzle;
 
 // Class InterchangeImport.MaterialExpressionMaterialXTextureSampleParameterBlur
 // 0x0010 (0x0290 - 0x0280)
@@ -1171,19 +1176,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXTextureSampleParameterBlur">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXTextureSampleParameterBlur")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXTextureSampleParameterBlur")
 	}
 	static class UMaterialExpressionMaterialXTextureSampleParameterBlur* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXTextureSampleParameterBlur>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXTextureSampleParameterBlur) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXTextureSampleParameterBlur");
-static_assert(sizeof(UMaterialExpressionMaterialXTextureSampleParameterBlur) == 0x000290, "Wrong size on UMaterialExpressionMaterialXTextureSampleParameterBlur");
-static_assert(offsetof(UMaterialExpressionMaterialXTextureSampleParameterBlur, KernelSize) == 0x000280, "Member 'UMaterialExpressionMaterialXTextureSampleParameterBlur::KernelSize' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXTextureSampleParameterBlur, FilterSize) == 0x000284, "Member 'UMaterialExpressionMaterialXTextureSampleParameterBlur::FilterSize' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXTextureSampleParameterBlur, FilterOffset) == 0x000288, "Member 'UMaterialExpressionMaterialXTextureSampleParameterBlur::FilterOffset' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionMaterialXTextureSampleParameterBlur, Filter) == 0x00028C, "Member 'UMaterialExpressionMaterialXTextureSampleParameterBlur::Filter' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXTextureSampleParameterBlur;
 
 // Class InterchangeImport.MaterialExpressionMaterialXUnpremult
 // 0x0030 (0x00E8 - 0x00B8)
@@ -1195,16 +1199,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionMaterialXUnpremult">();
+		STATIC_CLASS_IMPL("MaterialExpressionMaterialXUnpremult")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionMaterialXUnpremult")
 	}
 	static class UMaterialExpressionMaterialXUnpremult* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionMaterialXUnpremult>();
 	}
 };
-static_assert(alignof(UMaterialExpressionMaterialXUnpremult) == 0x000008, "Wrong alignment on UMaterialExpressionMaterialXUnpremult");
-static_assert(sizeof(UMaterialExpressionMaterialXUnpremult) == 0x0000E8, "Wrong size on UMaterialExpressionMaterialXUnpremult");
-static_assert(offsetof(UMaterialExpressionMaterialXUnpremult, Input) == 0x0000B8, "Member 'UMaterialExpressionMaterialXUnpremult::Input' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionMaterialXUnpremult;
 
 // Class InterchangeImport.InterchangeMaterialFactory
 // 0x0008 (0x0040 - 0x0038)
@@ -1216,15 +1222,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMaterialFactory">();
+		STATIC_CLASS_IMPL("InterchangeMaterialFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMaterialFactory")
 	}
 	static class UInterchangeMaterialFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMaterialFactory>();
 	}
 };
-static_assert(alignof(UInterchangeMaterialFactory) == 0x000008, "Wrong alignment on UInterchangeMaterialFactory");
-static_assert(sizeof(UInterchangeMaterialFactory) == 0x000040, "Wrong size on UInterchangeMaterialFactory");
+DUMPER7_ASSERTS_UInterchangeMaterialFactory;
 
 // Class InterchangeImport.InterchangeMaterialFunctionFactory
 // 0x0008 (0x0040 - 0x0038)
@@ -1236,15 +1245,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMaterialFunctionFactory">();
+		STATIC_CLASS_IMPL("InterchangeMaterialFunctionFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMaterialFunctionFactory")
 	}
 	static class UInterchangeMaterialFunctionFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMaterialFunctionFactory>();
 	}
 };
-static_assert(alignof(UInterchangeMaterialFunctionFactory) == 0x000008, "Wrong alignment on UInterchangeMaterialFunctionFactory");
-static_assert(sizeof(UInterchangeMaterialFunctionFactory) == 0x000040, "Wrong size on UInterchangeMaterialFunctionFactory");
+DUMPER7_ASSERTS_UInterchangeMaterialFunctionFactory;
 
 // Class InterchangeImport.InterchangeOBJTranslator
 // 0x0018 (0x0058 - 0x0040)
@@ -1256,15 +1268,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeOBJTranslator">();
+		STATIC_CLASS_IMPL("InterchangeOBJTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeOBJTranslator")
 	}
 	static class UInterchangeOBJTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeOBJTranslator>();
 	}
 };
-static_assert(alignof(UInterchangeOBJTranslator) == 0x000008, "Wrong alignment on UInterchangeOBJTranslator");
-static_assert(sizeof(UInterchangeOBJTranslator) == 0x000058, "Wrong size on UInterchangeOBJTranslator");
+DUMPER7_ASSERTS_UInterchangeOBJTranslator;
 
 // Class InterchangeImport.InterchangePhysicsAssetFactory
 // 0x0000 (0x0038 - 0x0038)
@@ -1273,15 +1288,18 @@ class UInterchangePhysicsAssetFactory final : public UInterchangeFactoryBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangePhysicsAssetFactory">();
+		STATIC_CLASS_IMPL("InterchangePhysicsAssetFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangePhysicsAssetFactory")
 	}
 	static class UInterchangePhysicsAssetFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangePhysicsAssetFactory>();
 	}
 };
-static_assert(alignof(UInterchangePhysicsAssetFactory) == 0x000008, "Wrong alignment on UInterchangePhysicsAssetFactory");
-static_assert(sizeof(UInterchangePhysicsAssetFactory) == 0x000038, "Wrong size on UInterchangePhysicsAssetFactory");
+DUMPER7_ASSERTS_UInterchangePhysicsAssetFactory;
 
 // Class InterchangeImport.InterchangeSkeletalMeshFactory
 // 0x0030 (0x0068 - 0x0038)
@@ -1293,15 +1311,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSkeletalMeshFactory">();
+		STATIC_CLASS_IMPL("InterchangeSkeletalMeshFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSkeletalMeshFactory")
 	}
 	static class UInterchangeSkeletalMeshFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSkeletalMeshFactory>();
 	}
 };
-static_assert(alignof(UInterchangeSkeletalMeshFactory) == 0x000008, "Wrong alignment on UInterchangeSkeletalMeshFactory");
-static_assert(sizeof(UInterchangeSkeletalMeshFactory) == 0x000068, "Wrong size on UInterchangeSkeletalMeshFactory");
+DUMPER7_ASSERTS_UInterchangeSkeletalMeshFactory;
 
 // Class InterchangeImport.InterchangeSkeletonFactory
 // 0x0000 (0x0038 - 0x0038)
@@ -1310,15 +1331,18 @@ class UInterchangeSkeletonFactory final : public UInterchangeFactoryBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSkeletonFactory">();
+		STATIC_CLASS_IMPL("InterchangeSkeletonFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSkeletonFactory")
 	}
 	static class UInterchangeSkeletonFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSkeletonFactory>();
 	}
 };
-static_assert(alignof(UInterchangeSkeletonFactory) == 0x000008, "Wrong alignment on UInterchangeSkeletonFactory");
-static_assert(sizeof(UInterchangeSkeletonFactory) == 0x000038, "Wrong size on UInterchangeSkeletonFactory");
+DUMPER7_ASSERTS_UInterchangeSkeletonFactory;
 
 // Class InterchangeImport.InterchangeStaticMeshFactory
 // 0x0018 (0x0050 - 0x0038)
@@ -1330,15 +1354,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeStaticMeshFactory">();
+		STATIC_CLASS_IMPL("InterchangeStaticMeshFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeStaticMeshFactory")
 	}
 	static class UInterchangeStaticMeshFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeStaticMeshFactory>();
 	}
 };
-static_assert(alignof(UInterchangeStaticMeshFactory) == 0x000008, "Wrong alignment on UInterchangeStaticMeshFactory");
-static_assert(sizeof(UInterchangeStaticMeshFactory) == 0x000050, "Wrong size on UInterchangeStaticMeshFactory");
+DUMPER7_ASSERTS_UInterchangeStaticMeshFactory;
 
 // Class InterchangeImport.InterchangeCineCameraActorFactory
 // 0x0000 (0x0038 - 0x0038)
@@ -1347,15 +1374,18 @@ class UInterchangeCineCameraActorFactory final : public UInterchangeActorFactory
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeCineCameraActorFactory">();
+		STATIC_CLASS_IMPL("InterchangeCineCameraActorFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeCineCameraActorFactory")
 	}
 	static class UInterchangeCineCameraActorFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeCineCameraActorFactory>();
 	}
 };
-static_assert(alignof(UInterchangeCineCameraActorFactory) == 0x000008, "Wrong alignment on UInterchangeCineCameraActorFactory");
-static_assert(sizeof(UInterchangeCineCameraActorFactory) == 0x000038, "Wrong size on UInterchangeCineCameraActorFactory");
+DUMPER7_ASSERTS_UInterchangeCineCameraActorFactory;
 
 // Class InterchangeImport.InterchangeCameraActorFactory
 // 0x0000 (0x0038 - 0x0038)
@@ -1364,15 +1394,18 @@ class UInterchangeCameraActorFactory final : public UInterchangeActorFactory
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeCameraActorFactory">();
+		STATIC_CLASS_IMPL("InterchangeCameraActorFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeCameraActorFactory")
 	}
 	static class UInterchangeCameraActorFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeCameraActorFactory>();
 	}
 };
-static_assert(alignof(UInterchangeCameraActorFactory) == 0x000008, "Wrong alignment on UInterchangeCameraActorFactory");
-static_assert(sizeof(UInterchangeCameraActorFactory) == 0x000038, "Wrong size on UInterchangeCameraActorFactory");
+DUMPER7_ASSERTS_UInterchangeCameraActorFactory;
 
 // Class InterchangeImport.InterchangeSkeletalMeshActorFactory
 // 0x0000 (0x0038 - 0x0038)
@@ -1381,15 +1414,18 @@ class UInterchangeSkeletalMeshActorFactory final : public UInterchangeActorFacto
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSkeletalMeshActorFactory">();
+		STATIC_CLASS_IMPL("InterchangeSkeletalMeshActorFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSkeletalMeshActorFactory")
 	}
 	static class UInterchangeSkeletalMeshActorFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSkeletalMeshActorFactory>();
 	}
 };
-static_assert(alignof(UInterchangeSkeletalMeshActorFactory) == 0x000008, "Wrong alignment on UInterchangeSkeletalMeshActorFactory");
-static_assert(sizeof(UInterchangeSkeletalMeshActorFactory) == 0x000038, "Wrong size on UInterchangeSkeletalMeshActorFactory");
+DUMPER7_ASSERTS_UInterchangeSkeletalMeshActorFactory;
 
 // Class InterchangeImport.InterchangeStaticMeshActorFactory
 // 0x0000 (0x0038 - 0x0038)
@@ -1398,15 +1434,18 @@ class UInterchangeStaticMeshActorFactory final : public UInterchangeActorFactory
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeStaticMeshActorFactory">();
+		STATIC_CLASS_IMPL("InterchangeStaticMeshActorFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeStaticMeshActorFactory")
 	}
 	static class UInterchangeStaticMeshActorFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeStaticMeshActorFactory>();
 	}
 };
-static_assert(alignof(UInterchangeStaticMeshActorFactory) == 0x000008, "Wrong alignment on UInterchangeStaticMeshActorFactory");
-static_assert(sizeof(UInterchangeStaticMeshActorFactory) == 0x000038, "Wrong size on UInterchangeStaticMeshActorFactory");
+DUMPER7_ASSERTS_UInterchangeStaticMeshActorFactory;
 
 // Class InterchangeImport.InterchangeDDSTranslator
 // 0x0010 (0x0050 - 0x0040)
@@ -1418,15 +1457,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeDDSTranslator">();
+		STATIC_CLASS_IMPL("InterchangeDDSTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeDDSTranslator")
 	}
 	static class UInterchangeDDSTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeDDSTranslator>();
 	}
 };
-static_assert(alignof(UInterchangeDDSTranslator) == 0x000008, "Wrong alignment on UInterchangeDDSTranslator");
-static_assert(sizeof(UInterchangeDDSTranslator) == 0x000050, "Wrong size on UInterchangeDDSTranslator");
+DUMPER7_ASSERTS_UInterchangeDDSTranslator;
 
 // Class InterchangeImport.InterchangeIESTranslator
 // 0x0008 (0x0048 - 0x0040)
@@ -1438,15 +1480,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeIESTranslator">();
+		STATIC_CLASS_IMPL("InterchangeIESTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeIESTranslator")
 	}
 	static class UInterchangeIESTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeIESTranslator>();
 	}
 };
-static_assert(alignof(UInterchangeIESTranslator) == 0x000008, "Wrong alignment on UInterchangeIESTranslator");
-static_assert(sizeof(UInterchangeIESTranslator) == 0x000048, "Wrong size on UInterchangeIESTranslator");
+DUMPER7_ASSERTS_UInterchangeIESTranslator;
 
 // Class InterchangeImport.InterchangeImageWrapperTranslator
 // 0x0010 (0x0050 - 0x0040)
@@ -1458,15 +1503,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeImageWrapperTranslator">();
+		STATIC_CLASS_IMPL("InterchangeImageWrapperTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeImageWrapperTranslator")
 	}
 	static class UInterchangeImageWrapperTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeImageWrapperTranslator>();
 	}
 };
-static_assert(alignof(UInterchangeImageWrapperTranslator) == 0x000008, "Wrong alignment on UInterchangeImageWrapperTranslator");
-static_assert(sizeof(UInterchangeImageWrapperTranslator) == 0x000050, "Wrong size on UInterchangeImageWrapperTranslator");
+DUMPER7_ASSERTS_UInterchangeImageWrapperTranslator;
 
 // Class InterchangeImport.InterchangeJPGTranslator
 // 0x0008 (0x0048 - 0x0040)
@@ -1478,15 +1526,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeJPGTranslator">();
+		STATIC_CLASS_IMPL("InterchangeJPGTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeJPGTranslator")
 	}
 	static class UInterchangeJPGTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeJPGTranslator>();
 	}
 };
-static_assert(alignof(UInterchangeJPGTranslator) == 0x000008, "Wrong alignment on UInterchangeJPGTranslator");
-static_assert(sizeof(UInterchangeJPGTranslator) == 0x000048, "Wrong size on UInterchangeJPGTranslator");
+DUMPER7_ASSERTS_UInterchangeJPGTranslator;
 
 // Class InterchangeImport.InterchangePCXTranslator
 // 0x0008 (0x0048 - 0x0040)
@@ -1498,15 +1549,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangePCXTranslator">();
+		STATIC_CLASS_IMPL("InterchangePCXTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangePCXTranslator")
 	}
 	static class UInterchangePCXTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangePCXTranslator>();
 	}
 };
-static_assert(alignof(UInterchangePCXTranslator) == 0x000008, "Wrong alignment on UInterchangePCXTranslator");
-static_assert(sizeof(UInterchangePCXTranslator) == 0x000048, "Wrong size on UInterchangePCXTranslator");
+DUMPER7_ASSERTS_UInterchangePCXTranslator;
 
 // Class InterchangeImport.InterchangePSDTranslator
 // 0x0008 (0x0048 - 0x0040)
@@ -1518,15 +1572,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangePSDTranslator">();
+		STATIC_CLASS_IMPL("InterchangePSDTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangePSDTranslator")
 	}
 	static class UInterchangePSDTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangePSDTranslator>();
 	}
 };
-static_assert(alignof(UInterchangePSDTranslator) == 0x000008, "Wrong alignment on UInterchangePSDTranslator");
-static_assert(sizeof(UInterchangePSDTranslator) == 0x000048, "Wrong size on UInterchangePSDTranslator");
+DUMPER7_ASSERTS_UInterchangePSDTranslator;
 
 // Class InterchangeImport.InterchangeTextureFactory
 // 0x0090 (0x00C8 - 0x0038)
@@ -1538,15 +1595,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeTextureFactory">();
+		STATIC_CLASS_IMPL("InterchangeTextureFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeTextureFactory")
 	}
 	static class UInterchangeTextureFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeTextureFactory>();
 	}
 };
-static_assert(alignof(UInterchangeTextureFactory) == 0x000008, "Wrong alignment on UInterchangeTextureFactory");
-static_assert(sizeof(UInterchangeTextureFactory) == 0x0000C8, "Wrong size on UInterchangeTextureFactory");
+DUMPER7_ASSERTS_UInterchangeTextureFactory;
 
 }
 

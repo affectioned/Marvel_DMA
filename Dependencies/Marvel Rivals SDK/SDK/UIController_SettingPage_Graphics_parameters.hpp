@@ -21,9 +21,7 @@ struct PyUIController_SettingPage_Graphics_OnMonitorChanged final
 public:
 	class FString                                 monitor_id;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_SettingPage_Graphics_OnMonitorChanged) == 0x000008, "Wrong alignment on PyUIController_SettingPage_Graphics_OnMonitorChanged");
-static_assert(sizeof(PyUIController_SettingPage_Graphics_OnMonitorChanged) == 0x000010, "Wrong size on PyUIController_SettingPage_Graphics_OnMonitorChanged");
-static_assert(offsetof(PyUIController_SettingPage_Graphics_OnMonitorChanged, monitor_id) == 0x000000, "Member 'PyUIController_SettingPage_Graphics_OnMonitorChanged::monitor_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_SettingPage_Graphics_OnMonitorChanged;
 
 }
 

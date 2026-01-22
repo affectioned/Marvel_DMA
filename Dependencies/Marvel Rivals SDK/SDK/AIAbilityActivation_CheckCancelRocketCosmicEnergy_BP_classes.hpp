@@ -23,15 +23,18 @@ class UAIAbilityActivation_CheckCancelRocketCosmicEnergy_BP_C final : public UPy
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_CheckCancelRocketCosmicEnergy_BP_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_CheckCancelRocketCosmicEnergy_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_CheckCancelRocketCosmicEnergy_BP_C")
 	}
 	static class UAIAbilityActivation_CheckCancelRocketCosmicEnergy_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_CheckCancelRocketCosmicEnergy_BP_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_CheckCancelRocketCosmicEnergy_BP_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_CheckCancelRocketCosmicEnergy_BP_C");
-static_assert(sizeof(UAIAbilityActivation_CheckCancelRocketCosmicEnergy_BP_C) == 0x000040, "Wrong size on UAIAbilityActivation_CheckCancelRocketCosmicEnergy_BP_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_CheckCancelRocketCosmicEnergy_BP_C;
 
 }
 

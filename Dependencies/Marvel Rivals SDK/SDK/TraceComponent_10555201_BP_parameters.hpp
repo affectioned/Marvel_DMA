@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function TraceComponent_10555201_BP.TraceComponent_10555201_BP_C.ExecuteUbergraph_TraceComponent_10555201_BP
-// 0x04A0 (0x04A0 - 0x0000)
+// 0x04B0 (0x04B0 - 0x0000)
 struct TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP final
 {
 public:
@@ -39,78 +39,38 @@ public:
 	class UMarvelAbilityTask_Projectile*          CallFunc_SpawnScopeTask_ReturnValue;               // 0x0180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_GetInstigator_ReturnValue_1;              // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x0190(0x0010)(ConstParm, ReferenceParm)
-	struct FHitResult                             CallFunc_CheckSceneBlockByLineTrace_OutHitResult;  // 0x01A0(0x01F0)(ContainsInstancedReference)
-	bool                                          CallFunc_CheckSceneBlockByLineTrace_ReturnValue;   // 0x0390(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0391(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0392(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_393[0x1];                                      // 0x0393(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x0394(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C[0x4];                                      // 0x039C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x03A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x03B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x03D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x03E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0408(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0410(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0418(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x0424(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0430(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0434(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0438(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_43C[0x4];                                      // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0440(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0458(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_OccDetPoint;               // 0x0470(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0489(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x048A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x048B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_48C[0x4];                                      // 0x048C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast; // 0x0490(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_CheckSceneBlockByLineTrace_OutHitResult;  // 0x01A0(0x0208)(ContainsInstancedReference)
+	bool                                          CallFunc_CheckSceneBlockByLineTrace_ReturnValue;   // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x03A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x03AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AB[0x1];                                      // 0x03AB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x03AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B4[0x4];                                      // 0x03B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x03B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x03D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x03E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0400(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0418(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0420(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0428(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0430(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x043C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0448(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x044C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0450(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_454[0x4];                                      // 0x0454(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0458(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0470(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_OccDetPoint;               // 0x0488(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x04A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x04A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x04A3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A4[0x4];                                      // 0x04A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast; // 0x04A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP) == 0x000010, "Wrong alignment on TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP");
-static_assert(sizeof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP) == 0x0004A0, "Wrong size on TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, EntryPoint) == 0x000000, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, Temp_struct_Variable) == 0x000008, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_GetTraceEnd_ReturnValue) == 0x000020, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_GetTraceEnd_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_GetTraceStart_ReturnValue) == 0x000038, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_GetTraceStart_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_MakeTransform_ReturnValue) == 0x000050, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, K2Node_CustomEvent_TraceSource) == 0x0000B0, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::K2Node_CustomEvent_TraceSource' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, K2Node_CustomEvent_HitResults) == 0x0000B8, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::K2Node_CustomEvent_HitResults' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, K2Node_MakeStruct_MarvelAbilitySocketInfo) == 0x0000D0, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::K2Node_MakeStruct_MarvelAbilitySocketInfo' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_GetInstigator_ReturnValue) == 0x000170, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_IsValid_ReturnValue) == 0x000178, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_SpawnScopeTask_ReturnValue) == 0x000180, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_SpawnScopeTask_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_GetInstigator_ReturnValue_1) == 0x000188, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_GetInstigator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, K2Node_MakeArray_Array) == 0x000190, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_CheckSceneBlockByLineTrace_OutHitResult) == 0x0001A0, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_CheckSceneBlockByLineTrace_OutHitResult' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_CheckSceneBlockByLineTrace_ReturnValue) == 0x000390, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_CheckSceneBlockByLineTrace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_bBlockingHit) == 0x000391, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_bInitialOverlap) == 0x000392, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_Time) == 0x000394, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_Distance) == 0x000398, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_Location) == 0x0003A0, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_ImpactPoint) == 0x0003B8, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_Normal) == 0x0003D0, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_ImpactNormal) == 0x0003E8, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_PhysMat) == 0x000400, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_HitActor) == 0x000408, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_HitComponent) == 0x000410, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_HitBoneName) == 0x000418, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_BoneName) == 0x000424, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_BoneName' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_HitItem) == 0x000430, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_ElementIndex) == 0x000434, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_FaceIndex) == 0x000438, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_TraceStart) == 0x000440, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_TraceEnd) == 0x000458, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BreakHitResult_OccDetPoint) == 0x000470, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BreakHitResult_OccDetPoint' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000488, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000489, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BooleanOR_ReturnValue) == 0x00048A, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_BooleanAND_ReturnValue) == 0x00048B, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP, CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast) == 0x000490, "Member 'TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP::CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_TraceComponent_10555201_BP_C_ExecuteUbergraph_TraceComponent_10555201_BP;
 
 // Function TraceComponent_10555201_BP.TraceComponent_10555201_BP_C.SpawnSecondScope
 // 0x0018 (0x0018 - 0x0000)
@@ -120,10 +80,7 @@ public:
 	class UObject*                                TraceSource;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(TraceComponent_10555201_BP_C_SpawnSecondScope) == 0x000008, "Wrong alignment on TraceComponent_10555201_BP_C_SpawnSecondScope");
-static_assert(sizeof(TraceComponent_10555201_BP_C_SpawnSecondScope) == 0x000018, "Wrong size on TraceComponent_10555201_BP_C_SpawnSecondScope");
-static_assert(offsetof(TraceComponent_10555201_BP_C_SpawnSecondScope, TraceSource) == 0x000000, "Member 'TraceComponent_10555201_BP_C_SpawnSecondScope::TraceSource' has a wrong offset!");
-static_assert(offsetof(TraceComponent_10555201_BP_C_SpawnSecondScope, HitResults) == 0x000008, "Member 'TraceComponent_10555201_BP_C_SpawnSecondScope::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_TraceComponent_10555201_BP_C_SpawnSecondScope;
 
 }
 

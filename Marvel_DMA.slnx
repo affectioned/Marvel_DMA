@@ -1,9 +1,16 @@
 <Solution>
   <Configurations>
+    <BuildType Name="Debug" />
     <BuildType Name="DLL" />
     <BuildType Name="Release" />
+    <Platform Name="Any CPU" />
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="MarvelSDKToHeroMap/MarvelSDKToHeroMap.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="66b1fe70-4fee-4a33-8287-002c39e1ab09">
+    <BuildType Solution="DLL|*" Project="Release" />
+    <Platform Project="AnyCPU" />
+    <Build Project="false" />
+  </Project>
   <Project Path="Marvel_DMA/Marvel_DMA.vcxproj" Id="19f0047f-6776-484c-8ba0-f0c4b7ffb6c3" />
 </Solution>

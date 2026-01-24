@@ -19,13 +19,22 @@ public:
 
 public:
 	static void UpdateLocalPlayerAddress(DMA_Connection* Conn);
+
+private:
+	static void UpdateLocalPlayerController(DMA_Connection* Conn);
+	static void UpdateLocalAcknowledgedPawn(DMA_Connection* Conn);
+
+public:
 	static inline uintptr_t m_LocalPlayerAddress{ 0 };
 
 private:
-	static inline std::mutex LocalPlayerMutex;
-	static inline int32_t m_LocalTeamID{};
-	
+	static inline uintptr_t m_LocalPlayerControllerAddress = 0;
+	static inline uintptr_t m_LocalAcknowledgedPawnAddress = 0;
+	static inline uintptr_t m_LocalPlayerStateAddress = 0;
+
 public:
-	static bool IsFriendly(int32_t TeamID);
-	static void SetLocalTeamID(int32_t NewTeamID);
+	static inline int32_t m_LocalTeamID = 0;
+
+private:
+	static inline std::mutex LocalPlayerMutex;
 };

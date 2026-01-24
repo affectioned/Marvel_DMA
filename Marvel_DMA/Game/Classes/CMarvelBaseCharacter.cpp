@@ -5,12 +5,9 @@
 void CMarvelBaseCharacter::Finalize()
 {
 	CPawn::Finalize();
-
-	if (IsLocallyControlled())
-		Marvel::SetLocalTeamID(m_TeamID);
 }
 
 const bool CMarvelBaseCharacter::IsFriendly() const
 {
-	return Marvel::IsFriendly(m_TeamID);
+	return m_TeamID == Marvel::m_LocalTeamID;
 }

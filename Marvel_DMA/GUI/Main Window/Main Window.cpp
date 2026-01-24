@@ -2,6 +2,8 @@
 
 #include "Main Window.h"
 
+#include "GUI/Fonts/Fonts.h"
+
 #include "GUI/Player Table/Player Table.h"
 #include "GUI/Fuser/Fuser.h"
 #include "GUI/Color Picker/Color Picker.h"
@@ -9,6 +11,11 @@
 void Render(ImGuiContext* ctx)
 {
 	ImGui::SetCurrentContext(ctx);
+
+	if (Fonts::m_IBMPlexMonoSemiBold == nullptr)
+		Fonts::Initialize(ImGui::GetIO());
+
+	ImGui::PushFont(Fonts::m_IBMPlexMonoSemiBold, 16.0f);
 
 	ImGui::DockSpaceOverViewport(ImGui::GetMainViewport()->ID, nullptr, ImGuiDockNodeFlags_PassthruCentralNode);
 
@@ -19,6 +26,8 @@ void Render(ImGuiContext* ctx)
 	ColorPicker::Render();
 
 	//PlayerTable::Render();
+
+	ImGui::PopFont();
 }
 
 bool MainWindow::OnFrame()
@@ -127,7 +136,7 @@ bool MainWindow::Initialize()
 
 	wc = { sizeof(wc), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(nullptr), nullptr, nullptr, nullptr, nullptr, L"MainWindow", nullptr };
 	::RegisterClassExW(&wc);
-	g_hWnd = ::CreateWindowEx(NULL, wc.lpszClassName, L"Deadlock DMA", WS_OVERLAPPEDWINDOW, 100, 100, 800, 800, nullptr, nullptr, wc.hInstance, nullptr);
+	g_hWnd = ::CreateWindowEx(NULL, wc.lpszClassName, L"MARVEL RIVALS DMA", WS_OVERLAPPEDWINDOW, 100, 100, 800, 800, nullptr, nullptr, wc.hInstance, nullptr);
 	// Initialize Direct3D
 	if (!CreateDeviceD3D(g_hWnd))
 	{
@@ -230,7 +239,7 @@ bool MainWindow::PostFrame()
 	}
 
 	// Present
-	HRESULT hr = g_pSwapChain->Present(1, 0);   // Present with vsync
+	HRESULT hr = g_pSwapChain->Present(1, 0);
 
 	return true;
 }

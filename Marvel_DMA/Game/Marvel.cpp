@@ -2,6 +2,7 @@
 #include "DMA/DMA.h"
 #include "Marvel.h"
 #include "Game/Offsets/Offsets.h"
+#include "SDK/Marvel_classes.hpp"
 
 bool Marvel::Initialize(DMA_Connection* Conn)
 {
@@ -58,16 +59,41 @@ void Marvel::UpdateLocalPlayerAddress(DMA_Connection* Conn)
 	uintptr_t FirstLocalPlayerAddress = Marvel::RivalsProc.ReadMem<uintptr_t>(Conn, LocalPlayerArrayAddress);
 
 	m_LocalPlayerAddress = FirstLocalPlayerAddress;
+
+	UpdateLocalPlayerController(Conn);
+	UpdateLocalAcknowledgedPawn(Conn);
 }
 
-bool Marvel::IsFriendly(int32_t TeamID)
+void Marvel::UpdateLocalPlayerController(DMA_Connection* Conn)
 {
-	std::scoped_lock Lock(LocalPlayerMutex);
-	return m_LocalTeamID == TeamID;
+	if (!m_LocalPlayerAddress) [[unlikely]]
+		return;
+
+	uintptr_t PlayerControllerPtr = m_LocalPlayerAddress + offsetof(SDK::UPlayer, PlayerController);
+	m_LocalPlayerControllerAddress = Marvel::RivalsProc.ReadMem<uintptr_t>(Conn, PlayerControllerPtr);
+
+
+	if (!m_LocalPlayerControllerAddress) [[unlikely]]
+		return;
 }
 
-void Marvel::SetLocalTeamID(int32_t NewTeamID)
+void Marvel::UpdateLocalAcknowledgedPawn(DMA_Connection* Conn)
 {
-	std::scoped_lock Lock(LocalPlayerMutex);
-	m_LocalTeamID = NewTeamID;
+	if (!m_LocalPlayerControllerAddress) [[unlikely]]
+		return;
+
+	uintptr_t AcknowledgedPawnPtr = m_LocalPlayerControllerAddress + offsetof(SDK::APlayerController, AcknowledgedPawn);
+	m_LocalAcknowledgedPawnAddress = Marvel::RivalsProc.ReadMem<uintptr_t>(Conn, AcknowledgedPawnPtr);
+
+	if (!m_LocalAcknowledgedPawnAddress) [[unlikely]]
+		return;
+
+	uintptr_t PlayerStatePtr = m_LocalAcknowledgedPawnAddress + offsetof(SDK::APawn, PlayerState);
+	m_LocalPlayerStateAddress = Marvel::RivalsProc.ReadMem<uintptr_t>(Conn, PlayerStatePtr);
+
+	if (!m_LocalPlayerStateAddress) [[unlikely]]
+		return;
+
+	uintptr_t TeamIDPtr = m_LocalPlayerStateAddress + offsetof(SDK::AMarvelPlayerState, OriginalTeamID);
+	m_LocalTeamID = Marvel::RivalsProc.ReadMem<int32_t>(Conn, TeamIDPtr);
 }

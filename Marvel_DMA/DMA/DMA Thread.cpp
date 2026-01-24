@@ -37,12 +37,12 @@ void DMAThread(DMA_Connection* Conn, Process* MarvelRivals)
 
 	CTimer RarelyChangedAddresses(std::chrono::seconds(5), [Conn]() {Marvel::UpdateRarelyChangedAddresses(Conn); });
 	CTimer ActorArrayTimer(std::chrono::seconds(5), [Conn]() {Marvel::UpdateActorArray(Conn); });
-	CTimer UpdateActorAddresses(std::chrono::seconds(5), [Conn]() { EntityList::ReadAllActorAddresses(Conn);});
-	CTimer LocalPlayerAddress(std::chrono::seconds(5), [Conn]() { Marvel::UpdateLocalPlayerAddress(Conn);});
+	CTimer UpdateActorAddresses(std::chrono::seconds(5), [Conn]() { EntityList::ReadAllActorAddresses(Conn); });
+	CTimer LocalPlayerAddress(std::chrono::seconds(5), [Conn]() { Marvel::UpdateLocalPlayerAddress(Conn); });
 	CTimer FullCameraUpdate(std::chrono::seconds(5), [Conn]() { Camera::FullUpdate(Conn); });
-	CTimer FullUpdatePlayers(std::chrono::seconds(1), [Conn]() { PlayerList::FullUpdate(Conn);});
+	CTimer FullUpdatePlayers(std::chrono::seconds(1), [Conn]() { PlayerList::FullUpdate(Conn); });
 	CTimer QuickCameraUpdate(std::chrono::milliseconds(5), [Conn]() { Camera::QuickUpdate(Conn); });
-	CTimer QuickUpdatePlayers(std::chrono::milliseconds(50), [Conn]() { PlayerList::QuickUpdate(Conn);});
+	CTimer QuickUpdatePlayers(std::chrono::milliseconds(50), [Conn]() { PlayerList::QuickUpdate(Conn); });
 
 	while (bRunning)
 	{
